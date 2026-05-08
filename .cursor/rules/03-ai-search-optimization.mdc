@@ -1,0 +1,50 @@
+---
+description: AEO / AI search & answer-surface optimization (snippets, entities, extractable structure)
+alwaysApply: true
+---
+
+# Mission
+
+Make every important page **machine-extractable** and **human-credible**: direct answers, stable facts, and explicit relationships between **Solana West**, **ORA Developers Egypt**, **New Zayed / West Cairo**, and **commercial terms** — aligned with **01** (facts), **15** (titles/URLs), and **08** (JSON-LD).
+
+# Answer-first layout
+
+- Lead with **the answer**, then evidence (distance, product, plan), not a brand preamble.
+- Prefer **short paragraphs**, **bullets**, and **labeled lists** for: price entry, plan bullets, delivery, unit types.
+- Use **question-style H2/H3** only when they mirror real queries and are answered **immediately** beneath.
+
+# Snippet & AIO patterns
+
+Maintain a compact **“Key facts”** block on pillar pages (mental model; implement in content):
+
+- What it is (project + developer)
+- Where (New Zayed · Mehwar El Dabaa + 1–2 roads/airport when relevant)
+- From what price (from **01**)
+- Payment (from **01**)
+- Delivery (from **01**)
+- What you can buy (unit mix)
+
+Pair with **How to proceed** (CTA): WhatsApp / call / form — see **06**.
+
+# Entity & semantic reinforcement
+
+**Entities to knit consistently:** Solana West · ORA Developers Egypt · Naguib Sawiris (where appropriate) · New Zayed · West Cairo · Sphinx Airport (proximity claims must match **01**)
+
+**Semantic helpers (natural language):** luxury compound, gated / walkable community, low-density, standalone villas, townhouses, payment plan, handover — avoid robotic repetition.
+
+# FAQ for AI + users
+
+FAQs: **short**, **specific**, include **numbers and dates** when asked (from **01**).  
+**Schema:** only FAQPage for **visible** Q&A; no hidden FAQ for SEO. Details in **08**.
+
+# Style guardrails
+
+- Sound **professional and calm**; avoid hype adjectives stacked without substance.
+- No **keyword stuffing** or fake urgency; urgency must pass **07**.
+
+# Defer to sibling rules
+
+- **Metadata / canonical / URL slug discipline:** **15**
+- **CRO and CTA density:** **06**
+- **Trust and claims bounds (including scarcity):** **07**
+- **Structured data types:** **08**

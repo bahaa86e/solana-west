@@ -1,0 +1,62 @@
+---
+description: Metadata, canonical, OG/Twitter, URL & H1 governance (implementation in Next → 13)
+alwaysApply: true
+---
+
+# Mission
+
+Maximize **CTR** and **preview accuracy** on Google, social, and AI citations via **tight** alignment: URL ↔ H1 ↔ title ↔ description ↔ on-page intro ↔ **01** facts.
+
+# Title tags
+
+Include **primary keyword intent**, **project name**, **location cue**, and **buyer intent** without spam.
+
+Pattern: **Project + intent + New Zayed + ORA Developers Egypt** (order can flex for length).
+
+Examples:
+
+- `Solana West Prices New Zayed | ORA Developers Egypt`
+- `Solana West Payment Plan | New Zayed | ORA Egypt`
+
+# Meta descriptions
+
+- First sentence answers intent; weave **from-price**, **plan shape**, **delivery**, **location**, **developer** when space allows.
+- Professional, investor tone; **no** fake urgency (**07**).
+
+# Canonical & indexation
+
+- **One** canonical URL per content idea; self-referencing canonical on indexable pages.
+- **Noindex** utility routes (thank-you, previews, parameterized duplicates).
+
+# URL slugs
+
+Short, **hyphenated**, human-readable, keyword meaning clear. Avoid deep params for static content.
+
+Examples: `/solana-west-prices`, `/solana-west-payment-plan`, `/solana-west-villas`
+
+# Heading rules
+
+- **Single H1** = primary intent; mirror title semantics (not necessarily identical wording).
+- **H2+** outline answers before fluff; supports **03** extractability.
+
+# Open Graph & Twitter
+
+Every indexable marketing URL: `og:title`, `og:description`, `og:image`, `og:url` (+ `twitter:card` large when imagery is strong). OG image luxury + legible safe zone — coordinate **10**.
+
+# AI-search-friendly metadata
+
+Direct wording; clear **who / what / where / price band / plan / delivery**; entities align with **08** graph.
+
+# CTR psychology (bounded)
+
+Invite **informed** clicks: specificity + proof tone — **not** clickbait that the page cannot support (**07**).
+
+# Consistency checks before ship
+
+- Title ↔ H1 ↔ hero ↔ FAQ facts ↔ **01**
+- OG image matches campaign and **does not** show wrong typology
+- WhatsApp/phone in markup only when matching **11** if surfaced in JSON or visible NAP
+
+# Implementation
+
+Next **`metadata` / `generateMetadata`**: see **13**.

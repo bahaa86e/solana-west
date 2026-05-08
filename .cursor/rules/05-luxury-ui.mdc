@@ -1,0 +1,50 @@
+---
+description: Luxury UI/UX — calm premium layouts, hierarchy, motion; pairs with 06 (conversion) and 13 (implementation)
+alwaysApply: true
+---
+
+# Mission
+
+Interfaces that feel **international compound**: spacious, editorial, trustworthy — **CRO**-aware without shouting.
+
+# Reference tone (not imitation)
+
+ORA-adjacent premium, Emaar-class clarity, Sobha-level finish discipline — **own** Solana West identity.
+
+# Visual language
+
+- **Colors:** black, white, warm beige, restrained gold accents — no neon or loud gradients.
+- **Type:** large display for hero, comfortable body size, clear H1–H3 ladder (**15**).
+- **Imagery:** architectural, cinematic realism — **10**.
+
+# Layout
+
+Generous whitespace, strong grid, **one** focal column on mobile; avoid template stacking.
+
+# Hero (page-level)
+
+Cinematic visual, **clear** offer line (price/plan cues via copy — data from **01**), **primary** + **secondary** CTA (**06**), readable overlays.
+
+# Components
+
+Cards: **quiet** elevation; tasteful hover; typography does the work — not heavy skeuomorphism.
+
+# Motion
+
+Framer Motion: **subtle** entry; respect reduced motion; never block conversion.
+
+# Navigation
+
+Sticky, minimal, **fast**; persistent phone/WhatsApp affordances (**11**).
+
+# Mobile
+
+Thumb zones, **sticky** conversion bar (**06**), fast LCP hero (**13**).
+
+# Anti-patterns
+
+Glassmorphism clutter, **aggressive** popups, stock luxury clichés, illegible thin text on photos.
+
+# Governance
+
+If UI copy conflicts with **01** / **07**, **fix copy** before polishing pixels.

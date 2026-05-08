@@ -1,0 +1,49 @@
+---
+description: Image SEO, luxury visual quality, and perf — paths align with `13` public/images layout
+alwaysApply: true
+---
+
+# Mission
+
+**Luxury** visuals that load **fast**, rank in visual search, and reinforce entities (**Solana West**, **ORA**, **New Zayed**) without **keyword-stuffed** ALT spam.
+
+# Aesthetic bar
+
+- Architectural, editorial, calm premium; **no** cheap CGI or neon grading.
+- Composition: **breathing room** for headlines/CTAs on hero frames.
+
+# Formats & delivery
+
+- **`next/image`**; modern formats (WebP/AVIF); **lazy** below fold, **`priority`** hero only.
+- Responsive `sizes` for real breakpoints — avoid shipping desktop width to mobile.
+
+# Naming
+
+`kebab-case`, descriptive, no `IMG_9821`: e.g. `solana-west-new-zayed-villa-exterior.webp`
+
+# ALT text
+
+- Natural sentence; entity + role + setting when helpful.
+- Example tone: “Standalone villa street inside Solana West, New Zayed, by ORA Developers”
+- Empty ALT **only** for purely decorative dividers.
+
+# Captions & on-page context
+
+Use captions to reinforce **one** clear fact (product type, amenity, view) — not duplicate whole paragraphs.
+
+# OG & social crops
+
+- Premium, high-contrast **safe zone** for titles; consistent brand feel (**15** + **11**).
+- Export web-optimized; avoid multi‑MB PNGs.
+
+# Galleries
+
+Show: typologies, greenery/walkability, club/retail if applicable, masterplan legibility, lifestyle **tasteful** not stock‑shouty.
+
+# AI / entity reinforcement
+
+ALT and filenames should **help** models relate project ↔ location ↔ developer — aligned with **03** / **08**.
+
+# Folder structure
+
+Follow **`13`** `public/images/projects/solana-west/...` and sibling buckets; **don’t** invent parallel trees.

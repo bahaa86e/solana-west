@@ -1,0 +1,146 @@
+---
+description: Next.js App Router — stack, repo layout, SEO plumbing, performance, scalability (folder tree canonical here)
+alwaysApply: true
+---
+
+# Stack
+
+- **Next.js** (App Router) · **React** · **TypeScript** · **Tailwind CSS** · **Framer Motion** (light touch)
+
+Upgrade major versions deliberately; patterns below stay valid across minor bumps.
+
+# Architectural goals
+
+- **SEO-first** routing and metadata APIs
+- **Server Components by default**; Client only for interaction, motion, tracking bridges
+- **Centralized** copy / metadata / FAQ / schema payloads under `data/` (or CMS) — single maintenance path
+- **Scale** to many routes (projects, locales, property types, articles) without duplication
+
+# Repository layout (canonical — retire duplicate trees elsewhere)
+
+```
+app/
+components/
+data/
+hooks/
+lib/
+schemas/            # JSON-LD builders OR colocate with components; pick one pattern per repo
+seo/                # optional: sitemap, robots helpers, metadata factories
+public/
+styles/             # if needed beyond Tailwind
+```
+
+**App Router** focal tree:
+
+```
+app/
+├── layout.tsx
+├── page.tsx
+├── globals.css
+├── about/
+├── projects/
+│   └── [slug]/         # e.g. solana-west, other ORA projects
+├── properties/
+│   ├── villas/
+│   ├── townhouses/
+│   ├── apartments/
+│   └── twin-houses/
+├── payment-plan/
+├── prices/
+├── location/
+├── master-plan/
+├── faq/
+├── contact/
+├── blog/
+├── investment-guides/
+├── comparison-pages/
+├── privacy-policy/
+├── thank-you/
+```
+
+Dynamic examples: `/projects/solana-west`, `/projects/[slug]`, `/blog/[slug]`.
+
+# Component domains
+
+```
+components/
+├── layout/           # header, footer, sticky mobile, shell
+├── navigation/
+├── hero/
+├── sections/
+├── cards/
+├── forms/
+├── ui/
+├── faq/
+├── seo/              # e.g. JsonLdScript
+└── tracking/         # thin wrappers firing **12** events
+```
+
+Forms: `LeadForm`, `BrochureForm`, `ContactForm`, `SiteVisitForm` — shared validation + tracking hooks.
+
+# Metadata & discovery plumbing
+
+- Use **`metadata` API** / `generateMetadata` for titles, descriptions, OG, Twitter — details in **15**
+- **Canonical** + **hreflang** if multilingual later
+- **Sitemap** + **robots** generated; exclude **thank-you** and internal utility routes
+- **Schema** injection via shared helpers per **08**
+
+# Images & media
+
+- **`next/image`**; WebP/AVIF where appropriate; **priority** for LCP hero only
+- Full **image SEO** conventions: **10**; files in `public/images/...`
+
+`public/images/` buckets (extend as needed):
+
+```
+public/images/
+├── homepage/
+├── projects/
+│   └── solana-west/
+│       ├── hero/
+│       ├── gallery/
+│       ├── units/
+│       ├── interiors/
+│       ├── exteriors/
+│       ├── amenities/
+│       ├── masterplan/
+│       └── location/
+├── developers/
+├── amenities/
+├── blog/
+├── locations/
+└── masterplans/
+```
+
+File names: **kebab-case**, descriptive, `.webp` preferred.
+
+# Styling
+
+- Tailwind **utility-first**; avoid inline style sprawl; design tokens via Tailwind theme extension when repeating.
+
+# Motion
+
+- Framer Motion: **subtle** reveals; respect `prefers-reduced-motion`; never block interaction.
+
+# Performance checklist
+
+- Optimize **LCP** (hero image, font loading strategy)
+- Control **bundle** size; dynamic import heavy below-the-fold widgets
+- **INP**: minimize client JS on first paint
+- Core Web Vitals monitored in CI or periodic Lighthouse
+
+# Accessibility
+
+Semantic sections, focus states, **meaningful** heading order cooperating with **15** H1 rules, visible focus for keyboard users.
+
+# Data architecture
+
+- `data/projects/`, `metadata/`, `faq/`, `blog/` — typed models (TS) feeding pages + JSON-LD (**08**)
+
+# AI / crawl friendliness
+
+- Clean URL slugs (**15**), structured sections (**03**), entity-rich but honest copy (**02**, **04**)
+
+# Scalability
+
+Patterns should support **hundreds** of URLs: shared templates, composition over one-off pages, avoid forked metadata.

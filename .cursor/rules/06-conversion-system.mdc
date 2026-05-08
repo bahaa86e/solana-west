@@ -1,0 +1,54 @@
+---
+description: CRO — primary actions, placement, copy, forms (tracking specifics → 12; compliance → 07)
+alwaysApply: true
+---
+
+# Mission
+
+Convert **high-intent** property seekers through **obvious, premium, low-friction** paths: WhatsApp-first (market norm), **clear** calls, short forms, and **honest** CTAs — bounded by **07**.
+
+# Primary actions (priority order)
+
+1. **WhatsApp** (precomposed inquiry where possible — URL in **11**)
+2. **Phone**
+3. **Short lead form** (name + phone; email optional unless nurture needs it)
+4. **Brochure / deck request**
+5. **Site visit booking**
+6. **Payment plan / availability** requests
+
+# Visibility & layout
+
+- **Sticky mobile bar:** WhatsApp + Call + one primary “inquiry”
+- **Hero:** primary CTA + secondary (call or form) — **no** clutter; align with **05**
+- **Mid-page** after value and proof sections
+- **Before FAQ** and **footer** reinforcement
+
+# Copy style
+
+- Action verbs + outcome: “Get prices & payment options”, “Request availability”, “Book a site visit”
+- Avoid weak labels: “Learn more”, “Click here”, “Explore” as **sole** CTA
+
+**Overlap with Google Ads / trust:** prefer “Request prices”, “Get payment plan”, “Check availability”, “Book site visit” — consistent with **07**.
+
+# Forms
+
+- Minimum fields; **mobile-perfect** tap targets
+- Success: **thank-you** route + **single** conversion fire — implementation detail in **12** (duplicate firing forbidden there)
+
+# Trust layer (conversion-adjacent)
+
+ORA Developers Egypt, Naguib Sawiris where appropriate, **accurate** map and access context, realistic imagery — **05** / **10**.
+
+# Pricing display
+
+Surface **from price**, **down %**, **term length**, **unit types**, **delivery** from **01**. If showing examples, label as **illustrative** where needed; never **fabricate** inventory.
+
+# Psychology
+
+Emphasize **clarity** and **serious-buyer** facilitation over hype. Exclusivity: **tone**, not **false** scarcity.
+
+# Handoff to other rules
+
+- **Events, pixels, naming, thank-you indexation:** **12**
+- **Claims, scarcity, pricing ads alignment:** **07**
+- **Metadata for CTA landing queries:** **15**

@@ -1,0 +1,46 @@
+---
+description: Analytics, ads, and engagement events — measurement contract for CRO (privacy-conscious)
+alwaysApply: true
+---
+
+# Mission
+
+Measure **qualified** demand: WhatsApp, calls, forms, brochures, visits, scroll engagement — **without** wrecking performance (**13**) or **misrepresenting** user intent (**07**).
+
+# Stack IDs (authoritative)
+
+| Platform | ID |
+|----------|-----|
+| Google Ads | `AW-17085316447` |
+| Meta Pixel | `1150985977106859` |
+
+# Event taxonomy (prefer these names)
+
+`lead_submit` · `whatsapp_click` · `phone_call_click` · `brochure_request` · `site_visit_request` · `cta_click` (with `cta_location` / `cta_label` params when useful)
+
+Avoid random labels and **double firing** the same conversion.
+
+# Channel expectations
+
+- **Google Ads:** form submit, qualified lead, call **where supported**, WhatsApp outbound taps
+- **Meta:** at minimum `PageView`; funnel: `Contact`, `Lead`, `ViewContent` for key URLs / virtual tour / pricing views
+
+# Implementation rules
+
+- **WhatsApp / tel: links:** measure **deliberate** taps; support mobile + desktopWA patterns.
+- **Forms:** fire on **successful** server-accepted submit or post-redirect confirmation; **dedupe** client-side.
+- **Thank-you routes:** `noindex` (see **15**) + **one** conversion event source (not both form + thank-you unless architected).
+- **Scroll:** hero / 50% / 75% (or agreed thresholds) for **content** tuning, not vanity.
+
+# Performance & quality
+
+- Defer non-critical scripts; avoid long tasks that hurt **INP** / **LCP**.
+- No invisible or **auto**-triggered events.
+
+# Privacy
+
+- Respect regional norms; disclose tracking as required on-site; never **spoof** engagement.
+
+# Optimization loop
+
+Use events to validate: **CTA placement** (**06**), **hero** clarity (**05**), and **landing** ↔ ad alignment (**07**).

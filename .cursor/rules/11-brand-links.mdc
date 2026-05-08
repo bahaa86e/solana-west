@@ -1,0 +1,51 @@
+---
+description: Canonical brand strings, NAP, WhatsApp, and social URLs (single source for links)
+alwaysApply: true
+---
+
+# Mission
+
+One **authoritative** place for **naming**, **contact**, and **outbound URLs**. Other rules reference this file — do not fork WhatsApp or phone into disconnected variants.
+
+# Official naming
+
+- **Primary:** Solana West New Zayed
+- **Also valid:** Solana West by ORA Developers · Solana West ORA Egypt  
+- **Avoid:** random abbreviations, typos, fake “exclusive agent” language (**07**)
+
+# Entities (for copy discipline)
+
+- **Developer:** ORA Developers Egypt
+- **Chairman reference (when relevant):** Naguib Sawiris  
+- No false partnerships or exclusivity — **07**
+
+# Website (canonical)
+
+https://www.solanawestprices.com
+
+# NAP
+
+- **Phone:** +201208986606  
+- **Email:** solanawestprices@gmail.com
+
+# WhatsApp (default prefill; encode as needed in app)
+
+https://wa.me/201208986606?text=I%20want%20prices%20and%20payment%20plan%20for%20Solana%20West
+
+# Social (official)
+
+- **Facebook:** https://www.facebook.com/solanawestprices  
+- **Instagram:** https://www.instagram.com/solanawestprices  
+- **YouTube:** https://www.youtube.com/@solanawestprices  
+- **X:** https://x.com/solanawestprice  
+- **Snapchat:** https://www.snapchat.com/@solanawestprice  
+
+# UI placement
+
+- **Footer:** brand, NAP, social, privacy
+- **Header / sticky:** phone + WhatsApp + primary inquiry
+- **Channel tone:** luxury + investor-grade; alignment with **14** for campaigns
+
+# Consistency audit
+
+Any new template, metadata pack, or offline doc must **pull** these strings from here conceptually (update here first if links change).

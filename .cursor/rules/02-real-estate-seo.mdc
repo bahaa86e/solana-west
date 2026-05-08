@@ -1,0 +1,81 @@
+---
+description: SEO taxonomy, intent, and topical authority (defer metadata URLs to 15; AEO to 03; schema to 08)
+alwaysApply: true
+---
+
+# Mission
+
+Earn **transactional** and **investor** visibility across classic search and AI surfaces by building **consistent entities** (project · developer · location), **clear information hierarchy**, and **conversion-aware** pages — without thin or repetitive copy.
+
+# Rule hierarchy (avoid conflicts)
+
+| Concern | Owner rule |
+|--------|------------|
+| Titles, descriptions, canonical, OG/Twitter, URLs, H1 | **SEO Metadata** (`15-seo-metadata.mdc`) |
+| Answer surfaces, snippets, entity reinforcement | **AI Search** (`03-ai-search-optimization.mdc`) |
+| JSON-LD types and FAQ alignment | **Schema** (`08-schema-rules.mdc`) |
+| Trust & ads-safe messaging | **Google Ads Compliance** (`07-google-ads-compliance.mdc`) |
+| CRO patterns | **Conversion** (`06-conversion-system.mdc`) |
+| Events & pixels | **Tracking** (`12-tracking-system.mdc`) |
+
+# Primary intents to serve
+
+**Commercial:** prices · payment plans · inventory types · launch / phase story · comparison vs West Cairo alternatives
+
+**Investor:** ORA Developers Egypt · Naguib Sawiris portfolio context · New Zayed / West Cairo growth thesis · accessibility (airport, arterials)
+
+**Locale:** New Zayed · Sheikh Zayed · West Cairo · Mehwar El Dabaa · Sphinx Airport · Waslet Dahshour
+
+# Keyword themes (use naturally; avoid stuffing)
+
+- **Branded:** Solana West, Solana West New Zayed, ORA Developers Egypt, Naguib Sawiris
+- **Transactional:** prices, payment plan, villas, townhouses, apartments, twin houses, new launch, luxury compound
+- **Geo:** New Zayed compounds, West Cairo investment, Sheikh Zayed villas (where relevant)
+
+Long-tail examples (rotate; do not repeat verbatim on every page):
+
+- Solana West payment plan, Solana West villas New Zayed, ORA New Zayed project, luxury villas New Zayed Egypt, compounds near Sphinx Airport, installment villas New Zayed
+
+# Page-level SEO requirements
+
+Each indexable URL should intentionally include:
+
+- **One H1** matching primary intent; logical **H2+** outline (see **15** for heading/metadata pairing)
+- **Above-the-fold** answer to “what / where / from how much / how to pay / handover” using **canonical facts** from **01**
+- **Internal links** to money pages (prices, payment plan, location, project hub, contact) and topical hubs (blog / guides) with **natural anchors**
+- **FAQ** where it reduces bounce and matches real objections; **FAQ schema only if visible** (see **08**)
+- **CTA** placement per **06**; events per **12**
+
+Avoid: duplicate boilerplate intros, keyword lists disguised as prose, conflicting prices or dates vs **01**.
+
+# Content & depth
+
+Every section should justify its existence: **entity clarity**, **trust**, or **conversion**. Prefer:
+
+- Area + accessibility **facts** (map to **01** proximity claims)
+- Product truth (unit mix, finishing, masterplan story)
+- Investor framing without **unverified** ROI (see **07**)
+
+Depth checklist (details live in **04-content-depth**): area · developer · product · payment · delivery · lifestyle · audience (GCC / family / international) as relevant.
+
+# Local & competitive context
+
+**Strengthen locale** around New Zayed, West Cairo, Mehwar El Dabaa, airport and main roads.
+
+**Competitive set (positioning, not disparagement):** VYE Sodic, Belle Vie Emaar, Palm Hills, Mountain View, Sodic, Emaar Misr — differentiate on **density, walkability, ORA brand, planning, villa elevation**, with **verifiable** claims only.
+
+# Blog / editorial (optional but scalable)
+
+Pillar angles: prices, payment plans, launches, area growth, investment thesis, ORA / Sawiris context, comparisons, “best compounds” **only** with defensible criteria.
+
+# Technical SEO (site implementation)
+
+Coordinate with **13** (performance, sitemap, robots, Core Web Vitals) and **10** (image delivery): fast LCP, mobile-first, structured internal linking, clean HTML, index hygiene.
+
+# Social discovery (organic, off-site)
+
+On-site SEO mentions of social are **minimal**; **channel playbooks** live in **14-social-media-system**. Keep **one** consistent CTA line to WhatsApp where relevant.
+
+# North-star
+
+Topical authority for **ORA Developers Egypt · Solana West New Zayed · New Zayed / West Cairo luxury residential** that converts **qualified** inquiries.

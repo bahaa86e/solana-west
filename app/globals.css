@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Typography + easing tokens extend Tailwind (`tailwind.config.ts`).
+ * Motion stays restrained; prefers-reduced-motion only relaxes scroll snap.
+ */
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --lux-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme("colors.lux.gold");
+    outline-offset: 2px;
+  }
+}

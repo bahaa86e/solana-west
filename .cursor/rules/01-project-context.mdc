@@ -1,0 +1,35 @@
+---
+description: Solana West — canonical project facts (single source of truth for product data)
+alwaysApply: true
+---
+
+# Project identity
+
+- **Name:** Solana West New Zayed
+- **Developer:** ORA Developers Egypt
+- **Founder (public figure):** Naguib Sawiris
+- **Launch date:** 17 May
+- **Location:** New Zayed — Mehwar El Dabaa
+
+# Scale & positioning
+
+- **Land:** 316 acres (New Zayed)
+- **Neighboring comps (positioning):** VYE (Sodic), Belle Vie (Emaar)
+- **Roads / access:** Alexandria Desert Road, Middle Ring Road
+- **Proximity (marketing copy):** ~5 min Waslet Dahshour · ~10 min Sphinx Airport · ~15 min Mall of Arabia
+
+# Product
+
+- **Walkable** master plan; **low density**; wide greenery; **elevated** villas with open views
+- **Unit types:** Apartments, Townhouses, Twin Houses, Standalone Villas
+- **Finishing:** Fully finished · Core & shell
+
+# Commercial (keep aligned sitewide)
+
+- **Starting price:** 9.8M EGP
+- **Payment plan:** 5% down · installments up to 10 years
+- **Delivery:** 2027
+
+# Contract with other rules
+
+- **Brand naming, WhatsApp deep link, phone, email, site URL, social URLs:** canonical rule is **Brand & Links** (`11-brand-links.mdc`). Do not fork contact strings into copy-only files without updating that rule.

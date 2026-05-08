@@ -1,0 +1,53 @@
+---
+description: JSON-LD structured data — entity graph, rich results, alignment with visible content
+alwaysApply: true
+---
+
+# Mission
+
+Strengthen **machine understanding** of ORA · Solana West · New Zayed with **valid**, **non-duplicative** JSON-LD that **matches** visible copy and **01**.
+
+# Stack principles
+
+- **JSON-LD** preferred; **server-render** when possible.
+- **No hidden** FAQ / Review / Offer schema — must mirror on-page truth (**07**).
+- **One** coherent graph per page where practical; avoid conflicting `WebPage`/`Organization` descriptions across templates.
+- Keep payloads **lean**; lazy-load only if framework requires — performance in **13**.
+
+# Types (use when applicable)
+
+| Type | Typical use |
+|------|-------------|
+| `Organization` | ORA / site publisher; sitewide |
+| `WebSite` | Site + SearchAction if real site search exists |
+| `WebPage` | Page topic; link `@id` breadcrumbs |
+| `BreadcrumbList` | All indexable funnels |
+| `FAQPage` | FAQ modules with real Q&A only |
+| `RealEstateListing` / `Offer` | Inventory or project sales detail when data is accurate |
+| `Article` | Blog / guides |
+| `LocalBusiness` | If NAP and service area are consistent with **11** |
+| `ContactPage` | Dedicated contact |
+| `ImageObject` | Hero / OG-critical images when worth annotating |
+
+# Field discipline
+
+- **Product facts** (price bands, delivery, plan) must follow **01** and page body.
+- **FAQ** answers: same text as UI; include numbers when the question expects them.
+
+# Entity linking
+
+Reuse stable `@id` URLs for **Organization**, **WebSite**, and key **WebPage** nodes across routes so **AI** and crawlers connect entities.
+
+# Local / geo
+
+Reference New Zayed · West Cairo · Mehwar El Dabaa where **LocalBusiness** or `areaServed` makes sense — stay consistent with **01** / location copy.
+
+# Coordination
+
+- **Snippets & extractable answers:** **03**
+- **Meta / URL clarity:** **15**
+- **Broker SEO taxonomy:** **02**
+
+# Quality bar
+
+Valid schema, **no** fake ratings, **no** keyword stuffing in `description` fields; if unsure, **omit** optional fields.
