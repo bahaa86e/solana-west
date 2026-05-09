@@ -9,21 +9,42 @@ import { PaymentPlanSection } from "@/components/home/payment-plan-section";
 import { ProjectOverviewSection } from "@/components/home/project-overview-section";
 import { PropertyTypesSection } from "@/components/home/property-types-section";
 import { TrustSection } from "@/components/home/trust-section";
+import { LuxuryReveal } from "@/components/motion/luxury-reveal";
 
 export function HomeSections() {
   return (
     <>
       <HeroSection />
-      <TrustSection />
-      <ProjectOverviewSection />
-      <PropertyTypesSection />
-      <PaymentPlanSection />
-      <LocationAdvantagesSection />
-      <InvestmentSection />
-      <AmenitiesSection />
-      <MasterplanSection />
-      <FaqPreviewSection />
-      <FinalCtaSection />
+      <LuxuryReveal>
+        <TrustSection />
+      </LuxuryReveal>
+      <LuxuryReveal>
+        <ProjectOverviewSection />
+      </LuxuryReveal>
+      <LuxuryReveal>
+        <PropertyTypesSection />
+      </LuxuryReveal>
+      <LuxuryReveal>
+        <PaymentPlanSection />
+      </LuxuryReveal>
+      <LuxuryReveal>
+        <LocationAdvantagesSection />
+      </LuxuryReveal>
+      <LuxuryReveal>
+        <InvestmentSection />
+      </LuxuryReveal>
+      <LuxuryReveal>
+        <AmenitiesSection />
+      </LuxuryReveal>
+      <LuxuryReveal>
+        <MasterplanSection />
+      </LuxuryReveal>
+      <LuxuryReveal>
+        <FaqPreviewSection />
+      </LuxuryReveal>
+      <LuxuryReveal>
+        <FinalCtaSection />
+      </LuxuryReveal>
     </>
   );
 }

@@ -34,7 +34,7 @@ export function ProjectOverviewSection({ page }: { page: ResolvedProjectPage }) 
             </div>
           </div>
         </div>
-        <figure className="relative aspect-[4/3] w-full overflow-hidden bg-lux-paper shadow-lux-soft ring-1 ring-lux-ink/[0.065] lg:col-span-7">
+        <figure className="relative aspect-[4/3] w-full overflow-hidden bg-lux-paper shadow-lux-image ring-1 ring-lux-ink/[0.07] lg:col-span-7">
           <LuxuryFillImage
             src={page.media.overviewFigure.src}
             alt={page.media.overviewFigure.alt}

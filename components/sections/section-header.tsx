@@ -29,15 +29,15 @@ export function SectionHeader({
   const alignClass =
     align === "center" ? "items-center text-center" : "items-start text-left";
   const eyebrowMuted =
-    tone === "onDark" ? "text-lux-paper/50" : "text-lux-ink/46";
+    tone === "onDark" ? "text-lux-paper/54" : "text-lux-ink/48";
   const titleMuted = tone === "onDark" ? "text-lux-paper" : "text-lux-ink";
   const kickerMuted =
-    tone === "onDark" ? "text-lux-paper/72" : "text-lux-ink/62";
+    tone === "onDark" ? "text-lux-paper/76" : "text-lux-ink/66";
 
   return (
     <header
       className={cn(
-        "flex max-w-readable flex-col gap-5 md:gap-6 lg:gap-7",
+        "flex max-w-readable flex-col gap-6 md:gap-7 lg:gap-8",
         alignClass,
         className,
       )}
@@ -47,36 +47,39 @@ export function SectionHeader({
       ) : null}
       <div
         className={cn(
-          "flex flex-col gap-6 md:gap-7",
+          "flex flex-col gap-6 md:gap-7 lg:gap-8",
           align === "center" ? "items-center" : "items-start",
         )}
       >
         <div
           className={cn(
-            "h-px bg-lux-ink/[0.07]",
-            align === "center" ? "w-6 md:w-7" : "w-5 md:w-6",
+            "h-px bg-gradient-to-r",
+            tone === "onDark"
+              ? "from-lux-paper/42 via-lux-paper/16 to-transparent"
+              : "from-lux-ink/16 via-lux-gold/25 to-transparent",
+            align === "center" ? "w-9 md:w-10" : "w-6 md:w-7 lg:w-8",
           )}
           aria-hidden
         />
         <TitleTag
           id={id}
           className={cn(
-            "max-w-[26ch] font-display text-display-lg text-balance md:max-w-[32ch]",
+            "max-w-[28ch] font-display text-display-lg text-balance md:max-w-[34ch]",
             titleMuted,
           )}
         >
           {title}
         </TitleTag>
-        {kicker ? (
+        {kicker ?
           <div
             className={cn(
-              "max-w-readable text-[0.9375rem] font-normal leading-[1.72] md:text-base",
+              "max-w-readable lux-body",
               kickerMuted,
             )}
           >
             {kicker}
           </div>
-        ) : null}
+        : null}
       </div>
     </header>
   );

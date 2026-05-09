@@ -29,8 +29,34 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  ::selection {
+    background-color: rgb(196 165 116 / 0.3);
+    color: theme("colors.lux.ink");
+  }
+
   :focus-visible {
     outline: 2px solid theme("colors.lux.gold");
     outline-offset: 2px;
+  }
+}
+
+/**
+ * Site canvas: warm radial mist + soft side light to reduce flat “blank paper” feel.
+ * Keeps performance-friendly static gradients (no animation).
+ */
+.lux-page-canvas {
+  background-color: theme("colors.lux.paper");
+  background-image:
+    radial-gradient(ellipse 118% 74% at 50% -14%, rgb(196 165 116 / 0.1), transparent 52%),
+    radial-gradient(ellipse 70% 48% at 100% 22%, rgb(232 226 217 / 0.38), transparent 48%),
+    radial-gradient(ellipse 65% 44% at 0% 62%, rgb(243 239 232 / 0.55), transparent 42%),
+    linear-gradient(to bottom, rgb(237 230 220 / 0.36) 0%, transparent 40%);
+}
+
+@layer utilities {
+  /** Long-form editorial paragraphs — use on section copy for consistent rhythm */
+  .lux-body {
+    @apply text-[0.96875rem] font-normal tracking-[0.009em] text-lux-ink/[0.79] md:text-[1.015625rem];
+    line-height: 1.76;
   }
 }

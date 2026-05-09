@@ -97,7 +97,7 @@ export function ContactChannelsAndFormSection({ model }: { model: ContactPageMod
           <p className="mt-8 max-w-md text-[0.9375rem] font-normal leading-[1.72] tracking-[0.014em] text-lux-ink/62 md:text-base">
             {formColumn.intro}
           </p>
-          <div className="mt-12 rounded-sm border border-lux-ink/[0.07] bg-lux-paper/70 p-8 shadow-[inset_0_1px_0_rgba(250,248,245,0.85)] md:p-11">
+          <div className="mt-12 rounded-[11px] border border-lux-ink/[0.065] bg-gradient-to-br from-white/92 via-lux-paper/96 to-[#e8e0d6]/90 p-[clamp(1.75rem,4vw,2.75rem)] shadow-[0_34px_86px_-44px_rgba(10,10,10,0.22),inset_0_1px_0_rgba(255,255,255,0.55)] backdrop-blur-[18px] md:p-11">
             <LeadInquiryForm />
           </div>
           <p className="mt-10">

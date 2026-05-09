@@ -31,7 +31,7 @@ export function ProjectAmenitiesSection({ page }: { page: ResolvedProjectPage })
               className={cn(i === 1 && "lg:-translate-y-3 xl:-translate-y-4", i === 2 && "lg:translate-y-4")}
             >
               <article className="flex flex-col">
-                <div className="group relative aspect-[5/3] overflow-hidden border border-lux-ink/[0.058] bg-lux-paper shadow-[inset_0_1px_0_rgba(250,248,245,0.75)] transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/14 hover:shadow-lux-card">
+                <div className="group relative aspect-[5/3] overflow-hidden border border-lux-ink/[0.065] bg-lux-paper shadow-[0_16px_42px_-34px_rgba(10,10,10,0.12),inset_0_1px_0_rgba(250,248,245,0.78)] transition-[border-color,box-shadow,transform] duration-480 ease-luxury motion-reduce:transition-none motion-reduce:group-hover:translate-y-0 hover:-translate-y-[4px] hover:border-lux-ink/14 hover:shadow-lux-card">
                   <LuxuryFillImage
                     src={asset.src}
                     alt={asset.alt}

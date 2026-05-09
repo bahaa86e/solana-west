@@ -1,83 +1,224 @@
-import { Container } from "@/components/ui/container";
+"use client";
+
+import { motion, useReducedMotion } from "framer-motion";
+
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
+import { Container } from "@/components/ui/container";
+import { CtaButton } from "@/components/ui/cta-button";
 import { homeSections } from "@/data/seo/home";
 import { solanaWestMedia } from "@/data/solana-west-media";
+import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
 
 const { hero } = homeSections;
 
-const proseBody =
-  "text-[0.9375rem] font-normal tracking-[0.01em] text-lux-ink/58 md:text-base";
+const easeLux = [0.22, 1, 0.36, 1] as const;
 
 export function HeroSection() {
+  const reduceMotion = useReducedMotion();
+
+  const kenBurns = reduceMotion ?
+    {}
+  : {
+      animate: { scale: [1, 1.038] },
+      transition: {
+        duration: 26,
+        repeat: Infinity,
+        repeatType: "reverse" as const,
+        ease: "easeInOut",
+      },
+    };
+
+  const frameDrift = reduceMotion ?
+    {}
+  : {
+      animate: { y: [0, -8, 0] },
+      transition: { duration: 10, repeat: Infinity, ease: "easeInOut" },
+    };
+
+  const mistPulse = reduceMotion ?
+    {}
+  : {
+      animate: { opacity: [0.2, 0.32, 0.2] },
+      transition: { duration: 12, repeat: Infinity, ease: "easeInOut" },
+    };
+
+  const fadeUp = reduceMotion ?
+    { hidden: { opacity: 1, y: 0 }, show: { opacity: 1, y: 0 } }
+  : {
+      hidden: { opacity: 0, y: 20 },
+      show: { opacity: 1, y: 0, transition: { duration: 0.78, ease: easeLux } },
+    };
+
+  const fadeUpTight = reduceMotion ?
+    { hidden: { opacity: 1, y: 0 }, show: { opacity: 1, y: 0 } }
+  : {
+      hidden: { opacity: 0, y: 14 },
+      show: { opacity: 1, y: 0, transition: { duration: 0.72, ease: easeLux } },
+    };
+
   return (
     <section
       id="hero"
       aria-labelledby="hero-heading"
-      className="relative bg-lux-paper shadow-[inset_0_-1px_0_rgba(10,10,10,0.06)]"
+      className={cn(
+        "relative isolate min-h-[100dvh]",
+        "supports-[height:100svh]:min-h-[100svh]",
+        "bg-lux-ink shadow-[inset_0_-1px_0_rgba(250,248,245,0.06)]",
+      )}
     >
-      <Container
-        as="div"
-        size="wide"
-        className="grid grid-cols-1 gap-0 lg:grid-cols-12 lg:items-stretch xl:gap-x-4"
-      >
-        <div
-          className={cn(
-            "flex flex-col justify-end lg:justify-center lg:col-span-[5] xl:col-span-5",
-            "pb-[clamp(3.75rem,10vw,6.75rem)] pt-[clamp(6.75rem,16vw,8.75rem)]",
-            "md:pb-[clamp(4.25rem,9vw,7rem)] md:pt-[clamp(7rem,13vw,8.75rem)]",
-          )}
-        >
-          <div className="max-w-lg xl:max-w-xl">
-            <p className="font-sans uppercase text-micro tracking-[0.18em] text-lux-ink/38">
-              {hero.locationEyebrow}
-            </p>
-
-            <h1
-              id="hero-heading"
-              className="mt-7 font-display text-display-xl leading-[1.05] tracking-[-0.02em] text-balance text-lux-ink md:mt-[1.875rem]"
-            >
-              {hero.h1}
-            </h1>
-
-            <p
-              className={cn(
-                "mt-[clamp(2rem,4.5vw,2.75rem)] max-w-[22rem] leading-[1.76] md:max-w-md",
-                "text-[0.96625rem] text-lux-ink/74 md:text-[1.02625rem]",
-                "tracking-[0.008em]",
-              )}
-            >
-              {hero.communityLine}
-            </p>
-
-            <p
-              className={cn(
-                "mt-8 max-w-[21rem] border-l border-lux-gold/28 pl-5 leading-[1.72] md:mt-9 md:max-w-[26rem]",
-                proseBody,
-                "text-lux-ink/52",
-              )}
-            >
-              {hero.seoSupportLine}
-            </p>
-          </div>
-        </div>
-
-        <div
-          className={cn(
-            "relative min-h-[min(54vh,30rem)] border-t border-lux-ink/[0.06] lg:col-span-7 lg:min-h-[min(100dvh-5.5rem,52rem)] lg:border-l lg:border-t-0",
-            "bg-lux-mist/50 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)] xl:col-span-7",
-          )}
-        >
+      <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden>
+        <motion.div className={cn("absolute inset-[-4%]", !reduceMotion && "will-change-transform")} {...kenBurns}>
           <LuxuryFillImage
             src={solanaWestMedia.hero.src}
             alt={solanaWestMedia.hero.alt}
-            sizes="(max-width: 1023px) 100vw, 52vw"
+            sizes="100vw"
             priority
-            quality={88}
-            imgClassName="object-cover object-[center_38%]"
+            quality={86}
+            filmGrade={false}
+            imgClassName="object-cover object-[center_42%]"
           />
-          <div className="pointer-events-none absolute inset-[10%] z-[1] border border-lux-ink/[0.07] xl:inset-[12%]" aria-hidden />
-        </div>
+        </motion.div>
+
+        {/* Light wash — cinematic depth without a second decode */}
+        <motion.div
+          className={cn(
+            "pointer-events-none absolute inset-0 z-[3] rotate-[-0.75deg]",
+            reduceMotion && "opacity-[0.26]",
+          )}
+          style={{
+            background:
+              "linear-gradient(132deg, rgba(250,248,245,0.16) 0%, transparent 45%, transparent 72%, rgba(196,165,116,0.06) 100%)",
+          }}
+          {...(reduceMotion ? {} : mistPulse)}
+          aria-hidden
+        />
+
+        <div className="pointer-events-none absolute inset-0 z-[4] bg-gradient-to-b from-lux-ink/58 via-lux-ink/12 to-transparent" />
+        <div className="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-t from-lux-ink/90 via-lux-ink/46 to-transparent" />
+        <div className="pointer-events-none absolute inset-0 z-[6] bg-gradient-to-r from-lux-ink/72 via-lux-ink/24 to-transparent max-lg:bg-gradient-to-t max-lg:from-lux-ink/94 max-lg:via-lux-ink/62 max-lg:to-lux-ink/15" />
+
+        <div
+          className="pointer-events-none absolute inset-0 z-[7] opacity-45 mix-blend-soft-light bg-[radial-gradient(ellipse_92%_65%_at_50%_16%,rgba(250,248,245,0.26)_0%,transparent_62%)]"
+          aria-hidden
+        />
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 z-[8] h-[42%] bg-gradient-to-t from-lux-paper/[0.08] via-transparent to-transparent"
+          aria-hidden
+        />
+
+        <motion.div
+          className={cn(
+            "pointer-events-none absolute inset-[5%] z-[9] rounded-sm border border-lux-paper/[0.14] sm:inset-[6%] lg:inset-[7%]",
+            !reduceMotion && "will-change-transform",
+          )}
+          initial={reduceMotion ? false : { opacity: 0 }}
+          animate={reduceMotion ? {} : { opacity: 1, transition: { delay: 0.35, duration: 1, ease: easeLux } }}
+          {...(!reduceMotion ? frameDrift : {})}
+          aria-hidden
+        />
+
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[10] h-px bg-gradient-to-r from-transparent via-lux-gold/28 to-transparent opacity-75" aria-hidden />
+      </div>
+
+      <Container
+        as="div"
+        size="wide"
+        className={cn(
+          "relative z-20 flex flex-col",
+          "min-h-[100dvh]",
+          "supports-[height:100svh]:min-h-[100svh]",
+          "pt-[clamp(5.65rem,calc(env(safe-area-inset-top,0px)+4.75rem),7rem)]",
+          "pb-[max(clamp(2.75rem,9vw,5.75rem),env(safe-area-inset-bottom,0px))]",
+        )}
+      >
+        <motion.div
+          className="mt-auto flex w-full flex-col lg:max-w-[min(40.5rem,92vw)]"
+          initial="hidden"
+          animate="show"
+          variants={{
+            hidden: {},
+            show: {
+              transition: reduceMotion ? { duration: 0 } : { staggerChildren: 0.1, delayChildren: 0.06 },
+            },
+          }}
+        >
+          <motion.p
+            variants={fadeUpTight}
+            className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.32em] text-lux-paper/48 md:text-[0.7125rem] md:tracking-[0.34em]"
+          >
+            {hero.locationEyebrow}
+          </motion.p>
+
+          <motion.div variants={fadeUp} className="mt-9 md:mt-10">
+            <span className="mb-8 block h-px max-w-[2.85rem] origin-left bg-gradient-to-r from-lux-gold/48 to-transparent" aria-hidden />
+
+            <h1
+              id="hero-heading"
+              className="font-display text-[clamp(2.1875rem,6.4vw,4.0625rem)] font-medium leading-[1.05] tracking-[-0.03em] text-balance text-lux-paper [text-shadow:0_28px_70px_rgba(0,0,0,0.42)] md:leading-[1.04]"
+            >
+              {hero.h1}
+            </h1>
+          </motion.div>
+
+          <motion.div variants={fadeUp} className="mt-[clamp(1.75rem,4.2vw,2.625rem)] max-w-[32rem]">
+            <p className="text-[0.97875rem] font-normal leading-[1.76] tracking-[0.015em] text-lux-paper/78 md:text-[1.05875rem] md:leading-[1.74]">
+              {hero.communityLine}
+            </p>
+
+            <p className="mt-7 border-l border-lux-paper/[0.22] pl-5 text-[0.9175rem] font-normal leading-[1.74] tracking-[0.024em] text-lux-paper/58 md:mt-[1.85rem] md:max-w-[30rem] md:text-[0.9575rem] md:tracking-[0.028em]">
+              {hero.seoSupportLine}
+            </p>
+          </motion.div>
+
+          <motion.div
+            variants={fadeUpTight}
+            className="mt-[clamp(2.75rem,6.5vw,4rem)] flex w-full flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center"
+          >
+            <CtaButton
+              href={siteConfig.whatsAppUrl}
+              external
+              variant="inverse"
+              size="lg"
+              className={cn(
+                "w-full px-14 text-[0.9375rem] tracking-[0.065em] sm:w-auto sm:min-w-[14.75rem]",
+                "shadow-[0_26px_60px_-32px_rgba(0,0,0,0.55)]",
+                "backdrop-blur-[2px]",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lux-gold focus-visible:ring-offset-4 focus-visible:ring-offset-transparent",
+              )}
+              data-track="whatsapp_click"
+              data-track-placement="home_cinematic_whatsapp"
+            >
+              WhatsApp concierge
+            </CtaButton>
+            <CtaButton
+              href="/prices"
+              variant="ghost"
+              size="lg"
+              className={cn(
+                "w-full border border-lux-paper/24 bg-white/[0.05] px-10 text-[0.9175rem] tracking-[0.06em]",
+                "text-lux-paper/92 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]",
+                "hover:border-lux-paper/34 hover:bg-white/[0.1] hover:text-lux-paper",
+                "backdrop-blur-md",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lux-gold focus-visible:ring-offset-4 focus-visible:ring-offset-transparent",
+                "sm:w-auto sm:flex-initial",
+              )}
+              data-track="cta_click"
+              data-track-placement="home_cinematic_prices"
+            >
+              Request pricing posture
+            </CtaButton>
+          </motion.div>
+
+          <motion.div
+            className="relative mt-[clamp(2.75rem,7vw,4.75rem)] flex items-center gap-4 text-[10px] font-semibold uppercase tracking-[0.3em] text-lux-paper/26"
+            variants={fadeUpTight}
+            aria-hidden
+          >
+            <span className="h-px w-8 bg-gradient-to-r from-transparent to-lux-paper/[0.36]" />
+            <span>Briefings below</span>
+          </motion.div>
+        </motion.div>
       </Container>
     </section>
   );

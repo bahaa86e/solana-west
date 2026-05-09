@@ -22,20 +22,21 @@ const config: Config = {
       },
       fontSize: {
         "display-xl": [
-          "clamp(2.375rem, 4.9vw + 1rem, 3.875rem)",
-          { lineHeight: "1.04", letterSpacing: "-0.022em", fontWeight: "500" },
+          "clamp(2.4375rem, 5.2vw + 0.9rem, 4rem)",
+          { lineHeight: "1.035", letterSpacing: "-0.023em", fontWeight: "500" },
         ],
         "display-lg": [
-          "clamp(1.6875rem, 2.9vw + 0.85rem, 2.6875rem)",
-          { lineHeight: "1.12", letterSpacing: "-0.018em", fontWeight: "500" },
+          "clamp(1.75rem, 3vw + 0.8rem, 2.8125rem)",
+          { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "500" },
         ],
         micro: ["0.6875rem", { lineHeight: "1.4", letterSpacing: "0.28em", fontWeight: "600" }],
-        "body-lg": ["1.125rem", { lineHeight: "1.72" }],
+        "body-lg": ["1.125rem", { lineHeight: "1.74", letterSpacing: "0.008em" }],
       },
       spacing: {
         section: "clamp(3rem, 8vw, 6rem)",
         "section-tight": "clamp(3.25rem, 9vw, 6.5rem)",
-        "section-xl": "clamp(4rem, 12vw, 8.75rem)",
+        "section-xl": "clamp(3.875rem, 11vw, 8.5rem)",
+        "section-block": "clamp(2.5rem, 5.5vw, 4rem)",
         gutter: "clamp(1.125rem, 4vw, 2rem)",
         "safe-bottom": "env(safe-area-inset-bottom, 0px)",
       },
@@ -47,9 +48,15 @@ const config: Config = {
         screen: "100dvh",
       },
       boxShadow: {
-        "lux-soft": "0 32px 80px -40px rgba(10,10,10,0.22)",
-        "lux-card": "0 20px 50px -32px rgba(10,10,10,0.16)",
-        "lux-line": "inset 0 1px 0 rgba(250,248,245,0.65)",
+        "lux-soft":
+          "0 36px 90px -44px rgba(10,10,10,0.26), inset 0 1px 0 rgba(250,248,245,0.38)",
+        "lux-card":
+          "0 24px 56px -36px rgba(10,10,10,0.2), inset 0 1px 0 rgba(250,248,245,0.72)",
+        "lux-line": "inset 0 1px 0 rgba(250,248,245,0.68)",
+        "lux-depth":
+          "0 1px 2px -1px rgba(10,10,10,0.05), 0 16px 40px -28px rgba(10,10,10,0.14)",
+        "lux-image":
+          "0 32px 78px -40px rgba(10,10,10,0.3), inset 0 1px 0 rgba(250,248,245,0.28)",
       },
       transitionTimingFunction: {
         luxury: "cubic-bezier(0.22, 1, 0.36, 1)",

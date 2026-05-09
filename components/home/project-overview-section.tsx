@@ -21,8 +21,8 @@ export function ProjectOverviewSection() {
           className="lg:col-span-5 lg:flex lg:justify-end"
           aria-hidden
         >
-          <div className="hidden h-px w-full max-w-md bg-lux-ink/[0.08] lg:mt-28 lg:block xl:mt-32" />
-          <div className="mt-12 h-px w-full max-w-md bg-lux-ink/[0.07] lg:hidden" />
+          <div className="hidden h-px w-full max-w-md bg-gradient-to-r from-transparent via-lux-ink/12 to-transparent lg:mt-28 lg:block xl:mt-32" />
+          <div className="mt-12 h-px w-full max-w-md bg-gradient-to-r from-lux-ink/6 via-lux-ink/12 to-transparent lg:hidden" />
         </div>
       </div>
     </SectionShell>

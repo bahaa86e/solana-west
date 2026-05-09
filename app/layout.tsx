@@ -54,7 +54,7 @@ export default function RootLayout({
       className={`${fontDisplay.variable} ${fontSans.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-lux-paper font-sans text-body-lg text-lux-ink">
+      <body className="min-h-screen bg-lux-paper font-sans text-body-lg text-lux-ink/[0.93]">
         <JsonLd data={graph} />
         <AnalyticsScripts />
         <SiteShell>{children}</SiteShell>

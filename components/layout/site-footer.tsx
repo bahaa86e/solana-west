@@ -19,7 +19,7 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto border-t border-lux-sand bg-lux-paper">
+    <footer className="relative z-[2] mt-auto border-t border-white/35 bg-gradient-to-b from-lux-paper/95 to-[#eee8df]/90 shadow-[0_-24px_56px_-42px_rgba(10,10,10,0.14)] backdrop-blur-[5px] supports-[backdrop-filter]:from-lux-paper/88 supports-[backdrop-filter]:to-[#ede6dd]/85">
       <Container as="div" className="py-section xl:pb-[clamp(4rem,10vw,6.5rem)]">
         <div className="flex flex-col gap-14 xl:gap-16">
           <div className="grid gap-14 lg:grid-cols-12 lg:gap-x-10 xl:gap-x-14">

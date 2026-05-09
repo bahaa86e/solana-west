@@ -18,7 +18,7 @@ export function SiteShell({ children, className }: SiteShellProps) {
     <AnalyticsInteractionLayer>
       <div
         className={cn(
-          "flex min-h-screen flex-col bg-lux-paper text-lux-ink antialiased",
+          "lux-page-canvas flex min-h-screen flex-col text-lux-ink antialiased",
           className,
         )}
       >

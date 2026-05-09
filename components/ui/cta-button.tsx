@@ -5,19 +5,19 @@ import { cn } from "@/lib/utils";
 
 const variants = {
   primary:
-    "border border-lux-ink bg-lux-ink text-lux-paper shadow-[0_1px_0_rgba(250,248,245,0.08)] hover:border-lux-ink hover:bg-lux-ink/92 hover:shadow-[0_20px_50px_-32px_rgba(10,10,10,0.22)] active:translate-y-px active:shadow-none focus-visible:ring-lux-gold",
+    "border border-lux-ink bg-lux-ink text-lux-paper shadow-[0_14px_42px_-26px_rgba(10,10,10,0.45),0_1px_0_rgba(250,248,245,0.1)_inset] hover:border-lux-ink hover:bg-lux-ink/[0.94] hover:shadow-[0_22px_56px_-34px_rgba(10,10,10,0.38)] motion-reduce:hover:shadow-[0_14px_42px_-26px_rgba(10,10,10,0.45)] active:translate-y-px active:shadow-none focus-visible:ring-lux-gold",
   secondary:
-    "border border-lux-ink/18 bg-transparent text-lux-ink hover:border-lux-ink/32 hover:bg-lux-ink/[0.02] hover:shadow-[0_16px_48px_-40px_rgba(10,10,10,0.12)] active:translate-y-px focus-visible:ring-lux-gold",
+    "border border-lux-ink/22 bg-transparent text-lux-ink shadow-[0_1px_0_rgba(250,248,245,0.4)_inset] hover:border-lux-ink/36 hover:bg-lux-ink/[0.025] hover:shadow-[0_18px_48px_-38px_rgba(10,10,10,0.16)] motion-reduce:hover:shadow-[0_1px_0_rgba(250,248,245,0.4)_inset] active:translate-y-px focus-visible:ring-lux-gold",
   ghost:
-    "border border-transparent bg-transparent text-lux-ink hover:border-lux-ink/[0.08] hover:bg-lux-ink/[0.03] active:translate-y-px focus-visible:ring-lux-gold",
+    "border border-transparent bg-transparent text-lux-ink hover:border-lux-ink/[0.1] hover:bg-lux-ink/[0.035] active:translate-y-px focus-visible:ring-lux-gold",
   inverse:
-    "border border-white/22 bg-white/[0.08] text-lux-paper shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] hover:border-white/32 hover:bg-white/[0.14] hover:shadow-[0_28px_60px_-40px_rgba(0,0,0,0.45)] active:translate-y-px focus-visible:ring-lux-gold",
+    "border border-white/28 bg-white/[0.1] text-lux-paper shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_16px_42px_-34px_rgba(0,0,0,0.45)] hover:border-white/38 hover:bg-white/[0.17] hover:shadow-[0_22px_54px_-34px_rgba(0,0,0,0.5)] motion-reduce:hover:shadow-[0_16px_42px_-34px_rgba(0,0,0,0.45)] active:translate-y-px focus-visible:ring-lux-gold",
 } as const;
 
 const sizes = {
-  sm: "min-h-[2.625rem] px-[1.125rem] text-[13px]",
-  md: "min-h-11 px-5 py-2 text-[13.5px]",
-  lg: "min-h-12 px-8 py-3 text-[15px] tracking-[0.01em]",
+  sm: "min-h-[2.75rem] px-[1.2rem] text-[13px] font-medium",
+  md: "min-h-[2.875rem] px-5 py-2 text-[13.5px] font-medium",
+  lg: "min-h-[3rem] px-8 py-3 text-[15px] font-semibold tracking-[0.015em]",
 } as const;
 
 export type CtaVariant = keyof typeof variants;
@@ -45,7 +45,7 @@ type CtaAsButton = Common &
 export type CtaButtonProps = CtaAsLink | CtaAsButton;
 
 const baseUi =
-  "inline-flex cursor-pointer items-center justify-center rounded-[3px] font-medium tracking-[0.01em] transition-[color,background-color,border-color,transform,box-shadow] duration-400 ease-luxury focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-lux-paper disabled:pointer-events-none disabled:opacity-45";
+  "inline-flex cursor-pointer items-center justify-center rounded-[5px] tracking-[0.01em] transition-[color,background-color,border-color,transform,box-shadow] duration-400 ease-luxury motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-lux-paper disabled:pointer-events-none disabled:opacity-45";
 
 export function CtaButton(props: CtaButtonProps) {
   const { children, className, variant = "primary", size = "md" } = props;

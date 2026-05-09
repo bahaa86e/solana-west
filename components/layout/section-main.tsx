@@ -11,8 +11,8 @@ type SectionMainProps = {
  */
 export function SectionMain({ children }: SectionMainProps) {
   return (
-    <main id="main-content" className="flex-1 pt-section-tight">
-      <Container as="div" className="pb-section">
+    <main id="main-content" className="relative flex-1 pt-section-tight">
+      <Container as="div" className="pb-section-xl">
         {children}
       </Container>
     </main>

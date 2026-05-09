@@ -13,16 +13,16 @@ import { cn } from "@/lib/utils";
 
 const initialLeadState: LeadFormState = { ok: false };
 
-const fieldWrap = "flex flex-col gap-2.5";
+const fieldWrap = "flex flex-col gap-3";
 
 const labelClass =
-  "text-[11px] font-medium uppercase tracking-[0.22em] text-lux-ink/46";
+  "text-[10.75px] font-semibold uppercase tracking-[0.24em] text-lux-ink/48";
 
 const inputClass = cn(
-  "w-full rounded-[3px] border border-lux-ink/[0.1] bg-lux-paper/80 px-4 py-[0.95rem]",
-  "text-[0.9375rem] font-normal tracking-[0.01em] text-lux-ink shadow-[inset_0_1px_0_rgba(250,248,245,0.65)]",
-  "transition-[border-color,box-shadow] duration-480 ease-luxury",
-  "placeholder:text-lux-ink/38 focus:border-lux-ink/[0.2] focus:outline-none focus:ring-1 focus:ring-lux-gold/25",
+  "w-full rounded-[6px] border border-lux-ink/[0.09] bg-gradient-to-b from-white/90 to-lux-paper/95 px-[1.15rem] py-[1.02rem]",
+  "text-[0.953125rem] font-normal tracking-[0.012em] text-lux-ink shadow-[inset_0_1px_0_rgba(250,248,245,0.88),0_14px_40px_-38px_rgba(10,10,10,0.1)] backdrop-blur-sm",
+  "transition-[border-color,box-shadow,background-color] duration-480 ease-luxury motion-reduce:transition-none",
+  "placeholder:text-lux-ink/36 focus:border-lux-gold/35 focus:bg-lux-paper focus:outline-none focus:ring-2 focus:ring-lux-gold/30",
 );
 
 const selectClass = cn(inputClass, "cursor-pointer");
@@ -50,7 +50,7 @@ export function LeadInquiryForm() {
   const [state, formAction] = useFormState(submitLeadInquiry, initialLeadState);
 
   return (
-    <form action={formAction} aria-label="Enquiry form" className="max-w-md space-y-9">
+    <form action={formAction} aria-label="Enquiry form" className="max-w-md space-y-10">
       <input type="hidden" name="page_pathname" value={pathname} readOnly aria-hidden />
 
       <input type="hidden" name="website_domain_client" value={clientContext.domain} readOnly aria-hidden />
