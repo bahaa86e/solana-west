@@ -18,31 +18,74 @@ const config: Config = {
       },
       fontFamily: {
         display: ["var(--font-display)", "ui-serif", "Georgia", "serif"],
-        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        sans: ["var(--font-sans)", "system-ui", "Segoe UI", "sans-serif"],
       },
+      /** Ultra-lux serif display + readable sans editorial scale — pair serif with font-display only. */
       fontSize: {
+        /** Cinematic homepage H1 scale */
+        "lux-hero": [
+          "clamp(2.275rem, 6.85vw + 0.62rem, 5.0625rem)",
+          { lineHeight: "1.03", letterSpacing: "-0.036em", fontWeight: "500" },
+        ],
+        /** Interior / hub editorial H1 */
         "display-xl": [
-          "clamp(2.4375rem, 5.2vw + 0.9rem, 4rem)",
-          { lineHeight: "1.035", letterSpacing: "-0.023em", fontWeight: "500" },
+          "clamp(2.0625rem, 3.9vw + 1.0625rem, 4.5rem)",
+          { lineHeight: "1.05", letterSpacing: "-0.024em", fontWeight: "500" },
         ],
+        /** Primary section headings (H2) */
         "display-lg": [
-          "clamp(1.75rem, 3vw + 0.8rem, 2.8125rem)",
-          { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "500" },
+          "clamp(1.6875rem, 2.5vw + 0.965rem, 3.0625rem)",
+          { lineHeight: "1.065", letterSpacing: "-0.021em", fontWeight: "500" },
         ],
-        micro: ["0.6875rem", { lineHeight: "1.4", letterSpacing: "0.28em", fontWeight: "600" }],
-        "body-lg": ["1.125rem", { lineHeight: "1.74", letterSpacing: "0.008em" }],
+        /** Supporting serif display (quotes, tertiary emphasis) */
+        "lux-display-sm": [
+          "clamp(1.4375rem, 1.4vw + 1.065rem, 2.0625rem)",
+          { lineHeight: "1.15", letterSpacing: "-0.016em", fontWeight: "500" },
+        ],
+        /** Serif deck / standout line under article titles */
+        "lux-deck": [
+          "clamp(1.0625rem, 0.75vw + 0.8925rem, 1.3125rem)",
+          { lineHeight: "1.48", letterSpacing: "-0.011em", fontWeight: "400" },
+        ],
+        /** Editorial overlines — intentional micro weight for hierarchy */
+        micro: ["clamp(0.6875rem, 0.22vw + 0.6425rem, 0.75rem)", { lineHeight: "1.5", letterSpacing: "0.26em", fontWeight: "600" }],
+        /** Primary running text (layouts / body baseline) */
+        "body-lg": [
+          "clamp(1.028125rem, 0.32vw + 0.9425rem, 1.15625rem)",
+          { lineHeight: "1.7", letterSpacing: "0.01em", fontWeight: "400" },
+        ],
+        /** Larger intro paragraphs (sans lead) */
+        "lux-lead": [
+          "clamp(1.015625rem, 0.45vw + 0.8925rem, 1.1875rem)",
+          { lineHeight: "1.72", letterSpacing: "0.012em", fontWeight: "400" },
+        ],
+        /** Supporting / secondary narration */
+        "lux-muted": [
+          "clamp(0.9175rem, 0.18vw + 0.8375rem, 1.015625rem)",
+          { lineHeight: "1.76", letterSpacing: "0.018em", fontWeight: "400" },
+        ],
       },
       spacing: {
+        /** Vertical typography rhythm inside sections */
+        "lux-stack-xs": "clamp(0.875rem, 2vw, 1.25rem)",
+        "lux-stack-sm": "clamp(1.125rem, 2.5vw, 1.75rem)",
+        "lux-stack-md": "clamp(1.4375rem, 3vw, 2.1875rem)",
+        "lux-stack-lg": "clamp(1.6875rem, 3.5vw, 2.5rem)",
         section: "clamp(3rem, 8vw, 6rem)",
         "section-tight": "clamp(3.25rem, 9vw, 6.5rem)",
         "section-xl": "clamp(3.875rem, 11vw, 8.5rem)",
+        /** Taller vertical breathing between major story beats */
+        "section-breath": "clamp(4.25rem, 12vw, 9.25rem)",
+        /** Consistent inter-column / stack gap for editorial grids */
+        "section-gap": "clamp(2.75rem, 5.5vw, 4.5rem)",
         "section-block": "clamp(2.5rem, 5.5vw, 4rem)",
         gutter: "clamp(1.125rem, 4vw, 2rem)",
         "safe-bottom": "env(safe-area-inset-bottom, 0px)",
       },
       maxWidth: {
         content: "75rem",
-        readable: "42rem",
+        /** ~736px optimum line length on luxury editorial web */
+        readable: "46rem",
       },
       minHeight: {
         screen: "100dvh",

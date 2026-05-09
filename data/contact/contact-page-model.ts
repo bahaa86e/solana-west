@@ -101,7 +101,7 @@ export function buildContactPageModel(): ContactPageModel {
       title: "Return to commercial and geographic context",
       supporting:
         `Cross-check pricing posture, payment structure, and New Zayed access before you reserve — then re-open WhatsApp or this form when your brief is ready for desk review.`,
-      primaryLabel: "WhatsApp",
+      primaryLabel: "WhatsApp — pricing & payment plan",
       secondaryLabel: "Pricing posture",
       secondaryHref: "/prices",
     },

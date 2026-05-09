@@ -13,19 +13,17 @@ export default function FaqPage() {
     <SectionMain>
       <JsonLd data={getSolanaWestFaqPageJsonLd(solanaWestFaqCanonical)} />
 
-      <article className="mx-auto max-w-[44rem]" aria-labelledby="faq-page-heading">
-        <header className="border-b border-lux-ink/[0.06] pb-12 md:pb-14">
-          <p className="font-sans uppercase text-micro text-lux-ink/46">Answers</p>
-          <div className="mt-7 h-px w-9 bg-lux-gold/42 md:mt-8" aria-hidden />
+      <article className="mx-auto max-w-readable" aria-labelledby="faq-page-heading">
+        <header className="border-b border-lux-ink/[0.06] pb-lux-stack-md md:pb-lux-stack-lg">
+          <p className="lux-eyebrow text-lux-ink/46">Answers</p>
+          <div className="mt-lux-stack-xs h-px w-9 bg-lux-gold/42 md:mt-lux-stack-sm" aria-hidden />
           <h1
             id="faq-page-heading"
-            className="mt-6 max-w-[26ch] font-display text-display-lg text-balance text-lux-ink md:mt-7"
+            className="mt-lux-stack-xs max-w-[30ch] text-balance font-display text-display-xl text-lux-ink md:max-w-[34ch]"
           >
             Frequently asked questions
           </h1>
-          <p className="mt-8 max-w-readable text-[0.9375rem] leading-[1.75] tracking-[0.012em] text-lux-ink/64 md:text-base">
-            {SOLANA_WEST_FAQ_SHARED_INTRO}
-          </p>
+          <p className="lux-body mt-lux-stack-sm text-lux-ink/67 md:mt-lux-stack-md">{SOLANA_WEST_FAQ_SHARED_INTRO}</p>
         </header>
 
         <dl className="m-0">
@@ -35,7 +33,7 @@ export default function FaqPage() {
               id={`faq-${index}`}
               className="scroll-mt-24 border-b border-lux-ink/[0.06] py-12 md:scroll-mt-[5.75rem] md:py-14"
             >
-              <dt className="font-display text-[1.25rem] font-normal tracking-[-0.012em] text-lux-ink md:text-[1.375rem]">
+              <dt className="font-display text-lux-display-sm font-medium text-lux-ink">
                 {item.question}
               </dt>
               <dd className="m-0 mt-5 md:max-w-[52ch]">

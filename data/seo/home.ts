@@ -83,8 +83,8 @@ export const homeSections = {
     title: "Request pricing & payment options",
     supporting:
       "Share your unit preference and tenure; we confirm availability, issuance terms, and the latest commercial schedule by channel.",
-    primaryLabel: "WhatsApp",
-    secondaryLabel: "Contact",
+    primaryLabel: "WhatsApp — pricing & payment plan",
+    secondaryLabel: "Enquiry form",
   },
 
   /** Product grid — factual typology + restrained acquisition context */

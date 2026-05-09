@@ -149,7 +149,7 @@ export function createSolanaWestPageContent(entry: ProjectEntry): ProjectPageCon
       title: "Request pricing & payment options",
       supporting:
         "Share your unit preference and tenure; we confirm availability, issuance terms, and the latest commercial schedule by channel.",
-      primaryLabel: "WhatsApp",
+      primaryLabel: "WhatsApp — pricing & payment plan",
       secondaryLabel: "Contact",
     },
   };

@@ -13,8 +13,8 @@ export const metadata = buildPageMetadata({
 export default function NotFound() {
   return (
     <SectionMain>
-      <p className="font-display text-display-lg text-lux-ink">Page not found</p>
-      <p className="mt-gutter max-w-readable text-lux-ink/80">
+      <p className="font-display text-display-xl text-balance text-lux-ink">Page not found</p>
+      <p className="mt-lux-stack-sm max-w-readable text-body-lg text-lux-ink/78">
         Return to the{" "}
         <Link href="/" className="underline decoration-lux-gold/50 underline-offset-4">
           homepage

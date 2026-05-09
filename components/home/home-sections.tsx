@@ -10,39 +10,42 @@ import { ProjectOverviewSection } from "@/components/home/project-overview-secti
 import { PropertyTypesSection } from "@/components/home/property-types-section";
 import { TrustSection } from "@/components/home/trust-section";
 import { LuxuryReveal } from "@/components/motion/luxury-reveal";
+import type { LuxuryRevealLift } from "@/components/motion/luxury-reveal";
+
+const revealLiftCycle: LuxuryRevealLift[] = ["sm", "md", "lg"];
 
 export function HomeSections() {
   return (
     <>
       <HeroSection />
-      <LuxuryReveal>
+      <LuxuryReveal lift={revealLiftCycle[0]}>
         <TrustSection />
       </LuxuryReveal>
-      <LuxuryReveal>
+      <LuxuryReveal lift={revealLiftCycle[1]}>
         <ProjectOverviewSection />
       </LuxuryReveal>
-      <LuxuryReveal>
+      <LuxuryReveal lift={revealLiftCycle[2]}>
         <PropertyTypesSection />
       </LuxuryReveal>
-      <LuxuryReveal>
+      <LuxuryReveal lift={revealLiftCycle[0]}>
         <PaymentPlanSection />
       </LuxuryReveal>
-      <LuxuryReveal>
+      <LuxuryReveal lift={revealLiftCycle[1]}>
         <LocationAdvantagesSection />
       </LuxuryReveal>
-      <LuxuryReveal>
+      <LuxuryReveal lift={revealLiftCycle[2]}>
         <InvestmentSection />
       </LuxuryReveal>
-      <LuxuryReveal>
+      <LuxuryReveal lift={revealLiftCycle[0]}>
         <AmenitiesSection />
       </LuxuryReveal>
-      <LuxuryReveal>
+      <LuxuryReveal lift={revealLiftCycle[1]}>
         <MasterplanSection />
       </LuxuryReveal>
-      <LuxuryReveal>
+      <LuxuryReveal lift={revealLiftCycle[2]}>
         <FaqPreviewSection />
       </LuxuryReveal>
-      <LuxuryReveal>
+      <LuxuryReveal lift="sm">
         <FinalCtaSection />
       </LuxuryReveal>
     </>

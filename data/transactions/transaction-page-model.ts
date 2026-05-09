@@ -205,7 +205,7 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
       title: "Request an issuance-aligned quotation",
       supporting:
         `Share target typology and horizon; we align you with ${bundle.entry.developer} desk practice — WhatsApp or contact form. No artificial urgency — reserve only after verifying live availability.`,
-      primaryLabel: "WhatsApp",
+      primaryLabel: "WhatsApp — pricing & payment plan",
       secondaryLabel: "Contact",
     },
   };
@@ -298,7 +298,7 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
       title: "Request live commercial documentation",
       supporting:
         `Ask for the latest instalment schedule template and reservation mechanics for your typology — routing through ${bundle.entry.developer} authorised channels only.`,
-      primaryLabel: "WhatsApp",
+      primaryLabel: "WhatsApp — pricing & payment plan",
       secondaryLabel: "Contact",
     },
   };

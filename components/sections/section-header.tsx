@@ -37,17 +37,17 @@ export function SectionHeader({
   return (
     <header
       className={cn(
-        "flex max-w-readable flex-col gap-6 md:gap-7 lg:gap-8",
+        "flex max-w-readable flex-col gap-lux-stack-sm md:gap-lux-stack-md",
         alignClass,
         className,
       )}
     >
       {eyebrow ? (
-        <p className={cn("font-sans uppercase text-micro", eyebrowMuted)}>{eyebrow}</p>
+        <p className={cn("font-sans uppercase text-micro md:tracking-[0.275em]", eyebrowMuted)}>{eyebrow}</p>
       ) : null}
       <div
         className={cn(
-          "flex flex-col gap-6 md:gap-7 lg:gap-8",
+          "flex flex-col gap-lux-stack-sm md:gap-lux-stack-md lg:gap-lux-stack-lg",
           align === "center" ? "items-center" : "items-start",
         )}
       >
@@ -64,7 +64,7 @@ export function SectionHeader({
         <TitleTag
           id={id}
           className={cn(
-            "max-w-[28ch] font-display text-display-lg text-balance md:max-w-[34ch]",
+            "max-w-[26ch] text-balance font-display text-display-lg md:max-w-[32ch] lg:max-w-[34ch]",
             titleMuted,
           )}
         >

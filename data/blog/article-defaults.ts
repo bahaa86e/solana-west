@@ -18,7 +18,7 @@ export function defaultArticleFinalCta(): BlogArticleDocument["finalCta"] {
     eyebrow: "Desk verification",
     title: "Verify collateral before acting on editorial framing",
     supporting: `Cross-check every figure with ${siteConfig.developer} accredited desks — articles orient; dated issuance governs reservations.`,
-    primaryLabel: "WhatsApp",
+    primaryLabel: "WhatsApp — pricing & payment plan",
     secondaryLabel: "Contact",
   };
 }

@@ -15,8 +15,9 @@ export function FaqPreviewSection() {
       aria-labelledby="faq-preview-heading"
       tone="sand"
       containerSize="wide"
+      accentRim
     >
-      <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between md:gap-16 lg:gap-24">
+      <div className="flex flex-col gap-section-gap md:flex-row md:items-end md:justify-between md:gap-x-section-gap lg:gap-x-[clamp(3rem,6vw,4.5rem)]">
         <div className="max-w-xl md:pb-2">
           <SectionHeader
             id="faq-preview-heading"
@@ -38,7 +39,7 @@ export function FaqPreviewSection() {
         </div>
       </div>
 
-      <dl className="mt-14 grid gap-12 border-t border-lux-ink/[0.07] pt-12 md:mt-16 md:grid-cols-2 md:gap-x-14 md:gap-y-14 md:pt-16 xl:gap-x-20">
+      <dl className="mt-section-block grid gap-12 border-t border-lux-ink/[0.075] pt-12 md:mt-section-gap md:grid-cols-2 md:gap-x-section-gap md:gap-y-14 md:pt-16 xl:gap-x-20">
         {faqPreview.items.map((item) => (
           <div key={item.question}>
             <dt className="font-display text-lg font-normal tracking-[-0.012em] text-lux-ink md:text-xl">

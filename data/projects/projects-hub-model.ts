@@ -158,7 +158,7 @@ export function buildProjectsHubPageModel(): ProjectsHubPageModel {
       eyebrow: "Desk verification",
       title: "Move from index to issuance-ready detail",
       supporting: `Request hub-specific briefings, phased maps, or typology sheets via ${ora} accredited channels — we avoid synthetic inventory or unpublished ORA naming.`,
-      primaryLabel: "WhatsApp",
+      primaryLabel: "WhatsApp — pricing & payment plan",
       secondaryLabel: "Contact",
     },
   };

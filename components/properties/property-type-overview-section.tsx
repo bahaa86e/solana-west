@@ -1,4 +1,5 @@
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
+import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import type { PropertyExperienceModel } from "@/data/properties/property-type-experience";
@@ -33,16 +34,21 @@ export function PropertyTypeOverviewSection({ model }: { model: PropertyExperien
             </div>
           </div>
         </div>
-        <figure className="relative aspect-[4/3] w-full overflow-hidden bg-lux-paper shadow-lux-image ring-1 ring-lux-ink/[0.07] lg:col-span-7">
+        <LuxuryImageShell
+          hover="lift"
+          aspectClassName="aspect-[4/3]"
+          className="lg:col-span-7"
+          frameAccent={<div className="pointer-events-none absolute inset-[10%] ring-1 ring-lux-gold/18" aria-hidden />}
+        >
           <LuxuryFillImage
             src={overviewImage.src}
             alt={overviewImage.alt}
             sizes="(max-width: 1023px) 100vw, 44vw"
             quality={82}
-            imgClassName="object-cover object-[center_48%]"
+            crop="cardThumb"
+            treatment="rich"
           />
-          <div className="pointer-events-none absolute inset-[10%] z-[1] ring-1 ring-lux-gold/16" aria-hidden />
-        </figure>
+        </LuxuryImageShell>
       </div>
     </SectionShell>
   );

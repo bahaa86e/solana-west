@@ -1,10 +1,13 @@
 import Link from "next/link";
 
+import { ConversionValueChips } from "@/components/conversion/conversion-value-chips";
 import { LeadInquiryForm } from "@/components/forms/lead-inquiry-form";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { CtaButton } from "@/components/ui/cta-button";
 import type { ContactPageModel } from "@/data/contact/contact-page-model";
+import { croMessaging } from "@/data/cro";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -34,23 +37,31 @@ export function ContactChannelsAndFormSection({ model }: { model: ContactPageMod
               kicker={<p className="font-normal text-lux-ink/64">{channels.intro}</p>}
             />
 
+            <div className="mt-10 space-y-4">
+              <ConversionValueChips tone="light" />
+              <p className="max-w-xl text-[0.8125rem] font-normal leading-relaxed tracking-[0.022em] text-lux-ink/52 md:text-[0.84375rem]">
+                {croMessaging.leadFormSubtitle}
+              </p>
+            </div>
+
             <ul className="mt-14 flex list-none flex-col gap-10 p-0" role="list">
-              <li>
+              <li className="rounded-[13px] border border-lux-gold/22 bg-white/[0.35] px-5 pb-8 pt-7 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] backdrop-blur-sm md:px-[1.35rem]">
                 <p className="text-micro uppercase tracking-[0.22em] text-lux-ink/40">WhatsApp</p>
-                <p className="mt-3 max-w-xs text-[0.9375rem] leading-[1.72] tracking-[0.012em] text-lux-ink/66 md:text-base">
+                <p className="mt-3 max-w-xs text-[0.9375rem] leading-[1.72] tracking-[0.012em] text-lux-ink/66 md:max-w-sm md:text-base">
                   Fast context for issuance questions — mirrors how many buyers coordinate abroad.
                 </p>
                 <div className="mt-8">
                   <CtaButton
                     href={siteConfig.whatsAppUrl}
                     external
-                    variant="secondary"
+                    variant="whatsapp"
                     size="lg"
-                    className="w-full px-12 sm:w-auto"
+                    leadingIcon={<WhatsAppIcon className="size-[1.125rem]" />}
+                    className="w-full px-12 sm:inline-flex sm:w-auto"
                     data-track="whatsapp_click"
                     data-track-placement="contact_hero_whatsapp"
                   >
-                    Open WhatsApp
+                    {croMessaging.railWhatsAppLabel}
                   </CtaButton>
                 </div>
               </li>

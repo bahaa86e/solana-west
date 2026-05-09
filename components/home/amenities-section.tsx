@@ -1,4 +1,5 @@
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
+import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { homeSections } from "@/data/seo/home";
@@ -9,12 +10,7 @@ const { amenities: amenitiesCopy } = homeSections;
 
 export function AmenitiesSection() {
   return (
-    <SectionShell
-      id="amenities"
-      aria-labelledby="amenities-heading"
-      tone="sand"
-      containerSize="wide"
-    >
+    <SectionShell id="amenities" aria-labelledby="amenities-heading" tone="sand" containerSize="wide">
       <SectionHeader
         id="amenities-heading"
         eyebrow={amenitiesCopy.eyebrow}
@@ -22,7 +18,7 @@ export function AmenitiesSection() {
         kicker={<p className="font-normal text-lux-ink/66">{amenitiesCopy.intro}</p>}
       />
 
-      <ul className="mt-14 grid grid-cols-1 gap-10 md:mt-20 md:gap-12 lg:grid-cols-3 lg:gap-8 xl:gap-10">
+      <ul className="mt-14 grid grid-cols-1 gap-section-gap md:mt-section-block lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12 xl:gap-x-10">
         {solanaWestMedia.amenities.map((asset, i) => {
           const group = amenitiesCopy.groups[i];
           return (
@@ -33,26 +29,31 @@ export function AmenitiesSection() {
                 i === 2 && "lg:translate-y-4",
               )}
             >
-              <article className="flex flex-col">
-                <div
+              <article
+                className={cn(
+                  "flex flex-col transition-[transform] duration-480 ease-luxury motion-reduce:transition-none",
+                  "motion-reduce:hover:translate-y-0 hover:-translate-y-1",
+                )}
+              >
+                <LuxuryImageShell
+                  hover="cinematic"
+                  aspectClassName="aspect-[5/3]"
                   className={cn(
-                    "group relative aspect-[5/3] overflow-hidden border border-lux-ink/[0.065] bg-lux-paper shadow-[0_16px_42px_-34px_rgba(10,10,10,0.12),inset_0_1px_0_rgba(250,248,245,0.78)] transition-[border-color,box-shadow,transform] duration-480 ease-luxury motion-reduce:transition-none motion-reduce:group-hover:translate-y-0 hover:-translate-y-[4px] hover:border-lux-ink/14 hover:shadow-lux-card",
+                    "border border-lux-ink/[0.068] shadow-[0_14px_42px_-34px_rgba(10,10,10,0.12),inset_0_1px_0_rgba(250,248,245,0.65)]",
+                    "transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/14 hover:shadow-lux-card",
                   )}
                 >
                   <LuxuryFillImage
                     src={asset.src}
                     alt={asset.alt}
                     sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 32vw"
-                    quality={80}
-                    imgClassName="object-cover object-[center_45%]"
+                    quality={82}
+                    crop="interiorWarm"
+                    treatment="rich"
                   />
-                  <div
-                    className="pointer-events-none absolute inset-0 z-[1] ring-1 ring-white/25 ring-inset opacity-0 transition-opacity duration-400 group-hover:opacity-100"
-                    aria-hidden
-                  />
-                </div>
+                </LuxuryImageShell>
 
-                {group ? (
+                {group ?
                   <div className="mt-6 max-w-sm lg:max-w-none">
                     <h3 className="m-0 font-display text-xl font-normal tracking-[-0.012em] text-lux-ink md:text-[1.375rem]">
                       {group.title}
@@ -66,7 +67,7 @@ export function AmenitiesSection() {
                       ))}
                     </ul>
                   </div>
-                ) : null}
+                : null}
               </article>
             </li>
           );

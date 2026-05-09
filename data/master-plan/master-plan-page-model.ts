@@ -208,7 +208,7 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
       eyebrow: "Orientation",
       title: "Hold the issuance map alongside this read",
       supporting: `Request current masterplan excerpts, phased availability, or on-site circulation briefings through ${dev} accredited channels — we route enquiries without inventing surveying data.`,
-      primaryLabel: "WhatsApp",
+      primaryLabel: "WhatsApp — pricing & payment plan",
       secondaryLabel: "Contact",
     },
   };

@@ -12,7 +12,7 @@ export function PropertyTypesSection() {
       tone="sand"
       containerSize="wide"
     >
-      <div className="flex flex-col gap-16 md:gap-20 lg:flex-row lg:items-start lg:gap-[clamp(3.5rem,7vw,7.5rem)]">
+      <div className="flex flex-col gap-section-gap lg:flex-row lg:items-start lg:gap-x-section-gap xl:gap-x-[clamp(3.75rem,7vw,8rem)]">
         <div className="max-w-sm shrink-0 lg:max-w-md lg:pt-2">
           <SectionHeader
             id="property-types-heading"

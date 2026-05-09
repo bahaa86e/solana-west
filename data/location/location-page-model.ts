@@ -205,7 +205,7 @@ export function buildLocationPageModel(): LocationPageModel {
       title: "Validate access on your terms",
       supporting:
         `Request a logistics briefing or site orientation through ${dev} accredited channels — we route enquiries without implying inventory, countdowns, or guaranteed travel times.`,
-      primaryLabel: "WhatsApp",
+      primaryLabel: "WhatsApp — pricing & payment plan",
       secondaryLabel: "Contact",
     },
   };

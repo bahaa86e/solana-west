@@ -298,7 +298,7 @@ export function buildPropertyExperienceModel(slug: PropertyExperienceSlug): Prop
       title: "Request typology-specific guidance",
       supporting:
         `Share your target typology (${TYPOLOGY_CTA_LOWER[slug]}) and timeline; we align you with ${entry.developer} issuance practice — WhatsApp or contact form.`,
-      primaryLabel: "WhatsApp",
+      primaryLabel: "WhatsApp — pricing & payment plan",
       secondaryLabel: "Contact",
     },
   };

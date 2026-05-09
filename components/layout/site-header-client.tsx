@@ -12,11 +12,21 @@ import { cn } from "@/lib/utils";
 
 const easeLux = [0.22, 1, 0.36, 1] as const;
 
-const glassShellDocument =
-  "rounded-[1.2rem] border border-white/45 bg-lux-paper/46 shadow-[0_22px_58px_-32px_rgba(10,10,10,0.24),0_1px_0_rgba(255,255,255,0.58)_inset] backdrop-blur-[22px] backdrop-saturate-150 supports-[backdrop-filter]:bg-lux-paper/36";
+/** Light pages: airy cinematic glass — high blur, restrained fill */
+const glassShellDocument = cn(
+  "rounded-[1.375rem] border border-white/55 bg-white/[0.07]",
+  "shadow-[0_36px_80px_-42px_rgba(10,10,10,0.16)]",
+  "ring-1 ring-inset ring-white/[0.45]",
+  "backdrop-blur-[30px] backdrop-saturate-[1.35] supports-[backdrop-filter]:bg-white/[0.05]",
+);
 
-const glassShellDark =
-  "rounded-[1.2rem] border border-white/[0.14] bg-lux-ink/32 shadow-[0_28px_80px_-40px_rgba(0,0,0,0.55),inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur-[26px] backdrop-saturate-[1.65] supports-[backdrop-filter]:bg-lux-ink/[0.26]";
+/** Hero / dark overlays: luminous edge, deep translucency */
+const glassShellDark = cn(
+  "rounded-[1.375rem] border border-white/[0.115] bg-lux-ink/[0.14]",
+  "shadow-[0_38px_90px_-48px_rgba(0,0,0,0.58),inset_0_1px_0_rgba(255,255,255,0.1)]",
+  "ring-1 ring-inset ring-white/[0.08]",
+  "backdrop-blur-[34px] backdrop-saturate-[1.55] supports-[backdrop-filter]:bg-black/[0.12]",
+);
 
 function HeaderBar() {
   const appearance = useHeaderAppearance();
@@ -25,32 +35,40 @@ function HeaderBar() {
 
   return (
     <header className="sticky top-0 z-50 w-full">
-      <Container as="div" className="pt-3 pb-2 md:pt-4 md:pb-3">
+      <Container as="div" className="pt-3.5 pb-2 max-lg:pt-3.5 md:pt-5 md:pb-3">
         <motion.div
           layout
-          transition={{ duration: 0.4, ease: easeLux }}
+          transition={{ duration: 0.52, ease: easeLux }}
           className={cn(
             overDark ? glassShellDark : glassShellDocument,
-            "flex min-h-[3.5rem] items-center justify-between gap-6 px-4 py-2.5 md:min-h-[3.8125rem] md:gap-8 md:px-6 md:py-3",
+            "flex min-h-[3.5625rem] items-center justify-between gap-4 max-lg:min-h-[3.75rem] max-lg:gap-5 max-lg:px-[1.125rem] max-lg:py-[0.6875rem] md:min-h-[3.9375rem] md:gap-10 md:px-7 md:py-3",
+            "px-[1.0625rem] py-[0.62rem]",
           )}
         >
-          <div className="min-w-0 flex-1 md:max-w-[min(28rem,44vw)] lg:max-w-none">
+          <div className="min-w-0 flex-1 md:max-w-[min(30rem,48vw)] lg:max-w-none">
             <Link
               href="/"
               className={cn(
-                "group flex max-w-fit items-center gap-3 md:gap-3.5",
-                "rounded-lg outline-none transition-[background-color,box-shadow] duration-500 ease-luxury motion-reduce:transition-none",
-                overDark ? "focus-visible:ring-offset-lux-ink/40" : "focus-visible:ring-offset-lux-paper/35",
-                "focus-visible:ring-2 focus-visible:ring-lux-gold/80 focus-visible:ring-offset-2",
-                overDark ? "hover:bg-white/[0.07]" : "hover:bg-white/[0.07]",
+                "group flex max-w-fit items-center gap-3.5 md:gap-4",
+                "-m-2 rounded-[13px] p-2 outline-none transition-[background-color] duration-[520ms] ease-luxury motion-reduce:transition-none",
+                overDark ? "focus-visible:ring-offset-lux-ink/35" : "focus-visible:ring-offset-white/25",
+                "focus-visible:ring-2 focus-visible:ring-lux-gold/[0.65] focus-visible:ring-offset-2",
+                "hover:bg-white/[0.04]",
               )}
             >
               <span
                 className={cn(
-                  "relative flex shrink-0 items-center justify-center rounded-xl p-1.5 ring-1 transition-[box-shadow,transform] duration-500 ease-luxury motion-reduce:transition-none motion-reduce:group-hover:translate-y-0 group-hover:-translate-y-px",
-                  overDark
-                    ? "bg-gradient-to-br from-white/18 to-white/[0.04] ring-white/22 shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] drop-shadow-[0_6px_28px_rgba(0,0,0,0.45)]"
-                    : "bg-gradient-to-br from-white/38 to-white/[0.06] ring-white/28 shadow-[inset_0_1px_0_rgba(255,255,255,0.42)] group-hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.55)]",
+                  "relative flex shrink-0 items-center justify-center rounded-[11px] p-[0.4375rem] transition-[transform,box-shadow] duration-[520ms] ease-luxury motion-reduce:transition-none motion-reduce:group-hover:translate-y-0",
+                  "motion-safe:group-hover:-translate-y-px group-hover:shadow-[0_12px_32px_-20px_rgba(10,10,10,0.25)]",
+                  overDark ?
+                    cn(
+                      "border border-white/[0.14] bg-gradient-to-br from-white/[0.13] to-white/[0.02]",
+                      "shadow-[inset_0_1px_0_rgba(255,255,255,0.22)] drop-shadow-[0_8px_32px_rgba(0,0,0,0.35)]",
+                    )
+                  : cn(
+                      "border border-white/[0.22] bg-gradient-to-br from-white/[0.32] to-white/[0.05]",
+                      "shadow-[inset_0_1px_0_rgba(255,255,255,0.52)] group-hover:border-white/30 group-hover:[box-shadow:inset_0_1px_0_rgba(255,255,255,0.62)]",
+                    ),
                 )}
               >
                 <Image
@@ -59,12 +77,12 @@ function HeaderBar() {
                   width={headerLogo.width}
                   height={headerLogo.height}
                   priority
-                  sizes="(max-width: 768px) 120px, 140px"
+                  sizes="(max-width: 768px) 132px, 148px"
                   className={cn(
-                    "h-[1.55rem] w-auto max-w-[min(7.5rem,30vw)] object-contain object-left transition-[opacity,filter] duration-500 md:h-[1.6875rem] md:max-w-[8.25rem]",
+                    "h-[1.5rem] w-auto max-w-[min(7.75rem,32vw)] object-contain object-left transition-[opacity,filter] duration-[520ms] md:h-[1.665rem] md:max-w-[8.375rem]",
                     overDark ?
-                      "opacity-[0.98] brightness-[1.12] contrast-[1.05] saturate-[0.92]"
-                    : "opacity-[0.96] group-hover:opacity-100",
+                      "opacity-[0.97] brightness-[1.1] saturate-[0.92]"
+                    : "opacity-[0.93] motion-safe:group-hover:opacity-[0.995]",
                   )}
                 />
               </span>
@@ -72,10 +90,10 @@ function HeaderBar() {
                 {headerLogo.suppressProjectWordmark ? null : (
                   <span
                     className={cn(
-                      "block font-display text-[1.32rem] font-medium leading-[1.06] tracking-[-0.022em] transition-colors duration-500 md:text-[1.42rem]",
+                      "block font-display text-[1.2875rem] font-normal leading-[1.06] tracking-[-0.02em] transition-colors duration-[520ms] md:text-[1.3975rem]",
                       overDark ?
-                        "text-lux-paper [text-shadow:0_14px_40px_rgba(0,0,0,0.45)] group-hover:text-white"
-                      : "text-lux-ink/96 group-hover:text-lux-ink",
+                        "text-lux-paper/95 [text-shadow:0_18px_48px_rgba(0,0,0,0.42)] group-hover:text-white"
+                      : "text-lux-ink/[0.93] motion-safe:group-hover:text-lux-ink",
                     )}
                   >
                     {siteConfig.shortName}
@@ -85,12 +103,16 @@ function HeaderBar() {
                   className={
                     headerLogo.suppressProjectWordmark
                       ? cn(
-                          "mt-1.5 block font-sans text-[0.60125rem] font-medium uppercase leading-none tracking-[0.28em] transition-colors md:mt-1.5 md:text-[0.625rem] md:tracking-[0.3em]",
-                          overDark ? "text-lux-paper/44 group-hover:text-lux-paper/58" : "text-lux-ink/34 group-hover:text-lux-ink/44",
+                          "mt-2 block font-sans text-[0.59625rem] font-medium uppercase leading-none tracking-[0.32em] transition-colors md:mt-2 md:text-[0.61375rem] md:tracking-[0.33em]",
+                          overDark ?
+                            "text-lux-paper/40 motion-safe:group-hover:text-lux-paper/52"
+                          : "text-lux-ink/[0.3] motion-safe:group-hover:text-lux-ink/38",
                         )
                       : cn(
-                          "mt-1 hidden font-sans text-[0.60125rem] font-medium uppercase leading-none tracking-[0.28em] transition-colors md:mt-1.5 md:block md:text-[0.625rem] md:tracking-[0.3em]",
-                          overDark ? "text-lux-paper/38 group-hover:text-lux-paper/52" : "text-lux-ink/32 group-hover:text-lux-ink/40",
+                          "mt-1 hidden font-sans text-[0.59625rem] font-medium uppercase leading-none tracking-[0.32em] transition-colors md:mt-[0.3875rem] md:block md:text-[0.61375rem] md:tracking-[0.33em]",
+                          overDark ?
+                            "text-lux-paper/34 motion-safe:group-hover:text-lux-paper/46"
+                          : "text-lux-ink/28 motion-safe:group-hover:text-lux-ink/36",
                         )
                   }
                 >

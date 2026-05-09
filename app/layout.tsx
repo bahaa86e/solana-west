@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
 
 import { SiteShell } from "@/components/layout/site-shell";
 import { AnalyticsScripts } from "@/components/tracking/analytics-scripts";
@@ -17,10 +17,11 @@ const fontDisplay = Cormorant_Garamond({
   weight: ["400", "500", "600", "700"],
 });
 
-const fontSans = Inter({
+const fontSans = Source_Sans_3({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans",
+  weight: ["400", "500", "600", "700"],
 });
 
 /** Route-level pages export full metadata (canonical, OG, Twitter). Homepage uses `homeMetadata` in `app/page.tsx`. */

@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 /*
- * Typography + easing tokens extend Tailwind (`tailwind.config.ts`).
- * Motion stays restrained; prefers-reduced-motion only relaxes scroll snap.
+ * Typography: see `tailwind.config.ts` tokens (lux-hero, lux-lead, body-lg…).
+ * Source Sans 3 × Cormorant Garamond — editorial sans + luxury serif pairing.
  */
 
 @layer base {
   :root {
     color-scheme: light;
     --lux-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --lux-measure-reading: min(46rem, calc(100vw - 3.5rem));
   }
 
   html {
@@ -24,9 +25,18 @@
   }
 
   body {
+    font-feature-settings: "kern" 1, "liga" 1, "cv01" 0;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Comfort on small screens — avoid cramped body copy */
+  @media (max-width: 767.98px) {
+    body {
+      line-height: 1.715;
+      letter-spacing: 0.01em;
+    }
   }
 
   ::selection {
@@ -38,6 +48,7 @@
     outline: 2px solid theme("colors.lux.gold");
     outline-offset: 2px;
   }
+
 }
 
 /**
@@ -54,9 +65,91 @@
 }
 
 @layer utilities {
-  /** Long-form editorial paragraphs — use on section copy for consistent rhythm */
+  /** Long-form editorial body — aligns with RootLayout `text-body-lg` scale */
   .lux-body {
-    @apply text-[0.96875rem] font-normal tracking-[0.009em] text-lux-ink/[0.79] md:text-[1.015625rem];
-    line-height: 1.76;
+    @apply max-w-readable font-normal text-body-lg text-lux-ink;
+    line-height: 1.72;
+    letter-spacing: 0.01em;
+    color: rgb(10 10 10 / 78%);
+  }
+
+  /** Stacked prose rhythm without wrapping in prose-mirror */
+  .lux-prose-stack > * + * {
+    margin-top: clamp(0.85rem, 2.5vw, 1.1875rem);
+  }
+
+  .lux-prose-stack-loose > * + * {
+    margin-top: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  /** Eyebrows on light/over-image panels */
+  .lux-eyebrow {
+    @apply font-sans uppercase text-micro text-lux-ink md:tracking-[0.272em];
+    color: rgb(10 10 10 / 42%);
+  }
+
+  /** Interior hub & editorial H1 (Cormorant) */
+  .lux-hub-h1 {
+    @apply max-w-[min(32ch,calc(100vw-4rem))] text-balance font-display text-display-xl font-medium text-lux-ink;
+    line-height: 1.05;
+    letter-spacing: -0.024em;
+  }
+
+  /** Lead paragraph under hubs — sans, comfortable measure */
+  .lux-hero-lead {
+    @apply max-w-[min(42rem,100%)] font-sans font-normal text-lux-lead text-lux-ink;
+    color: rgb(10 10 10 / 80%);
+  }
+
+  /** Muted sidebar / supporting clause with gold alignment rail */
+  .lux-hero-support {
+    @apply max-w-[min(36rem,100%)] border-l border-lux-gold/[0.32] pl-5 font-sans font-normal text-lux-muted text-lux-ink md:pl-6;
+    color: rgb(10 10 10 / 56%);
+  }
+
+  /** Article meta line above title */
+  .lux-article-meta {
+    @apply font-sans text-[11px] font-semibold uppercase tracking-[0.24em] text-lux-ink;
+    color: rgb(10 10 10 / 43%);
+  }
+
+  /** Serif deck under editorial titles */
+  .lux-deck {
+    @apply font-display text-lux-deck text-lux-ink;
+    color: rgb(10 10 10 / 74%);
+  }
+
+  /*
+   * Cinematic homepage hero — readability over photography (layered halo, no blur cost).
+   */
+  .lux-display-hero {
+    @apply max-w-[18ch] text-balance font-display text-lux-hero font-medium text-lux-paper lg:leading-[1.024];
+    text-shadow:
+      0 2px 0 rgb(0 0 0 / 16%),
+      0 0.12em 0.52em rgb(0 0 0 / 48%),
+      0 -0.02em 0.22em rgb(250 248 245 / 6%),
+      0 1.5rem 2.75rem rgb(0 0 0 / 28%);
+    text-wrap: balance;
+  }
+
+  .lux-hero-community {
+    @apply font-sans text-lux-lead font-normal tracking-[0.012em] text-lux-paper lg:text-[1.11rem] lg:leading-relaxed lg:tracking-[0.01em];
+    color: rgb(250 248 245 / 92%);
+  }
+
+  .lux-hero-muted {
+    @apply font-sans text-lux-muted font-normal tracking-[0.02em] text-lux-paper md:tracking-[0.023em];
+    color: rgb(250 248 245 / 62%);
+  }
+
+  /** Reference / annex copy on glass panels over imagery */
+  .lux-hero-annotation-title {
+    @apply font-sans text-[clamp(10px,0.28vw+9.65px,0.6875rem)] font-semibold uppercase tracking-[0.3em];
+    color: rgb(196 165 116 / 78%);
+  }
+
+  .lux-hero-annotation-body {
+    @apply font-sans text-[clamp(0.89875rem,0.38vw+0.8125rem,0.9625rem)] font-normal leading-[1.73] tracking-[0.019em] text-lux-paper md:leading-[1.74];
+    color: rgb(250 248 245 / 74%);
   }
 }

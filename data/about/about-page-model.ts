@@ -170,7 +170,7 @@ export function buildAboutPageModel(): AboutPageModel {
       title: "Speak with authorised channels",
       supporting:
         `Request desk verification on ${siteConfig.shortName} — issuance sheets, reservations, and after-sales escalation route through ${dev} only. WhatsApp or the contact route below; maintain calm underwriting discipline.`,
-      primaryLabel: "WhatsApp",
+      primaryLabel: "WhatsApp — pricing & payment plan",
       secondaryLabel: "Contact",
     },
   };

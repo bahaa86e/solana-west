@@ -6,7 +6,10 @@ import { usePathname } from "next/navigation";
 
 import type { LeadFormState } from "@/app/contact/actions";
 import { submitLeadInquiry } from "@/app/contact/actions";
+import { ConversionValueChips } from "@/components/conversion/conversion-value-chips";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { CtaButton } from "@/components/ui/cta-button";
+import { croMessaging } from "@/data/cro";
 import { siteConfig } from "@/data/site";
 import { LEAD_INTEREST_OPTIONS } from "@/lib/lead-interest-options";
 import { cn } from "@/lib/utils";
@@ -31,7 +34,7 @@ function LeadSubmitButton() {
   const { pending } = useFormStatus();
   return (
     <CtaButton type="submit" variant="primary" size="lg" disabled={pending} className="w-full">
-      {pending ? "Sending…" : "Send enquiry"}
+      {pending ? croMessaging.leadFormSubmitPending : croMessaging.leadFormSubmitIdle}
     </CtaButton>
   );
 }
@@ -51,6 +54,13 @@ export function LeadInquiryForm() {
 
   return (
     <form action={formAction} aria-label="Enquiry form" className="max-w-md space-y-10">
+      <div className="space-y-4">
+        <ConversionValueChips tone="light" />
+        <p className="text-[0.8125rem] font-normal leading-relaxed tracking-[0.018em] text-lux-ink/54 md:text-[0.84375rem]">
+          {croMessaging.leadFormSubtitle}
+        </p>
+      </div>
+
       <input type="hidden" name="page_pathname" value={pathname} readOnly aria-hidden />
 
       <input type="hidden" name="website_domain_client" value={clientContext.domain} readOnly aria-hidden />
@@ -129,7 +139,21 @@ export function LeadInquiryForm() {
           instant context? WhatsApp or phone above.
         </p>
 
-        <LeadSubmitButton />
+        <div className="flex flex-col gap-3">
+          <LeadSubmitButton />
+          <CtaButton
+            href={siteConfig.whatsAppUrl}
+            external
+            variant="whatsapp"
+            size="lg"
+            leadingIcon={<WhatsAppIcon className="size-[1.1rem]" />}
+            className="w-full"
+            data-track="whatsapp_click"
+            data-track-placement="lead_form_whatsapp_escalation"
+          >
+            Prefer WhatsApp for instant routing
+          </CtaButton>
+        </div>
       </fieldset>
     </form>
   );

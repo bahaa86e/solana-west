@@ -45,7 +45,8 @@ export function CinematicInteriorHero({
     layoutEffect: false,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], reduceMotion ? [0, 0] : [0, 48]);
+  const yBg = useTransform(scrollYProgress, [0, 1], reduceMotion ? [0, 0] : [0, 58]);
+  const yWarmWash = useTransform(scrollYProgress, [0, 1], reduceMotion ? [0, 0] : [0, 22]);
 
   return (
     <section
@@ -66,8 +67,8 @@ export function CinematicInteriorHero({
         )}
       >
         <motion.div
-          style={{ y }}
-          className={cn("absolute inset-[-6%_-2%_-2%_-2%]", !reduceMotion && "will-change-transform")}
+          style={{ y: yBg }}
+          className={cn("absolute inset-[-8%_-2.5%_-3%_-2.5%]", !reduceMotion && "will-change-transform")}
         >
           <LuxuryFillImage
             src={media.src}
@@ -75,27 +76,47 @@ export function CinematicInteriorHero({
             sizes={media.sizes}
             priority={media.priority}
             quality={media.quality ?? 88}
-            imgClassName={cn("object-cover", media.imgClassName)}
+            filmGrade={false}
+            imgClassName={cn("object-cover saturate-[1.02] contrast-[1.025]", media.imgClassName)}
           />
         </motion.div>
 
-        {/* Cinematic overlays */}
-        <div
-          className="pointer-events-none absolute inset-0 z-[3] opacity-95 mix-blend-soft-light bg-[radial-gradient(ellipse_92%_60%_at_50%_18%,rgba(250,248,245,0.18)_0%,transparent_58%)]"
+        {/* Cinematic overlays — graded warmth + readability rails */}
+        <motion.div
+          style={{ y: yWarmWash }}
+          className={cn(
+            "pointer-events-none absolute inset-0 z-[3] opacity-95 mix-blend-soft-light bg-[radial-gradient(ellipse_96%_64%_at_52%_12%,rgba(250,248,245,0.2)_0%,transparent_54%)]",
+            !reduceMotion && "will-change-transform",
+          )}
           aria-hidden
         />
-        <div className="pointer-events-none absolute inset-0 z-[4] bg-gradient-to-t from-lux-ink via-lux-ink/35 to-lux-ink/55" />
-        <div className="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-r from-lux-ink/75 via-lux-ink/38 to-transparent max-md:bg-gradient-to-t max-md:from-lux-ink max-md:via-lux-ink/72 max-md:to-lux-ink/50" />
+        <div
+          className="pointer-events-none absolute inset-0 z-[3] mix-blend-overlay opacity-[0.28] bg-[linear-gradient(128deg,rgba(196,165,116,0.12)_0%,transparent_42%,transparent_66%,rgba(232,226,217,0.06)_100%)]"
+          aria-hidden
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-[4] opacity-95 mix-blend-overlay bg-[radial-gradient(ellipse_88%_90%_at_50%_50%,transparent_22%,rgba(10,10,10,0.07)_74%,rgba(10,10,10,0.16)_100%)]"
+        />
+        <div className="pointer-events-none absolute inset-0 z-[4] bg-gradient-to-t from-lux-ink via-lux-ink/38 to-lux-ink/54" aria-hidden />
+        <div
+          className="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-r from-lux-ink/76 via-lux-ink/40 to-transparent max-md:bg-gradient-to-t max-md:from-lux-ink max-md:via-lux-ink/[0.72] max-md:to-lux-ink/52"
+          aria-hidden
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-[5] bg-[radial-gradient(ellipse_100%_105%_at_50%_108%,rgba(250,248,245,0.05)_0%,transparent_52%)] mix-blend-soft-light opacity-[0.7]"
+        />
 
         <motion.div
-          className="pointer-events-none absolute inset-[8%] z-[7] rounded-sm border border-lux-paper/[0.12] sm:inset-[9%] lg:inset-[10.5%]"
+          className="pointer-events-none absolute inset-[8%] z-[7] rounded-sm border border-lux-paper/[0.12] shadow-[inset_0_0_80px_-36px_rgb(0_0_0_/32%)] sm:inset-[9%] lg:inset-[10.5%]"
           initial={reduceMotion ? false : { opacity: 0 }}
           animate={reduceMotion ? {} : { opacity: 1, transition: { delay: 0.2, duration: 1, ease: easeLux } }}
           aria-hidden
         />
 
         <div
-          className="pointer-events-none absolute inset-x-0 bottom-0 z-[8] h-px bg-gradient-to-r from-transparent via-lux-gold/30 to-transparent"
+          className="pointer-events-none absolute inset-x-0 bottom-0 z-[8] h-px bg-gradient-to-r from-transparent via-lux-gold/[0.38] to-transparent"
           aria-hidden
         />
       </div>

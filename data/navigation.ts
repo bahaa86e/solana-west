@@ -17,86 +17,61 @@ export const primaryNavItems: readonly NavItem[] = [
   { label: "Contact", href: "/contact" },
 ];
 
-export type FooterDirectorySection = {
+/** Semantic IA cluster for mega-footer internal linking — four authority silos + legal strip. */
+export type FooterMegaColumn = {
   readonly id: string;
-  readonly eyebrow: string;
+  readonly headline: string;
+  readonly ariaLabel: string;
   readonly links: readonly NavItem[];
 };
 
-/**
- * Footer site directory — topical clusters for crawl + internal authority.
- * Kept data-only; layout and spacing live in `SiteFooter`.
- */
-export const footerDirectorySections: readonly FooterDirectorySection[] = [
+export const footerMegaColumns: readonly FooterMegaColumn[] = [
   {
-    id: "main",
-    eyebrow: "Main pages",
+    id: "portfolio",
+    headline: "Portfolio & narrative",
+    ariaLabel: "Site story, hub, and project pages",
     links: [
       { label: "Home", href: "/" },
       { label: "About", href: "/about" },
-      { label: "Projects", href: "/projects" },
-    ],
-  },
-  {
-    id: "projects",
-    eyebrow: "Project pages",
-    links: [
       { label: "Projects hub", href: "/projects" },
       { label: "Solana West New Zayed", href: "/projects/solana-west" },
     ],
   },
   {
-    id: "property-types",
-    eyebrow: "Property types",
+    id: "acquisition",
+    headline: "Homes & economics",
+    ariaLabel: "Property pages, Solana West prices, payment plan",
     links: [
       { label: "Villas", href: "/properties/villas" },
       { label: "Townhouses", href: "/properties/townhouses" },
       { label: "Apartments", href: "/properties/apartments" },
       { label: "Twin houses", href: "/properties/twin-houses" },
-    ],
-  },
-  {
-    id: "commerce",
-    eyebrow: "Prices & payment plan",
-    links: [
-      { label: "Prices", href: "/prices" },
+      { label: "Solana West prices", href: "/prices" },
       { label: "Payment plan", href: "/payment-plan" },
     ],
   },
   {
     id: "place",
-    eyebrow: "Location & master plan",
+    headline: "Place & counsel",
+    ariaLabel: "Location, master plan, FAQ, and contact",
     links: [
       { label: "Location", href: "/location" },
       { label: "Master plan", href: "/master-plan" },
-    ],
-  },
-  {
-    id: "support",
-    eyebrow: "FAQ & contact",
-    links: [
       { label: "FAQ", href: "/faq" },
       { label: "Contact", href: "/contact" },
     ],
   },
   {
-    id: "guides",
-    eyebrow: "Investment guides",
-    links: [{ label: "Investment guides", href: "/investment-guides" }],
-  },
-  {
-    id: "blog",
-    eyebrow: "Blog",
-    links: [{ label: "Blog", href: "/blog" }],
-  },
-  {
-    id: "compare",
-    eyebrow: "Comparison pages",
-    links: [{ label: "Compound comparisons", href: "/comparison-pages" }],
-  },
-  {
-    id: "legal",
-    eyebrow: "Privacy & legal",
-    links: [{ label: "Privacy policy", href: "/privacy-policy" }],
+    id: "research",
+    headline: "Guides & benchmarking",
+    ariaLabel: "Investment guides, blog, comparisons",
+    links: [
+      { label: "Investment guides", href: "/investment-guides" },
+      { label: "Blog", href: "/blog" },
+      { label: "Compound comparisons", href: "/comparison-pages" },
+    ],
   },
 ] as const;
+
+/** Legal lane only — avoids burying Privacy inside dense grids. */
+export const footerLegalLinks: readonly NavItem[] = [{ label: "Privacy policy", href: "/privacy-policy" }] as const;

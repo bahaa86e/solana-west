@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
+import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import type { ProjectsHubPageModel } from "@/data/projects/projects-hub-model";
@@ -30,16 +31,19 @@ export function ProjectsHubProjectCardsSection({ model }: { model: ProjectsHubPa
               >
                 <Link
                   href={href}
-                  className="relative block min-h-[14rem] overflow-hidden bg-lux-mist/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lux-gold focus-visible:ring-offset-4 focus-visible:ring-offset-lux-paper lg:col-span-5"
+                  className="relative block min-h-[14rem] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lux-gold focus-visible:ring-offset-4 focus-visible:ring-offset-lux-paper lg:col-span-5"
                   aria-label={`Open ${fp.entry.name} project hub`}
                 >
-                  <LuxuryFillImage
-                    src={fp.image.src}
-                    alt={fp.image.alt}
-                    sizes="(max-width: 1023px) 100vw, 38vw"
-                    quality={88}
-                    imgClassName="object-cover object-[center_45%]"
-                  />
+                  <LuxuryImageShell hover="cinematic" className="h-full min-h-[14rem]">
+                    <LuxuryFillImage
+                      src={fp.image.src}
+                      alt={fp.image.alt}
+                      sizes="(max-width: 1023px) 100vw, 38vw"
+                      quality={88}
+                      crop="cardThumb"
+                      treatment="rich"
+                    />
+                  </LuxuryImageShell>
                 </Link>
                 <div className="flex flex-col justify-center lg:col-span-7 lg:px-12 lg:py-11 xl:px-14">
                   <h3 className="m-0 font-display text-[1.6875rem] font-normal tracking-[-0.016em] text-lux-ink md:text-[1.9375rem]">

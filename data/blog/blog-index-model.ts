@@ -194,7 +194,7 @@ export function buildBlogIndexPageModel(): BlogIndexPageModel {
       eyebrow: "Desk alignment",
       title: "Request source collateral before trading on prose",
       supporting: `${ora} sales teams issue dated decks, phased maps, and payment exhibits — prose here orients; contracts govern.`,
-      primaryLabel: "WhatsApp",
+      primaryLabel: "WhatsApp — pricing & payment plan",
       secondaryLabel: "Contact",
     },
   };
