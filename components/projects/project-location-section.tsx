@@ -35,20 +35,20 @@ export function ProjectLocationSection({ page }: { page: ResolvedProjectPage }) 
       <LuxuryImageShell
         hover="lift"
         aspectClassName="aspect-[16/10]"
-        className="mt-16 border border-lux-ink/[0.06] shadow-[inset_0_1px_0_rgba(250,248,245,0.72)] md:mt-24"
+        className="mt-16 rounded-[3px] md:mt-24"
         frameAccent={
-          <div className="pointer-events-none absolute inset-0 z-[6] bg-gradient-to-t from-lux-mist/28 via-transparent to-transparent" aria-hidden />
+          <div className="pointer-events-none absolute inset-0 z-[6] bg-gradient-to-t from-lux-mist/[0.2] via-transparent to-transparent" aria-hidden />
         }
       >
         <LuxuryFillImage
-          src={page.media.locationMap.src}
-          alt={page.media.locationMap.alt}
+          src={page.media.locationAtmosphere.src}
+          mobileSrc={page.media.locationAtmosphere.mobileSrc}
+          alt={page.media.locationAtmosphere.alt}
           sizes="(max-width: 1023px) 100vw, min(1280px, 88vw)"
-          quality={86}
-          fit="contain"
-          crop="mapCalm"
-          treatment="editorial"
-          imgClassName="bg-lux-paper/10 px-3 py-5 sm:px-6 sm:py-7 md:px-10 md:py-9"
+          quality={88}
+          fit="cover"
+          crop="horizonGolden"
+          treatment="rich"
         />
       </LuxuryImageShell>
     </SectionShell>

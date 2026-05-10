@@ -37,7 +37,7 @@ export function SectionHeader({
   return (
     <header
       className={cn(
-        "flex max-w-readable flex-col gap-[clamp(0.875rem,2.2vw,1.25rem)] md:gap-[clamp(1.0625rem,2.6vw,1.625rem)]",
+        "flex max-w-readable flex-col gap-[clamp(1rem,2.4vw,1.375rem)] md:gap-[clamp(1.125rem,2.85vw,1.75rem)]",
         alignClass,
         className,
       )}
@@ -54,7 +54,7 @@ export function SectionHeader({
       ) : null}
         <div
           className={cn(
-            "flex flex-col gap-[clamp(1rem,2.4vw,1.5rem)] md:gap-[clamp(1.125rem,2.9vw,1.875rem)] lg:gap-[clamp(1.25rem,3.1vw,2.125rem)]",
+            "flex flex-col gap-[clamp(1.0625rem,2.65vw,1.625rem)] md:gap-[clamp(1.2rem,3.05vw,2rem)] lg:gap-[clamp(1.35rem,3.35vw,2.25rem)]",
             align === "center" ? "items-center" : "items-start",
           )}
         >
@@ -71,7 +71,7 @@ export function SectionHeader({
         <TitleTag
           id={id}
           className={cn(
-            "max-w-[min(28ch,100%)] text-balance font-display text-display-lg md:max-w-[min(34ch,100%)] lg:max-w-[min(38ch,100%)]",
+            "max-w-[min(28ch,100%)] text-balance font-display text-display-lg md:max-w-[min(32ch,100%)] lg:max-w-[min(36ch,100%)] lg:leading-[1.08]",
             titleMuted,
           )}
         >

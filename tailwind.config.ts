@@ -8,16 +8,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        /** Editorial luxury — ivory, architectural stone, warm charcoal, Champagne (muted). */
+        /** Quiet luxury — warm ivory, sand, stone; ink is editorial not harsh black. */
         lux: {
-          ink: "#2c2b28",
-          paper: "#f7f6f3",
-          sand: "#e8e4dc",
+          ink: "#3d3a36",
+          paper: "#faf9f6",
+          sand: "#ede8e0",
           gold: "#b9a892",
-          mist: "#f1eee8",
-          stone: "#c4bdb2",
-          ivory: "#fcfaf7",
-          charcoal: "#1f1e1b",
+          mist: "#f3f0ea",
+          stone: "#c9c2b7",
+          ivory: "#fdfcfa",
+          charcoal: "#2f2c29",
           champagne: "#c4b69a",
         },
       },
@@ -32,8 +32,8 @@ const config: Config = {
       fontSize: {
         /** Cinematic homepage H1 — iconic, not billboard; caps ~68px for editorial grace */
         "lux-hero": [
-          "clamp(1.9375rem, 4.5vw + 0.72rem, 4rem)",
-          { lineHeight: "1.05", letterSpacing: "-0.032em", fontWeight: "500" },
+          "clamp(2rem, 3vw + 0.94rem, 3.375rem)",
+          { lineHeight: "1.05", letterSpacing: "-0.03em", fontWeight: "500" },
         ],
         /** Interior & hub H1 — editorial feature scale */
         "display-xl": [
@@ -42,8 +42,8 @@ const config: Config = {
         ],
         /** Section H2 — primary story titles */
         "display-lg": [
-          "clamp(1.4375rem, 1.45vw + 0.95rem, 2.5rem)",
-          { lineHeight: "1.095", letterSpacing: "-0.021em", fontWeight: "500" },
+          "clamp(1.375rem, 1.38vw + 0.92rem, 2.35rem)",
+          { lineHeight: "1.1", letterSpacing: "-0.019em", fontWeight: "500" },
         ],
         /** Story beats, pull quotes, cinematic captions */
         "lux-display-sm": [
@@ -99,13 +99,14 @@ const config: Config = {
         "section-tight": "clamp(3.5rem, 9.25vw, 6.75rem)",
         "section-xl": "clamp(4.125rem, 11vw, 8.75rem)",
         "section-breath": "clamp(4.5rem, 12vw, 9.75rem)",
-        "section-gap": "clamp(2.875rem, 5.5vw, 4.75rem)",
+        "section-gap": "clamp(2.5rem, 4.25vw, 3.875rem)",
         "section-block": "clamp(2.625rem, 5.5vw, 4.125rem)",
         gutter: "clamp(1.125rem, 4vw, 2rem)",
         "safe-bottom": "env(safe-area-inset-bottom, 0px)",
       },
       maxWidth: {
-        content: "75rem",
+        /** ~1152px — prevents ultra-wide stretched reading columns inside default shells */
+        content: "min(72rem,calc(100vw-4.75rem))",
         /** ~672px — classic editorial measure; luxury web, not full-bleed SaaS widths */
         readable: "42rem",
       },
@@ -114,18 +115,18 @@ const config: Config = {
       },
       boxShadow: {
         "lux-soft":
-          "0 22px 58px -44px rgba(28,26,23,0.11), inset 0 1px 0 rgba(252,250,247,0.52)",
+          "0 22px 58px -44px rgba(45,42,37,0.08), inset 0 1px 0 rgba(252,250,247,0.58)",
         "lux-card":
-          "0 14px 38px -30px rgba(28,26,23,0.09), inset 0 1px 0 rgba(252,250,247,0.62)",
+          "0 14px 38px -30px rgba(45,42,37,0.07), inset 0 1px 0 rgba(252,250,247,0.68)",
         "lux-line": "inset 0 1px 0 rgba(252,250,247,0.55)",
         "lux-depth":
-          "0 1px 2px -1px rgba(28,26,23,0.032), 0 10px 28px -24px rgba(28,26,23,0.085)",
+          "0 1px 2px -1px rgba(45,42,37,0.028), 0 10px 28px -24px rgba(45,42,37,0.065)",
         "lux-image":
-          "0 18px 48px -34px rgba(28,26,23,0.12), inset 0 1px 0 rgba(252,250,247,0.2)",
+          "0 18px 48px -34px rgba(45,42,37,0.09), inset 0 1px 0 rgba(252,250,247,0.35)",
         "lux-glass":
-          "0 24px 58px -40px rgba(28,26,23,0.11), inset 0 1px 0 rgba(255,255,255,0.48), inset 0 -1px 0 rgba(28,26,23,0.03)",
+          "0 24px 58px -40px rgba(45,42,37,0.08), inset 0 1px 0 rgba(255,255,255,0.52), inset 0 -1px 0 rgba(45,42,37,0.024)",
         "lux-glow-warm":
-          "0 0 min(88px,14vw) min(20px,3vw) rgba(185,168,146,0.06), 0 18px 48px -36px rgba(28,26,23,0.09)",
+          "0 0 min(88px,14vw) min(20px,3vw) rgba(185,168,146,0.05), 0 18px 48px -36px rgba(45,42,37,0.07)",
       },
       transitionTimingFunction: {
         luxury: "cubic-bezier(0.22, 1, 0.36, 1)",

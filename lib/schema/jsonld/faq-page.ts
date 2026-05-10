@@ -1,4 +1,3 @@
-import type { SolanaWestFaqItem } from "@/data/faq/solana-west-faq";
 import { siteConfig } from "@/data/site";
 import { getSiteUrl } from "@/lib/env";
 
@@ -8,11 +7,13 @@ function faqCanonicalUrl(path: string): string {
   return new URL(p, base.origin).toString();
 }
 
+export type FaqJsonLdItem = { readonly question: string; readonly answer: string };
+
 /**
  * FAQPage JSON-LD — `acceptedAnswer.text` must equal on-page FAQ copy (canonical data).
  */
 export function getSolanaWestFaqPageJsonLd(
-  items: ReadonlyArray<Pick<SolanaWestFaqItem, "question" | "answer">>,
+  items: ReadonlyArray<FaqJsonLdItem>,
   path: "/faq" = "/faq",
 ) {
   const url = faqCanonicalUrl(path);

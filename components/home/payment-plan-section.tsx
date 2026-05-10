@@ -1,10 +1,13 @@
 import Link from "next/link";
 
+import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
+import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { CtaButton } from "@/components/ui/cta-button";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { croMessaging } from "@/data/cro";
+import { solanaWestMedia } from "@/data/media/solana-west";
 import { homeSections } from "@/data/seo/home";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
@@ -76,6 +79,24 @@ export function PaymentPlanSection() {
           </div>
         </div>
       </div>
+
+      <LuxuryImageShell
+        hover="lift"
+        aspectClassName="aspect-[21/10] max-h-[min(14rem,40vw)] xl:max-h-[15rem]"
+        className="mt-section-gap rounded-[3px] xl:mt-section-block"
+        frameAccent={
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-lux-paper/[0.04] via-transparent to-transparent" aria-hidden />
+        }
+      >
+        <LuxuryFillImage
+          src={solanaWestMedia.paymentRibbon.src}
+          alt={solanaWestMedia.paymentRibbon.alt}
+          sizes="(max-width: 1280px) 100vw, min(1320px, 92vw)"
+          quality={86}
+          crop="greenerySubject"
+          treatment="editorial"
+        />
+      </LuxuryImageShell>
     </SectionShell>
   );
 }

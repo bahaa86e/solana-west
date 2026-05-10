@@ -5,25 +5,25 @@ import { cn } from "@/lib/utils";
 
 const variants = {
   primary:
-    "border border-lux-ink/[0.88] bg-lux-ink text-lux-paper shadow-[0_10px_32px_-20px_rgba(28,26,23,0.22),0_1px_0_rgba(252,250,247,0.08)_inset] hover:border-lux-ink hover:bg-lux-charcoal/[0.96] hover:shadow-[0_14px_40px_-24px_rgba(28,26,23,0.26)] motion-reduce:hover:shadow-[0_10px_32px_-20px_rgba(28,26,23,0.22)] active:translate-y-px active:shadow-[0_4px_16px_-8px_rgba(28,26,23,0.14)] focus-visible:ring-lux-gold/[0.75]",
-  /** Editorial WhatsApp — muted forest on light canvas */
+    "border border-lux-ink/[0.55] bg-lux-ink text-lux-paper shadow-[0_8px_28px_-18px_rgba(45,42,37,0.18),0_1px_0_rgba(252,250,247,0.1)_inset] hover:border-lux-ink hover:bg-lux-charcoal hover:shadow-[0_12px_36px_-22px_rgba(45,42,37,0.2)] motion-reduce:hover:shadow-[0_8px_28px_-18px_rgba(45,42,37,0.18)] active:translate-y-px active:shadow-[0_4px_14px_-8px_rgba(45,42,37,0.12)] focus-visible:ring-lux-gold/[0.75]",
+  /** WhatsApp — bright editorial sage (not dark dashboard) */
   whatsapp:
-    "border border-[#3d5248]/28 bg-gradient-to-b from-[#465c52]/92 to-[#323f38]/94 text-lux-paper shadow-[0_12px_36px_-24px_rgba(24,42,34,0.28),inset_0_1px_0_rgba(255,255,255,0.09)] hover:border-[#4a6056]/38 hover:brightness-[1.02] hover:shadow-[0_14px_40px_-26px_rgba(20,38,30,0.24)] motion-reduce:hover:brightness-100 active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
-  /** WhatsApp on hero / ink */
+    "border border-[#5a7a6c]/25 bg-[#eaf2ee] text-[#1f3b30] shadow-[0_8px_28px_-20px_rgba(40,72,58,0.14),inset_0_1px_0_rgba(255,255,255,0.85)] hover:border-[#4d6f62]/35 hover:bg-[#e3ede8] hover:shadow-[0_10px_32px_-22px_rgba(40,72,58,0.16)] motion-reduce:hover:shadow-[0_8px_28px_-20px_rgba(40,72,58,0.14)] active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
+  /** Hero / glass plate — crisp primary, minimal frosted gradient */
   whatsappOnDark:
-    "border border-lux-gold/22 bg-gradient-to-b from-white/[0.13] via-white/[0.08] to-white/[0.035] text-lux-paper shadow-[0_16px_46px_-30px_rgba(0,0,0,0.32),inset_0_1px_0_rgba(255,255,255,0.1)] hover:border-lux-gold/32 hover:from-white/[0.17] hover:via-white/[0.1] hover:to-white/[0.05] active:translate-y-px focus-visible:ring-lux-gold/[0.75] focus-visible:ring-offset-lux-charcoal",
+    "border border-white/28 bg-[#2f5c4c] text-lux-paper shadow-[0_12px_40px_-26px_rgba(30,62,48,0.28),inset_0_1px_0_rgba(255,255,255,0.22)] hover:border-white/38 hover:bg-[#347055] hover:shadow-[0_14px_44px_-26px_rgba(28,56,44,0.3)] active:translate-y-px focus-visible:ring-lux-gold/[0.8] focus-visible:ring-offset-2 focus-visible:ring-offset-white/25",
   secondary:
-    "border border-lux-ink/16 bg-transparent text-lux-ink shadow-none hover:border-lux-ink/26 hover:bg-lux-ink/[0.02] hover:shadow-[0_10px_28px_-22px_rgba(28,26,23,0.08)] motion-reduce:hover:shadow-none active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
+    "border border-lux-ink/14 bg-transparent text-lux-ink shadow-none hover:border-lux-ink/22 hover:bg-lux-ink/[0.02] hover:shadow-[0_8px_24px_-20px_rgba(45,42,37,0.06)] motion-reduce:hover:shadow-none active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
   ghost:
     "border border-transparent bg-transparent text-lux-ink hover:border-lux-ink/[0.08] hover:bg-lux-ink/[0.025] active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
   inverse:
-    "border border-white/22 bg-white/[0.08] text-lux-paper shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_12px_32px_-26px_rgba(0,0,0,0.28)] hover:border-white/30 hover:bg-white/[0.12] hover:shadow-[0_14px_38px_-26px_rgba(0,0,0,0.32)] motion-reduce:hover:shadow-[0_12px_32px_-26px_rgba(0,0,0,0.28)] active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
+    "border border-white/26 bg-white/[0.12] text-lux-paper shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_8px_28px_-22px_rgba(45,42,37,0.12)] hover:border-white/34 hover:bg-white/[0.18] hover:shadow-[0_10px_32px_-22px_rgba(45,42,37,0.14)] motion-reduce:hover:shadow-[0_8px_28px_-22px_rgba(45,42,37,0.12)] active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
 } as const;
 
 const sizes = {
-  sm: "min-h-[2.8125rem] px-[1.25rem] text-[0.8125rem] font-semibold tracking-[0.055em]",
-  md: "min-h-[2.9375rem] px-5 py-2 text-[0.84375rem] font-semibold tracking-[0.048em]",
-  lg: "min-h-[3.125rem] px-8 py-3 text-lux-cta font-semibold tracking-[0.042em]",
+  sm: "min-h-[2.75rem] px-[1.15rem] text-[0.796875rem] font-semibold tracking-[0.048em] max-lg:min-h-[2.6875rem]",
+  md: "min-h-[2.875rem] px-5 py-2 text-[0.828125rem] font-semibold tracking-[0.044em] max-lg:min-h-[2.8125rem]",
+  lg: "min-h-[3.0625rem] px-8 py-3 text-lux-cta font-semibold tracking-[0.038em] max-lg:min-h-[3rem] max-lg:px-7 max-lg:tracking-[0.034em]",
 } as const;
 
 export type CtaVariant = keyof typeof variants;

@@ -11,38 +11,47 @@ export type SectionDepth = "flat" | "lifted";
 
 const toneClass: Record<SectionTone, string> = {
   paper: cn(
-    "bg-gradient-to-b from-[#fcfaf7] via-[#f8f6f2] to-[#ebe6df]/96 text-lux-ink",
-    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.65),inset_0_0_72px_-24px_rgba(185,168,146,0.04)]",
-    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-lux-ink/[0.06] before:to-transparent",
-    "after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:z-[1] after:h-[min(5rem,14vw)] after:bg-gradient-to-b after:from-transparent after:via-lux-gold/[0.022] after:to-lux-ink/[0.028]",
+    "bg-gradient-to-b from-[#fdfcfa] via-[#f9f7f3] to-[#ede8e0]/98 text-lux-ink",
+    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.72),inset_0_0_80px_-28px_rgba(185,168,146,0.032)]",
+    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-lux-ink/[0.045] before:to-transparent",
+    "after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:z-[1] after:h-[min(5rem,14vw)] after:bg-gradient-to-b after:from-transparent after:via-lux-gold/[0.018] after:to-lux-sand/40",
   ),
   sand: cn(
-    "bg-gradient-to-br from-[#e6e1d8]/98 via-[#ebe6df] to-[#f4f1eb] text-lux-ink",
-    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.48),inset_0_-1px_0_0_rgba(28,26,23,0.022),0_1px_0_0_rgba(185,168,146,0.04)]",
-    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-lux-gold/[0.1] before:to-transparent",
-    "after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:z-[1] after:h-[min(3.5rem,10vw)] after:bg-gradient-to-b after:from-transparent after:to-lux-ink/[0.022]",
+    "bg-gradient-to-br from-[#ebe6de]/99 via-[#f0ebe3] to-[#f6f3ed] text-lux-ink",
+    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.55),inset_0_-1px_0_0_rgba(45,42,37,0.018),0_1px_0_0_rgba(185,168,146,0.032)]",
+    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-lux-gold/[0.085] before:to-transparent",
+    "after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:z-[1] after:h-[min(3.5rem,10vw)] after:bg-gradient-to-b after:from-transparent after:to-lux-ink/[0.014]",
   ),
   ink: cn(
-    "bg-gradient-to-b from-[#1c1a18] via-lux-charcoal to-[#121110] text-lux-paper",
-    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.07),inset_0_-100px_72px_-44px_rgba(185,168,146,0.03)]",
-    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent",
+    "bg-gradient-to-b from-[#4f4b45] via-[#45413b] to-[#3c3834] text-lux-paper",
+    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.12),inset_0_-80px_64px_-40px_rgba(185,168,146,0.04)]",
+    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-white/14 before:to-transparent",
   ),
 };
 
 const depthClass: Record<SectionDepth, string> = {
   flat: "",
   lifted:
-    "shadow-[0_36px_88px_-60px_rgba(28,26,23,0.1),inset_0_1px_0_0_rgba(255,255,255,0.035)]",
+    "shadow-[0_36px_88px_-60px_rgba(45,42,37,0.07),inset_0_1px_0_0_rgba(255,255,255,0.045)]",
 };
 
 function rhythmPadding(rhythm: SectionRhythm): string {
   switch (rhythm) {
     case "breath":
-      return "py-section-breath";
+      return cn(
+        "max-lg:py-[clamp(3.875rem,10.5vw,6.75rem)]",
+        "py-[clamp(4.75rem,min(11vw,7rem),8.5rem)] lg:py-[clamp(5.5rem,6.5vw,8rem)]",
+      );
     case "compact":
-      return "py-[clamp(2.75rem,7vw,5.25rem)]";
+      return cn(
+        "max-lg:py-[clamp(3rem,7.75vw,4.75rem)]",
+        "py-[clamp(2.75rem,7vw,5.25rem)] lg:py-[clamp(3.25rem,5.5vw,4.75rem)]",
+      );
     default:
-      return "py-section-xl";
+      return cn(
+        "max-lg:py-[clamp(3.75rem,10vw,6.5rem)]",
+        "py-[clamp(4.25rem,9vw,7.5rem)] lg:py-[clamp(5rem,6.25vw,6.875rem)]",
+      );
   }
 }
 
@@ -96,7 +105,7 @@ export function SectionShell({
     >
       {accentRim ?
         <span
-          className="pointer-events-none absolute bottom-[12%] left-0 top-[12%] z-[3] hidden w-px bg-gradient-to-b from-transparent via-lux-gold/35 to-transparent md:block"
+          className="pointer-events-none absolute bottom-[12%] left-0 top-[12%] z-[3] hidden w-px bg-gradient-to-b from-transparent via-lux-gold/28 to-transparent md:block"
           aria-hidden
         />
       : null}

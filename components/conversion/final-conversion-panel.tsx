@@ -68,8 +68,8 @@ export function FinalConversionPanel({
           variant="ghost"
           size="lg"
           className={cn(
-            "w-full border border-white/[0.18] bg-white/[0.035] text-lux-paper/92 backdrop-blur-sm",
-            "shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] hover:border-white/[0.28] hover:bg-white/[0.06]",
+            "w-full border border-white/[0.22] bg-white/[0.1] text-lux-paper/94 backdrop-blur-sm",
+            "shadow-[inset_0_1px_0_rgba(253,252,249,0.14)] hover:border-white/[0.32] hover:bg-white/[0.14]",
             "focus-visible:ring-lux-gold focus-visible:ring-offset-2 focus-visible:ring-offset-lux-charcoal md:flex-1 md:px-10",
           )}
           data-track="cta_click"

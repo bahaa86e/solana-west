@@ -4,12 +4,17 @@ import type { RouteSeoDefinition } from "@/data/seo/types";
 export type ProjectImageAsset = {
   src: string;
   alt: string;
+  /** Optional portrait-safe WebP for small viewports (see `LuxuryFillImage`). */
+  mobileSrc?: string;
 };
 
 /** Media required to render a cinematic project surface */
 export type ProjectPageMedia = {
   hero: ProjectImageAsset;
   overviewFigure: ProjectImageAsset;
+  /** Cinematic geography mood — homepage + project location narratives (not brochure maps). */
+  locationAtmosphere: ProjectImageAsset;
+  /** Issuance connectivity / map plate — retained for deep editorial routes that reference cartography. */
   locationMap: ProjectImageAsset;
   amenities: readonly ProjectImageAsset[];
 };

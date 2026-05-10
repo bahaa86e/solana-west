@@ -24,18 +24,12 @@ export const siteConfig = {
     snapchat: "https://www.snapchat.com/@solanawestprice",
   },
   /**
-   * Place the approved wordmark/symbol under `public/images/branding/` (committed asset).
-   * If the asset already includes “Solana West” as typography, set `suppressProjectWordmark: true`.
+   * Header uses typography-only wordmark (no raster/SVG lockup).
+   * JSON-LD Organization `logo` uses the luxury share frame for brand presence.
    */
   branding: {
-    headerLogo: {
-      src: "/images/branding/solana-west-logo.svg",
-      width: 168,
-      height: 42,
-      /** Used when `suppressProjectWordmark` is true so the logo carries the naming. */
-      alt: "Solana West New Zayed by ORA Developers Egypt",
-      suppressProjectWordmark: false,
-    },
+    schemaLogoUrl: "/images/projects/solana-west/seo/og-social-preview.webp",
+    wordmarkHomeAriaLabel: "Solana West New Zayed — home",
   },
 } as const;
 

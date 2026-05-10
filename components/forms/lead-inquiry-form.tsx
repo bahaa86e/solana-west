@@ -22,10 +22,11 @@ const labelClass =
   "text-[10.75px] font-semibold uppercase tracking-[0.24em] text-lux-ink/48";
 
 const inputClass = cn(
-  "w-full rounded-[6px] border border-lux-ink/[0.09] bg-gradient-to-b from-white/90 to-lux-paper/95 px-[1.15rem] py-[1.02rem]",
-  "text-[0.953125rem] font-normal tracking-[0.012em] text-lux-ink shadow-[inset_0_1px_0_rgba(250,248,245,0.88),0_14px_40px_-38px_rgba(10,10,10,0.1)] backdrop-blur-sm",
+  "w-full rounded-[6px] border border-lux-ink/[0.1] bg-lux-paper px-[1.1rem] py-[0.95rem]",
+  "text-[0.953125rem] font-normal tracking-[0.012em] text-lux-ink max-lg:text-[1rem] max-lg:py-[1.05rem]",
+  "shadow-[inset_0_1px_0_rgba(255,255,255,0.65),0_1px_0_rgba(45,42,37,0.04)]",
   "transition-[border-color,box-shadow,background-color] duration-480 ease-luxury motion-reduce:transition-none",
-  "placeholder:text-lux-ink/36 focus:border-lux-gold/35 focus:bg-lux-paper focus:outline-none focus:ring-2 focus:ring-lux-gold/30",
+  "placeholder:text-lux-ink/38 focus:border-lux-gold/38 focus:bg-white focus:outline-none focus:ring-2 focus:ring-lux-gold/22",
 );
 
 const selectClass = cn(inputClass, "cursor-pointer");
@@ -53,7 +54,7 @@ export function LeadInquiryForm() {
   const [state, formAction] = useFormState(submitLeadInquiry, initialLeadState);
 
   return (
-    <form action={formAction} aria-label="Private enquiry form" className="max-w-md space-y-10">
+    <form action={formAction} aria-label="Private enquiry form" className="max-w-md space-y-8 max-lg:space-y-9">
       <div className="space-y-4">
         <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.28em] text-lux-ink/40">
           {croMessaging.leadFormEyebrow}
@@ -70,7 +71,7 @@ export function LeadInquiryForm() {
 
       <input type="hidden" name="referrer_client" value={clientContext.referrer} readOnly aria-hidden />
 
-      <fieldset className="m-0 min-w-0 space-y-9 border-0 p-0">
+      <fieldset className="m-0 min-w-0 space-y-7 border-0 p-0 max-lg:space-y-8">
         <legend className="sr-only">
           Private inquiry — full name, phone number, and property interest (required)
         </legend>
@@ -141,7 +142,7 @@ export function LeadInquiryForm() {
           {croMessaging.leadFormRoutingNote}
         </p>
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2.5 max-lg:gap-3">
           <LeadSubmitButton />
           <CtaButton
             href={siteConfig.whatsAppUrl}

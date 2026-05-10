@@ -1,3 +1,6 @@
+import { solanaWestPricesAiAuthorityGuideNewZayed2026Article } from "@/data/blog/articles/solana-west-prices-ai-authority-guide-new-zayed-2026";
+import { solanaWestPricesTransactionalBookingFramework2026Article } from "@/data/blog/articles/solana-west-prices-transactional-booking-framework-2026";
+import { solanaWestPricesWestCairoInvestmentComparison2026Article } from "@/data/blog/articles/solana-west-prices-west-cairo-investment-comparison-2026";
 import { solanaWestNewZayedPricesPaymentPlan2026Article } from "@/data/blog/articles/solana-west-new-zayed-prices-payment-plan-2026";
 import { solanaWestNewZayedInvestmentStrength2026Article } from "@/data/blog/articles/solana-west-new-zayed-investment-strength-2026";
 import { solanaWestVillasVsApartmentsLifestyleInvestmentArticle } from "@/data/blog/articles/solana-west-villas-vs-apartments-lifestyle-investment";
@@ -21,6 +24,9 @@ import type { BlogArticleDocument } from "@/data/blog/types";
  */
 
 const articles: readonly BlogArticleDocument[] = [
+  solanaWestPricesTransactionalBookingFramework2026Article,
+  solanaWestPricesWestCairoInvestmentComparison2026Article,
+  solanaWestPricesAiAuthorityGuideNewZayed2026Article,
   solanaWestPaymentPlanExplainedIssuerGuide2026Article,
   solanaWestMehwarNewZayedLocationBuyerGuide2026Article,
   solanaWestVillasPricesBuyerGuideNewZayed2026Article,

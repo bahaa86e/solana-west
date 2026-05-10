@@ -26,8 +26,8 @@ export function GlobalCroRail({ className }: { className?: string }) {
   return (
     <aside
       className={cn(
-        "relative z-[41] border-b border-lux-ink/[0.045] bg-gradient-to-r from-[#f5f3ef] via-lux-paper to-[#ebe6df]",
-        "shadow-[0_8px_24px_-22px_rgba(28,26,23,0.08)]",
+        "relative z-[41] border-b border-lux-ink/[0.05] bg-lux-paper max-md:bg-gradient-to-b max-md:from-[#faf9f6] max-md:to-lux-mist/80 md:bg-gradient-to-r md:from-[#f8f6f2] md:via-lux-paper md:to-[#ebe6df]",
+        "shadow-[0_4px_18px_-16px_rgba(45,42,37,0.055)] max-md:shadow-[0_1px_0_rgba(255,255,255,0.65)]",
         className,
       )}
       aria-label="Commercial reference and private desk contact"
@@ -57,21 +57,21 @@ export function GlobalCroRail({ className }: { className?: string }) {
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
-              "flex w-full shrink-0 flex-col items-stretch justify-center gap-1.5 rounded-[8px] border border-[#3a5046]/22 bg-gradient-to-b from-[#3d5248]/90 to-[#2a3832]/92 px-4 py-3 md:w-auto md:min-w-[min(22rem,100%)]",
-              "text-lux-paper shadow-[0_10px_30px_-22px_rgba(18,38,30,0.28)] transition-[filter] duration-400 ease-luxury",
-              "hover:brightness-[1.02] active:opacity-[0.96] motion-reduce:transition-none",
+              "flex w-full shrink-0 flex-col items-stretch justify-center gap-1.5 rounded-[8px] border border-[#5a8f78]/35 bg-[#eaf4ef] px-4 py-2.5 text-[#1a382c] md:w-auto md:min-w-[min(22rem,100%)]",
+              "shadow-[0_8px_24px_-20px_rgba(40,88,68,0.12)] transition-[filter,background-color] duration-400 ease-luxury",
+              "hover:bg-[#e2f0e9] active:opacity-[0.94] motion-reduce:transition-none",
               "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lux-gold focus-visible:ring-offset-2 focus-visible:ring-offset-lux-paper md:flex-row md:items-center md:gap-4 md:py-3 md:pl-5 md:pr-6",
             )}
             data-track="whatsapp_click"
             data-track-placement="global_cro_rail"
           >
             <span className="flex items-center justify-center gap-2.5 md:justify-start">
-              <WhatsAppIcon className="size-[1.1rem] shrink-0 opacity-90" />
+              <WhatsAppIcon className="size-[1.1rem] shrink-0 opacity-[0.92] text-[#25D366]" />
               <span className="text-center text-[11px] font-semibold uppercase tracking-[0.22em] md:text-left">
                 {croMessaging.railWhatsAppLabel}
               </span>
             </span>
-            <span className="px-1 text-center text-[9.5px] font-normal uppercase leading-snug tracking-[0.18em] text-lux-paper/52 md:max-w-[20rem] md:flex-1 md:text-left md:tracking-[0.2em]">
+            <span className="px-1 text-center text-[9.5px] font-normal uppercase leading-snug tracking-[0.18em] text-[#2a5544]/72 md:max-w-[20rem] md:flex-1 md:text-left md:tracking-[0.2em]">
               {croMessaging.railWhatsAppSubline}
             </span>
           </Link>

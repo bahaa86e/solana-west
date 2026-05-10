@@ -15,7 +15,8 @@
     "media:verify": "node scripts/verify-solana-west-canonical.mjs",
     "media:premium": "node scripts/solana-west-premium-campaign.mjs",
     "media:premium-bundle": "node scripts/solana-west-bootstrap-master-source.mjs && npm run media:pipeline:prod && node scripts/solana-west-premium-campaign.mjs",
-    "media:consumed-batch": "node scripts/solana-west-consumed-organize.mjs --production"
+    "media:consumed-batch": "node scripts/solana-west-consumed-organize.mjs --production",
+    "faq:gen": "node scripts/gen-solana-faq-expanded.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

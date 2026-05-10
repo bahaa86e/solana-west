@@ -10,6 +10,8 @@ export const luxuryImageCrops = {
   cardThumb: "object-[center_48%]",
   mapCalm: "object-center",
   interiorWarm: "object-[center_45%]",
+  /** Dusk / golden-hour plates — bias sky & horizon legibility */
+  horizonGolden: "object-[center_38%] max-lg:object-[center_44%]",
 } as const;
 
 export type LuxuryImageCrop = keyof typeof luxuryImageCrops;

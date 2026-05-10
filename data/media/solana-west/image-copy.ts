@@ -24,6 +24,8 @@ export const solanaWestAlt = {
     `Contemporary residential architecture and landscaped avenues at ${SHORT} ${NZ}, ${WEST} — ${DEV}.`,
   masterplan: `${PROJECT} master plan overview — ${NZ} master-planned community by ${DEV}.`,
   connectivityMap: `${SHORT} location map — ${NZ}, ${WEST} connectivity context by ${DEV}.`,
+  /** Full-bleed location narrative — cinematic mood, not cartography */
+  locationStrategic: `Strategic geography and dusk scale — ${SHORT} ${NZ}, ${WEST}, master-planned context by ${DEV}.`,
   livingInterior: `Interior living room design at ${SHORT} ${NZ} by ${DEV}.`,
   aerial: `Bird’s-eye master plan scale and low-density planning context for ${SHORT} ${NZ}, ${WEST} — ${DEV}.`,
   investment:

@@ -25,15 +25,9 @@ export function MasterplanSection() {
       />
       <LuxuryImageShell
         hover="cinematic"
-        className="mt-section-block aspect-[21/9] max-h-[26rem] w-full rounded-[3px] md:mt-section-gap xl:max-h-[28rem]"
+        className="mt-section-block aspect-[4/3] w-full rounded-[3px] md:mt-section-gap sm:aspect-[16/11] lg:aspect-[21/9] lg:min-h-[min(44vh,38rem)] lg:max-h-[min(48rem,calc(72vh-8rem))] xl:min-h-[min(46vh,40rem)]"
         frameAccent={
-          <>
-            <div className="absolute inset-0 z-[6] bg-gradient-to-b from-transparent via-transparent to-lux-paper/[0.14]" aria-hidden />
-            <div
-              className="pointer-events-none absolute inset-y-6 left-10 right-10 z-[7] border-x border-lux-ink/[0.08] md:inset-y-8 md:left-14 md:right-14"
-              aria-hidden
-            />
-          </>
+          <div className="pointer-events-none absolute inset-0 z-[6] bg-gradient-to-b from-transparent via-transparent to-lux-paper/[0.12]" aria-hidden />
         }
       >
         <LuxuryFillImage

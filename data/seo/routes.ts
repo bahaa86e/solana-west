@@ -48,13 +48,16 @@ export const contactPageSeo: RouteSeoDefinition = {
 
 export const faqPageSeo: RouteSeoDefinition = {
   path: "/faq",
-  title: `FAQ · prices, payment plan & delivery | ${nx}`,
-  description: `Direct answers on ${nx}: Mehwar El Dabaa location, from 9.8M EGP reference, 5% down, up to 10-year installments, delivery from 2027, and unit types (villas, townhouses, twin houses, apartments).`,
+  title: `FAQ · 100 buyer questions | ${nx}`,
+  description: `Issuance-led FAQ on ${nx} by ${ora}: Solana West prices, payment plan (5% / up to 10 years), New Zayed Mehwar El Dabaa location, ORA Developers Egypt, villas/apartments/townhouses, master plan, amenities, investment, comparisons, delivery from 2027 + AI-style snippet answers.`,
   openGraphImagePath: OG,
   keywords: [
     "Solana West FAQ",
+    "Solana West prices FAQ",
+    "Solana West payment plan FAQ",
+    "ORA Developers Egypt FAQ",
+    "New Zayed villas FAQ",
     "Solana West delivery 2027",
-    "Solana West installment plan",
   ],
 };
 

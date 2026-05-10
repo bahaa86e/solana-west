@@ -65,8 +65,8 @@ export function LuxuryFillImage({
       cn(
         "[transform:translateZ(0)]",
         mode === "rich" ?
-          "[filter:saturate(1.03)_contrast(1.045)_brightness(0.985)] motion-reduce:filter-none"
-        : "[filter:saturate(1.015)_contrast(1.028)_brightness(0.992)] motion-reduce:filter-none",
+          "[filter:saturate(1.02)_contrast(1.028)_brightness(1.015)] motion-reduce:filter-none"
+        : "[filter:saturate(1.01)_contrast(1.018)_brightness(1.02)] motion-reduce:filter-none",
       ),
     imgClassName,
   );
@@ -77,7 +77,7 @@ export function LuxuryFillImage({
     <div
       className={cn(
         "absolute inset-0 overflow-hidden",
-        mode !== "flat" && "bg-lux-ink/[0.028]",
+        mode !== "flat" && "bg-lux-sand/[0.14]",
         className,
       )}
     >
@@ -123,15 +123,15 @@ export function LuxuryFillImage({
           <div
             aria-hidden
             className={cn(
-              "pointer-events-none absolute inset-0 z-[1] mix-blend-soft-light opacity-[0.38] md:opacity-[0.42]",
-              "bg-[radial-gradient(ellipse_88%_64%_at_18%_12%,rgba(250,248,245,0.18)_0%,transparent_54%)]",
+              "pointer-events-none absolute inset-0 z-[1] mix-blend-soft-light opacity-[0.28] md:opacity-[0.32]",
+              "bg-[radial-gradient(ellipse_88%_64%_at_18%_12%,rgba(253,252,249,0.22)_0%,transparent_54%)]",
             )}
           />
           <div
             aria-hidden
             className={cn(
-              "pointer-events-none absolute inset-0 z-[1] mix-blend-overlay bg-[linear-gradient(130deg,rgba(196,165,116,0.085)_0%,transparent_44%,transparent_58%,rgba(232,226,217,0.06)_100%)]",
-              mode === "rich" ? "opacity-[0.22]" : "opacity-[0.14]",
+              "pointer-events-none absolute inset-0 z-[1] mix-blend-overlay bg-[linear-gradient(130deg,rgba(196,165,116,0.055)_0%,transparent_44%,transparent_58%,rgba(237,229,217,0.07)_100%)]",
+              mode === "rich" ? "opacity-[0.14]" : "opacity-[0.085]",
             )}
           />
           {/* Bottom anchor density — readability + weight */}
@@ -139,8 +139,8 @@ export function LuxuryFillImage({
             aria-hidden
             className={cn(
               "pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[52%]",
-              mode === "rich" ? "bg-gradient-to-t from-lux-ink/[0.2] via-transparent to-transparent"
-              : "bg-gradient-to-t from-lux-ink/[0.14] via-transparent to-transparent",
+              mode === "rich" ? "bg-gradient-to-t from-[rgba(72,66,58,0.1)] via-transparent to-transparent"
+              : "bg-gradient-to-t from-[rgba(72,66,58,0.065)] via-transparent to-transparent",
             )}
           />
           {/* Inset cinematographic rim */}
@@ -149,8 +149,8 @@ export function LuxuryFillImage({
             className={cn(
               "pointer-events-none absolute inset-0 z-[2]",
               mode === "rich" ?
-                "shadow-[inset_0_0_164px_-40px_rgb(10_10_10_/26%),inset_0_0_0_1px_rgb(250_248_245_/7%)]"
-              : "shadow-[inset_0_0_130px_-36px_rgb(10_10_10_/22%),inset_0_0_0_1px_rgb(250_248_245_/6%)]",
+                "shadow-[inset_0_0_120px_-32px_rgb(72_66_58_/12%),inset_0_0_0_1px_rgb(253_252_249_/9%)]"
+              : "shadow-[inset_0_0_100px_-28px_rgb(72_66_58_/9%),inset_0_0_0_1px_rgb(253_252_249_/8%)]",
             )}
           />
           {/* Oval vignette — draws eye to focal centre */}
@@ -159,14 +159,14 @@ export function LuxuryFillImage({
             className={cn(
               "pointer-events-none absolute inset-0 z-[2]",
               mode === "rich" ?
-                "bg-[radial-gradient(ellipse_98%_90%_at_48%_50%,transparent_24%,rgba(10,10,10,0.06)_62%,rgba(10,10,10,0.2)_100%)]"
-              : "bg-[radial-gradient(ellipse_98%_90%_at_48%_50%,transparent_24%,rgba(10,10,10,0.05)_65%,rgba(10,10,10,0.15)_100%)]",
+                "bg-[radial-gradient(ellipse_98%_90%_at_48%_50%,transparent_26%,rgba(72,66,58,0.04)_62%,rgba(72,66,58,0.09)_100%)]"
+              : "bg-[radial-gradient(ellipse_98%_90%_at_48%_50%,transparent_26%,rgba(72,66,58,0.035)_66%,rgba(72,66,58,0.075)_100%)]",
             )}
           />
           {/* Thin top skylight veil */}
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 z-[2] opacity-45 mix-blend-soft-light bg-[radial-gradient(ellipse_115%_55%_at_50%_0%,rgba(250,248,245,0.16)_0%,transparent_58%)]"
+            className="pointer-events-none absolute inset-0 z-[2] opacity-55 mix-blend-soft-light bg-[radial-gradient(ellipse_115%_55%_at_50%_0%,rgba(253,252,249,0.2)_0%,transparent_58%)]"
           />
         </>
       }

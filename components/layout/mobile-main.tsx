@@ -25,8 +25,8 @@ export function MobileMain({ children, id, className }: MobileMainProps) {
       className={cn(
         "flex flex-1 flex-col pt-0 lg:pb-0",
         stickyOnlyHome
-          ? "pb-[calc(5.625rem+env(safe-area-inset-bottom,0px))]"
-          : "pb-[calc(7.625rem+env(safe-area-inset-bottom,0px))]",
+          ? "pb-[calc(6rem+env(safe-area-inset-bottom,0px))]"
+          : "pb-[calc(8.25rem+env(safe-area-inset-bottom,0px))]",
         className,
       )}
     >

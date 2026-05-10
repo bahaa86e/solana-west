@@ -21,10 +21,7 @@ export function InvestmentSection() {
           hover="cinematic"
           className="order-2 min-h-[19rem] lg:order-1 lg:col-span-7 lg:min-h-[28rem] rounded-[3px]"
           frameAccent={
-            <>
-              <div className="absolute inset-0 bg-gradient-to-br from-lux-paper/[0.06] via-transparent to-lux-ink/[0.09]" aria-hidden />
-              <div className="absolute inset-[8%] border border-lux-ink/[0.08] md:inset-[9%]" aria-hidden />
-            </>
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-lux-paper/[0.05] via-transparent to-lux-ink/[0.07]" aria-hidden />
           }
         >
           <LuxuryFillImage

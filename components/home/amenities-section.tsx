@@ -57,7 +57,7 @@ export function AmenitiesSection() {
                     alt={asset.alt}
                     sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 32vw"
                     quality={82}
-                    crop={i === 0 ? "interiorWarm" : i === 1 ? "greenerySubject" : "editorialWideLow"}
+                    crop={i === 0 ? "editorialWideLow" : i === 1 ? "greenerySubject" : "editorialWideLow"}
                     treatment="rich"
                   />
                 </LuxuryImageShell>

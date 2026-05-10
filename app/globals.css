@@ -15,8 +15,8 @@
     --lux-ls-display: -0.022em;
     --lux-ls-body: 0.0085em;
     /* Emotional luxury atmosphere — warm/cool balance, investor-grade restraint */
-    --lux-warm-spot: rgb(185 168 146 / 0.1);
-    --lux-cool-floor: rgb(32 28 24 / 0.06);
+    --lux-warm-spot: rgb(185 168 146 / 0.075);
+    --lux-cool-floor: rgb(72 68 62 / 0.035);
     --lux-glass-highlight: rgb(255 254 252 / 0.42);
   }
 
@@ -63,12 +63,12 @@
  * Site canvas — foundation wash; cinematic layers live in `SiteAtmosphereField`.
  */
 .lux-page-canvas {
-  background-color: #f0ece5;
+  background-color: #f5f1ea;
   background-image:
-    radial-gradient(ellipse 120% 78% at 50% -14%, rgb(185 168 146 / 0.09), transparent 60%),
-    radial-gradient(ellipse 68% 50% at 100% 10%, rgb(228 220 208 / 0.1), transparent 50%),
-    radial-gradient(ellipse 65% 48% at 0% 42%, rgb(250 248 244 / 0.65), transparent 46%),
-    linear-gradient(180deg, rgb(252 251 248) 0%, rgb(242 238 232) 54%, rgb(234 229 222) 100%);
+    radial-gradient(ellipse 120% 76% at 50% -12%, rgb(185 168 146 / 0.065), transparent 58%),
+    radial-gradient(ellipse 72% 52% at 100% 8%, rgb(237 229 217 / 0.14), transparent 52%),
+    radial-gradient(ellipse 68% 46% at 0% 40%, rgb(253 252 249 / 0.72), transparent 48%),
+    linear-gradient(180deg, rgb(253 252 250) 0%, rgb(246 243 237) 52%, rgb(238 233 225) 100%);
 }
 
 /**
@@ -89,7 +89,7 @@
 
 @keyframes lux-atmosphere-warm {
   from {
-    opacity: 0.88;
+    opacity: 0.92;
   }
   to {
     opacity: 1;
@@ -104,7 +104,7 @@
     @apply max-w-readable font-normal text-body-lg text-lux-ink;
     line-height: 1.74;
     letter-spacing: 0.0075em;
-    color: rgb(44 43 40 / 71%);
+    color: rgb(61 58 54 / 72%);
   }
 
   @media (max-width: 767.98px) {
@@ -125,7 +125,7 @@
   /** Section & component eyebrows */
   .lux-eyebrow {
     @apply font-sans uppercase text-micro text-lux-ink md:tracking-[0.26em];
-    color: rgb(44 43 40 / 38%);
+    color: rgb(61 58 54 / 37%);
   }
 
   /** Hub & legal interior H1 */
@@ -140,7 +140,7 @@
     @apply max-w-[min(38rem,100%)] font-sans font-normal text-lux-lead text-lux-ink;
     line-height: 1.68;
     letter-spacing: 0.0085em;
-    color: rgb(44 43 40 / 74%);
+    color: rgb(61 58 54 / 74%);
   }
 
   @media (min-width: 1024px) {
@@ -154,18 +154,18 @@
     @apply max-w-[min(34rem,100%)] border-l border-lux-gold/[0.22] pl-5 font-sans font-normal text-lux-muted md:pl-6;
     line-height: 1.72;
     letter-spacing: 0.0135em;
-    color: rgb(44 43 40 / 54%);
+    color: rgb(61 58 54 / 54%);
   }
 
   .lux-article-meta {
     @apply font-sans text-[11px] font-semibold uppercase tracking-[0.24em] text-lux-ink;
-    color: rgb(44 43 40 / 38%);
+    color: rgb(61 58 54 / 38%);
   }
 
   .lux-deck {
     @apply font-display text-lux-deck text-lux-ink;
     line-height: 1.52;
-    color: rgb(44 43 40 / 70%);
+    color: rgb(61 58 54 / 69%);
   }
 
   /*
@@ -174,19 +174,19 @@
   .lux-display-hero {
     @apply max-w-[19ch] text-balance font-display font-medium text-lux-paper text-lux-hero;
     line-height: 1.045;
-    letter-spacing: -0.031em;
+    letter-spacing: -0.03em;
     text-shadow:
-      0 1px 0 rgb(0 0 0 / 12%),
-      0 0.1em 0.45em rgb(0 0 0 / 32%),
-      0 -0.02em 0.2em rgb(252 250 247 / 8%),
-      0 1rem 2.25rem rgb(0 0 0 / 18%);
+      0 1px 0 rgb(82 74 68 / 9%),
+      0 0.12em 0.42em rgb(62 54 46 / 16%),
+      0 -0.02em 0.25em rgb(253 252 249 / 14%),
+      0 0.85rem 1.75rem rgb(55 48 42 / 12%);
     text-wrap: balance;
   }
 
   @media (min-width: 1024px) {
     .lux-display-hero {
       line-height: 1.035;
-      letter-spacing: -0.032em;
+      letter-spacing: -0.031em;
     }
   }
 
@@ -194,13 +194,13 @@
   .lux-display-hero-ultra {
     @apply max-w-[min(19ch,100%)] text-balance font-display text-lux-hero font-medium text-lux-paper;
     line-height: 1.045;
-    letter-spacing: -0.032em;
-    color: rgb(252 251 248 / 96%);
+    letter-spacing: -0.03em;
+    color: rgb(253 252 250 / 97%);
     text-shadow:
-      0 1px 0 rgb(0 0 0 / 18%),
-      0 0.08em 0.4em rgb(0 0 0 / 34%),
-      0 -0.02em 0.25em rgb(32 28 24 / 22%),
-      0 1.25rem 2.5rem rgb(0 0 0 / 22%);
+      0 1px 0 rgb(72 64 58 / 10%),
+      0 0.1em 0.38em rgb(58 50 44 / 18%),
+      0 -0.02em 0.28em rgb(253 252 249 / 16%),
+      0 0.9rem 2rem rgb(48 42 38 / 14%);
     text-wrap: balance;
   }
 
@@ -208,7 +208,7 @@
     .lux-display-hero-ultra {
       max-width: 18ch;
       line-height: 1.038;
-      letter-spacing: -0.033em;
+      letter-spacing: -0.031em;
     }
   }
 
@@ -216,7 +216,7 @@
     @apply font-sans font-normal text-lux-lead text-lux-paper;
     line-height: 1.66;
     letter-spacing: 0.009em;
-    color: rgb(250 249 246 / 91%);
+    color: rgb(252 251 248 / 93%);
   }
 
   @media (min-width: 1024px) {
@@ -231,7 +231,7 @@
     @apply font-sans font-normal text-lux-muted text-lux-paper;
     line-height: 1.68;
     letter-spacing: 0.015em;
-    color: rgb(247 245 242 / 62%);
+    color: rgb(249 247 244 / 68%);
   }
 
   .lux-hero-annotation-title {
@@ -249,8 +249,15 @@
   /** Section H2 pattern — use alongside `SectionHeader` or standalone */
   .lux-section-head {
     @apply font-display text-display-lg font-medium text-lux-ink;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
+    line-height: 1.11;
+    letter-spacing: -0.019em;
+  }
+
+  @media (max-width: 767.98px) {
+    .lux-section-head {
+      line-height: 1.14;
+      letter-spacing: -0.017em;
+    }
   }
 
   /**
@@ -258,19 +265,19 @@
    * Use sparingly; pair with `shadow-lux-glass`.
    */
   .lux-glass-surface {
-    @apply border border-white/40 bg-gradient-to-br from-white/[0.46] via-white/[0.14] to-white/[0.05] backdrop-blur-[18px] backdrop-saturate-[1.22];
+    @apply border border-white/50 bg-gradient-to-br from-white/[0.52] via-white/[0.2] to-white/[0.08] backdrop-blur-[14px] backdrop-saturate-[1.12];
     box-shadow:
-      0 22px 64px -44px rgba(28, 26, 23, 0.12),
-      inset 0 1px 0 rgba(255, 255, 255, 0.55),
-      inset 0 -1px 0 rgba(28, 26, 23, 0.03);
+      0 22px 64px -44px rgba(45, 42, 37, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.62),
+      inset 0 -1px 0 rgba(45, 42, 37, 0.022);
   }
 
   /** Interior editorial panels — depth without heavy chrome */
   .lux-elevated-paper {
-    @apply rounded-[3px] border border-lux-ink/[0.05] bg-gradient-to-b from-white/52 to-lux-paper/94;
+    @apply rounded-[3px] border border-lux-ink/[0.045] bg-gradient-to-b from-white/58 to-lux-paper/95;
     box-shadow:
-      0 1px 2px -1px rgba(28, 26, 23, 0.04),
-      0 16px 42px -34px rgba(28, 26, 23, 0.09),
-      inset 0 1px 0 rgba(255, 255, 255, 0.68);
+      0 1px 2px -1px rgba(45, 42, 37, 0.028),
+      0 16px 42px -34px rgba(45, 42, 37, 0.065),
+      inset 0 1px 0 rgba(255, 255, 255, 0.72);
   }
 }

@@ -107,7 +107,7 @@ export function buildLocationPageModel(): LocationPageModel {
   const dev = entry.developer;
 
   const heroImage = bundle.media.hero;
-  const overviewFigure = bundle.media.locationMap;
+  const overviewFigure = bundle.media.locationAtmosphere;
 
   return {
     idPrefix: "location-sw",

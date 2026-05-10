@@ -17,8 +17,8 @@ export function TrustSection() {
       depth="lifted"
       accentRim
     >
-      <div className="grid gap-section-gap lg:grid-cols-12 lg:items-stretch lg:gap-x-section-gap xl:gap-x-[clamp(4rem,7vw,5.5rem)]">
-        <div className="flex flex-col justify-between lg:col-span-5">
+      <div className="grid gap-section-gap lg:grid-cols-12 lg:items-center lg:gap-x-section-gap xl:gap-x-[clamp(3.75rem,6.5vw,5rem)]">
+        <div className="flex flex-col justify-between lg:col-span-5 lg:py-6">
           <div>
             <SectionHeader
               id="developer-heading"
@@ -36,21 +36,18 @@ export function TrustSection() {
         </div>
         <LuxuryImageShell
           hover="lift"
-          aspectClassName="aspect-[4/3] lg:rounded-[3px]"
+          aspectClassName="aspect-[4/3] lg:aspect-[21/9] lg:min-h-[clamp(26rem,52vh,42rem)] lg:rounded-[3px]"
           className="lg:col-span-7"
           frameAccent={
-            <>
-              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-lux-paper/[0.07]" aria-hidden />
-              <div className="absolute inset-[9%] ring-1 ring-lux-gold/24 md:inset-[10%]" aria-hidden />
-            </>
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-lux-ink/[0.05] via-transparent to-lux-paper/[0.04]" aria-hidden />
           }
         >
           <LuxuryFillImage
-            src={solanaWestMedia.developer.src}
-            alt={solanaWestMedia.developer.alt}
-            sizes="(max-width: 1023px) 100vw, 44vw"
-            quality={82}
-            crop="greenerySubject"
+            src={solanaWestMedia.trustAnchor.src}
+            alt={solanaWestMedia.trustAnchor.alt}
+            sizes="(max-width: 1023px) 100vw, min(928px, 58vw)"
+            quality={88}
+            crop="editorialWideLow"
             treatment="rich"
           />
         </LuxuryImageShell>

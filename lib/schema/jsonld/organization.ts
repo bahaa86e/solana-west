@@ -9,7 +9,7 @@ const sameAs = [
 ];
 
 export function getOrganizationJsonLd() {
-  const logoUrl = `${siteConfig.url}${siteConfig.branding.headerLogo.src}`;
+  const logoUrl = `${siteConfig.url}${siteConfig.branding.schemaLogoUrl}`;
 
   return {
     "@context": "https://schema.org",
@@ -22,7 +22,7 @@ export function getOrganizationJsonLd() {
     logo: {
       "@type": "ImageObject",
       url: logoUrl,
-      caption: siteConfig.branding.headerLogo.alt,
+      caption: `${siteConfig.name} · ${siteConfig.developer}`,
     },
     sameAs,
   };

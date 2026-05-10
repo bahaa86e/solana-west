@@ -3,9 +3,13 @@ import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 const maxWidthMap = {
+  /** ~1200px — primary editorial column for long-form & sections */
   default: "max-w-content",
   narrow: "max-w-readable",
-  wide: "max-w-[90rem]",
+  /** ~1216px — luxury desktop grid; avoids ultra-wide stretched layouts */
+  wide: "max-w-[min(76rem,calc(100vw-4.75rem))]",
+  /** ~1136px — tighter feature articles & dense hubs */
+  editorial: "max-w-[min(71rem,calc(100vw-4.5rem))]",
   full: "max-w-none",
 } as const;
 

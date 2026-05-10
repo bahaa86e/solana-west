@@ -10,8 +10,8 @@ export function MasterPlanOverviewSection({ model }: { model: MasterPlanPageMode
 
   return (
     <SectionShell id={`${idPrefix}-overview`} aria-labelledby={headingId} tone="sand" containerSize="wide">
-      <div className="grid gap-16 lg:grid-cols-12 lg:items-stretch lg:gap-20 xl:gap-24">
-        <div className="flex flex-col justify-between lg:col-span-5">
+      <div className="grid gap-section-gap lg:grid-cols-12 lg:items-center lg:gap-x-section-gap lg:gap-y-14 xl:gap-x-[clamp(3.75rem,6.25vw,4.75rem)]">
+        <div className="flex flex-col justify-between lg:col-span-5 lg:py-4">
           <div>
             <SectionHeader id={headingId} eyebrow={overview.eyebrow} title={overview.title} />
             <div className="mt-14 max-w-md space-y-6 xl:max-w-lg">
@@ -28,14 +28,14 @@ export function MasterPlanOverviewSection({ model }: { model: MasterPlanPageMode
         </div>
         <LuxuryImageShell
           hover="cinematic"
-          aspectClassName="aspect-[4/3]"
-          className="lg:col-span-7 bg-lux-paper"
+          aspectClassName="aspect-[4/3] lg:aspect-[21/9] lg:min-h-[clamp(22rem,46vh,34rem)]"
+          className="lg:col-span-7 bg-lux-paper lg:rounded-[3px]"
           frameAccent={<div className="pointer-events-none absolute inset-[10%] ring-1 ring-lux-ink/10" aria-hidden />}
         >
           <LuxuryFillImage
             src={overviewFigure.src}
             alt={overviewFigure.alt}
-            sizes="(max-width: 1023px) 100vw, 44vw"
+            sizes="(max-width: 1023px) 100vw, min(928px, 58vw)"
             quality={88}
             fit="contain"
             crop="mapCalm"

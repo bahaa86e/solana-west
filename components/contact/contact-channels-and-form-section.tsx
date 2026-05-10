@@ -27,7 +27,7 @@ export function ContactChannelsAndFormSection({ model }: { model: ContactPageMod
       tone="sand"
       containerSize="wide"
     >
-      <div className="grid gap-16 lg:grid-cols-12 lg:items-start lg:gap-20 xl:gap-28">
+      <div className="grid gap-12 max-lg:gap-14 lg:grid-cols-12 lg:items-start lg:gap-20 xl:gap-28">
         <div className="flex flex-col gap-10 lg:col-span-5">
           <div>
             <SectionHeader
@@ -108,7 +108,7 @@ export function ContactChannelsAndFormSection({ model }: { model: ContactPageMod
           <p className="mt-8 max-w-md text-[0.9375rem] font-normal leading-[1.72] tracking-[0.014em] text-lux-ink/62 md:text-base">
             {formColumn.intro}
           </p>
-          <div className="mt-12 rounded-[10px] border border-lux-ink/[0.05] bg-gradient-to-br from-white/90 via-lux-paper/96 to-[#ebe6df]/88 p-[clamp(1.75rem,4vw,2.75rem)] shadow-[0_20px_56px_-38px_rgba(28,26,23,0.1),inset_0_1px_0_rgba(255,255,255,0.48)] backdrop-blur-[16px] md:p-11">
+          <div className="mt-10 max-lg:mt-11 rounded-[10px] border border-lux-ink/[0.07] bg-lux-paper p-[clamp(1.375rem,4vw,2.75rem)] shadow-[0_12px_40px_-36px_rgba(45,42,37,0.06),inset_0_1px_0_rgba(255,255,255,0.72)] max-lg:backdrop-blur-none md:p-11 md:bg-gradient-to-br md:from-white/95 md:via-lux-paper md:to-lux-mist/50 md:backdrop-blur-[8px]">
             <LeadInquiryForm />
           </div>
           <p className="mt-10">

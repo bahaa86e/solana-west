@@ -38,8 +38,8 @@ function NavItem({ href, label }: { href: string; label: string }) {
           [
             "-mx-px focus-visible:ring-offset-lux-ink/55",
             "px-[0.9rem] py-[0.5875rem] text-[11px] font-normal uppercase tracking-[0.32em]",
-            "text-lux-paper/48 transition-[color,background-color,box-shadow] duration-[560ms] ease-luxury motion-reduce:transition-none",
-            "motion-safe:hover:bg-white/[0.045] hover:text-lux-paper/[0.82]",
+            "text-lux-paper/56 transition-[color,background-color,box-shadow] duration-[560ms] ease-luxury motion-reduce:transition-none",
+            "motion-safe:hover:bg-white/[0.08] hover:text-lux-paper/[0.88]",
             "motion-safe:hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]",
             active && "text-lux-paper/93",
           ]
@@ -119,8 +119,8 @@ export function PrimaryNavigation() {
     "rounded-full transition-[transform,color,background-color,border-color,box-shadow] duration-[520ms] ease-luxury motion-reduce:transition-none motion-reduce:active:scale-100 active:scale-[0.98]",
     overDark ?
       cn(
-        "border border-white/[0.22] bg-white/[0.06] text-lux-paper/72 backdrop-blur-md",
-        "shadow-[inset_0_1px_0_rgba(255,255,255,0.09)] hover:border-white/[0.32] hover:bg-white/[0.12] hover:text-lux-paper",
+        "border border-white/[0.26] bg-white/[0.1] text-lux-paper/78 backdrop-blur-md",
+        "shadow-[inset_0_1px_0_rgba(253,252,249,0.14)] hover:border-white/[0.38] hover:bg-white/[0.16] hover:text-lux-paper",
       )
     : cn(
         "border border-white/35 bg-white/[0.09] text-lux-ink/38 backdrop-blur-md",
@@ -166,7 +166,7 @@ export function PrimaryNavigation() {
               focusRing,
               "hidden min-h-[2.6875rem] rounded-[999px] px-[1rem] lg:inline-flex",
               "[&>span:last-child]:text-[10px] [&>span:last-child]:font-semibold [&>span:last-child]:uppercase [&>span:last-child]:tracking-[0.34em]",
-              overDark ? "shadow-[0_12px_36px_-28px_rgba(0,0,0,0.28)] focus-visible:!ring-offset-lux-charcoal" : "shadow-[0_10px_28px_-22px_rgba(24,42,34,0.2)] focus-visible:!ring-offset-2 focus-visible:!ring-offset-white",
+              overDark ? "shadow-[0_12px_36px_-28px_rgba(52,46,42,0.16)] focus-visible:!ring-offset-[rgba(72,66,58,0.45)]" : "shadow-[0_10px_28px_-22px_rgba(24,42,34,0.2)] focus-visible:!ring-offset-2 focus-visible:!ring-offset-white",
             )}
             data-track="whatsapp_click"
             data-track-placement="header_desktop_whatsapp_primary"

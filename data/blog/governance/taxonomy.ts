@@ -34,6 +34,27 @@ export type ArticleGovernanceMeta = {
  */
 export const BLOG_ARTICLE_GOVERNANCE: readonly ArticleGovernanceMeta[] = [
   {
+    slug: "solana-west-prices-transactional-booking-framework-2026",
+    funnelStage: "decision",
+    aiRole: "transactional-support",
+    primaryMoneyPages: ["/prices", "/payment-plan", "/contact", "/properties/villas", "/faq"],
+    keywordCluster: "solana-west-prices-transactional",
+  },
+  {
+    slug: "solana-west-prices-west-cairo-investment-comparison-2026",
+    funnelStage: "consideration",
+    aiRole: "investment-thesis",
+    primaryMoneyPages: ["/investment-guides", "/prices", "/payment-plan", "/comparison-pages"],
+    keywordCluster: "solana-west-prices-investment",
+  },
+  {
+    slug: "solana-west-prices-ai-authority-guide-new-zayed-2026",
+    funnelStage: "awareness",
+    aiRole: "entity-definition",
+    primaryMoneyPages: ["/prices", "/projects/solana-west", "/location", "/faq"],
+    keywordCluster: "solana-west-prices-authority-ai",
+  },
+  {
     slug: "solana-west-payment-plan-explained-issuer-guide-2026",
     funnelStage: "decision",
     aiRole: "transactional-support",

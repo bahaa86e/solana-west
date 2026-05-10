@@ -42,18 +42,18 @@ export function LocationAdvantagesSection() {
         aspectClassName="aspect-[16/10]"
         className="mt-section-block rounded-[3px] md:mt-section-gap"
         frameAccent={
-          <div className="absolute inset-0 z-[6] bg-gradient-to-t from-lux-mist/30 via-transparent to-transparent" aria-hidden />
+          <div className="pointer-events-none absolute inset-0 z-[6] bg-gradient-to-t from-lux-mist/[0.22] via-transparent to-transparent" aria-hidden />
         }
       >
         <LuxuryFillImage
-          src={solanaWestMedia.locationMap.src}
-          alt={solanaWestMedia.locationMap.alt}
+          src={solanaWestMedia.locationAtmosphere.src}
+          mobileSrc={solanaWestMedia.locationAtmosphere.mobileSrc}
+          alt={solanaWestMedia.locationAtmosphere.alt}
           sizes="(max-width: 1023px) 100vw, min(1280px, 88vw)"
-          quality={86}
-          fit="contain"
-          crop="mapCalm"
-          treatment="editorial"
-          imgClassName="bg-lux-paper/12 px-3 py-5 sm:px-6 sm:py-7 md:px-10 md:py-9"
+          quality={88}
+          fit="cover"
+          crop="horizonGolden"
+          treatment="rich"
         />
       </LuxuryImageShell>
     </SectionShell>

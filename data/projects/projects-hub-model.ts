@@ -143,7 +143,7 @@ export function buildProjectsHubPageModel(): ProjectsHubPageModel {
         `${short} is the active fully routed compound on this site. Reference pricing, payment headline, and delivery horizon stay aligned with /prices and /payment-plan—yet reservation always depends on your dated issuance pack.`,
         "The links below route you to typology pages, price context, master plan scale, and geography—each answers a distinct buyer intent without repeating the hub narrative.",
       ],
-      figure: solanaWestMedia.developer,
+      figure: solanaWestMedia.projectOverview,
     },
     corridor: {
       eyebrow: "Geography & positioning",
