@@ -17,7 +17,7 @@ export function MasterPlanFaqPreviewSection({ model }: { model: MasterPlanPageMo
           <SectionHeader
             id={headingId}
             eyebrow="FAQ preview"
-            title="Planning context — excerpted canonical answers"
+            title="Planning FAQs — excerpted beside the acreage narrative"
             kicker={<p className="font-normal text-lux-ink/64">{faqPreview.intro}</p>}
           />
         </div>

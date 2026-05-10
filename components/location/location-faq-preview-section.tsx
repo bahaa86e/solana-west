@@ -17,7 +17,7 @@ export function LocationFaqPreviewSection({ model }: { model: LocationPageModel 
           <SectionHeader
             id={headingId}
             eyebrow="FAQ preview"
-            title="Location, access & typologies — canonical answers"
+            title="Geography FAQs — excerpted beside this corridor read"
             kicker={<p className="font-normal text-lux-ink/64">{faqPreview.intro}</p>}
           />
         </div>

@@ -25,8 +25,8 @@ export function ProjectsHubProjectCardsSection({ model }: { model: ProjectsHubPa
             <li key={fp.entry.slug}>
               <article
                 className={cn(
-                  "grid gap-10 border border-lux-ink/[0.07] bg-lux-paper/85 p-8 shadow-lux-line md:gap-12 md:p-10 lg:grid-cols-12 lg:items-stretch lg:gap-0 lg:p-0",
-                  "transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/[0.11] hover:shadow-lux-card",
+                  "grid gap-10 border border-lux-ink/[0.052] bg-lux-paper/88 p-8 shadow-lux-line md:gap-12 md:p-10 lg:grid-cols-12 lg:items-stretch lg:gap-0 lg:p-0",
+                  "transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/[0.085] hover:shadow-lux-soft",
                 )}
               >
                 <Link

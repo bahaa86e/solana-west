@@ -17,7 +17,7 @@ export function ProjectsHubFaqPreviewSection({ model }: { model: ProjectsHubPage
           <SectionHeader
             id={headingId}
             eyebrow="FAQ preview"
-            title="Credibility anchors for ORA-backed buying"
+            title="ORA project index — FAQ credibility anchors excerpted here"
             kicker={<p className="font-normal text-lux-ink/64">{faqPreview.intro}</p>}
           />
         </div>

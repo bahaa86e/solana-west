@@ -2,10 +2,17 @@ import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import type { PropertyExperienceModel } from "@/data/properties/property-type-experience";
 
+const FEATURE_HEADLINE: Record<PropertyExperienceModel["slug"], string> = {
+  villas: "Villa buyer checklist — scope, finishing, outlook",
+  townhouses: "Townhouse buyer checklist — avenue, privacy, ticket",
+  apartments: "Apartment buyer checklist — finish, view, service regime",
+  "twin-houses": "Twin-house buyer checklist — party line, frontage, banding",
+};
+
 export function PropertyTypeFeaturesSection({ model }: { model: PropertyExperienceModel }) {
   const { slug, keyFeatures } = model;
   const eyebrow = "Composition";
-  const title = "Key features & positioning";
+  const title = FEATURE_HEADLINE[slug];
 
   return (
     <SectionShell

@@ -6,6 +6,13 @@ import { SectionShell } from "@/components/sections/section-shell";
 import { CtaButton } from "@/components/ui/cta-button";
 import type { PropertyExperienceModel } from "@/data/properties/property-type-experience";
 
+const PROP_FAQ_H2: Record<PropertyExperienceModel["slug"], string> = {
+  villas: "Villa FAQs — outlook, finishing and phase bands excerpted here",
+  townhouses: "Townhouse FAQs — avenue life and ticketing questions",
+  apartments: "Apartment FAQs — service charges, leases and elevators",
+  "twin-houses": "Twin-house FAQs — paired walls, frontage & brackets",
+};
+
 export function PropertyTypeFaqPreviewSection({ model }: { model: PropertyExperienceModel }) {
   const { slug, faqPreview } = model;
 
@@ -20,8 +27,8 @@ export function PropertyTypeFaqPreviewSection({ model }: { model: PropertyExperi
         <div className="max-w-xl md:pb-2">
           <SectionHeader
             id={`property-${slug}-faq-preview-heading`}
-            eyebrow="FAQ preview"
-            title="Straight answers aligned with issuance"
+            eyebrow="FAQ excerpts"
+            title={PROP_FAQ_H2[slug]}
             kicker={<p className="font-normal text-lux-ink/64">{faqPreview.intro}</p>}
           />
         </div>

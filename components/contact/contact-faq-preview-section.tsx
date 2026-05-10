@@ -17,7 +17,7 @@ export function ContactFaqPreviewSection({ model }: { model: ContactPageModel })
           <SectionHeader
             id={headingId}
             eyebrow="FAQ preview"
-            title="Answers before you message the desk"
+            title="FAQs buyers skim before WhatsApp or voice"
             kicker={<p className="font-normal text-lux-ink/64">{faqPreview.intro}</p>}
           />
         </div>

@@ -1,7 +1,7 @@
 import { SOLANA_WEST_FAQ_SHARED_INTRO, solanaWestFaqCanonical } from "@/data/faq/solana-west-faq";
 import type { FaqPair, ProjectImageAsset } from "@/data/projects/types";
 import { resolveProjectPage } from "@/data/projects/resolve-project-page";
-import { solanaWestMedia } from "@/data/solana-west-media";
+import { solanaWestMedia } from "@/data/media/solana-west";
 import { siteConfig } from "@/data/site";
 
 export type TransactionalPageKey = "prices" | "payment-plan";
@@ -82,22 +82,22 @@ function baseInternalLinks(includePrices: boolean, includePayment: boolean): Tra
     {
       label: "Apartments",
       href: "/properties/apartments",
-      context: "Editorial typology route.",
+      context: "Lower land coefficient; bracketing vs. villas at reservation.",
     },
     {
       label: "Townhouses",
       href: "/properties/townhouses",
-      context: "Editorial typology route.",
+      context: "Mid ticket on walkable avenues; compare to twin and detached bands.",
     },
     {
       label: "Twin houses",
       href: "/properties/twin-houses",
-      context: "Editorial typology route.",
+      context: "Paired stock—step on the equity curve before standalone villas.",
     },
     {
       label: "Standalone villas",
       href: "/properties/villas",
-      context: "Editorial typology route.",
+      context: "Widest land dedication; outlook and façade move the issuance band.",
     },
     {
       label: "FAQ index",
@@ -126,7 +126,7 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
     overviewFigure,
     hero: {
       locationEyebrow: "Commercial context · issuance-led",
-      h1: "Pricing posture at Solana West New Zayed",
+      h1: "Solana West prices — issuance-led brackets in New Zayed",
       lead:
         `Published marketing references starting from 9.8M EGP as project-level entry context. Effective brackets move with phase, outlook, finishing path, and typology — ${bundle.entry.developer} issues binding schedules at booking.`,
       supporting:
@@ -134,7 +134,7 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
     },
     overview: {
       eyebrow: "Overview",
-      title: "How brackets form inside a phased masterplan",
+      title: "How phased New Zayed release resets price bands",
       paragraphs: [
         `${short} is a 316-acre, low-density plan on Mehwar El Dabaa. Pricing behaves like infrastructure-led residential paper: contiguous green structure, walkway priority, and ORA-managed release cadences — not isolated building inventory.`,
         "Commercial quotations are regenerated at issuance. Typology mixes (apartments, townhouses, twin houses, standalone villas), finishing modality (fully finished versus core & shell), and façade specification reset the runnable price — summarise third-party rumours cautiously.",
@@ -143,7 +143,7 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
     },
     breakdowns: {
       eyebrow: "Buyer-oriented breakdown",
-      title: "Typology positioning · apartments, townhouses, twin houses, standalone villas",
+      title: "SKU economics — villas, twins, townhouses & apartments",
       intro:
         "Four published residential archetypes inside the same phased issuance environment — narrative positioning only. Which SKU sits at or near the stated marketing entry is determined per tranche, not generalized on this route.",
       sections: [
@@ -180,7 +180,7 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
           links: [{ label: "Standalone villas editorial route", href: "/properties/villas" }],
         },
         {
-          heading: "Investment framing · disciplined underwriting",
+          heading: "Bench New Zayed peers without inventing guarantees",
           body: [
             "Benchmark adjacent large compounds (including VYE and Belle Vie in New Zayed) as contextual comparables only — cite no partnerships or corridor guarantees absent desk confirmation.",
             "Treat social-channel pricing screenshots as non-binding noise until reconciled to authorised ORA issuance.",
@@ -190,9 +190,9 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
       ],
     },
     internalLinks: {
-      eyebrow: "Internal reference map",
-      title: "Continue research without leaving the architecture",
-      intro: "Calm cross-links — structured for humans and extractable for AI-search assistants.",
+      eyebrow: "Authority silos",
+      title: "Layer payment mechanics, geography & deeper product reads",
+      intro: "Each route owns a distinct buyer question — skim headlines, cite URLs, reopen with issuance on the desk.",
       links: baseInternalLinks(false, true),
     },
     faqPreview: {
@@ -202,11 +202,11 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
     },
     finalCta: {
       eyebrow: "Next step",
-      title: "Request an issuance-aligned quotation",
+      title: "Ask for a dated quotation matched to your typology",
       supporting:
-        `Share target typology and horizon; we align you with ${bundle.entry.developer} desk practice — WhatsApp or contact form. No artificial urgency — reserve only after verifying live availability.`,
-      primaryLabel: "WhatsApp — pricing & payment plan",
-      secondaryLabel: "Contact",
+        `Share target typology and horizon; we align you with ${bundle.entry.developer} desk practice—WhatsApp or written enquiry. Reserve only after verifying live availability.`,
+      primaryLabel: "WhatsApp private desk",
+      secondaryLabel: "Written enquiry",
     },
   };
 }
@@ -228,7 +228,7 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
     overviewFigure,
     hero: {
       locationEyebrow: "Ownership mechanics · contract-governed",
-      h1: "Payment plan structure at Solana West New Zayed",
+      h1: "Solana West payment plan — down payment, tenor & milestones",
       lead:
         "Collateral references 5% down with instalments extending up to 10 years — interest mechanics, reservation deposits, milestones, and admin fees are stipulated only in executed booking issuance.",
       supporting:
@@ -236,7 +236,7 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
     },
     overview: {
       eyebrow: "Overview",
-      title: "Long-term ownership inside a master-planned compound",
+      title: "Extended tenor as ownership discipline — not promotional leverage",
       paragraphs: [
         `${short} sequences capital calls against staged construction reality — the payment architecture is designed for extended balance-sheet ownership, not instantaneous flip liquidity.`,
         "Collateral percentages and tenors published online summarise commercial intent; contractual cadence, penalties, early settlement, and administrative charges exist only inside signed booking documentation.",
@@ -245,7 +245,7 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
     },
     breakdowns: {
       eyebrow: "Structure",
-      title: "What marketing collateral references today",
+      title: "Down payment, instalment curve & delivery — read against your contract",
       intro:
         "Three headline mechanics — always read against your executed issuance. No countdowns, no scarcity theatre, no implied guarantee of inventory.",
       sections: [
@@ -255,7 +255,7 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
             "Down-payment context is cited at 5% in published marketing — supplementary reservation deposits, milestone timing, and FX or admin handling (if any) are defined in issuance, not on this page.",
             "Capital structuring should leave headroom below bank and internal policy limits until contract schedules are lodged.",
           ],
-          links: [{ label: "Pricing posture & typology framing", href: "/prices" }],
+          links: [{ label: "Price brackets & typology context", href: "/prices" }],
         },
         {
           heading: "Instalments up to 10 years",
@@ -274,7 +274,7 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
           links: [{ label: "Project hub — delivery FAQs in context", href: "/projects/solana-west" }],
         },
         {
-          heading: "Long-term positioning · calm ownership thesis",
+          heading: "Hold-time thesis — calm capital behind phased construction",
           body: [
             "Extended tenor should be interpreted as disciplined alignment between buyer, contractor pacing, and master developer governance — not promotional leverage.",
             "Serious underwriting pairs instalment optics with zoning stability, arterial access maturity, and long-horizon demand for low-density compounds in western New Cairo.",
@@ -283,9 +283,9 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
       ],
     },
     internalLinks: {
-      eyebrow: "Internal reference map",
-      title: "Cross-check pricing, typologies, and project depth",
-      intro: "Editorial links — no conversion funnels, no artificial urgency.",
+      eyebrow: "Authority silos",
+      title: "Pair instalment questions with price, place & project proof",
+      intro: "Use these routes to close the loop before you model cash flow on a spreadsheet alone.",
       links: baseInternalLinks(true, false),
     },
     faqPreview: {
@@ -295,11 +295,11 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
     },
     finalCta: {
       eyebrow: "Next step",
-      title: "Request live commercial documentation",
+      title: "Pull the live instalment schedule for your SKU",
       supporting:
-        `Ask for the latest instalment schedule template and reservation mechanics for your typology — routing through ${bundle.entry.developer} authorised channels only.`,
-      primaryLabel: "WhatsApp — pricing & payment plan",
-      secondaryLabel: "Contact",
+        `Ask for the latest instalment schedule template and reservation mechanics for your typology—through ${bundle.entry.developer} authorised channels only.`,
+      primaryLabel: "WhatsApp private desk",
+      secondaryLabel: "Written enquiry",
     },
   };
 }

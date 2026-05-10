@@ -228,10 +228,10 @@ function investorFragment(card: { investorNote: string }) {
 }
 
 const HERO_TITLE: Record<PropertyExperienceSlug, string> = {
-  villas: `Standalone villas in ${siteConfig.name}`,
-  townhouses: `Townhouses in ${siteConfig.name}`,
-  apartments: `Apartments in ${siteConfig.name}`,
-  "twin-houses": `Twin houses in ${siteConfig.name}`,
+  villas: `Detached villas facing open green — ${siteConfig.name}`,
+  townhouses: `Townhouses on landscaped avenues — ${siteConfig.shortName}`,
+  apartments: `Finished apartments inside the compound — ${siteConfig.name}`,
+  "twin-houses": `Twin villas with paired frontage — ${siteConfig.shortName}`,
 };
 
 export function buildPropertyExperienceModel(slug: PropertyExperienceSlug): PropertyExperienceModel {
@@ -263,28 +263,42 @@ export function buildPropertyExperienceModel(slug: PropertyExperienceSlug): Prop
       eyebrow: "Property overview",
       title:
         slug === "villas" ?
-          "Standalone villas in the master-planned footprint"
+          "Detached villas — elevation bands against continuous green"
         : slug === "townhouses" ?
-          "Townhouses on walkable landscaped avenues"
+          "Townhouses — landscaped avenues instead of arterial edges"
         : slug === "twin-houses" ?
-          "Twin houses between townhouses and detached villas"
-        : "Apartments with green outlooks across the compound",
+          "Twin villas — paired frontage between rows and detached stock"
+        : "Finished apartments — vertical life with outlook across green rooms",
       paragraphs: overview,
     },
     lifestyle: {
       eyebrow: "Lifestyle positioning",
-      title: "How this typology fits the pedestrian plan",
+      title:
+        slug === "villas" ?
+          "Villa pacing — walkways, outlook and acoustic buffers"
+        : slug === "townhouses" ?
+          "Townhome routines on pedestrian-first streets"
+        : slug === "twin-houses" ?
+          "Twin-house rhythm — privacy without detached land carry"
+        : "Apartment life — lifts, decks and communal green structure",
       paragraphs: lifestyle,
     },
     investment: {
       eyebrow: "Investment relevance",
-      title: "Issuance-led economics — underwriting discipline",
+      title:
+        slug === "villas" ?
+          "Land-rich SKUs — wide commercial bands by phase"
+        : slug === "townhouses" ?
+          "Mid-ticket density — balance ticket, privacy and servicing"
+        : slug === "twin-houses" ?
+          "Step-up equity curve — compare twins to rows and detached"
+        : "Compact footprint — instalment-friendly when finished stock books",
       paragraphs: investment,
     },
     keyFeatures: features,
     relatedProject: {
       href: `/projects/${entry.slug}`,
-      title: `${short} · project hub`,
+      title: `${short} hub — amenities, master plan & canonical FAQs`,
       description:
         `Open the full project route for amenities, connectivity tables, payment context, and the complete residential mix inside ${short}.`,
     },
@@ -295,11 +309,18 @@ export function buildPropertyExperienceModel(slug: PropertyExperienceSlug): Prop
     },
     finalCta: {
       eyebrow: "Next step",
-      title: "Request typology-specific guidance",
+      title:
+        slug === "villas" ?
+          "Ask for villa bands, outlook packs and phase maps"
+        : slug === "townhouses" ?
+          "Request townhouse availability by avenue cluster"
+        : slug === "twin-houses" ?
+          "Request twin inventory and party-wall briefs"
+        : "Request apartment stacks, finish packs and view context",
       supporting:
-        `Share your target typology (${TYPOLOGY_CTA_LOWER[slug]}) and timeline; we align you with ${entry.developer} issuance practice — WhatsApp or contact form.`,
-      primaryLabel: "WhatsApp — pricing & payment plan",
-      secondaryLabel: "Contact",
+        `Share your target typology (${TYPOLOGY_CTA_LOWER[slug]}) and timeline; we align you with ${entry.developer} desk practice—WhatsApp or written enquiry.`,
+      primaryLabel: "WhatsApp private desk",
+      secondaryLabel: "Written enquiry",
     },
   };
 }

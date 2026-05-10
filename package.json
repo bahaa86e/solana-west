@@ -6,7 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "media:init": "node scripts/init-solana-west-cinematic-folders.mjs",
+    "media:pipeline": "node scripts/cinematic-solana-west-pipeline.mjs",
+    "media:pipeline:prod": "node scripts/cinematic-solana-west-pipeline.mjs --production",
+    "media:pipeline:dry": "node scripts/cinematic-solana-west-pipeline.mjs --dry-run",
+    "media:promote": "node scripts/promote-solana-west-staging.mjs",
+    "media:verify": "node scripts/verify-solana-west-canonical.mjs",
+    "media:premium": "node scripts/solana-west-premium-campaign.mjs",
+    "media:premium-bundle": "node scripts/solana-west-bootstrap-master-source.mjs && npm run media:pipeline:prod && node scripts/solana-west-premium-campaign.mjs",
+    "media:consumed-batch": "node scripts/solana-west-consumed-organize.mjs --production"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -24,6 +33,7 @@
     "eslint": "^8.57.1",
     "eslint-config-next": "^14.2.18",
     "postcss": "^8.4.49",
+    "sharp": "^0.33.5",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.7.2"
   }

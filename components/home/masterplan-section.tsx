@@ -2,7 +2,10 @@ import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
-import { solanaWestMedia } from "@/data/solana-west-media";
+import { homeSections } from "@/data/seo/home";
+import { solanaWestMedia } from "@/data/media/solana-west";
+
+const { masterplan } = homeSections;
 
 export function MasterplanSection() {
   return (
@@ -14,7 +17,12 @@ export function MasterplanSection() {
       rhythm="breath"
       depth="lifted"
     >
-      <SectionHeader id="masterplan-heading" eyebrow="Plan" title="Masterplan" />
+      <SectionHeader
+        id="masterplan-heading"
+        eyebrow={masterplan.eyebrow}
+        title={masterplan.title}
+        kicker={<p className="font-normal text-lux-ink/68">{masterplan.intro}</p>}
+      />
       <LuxuryImageShell
         hover="cinematic"
         className="mt-section-block aspect-[21/9] max-h-[26rem] w-full rounded-[3px] md:mt-section-gap xl:max-h-[28rem]"

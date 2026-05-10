@@ -14,10 +14,12 @@ export function createSolanaWestPageContent(entry: ProjectEntry): ProjectPageCon
     schemaPlaceContainedIn: "New Zayed · West Cairo, Egypt",
 
     seo: {
-      title: `${entry.name} · project hub | ${entry.developer}`,
-      description: `${entry.name}: 316-acre plan on Mehwar El Dabaa, New Zayed. Walkable low-density community, villas and apartments, reference from 9.8M EGP, 5% down, up to 10 years, delivery from 2027. ${siteConfig.founder}–led ${entry.developer}.`,
+      title: `${entry.name} Prices & Payment Plan | New Zayed | ${entry.developer}`,
+      description: `${entry.name} on Mehwar El Dabaa: 316-acre walkable estate, villas to apartments. Reference from 9.8M EGP, 5% down, up to 10 years, delivery from 2027. ORA-led master plan—${siteConfig.founder}.`,
       openGraphImagePath: defaultOpenGraphImagePath,
       keywords: [
+        `${short} prices New Zayed`,
+        `${short} payment plan`,
         `${short} ORA`,
         `${short} New Zayed master plan`,
         `${siteConfig.founder} ${short}`,
@@ -27,130 +29,131 @@ export function createSolanaWestPageContent(entry: ProjectEntry): ProjectPageCon
 
     hero: {
       locationEyebrow: "New Zayed · Mehwar El Dabaa",
-      h1: entry.name,
-      communityLine: `A low-density residential community by ${entry.developer} in New Zayed.`,
+      /** Hub depth — distinct headline from homepage brand statement */
+      h1: `${entry.name} · project briefing — units, amenities & access`,
+      communityLine: `A 316-acre walkable estate by ${entry.developer}—architecture, landscape, and circulation planned as one composition.`,
       seoSupportLine:
-        "Standalone villas, twin houses, townhouses, and apartments in West Cairo — long-term instalment structures available.",
+        "Villas, twin houses, townhouses, and apartments in West Cairo. Commercial terms are confirmed at issuance.",
     },
 
     overview: {
-      eyebrow: "Overview",
-      title: entry.developer,
+      eyebrow: "Counterparty",
+      title: `${entry.developer} — contract-facing counterparty`,
       paragraphs: [
-        `${entry.developer} is led by Chairman ${siteConfig.founder}. Density, servicing, and long-horizon land use are staged with the same measured discipline applied across the wider ORA portfolio.`,
-        `At ${short}, landscape, pedestrian movement, and villa massing read as one coordinated master plan — not isolated building pads.`,
+        `Chairman ${siteConfig.founder} stages land with portfolio-wide discipline—you are contracting with an operating counterparty, not interpreting a render. Density, servicing, and long-horizon layout at ${short} follow that same underwriting bar.`,
+        `Landscape, pedestrian movement, and elevated villa massing read as one continuous master plan—setbacks and green structure are coordinated so the compound holds together as a place, not a scatter of building pads.`,
       ],
     },
 
     propertyTypes: {
-      intro: `${short} allocates four residential typologies across a 316-acre, low-density plan — issuance pricing and façade packages vary by phase.`,
+      intro: `${short} phases four typologies across a low-density footprint—apartments through standalone villas. Issuance sets live brackets, façades, and finishing path; marketing figures orient intent only.`,
       types: [
         {
           title: "Apartments",
           description:
-            "Fully finished apartment product overlooking green structure — suited to owner occupation or disciplined rental inventory under the same managed estate.",
-          investorNote: "Smaller footprint, phase-driven commercial bands.",
+            "Elevated apartment inventory inside the green armature—owner-occupiers who want estate governance without villa land carry, or investors sizing rental exposure inside one managed compound.",
+          investorNote: "Lower land coefficient per unit—phase-specific issuance bands apply.",
         },
         {
           title: "Townhouses",
           description:
-            "Multi-storey townhouses stitched into walkable avenues and landscape buffers — private entries with compound-level security and servicing.",
-          investorNote: "Balances land cost with privacy versus apartments.",
+            "Multi-storey homes on walkable avenues with private entries—more square footage and privacy than typical apartments, without full detached land dedication.",
+          investorNote: "Balances ticket size with operational simplicity versus standalone stock.",
         },
         {
           title: "Twin houses",
           description:
-            "Paired villas sharing a discrete party line — wider frontage than townhouses while retaining efficient servicing and setbacks.",
-          investorNote: "Mid-step between townhouse density and detached stock.",
+            "Paired villas with a controlled party interface—wider frontage than townhouses while retaining efficient servicing and setbacks.",
+          investorNote: "Mid step on the equity curve between townhomes and detached villas.",
         },
         {
           title: "Standalone villas",
           description:
-            "Elevated villas with open green outlooks — largest land dedication per unit in the plan; finishing available fully finished or core & shell.",
+            "Detached villas, elevated where the plan allows for open green outlooks. Finishing may be fully finished or core & shell—confirm façade packages and lot dimensions at the desk.",
           investorNote:
-            "Upper band of the product mix — the published starting context remains from 9.8M EGP; confirm façade- and phase-specific brackets with sales.",
+            "Published starting context from 9.8M EGP—phase, outlook, and specification move price; verify with issuance.",
         },
       ],
     },
 
     payment: {
-      eyebrow: "Commercial terms",
-      title: "Payment plan",
+      eyebrow: "Acquisition",
+      title: "Headline commercial scaffold — issuance executes the detail",
       summary:
-        "Reference pricing from 9.8M EGP, with a 5% down payment and installments up to 10 years. Delivery from 2027.",
+        "Reference band from 9.8M EGP · 5% down · installments up to 10 years · delivery from 2027. Your signed issuance file—not this summary—governs reservation, milestones, and interest mechanics.",
       bullets: [
-        "Starting pricing context: from 9.8M EGP.",
-        "Down payment: 5%.",
-        "Installment tenor: up to 10 years (structure subject to issuance at booking).",
-        "Anticipated handover horizon: delivery from 2027.",
+        "Starting-price reference: from 9.8M EGP (phase, typology, finishing, and outlook reset the live bracket at booking).",
+        "Reservation posture: 5% down—verify deposits, admin fees, and milestone cadence in your issuance pack.",
+        "Tenor: installments may extend up to 10 years—how interest is applied belongs in the signed schedule, not in a web summary.",
+        "Delivery horizon: from 2027—cluster and tower dates follow construction fulfilment; confirm in writing before you underwrite rent or exit timing.",
       ],
     },
 
     location: {
-      eyebrow: "Connectivity",
-      title: "Location advantages",
-      intro: `${entry.name} sits along Mehwar El Dabaa in New Zayed, with arterial links to Alexandria Desert Road and the Middle Ring Road.`,
+      eyebrow: "New Zayed",
+      title: "Mehwar El Dabaa frontage — arterial reach, estate privacy",
+      intro: `${entry.name} fronts Mehwar El Dabaa—West Cairo’s longitudinal link between Sheikh Zayed’s established fabric and westward expansion. Arterial reach without surrendering a gated residential envelope.`,
       routes: [
         {
-          term: "Arterials",
-          detail: "Direct access — Alexandria Desert Road · Middle Ring Road.",
+          term: "Primary links",
+          detail: "Direct access to Alexandria Desert Road and the Middle Ring Road.",
         },
         {
-          term: "West Cairo anchors",
-          detail: "~5 min Waslet Dahshour · ~10 min Sphinx Airport · ~15 min Mall of Arabia.",
+          term: "Routine reach",
+          detail: "~5 min Waslet Dahshour · ~10 min Sphinx Airport · ~15 min Mall of Arabia—directional drive context as cited in marketing collateral.",
         },
         {
-          term: "Context",
-          detail: "Neighboring comps (market reference): VYE (Sodic) · Belle Vie (Emaar).",
+          term: "Market frame",
+          detail: "Adjacent large-scale references include VYE (Sodic) and Belle Vie (Emaar)—comparables only, not affiliations.",
         },
       ],
     },
 
     amenities: {
-      eyebrow: "Community",
-      title: "Amenities · open space",
+      eyebrow: "Life on site",
+      title: "Aquatic, clubhouse & green buffers on pedestrian spines",
       intro:
-        "Community facilities and landscape are composed as continuous open space — not accessory lawns around isolated buildings.",
+        "Pools, club spaces, and green rooms tie into the pedestrian plan—leisure sits inside circulation, not at the end of a separate commute. The outcome is quieter daily rhythm for families and frequent travellers.",
       groups: [
         {
-          title: "Aquatic & club amenity",
+          title: "Aquatic & social core",
           lines: [
-            "Temperature-controlled pool and clubhouse cluster for resident use.",
-            "Social anchor within the walkable plan — reduces reliance on off-site leisure for daily routines.",
+            "Temperature-controlled pool and clubhouse cluster anchor resident life inside the walkable fabric.",
+            "Social energy stays on-site—reducing reliance on off-compound leisure for ordinary weeks.",
           ],
         },
         {
-          title: "Park & landscape rooms",
+          title: "Park rooms & buffers",
           lines: [
-            "Wide green buffers between built rows — supports sight lines referenced in elevated villa massing.",
-            "Pedestrian movement prioritised over drive-dominated edges.",
+            "Wide green separation between built rows supports sight lines referenced in elevated villa massing.",
+            "Pedestrian priority keeps driveway noise at the edges—not through front doors.",
           ],
         },
         {
-          title: "Avenue & spine landscaping",
+          title: "Architecture in sync",
           lines: [
-            "Tree-lined connectors stitch residential clusters to amenity cores.",
-            "Maintains legibility of the 316-acre master plan at ground level.",
+            "Facades and avenues are composed together so the estate reads authored—not façades imported onto leftover plots.",
+            "That continuity keeps a 316-acre plan legible on year five as on day one.",
           ],
         },
       ],
     },
 
     faq: {
-      eyebrow: "Answers",
-      title: "FAQ",
+      eyebrow: "Resolution",
+      title: "Project hub FAQs — canonical Solana West answers",
       intro: SOLANA_WEST_FAQ_SHARED_INTRO,
       items: [...solanaWestFaqCanonical],
       fullFaqHref: "/faq",
     },
 
     finalCta: {
-      eyebrow: "Next step",
-      title: "Request pricing & payment options",
+      eyebrow: "Private advisory",
+      title: "Book a desk briefing on your unit line and phase",
       supporting:
-        "Share your unit preference and tenure; we confirm availability, issuance terms, and the latest commercial schedule by channel.",
-      primaryLabel: "WhatsApp — pricing & payment plan",
-      secondaryLabel: "Contact",
+        "Share typology, finishing path, and hold horizon—the desk returns availability, issuance-ready commercial detail, and clear next steps (WhatsApp or written enquiry). GCC and international buyers receive structured answers suitable for family or treasury review.",
+      primaryLabel: "WhatsApp private desk",
+      secondaryLabel: "Written enquiry",
     },
   };
 }

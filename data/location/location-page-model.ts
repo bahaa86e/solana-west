@@ -71,10 +71,26 @@ function editorialInternalLinks(): readonly LocationInternalLink[] {
       href: "/payment-plan",
       context: "Down payment, tenor, and delivery framing.",
     },
-    { label: "Apartments", href: "/properties/apartments", context: "Typology editorial." },
-    { label: "Townhouses", href: "/properties/townhouses", context: "Typology editorial." },
-    { label: "Twin houses", href: "/properties/twin-houses", context: "Typology editorial." },
-    { label: "Standalone villas", href: "/properties/villas", context: "Typology editorial." },
+    {
+      label: "Apartments",
+      href: "/properties/apartments",
+      context: "Vertical inventory inside the estate—rental and owner paths under one compound covenant.",
+    },
+    {
+      label: "Townhouses",
+      href: "/properties/townhouses",
+      context: "Walkable-avenue townhomes; mid ticket with more privacy than vertical living.",
+    },
+    {
+      label: "Twin houses",
+      href: "/properties/twin-houses",
+      context: "Paired villas—density step between townhouses and full detached lots.",
+    },
+    {
+      label: "Standalone villas",
+      href: "/properties/villas",
+      context: "Detached stock—elevation, outlook bands, and land dedication vs. phased apartments.",
+    },
     { label: "FAQ index", href: "/faq", context: "Canonical location and access answers.",
     },
   ];
@@ -99,14 +115,14 @@ export function buildLocationPageModel(): LocationPageModel {
     overviewFigure,
     hero: {
       locationEyebrow: "New Zayed · West Cairo · Geography",
-      h1: `${short} on Mehwar El Dabaa`,
+      h1: `${short} location — Mehwar El Dabaa & New Zayed access`,
       lead: `${entry.name} sits on Mehwar El Dabaa inside the New Zayed growth corridor — arterial links toward Alexandria Desert Road and the Middle Ring Road frame daily access, while marketing context cites drive-time references to Waslet Dahshour, Sphinx Airport, and Mall of Arabia.`,
       supporting:
         `Driving minutes are directional comparables from collateral, not live traffic guarantees — confirm routes and peak-hour behaviour independently. Neighbouring benchmarks VYE (Sodic) and Belle Vie (Emaar) are cited as market context only, not partnership claims.`,
     },
     overview: {
       eyebrow: "Location overview",
-      title: "Why New Zayed anchors this master plan",
+      title: "New Zayed — institutional road fabric behind the estate",
       paragraphs: [
         "New Zayed extends the western residential spine of Greater Cairo — institutional road investment, airport adjacency, and large-format retail clusters are already part of how the market reads the district, without promising any specific future public project on this page.",
         `${short} occupies a 316-acre, low-density footprint in that corridor. ORA’s planning logic treats walkability and continuous landscape as primary infrastructure — compounds here compete on arterial legibility and long-horizon servicing, not billboard density.`,
@@ -115,7 +131,7 @@ export function buildLocationPageModel(): LocationPageModel {
     },
     connectivity: {
       eyebrow: "Connectivity",
-      title: "Roads, hubs, and directional context",
+      title: "Mehwar El Dabaa, ring roads, airport & landmark retail",
       intro:
         "The following items mirror published marketing collateral — they describe positioning, not fixed travel times. Satellite navigation and on-site runs remain authoritative.",
       sections: [
@@ -173,7 +189,7 @@ export function buildLocationPageModel(): LocationPageModel {
     },
     areaGrowth: {
       eyebrow: "Area growth positioning",
-      title: "Reading New Zayed without speculative promises",
+      title: "District maturity — visibility without invented growth claims",
       paragraphs: [
         "The district’s investment story is told through visible infrastructure: arterial completion, airport scale, and repeatable master developer delivery — not through guaranteed appreciation figures or named future megaprojects unless confirmed in official issuance.",
         "Buyer discipline means separating land quality (plot shape, outlook, servicing) from marketing brochure claims; both VYE- and Belle Vie-scale neighbours signal institutional confidence in the corridor, not a synchronized price floor for every compound.",
@@ -182,7 +198,7 @@ export function buildLocationPageModel(): LocationPageModel {
     },
     investment: {
       eyebrow: "Investment relevance",
-      title: "Geography as risk context, not hype",
+      title: "Logistics lowers friction — contracts still define risk",
       paragraphs: [
         "Location reduces certain operational risks — airport access, ring-road reach, and recognizable retail anchors lower navigation friction for GCC and domestic buyers who already know the district code names.",
         "Geography does not replace issuance discipline: payment schedules, delivery phasing, service-charge regimes, and after-sales governance matter as much as drive-time claims.",
@@ -190,9 +206,9 @@ export function buildLocationPageModel(): LocationPageModel {
       ],
     },
     internalLinks: {
-      eyebrow: "Internal reference map",
-      title: "Project depth, commercial routes, typologies",
-      intro: "Editorial continuity — structured for scanners and AI-search extraction alike.",
+      eyebrow: "Authority silos",
+      title: "Move from geography to hub, brackets and SKU pages",
+      intro: "Use these links once driving context is anchored — underwriting finishes on issuance.",
       links: editorialInternalLinks(),
     },
     faqPreview: {
@@ -202,11 +218,11 @@ export function buildLocationPageModel(): LocationPageModel {
     },
     finalCta: {
       eyebrow: "Next step",
-      title: "Validate access on your terms",
+      title: "Book a logistics briefing that matches your commute reality",
       supporting:
-        `Request a logistics briefing or site orientation through ${dev} accredited channels — we route enquiries without implying inventory, countdowns, or guaranteed travel times.`,
-      primaryLabel: "WhatsApp — pricing & payment plan",
-      secondaryLabel: "Contact",
+        `Request a logistics briefing or site orientation through ${dev} accredited channels—no implied inventory, countdowns, or guaranteed travel times.`,
+      primaryLabel: "WhatsApp private desk",
+      secondaryLabel: "Written enquiry",
     },
   };
 }

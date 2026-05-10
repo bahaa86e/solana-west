@@ -6,9 +6,21 @@ import { SectionShell } from "@/components/sections/section-shell";
 import { CtaButton } from "@/components/ui/cta-button";
 import type { TransactionalPageModel } from "@/data/transactions/transaction-page-model";
 
+const TX_FAQ_H2: Record<TransactionalPageModel["key"], { eyebrow: string; title: string }> = {
+  prices: {
+    eyebrow: "FAQ excerpts",
+    title: "Price, availability & typology snippets — corroborate on FAQ",
+  },
+  "payment-plan": {
+    eyebrow: "FAQ excerpts",
+    title: "Down payment & instalment language — FAQs before you reserve",
+  },
+};
+
 export function TransactionalFaqPreviewSection({ model }: { model: TransactionalPageModel }) {
   const { faqPreview, idPrefix } = model;
   const headingId = `${idPrefix}-faq-heading`;
+  const faqH2 = TX_FAQ_H2[model.key];
 
   return (
     <SectionShell id={`${idPrefix}-faq`} aria-labelledby={headingId} tone="paper" containerSize="wide">
@@ -16,8 +28,8 @@ export function TransactionalFaqPreviewSection({ model }: { model: Transactional
         <div className="max-w-xl md:pb-2">
           <SectionHeader
             id={headingId}
-            eyebrow="FAQ preview"
-            title="Straight answers mirrored in structured data"
+            eyebrow={faqH2.eyebrow}
+            title={faqH2.title}
             kicker={<p className="font-normal text-lux-ink/64">{faqPreview.intro}</p>}
           />
         </div>

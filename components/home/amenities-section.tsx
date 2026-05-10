@@ -3,14 +3,20 @@ import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { homeSections } from "@/data/seo/home";
-import { solanaWestMedia } from "@/data/solana-west-media";
+import { solanaWestMedia } from "@/data/media/solana-west";
 import { cn } from "@/lib/utils";
 
 const { amenities: amenitiesCopy } = homeSections;
 
 export function AmenitiesSection() {
   return (
-    <SectionShell id="amenities" aria-labelledby="amenities-heading" tone="sand" containerSize="wide">
+    <SectionShell
+      id="amenities"
+      aria-labelledby="amenities-heading"
+      tone="sand"
+      containerSize="wide"
+      rhythm="breath"
+    >
       <SectionHeader
         id="amenities-heading"
         eyebrow={amenitiesCopy.eyebrow}
@@ -18,29 +24,32 @@ export function AmenitiesSection() {
         kicker={<p className="font-normal text-lux-ink/66">{amenitiesCopy.intro}</p>}
       />
 
-      <ul className="mt-14 grid grid-cols-1 gap-section-gap md:mt-section-block lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12 xl:gap-x-10">
+      {/* Asymmetric editorial grid — avoids uniform “three-card gallery” rhythm */}
+      <ul className="mt-14 grid grid-cols-1 gap-section-gap md:mt-section-block lg:grid-cols-12 lg:gap-x-10 lg:gap-y-16">
         {solanaWestMedia.amenities.map((asset, i) => {
           const group = amenitiesCopy.groups[i];
           return (
             <li
               key={asset.src}
               className={cn(
-                i === 1 && "lg:-translate-y-3 xl:-translate-y-4",
-                i === 2 && "lg:translate-y-4",
+                i === 0 && "lg:col-span-7",
+                i === 1 && "lg:col-span-5 lg:pt-10 xl:pt-12",
+                i === 2 && "lg:col-span-12",
               )}
             >
-              <article
-                className={cn(
-                  "flex flex-col transition-[transform] duration-480 ease-luxury motion-reduce:transition-none",
-                  "motion-reduce:hover:translate-y-0 hover:-translate-y-1",
-                )}
-              >
+              <article className="flex flex-col">
                 <LuxuryImageShell
                   hover="cinematic"
-                  aspectClassName="aspect-[5/3]"
+                  aspectClassName={
+                    i === 0 ? "aspect-[4/5] max-lg:max-h-[min(72vh,520px)]"
+                    : i === 1 ? "aspect-[5/4] lg:aspect-[4/5]"
+                    : "aspect-[21/11] max-lg:aspect-[16/10]"
+                  }
                   className={cn(
-                    "border border-lux-ink/[0.068] shadow-[0_14px_42px_-34px_rgba(10,10,10,0.12),inset_0_1px_0_rgba(250,248,245,0.65)]",
-                    "transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/14 hover:shadow-lux-card",
+                    "border border-lux-ink/[0.05] shadow-[0_10px_32px_-28px_rgba(28,26,23,0.09),inset_0_1px_0_rgba(252,250,247,0.58)]",
+                    "transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/11 hover:shadow-[0_14px_40px_-32px_rgba(28,26,23,0.11),inset_0_1px_0_rgba(252,250,247,0.65)]",
+                    i === 2 &&
+                      "ring-1 ring-lux-ink/[0.032] shadow-[0_20px_56px_-40px_rgba(28,26,23,0.12),inset_0_1px_0_rgba(252,250,247,0.68)]",
                   )}
                 >
                   <LuxuryFillImage
@@ -48,7 +57,7 @@ export function AmenitiesSection() {
                     alt={asset.alt}
                     sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 32vw"
                     quality={82}
-                    crop="interiorWarm"
+                    crop={i === 0 ? "interiorWarm" : i === 1 ? "greenerySubject" : "editorialWideLow"}
                     treatment="rich"
                   />
                 </LuxuryImageShell>

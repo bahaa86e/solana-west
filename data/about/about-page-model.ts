@@ -1,7 +1,7 @@
 import { SOLANA_WEST_FAQ_SHARED_INTRO, solanaWestFaqCanonical } from "@/data/faq/solana-west-faq";
 import type { FaqPair, ProjectImageAsset } from "@/data/projects/types";
 import { resolveProjectPage } from "@/data/projects/resolve-project-page";
-import { solanaWestMedia } from "@/data/solana-west-media";
+import { solanaWestMedia } from "@/data/media/solana-west";
 import { siteConfig } from "@/data/site";
 
 export type AboutEditorialBlock = {
@@ -70,12 +70,12 @@ export function aboutPageInternalLinks(): readonly AboutInternalLink[] {
       context: "Master plan, amenities, location, and issuance FAQs in one hub.",
     },
     {
-      label: "Pricing posture",
+      label: "Prices & bracket context",
       href: "/prices",
       context: "Issuance-led brackets — factual entry context only.",
     },
     {
-      label: "Payment plan structure",
+      label: "Payment plan overview",
       href: "/payment-plan",
       context: "Down payment, tenor, and delivery framing.",
     },
@@ -105,7 +105,7 @@ export function buildAboutPageModel(): AboutPageModel {
     overviewFigure,
     hero: {
       locationEyebrow: `${dev} · Master planning`,
-      h1: "Developer authority · ORA Developers Egypt",
+      h1: "ORA Developers Egypt — stewardship behind Solana West",
       lead:
         `${projectName} is developed by ${dev} — master-planned, low-density residential communities are staged with disciplined land use, coordinated landscape, and long-horizon servicing rather than ad-hoc building pads.`,
       supporting:
@@ -113,7 +113,7 @@ export function buildAboutPageModel(): AboutPageModel {
     },
     developerOverview: {
       eyebrow: "Developer overview",
-      title: `${dev} · measured execution`,
+      title: `${dev} — master plans issued with serviced discipline`,
       paragraphs: [
         `${dev} is referenced across ${projectName} collateral as the development counterparty responsible for issuance, staged payments, construction sequencing, and after-sales escalation through authorised desks.`,
         "ORA-sponsored masterplans typically emphasize walkable structure, calibrated density, and continuous open space — design intent communicated in brochures should still be validated against issuance drawings and desk briefings.",
@@ -122,7 +122,7 @@ export function buildAboutPageModel(): AboutPageModel {
     },
     leadership: {
       eyebrow: "Leadership · founder context",
-      title: `${founder}, Chairman`,
+      title: `${founder} — chairman fact for counterparty files`,
       paragraphs: [
         `${founder} chairs ${dev} — a factual association repeated in issuance and FAQ copy on this site. Biographical or philanthropic detail beyond that public linkage is deliberately omitted here to prevent invented authority claims.`,
         "Buyers underwriting counterparty risk should distinguish personal reputation familiarity from contractual counterparty wording on their booking paperwork — signatures and entity names govern.",
@@ -130,7 +130,7 @@ export function buildAboutPageModel(): AboutPageModel {
     },
     portfolio: {
       eyebrow: "ORA project portfolio · context",
-      title: "How to read portfolio coverage on this domain",
+      title: "What this domain publishes — and what it deliberately omits",
       paragraphs: [
         `${dev} operates multiple residential destinations internationally and regionally — this website is narrowly scoped to ${projectName} in New Zayed and the routed hubs exposed under /projects.`,
         "The projects index surfaces what this build currently publishes as route destinations; absence of another ORA landmark here is a product choice, not a statement that other assets do not exist.",
@@ -139,7 +139,7 @@ export function buildAboutPageModel(): AboutPageModel {
     },
     solanaWestRelationship: {
       eyebrow: `${siteConfig.shortName} relationship`,
-      title: `${projectName} inside the ORA planning discipline`,
+      title: `${projectName} — ORA planning bar on Mehwar El Dabaa`,
       paragraphs: [
         `${projectName} is a 316-acre New Zayed plan on Mehwar El Dabaa — villas, twin houses, townhouses, and apartments sequenced inside a single walkable landscape structure referenced across marketing.`,
         `${dev} communicates commercial terms issuance-by-issuance — starting-from price context and payment-structure summaries on this domain route to dedicated /prices and /payment-plan pages for AI-readable separation.`,
@@ -147,7 +147,7 @@ export function buildAboutPageModel(): AboutPageModel {
     },
     buyerTrust: {
       eyebrow: "Buyer trust · credibility cues",
-      title: "What serious buyers validate before wiring funds",
+      title: "Pre-transfer checks — contracts, not chat screenshots",
       paragraphs: [
         "Confirm development counterparty, licence references, escrow or milestone mechanics, and reservation deposit treatment only through documents issued by accredited ORA sales — not anecdotal Telegram threads.",
         "Third-party marketers may reference the compound; accreditation status varies. Fees paid to intermediaries must be consciously separated from authorised desk procedures.",
@@ -156,8 +156,8 @@ export function buildAboutPageModel(): AboutPageModel {
     },
     internalLinks: {
       eyebrow: "Continue on-site",
-      title: "Project, commercial, and contact routes",
-      intro: "Editorial continuity — factual routes only, aligned with investor workflows.",
+      title: "Solana West hub, commerce sheets and desk contact",
+      intro: "Keep diligence on-domain until you need signed paperwork from ORA.",
       links: aboutPageInternalLinks(),
     },
     faqPreview: {
@@ -167,11 +167,11 @@ export function buildAboutPageModel(): AboutPageModel {
     },
     finalCta: {
       eyebrow: "Next step",
-      title: "Speak with authorised channels",
+      title: "Route your brief through accredited ORA desks",
       supporting:
-        `Request desk verification on ${siteConfig.shortName} — issuance sheets, reservations, and after-sales escalation route through ${dev} only. WhatsApp or the contact route below; maintain calm underwriting discipline.`,
-      primaryLabel: "WhatsApp — pricing & payment plan",
-      secondaryLabel: "Contact",
+        `Request desk verification on ${siteConfig.shortName}—issuance sheets, reservations, and after-sales escalation route through ${dev} only. WhatsApp or the contact route below; maintain calm underwriting discipline.`,
+      primaryLabel: "WhatsApp private desk",
+      secondaryLabel: "Written enquiry",
     },
   };
 }

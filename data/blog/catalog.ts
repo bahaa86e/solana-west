@@ -1,4 +1,13 @@
-import { solanaWestPricesPaymentPlanArticle } from "@/data/blog/articles/solana-west-prices-payment-plan";
+import { solanaWestNewZayedPricesPaymentPlan2026Article } from "@/data/blog/articles/solana-west-new-zayed-prices-payment-plan-2026";
+import { solanaWestNewZayedInvestmentStrength2026Article } from "@/data/blog/articles/solana-west-new-zayed-investment-strength-2026";
+import { solanaWestVillasVsApartmentsLifestyleInvestmentArticle } from "@/data/blog/articles/solana-west-villas-vs-apartments-lifestyle-investment";
+import { oraDevelopersEgyptVisionProjectsStrategyArticle } from "@/data/blog/articles/ora-developers-egypt-vision-projects-strategy";
+import { newZayedVsSheikhZayedLuxuryBuyers2026Article } from "@/data/blog/articles/new-zayed-vs-sheikh-zayed-luxury-buyers-2026";
+import { solanaWestPaymentPlanExplainedIssuerGuide2026Article } from "@/data/blog/articles/solana-west-payment-plan-explained-issuer-guide-2026";
+import { solanaWestMehwarNewZayedLocationBuyerGuide2026Article } from "@/data/blog/articles/solana-west-mehwar-new-zayed-location-buyer-guide-2026";
+import { solanaWestVillasPricesBuyerGuideNewZayed2026Article } from "@/data/blog/articles/solana-west-villas-prices-buyer-guide-new-zayed-2026";
+import { solanaWestApartmentsPricesBuyerGuideNewZayed2026Article } from "@/data/blog/articles/solana-west-apartments-prices-buyer-guide-new-zayed-2026";
+import { solanaWestVsVyeBelleVieBuyerFramework2026Article } from "@/data/blog/articles/solana-west-vs-vye-belle-vie-buyer-framework-2026";
 import type { BlogArticleDocument } from "@/data/blog/types";
 
 /**
@@ -8,11 +17,21 @@ import type { BlogArticleDocument } from "@/data/blog/types";
  * - Build a typed `BlogArticleDocument` module (sections, FAQ blocks, OG image, keywords).
  * - Append it here. `slug` MUST match `[slug]` and stay unique.
  * - Use helpers in `article-defaults.ts` for continuity links / CTA if appropriate.
- *
- * Empty → `/blog` still renders full pillar index; `/blog/[slug]` 404 until entries exist.
+ * - Register funnel / cluster intent in `data/blog/governance/taxonomy.ts` for editorial ops.
  */
 
-const articles: readonly BlogArticleDocument[] = [solanaWestPricesPaymentPlanArticle];
+const articles: readonly BlogArticleDocument[] = [
+  solanaWestPaymentPlanExplainedIssuerGuide2026Article,
+  solanaWestMehwarNewZayedLocationBuyerGuide2026Article,
+  solanaWestVillasPricesBuyerGuideNewZayed2026Article,
+  solanaWestApartmentsPricesBuyerGuideNewZayed2026Article,
+  solanaWestVsVyeBelleVieBuyerFramework2026Article,
+  solanaWestNewZayedPricesPaymentPlan2026Article,
+  solanaWestNewZayedInvestmentStrength2026Article,
+  solanaWestVillasVsApartmentsLifestyleInvestmentArticle,
+  oraDevelopersEgyptVisionProjectsStrategyArticle,
+  newZayedVsSheikhZayedLuxuryBuyers2026Article,
+];
 
 export function getAllBlogArticles(): readonly BlogArticleDocument[] {
   return articles;

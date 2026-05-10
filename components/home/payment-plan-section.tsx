@@ -38,6 +38,9 @@ export function PaymentPlanSection() {
             ))}
           </ul>
           <div className="flex flex-col gap-4 border-t border-lux-gold/25 pt-8">
+            <p className="max-w-xl text-[0.828125rem] font-normal leading-[1.74] tracking-[0.015em] text-lux-ink/58 md:text-[0.85rem]">
+              {croMessaging.paymentSectionCue}
+            </p>
             <CtaButton
               href={siteConfig.whatsAppUrl}
               external
@@ -50,6 +53,9 @@ export function PaymentPlanSection() {
             >
               {croMessaging.paymentSectionCta}
             </CtaButton>
+            <p className="text-[0.765625rem] font-normal leading-relaxed tracking-[0.045em] text-lux-ink/48 md:text-[0.796875rem]">
+              {croMessaging.paymentSectionCtaSub}
+            </p>
             <p className="text-[0.8125rem] font-normal tracking-[0.02em] text-lux-ink/52 md:text-[0.84375rem]">
               <Link
                 href="/payment-plan"

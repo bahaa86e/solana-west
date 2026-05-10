@@ -56,7 +56,7 @@ export function buildContactPageModel(): ContactPageModel {
     heroImage,
     hero: {
       locationEyebrow: "Inquiry desk · accredited sales",
-      h1: "Consultation & enquiry · Solana West New Zayed",
+      h1: "Contact Solana West sales — New Zayed buyer enquiries",
       lead:
         `Use this page to reach ${dev} for ${project} with minimal friction: direct channels for fast context, or a compact written enquiry when you prefer a recorded hand-off.`,
       supporting:
@@ -64,7 +64,7 @@ export function buildContactPageModel(): ContactPageModel {
     },
     overview: {
       eyebrow: "Contact overview",
-      title: "How we handle serious buyer enquiries",
+      title: "Accredited desks — how Solana West briefs route",
       paragraphs: [
         `${short} sales operate through ${dev}'s authorised workflow — quotations, milestones, reservations, and after-sales escalation are documented desk-side, not improvised from chat excerpts alone.`,
         "This inquiry layer is informational: align your preferred channel (instant messaging, voice, or structured form), then rely on issuance paperwork for binding commercial terms.",
@@ -73,7 +73,7 @@ export function buildContactPageModel(): ContactPageModel {
     },
     reassurance: {
       eyebrow: "Inquiry reassurance",
-      title: "Trust, routing, and what we do not do here",
+      title: "Routing integrity — no phantom inventory theatrics",
       paragraphs: [
         "Three visible fields — name, phone, and typology preference — minimise friction while still routing issuance-aware briefs.",
         "Third-party intermediaries referencing the compound are not vetted via this route — broker engagement remains your diligence matter unless ORA designates an accredited channel partner.",
@@ -81,13 +81,13 @@ export function buildContactPageModel(): ContactPageModel {
     },
     channels: {
       eyebrow: "Direct channels",
-      title: "WhatsApp · phone · email",
+      title: "WhatsApp, voice and email — one desk philosophy",
       intro:
         "Choose the modality that suits your underwriting rhythm — all route into the same desk philosophy: calm, documentary, issuance-led.",
     },
     formColumn: {
       eyebrow: "Written enquiry",
-      title: "Structured message (optional detail)",
+      title: "Short form — name, reachability, typology",
       intro:
         "Three fields capture who you are, how to reply, and which typology you are exploring — context attaches automatically for authorised desks.",
     },
@@ -98,11 +98,11 @@ export function buildContactPageModel(): ContactPageModel {
     },
     finalCta: {
       eyebrow: "Still browsing?",
-      title: "Return to commercial and geographic context",
+      title: "Re-open prices, payments and New Zayed access",
       supporting:
-        `Cross-check pricing posture, payment structure, and New Zayed access before you reserve — then re-open WhatsApp or this form when your brief is ready for desk review.`,
-      primaryLabel: "WhatsApp — pricing & payment plan",
-      secondaryLabel: "Pricing posture",
+        `Cross-check pricing posture, payment structure, and New Zayed access before you reserve—then re-open WhatsApp or this form when your brief is ready for desk review.`,
+      primaryLabel: "WhatsApp private desk",
+      secondaryLabel: "Prices route",
       secondaryHref: "/prices",
     },
   };

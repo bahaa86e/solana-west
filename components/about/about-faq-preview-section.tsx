@@ -17,7 +17,7 @@ export function AboutFaqPreviewSection({ model }: { model: AboutPageModel }) {
           <SectionHeader
             id={headingId}
             eyebrow="FAQ preview"
-            title="Issuer-aligned answers reused verbatim"
+            title="Issuer FAQs excerpted beside ORA pedigree copy"
             kicker={<p className="font-normal text-lux-ink/64">{faqPreview.intro}</p>}
           />
         </div>

@@ -3,7 +3,7 @@ import { PageMain } from "@/components/layout/page-main";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildBlogIndexPageModel } from "@/data/blog/blog-index-model";
 import { blogIndexPageSeo } from "@/data/seo/routes";
-import { getBlogIndexStructuredData } from "@/schemas/blog-index-page";
+import { getBlogIndexStructuredData } from "@/lib/schema/jsonld/blog-index-page";
 import { buildPageMetadata } from "@/seo/build-metadata";
 
 export const metadata = buildPageMetadata(blogIndexPageSeo);

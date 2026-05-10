@@ -3,7 +3,7 @@ import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { homeSections } from "@/data/seo/home";
-import { solanaWestMedia } from "@/data/solana-west-media";
+import { solanaWestMedia } from "@/data/media/solana-west";
 
 const { location } = homeSections;
 

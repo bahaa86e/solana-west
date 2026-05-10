@@ -5,7 +5,7 @@ import { PageMain } from "@/components/layout/page-main";
 import { JsonLd } from "@/components/seo/json-ld";
 import { getBlogArticleBySlug, getBlogArticleSlugs } from "@/data/blog/catalog";
 import { blogArticleRouteSeoFromDoc } from "@/data/seo/blog-article-resolve";
-import { getBlogArticleStructuredData } from "@/schemas/blog-article-page";
+import { getBlogArticleStructuredData } from "@/lib/schema/jsonld/blog-article-page";
 import { buildPageMetadata } from "@/seo/build-metadata";
 
 type Props = { params: { slug: string } };

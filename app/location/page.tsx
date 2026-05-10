@@ -3,7 +3,7 @@ import { PageMain } from "@/components/layout/page-main";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildLocationPageModel } from "@/data/location/location-page-model";
 import { locationPageSeo } from "@/data/seo/routes";
-import { getLocationStructuredData } from "@/schemas/location-page";
+import { getLocationStructuredData } from "@/lib/schema/jsonld/location-page";
 import { buildPageMetadata } from "@/seo/build-metadata";
 
 export const metadata = buildPageMetadata(locationPageSeo);

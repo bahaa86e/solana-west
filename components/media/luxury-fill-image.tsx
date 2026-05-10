@@ -1,13 +1,15 @@
 import Image, { type ImageProps } from "next/image";
 
-import type { LuxuryImageCrop } from "@/lib/luxury-image-crops";
-import { luxuryImageCrops } from "@/lib/luxury-image-crops";
+import type { LuxuryImageCrop } from "@/lib/media/luxury-image-crops";
+import { luxuryImageCrops } from "@/lib/media/luxury-image-crops";
 import { cn } from "@/lib/utils";
 
 export type LuxuryImageTreatment = "flat" | "editorial" | "rich";
 
 export type LuxuryFillImageProps = {
   src: string;
+  /** When set, shown below `lg` for portrait-safe luxury crops; `src` is used `lg` and up. */
+  mobileSrc?: string;
   alt: string;
   sizes: string;
   priority?: boolean;
@@ -39,6 +41,7 @@ function treatmentFromProps(filmGrade: boolean | undefined, treatment: LuxuryIma
  */
 export function LuxuryFillImage({
   src,
+  mobileSrc,
   alt,
   sizes,
   priority,
@@ -55,6 +58,21 @@ export function LuxuryFillImage({
 
   const positionCls = crop ? luxuryImageCrops[crop] : undefined;
 
+  const imgClasses = cn(
+    fit === "cover" ? "object-cover" : "object-contain",
+    positionCls,
+    mode !== "flat" &&
+      cn(
+        "[transform:translateZ(0)]",
+        mode === "rich" ?
+          "[filter:saturate(1.03)_contrast(1.045)_brightness(0.985)] motion-reduce:filter-none"
+        : "[filter:saturate(1.015)_contrast(1.028)_brightness(0.992)] motion-reduce:filter-none",
+      ),
+    imgClassName,
+  );
+
+  const useDual = Boolean(mobileSrc && mobileSrc !== src);
+
   return (
     <div
       className={cn(
@@ -63,27 +81,41 @@ export function LuxuryFillImage({
         className,
       )}
     >
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        sizes={sizes}
-        priority={priority}
-        quality={quality}
-        {...(priority ? { fetchPriority: "high" as const } : { loading: loading ?? ("lazy" as const) })}
-        className={cn(
-          fit === "cover" ? "object-cover" : "object-contain",
-          positionCls,
-          mode !== "flat" &&
-            cn(
-              "[transform:translateZ(0)]",
-              mode === "rich" ?
-                "[filter:saturate(1.05)_contrast(1.06)_brightness(0.978)] motion-reduce:filter-none"
-              : "[filter:saturate(1.035)_contrast(1.04)_brightness(0.987)] motion-reduce:filter-none",
-            ),
-          imgClassName,
-        )}
-      />
+      {useDual ? (
+        <>
+          <Image
+            src={mobileSrc!}
+            alt={alt}
+            fill
+            sizes={sizes}
+            priority={priority}
+            quality={quality}
+            {...(priority ? { fetchPriority: "high" as const } : { loading: loading ?? ("lazy" as const) })}
+            className={cn(imgClasses, "lg:hidden")}
+          />
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            sizes={sizes}
+            priority={priority}
+            quality={quality}
+            {...(priority ? { fetchPriority: "high" as const } : { loading: loading ?? ("lazy" as const) })}
+            className={cn(imgClasses, "hidden lg:block")}
+          />
+        </>
+      ) : (
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes={sizes}
+          priority={priority}
+          quality={quality}
+          {...(priority ? { fetchPriority: "high" as const } : { loading: loading ?? ("lazy" as const) })}
+          className={imgClasses}
+        />
+      )}
       {mode === "flat" ?
         null
       : <>
@@ -91,15 +123,15 @@ export function LuxuryFillImage({
           <div
             aria-hidden
             className={cn(
-              "pointer-events-none absolute inset-0 z-[1] mix-blend-soft-light opacity-[0.45] md:opacity-[0.5]",
-              "bg-[radial-gradient(ellipse_88%_64%_at_18%_12%,rgba(250,248,245,0.22)_0%,transparent_52%)]",
+              "pointer-events-none absolute inset-0 z-[1] mix-blend-soft-light opacity-[0.38] md:opacity-[0.42]",
+              "bg-[radial-gradient(ellipse_88%_64%_at_18%_12%,rgba(250,248,245,0.18)_0%,transparent_54%)]",
             )}
           />
           <div
             aria-hidden
             className={cn(
-              "pointer-events-none absolute inset-0 z-[1] mix-blend-overlay bg-[linear-gradient(130deg,rgba(196,165,116,0.14)_0%,transparent_42%,transparent_58%,rgba(232,226,217,0.08)_100%)]",
-              mode === "rich" ? "opacity-[0.32]" : "opacity-[0.22]",
+              "pointer-events-none absolute inset-0 z-[1] mix-blend-overlay bg-[linear-gradient(130deg,rgba(196,165,116,0.085)_0%,transparent_44%,transparent_58%,rgba(232,226,217,0.06)_100%)]",
+              mode === "rich" ? "opacity-[0.22]" : "opacity-[0.14]",
             )}
           />
           {/* Bottom anchor density — readability + weight */}

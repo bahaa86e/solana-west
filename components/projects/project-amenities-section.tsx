@@ -29,20 +29,15 @@ export function ProjectAmenitiesSection({ page }: { page: ResolvedProjectPage })
           return (
             <li
               key={`${slug}-amenity-${asset.src}`}
-              className={cn(i === 1 && "lg:-translate-y-3 xl:-translate-y-4", i === 2 && "lg:translate-y-4")}
+              className={cn(i === 1 && "lg:pt-6 xl:pt-8", i === 2 && "lg:pt-2")}
             >
-              <article
-                className={cn(
-                  "flex flex-col transition-[transform] duration-480 ease-luxury motion-reduce:transition-none",
-                  "motion-reduce:hover:translate-y-0 hover:-translate-y-1",
-                )}
-              >
+              <article className="flex flex-col">
                 <LuxuryImageShell
                   hover="cinematic"
                   aspectClassName="aspect-[5/3]"
                   className={cn(
-                    "border border-lux-ink/[0.068] shadow-[0_14px_42px_-34px_rgba(10,10,10,0.12),inset_0_1px_0_rgba(250,248,245,0.65)]",
-                    "transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/14 hover:shadow-lux-card",
+                    "border border-lux-ink/[0.048] shadow-[0_10px_32px_-28px_rgba(28,26,23,0.085),inset_0_1px_0_rgba(252,250,247,0.55)]",
+                    "transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/11 hover:shadow-lux-card",
                   )}
                 >
                   <LuxuryFillImage

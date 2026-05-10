@@ -1,7 +1,7 @@
 import { getAllBlogArticles, getBlogArticlesByTopic } from "@/data/blog/catalog";
 import type { BlogArticleDocument, BlogTopic } from "@/data/blog/types";
 import type { ProjectImageAsset } from "@/data/projects/types";
-import { solanaWestMedia } from "@/data/solana-west-media";
+import { solanaWestMedia } from "@/data/media/solana-west";
 import { siteConfig } from "@/data/site";
 
 export type BlogTopicGroup = {
@@ -56,7 +56,7 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
     {
       topic: "investment",
       eyebrow: "Investment briefings",
-      title: "Long-horizon ownership without performance theatre",
+      title: "Hold-time discipline — no yield theatre",
       body: [
         "Articles filed here translate desk-adjacent context into underwriting discipline: phased delivery, HOA and servicing exposure, liquidity and FX sensitivities relevant to UAE and domestic buyers.",
         "Nothing on this lane promises appreciation, rent yields, or “best-buy” countdowns — every note defers issuance contracts and audited cash-flow models you sign at reservation.",
@@ -70,7 +70,7 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
     {
       topic: "new-zayed-area",
       eyebrow: "New Zayed & corridors",
-      title: "Geography decoded for compound buyers",
+      title: "Corridor IQ for Mehwar, airport & ring roads",
       body: [
         "Mehwar El Dabaa sequencing, Sphinx Airport proximity, ring-road behaviours, and how institutional peers benchmark the corridor — written as orientation, not brochure drive-time gospel.",
       ],
@@ -95,8 +95,8 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
     },
     {
       topic: "pricing",
-      eyebrow: "Pricing posture",
-      title: `${nx}: brackets, phases, SKU economics`,
+      eyebrow: "Commercial brackets",
+      title: `${nx} — when marketing entry diverges from live SKUs`,
       body: [
         "Editorials separate marketing reference ticks from issuance-priced SKUs across villas, townhouses, twin houses, apartments, finishing forks, and orientation premiums.",
       ],
@@ -108,8 +108,8 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
     },
     {
       topic: "payment-plan",
-      eyebrow: "Payment engineering",
-      title: "Down payments, tenor, milestones, contractual reality",
+      eyebrow: "Instalment literacy",
+      title: "From 5% down & ten-year headlines to signed schedules",
       body: [
         "Collateral headings (5% down, ten-year tenor language) unpacked next to clauses that actually bind: installment waterfalls, penalties, refinancing limits, reservation deposits.",
       ],
@@ -122,7 +122,7 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
     {
       topic: "comparison",
       eyebrow: "Comparisons",
-      title: `West Cairo comps without invented scorecards`,
+      title: `Named New Zayed peers — density, green spine, access`,
       body: [
         "Density, landscaped structure, arterial legibility, and developer reputation compared with named peers only when marketing already cites those peers as district context.",
       ],
@@ -172,13 +172,13 @@ export function buildBlogIndexPageModel(): BlogIndexPageModel {
     heroImage: solanaWestMedia.hero,
     hero: {
       eyebrow: `${ora} editorial desk · Investor-grade prose`,
-      h1: "Research journal",
+      h1: "Solana West research journal — briefings for serious buyers",
       lead: `${short} publishes long-form briefing notes as desk collateral matures — each article is attributable, dated, and written for buyers who already read FAQs and still need sequencing context.`,
       supporting: `Articles cluster by topical lane (investment, geography, counterparties, commercial structure, comps). Listing pages stay calm: no synthetic publish cadence promises, queue badges, or inventory hints. ${count === 0 ? "The live library is preparing its first tranche — authority routes below remain the operational spine until posts index here." : `${count} briefing${count === 1 ? "" : "s"} currently indexed.`}`,
     },
     indexIntro: {
       eyebrow: "Indexing model",
-      title: "Lanes, pillars, and how posts ship",
+      title: "How briefings stay accountable to canonical routes",
       paragraphs: [
         "Every briefing references the same disciplined facts elsewhere on site (location minutes, headline commercial scaffolding, FAQ canon). Divergence is purposeful — articles narrate sequencing, juxtaposition, and buyer psychology that issuance FAQs cannot shoulder alone.",
         "New posts inherit this template: labelled topic, attributable dates, OG/Twitter parity, breadcrumb fidelity, FAQ blocks only when mirrored in JSON-LD, and internal anchors back to transactional routes.",
@@ -186,16 +186,16 @@ export function buildBlogIndexPageModel(): BlogIndexPageModel {
     },
     authorityLinks: {
       eyebrow: "Operational spine",
-      title: "Authoritative continuity while editorial fills in",
-      intro: "Crawl-ready anchors reinforcing topical authority alongside future posts.",
+      title: "Facts that stay route-stable even before new posts ship",
+      intro: "Bookmark these silos for teams that share diligence URLs in email or board packs.",
       links: authorityEditorial(short),
     },
     finalCta: {
       eyebrow: "Desk alignment",
-      title: "Request source collateral before trading on prose",
+      title: "Fold long-form prose back into stamped developer packs",
       supporting: `${ora} sales teams issue dated decks, phased maps, and payment exhibits — prose here orients; contracts govern.`,
-      primaryLabel: "WhatsApp — pricing & payment plan",
-      secondaryLabel: "Contact",
+      primaryLabel: "WhatsApp private desk",
+      secondaryLabel: "Written enquiry",
     },
   };
 }

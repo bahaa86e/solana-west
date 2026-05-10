@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { Container } from "@/components/ui/container";
-import { croCommercialFacts, croMessaging } from "@/data/cro";
+import { croCommercialFacts, croMessaging, croPrivateDeskTagline } from "@/data/cro";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -26,44 +26,53 @@ export function GlobalCroRail({ className }: { className?: string }) {
   return (
     <aside
       className={cn(
-        "relative z-[41] border-b border-lux-ink/[0.06] bg-gradient-to-r from-[#f6f3ee] via-lux-paper to-[#ede6dd]",
-        "shadow-[0_12px_32px_-28px_rgba(10,10,10,0.12)]",
+        "relative z-[41] border-b border-lux-ink/[0.045] bg-gradient-to-r from-[#f5f3ef] via-lux-paper to-[#ebe6df]",
+        "shadow-[0_8px_24px_-22px_rgba(28,26,23,0.08)]",
         className,
       )}
-      aria-label="Commercial reference summary"
+      aria-label="Commercial reference and private desk contact"
     >
-      <Container as="div" className="py-2.5 max-md:py-2 md:py-3">
-        <div className="flex flex-col gap-2.5 max-md:gap-2 md:flex-row md:items-center md:justify-between md:gap-6">
-          <p className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1.5 text-[10.5px] font-medium uppercase tracking-[0.22em] text-lux-ink/48 max-md:text-[10px] max-md:leading-relaxed md:gap-x-3 md:text-[11px] md:tracking-[0.24em]">
-            {railItems.map((bit, index) => (
-              <span key={bit} className="inline-flex flex-wrap items-center gap-x-2 md:gap-x-3">
-                {index > 0 ?
-                  <span className="text-lux-gold/45 md:translate-y-[0.5px]" aria-hidden>
-                    ·
-                  </span>
-                : null}
-                <span className="text-lux-ink/68">{bit}</span>
-              </span>
-            ))}
-          </p>
+      <Container as="div" className="py-2.5 max-md:py-2 md:py-3.5">
+        <div className="flex flex-col gap-3.5 md:flex-row md:items-center md:justify-between md:gap-8">
+          <div className="min-w-0 flex-1">
+            <p className="font-sans text-[9.5px] font-semibold uppercase tracking-[0.28em] text-lux-ink/34 md:text-[10px]">
+              {croMessaging.railEyebrow} · {croPrivateDeskTagline}
+            </p>
+            <p className="mt-2 flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1.5 text-[10.5px] font-medium uppercase tracking-[0.2em] text-lux-ink/48 max-md:text-[10px] md:mt-2.5 md:gap-x-3 md:text-[11px] md:tracking-[0.22em]">
+              {railItems.map((bit, index) => (
+                <span key={bit} className="inline-flex flex-wrap items-center gap-x-2 md:gap-x-3">
+                  {index > 0 ?
+                    <span className="text-lux-gold/28 md:translate-y-[0.5px]" aria-hidden>
+                      ·
+                    </span>
+                  : null}
+                  <span className="text-lux-ink/72">{bit}</span>
+                </span>
+              ))}
+            </p>
+          </div>
 
           <Link
             href={siteConfig.whatsAppUrl}
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
-              "inline-flex w-full min-h-[2.875rem] shrink-0 items-center justify-center gap-2 rounded-[8px] max-md:py-2.5 md:w-auto",
-              "border border-[#2a3f35]/26 bg-gradient-to-b from-[#344a40]/94 to-[#24332c]/96 px-4 py-2.5 md:px-5",
-              "text-[11px] font-semibold uppercase tracking-[0.24em] text-lux-paper/95 shadow-[0_14px_40px_-24px_rgba(12,32,26,0.55)] transition-[filter,transform,box-shadow] duration-400 ease-luxury",
-              "hover:brightness-[1.05] active:translate-y-px motion-reduce:transition-none",
-              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lux-gold focus-visible:ring-offset-2 focus-visible:ring-offset-lux-paper",
+              "flex w-full shrink-0 flex-col items-stretch justify-center gap-1.5 rounded-[8px] border border-[#3a5046]/22 bg-gradient-to-b from-[#3d5248]/90 to-[#2a3832]/92 px-4 py-3 md:w-auto md:min-w-[min(22rem,100%)]",
+              "text-lux-paper shadow-[0_10px_30px_-22px_rgba(18,38,30,0.28)] transition-[filter] duration-400 ease-luxury",
+              "hover:brightness-[1.02] active:opacity-[0.96] motion-reduce:transition-none",
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lux-gold focus-visible:ring-offset-2 focus-visible:ring-offset-lux-paper md:flex-row md:items-center md:gap-4 md:py-3 md:pl-5 md:pr-6",
             )}
             data-track="whatsapp_click"
             data-track-placement="global_cro_rail"
           >
-            <WhatsAppIcon className="size-[1.05rem] opacity-90" />
-            <span className="whitespace-normal text-center leading-snug md:whitespace-nowrap">
-              {croMessaging.railWhatsAppLabel}
+            <span className="flex items-center justify-center gap-2.5 md:justify-start">
+              <WhatsAppIcon className="size-[1.1rem] shrink-0 opacity-90" />
+              <span className="text-center text-[11px] font-semibold uppercase tracking-[0.22em] md:text-left">
+                {croMessaging.railWhatsAppLabel}
+              </span>
+            </span>
+            <span className="px-1 text-center text-[9.5px] font-normal uppercase leading-snug tracking-[0.18em] text-lux-paper/52 md:max-w-[20rem] md:flex-1 md:text-left md:tracking-[0.2em]">
+              {croMessaging.railWhatsAppSubline}
             </span>
           </Link>
         </div>

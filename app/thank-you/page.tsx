@@ -32,8 +32,9 @@ export default function ThankYouPage({ searchParams }: PageProps) {
       <div className="max-w-2xl space-y-12">
         <SectionHeader
           id="thank-you-heading"
+          titleAs="h1"
           eyebrow="Acknowledgement"
-          title={isLeadAck ? "Enquiry logged" : "Thank you"}
+          title={isLeadAck ? "Enquiry received — we will reply shortly" : "Thank you — enquiry received"}
           kicker={
             <p>
               {isLeadAck ? (

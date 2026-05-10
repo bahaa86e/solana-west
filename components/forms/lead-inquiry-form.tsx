@@ -53,8 +53,11 @@ export function LeadInquiryForm() {
   const [state, formAction] = useFormState(submitLeadInquiry, initialLeadState);
 
   return (
-    <form action={formAction} aria-label="Enquiry form" className="max-w-md space-y-10">
+    <form action={formAction} aria-label="Private enquiry form" className="max-w-md space-y-10">
       <div className="space-y-4">
+        <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.28em] text-lux-ink/40">
+          {croMessaging.leadFormEyebrow}
+        </p>
         <ConversionValueChips tone="light" />
         <p className="text-[0.8125rem] font-normal leading-relaxed tracking-[0.018em] text-lux-ink/54 md:text-[0.84375rem]">
           {croMessaging.leadFormSubtitle}
@@ -69,7 +72,7 @@ export function LeadInquiryForm() {
 
       <fieldset className="m-0 min-w-0 space-y-9 border-0 p-0">
         <legend className="sr-only">
-          Inquiry — full name, phone number, and property interest (required fields)
+          Private inquiry — full name, phone number, and property interest (required)
         </legend>
 
         <div className={fieldWrap}>
@@ -135,8 +138,7 @@ export function LeadInquiryForm() {
         ) : null}
 
         <p className="text-[0.8125rem] leading-relaxed tracking-[0.01em] text-lux-ink/52 md:text-[0.84375rem]">
-          Submissions route toward accredited {siteConfig.developer} desk workflows — not an automated funnel. Prefer
-          instant context? WhatsApp or phone above.
+          {croMessaging.leadFormRoutingNote}
         </p>
 
         <div className="flex flex-col gap-3">
@@ -151,7 +153,7 @@ export function LeadInquiryForm() {
             data-track="whatsapp_click"
             data-track-placement="lead_form_whatsapp_escalation"
           >
-            Prefer WhatsApp for instant routing
+            {croMessaging.leadFormWhatsappSecondary}
           </CtaButton>
         </div>
       </fieldset>

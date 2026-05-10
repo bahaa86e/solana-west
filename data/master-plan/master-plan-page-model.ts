@@ -1,7 +1,7 @@
 import { SOLANA_WEST_FAQ_SHARED_INTRO, solanaWestFaqCanonical } from "@/data/faq/solana-west-faq";
 import type { FaqPair, ProjectImageAsset } from "@/data/projects/types";
 import { resolveProjectPage } from "@/data/projects/resolve-project-page";
-import { solanaWestMedia } from "@/data/solana-west-media";
+import { solanaWestMedia } from "@/data/media/solana-west";
 import { siteConfig } from "@/data/site";
 
 export type MasterPlanSpatialBlock = {
@@ -74,22 +74,22 @@ function internalLinksEditorial(short: string): readonly MasterPlanInternalLink[
     {
       label: "Standalone villas",
       href: "/properties/villas",
-      context: "Typology editorial inside the footprint.",
+      context: "Detached lots and elevation bands relative to the 316-acre green spine.",
     },
     {
       label: "Townhouses",
       href: "/properties/townhouses",
-      context: "Typology editorial.",
+      context: "Avenue-front townhomes—density and ticket between apartments and twins.",
     },
     {
       label: "Twin houses",
       href: "/properties/twin-houses",
-      context: "Typology editorial.",
+      context: "Paired villas—how party lines sit inside setbacks and buffers.",
     },
     {
       label: "Apartments",
       href: "/properties/apartments",
-      context: "Typology editorial.",
+      context: "Vertical SKUs placed against landscape corridors and amenity adjacency.",
     },
     {
       label: "Full FAQ index",
@@ -116,14 +116,14 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
     overviewFigure,
     hero: {
       eyebrow: "Master plan · Spatial organization · New Zayed",
-      h1: `A ${short} blueprint across 316 acres`,
+      h1: `The ${short} master plan — 316 acres in New Zayed`,
       lead: `${entry.name} is structured as a single master-planned community — landscaped connectors, restrained plot rhythm, and a walkable skeleton that reads first as greenery and second as built edges. This page summarizes how that logic is articulated at community scale, without substituting desk-level issuance drawings.`,
       supporting:
         `Public collateral positions low-density sequencing, elevated villa frontage toward open greenery, shared landscape corridors, and private landscape pockets tied to parcels. Figures here stay descriptive: we do not publish unavailable engineering dimensions, phased percentage splits, or parcel-level percentages that do not appear in your issuance pack.`,
     },
     overview: {
       eyebrow: "Master plan overview",
-      title: `316 acres conceived as continuity, not infill collage`,
+      title: `One coherent 316-acre composition — not fragmented pads`,
       paragraphs: [
         `The tract is anchored as a cohesive land plan rather than fragmented pads — roadway hierarchy, landscaped buffers, and residential clusters organize movement through the footprint while preserving long sightlines toward green structure.`,
         "Low-density planning is the governing posture: breadth of landscape competes equally with façade length. That restraint supports privacy between clusters, quieter internal streets, and a residential reading closer to villas-in-parkland than corridors of wall-to-wall height.",
@@ -132,7 +132,7 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
     },
     spatialOrganization: {
       eyebrow: "Spatial organization",
-      title: "How clusters, corridors, and open structure relate",
+      title: "Residential clusters, connectors and open-space banding",
       intro:
         "The following narratives explain relationships called out publicly for the compound — they are thematic, not a substitute for surveying an issuance plot plan or reserving on a labelled availability sheet.",
       blocks: [
@@ -177,7 +177,7 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
     },
     lifestyle: {
       eyebrow: "Lifestyle planning",
-      title: "Calm thresholds between home life and shared compound life",
+      title: "Daily calm where villas, rows and shared estate meet",
       paragraphs: [
         "The footprint codes daily experience through spacing: setbacks, pocket lawns, landscaped connectors, and controlled vehicular segregation each reduce perceptual congestion — households feel room to breathe between front doors and arterial movement.",
         "Amenity sequencing is knitted into corridors rather than dropped as disparate satellite pads — clubhouse, athletics, pools, or shared parks (per marketing releases) owe their legibility to those landscape bands tying clusters together.",
@@ -195,8 +195,8 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
     },
     internalLinks: {
       eyebrow: "Continue research",
-      title: "Project hub, commerce, typologies",
-      intro: "Editorial bridging — scanners, citations, and AI-search extraction aligned with live routes.",
+      title: "From plan literacy to prices, payment & unit pages",
+      intro: "Stable URLs for citations — each silo answers one underwriting question.",
       links: internalLinksEditorial(short),
     },
     faqPreview: {
@@ -206,10 +206,10 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
     },
     finalCta: {
       eyebrow: "Orientation",
-      title: "Hold the issuance map alongside this read",
-      supporting: `Request current masterplan excerpts, phased availability, or on-site circulation briefings through ${dev} accredited channels — we route enquiries without inventing surveying data.`,
-      primaryLabel: "WhatsApp — pricing & payment plan",
-      secondaryLabel: "Contact",
+      title: "Request the issued map layer for your shortlisted cluster",
+      supporting: `Request current masterplan excerpts, phased availability, or on-site circulation briefings through ${dev} accredited channels—no invented surveying data.`,
+      primaryLabel: "WhatsApp private desk",
+      secondaryLabel: "Written enquiry",
     },
   };
 }

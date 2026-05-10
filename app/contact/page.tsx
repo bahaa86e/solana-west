@@ -3,7 +3,7 @@ import { PageMain } from "@/components/layout/page-main";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildContactPageModel } from "@/data/contact/contact-page-model";
 import { contactPageSeo } from "@/data/seo/routes";
-import { getContactStructuredData } from "@/schemas/contact-page";
+import { getContactStructuredData } from "@/lib/schema/jsonld/contact-page";
 import { buildPageMetadata } from "@/seo/build-metadata";
 
 export const metadata = buildPageMetadata(contactPageSeo);

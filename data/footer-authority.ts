@@ -6,11 +6,12 @@ import { siteConfig } from "@/data/site";
  */
 export const footerAuthority = {
   kicker: "West Cairo · New Zayed",
-  headline: siteConfig.name,
+  /** Sitewide H2 — complements nav without recycling bare brand string */
+  headline: `${siteConfig.name} · ORA-led compound companion`,
   subheading: `${siteConfig.developer} · Chairman ${siteConfig.founder}`,
   deck:
-    `${siteConfig.shortName} is a low-density compound along Mehwar El Dabaa in New Zayed by ${siteConfig.developer}, offering villas, townhouses, twin houses, and apartments. ` +
-    "Reference framing—starting from 9.8M EGP, 5% down payment, installments up to 10 years, delivery from 2027—is for buyer orientation only; issuance terms apply at booking.",
+    `${siteConfig.shortName} is a low-density compound on Mehwar El Dabaa, New Zayed, by ${siteConfig.developer}, with villas, townhouses, twin houses, and apartments. ` +
+    "Reference from 9.8M EGP, 5% down, installments up to 10 years, delivery from 2027 orients buyers only—your signed issuance governs at booking.",
 } as const;
 
 export const footerLegalDisclaimer =

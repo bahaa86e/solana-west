@@ -3,7 +3,7 @@ import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { homeSections } from "@/data/seo/home";
-import { solanaWestMedia } from "@/data/solana-west-media";
+import { solanaWestMedia } from "@/data/media/solana-west";
 
 const { trust } = homeSections;
 
@@ -50,7 +50,7 @@ export function TrustSection() {
             alt={solanaWestMedia.developer.alt}
             sizes="(max-width: 1023px) 100vw, 44vw"
             quality={82}
-            crop="editorialCenter"
+            crop="greenerySubject"
             treatment="rich"
           />
         </LuxuryImageShell>

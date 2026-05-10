@@ -29,34 +29,41 @@ export function SectionHeader({
   const alignClass =
     align === "center" ? "items-center text-center" : "items-start text-left";
   const eyebrowMuted =
-    tone === "onDark" ? "text-lux-paper/54" : "text-lux-ink/48";
+    tone === "onDark" ? "text-lux-paper/48" : "text-lux-ink/40";
   const titleMuted = tone === "onDark" ? "text-lux-paper" : "text-lux-ink";
   const kickerMuted =
-    tone === "onDark" ? "text-lux-paper/76" : "text-lux-ink/66";
+    tone === "onDark" ? "text-lux-paper/70" : "text-lux-ink/62";
 
   return (
     <header
       className={cn(
-        "flex max-w-readable flex-col gap-lux-stack-sm md:gap-lux-stack-md",
+        "flex max-w-readable flex-col gap-[clamp(0.875rem,2.2vw,1.25rem)] md:gap-[clamp(1.0625rem,2.6vw,1.625rem)]",
         alignClass,
         className,
       )}
     >
       {eyebrow ? (
-        <p className={cn("font-sans uppercase text-micro md:tracking-[0.275em]", eyebrowMuted)}>{eyebrow}</p>
+        <p
+          className={cn(
+            "font-sans text-micro uppercase leading-[1.55] max-md:tracking-[0.28em] md:tracking-[0.3em]",
+            eyebrowMuted,
+          )}
+        >
+          {eyebrow}
+        </p>
       ) : null}
-      <div
-        className={cn(
-          "flex flex-col gap-lux-stack-sm md:gap-lux-stack-md lg:gap-lux-stack-lg",
-          align === "center" ? "items-center" : "items-start",
-        )}
-      >
+        <div
+          className={cn(
+            "flex flex-col gap-[clamp(1rem,2.4vw,1.5rem)] md:gap-[clamp(1.125rem,2.9vw,1.875rem)] lg:gap-[clamp(1.25rem,3.1vw,2.125rem)]",
+            align === "center" ? "items-center" : "items-start",
+          )}
+        >
         <div
           className={cn(
             "h-px bg-gradient-to-r",
             tone === "onDark"
-              ? "from-lux-paper/42 via-lux-paper/16 to-transparent"
-              : "from-lux-ink/16 via-lux-gold/25 to-transparent",
+              ? "from-lux-paper/32 via-lux-paper/12 to-transparent"
+              : "from-lux-ink/12 via-lux-gold/18 to-transparent",
             align === "center" ? "w-9 md:w-10" : "w-6 md:w-7 lg:w-8",
           )}
           aria-hidden
@@ -64,7 +71,7 @@ export function SectionHeader({
         <TitleTag
           id={id}
           className={cn(
-            "max-w-[26ch] text-balance font-display text-display-lg md:max-w-[32ch] lg:max-w-[34ch]",
+            "max-w-[min(28ch,100%)] text-balance font-display text-display-lg md:max-w-[min(34ch,100%)] lg:max-w-[min(38ch,100%)]",
             titleMuted,
           )}
         >

@@ -13,14 +13,14 @@ import { cn } from "@/lib/utils";
 const editorialDirectoryLinkClass = cn(
   "rounded-[7px] font-sans text-[0.834375rem] font-normal leading-[1.52] tracking-[0.015em] text-lux-ink/[0.72]",
   "transition-[color,text-decoration-color] duration-400 ease-luxury motion-reduce:transition-none",
-  "underline decoration-lux-gold/28 underline-offset-[0.42em]",
-  "hover:text-lux-ink hover:decoration-lux-gold/55 focus-visible:text-lux-ink",
+  "underline decoration-lux-gold/20 underline-offset-[0.42em]",
+  "hover:text-lux-ink hover:decoration-lux-gold/38 focus-visible:text-lux-ink",
   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lux-gold/[0.55] focus-visible:ring-offset-2 focus-visible:ring-offset-lux-paper",
   "xl:text-[0.855rem]",
 );
 
 const columnHeadingClass =
-  "font-sans text-[10px] font-semibold uppercase tracking-[0.32em] text-lux-gold/[0.88] xl:text-[10.25px]";
+  "font-sans text-[10px] font-semibold uppercase tracking-[0.28em] text-lux-gold/[0.72] xl:text-[10.25px]";
 
 const contactItemClass =
   "text-[0.8375rem] font-normal tracking-[0.012em] text-lux-ink/[0.78] underline-offset-[5px] transition-colors hover:text-lux-ink xl:text-[0.853125rem]";
@@ -35,23 +35,23 @@ export function SiteFooter() {
     <footer
       role="contentinfo"
       className={cn(
-        "relative z-[2] mt-auto border-t border-lux-gold/18",
-        "bg-gradient-to-b from-lux-paper via-[#f7f4ef] to-[#e9e4dc]/93",
-        "shadow-[inset_0_1px_0_rgba(250,248,245,0.85),0_-38px_90px_-56px_rgba(10,10,10,0.13)] backdrop-blur-[6px]",
-        "supports-[backdrop-filter]:via-[#f8f5f1]/94 supports-[backdrop-filter]:to-[#ebe6df]/91",
+        "relative z-[2] mt-auto border-t border-lux-stone/35",
+        "bg-gradient-to-b from-lux-paper via-[#f6f4ef] to-[#ebe6de]/92",
+        "shadow-[inset_0_1px_0_rgba(252,250,247,0.75),0_-24px_64px_-48px_rgba(28,26,23,0.08)] backdrop-blur-[4px]",
+        "supports-[backdrop-filter]:via-[#f7f5f1]/94 supports-[backdrop-filter]:to-[#eae5dd]/90",
       )}
     >
       <Container
         as="div"
-        className="py-[clamp(3.5rem,8.5vw,5.75rem)] xl:pb-[clamp(4.375rem,10vw,6.875rem)] xl:pt-[clamp(3.875rem,9vw,5.5rem)]"
+        className="py-[clamp(3rem,7vw,5rem)] xl:pb-[clamp(3.75rem,8.5vw,5.5rem)] xl:pt-[clamp(3.25rem,7.5vw,4.75rem)]"
       >
-        <div className="flex flex-col gap-16 xl:gap-[4.375rem]">
+        <div className="flex flex-col gap-11 xl:gap-14">
           <InvestorAssuranceStrip />
 
-          <div className="grid gap-[clamp(3.25rem,8vw,4.125rem)] border-t border-lux-gold/[0.12] pt-[clamp(2.875rem,7vw,3.875rem)] lg:grid-cols-12 lg:gap-x-12 lg:gap-y-16 xl:gap-x-14">
+          <div className="grid gap-[clamp(2.75rem,6.5vw,3.5rem)] border-t border-lux-ink/[0.05] pt-[clamp(2.5rem,5.75vw,3.25rem)] lg:grid-cols-12 lg:gap-x-11 lg:gap-y-12 xl:gap-x-12">
             {/* Authority column — editorial + entity wording for crawl / AI readability */}
             <div className="lg:col-span-4 xl:col-span-3">
-              <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.34em] text-lux-gold/[0.9] xl:text-[10.25px]">
+              <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.28em] text-lux-gold/[0.7] xl:text-[10.25px]">
                 {footerAuthority.kicker}
               </p>
               <h2 className="mt-[1.0625rem] font-display text-[clamp(1.8125rem,2.85vw,2.25rem)] font-medium leading-[1.04] tracking-[-0.024em] text-lux-ink md:mt-[1.1875rem]">
@@ -60,7 +60,7 @@ export function SiteFooter() {
               <p className="mt-4 max-w-[32ch] font-sans text-[12.25px] font-medium uppercase tracking-[0.22em] text-lux-ink/[0.45] xl:text-[12.5px]">
                 {footerAuthority.subheading}
               </p>
-              <span className="mt-10 block h-px max-w-[3.125rem] bg-gradient-to-r from-lux-gold/78 via-lux-gold/32 to-transparent" aria-hidden />
+              <span className="mt-10 block h-px max-w-[3.125rem] bg-gradient-to-r from-lux-gold/48 via-lux-gold/22 to-transparent" aria-hidden />
               <p className="mt-[1.9375rem] max-w-[min(38ch,100%)] font-sans text-[15px] font-normal leading-[1.75] tracking-[0.017em] text-lux-ink/[0.64] xl:max-w-[40ch] xl:text-[0.9575rem] xl:leading-[1.74] xl:tracking-[0.016em]">
                 {footerAuthority.deck}
               </p>
@@ -71,7 +71,7 @@ export function SiteFooter() {
               aria-label="Site sections and Solana West resources"
               className="lg:col-span-5 xl:col-span-6 min-w-0"
             >
-              <div className="grid gap-y-14 sm:grid-cols-2 sm:gap-x-10 xl:grid-cols-4 xl:gap-x-11">
+              <div className="grid gap-y-10 sm:grid-cols-2 sm:gap-x-8 xl:grid-cols-4 xl:gap-x-9">
                 {footerMegaColumns.map((column) => {
                   const titleId = `footer-cluster-${column.id}`;
                   return (
@@ -79,7 +79,7 @@ export function SiteFooter() {
                       <h3 id={titleId} className={columnHeadingClass}>
                         {column.headline}
                       </h3>
-                      <ul className="mt-[1.6875rem] space-y-[0.9625rem] text-balance xl:space-y-[1.0625rem]">
+                      <ul className="mt-[1.25rem] space-y-[0.78rem] text-balance xl:mt-[1.375rem] xl:space-y-[0.875rem]">
                         {column.links.map((item) => (
                           <li key={`${column.id}:${item.href}`}>
                             <Link href={item.href} className={editorialDirectoryLinkClass}>
@@ -95,9 +95,9 @@ export function SiteFooter() {
             </nav>
 
             {/* Concierge & trust channels */}
-            <aside className="min-w-0 border-t border-lux-gold/[0.1] pt-14 lg:col-span-3 lg:border-none lg:pt-0 xl:col-span-3">
-              <h3 className={columnHeadingClass}>Concierge & media</h3>
-              <address className="mt-[1.6875rem] flex flex-col gap-6 font-sans not-italic xl:gap-8">
+            <aside className="min-w-0 border-t border-lux-gold/[0.08] pt-10 lg:col-span-3 lg:border-none lg:pt-0 xl:col-span-3">
+              <h3 className={columnHeadingClass}>Concierge</h3>
+              <address className="mt-[1.25rem] flex flex-col gap-5 font-sans not-italic xl:mt-[1.375rem] xl:gap-6">
                 <ul className="flex flex-col gap-[1.0625rem] xl:gap-4">
                   <li>
                     <a
@@ -134,14 +134,14 @@ export function SiteFooter() {
                   data-track="whatsapp_click"
                   data-track-placement="footer_whatsapp_primary"
                 >
-                  {croMessaging.railWhatsAppLabel}
+                  {croMessaging.footerWhatsAppLabel}
                 </CtaButton>
 
                 <div>
-                  <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.32em] text-lux-gold/[0.88] xl:text-[10.25px]">
-                    Profiles
+                  <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.32em] text-lux-gold/[0.82] xl:text-[10.25px]">
+                    Social
                   </p>
-                  <ul className="mt-6 flex flex-col gap-[0.9rem]">
+                  <ul className="mt-4 flex flex-col gap-[0.65rem]">
                     {([
                       { label: "Facebook", href: siteConfig.social.facebook },
                       { label: "Instagram", href: siteConfig.social.instagram },
@@ -167,9 +167,9 @@ export function SiteFooter() {
           </div>
 
           {/* Legal runway — statute + privacy isolated from merchandising grids */}
-          <div className="border-t border-lux-ink/[0.06] pt-12 xl:pt-14">
-            <div className="flex flex-col gap-10 xl:flex-row xl:items-start xl:justify-between xl:gap-x-14">
-              <div className="max-w-xl space-y-8">
+          <div className="border-t border-lux-ink/[0.055] pt-8 xl:pt-10">
+            <div className="flex flex-col gap-7 xl:flex-row xl:items-start xl:justify-between xl:gap-x-12">
+              <div className="max-w-xl space-y-4">
                 <p className="font-sans text-[11.25px] font-normal uppercase tracking-[0.22em] text-lux-gold/[0.78] xl:text-[11.35px]">
                   Legal posture
                 </p>
@@ -178,7 +178,7 @@ export function SiteFooter() {
                 </p>
               </div>
 
-              <div className="flex shrink-0 flex-col gap-[1.9375rem] border-t border-lux-gold/[0.1] pt-10 xl:border-none xl:border-l xl:border-lux-gold/[0.12] xl:pl-[clamp(2rem,4vw,2.875rem)] xl:pt-[0.25rem]">
+              <div className="flex shrink-0 flex-col gap-6 border-t border-lux-gold/[0.08] pt-8 xl:border-none xl:border-l xl:border-lux-gold/[0.1] xl:pl-[clamp(1.75rem,3.5vw,2.5rem)] xl:pt-[0.125rem]">
                 <div>
                   <p className="font-display text-[0.9575rem] font-normal tracking-[-0.012em] text-lux-ink/[0.86] xl:text-[1rem]">
                     © {year} {siteConfig.shortName}

@@ -1,49 +1,49 @@
 import { siteConfig } from "@/data/site";
 
 /**
- * Canonical Solana West FAQ pairs — mirrored on the homepage preview and `/faq`.
- * Paragraph breaks use blank lines (`\n\n`). Visible prose and FAQPage schema must reuse the same `answer` string.
+ * Canonical Solana West FAQ — homepage preview + `/faq` + FAQPage JSON-LD.
+ * Lead sentence = direct extract for snippets & AI; following paragraphs add issuance nuance.
  */
 
 export const SOLANA_WEST_FAQ_SHARED_INTRO =
-  "Direct answers drawn from published project scope — issuance pricing, milestones, and contracts require sales verification before reservation.";
+  "Each answer leads with facts you can quote—then the booking nuance. Anything you reserve is governed by the commercial file you sign, not by marketing summaries on this site.";
 
 export const solanaWestFaqCanonical = [
   {
-    question: `What are ${siteConfig.shortName} prices?`,
-    answer: `Marketing references a starting position from 9.8M EGP; issuance pricing moves with phase, typology (apartment, townhouse, twin house, standalone villa), finishing path (fully finished or core & shell), and outlook.
+    question: `What are ${siteConfig.shortName} prices in New Zayed?`,
+    answer: `Reference pricing starts from 9.8M EGP for Solana West on Mehwar El Dabaa, New Zayed.
 
-Ask sales for an issuance-dated sheet before reserving — unofficial figures may not bind the seller.`,
+Live brackets move with phase, unit type (apartment, townhouse, twin house, standalone villa), finishing (fully finished or core & shell), floor, outlook, and façade package. Ask the desk for an issuance-dated sheet before you reserve—informal figures are not binding.`,
   },
   {
-    question: "What is the Solana West payment plan?",
-    answer: `Collateral references 5% down with installments extending up to 10 years — interest mechanics, instalment milestones, reservation deposits, and admin fees are stipulated in your signed booking issuance.
+    question: `What is the ${siteConfig.shortName} payment plan?`,
+    answer: `Marketing references 5% down with installments extending up to 10 years for eligible bookings.
 
-Summaries published online are illustrative; issuance contract wording governs at signing.`,
+How interest is calculated, instalment dates, deposits, admin fees, and penalties appear only in your signed booking issuance—not in a web summary. Use online numbers to orient; your contract text governs at signature.`,
   },
   {
-    question: "When is delivery?",
-    answer: `Handover horizons begin from 2027. Specific tower, villa batch, or cluster dates follow construction pacing and fulfilment milestones under your instalment schedule.
+    question: `When is ${siteConfig.shortName} delivery?`,
+    answer: `Handover is planned from 2027 for Solana West, West Cairo.
 
-Treat marketing timelines as directional until confirmed in issuance documentation issued by ${siteConfig.developer}.`,
+Specific villa batch, tower, or cluster dates follow construction milestones and your payment schedule. Treat marketing timelines as directional until your issuance pack states the dates that apply to your unit.`,
   },
   {
     question: `Where is ${siteConfig.name} located?`,
-    answer: `The project sits along Mehwar El Dabaa in New Zayed, West Cairo, with direct arterial access toward Alexandria Desert Road and the Middle Ring Road.
+    answer: `Solana West sits on Mehwar El Dabaa in New Zayed, West Cairo, with links toward Alexandria Desert Road and the Middle Ring Road.
 
-Driving context commonly cited alongside marketing material: circa five minutes toward Waslet Dahshour; circa ten minutes toward Sphinx Airport; circa fifteen minutes toward Mall of Arabia. Neighbouring large-scale comps include VYE (Sodic) and Belle Vie (Emaar) — cite them only as market comparables, not as partnership claims.`,
+Collateral often cites ~5 minutes toward Waslet Dahshour, ~10 minutes toward Sphinx International Airport, and ~15 minutes toward Mall of Arabia as directional driving context. Nearby large-scale projects include VYE (Sodic) and Belle Vie (Emaar)—market comparables only, not partnerships.`,
   },
   {
-    question: "Which unit types are available?",
-    answer: `Four residential archetypes anchor the plan: apartments, townhouses, twin houses, standalone villas — each sequenced inside the broader 316-acre, low-density land plan.
+    question: "What unit types does Solana West offer?",
+    answer: `Four residential types: apartments, townhouses, twin houses, and standalone villas—placed across a 316-acre, low-density master plan by ${siteConfig.developer}.
 
-Depending on SKU, finishing may ship fully finished or core & shell. Inventory is phased; confirm façade packages, storey counts, and lot dimensions with desk availability before allocation.`,
+Finishing may be fully finished or core & shell depending on SKU. Inventory is phased; confirm storey count, façade pack, and plot dimensions with authorised sales before you allocate capital.`,
   },
   {
-    question: "Who is the developer?",
-    answer: `${siteConfig.developer}, chaired by ${siteConfig.founder}, is the development counterparty for ${siteConfig.name}. Issuance paperwork, staged payments, delivery notices, and after-sales escalation route through authorised ORA desks.
+    question: `Who develops ${siteConfig.name}?`,
+    answer: `${siteConfig.developer}, chaired by ${siteConfig.founder}, is the development counterparty for ${siteConfig.name}.
 
-Third-party marketers or brokerage offices referencing the compound are independent unless expressly designated as accredited channel partners — verify credentials before paying any broker fee.`,
+Reservations, staged payments, delivery notices, and after-sales escalation route through authorised ORA channels. Third parties quoting the compound are independent unless ORA accredits them—verify credentials before paying brokerage fees.`,
   },
 ] as const satisfies ReadonlyArray<{ readonly question: string; readonly answer: string }>;
 

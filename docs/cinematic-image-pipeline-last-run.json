@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-05-10T15:41:00.910Z",
+  "rawRoot": "public\\raw-assets\\solana-west",
+  "outputRoot": "public\\images\\projects\\solana-west",
+  "useProduction": true,
+  "dryRun": false,
+  "fileCount": 1,
+  "moved": [
+    {
+      "from": "public\\raw-assets\\solana-west\\solana-west-landscape-main.webp",
+      "to": "public\\images\\projects\\solana-west\\hero\\daylight\\solana-west-new-zayed-hero-daylight-cinematic-01.webp",
+      "variants": [
+        "public\\images\\projects\\solana-west\\hero\\daylight\\solana-west-new-zayed-hero-daylight-cinematic-01-desktop.webp",
+        "public\\images\\projects\\solana-west\\hero\\daylight\\solana-west-new-zayed-hero-daylight-cinematic-01-mobile.webp"
+      ],
+      "classification": {
+        "relTarget": "hero/daylight",
+        "descriptor": "hero-daylight-cinematic",
+        "tags": []
+      }
+    }
+  ],
+  "duplicates": [],
+  "weakQuality": [],
+  "heroCandidates": [
+    {
+      "file": "public\\raw-assets\\solana-west\\solana-west-landscape-main.webp",
+      "suggestedPath": "public\\images\\projects\\solana-west\\hero\\daylight\\solana-west-new-zayed-hero-daylight-cinematic-01.webp",
+      "aspect": 1.777,
+      "score": 85
+    }
+  ],
+  "ctaCandidates": [],
+  "editorialFeatured": [],
+  "processingErrors": []
+}

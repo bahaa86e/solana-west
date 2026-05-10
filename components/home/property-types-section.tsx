@@ -16,8 +16,8 @@ export function PropertyTypesSection() {
         <div className="max-w-sm shrink-0 lg:max-w-md lg:pt-2">
           <SectionHeader
             id="property-types-heading"
-            eyebrow="Product"
-            title="Property types"
+            eyebrow={propertyTypes.eyebrow}
+            title={propertyTypes.title}
             kicker={
               <p className="font-normal text-lux-ink/66">{propertyTypes.intro}</p>
             }
@@ -26,7 +26,7 @@ export function PropertyTypesSection() {
         <ul className="grid flex-1 grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 xl:gap-6">
           {propertyTypes.types.map((row) => (
             <li key={row.title}>
-              <article className="group flex min-h-[14rem] flex-col justify-between border border-lux-ink/[0.07] bg-lux-paper/75 px-8 py-9 text-left shadow-[0_22px_50px_-36px_rgba(10,10,10,0.16),inset_0_1px_0_rgba(250,248,245,0.88)] transition-[border-color,box-shadow,background-color,transform] duration-480 ease-luxury motion-reduce:transition-none motion-reduce:hover:translate-y-0 hover:-translate-y-[3px] hover:border-lux-ink/14 hover:bg-lux-paper hover:shadow-lux-card sm:min-h-[15.5rem] sm:px-9 sm:py-11 xl:min-h-[16rem] xl:py-12">
+              <article className="group flex min-h-[14rem] flex-col justify-between border border-lux-ink/[0.055] bg-lux-paper/78 px-8 py-9 text-left shadow-[0_14px_40px_-30px_rgba(28,26,23,0.11),inset_0_1px_0_rgba(252,250,247,0.78)] transition-[border-color,box-shadow,background-color] duration-480 ease-luxury motion-reduce:transition-none hover:border-lux-ink/11 hover:bg-lux-paper hover:shadow-[0_18px_48px_-34px_rgba(28,26,23,0.13),inset_0_1px_0_rgba(252,250,247,0.82)] sm:min-h-[15.5rem] sm:px-9 sm:py-11 xl:min-h-[16rem] xl:py-12">
                 <div>
                   <h3 className="m-0 font-display text-[1.4375rem] font-normal tracking-[-0.014em] text-lux-ink transition-colors duration-400 group-hover:text-lux-ink/88 md:text-2xl xl:text-[1.6875rem]">
                     {row.title}

@@ -1,5 +1,5 @@
 import { defaultOpenGraphImagePath } from "@/data/seo/defaults";
-import { solanaWestMedia } from "@/data/solana-west-media";
+import { solanaWestMedia } from "@/data/media/solana-west";
 import type { RouteSeoDefinition } from "@/data/seo/types";
 import { siteConfig } from "@/data/site";
 import { getSiteUrl } from "@/lib/env";

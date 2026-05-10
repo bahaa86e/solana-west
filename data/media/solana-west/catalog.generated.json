@@ -1,0 +1,749 @@
+{
+  "generatedAt": "2026-05-10T17:11:37.853Z",
+  "images": [
+    {
+      "path": "/images/projects/solana-west/apartments/solana-west-new-zayed-apartment-building-exterior-01.webp",
+      "alt": "Modern apartment architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "apartments",
+      "slug": "apartment-building-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-apartments.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/apartments/solana-west-new-zayed-apartment-building-exterior-02.webp",
+      "alt": "Modern apartment architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "apartments",
+      "slug": "apartment-building-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-apartments(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/apartments/solana-west-new-zayed-apartment-building-exterior-03.webp",
+      "alt": "Modern apartment architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "apartments",
+      "slug": "apartment-building-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-apartments(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/apartments/solana-west-new-zayed-apartment-building-exterior-04.webp",
+      "alt": "Modern apartment architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "apartments",
+      "slug": "apartment-building-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-apartments(3).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/architecture-details/solana-west-new-zayed-architecture-facade-detail-01.webp",
+      "alt": "Contemporary façade detail and landscape edges at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "architecture-details",
+      "slug": "architecture-facade-detail",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-building-A.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/commercial/solana-west-new-zayed-commercial-mixed-use-01.webp",
+      "alt": "Mixed-use commercial frontage within Solana West New Zayed New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "commercial",
+      "slug": "commercial-mixed-use",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-buissness-buildings.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/architecture-details/solana-west-new-zayed-residential-elevation-study-01.webp",
+      "alt": "Residential elevation study at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "architecture-details",
+      "slug": "residential-elevation-study",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-building-1.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/architecture-details/solana-west-new-zayed-residential-elevation-study-02.webp",
+      "alt": "Residential elevation study at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "architecture-details",
+      "slug": "residential-elevation-study",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-building-1(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/architecture-details/solana-west-new-zayed-residential-elevation-study-03.webp",
+      "alt": "Residential elevation study at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "architecture-details",
+      "slug": "residential-elevation-study",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-building-k.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/architecture-details/solana-west-new-zayed-residential-elevation-study-04.webp",
+      "alt": "Residential elevation study at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "architecture-details",
+      "slug": "residential-elevation-study",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-building-k(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/hero/daylight/solana-west-new-zayed-hero-cinematic-daylight-avenue-01.webp",
+      "alt": "Cinematic landscaped avenues and low-density planning at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "hero/daylight",
+      "slug": "hero-cinematic-daylight-avenue",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-landescap.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/hero/daylight/solana-west-new-zayed-hero-cinematic-daylight-avenue-02.webp",
+      "alt": "Cinematic landscaped avenues and low-density planning at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "hero/daylight",
+      "slug": "hero-cinematic-daylight-avenue",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-landescap(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/hero/daylight/solana-west-new-zayed-hero-cinematic-daylight-avenue-03.webp",
+      "alt": "Cinematic landscaped avenues and low-density planning at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "hero/daylight",
+      "slug": "hero-cinematic-daylight-avenue",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-landescap(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/hero/daylight/solana-west-new-zayed-hero-cinematic-daylight-avenue-04.webp",
+      "alt": "Cinematic landscaped avenues and low-density planning at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "hero/daylight",
+      "slug": "hero-cinematic-daylight-avenue",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-landescap(3).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/hero/daylight/solana-west-new-zayed-hero-cinematic-daylight-avenue-05.webp",
+      "alt": "Cinematic landscaped avenues and low-density planning at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "hero/daylight",
+      "slug": "hero-cinematic-daylight-avenue",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-Landescap(4).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/hero/daylight/solana-west-new-zayed-hero-cinematic-daylight-avenue-06.webp",
+      "alt": "Cinematic landscaped avenues and low-density planning at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "hero/daylight",
+      "slug": "hero-cinematic-daylight-avenue",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-Landescape.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/masterplan/full/solana-west-new-zayed-masterplan-aerial-board-01.webp",
+      "alt": "Master plan overview of Solana West New Zayed in New Zayed — ORA Developers Egypt.",
+      "category": "masterplan/full",
+      "slug": "masterplan-aerial-board",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-master-plan.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/masterplan/full/solana-west-new-zayed-masterplan-aerial-board-02.webp",
+      "alt": "Master plan overview of Solana West New Zayed in New Zayed — ORA Developers Egypt.",
+      "category": "masterplan/full",
+      "slug": "masterplan-aerial-board",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-master-plan(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/masterplan/full/solana-west-new-zayed-masterplan-aerial-board-03.webp",
+      "alt": "Master plan overview of Solana West New Zayed in New Zayed — ORA Developers Egypt.",
+      "category": "masterplan/full",
+      "slug": "masterplan-aerial-board",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-masterplan.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/masterplan/full/solana-west-new-zayed-masterplan-aerial-board-04.webp",
+      "alt": "Master plan overview of Solana West New Zayed in New Zayed — ORA Developers Egypt.",
+      "category": "masterplan/full",
+      "slug": "masterplan-aerial-board",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-masterplan(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/amenities/pools/solana-west-new-zayed-luxury-pool-amenity-01.webp",
+      "alt": "Resort-style pool and amenity atmosphere at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "amenities/pools",
+      "slug": "luxury-pool-amenity",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-pool.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-01.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-the-villa-08-245sqm.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-02.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-the-villa-08-245sqm(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/townhouses/solana-west-new-zayed-townhouse-street-exterior-01.webp",
+      "alt": "Townhouse streetscape at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "townhouses",
+      "slug": "townhouse-street-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-town-house-B-173sqm.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/townhouses/solana-west-new-zayed-townhouse-street-exterior-02.webp",
+      "alt": "Townhouse streetscape at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "townhouses",
+      "slug": "townhouse-street-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-town-house-B-173sqm(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-03.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-villa-07-195sqm.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-04.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-villa-07-195sqm(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-05.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-villa-07-195sqm(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-06.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-villa-07-195sqm(3).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-07.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-C06-villa-07-195sqm(4).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/landscape/solana-west-new-zayed-landscaped-walkway-avenue-01.webp",
+      "alt": "Walkable landscaped circulation at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "landscape",
+      "slug": "landscaped-walkway-avenue",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-landescape.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/landscape/solana-west-new-zayed-landscaped-walkway-avenue-02.webp",
+      "alt": "Walkable landscaped circulation at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "landscape",
+      "slug": "landscaped-walkway-avenue",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-landescape(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/amenities/greenery/solana-west-new-zayed-park-landscape-greenery-01.webp",
+      "alt": "Park landscaping and green open space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "amenities/greenery",
+      "slug": "park-landscape-greenery",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-park-view.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/hero/daylight/solana-west-new-zayed-hero-cinematic-daylight-avenue-07.webp",
+      "alt": "Cinematic landscaped avenues and low-density planning at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "hero/daylight",
+      "slug": "hero-cinematic-daylight-avenue",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-landescape.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/hero/daylight/solana-west-new-zayed-hero-cinematic-daylight-avenue-08.webp",
+      "alt": "Cinematic landscaped avenues and low-density planning at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "hero/daylight",
+      "slug": "hero-cinematic-daylight-avenue",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-landescape(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/maps/connectivity/solana-west-new-zayed-location-connectivity-map-01.webp",
+      "alt": "Location and connectivity map for Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "maps/connectivity",
+      "slug": "location-connectivity-map",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-location-map.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/masterplan/full/solana-west-new-zayed-masterplan-aerial-board-05.webp",
+      "alt": "Master plan overview of Solana West New Zayed in New Zayed — ORA Developers Egypt.",
+      "category": "masterplan/full",
+      "slug": "masterplan-aerial-board",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-master-plan.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/masterplan/full/solana-west-new-zayed-masterplan-aerial-board-06.webp",
+      "alt": "Master plan overview of Solana West New Zayed in New Zayed — ORA Developers Egypt.",
+      "category": "masterplan/full",
+      "slug": "masterplan-aerial-board",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-master-plan(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/masterplan/full/solana-west-new-zayed-masterplan-aerial-board-07.webp",
+      "alt": "Master plan overview of Solana West New Zayed in New Zayed — ORA Developers Egypt.",
+      "category": "masterplan/full",
+      "slug": "masterplan-aerial-board",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-master-plan(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/townhouses/solana-west-new-zayed-townhouse-street-exterior-03.webp",
+      "alt": "Townhouse streetscape at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "townhouses",
+      "slug": "townhouse-street-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-townhouse-210sqm.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/townhouses/solana-west-new-zayed-townhouse-street-exterior-04.webp",
+      "alt": "Townhouse streetscape at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "townhouses",
+      "slug": "townhouse-street-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-townhouse-210sqm(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/townhouses/solana-west-new-zayed-townhouse-street-exterior-05.webp",
+      "alt": "Townhouse streetscape at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "townhouses",
+      "slug": "townhouse-street-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-townhouse-210sqm(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/townhouses/solana-west-new-zayed-townhouse-street-exterior-06.webp",
+      "alt": "Townhouse streetscape at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "townhouses",
+      "slug": "townhouse-street-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-townhouse-210sqm(3).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-01.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-twin-house-240sqm-interior.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/twin-villas/solana-west-new-zayed-twin-villa-exterior-01.webp",
+      "alt": "Twin villa architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/twin-villas",
+      "slug": "twin-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-twin-house-240sqm.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/twin-villas/solana-west-new-zayed-twin-villa-exterior-02.webp",
+      "alt": "Twin villa architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/twin-villas",
+      "slug": "twin-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-twin-house-240sqm(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/twin-villas/solana-west-new-zayed-twin-villa-exterior-03.webp",
+      "alt": "Twin villa architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/twin-villas",
+      "slug": "twin-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-twin-house-240sqm(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/twin-villas/solana-west-new-zayed-twin-villa-exterior-04.webp",
+      "alt": "Twin villa architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/twin-villas",
+      "slug": "twin-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-twin-house.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-02.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-twin-villa-interior.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-03.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-twin-villa-interior(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-04.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-twin-villa-interior(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/twin-villas/solana-west-new-zayed-twin-villa-exterior-05.webp",
+      "alt": "Twin villa architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/twin-villas",
+      "slug": "twin-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-twin-villa.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/twin-villas/solana-west-new-zayed-twin-villa-exterior-06.webp",
+      "alt": "Twin villa architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/twin-villas",
+      "slug": "twin-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-twin-villa(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/twin-villas/solana-west-new-zayed-twin-villa-exterior-07.webp",
+      "alt": "Twin villa architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/twin-villas",
+      "slug": "twin-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-twin-villa(1)(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/twin-villas/solana-west-new-zayed-twin-villa-exterior-08.webp",
+      "alt": "Twin villa architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/twin-villas",
+      "slug": "twin-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-twin-villa(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-05.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-Villa-1-A-388sqm-interior.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-06.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-Villa-1-A-388sqm-interior(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-07.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-Villa-1-A-388sqm-interior(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-08.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-Villa-1-A-388sqm.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-09.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-Villa-1-A-388sqm(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-10.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-Villa-1-A-388sqm(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-11.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-Villa-1-B-383sqm.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-12.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-Villa-1-B-383sqm(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-13.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-Villa-1-B-383sqm(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-08.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa-2-319sqm-interior.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-09.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa-2-319sqm-interior(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-10.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa-2-319sqm-interior(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-14.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa-2-319sqm.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-15.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa-2-319sqm(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-16.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa-2-319sqm(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-11.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa-3-337sqm-interior.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-12.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa-3-337sqm-interior(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-13.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa-3-337sqm-interior(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-17.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa-3-337sqm.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-18.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa-3-337sqm(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-19.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa-3-337sqm(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-20.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-sf-villa4-240sqm.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-14.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-interior.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-15.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-interior(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-16.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-interior(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-17.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-interior(3).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-18.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-interior(4).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-19.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-interior(6).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/interiors/living-room/solana-west-new-zayed-residence-living-interior-20.webp",
+      "alt": "Interior living space at Solana West New Zayed — ORA Developers Egypt.",
+      "category": "interiors/living-room",
+      "slug": "residence-living-interior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-interior(7).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/townhouses/solana-west-new-zayed-townhouse-street-exterior-07.webp",
+      "alt": "Townhouse streetscape at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "townhouses",
+      "slug": "townhouse-street-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-town-house-type-B(2).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/twin-villas/solana-west-new-zayed-twin-villa-exterior-09.webp",
+      "alt": "Twin villa architecture at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/twin-villas",
+      "slug": "twin-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-twin-house-type-B.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-21.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-villa-05-276sqm.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-22.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-villa-05-276sqm(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-23.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-villa-06-224sqm.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-24.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-villa.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-25.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-villas.webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-26.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-villas(1)(1).webp",
+      "weak": false
+    },
+    {
+      "path": "/images/projects/solana-west/villas/standalone/solana-west-new-zayed-standalone-villa-exterior-27.webp",
+      "alt": "Luxury standalone villa exterior at Solana West New Zayed, West Cairo — ORA Developers Egypt.",
+      "category": "villas/standalone",
+      "slug": "standalone-villa-exterior",
+      "source": "public\\raw-assets\\solana-west-consumed-2026-05-09\\solana-west-solos-villas(2).webp",
+      "weak": false
+    }
+  ]
+}

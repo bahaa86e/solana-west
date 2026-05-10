@@ -32,14 +32,14 @@ function EnquiryGlyph(props: SVGProps<SVGSVGElement>) {
 }
 
 const waCell = cn(
-  "flex min-h-[3.875rem] flex-[1.45] flex-col items-center justify-center gap-2.5 bg-gradient-to-b from-[#3d5a4c]/96 to-[#24332c]/97 px-3 py-3.5 text-center",
-  "text-lux-paper shadow-[inset_0_1px_0_rgba(255,255,255,0.14),0_-18px_48px_-28px_rgba(6,26,22,0.42)] transition-[filter,background-color] duration-400 ease-luxury motion-reduce:transition-none",
-  "active:brightness-[0.97] hover:brightness-[1.06] hover:backdrop-brightness-[1.02] motion-reduce:hover:brightness-100 motion-reduce:active:brightness-100",
-  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-lux-gold",
+  "flex min-h-[3.875rem] flex-[1.45] flex-col items-center justify-center gap-1.5 bg-gradient-to-b from-[#425850]/92 to-[#2c3834]/93 px-2.5 py-3.5 text-center",
+  "text-lux-paper shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_-12px_36px_-24px_rgba(18,38,30,0.2)] transition-[filter,background-color] duration-400 ease-luxury motion-reduce:transition-none",
+  "active:brightness-[0.985] hover:brightness-[1.03] hover:backdrop-brightness-[1.01] motion-reduce:hover:brightness-100 motion-reduce:active:brightness-100",
+  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-lux-gold/[0.65]",
 );
 
 const altCell =
-  "flex min-h-[3.875rem] min-w-[4.75rem] flex-1 flex-col items-center justify-center gap-2 bg-[#fcfbf9]/95 px-2 py-3.5 text-center text-[10px] font-semibold uppercase tracking-[0.22em] text-lux-ink/88 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] transition-[color,background-color,transform] duration-400 ease-luxury motion-reduce:transition-none active:translate-y-px hover:bg-[#f0eae2]/92 hover:text-lux-ink motion-reduce:active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-lux-gold motion-reduce:hover:translate-y-0";
+  "flex min-h-[3.875rem] min-w-[4.75rem] flex-1 flex-col items-center justify-center gap-2 bg-lux-ivory/96 px-2 py-3.5 text-center text-[10px] font-semibold uppercase tracking-[0.2em] text-lux-ink/78 shadow-[inset_0_1px_0_rgba(255,255,255,0.48)] transition-[color,background-color] duration-400 ease-luxury motion-reduce:transition-none hover:bg-lux-paper/95 hover:text-lux-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-lux-gold/[0.65]";
 
 export function StickyMobileCtaBar({ className }: BarProps) {
   const tel = siteConfig.phone.replace(/\s/g, "");
@@ -47,11 +47,11 @@ export function StickyMobileCtaBar({ className }: BarProps) {
   return (
     <div
       className={cn(
-        "fixed inset-x-0 bottom-0 z-[55] border-t border-lux-gold/22 bg-gradient-to-t from-[#f6f3ee]/97 via-lux-paper/94 to-lux-paper/90 pb-safe-bottom shadow-[0_-22px_56px_-32px_rgba(10,10,10,0.16),inset_0_1px_0_rgba(196,165,116,0.22)] backdrop-blur-[22px] supports-[backdrop-filter]:bg-lux-paper/76 lg:hidden",
+        "fixed inset-x-0 bottom-0 z-[55] border-t border-lux-gold/14 bg-gradient-to-t from-[#f4f2ed]/96 via-lux-paper/92 to-lux-paper/88 pb-safe-bottom shadow-[0_-14px_40px_-28px_rgba(28,26,23,0.08),inset_0_1px_0_rgba(252,250,247,0.55)] backdrop-blur-[18px] supports-[backdrop-filter]:bg-lux-paper/72 lg:hidden",
         className,
       )}
       role="navigation"
-      aria-label="Quick contact"
+      aria-label="Private desk quick contact"
     >
       <div className="mx-auto flex max-w-content border-t border-transparent">
         <a
@@ -63,10 +63,15 @@ export function StickyMobileCtaBar({ className }: BarProps) {
           data-track-placement="sticky_mobile_whatsapp_primary"
         >
           <WhatsAppIcon className="size-[1.42rem] opacity-96" aria-hidden />
-          <span className="flex flex-col items-center gap-1 leading-tight">
-            <span className="text-[11.25px] font-semibold uppercase tracking-[0.24em] text-lux-paper/[0.96]">{croMessaging.stickyWhatsAppLine}</span>
-            <span className="sr-only">WhatsApp opens in a new tab</span>
+          <span className="flex flex-col items-center gap-0.5 leading-none">
+            <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-lux-paper/[0.96]">
+              {croMessaging.stickyWhatsAppLine}
+            </span>
+            <span className="text-[9.5px] font-medium uppercase tracking-[0.28em] text-lux-paper/62">
+              {croMessaging.stickyWhatsAppSubline}
+            </span>
           </span>
+          <span className="sr-only">WhatsApp opens in a new tab</span>
         </a>
         <a
           href={`tel:${tel}`}
@@ -75,7 +80,7 @@ export function StickyMobileCtaBar({ className }: BarProps) {
           data-track-placement="sticky_mobile_call"
         >
           <PhoneIcon className="size-[1.125rem] text-lux-ink/72" aria-hidden />
-          <span className="hidden xs:inline">Call</span>
+          <span className="hidden xs:inline">{croMessaging.stickyCallLabel}</span>
           <span className="xs:hidden" aria-hidden>
             Tel
           </span>
@@ -84,11 +89,8 @@ export function StickyMobileCtaBar({ className }: BarProps) {
         <Link href="/contact" className={altCell} data-track="cta_click" data-track-placement="sticky_mobile_contact_form">
           <EnquiryGlyph className="size-[1.125rem] text-lux-ink/68" />
           <span className="leading-snug">
-            Enquiry
-            <span className="max-[380px]:sr-only">
-              {" "}
-              form
-            </span>
+            {croMessaging.stickyEnquiryLabel}
+            <span className="max-[380px]:sr-only"> form</span>
           </span>
         </Link>
       </div>

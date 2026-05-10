@@ -7,6 +7,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { StickyMobileCtaBar } from "@/components/layout/sticky-mobile-cta";
 import { WhatsAppFloatingButton } from "@/components/layout/whatsapp-floating-button";
 import { MobileMain } from "@/components/layout/mobile-main";
+import { SiteAtmosphereField } from "@/components/atmosphere/site-atmosphere-field";
 import { AnalyticsInteractionLayer } from "@/components/tracking/analytics-interaction-layer";
 import { cn } from "@/lib/utils";
 
@@ -20,19 +21,20 @@ export function SiteShell({ children, className }: SiteShellProps) {
     <AnalyticsInteractionLayer>
       <div
         className={cn(
-          "lux-page-canvas flex min-h-screen flex-col text-lux-ink antialiased",
+          "lux-page-canvas relative flex min-h-screen flex-col text-lux-ink antialiased",
           className,
         )}
       >
-        <SkipLink />
-        <SiteHeader />
-        <GlobalCroRail />
-        <MobileMain id="site-content">
-          {children}
-        </MobileMain>
-        <SiteFooter />
-        <StickyMobileCtaBar />
-        <WhatsAppFloatingButton />
+        <SiteAtmosphereField />
+        <div className="relative z-[1] flex min-h-screen flex-1 flex-col">
+          <SkipLink />
+          <SiteHeader />
+          <GlobalCroRail />
+          <MobileMain id="site-content">{children}</MobileMain>
+          <SiteFooter />
+          <StickyMobileCtaBar />
+          <WhatsAppFloatingButton />
+        </div>
       </div>
     </AnalyticsInteractionLayer>
   );

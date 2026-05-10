@@ -3,7 +3,7 @@ import { SectionMain } from "@/components/layout/section-main";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SOLANA_WEST_FAQ_SHARED_INTRO, solanaWestFaqCanonical } from "@/data/faq/solana-west-faq";
 import { faqPageSeo } from "@/data/seo/routes";
-import { getSolanaWestFaqPageJsonLd } from "@/schemas/faq-page";
+import { getSolanaWestFaqPageJsonLd } from "@/lib/schema/jsonld/faq-page";
 import { buildPageMetadata } from "@/seo/build-metadata";
 
 export const metadata = buildPageMetadata(faqPageSeo);
@@ -19,9 +19,9 @@ export default function FaqPage() {
           <div className="mt-lux-stack-xs h-px w-9 bg-lux-gold/42 md:mt-lux-stack-sm" aria-hidden />
           <h1
             id="faq-page-heading"
-            className="mt-lux-stack-xs max-w-[30ch] text-balance font-display text-display-xl text-lux-ink md:max-w-[34ch]"
+            className="mt-lux-stack-xs max-w-[min(42ch,100%)] text-balance font-display text-display-xl text-lux-ink md:max-w-[min(48ch,100%)]"
           >
-            Frequently asked questions
+            Solana West FAQs — pricing, payments, delivery & location
           </h1>
           <p className="lux-body mt-lux-stack-sm text-lux-ink/67 md:mt-lux-stack-md">{SOLANA_WEST_FAQ_SHARED_INTRO}</p>
         </header>

@@ -45,7 +45,7 @@ export function ContactChannelsAndFormSection({ model }: { model: ContactPageMod
             </div>
 
             <ul className="mt-14 flex list-none flex-col gap-10 p-0" role="list">
-              <li className="rounded-[13px] border border-lux-gold/22 bg-white/[0.35] px-5 pb-8 pt-7 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] backdrop-blur-sm md:px-[1.35rem]">
+              <li className="rounded-[11px] border border-lux-ink/[0.055] bg-white/[0.42] px-5 pb-8 pt-7 shadow-[inset_0_1px_0_rgba(255,255,255,0.62),0_8px_28px_-24px_rgba(28,26,23,0.06)] backdrop-blur-sm md:px-[1.35rem]">
                 <p className="text-micro uppercase tracking-[0.22em] text-lux-ink/40">WhatsApp</p>
                 <p className="mt-3 max-w-xs text-[0.9375rem] leading-[1.72] tracking-[0.012em] text-lux-ink/66 md:max-w-sm md:text-base">
                   Fast context for issuance questions — mirrors how many buyers coordinate abroad.
@@ -103,12 +103,12 @@ export function ContactChannelsAndFormSection({ model }: { model: ContactPageMod
           </div>
         </div>
 
-        <div className="lg:col-span-7 lg:border-l lg:border-lux-ink/[0.06] lg:pl-[clamp(1.75rem,4vw,3.75rem)]">
+        <div className="lg:col-span-7 lg:border-l lg:border-lux-ink/[0.045] lg:pl-[clamp(1.75rem,4vw,3.75rem)]">
           <SectionHeader id={formHeadingId} eyebrow={formColumn.eyebrow} title={formColumn.title} />
           <p className="mt-8 max-w-md text-[0.9375rem] font-normal leading-[1.72] tracking-[0.014em] text-lux-ink/62 md:text-base">
             {formColumn.intro}
           </p>
-          <div className="mt-12 rounded-[11px] border border-lux-ink/[0.065] bg-gradient-to-br from-white/92 via-lux-paper/96 to-[#e8e0d6]/90 p-[clamp(1.75rem,4vw,2.75rem)] shadow-[0_34px_86px_-44px_rgba(10,10,10,0.22),inset_0_1px_0_rgba(255,255,255,0.55)] backdrop-blur-[18px] md:p-11">
+          <div className="mt-12 rounded-[10px] border border-lux-ink/[0.05] bg-gradient-to-br from-white/90 via-lux-paper/96 to-[#ebe6df]/88 p-[clamp(1.75rem,4vw,2.75rem)] shadow-[0_20px_56px_-38px_rgba(28,26,23,0.1),inset_0_1px_0_rgba(255,255,255,0.48)] backdrop-blur-[16px] md:p-11">
             <LeadInquiryForm />
           </div>
           <p className="mt-10">

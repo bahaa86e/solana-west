@@ -6,7 +6,8 @@ import type { PropertyExperienceModel } from "@/data/properties/property-type-ex
 import { cn } from "@/lib/utils";
 
 export function PropertyTypeRelatedProjectSection({ model }: { model: PropertyExperienceModel }) {
-  const { slug, relatedProject } = model;
+  const { slug, relatedProject, project } = model;
+  const short = project.entry.shortName ?? project.entry.name;
 
   return (
     <SectionShell
@@ -19,8 +20,8 @@ export function PropertyTypeRelatedProjectSection({ model }: { model: PropertyEx
         <div className="max-w-xl">
           <SectionHeader
             id={`property-${slug}-related-heading`}
-            eyebrow="Project reference"
-            title="Explore the compound hub route"
+            eyebrow="Continuity"
+            title={relatedProject.title}
           />
           <p className="mt-8 text-[0.9375rem] font-normal leading-[1.74] tracking-[0.012em] text-lux-ink/64 md:mt-10 md:text-base">
             The property-type view is excerpted editorially; issuance-ready detail (amenities, routes, FAQs) stays on the consolidated project page.
@@ -35,7 +36,7 @@ export function PropertyTypeRelatedProjectSection({ model }: { model: PropertyEx
           )}
         >
           <span className="font-display text-2xl font-normal tracking-[-0.014em] text-lux-ink transition-colors duration-400 group-hover:text-lux-ink/88 xl:text-[1.6875rem]">
-            {relatedProject.title}
+            {short} · project hub
           </span>
           <p className="mt-4 text-[0.9375rem] font-normal leading-[1.75] tracking-[0.01em] text-lux-ink/72">
             {relatedProject.description}

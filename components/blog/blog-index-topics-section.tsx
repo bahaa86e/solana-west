@@ -13,8 +13,8 @@ export function BlogIndexTopicsSection({ model }: { model: BlogIndexPageModel })
     <SectionShell id={`${idPrefix}-topics`} aria-labelledby={headingId} tone="paper" containerSize="wide">
       <SectionHeader
         id={headingId}
-        eyebrow="Topical structure"
-        title="Lanes that future briefings file under"
+        eyebrow="Editorial taxonomy"
+        title="Research lanes Solana West buyers filter by intent"
       />
 
       <div className="mt-14 space-y-0 border-t border-lux-ink/[0.07] md:mt-16">

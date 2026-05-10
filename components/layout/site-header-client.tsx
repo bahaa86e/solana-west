@@ -12,20 +12,20 @@ import { cn } from "@/lib/utils";
 
 const easeLux = [0.22, 1, 0.36, 1] as const;
 
-/** Light pages: airy cinematic glass — high blur, restrained fill */
+/** Light pages — quiet glass, private-desk tone */
 const glassShellDocument = cn(
-  "rounded-[1.375rem] border border-white/55 bg-white/[0.07]",
-  "shadow-[0_36px_80px_-42px_rgba(10,10,10,0.16)]",
-  "ring-1 ring-inset ring-white/[0.45]",
-  "backdrop-blur-[30px] backdrop-saturate-[1.35] supports-[backdrop-filter]:bg-white/[0.05]",
+  "rounded-[1.25rem] border border-white/42 bg-white/[0.06]",
+  "shadow-[0_24px_56px_-38px_rgba(28,26,23,0.1)]",
+  "ring-1 ring-inset ring-white/[0.32]",
+  "backdrop-blur-[22px] backdrop-saturate-[1.15] supports-[backdrop-filter]:bg-white/[0.04]",
 );
 
-/** Hero / dark overlays: luminous edge, deep translucency */
+/** Over hero — softer translucency, less ink */
 const glassShellDark = cn(
-  "rounded-[1.375rem] border border-white/[0.115] bg-lux-ink/[0.14]",
-  "shadow-[0_38px_90px_-48px_rgba(0,0,0,0.58),inset_0_1px_0_rgba(255,255,255,0.1)]",
-  "ring-1 ring-inset ring-white/[0.08]",
-  "backdrop-blur-[34px] backdrop-saturate-[1.55] supports-[backdrop-filter]:bg-black/[0.12]",
+  "rounded-[1.25rem] border border-white/[0.095] bg-white/[0.065]",
+  "shadow-[0_28px_72px_-42px_rgba(0,0,0,0.22),inset_0_1px_0_rgba(255,255,255,0.08)]",
+  "ring-1 ring-inset ring-white/[0.055]",
+  "backdrop-blur-[26px] backdrop-saturate-[1.2] supports-[backdrop-filter]:bg-black/[0.08]",
 );
 
 function HeaderBar() {
@@ -35,14 +35,14 @@ function HeaderBar() {
 
   return (
     <header className="sticky top-0 z-50 w-full">
-      <Container as="div" className="pt-3.5 pb-2 max-lg:pt-3.5 md:pt-5 md:pb-3">
+      <Container as="div" className="pt-3 pb-2 max-lg:pt-3 md:pt-4 md:pb-2.5">
         <motion.div
           layout
           transition={{ duration: 0.52, ease: easeLux }}
           className={cn(
             overDark ? glassShellDark : glassShellDocument,
-            "flex min-h-[3.5625rem] items-center justify-between gap-4 max-lg:min-h-[3.75rem] max-lg:gap-5 max-lg:px-[1.125rem] max-lg:py-[0.6875rem] md:min-h-[3.9375rem] md:gap-10 md:px-7 md:py-3",
-            "px-[1.0625rem] py-[0.62rem]",
+            "flex min-h-[3.5rem] items-center justify-between gap-4 max-lg:min-h-[3.625rem] max-lg:gap-4 max-lg:px-5 max-lg:py-3 md:min-h-[3.75rem] md:gap-9 md:px-6 md:py-2.5",
+            "px-4 py-2.5",
           )}
         >
           <div className="min-w-0 flex-1 md:max-w-[min(30rem,48vw)] lg:max-w-none">
@@ -53,13 +53,13 @@ function HeaderBar() {
                 "-m-2 rounded-[13px] p-2 outline-none transition-[background-color] duration-[520ms] ease-luxury motion-reduce:transition-none",
                 overDark ? "focus-visible:ring-offset-lux-ink/35" : "focus-visible:ring-offset-white/25",
                 "focus-visible:ring-2 focus-visible:ring-lux-gold/[0.65] focus-visible:ring-offset-2",
-                "hover:bg-white/[0.04]",
+                "hover:bg-white/[0.03]",
               )}
             >
               <span
                 className={cn(
                   "relative flex shrink-0 items-center justify-center rounded-[11px] p-[0.4375rem] transition-[transform,box-shadow] duration-[520ms] ease-luxury motion-reduce:transition-none motion-reduce:group-hover:translate-y-0",
-                  "motion-safe:group-hover:-translate-y-px group-hover:shadow-[0_12px_32px_-20px_rgba(10,10,10,0.25)]",
+                  "motion-safe:group-hover:-translate-y-px group-hover:shadow-[0_10px_26px_-18px_rgba(28,26,23,0.12)]",
                   overDark ?
                     cn(
                       "border border-white/[0.14] bg-gradient-to-br from-white/[0.13] to-white/[0.02]",

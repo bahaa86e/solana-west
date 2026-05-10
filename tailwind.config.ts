@@ -8,98 +8,124 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        /** Editorial luxury — ivory, architectural stone, warm charcoal, Champagne (muted). */
         lux: {
-          ink: "#0a0a0a",
-          paper: "#faf8f5",
-          sand: "#e8e2d9",
-          gold: "#c4a574",
-          mist: "#f3efe8",
+          ink: "#2c2b28",
+          paper: "#f7f6f3",
+          sand: "#e8e4dc",
+          gold: "#b9a892",
+          mist: "#f1eee8",
+          stone: "#c4bdb2",
+          ivory: "#fcfaf7",
+          charcoal: "#1f1e1b",
+          champagne: "#c4b69a",
         },
       },
       fontFamily: {
         display: ["var(--font-display)", "ui-serif", "Georgia", "serif"],
         sans: ["var(--font-sans)", "system-ui", "Segoe UI", "sans-serif"],
       },
-      /** Ultra-lux serif display + readable sans editorial scale — pair serif with font-display only. */
+      /**
+       * Luxury editorial scale — Cormorant (display) × Source Sans 3 (UI / body).
+       * Principles: calm optical size, architectural display rhythm, investor-readable body (~42–62ch).
+       */
       fontSize: {
-        /** Cinematic homepage H1 scale */
+        /** Cinematic homepage H1 — iconic, not billboard; caps ~68px for editorial grace */
         "lux-hero": [
-          "clamp(2.275rem, 6.85vw + 0.62rem, 5.0625rem)",
-          { lineHeight: "1.03", letterSpacing: "-0.036em", fontWeight: "500" },
+          "clamp(1.9375rem, 4.5vw + 0.72rem, 4rem)",
+          { lineHeight: "1.05", letterSpacing: "-0.032em", fontWeight: "500" },
         ],
-        /** Interior / hub editorial H1 */
+        /** Interior & hub H1 — editorial feature scale */
         "display-xl": [
-          "clamp(2.0625rem, 3.9vw + 1.0625rem, 4.5rem)",
-          { lineHeight: "1.05", letterSpacing: "-0.024em", fontWeight: "500" },
+          "clamp(1.875rem, 2.7vw + 1.0625rem, 3.375rem)",
+          { lineHeight: "1.08", letterSpacing: "-0.025em", fontWeight: "500" },
         ],
-        /** Primary section headings (H2) */
+        /** Section H2 — primary story titles */
         "display-lg": [
-          "clamp(1.6875rem, 2.5vw + 0.965rem, 3.0625rem)",
-          { lineHeight: "1.065", letterSpacing: "-0.021em", fontWeight: "500" },
+          "clamp(1.4375rem, 1.45vw + 0.95rem, 2.5rem)",
+          { lineHeight: "1.095", letterSpacing: "-0.021em", fontWeight: "500" },
         ],
-        /** Supporting serif display (quotes, tertiary emphasis) */
+        /** Story beats, pull quotes, cinematic captions */
         "lux-display-sm": [
-          "clamp(1.4375rem, 1.4vw + 1.065rem, 2.0625rem)",
-          { lineHeight: "1.15", letterSpacing: "-0.016em", fontWeight: "500" },
+          "clamp(1.3125rem, 1.15vw + 1rem, 1.875rem)",
+          { lineHeight: "1.14", letterSpacing: "-0.018em", fontWeight: "500" },
         ],
-        /** Serif deck / standout line under article titles */
+        /** Serif subdeck — restrained elegance */
         "lux-deck": [
-          "clamp(1.0625rem, 0.75vw + 0.8925rem, 1.3125rem)",
-          { lineHeight: "1.48", letterSpacing: "-0.011em", fontWeight: "400" },
+          "clamp(1.03125rem, 0.55vw + 0.875rem, 1.25rem)",
+          { lineHeight: "1.5", letterSpacing: "-0.008em", fontWeight: "400" },
         ],
-        /** Editorial overlines — intentional micro weight for hierarchy */
-        micro: ["clamp(0.6875rem, 0.22vw + 0.6425rem, 0.75rem)", { lineHeight: "1.5", letterSpacing: "0.26em", fontWeight: "600" }],
-        /** Primary running text (layouts / body baseline) */
+        /** Eyebrows / overlines — wide tracking, calm micro size */
+        micro: [
+          "clamp(0.6375rem, 0.14vw + 0.58rem, 0.7rem)",
+          { lineHeight: "1.58", letterSpacing: "0.28em", fontWeight: "600" },
+        ],
+        /** Body baseline — long-form & UI paragraphs */
         "body-lg": [
-          "clamp(1.028125rem, 0.32vw + 0.9425rem, 1.15625rem)",
-          { lineHeight: "1.7", letterSpacing: "0.01em", fontWeight: "400" },
+          "clamp(1rem, 0.2vw + 0.92rem, 1.09375rem)",
+          { lineHeight: "1.72", letterSpacing: "0.0075em", fontWeight: "400" },
         ],
-        /** Larger intro paragraphs (sans lead) */
+        /** Intro & hero secondary — emotional readability */
         "lux-lead": [
-          "clamp(1.015625rem, 0.45vw + 0.8925rem, 1.1875rem)",
-          { lineHeight: "1.72", letterSpacing: "0.012em", fontWeight: "400" },
+          "clamp(1rem, 0.38vw + 0.9rem, 1.125rem)",
+          { lineHeight: "1.65", letterSpacing: "0.009em", fontWeight: "400" },
         ],
-        /** Supporting / secondary narration */
+        /** Annotation & supporting clauses */
         "lux-muted": [
-          "clamp(0.9175rem, 0.18vw + 0.8375rem, 1.015625rem)",
-          { lineHeight: "1.76", letterSpacing: "0.018em", fontWeight: "400" },
+          "clamp(0.890625rem, 0.16vw + 0.8125rem, 1rem)",
+          { lineHeight: "1.68", letterSpacing: "0.014em", fontWeight: "400" },
         ],
+        /** Primary CTA & key controls — confident, not SaaS-thin */
+        "lux-cta": [
+          "clamp(0.875rem, 0.12vw + 0.82rem, 0.9375rem)",
+          { lineHeight: "1.35", letterSpacing: "0.055em", fontWeight: "600" },
+        ],
+      },
+      lineHeight: {
+        /** Display: architectural tightness without crunch */
+        "lux-display": "1.06",
+        "lux-display-loose": "1.1",
+        /** Body: calm investor scan */
+        "lux-body": "1.68",
+        "lux-body-relaxed": "1.74",
       },
       spacing: {
         /** Vertical typography rhythm inside sections */
-        "lux-stack-xs": "clamp(0.875rem, 2vw, 1.25rem)",
-        "lux-stack-sm": "clamp(1.125rem, 2.5vw, 1.75rem)",
-        "lux-stack-md": "clamp(1.4375rem, 3vw, 2.1875rem)",
-        "lux-stack-lg": "clamp(1.6875rem, 3.5vw, 2.5rem)",
-        section: "clamp(3rem, 8vw, 6rem)",
-        "section-tight": "clamp(3.25rem, 9vw, 6.5rem)",
-        "section-xl": "clamp(3.875rem, 11vw, 8.5rem)",
-        /** Taller vertical breathing between major story beats */
-        "section-breath": "clamp(4.25rem, 12vw, 9.25rem)",
-        /** Consistent inter-column / stack gap for editorial grids */
-        "section-gap": "clamp(2.75rem, 5.5vw, 4.5rem)",
-        "section-block": "clamp(2.5rem, 5.5vw, 4rem)",
+        "lux-stack-xs": "clamp(0.9375rem, 2.1vw, 1.3125rem)",
+        "lux-stack-sm": "clamp(1.1875rem, 2.65vw, 1.8125rem)",
+        "lux-stack-md": "clamp(1.5rem, 3.1vw, 2.25rem)",
+        "lux-stack-lg": "clamp(1.75rem, 3.6vw, 2.625rem)",
+        section: "clamp(3.25rem, 8.5vw, 6.5rem)",
+        "section-tight": "clamp(3.5rem, 9.25vw, 6.75rem)",
+        "section-xl": "clamp(4.125rem, 11vw, 8.75rem)",
+        "section-breath": "clamp(4.5rem, 12vw, 9.75rem)",
+        "section-gap": "clamp(2.875rem, 5.5vw, 4.75rem)",
+        "section-block": "clamp(2.625rem, 5.5vw, 4.125rem)",
         gutter: "clamp(1.125rem, 4vw, 2rem)",
         "safe-bottom": "env(safe-area-inset-bottom, 0px)",
       },
       maxWidth: {
         content: "75rem",
-        /** ~736px optimum line length on luxury editorial web */
-        readable: "46rem",
+        /** ~672px — classic editorial measure; luxury web, not full-bleed SaaS widths */
+        readable: "42rem",
       },
       minHeight: {
         screen: "100dvh",
       },
       boxShadow: {
         "lux-soft":
-          "0 36px 90px -44px rgba(10,10,10,0.26), inset 0 1px 0 rgba(250,248,245,0.38)",
+          "0 22px 58px -44px rgba(28,26,23,0.11), inset 0 1px 0 rgba(252,250,247,0.52)",
         "lux-card":
-          "0 24px 56px -36px rgba(10,10,10,0.2), inset 0 1px 0 rgba(250,248,245,0.72)",
-        "lux-line": "inset 0 1px 0 rgba(250,248,245,0.68)",
+          "0 14px 38px -30px rgba(28,26,23,0.09), inset 0 1px 0 rgba(252,250,247,0.62)",
+        "lux-line": "inset 0 1px 0 rgba(252,250,247,0.55)",
         "lux-depth":
-          "0 1px 2px -1px rgba(10,10,10,0.05), 0 16px 40px -28px rgba(10,10,10,0.14)",
+          "0 1px 2px -1px rgba(28,26,23,0.032), 0 10px 28px -24px rgba(28,26,23,0.085)",
         "lux-image":
-          "0 32px 78px -40px rgba(10,10,10,0.3), inset 0 1px 0 rgba(250,248,245,0.28)",
+          "0 18px 48px -34px rgba(28,26,23,0.12), inset 0 1px 0 rgba(252,250,247,0.2)",
+        "lux-glass":
+          "0 24px 58px -40px rgba(28,26,23,0.11), inset 0 1px 0 rgba(255,255,255,0.48), inset 0 -1px 0 rgba(28,26,23,0.03)",
+        "lux-glow-warm":
+          "0 0 min(88px,14vw) min(20px,3vw) rgba(185,168,146,0.06), 0 18px 48px -36px rgba(28,26,23,0.09)",
       },
       transitionTimingFunction: {
         luxury: "cubic-bezier(0.22, 1, 0.36, 1)",
@@ -114,13 +140,13 @@ const config: Config = {
       keyframes: {
         /** Floating WhatsApp — soft outer ring “breathing”, no aggressive motion */
         "lux-wa-breathe-ring": {
-          "0%, 100%": { opacity: "0.42", transform: "scale(1)" },
-          "50%": { opacity: "0.62", transform: "scale(1.035)" },
+          "0%, 100%": { opacity: "0.36", transform: "scale(1)" },
+          "50%": { opacity: "0.5", transform: "scale(1.02)" },
         },
         /** Barely perceptible elevation pulse on the capsule */
         "lux-wa-breathe-shell": {
-          "0%, 100%": { boxShadow: "0 12px 36px -24px rgba(10,10,10,0.22)" },
-          "50%": { boxShadow: "0 16px 42px -24px rgba(10,10,10,0.26)" },
+          "0%, 100%": { boxShadow: "0 8px 22px -20px rgba(28,26,23,0.1)" },
+          "50%": { boxShadow: "0 10px 26px -20px rgba(28,26,23,0.12)" },
         },
       },
       animation: {

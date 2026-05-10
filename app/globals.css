@@ -3,19 +3,26 @@
 @tailwind utilities;
 
 /*
- * Typography: see `tailwind.config.ts` tokens (lux-hero, lux-lead, body-lg…).
- * Source Sans 3 × Cormorant Garamond — editorial sans + luxury serif pairing.
+ * Luxury editorial typography — Cormorant Garamond × Source Sans 3.
+ * Token scale: `tailwind.config.ts` (lux-hero, display-xl|lg, body-lg, lux-lead…).
  */
 
 @layer base {
   :root {
     color-scheme: light;
     --lux-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-    --lux-measure-reading: min(46rem, calc(100vw - 3.5rem));
+    --lux-measure-reading: min(42rem, calc(100vw - 2.75rem));
+    --lux-ls-display: -0.022em;
+    --lux-ls-body: 0.0085em;
+    /* Emotional luxury atmosphere — warm/cool balance, investor-grade restraint */
+    --lux-warm-spot: rgb(185 168 146 / 0.1);
+    --lux-cool-floor: rgb(32 28 24 / 0.06);
+    --lux-glass-highlight: rgb(255 254 252 / 0.42);
   }
 
   html {
     scroll-behavior: smooth;
+    font-optical-sizing: auto;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -25,131 +32,245 @@
   }
 
   body {
-    font-feature-settings: "kern" 1, "liga" 1, "cv01" 0;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-variant-numeric: proportional-nums;
   }
 
-  /* Comfort on small screens — avoid cramped body copy */
+  /* Mobile: slightly roomier line rhythm for emotional readability */
   @media (max-width: 767.98px) {
     body {
-      line-height: 1.715;
-      letter-spacing: 0.01em;
+      line-height: 1.69;
+      letter-spacing: 0.0095em;
     }
   }
 
   ::selection {
-    background-color: rgb(196 165 116 / 0.3);
+    background-color: rgb(185 168 146 / 0.22);
     color: theme("colors.lux.ink");
   }
 
   :focus-visible {
     outline: 2px solid theme("colors.lux.gold");
-    outline-offset: 2px;
+    outline-offset: 3px;
   }
 
 }
 
 /**
- * Site canvas: warm radial mist + soft side light to reduce flat “blank paper” feel.
- * Keeps performance-friendly static gradients (no animation).
+ * Site canvas — foundation wash; cinematic layers live in `SiteAtmosphereField`.
  */
 .lux-page-canvas {
-  background-color: theme("colors.lux.paper");
+  background-color: #f0ece5;
   background-image:
-    radial-gradient(ellipse 118% 74% at 50% -14%, rgb(196 165 116 / 0.1), transparent 52%),
-    radial-gradient(ellipse 70% 48% at 100% 22%, rgb(232 226 217 / 0.38), transparent 48%),
-    radial-gradient(ellipse 65% 44% at 0% 62%, rgb(243 239 232 / 0.55), transparent 42%),
-    linear-gradient(to bottom, rgb(237 230 220 / 0.36) 0%, transparent 40%);
+    radial-gradient(ellipse 120% 78% at 50% -14%, rgb(185 168 146 / 0.09), transparent 60%),
+    radial-gradient(ellipse 68% 50% at 100% 10%, rgb(228 220 208 / 0.1), transparent 50%),
+    radial-gradient(ellipse 65% 48% at 0% 42%, rgb(250 248 244 / 0.65), transparent 46%),
+    linear-gradient(180deg, rgb(252 251 248) 0%, rgb(242 238 232) 54%, rgb(234 229 222) 100%);
+}
+
+/**
+ * Barely perceptible sunset drift — emotional pacing without distraction.
+ * Disabled automatically when the user requests reduced motion.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .lux-atmosphere-sunset-drift {
+    animation: lux-atmosphere-warm 32s ease-in-out infinite alternate;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lux-atmosphere-sunset-drift {
+    animation: none;
+  }
+}
+
+@keyframes lux-atmosphere-warm {
+  from {
+    opacity: 0.88;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @layer utilities {
-  /** Long-form editorial body — aligns with RootLayout `text-body-lg` scale */
+  /**
+   * Running text — investor-grade paragraph rhythm; ~55–62 characters per line at `max-w-readable`.
+   */
   .lux-body {
     @apply max-w-readable font-normal text-body-lg text-lux-ink;
-    line-height: 1.72;
-    letter-spacing: 0.01em;
-    color: rgb(10 10 10 / 78%);
+    line-height: 1.74;
+    letter-spacing: 0.0075em;
+    color: rgb(44 43 40 / 71%);
   }
 
-  /** Stacked prose rhythm without wrapping in prose-mirror */
+  @media (max-width: 767.98px) {
+    .lux-body {
+      line-height: 1.73;
+      letter-spacing: 0.008em;
+    }
+  }
+
   .lux-prose-stack > * + * {
-    margin-top: clamp(0.85rem, 2.5vw, 1.1875rem);
+    margin-top: clamp(1rem, 2.5vw, 1.375rem);
   }
 
   .lux-prose-stack-loose > * + * {
-    margin-top: clamp(1rem, 3vw, 1.5rem);
+    margin-top: clamp(1.125rem, 2.95vw, 1.625rem);
   }
 
-  /** Eyebrows on light/over-image panels */
+  /** Section & component eyebrows */
   .lux-eyebrow {
-    @apply font-sans uppercase text-micro text-lux-ink md:tracking-[0.272em];
-    color: rgb(10 10 10 / 42%);
+    @apply font-sans uppercase text-micro text-lux-ink md:tracking-[0.26em];
+    color: rgb(44 43 40 / 38%);
   }
 
-  /** Interior hub & editorial H1 (Cormorant) */
+  /** Hub & legal interior H1 */
   .lux-hub-h1 {
-    @apply max-w-[min(32ch,calc(100vw-4rem))] text-balance font-display text-display-xl font-medium text-lux-ink;
-    line-height: 1.05;
+    @apply max-w-[min(30ch,calc(100vw-2.75rem))] text-balance font-display text-display-xl font-medium text-lux-ink;
+    line-height: 1.075;
     letter-spacing: -0.024em;
   }
 
-  /** Lead paragraph under hubs — sans, comfortable measure */
+  /** Lead / deck under display */
   .lux-hero-lead {
-    @apply max-w-[min(42rem,100%)] font-sans font-normal text-lux-lead text-lux-ink;
-    color: rgb(10 10 10 / 80%);
+    @apply max-w-[min(38rem,100%)] font-sans font-normal text-lux-lead text-lux-ink;
+    line-height: 1.68;
+    letter-spacing: 0.0085em;
+    color: rgb(44 43 40 / 74%);
   }
 
-  /** Muted sidebar / supporting clause with gold alignment rail */
+  @media (min-width: 1024px) {
+    .lux-hero-lead {
+      line-height: 1.65;
+    }
+  }
+
+  /** Supporting column with gold rail */
   .lux-hero-support {
-    @apply max-w-[min(36rem,100%)] border-l border-lux-gold/[0.32] pl-5 font-sans font-normal text-lux-muted text-lux-ink md:pl-6;
-    color: rgb(10 10 10 / 56%);
+    @apply max-w-[min(34rem,100%)] border-l border-lux-gold/[0.22] pl-5 font-sans font-normal text-lux-muted md:pl-6;
+    line-height: 1.72;
+    letter-spacing: 0.0135em;
+    color: rgb(44 43 40 / 54%);
   }
 
-  /** Article meta line above title */
   .lux-article-meta {
     @apply font-sans text-[11px] font-semibold uppercase tracking-[0.24em] text-lux-ink;
-    color: rgb(10 10 10 / 43%);
+    color: rgb(44 43 40 / 38%);
   }
 
-  /** Serif deck under editorial titles */
   .lux-deck {
     @apply font-display text-lux-deck text-lux-ink;
-    color: rgb(10 10 10 / 74%);
+    line-height: 1.52;
+    color: rgb(44 43 40 / 70%);
   }
 
   /*
-   * Cinematic homepage hero — readability over photography (layered halo, no blur cost).
+   * Cinematic hero display — calm architectural proportion; halo for readability on plates.
    */
   .lux-display-hero {
-    @apply max-w-[18ch] text-balance font-display text-lux-hero font-medium text-lux-paper lg:leading-[1.024];
+    @apply max-w-[19ch] text-balance font-display font-medium text-lux-paper text-lux-hero;
+    line-height: 1.045;
+    letter-spacing: -0.031em;
     text-shadow:
-      0 2px 0 rgb(0 0 0 / 16%),
-      0 0.12em 0.52em rgb(0 0 0 / 48%),
-      0 -0.02em 0.22em rgb(250 248 245 / 6%),
-      0 1.5rem 2.75rem rgb(0 0 0 / 28%);
+      0 1px 0 rgb(0 0 0 / 12%),
+      0 0.1em 0.45em rgb(0 0 0 / 32%),
+      0 -0.02em 0.2em rgb(252 250 247 / 8%),
+      0 1rem 2.25rem rgb(0 0 0 / 18%);
     text-wrap: balance;
   }
 
+  @media (min-width: 1024px) {
+    .lux-display-hero {
+      line-height: 1.035;
+      letter-spacing: -0.032em;
+    }
+  }
+
+  /** Primary hero title — restrained cap height, premium negative space */
+  .lux-display-hero-ultra {
+    @apply max-w-[min(19ch,100%)] text-balance font-display text-lux-hero font-medium text-lux-paper;
+    line-height: 1.045;
+    letter-spacing: -0.032em;
+    color: rgb(252 251 248 / 96%);
+    text-shadow:
+      0 1px 0 rgb(0 0 0 / 18%),
+      0 0.08em 0.4em rgb(0 0 0 / 34%),
+      0 -0.02em 0.25em rgb(32 28 24 / 22%),
+      0 1.25rem 2.5rem rgb(0 0 0 / 22%);
+    text-wrap: balance;
+  }
+
+  @media (min-width: 1024px) {
+    .lux-display-hero-ultra {
+      max-width: 18ch;
+      line-height: 1.038;
+      letter-spacing: -0.033em;
+    }
+  }
+
   .lux-hero-community {
-    @apply font-sans text-lux-lead font-normal tracking-[0.012em] text-lux-paper lg:text-[1.11rem] lg:leading-relaxed lg:tracking-[0.01em];
-    color: rgb(250 248 245 / 92%);
+    @apply font-sans font-normal text-lux-lead text-lux-paper;
+    line-height: 1.66;
+    letter-spacing: 0.009em;
+    color: rgb(250 249 246 / 91%);
+  }
+
+  @media (min-width: 1024px) {
+    .lux-hero-community {
+      font-size: clamp(1.0625rem, 0.35vw + 0.95rem, 1.125rem);
+      line-height: 1.62;
+      letter-spacing: 0.008em;
+    }
   }
 
   .lux-hero-muted {
-    @apply font-sans text-lux-muted font-normal tracking-[0.02em] text-lux-paper md:tracking-[0.023em];
-    color: rgb(250 248 245 / 62%);
+    @apply font-sans font-normal text-lux-muted text-lux-paper;
+    line-height: 1.68;
+    letter-spacing: 0.015em;
+    color: rgb(247 245 242 / 62%);
   }
 
-  /** Reference / annex copy on glass panels over imagery */
   .lux-hero-annotation-title {
-    @apply font-sans text-[clamp(10px,0.28vw+9.65px,0.6875rem)] font-semibold uppercase tracking-[0.3em];
-    color: rgb(196 165 116 / 78%);
+    @apply font-sans text-[clamp(10px,0.25vw+9.6px,0.6875rem)] font-semibold uppercase tracking-[0.28em];
+    color: rgb(185 168 146 / 72%);
   }
 
   .lux-hero-annotation-body {
-    @apply font-sans text-[clamp(0.89875rem,0.38vw+0.8125rem,0.9625rem)] font-normal leading-[1.73] tracking-[0.019em] text-lux-paper md:leading-[1.74];
-    color: rgb(250 248 245 / 74%);
+    @apply font-sans font-normal text-lux-muted text-lux-paper;
+    line-height: 1.72;
+    letter-spacing: 0.016em;
+    color: rgb(248 246 243 / 73%);
+  }
+
+  /** Section H2 pattern — use alongside `SectionHeader` or standalone */
+  .lux-section-head {
+    @apply font-display text-display-lg font-medium text-lux-ink;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  /**
+   * Premium glass — restrained glassmorphism for cards, ribbons, overlays.
+   * Use sparingly; pair with `shadow-lux-glass`.
+   */
+  .lux-glass-surface {
+    @apply border border-white/40 bg-gradient-to-br from-white/[0.46] via-white/[0.14] to-white/[0.05] backdrop-blur-[18px] backdrop-saturate-[1.22];
+    box-shadow:
+      0 22px 64px -44px rgba(28, 26, 23, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.55),
+      inset 0 -1px 0 rgba(28, 26, 23, 0.03);
+  }
+
+  /** Interior editorial panels — depth without heavy chrome */
+  .lux-elevated-paper {
+    @apply rounded-[3px] border border-lux-ink/[0.05] bg-gradient-to-b from-white/52 to-lux-paper/94;
+    box-shadow:
+      0 1px 2px -1px rgba(28, 26, 23, 0.04),
+      0 16px 42px -34px rgba(28, 26, 23, 0.09),
+      inset 0 1px 0 rgba(255, 255, 255, 0.68);
   }
 }

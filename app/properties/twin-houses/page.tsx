@@ -3,7 +3,7 @@ import { PageMain } from "@/components/layout/page-main";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildPropertyExperienceModel } from "@/data/properties/property-type-experience";
 import { twinHousesPageSeo } from "@/data/seo/routes";
-import { getPropertyExperienceStructuredData } from "@/schemas/property-type-page";
+import { getPropertyExperienceStructuredData } from "@/lib/schema/jsonld/property-type-page";
 import { buildPageMetadata } from "@/seo/build-metadata";
 
 export const metadata = buildPageMetadata(twinHousesPageSeo);

@@ -11,28 +11,28 @@ export type SectionDepth = "flat" | "lifted";
 
 const toneClass: Record<SectionTone, string> = {
   paper: cn(
-    "bg-gradient-to-b from-[#fcfaf8] via-lux-paper to-[#ede6dd]/88 text-lux-ink",
-    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.68)]",
-    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-lux-ink/[0.08] before:to-transparent",
-    "after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:z-[1] after:h-[min(5rem,14vw)] after:bg-gradient-to-b after:from-transparent after:to-lux-ink/[0.025]",
+    "bg-gradient-to-b from-[#fcfaf7] via-[#f8f6f2] to-[#ebe6df]/96 text-lux-ink",
+    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.65),inset_0_0_72px_-24px_rgba(185,168,146,0.04)]",
+    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-lux-ink/[0.06] before:to-transparent",
+    "after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:z-[1] after:h-[min(5rem,14vw)] after:bg-gradient-to-b after:from-transparent after:via-lux-gold/[0.022] after:to-lux-ink/[0.028]",
   ),
   sand: cn(
-    "bg-gradient-to-br from-[#e5ddd3]/98 via-lux-mist to-[#f8f6f2] text-lux-ink",
-    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.48),inset_0_-1px_0_0_rgba(10,10,10,0.025)]",
-    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-lux-gold/[0.12] before:to-transparent",
-    "after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:z-[1] after:h-[min(3.5rem,10vw)] after:bg-gradient-to-b after:from-transparent after:to-lux-ink/[0.02]",
+    "bg-gradient-to-br from-[#e6e1d8]/98 via-[#ebe6df] to-[#f4f1eb] text-lux-ink",
+    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.48),inset_0_-1px_0_0_rgba(28,26,23,0.022),0_1px_0_0_rgba(185,168,146,0.04)]",
+    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-lux-gold/[0.1] before:to-transparent",
+    "after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:z-[1] after:h-[min(3.5rem,10vw)] after:bg-gradient-to-b after:from-transparent after:to-lux-ink/[0.022]",
   ),
   ink: cn(
-    "bg-gradient-to-b from-lux-ink via-[#0b0b0b] to-[#050505] text-lux-paper",
-    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.085)]",
-    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-white/14 before:to-transparent",
+    "bg-gradient-to-b from-[#1c1a18] via-lux-charcoal to-[#121110] text-lux-paper",
+    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.07),inset_0_-100px_72px_-44px_rgba(185,168,146,0.03)]",
+    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent",
   ),
 };
 
 const depthClass: Record<SectionDepth, string> = {
   flat: "",
   lifted:
-    "shadow-[0_52px_120px_-72px_rgba(10,10,10,0.14),inset_0_1px_0_0_rgba(255,255,255,0.04)]",
+    "shadow-[0_36px_88px_-60px_rgba(28,26,23,0.1),inset_0_1px_0_0_rgba(255,255,255,0.035)]",
 };
 
 function rhythmPadding(rhythm: SectionRhythm): string {

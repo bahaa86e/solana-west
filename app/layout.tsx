@@ -6,7 +6,7 @@ import { AnalyticsScripts } from "@/components/tracking/analytics-scripts";
 import { JsonLd } from "@/components/seo/json-ld";
 import { siteConfig } from "@/data/site";
 import { getSiteUrl } from "@/lib/env";
-import { getOrganizationJsonLd, getWebSiteJsonLd } from "@/schemas/organization";
+import { getOrganizationJsonLd, getWebSiteJsonLd } from "@/lib/schema/jsonld/organization";
 
 import "./globals.css";
 
@@ -31,7 +31,9 @@ export const metadata: Metadata = {
     default: `${siteConfig.name} | ${siteConfig.developer}`,
     template: `%s | ${siteConfig.developer}`,
   },
-  description: `${siteConfig.name} · New Zayed · ${siteConfig.developer}. Official site.`,
+  description:
+    `${siteConfig.name} New Zayed on Mehwar El Dabaa by ${siteConfig.developer}. ` +
+    `Prices from 9.8M EGP, 5% down, up to 10 years, delivery from 2027. Villas, townhouses, twin houses, apartments.`,
   applicationName: siteConfig.shortName,
   formatDetection: { telephone: true, email: true },
 };
@@ -39,7 +41,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#faf8f5",
+  themeColor: "#fcfaf7",
 };
 
 export default function RootLayout({
@@ -55,7 +57,7 @@ export default function RootLayout({
       className={`${fontDisplay.variable} ${fontSans.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-lux-paper font-sans text-body-lg text-lux-ink/[0.93]">
+      <body className="min-h-screen bg-lux-paper font-sans text-body-lg leading-lux-body text-lux-ink/[0.93]">
         <JsonLd data={graph} />
         <AnalyticsScripts />
         <SiteShell>{children}</SiteShell>

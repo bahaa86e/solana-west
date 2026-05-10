@@ -29,7 +29,7 @@ export function LuxuryImageShell({
   return (
     <figure
       className={cn(
-        "group/image relative isolate w-full overflow-hidden bg-lux-mist/25 shadow-lux-image ring-1 ring-lux-ink/[0.06]",
+        "group/image relative isolate w-full overflow-hidden bg-lux-mist/22 shadow-lux-image ring-1 ring-lux-ink/[0.045]",
         /* Outer sculpting vignette */
         "before:pointer-events-none before:absolute before:inset-0 before:z-[4] before:shadow-[inset_0_0_104px_-24px_rgb(10_10_10_/16%)]",
         "after:pointer-events-none after:absolute after:inset-[-3%_-1%_-5%_-1%] after:z-[3] after:bg-[radial-gradient(ellipse_90%_96%_at_48%_50%,transparent_50%,rgba(10,10,10,0.08)_92%,rgba(10,10,10,0.14)_100%)]",

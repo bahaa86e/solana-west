@@ -8,6 +8,7 @@ import { PhoneIcon } from "@/components/icons/phone";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { useHeaderAppearance } from "@/components/layout/header-appearance";
 import { CtaButton } from "@/components/ui/cta-button";
+import { croMessaging } from "@/data/cro";
 import { primaryNavItems } from "@/data/navigation";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
@@ -38,16 +39,16 @@ function NavItem({ href, label }: { href: string; label: string }) {
             "-mx-px focus-visible:ring-offset-lux-ink/55",
             "px-[0.9rem] py-[0.5875rem] text-[11px] font-normal uppercase tracking-[0.32em]",
             "text-lux-paper/48 transition-[color,background-color,box-shadow] duration-[560ms] ease-luxury motion-reduce:transition-none",
-            "motion-safe:hover:bg-white/[0.065] hover:text-lux-paper/[0.88]",
-            "motion-safe:hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]",
+            "motion-safe:hover:bg-white/[0.045] hover:text-lux-paper/[0.82]",
+            "motion-safe:hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]",
             active && "text-lux-paper/93",
           ]
         : [
             "-mx-px focus-visible:ring-offset-white/65",
             "px-[0.9rem] py-[0.5875rem] text-[11px] font-normal uppercase tracking-[0.32em]",
             "text-lux-ink/38 transition-[color,background-color,box-shadow] duration-[560ms] ease-luxury motion-reduce:transition-none",
-            "motion-safe:hover:bg-lux-ink/[0.035] hover:text-lux-ink/[0.72]",
-            "motion-safe:hover:shadow-[inset_0_1px_0_rgba(250,248,245,0.75)]",
+            "motion-safe:hover:bg-lux-ink/[0.028] hover:text-lux-ink/[0.68]",
+            "motion-safe:hover:shadow-[inset_0_1px_0_rgba(252,250,247,0.55)]",
             active && "text-lux-ink/[0.9]",
           ],
       )}
@@ -59,8 +60,8 @@ function NavItem({ href, label }: { href: string; label: string }) {
         className={cn(
           "pointer-events-none absolute inset-x-[0.6875rem] bottom-[0.4rem] h-[1px] origin-left rounded-full",
           overDark
-            ? "bg-gradient-to-r from-transparent via-lux-paper/[0.45] to-lux-gold/[0.35]"
-            : "bg-gradient-to-r from-transparent via-lux-ink/45 to-lux-gold/40",
+            ? "bg-gradient-to-r from-transparent via-lux-paper/[0.32] to-lux-gold/[0.22]"
+            : "bg-gradient-to-r from-transparent via-lux-ink/32 to-lux-gold/28",
           "transition-[transform,opacity] duration-[560ms] ease-luxury motion-reduce:transition-none",
           active ?
             "scale-x-100 opacity-100"
@@ -165,12 +166,12 @@ export function PrimaryNavigation() {
               focusRing,
               "hidden min-h-[2.6875rem] rounded-[999px] px-[1rem] lg:inline-flex",
               "[&>span:last-child]:text-[10px] [&>span:last-child]:font-semibold [&>span:last-child]:uppercase [&>span:last-child]:tracking-[0.34em]",
-              overDark ? "shadow-[0_18px_48px_-34px_rgba(0,0,0,0.45)] focus-visible:!ring-offset-lux-ink" : "shadow-[0_14px_40px_-28px_rgba(10,42,32,0.32)] focus-visible:!ring-offset-2 focus-visible:!ring-offset-white",
+              overDark ? "shadow-[0_12px_36px_-28px_rgba(0,0,0,0.28)] focus-visible:!ring-offset-lux-charcoal" : "shadow-[0_10px_28px_-22px_rgba(24,42,34,0.2)] focus-visible:!ring-offset-2 focus-visible:!ring-offset-white",
             )}
             data-track="whatsapp_click"
             data-track-placement="header_desktop_whatsapp_primary"
           >
-            Plans · prices
+            {croMessaging.headerDesktopWhatsapp}
           </CtaButton>
 
           <button
@@ -234,7 +235,7 @@ export function PrimaryNavigation() {
         <div className="fixed inset-0 z-[70] lg:hidden" role="dialog" aria-modal="true" aria-label="Site menu">
           <button
             type="button"
-            className="absolute inset-0 bg-lux-ink/48 backdrop-blur-[16px] transition-opacity duration-500 motion-reduce:backdrop-blur-none motion-reduce:transition-none"
+            className="absolute inset-0 bg-lux-ink/32 backdrop-blur-[12px] transition-opacity duration-500 motion-reduce:backdrop-blur-none motion-reduce:transition-none"
             aria-label="Close menu overlay"
             onClick={() => setOpen(false)}
           />
@@ -242,8 +243,8 @@ export function PrimaryNavigation() {
             id={panelId}
             className={cn(
               "absolute right-0 top-0 flex h-full w-[min(100%,26rem)] flex-col",
-              "border-l border-white/[0.12] bg-[#fcfbf9]/72",
-              "shadow-[-56px_0_120px_-48px_rgba(10,10,10,0.45)] backdrop-blur-[36px] backdrop-saturate-150 supports-[backdrop-filter]:bg-[#faf8f5]/62",
+              "border-l border-white/[0.08] bg-lux-ivory/78",
+              "shadow-[-48px_0_100px_-44px_rgba(28,26,23,0.12)] backdrop-blur-[28px] backdrop-saturate-125 supports-[backdrop-filter]:bg-lux-paper/68",
             )}
           >
             <header className="flex items-start justify-between border-b border-lux-ink/[0.05] px-gutter pb-5 pt-[max(1.5rem,calc(env(safe-area-inset-top,0px)+1rem))]">
@@ -297,8 +298,8 @@ export function PrimaryNavigation() {
                         )
                       : cn(
                           "border border-transparent text-lux-ink/44",
-                          "hover:border-lux-ink/[0.05] hover:bg-white/[0.4] hover:text-lux-ink hover:shadow-[0_26px_60px_-48px_rgba(10,10,10,0.17)] motion-reduce:hover:translate-y-0",
-                          "motion-safe:active:translate-y-px hover:-translate-y-px motion-safe:active:scale-[0.997]",
+                          "hover:border-lux-ink/[0.045] hover:bg-white/[0.32] hover:text-lux-ink hover:shadow-[0_10px_28px_-24px_rgba(28,26,23,0.075)] motion-reduce:hover:translate-y-0",
+                          "motion-safe:active:opacity-[0.96] motion-safe:hover:border-lux-ink/[0.055]",
                         ),
                     )}
                     aria-current={active ? "page" : undefined}
@@ -307,7 +308,7 @@ export function PrimaryNavigation() {
                     <span
                       className={cn(
                         "block border-l-[1.5px] pl-[0.9375rem] font-display text-[1.105rem] font-normal leading-[1.38] tracking-[-0.014em]",
-                        active ? "border-lux-gold/[0.48] text-lux-ink/[0.95]" : "border-transparent text-lux-ink/78",
+                        active ? "border-lux-gold/[0.34] text-lux-ink/[0.92]" : "border-transparent text-lux-ink/72",
                       )}
                     >
                       {item.label}
@@ -324,11 +325,11 @@ export function PrimaryNavigation() {
                 variant="whatsapp"
                 size="lg"
                 leadingIcon={<WhatsAppIcon className="size-[1.2rem]" />}
-                className="w-full min-h-[3.5rem] px-10 py-[0.94rem] text-[13px] font-semibold tracking-[0.085em] shadow-[0_18px_50px_-32px_rgba(10,36,28,0.42)] backdrop-blur-sm transition-[transform,filter] duration-500 hover:-translate-y-px hover:brightness-[1.04] motion-reduce:hover:translate-y-0 [&>span:last-child]:text-[12.75px]"
+                className="w-full min-h-[3.5rem] px-10 py-[0.94rem] text-[13px] font-semibold tracking-[0.08em] shadow-[0_12px_36px_-26px_rgba(24,42,34,0.22)] backdrop-blur-sm transition-[filter] duration-400 hover:brightness-[1.02] motion-reduce:hover:brightness-100 [&>span:last-child]:text-[12.75px]"
                 data-track="whatsapp_click"
                 data-track-placement="header_mobile_drawer"
               >
-                Pricing & payment plan
+                {croMessaging.headerMobileWhatsapp}
               </CtaButton>
             </div>
           </div>
