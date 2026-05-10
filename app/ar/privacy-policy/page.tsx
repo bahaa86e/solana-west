@@ -1,0 +1,128 @@
+import Link from "next/link";
+
+import { SectionMain } from "@/components/layout/section-main";
+import { privacyPolicyPageSeoAr } from "@/data/seo/ar-routes-registry";
+import { siteConfig } from "@/data/site";
+import { englishPathToArabicPath } from "@/lib/i18n/paths";
+import { buildPageMetadata } from "@/seo/build-metadata";
+import { cn } from "@/lib/utils";
+
+export const metadata = buildPageMetadata(privacyPolicyPageSeoAr);
+
+const linkClass = cn(
+  "font-sans text-[0.9375rem] font-normal tracking-[0.012em] text-lux-ink/[0.88]",
+  "underline decoration-lux-gold/32 underline-offset-[0.38em]",
+  "transition-[color,decoration-color] hover:text-lux-ink hover:decoration-lux-gold/55",
+);
+
+export default function ArabicPrivacyPolicyPage() {
+  const homeAr = englishPathToArabicPath["/"]!;
+  const contactAr = englishPathToArabicPath["/contact"]!;
+
+  return (
+    <SectionMain>
+      <article className="mx-auto max-w-readable" aria-labelledby="privacy-ar-heading" dir="rtl">
+        <header className="border-b border-lux-ink/[0.06] pb-lux-stack-md md:pb-lux-stack-lg">
+          <p className="lux-eyebrow text-lux-ink/46">قانوني</p>
+          <div className="mt-lux-stack-xs h-px w-9 bg-lux-gold/42 md:mt-lux-stack-sm" aria-hidden />
+          <h1 id="privacy-ar-heading" className="mt-lux-stack-xs max-w-[min(38ch,100%)] font-display text-display-xl text-lux-ink">
+            سياسة الخصوصية — استفسارات {siteConfig.name}
+          </h1>
+          <p className="lux-body mt-lux-stack-sm text-lux-ink/67 md:mt-lux-stack-md">
+            تشرح هذه البادرة كيف يتعامل {siteConfig.shortName} ({siteConfig.url}) مع المعلومات التي تشاركونها عبر
+            النموذج أو الهاتف أو البريد أو واتساب أو الروابط المقيسة. هذا ليس استشارة قانونية.
+          </p>
+        </header>
+
+        <div className="space-y-10 py-10 md:space-y-12 md:py-12">
+          <section aria-labelledby="privacy-controller-ar">
+            <h2 id="privacy-controller-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
+              من يدير البيانات وكيف تصلون للمكتب
+            </h2>
+            <p className="lux-body mt-4 text-lux-ink/70">
+              تُوجَّه الاستفسارات عبر القنوات المنشورة على الموقع:&nbsp;
+              <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} className={linkClass}>
+                {siteConfig.phone}
+              </a>
+              ،&nbsp;
+              <a href={`mailto:${siteConfig.email}`} className={linkClass}>
+                {siteConfig.email}
+              </a>
+              ، ونقطة الواتساب في التذييل والرأس.
+            </p>
+          </section>
+
+          <section aria-labelledby="privacy-data-ar">
+            <h2 id="privacy-data-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
+              بيانات قد نلمسها
+            </h2>
+            <ul className="lux-body mt-4 list-disc space-y-2 pr-5 text-lux-ink/70">
+              <li>معرّفات تزوّدونها: الاسم، الهاتف، البريد إن وُجد، ومحتوى الرسالة.</li>
+              <li>بيانات تقنية عن الزيارة: عنوان IP، نوع الجهاز/المتصفح، الصفحات، ومنطقة تقريبية إن فُعِّل التحليل.</li>
+              <li>معرّفات حملات من العنوان الذي دخلتم منه إن وُجدت.</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="privacy-use-ar">
+            <h2 id="privacy-use-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
+              الأغراض — استجابة وجودة وقياس
+            </h2>
+            <ul className="lux-body mt-4 list-disc space-y-2 pr-5 text-lux-ink/70">
+              <li>الرد على أسعار وخطط سداد وكتيبات وزيارات موقع.</li>
+              <li>قياس الأداء والتحويلات وفاعلية الإعلان حيث يُفعَّل.</li>
+              <li>تأمين الخدمة والتحقيق في إساءات محتملة.</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="privacy-cookies-ar">
+            <h2 id="privacy-cookies-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
+              ملفات تعريف الارتباط والبكسلات
+            </h2>
+            <p className="lux-body mt-4 text-lux-ink/70">
+              قد نستخدم تخزيناً محلياً للتحليل (مثل Google Analytics) وقياس إعلانات (مثل Google Ads) وبكسلات
+              اجتماعية (مثل Meta) حيث طُبِّقت. يمكنكم الحد من التخزين عبر إعدادات المتصفح؛ قد يقل التتبع دون أن
+              تتأثر قراءة الصفحات العامة.
+            </p>
+          </section>
+
+          <section aria-labelledby="privacy-retention-ar">
+            <h2 id="privacy-retention-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
+              الاحتفاظ
+            </h2>
+            <p className="lux-body mt-4 text-lux-ink/70">
+              تُحفَظ الاستفسارات بقدر ما يلزم لخدمتكم والالتزامات القانونية أو المحاسبية والدفاع عن المطالب. قد يبقى
+              التجميعي لدى مزودين وفق سياساتهم.
+            </p>
+          </section>
+
+          <section aria-labelledby="privacy-rights-ar">
+            <h2 id="privacy-rights-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
+              الوصول والتصحيح وأدوات المنصات
+            </h2>
+            <p className="lux-body mt-4 text-lux-ink/70">
+              يمكنكم طلب الاطلاع أو التصحيح أو المحو وفق القانون المعمول. لتفضيلات الإعلان على Google وMeta استخدموا
+              أدوات الخصوصية لديهم.
+            </p>
+          </section>
+
+          <section aria-labelledby="privacy-changes-ar">
+            <h2 id="privacy-changes-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
+              التحديثات
+            </h2>
+            <p className="lux-body mt-4 text-lux-ink/70">
+              قد نحدِّث هذه الصفحة مع تغيُّر الممارسات أو الشركاء. تابعوا{" "}
+              <Link href={homeAr} className={linkClass}>
+                العربية الرئيسية
+              </Link>{" "}
+              أو{" "}
+              <Link href={contactAr} className={linkClass}>
+                التواصل
+              </Link>
+              .
+            </p>
+          </section>
+        </div>
+      </article>
+    </SectionMain>
+  );
+}

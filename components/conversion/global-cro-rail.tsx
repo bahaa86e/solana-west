@@ -5,16 +5,17 @@ import { usePathname } from "next/navigation";
 
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { Container } from "@/components/ui/container";
-import { croCommercialFacts, croMessaging, croPrivateDeskTagline } from "@/data/cro";
+import { useEditorialCopy } from "@/components/i18n/editorial-copy-context";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
 
-const hiddenPaths = new Set(["/", "/thank-you", "/privacy-policy"]);
+const hiddenExact = new Set(["/", "/ar", "/thank-you", "/ar/thank-you", "/privacy-policy", "/ar/privacy-policy"]);
 
 export function GlobalCroRail({ className }: { className?: string }) {
   const pathname = usePathname() ?? "/";
+  const { croCommercialFacts, croMessaging, croPrivateDeskTagline } = useEditorialCopy();
 
-  if (hiddenPaths.has(pathname)) return null;
+  if (hiddenExact.has(pathname)) return null;
 
   const railItems = [
     croCommercialFacts.startingFrom,
@@ -26,8 +27,8 @@ export function GlobalCroRail({ className }: { className?: string }) {
   return (
     <aside
       className={cn(
-        "relative z-[41] border-b border-lux-ink/[0.05] bg-lux-paper max-md:bg-gradient-to-b max-md:from-[#faf9f6] max-md:to-lux-mist/80 md:bg-gradient-to-r md:from-[#f8f6f2] md:via-lux-paper md:to-[#ebe6df]",
-        "shadow-[0_4px_18px_-16px_rgba(45,42,37,0.055)] max-md:shadow-[0_1px_0_rgba(255,255,255,0.65)]",
+        "relative z-[41] border-b border-lux-ink/[0.05] bg-lux-paper",
+        "shadow-[0_1px_0_rgba(255,255,255,0.65)]",
         className,
       )}
       aria-label="Commercial reference and private desk contact"
@@ -35,10 +36,10 @@ export function GlobalCroRail({ className }: { className?: string }) {
       <Container as="div" className="py-2.5 max-md:py-2 md:py-3.5">
         <div className="flex flex-col gap-3.5 md:flex-row md:items-center md:justify-between md:gap-8">
           <div className="min-w-0 flex-1">
-            <p className="font-sans text-[9.5px] font-semibold uppercase tracking-[0.28em] text-lux-ink/34 md:text-[10px]">
+            <p className="font-sans text-[9.5px] font-semibold uppercase tracking-[0.16em] text-lux-ink/34 md:text-[10px]">
               {croMessaging.railEyebrow} · {croPrivateDeskTagline}
             </p>
-            <p className="mt-2 flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1.5 text-[10.5px] font-medium uppercase tracking-[0.2em] text-lux-ink/48 max-md:text-[10px] md:mt-2.5 md:gap-x-3 md:text-[11px] md:tracking-[0.22em]">
+            <p className="mt-2 flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1.5 text-[10.5px] font-medium uppercase tracking-[0.14em] text-lux-ink/48 max-md:text-[10px] md:mt-2.5 md:gap-x-3 md:text-[11px]">
               {railItems.map((bit, index) => (
                 <span key={bit} className="inline-flex flex-wrap items-center gap-x-2 md:gap-x-3">
                   {index > 0 ?
@@ -58,7 +59,7 @@ export function GlobalCroRail({ className }: { className?: string }) {
             rel="noopener noreferrer"
             className={cn(
               "flex w-full shrink-0 flex-col items-stretch justify-center gap-1.5 rounded-[8px] border border-[#5a8f78]/35 bg-[#eaf4ef] px-4 py-2.5 text-[#1a382c] md:w-auto md:min-w-[min(22rem,100%)]",
-              "shadow-[0_8px_24px_-20px_rgba(40,88,68,0.12)] transition-[filter,background-color] duration-400 ease-luxury",
+              "shadow-[0_6px_20px_-16px_rgba(40,88,68,0.1)] transition-[filter,background-color] duration-400 ease-luxury",
               "hover:bg-[#e2f0e9] active:opacity-[0.94] motion-reduce:transition-none",
               "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lux-gold focus-visible:ring-offset-2 focus-visible:ring-offset-lux-paper md:flex-row md:items-center md:gap-4 md:py-3 md:pl-5 md:pr-6",
             )}

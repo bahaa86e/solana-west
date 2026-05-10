@@ -1,4 +1,6 @@
-import { croReferenceChipLabels } from "@/data/cro";
+"use client";
+
+import { useEditorialCopy } from "@/components/i18n/editorial-copy-context";
 import { cn } from "@/lib/utils";
 
 type Tone = "light" | "dark";
@@ -9,10 +11,11 @@ type Props = {
 };
 
 export function ConversionValueChips({ tone = "dark", className }: Props) {
+  const { croReferenceChipLabels } = useEditorialCopy();
   const chip =
     tone === "dark" ?
-      "border border-white/[0.14] bg-white/[0.05] text-[10.5px] font-semibold uppercase tracking-[0.2em] text-lux-paper/75 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]"
-    : "border border-lux-ink/[0.09] bg-white/[0.55] text-[10px] font-semibold uppercase tracking-[0.2em] text-lux-ink/60 shadow-[inset_0_1px_0_rgba(255,255,255,0.75)]";
+      "border border-white/20 bg-white/10 text-[10px] font-medium uppercase tracking-[0.14em] text-lux-paper/85"
+    : "border border-lux-ink/[0.08] bg-white text-[10px] font-medium uppercase tracking-[0.14em] text-lux-ink/62";
 
   return (
     <ul
@@ -25,7 +28,9 @@ export function ConversionValueChips({ tone = "dark", className }: Props) {
     >
       {croReferenceChipLabels.map((label) => (
         <li key={label}>
-          <span className={cn("inline-flex rounded-full px-3 py-2.5 sm:px-[0.85rem] sm:py-[0.5rem]", chip)}>{label}</span>
+          <span className={cn("inline-flex rounded-full px-3 py-2.5 sm:px-[0.85rem] sm:py-[0.5rem]", chip)}>
+            {label}
+          </span>
         </li>
       ))}
     </ul>

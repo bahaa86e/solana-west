@@ -3,6 +3,7 @@ import type { FaqPair } from "@/data/projects/types";
 import type { RouteSeoDefinition } from "@/data/seo/types";
 import { siteConfig } from "@/data/site";
 import { getSiteUrl, toAbsoluteSiteUrl } from "@/lib/env";
+import { schemaLocaleFromSeo } from "@/lib/schema/jsonld/schema-locale";
 
 function collectFaqSections(doc: BlogArticleDocument): readonly FaqPair[] {
   const fromSections = doc.sections.flatMap((s) => (s.type === "faq" ? [...s.items] : []));
@@ -14,7 +15,11 @@ export function getBlogArticleStructuredData(seo: RouteSeoDefinition, doc: BlogA
   const base = getSiteUrl();
   const path = seo.path.startsWith("/") ? seo.path : `/${seo.path}`;
   const url = new URL(path, base.origin).toString();
-  const blogUrl = new URL("/blog", base.origin).toString();
+  const isAr = seo.locale === "ar";
+  const blogUrl = new URL(isAr ? "/ar/blog" : "/blog", base.origin).toString();
+  const { homeUrl, homeName } = schemaLocaleFromSeo(seo);
+  const webPageLang = isAr ? "ar-EG" : "en-US";
+  const articleLang = "en-US";
 
   const primarySrc = doc.heroImage.src.startsWith("/") ? doc.heroImage.src : `/${doc.heroImage.src}`;
   const imageUrl = toAbsoluteSiteUrl(primarySrc);
@@ -26,6 +31,7 @@ export function getBlogArticleStructuredData(seo: RouteSeoDefinition, doc: BlogA
     mainEntityOfPage: { "@type": "WebPage", "@id": `${url}#webpage` },
     headline: doc.title,
     description: doc.description,
+    inLanguage: articleLang,
     datePublished: doc.publishedIso,
     dateModified: doc.modifiedIso ?? doc.publishedIso,
     ...(doc.authors && doc.authors.length > 0 ? { author: doc.authors.map((name) => ({ "@type": "Person", name })) } : {}),
@@ -41,6 +47,7 @@ export function getBlogArticleStructuredData(seo: RouteSeoDefinition, doc: BlogA
     url,
     name: doc.title,
     description: seo.description,
+    inLanguage: webPageLang,
     isPartOf: { "@id": `${root}#website` },
     publisher: { "@id": `${root}#organization` },
     primaryImageOfPage: {
@@ -53,9 +60,10 @@ export function getBlogArticleStructuredData(seo: RouteSeoDefinition, doc: BlogA
   const breadcrumbs = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    inLanguage: webPageLang,
     itemListElement: [
-      { "@type": "ListItem" as const, position: 1, name: "Home", item: `${root}/` },
-      { "@type": "ListItem" as const, position: 2, name: "Blog", item: blogUrl },
+      { "@type": "ListItem" as const, position: 1, name: homeName, item: homeUrl },
+      { "@type": "ListItem" as const, position: 2, name: isAr ? "المدونة" : "Blog", item: blogUrl },
       { "@type": "ListItem" as const, position: 3, name: doc.title, item: url },
     ],
   };
@@ -68,6 +76,7 @@ export function getBlogArticleStructuredData(seo: RouteSeoDefinition, doc: BlogA
         "@type": "FAQPage",
         "@id": `${url}#faq-blocks`,
         url,
+        inLanguage: articleLang,
         isPartOf: { "@type": "WebPage", "@id": `${url}#webpage` },
         mainEntity: faqItems.map((item, i) => ({
           "@type": "Question" as const,

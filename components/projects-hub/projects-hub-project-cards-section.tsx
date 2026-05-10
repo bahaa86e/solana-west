@@ -1,13 +1,18 @@
+"use client";
+
 import Link from "next/link";
 
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
+import { useSiteLocale } from "@/components/i18n/site-locale-context";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import type { ProjectsHubPageModel } from "@/data/projects/projects-hub-model";
+import { localizedPathname } from "@/lib/i18n/paths";
 import { cn } from "@/lib/utils";
 
 export function ProjectsHubProjectCardsSection({ model }: { model: ProjectsHubPageModel }) {
+  const locale = useSiteLocale();
   const { idPrefix, projectCardsEyebrow, projectCardsTitle, scaleNote, featuredProjects } = model;
   const headingId = `${idPrefix}-cards-heading`;
 
@@ -20,7 +25,7 @@ export function ProjectsHubProjectCardsSection({ model }: { model: ProjectsHubPa
 
       <ul className="m-0 mt-14 list-none space-y-12 p-0 md:mt-16 md:space-y-16" role="list">
         {featuredProjects.map((fp) => {
-          const href = `/projects/${fp.entry.slug}`;
+          const href = localizedPathname(`/projects/${fp.entry.slug}`, locale);
           return (
             <li key={fp.entry.slug}>
               <article

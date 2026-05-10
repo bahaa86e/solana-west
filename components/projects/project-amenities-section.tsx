@@ -33,12 +33,9 @@ export function ProjectAmenitiesSection({ page }: { page: ResolvedProjectPage })
             >
               <article className="flex flex-col">
                 <LuxuryImageShell
-                  hover="cinematic"
-                  aspectClassName="aspect-[5/3]"
-                  className={cn(
-                    "border border-lux-ink/[0.048] shadow-[0_10px_32px_-28px_rgba(28,26,23,0.085),inset_0_1px_0_rgba(252,250,247,0.55)]",
-                    "transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/11 hover:shadow-lux-card",
-                  )}
+                  hover="lift"
+                  aspectClassName="aspect-[3/2]"
+                  className={cn("shadow-lux-card transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/10")}
                 >
                   <LuxuryFillImage
                     src={asset.src}

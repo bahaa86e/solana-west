@@ -24,6 +24,7 @@ const config: Config = {
       fontFamily: {
         display: ["var(--font-display)", "ui-serif", "Georgia", "serif"],
         sans: ["var(--font-sans)", "system-ui", "Segoe UI", "sans-serif"],
+        arabic: ["var(--font-arabic)", "Tahoma", "Segoe UI", "sans-serif"],
       },
       /**
        * Luxury editorial scale — Cormorant (display) × Source Sans 3 (UI / body).
@@ -58,7 +59,7 @@ const config: Config = {
         /** Eyebrows / overlines — wide tracking, calm micro size */
         micro: [
           "clamp(0.6375rem, 0.14vw + 0.58rem, 0.7rem)",
-          { lineHeight: "1.58", letterSpacing: "0.28em", fontWeight: "600" },
+          { lineHeight: "1.58", letterSpacing: "0.18em", fontWeight: "600" },
         ],
         /** Body baseline — long-form & UI paragraphs */
         "body-lg": [

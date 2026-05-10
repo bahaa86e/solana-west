@@ -1,14 +1,23 @@
+"use client";
+
 import Link from "next/link";
 
 import { FaqAnswerParagraphs } from "@/components/faq/faq-answer-paragraphs";
+import { useSiteLocale } from "@/components/i18n/site-locale-context";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { CtaButton } from "@/components/ui/cta-button";
 import { homeSections } from "@/data/seo/home";
+import { localizedPathname } from "@/lib/i18n/paths";
 
 const { faqPreview } = homeSections;
 
 export function FaqPreviewSection() {
+  const locale = useSiteLocale();
+  const faqHref = localizedPathname("/faq", locale);
+  const openFaq = locale === "ar" ? "فتح الأسئلة" : "Open FAQ";
+  const fullFaq = locale === "ar" ? "قائمة الأسئلة كاملة" : "Full FAQ list";
+
   return (
     <SectionShell
       id="faq-preview"
@@ -27,14 +36,14 @@ export function FaqPreviewSection() {
           />
         </div>
         <div className="flex w-full shrink-0 flex-col gap-6 sm:flex-row sm:items-center sm:justify-end md:w-auto lg:gap-8">
-          <CtaButton href="/faq" variant="secondary" size="lg" className="min-w-[12.5rem] px-12">
-            Open FAQ
+          <CtaButton href={faqHref} variant="secondary" size="lg" className="min-w-[12.5rem] px-12">
+            {openFaq}
           </CtaButton>
           <Link
-            href="/faq"
+            href={faqHref}
             className="text-[0.9375rem] font-normal tracking-[0.01em] text-lux-ink/52 underline decoration-lux-ink/[0.18] decoration-1 underline-offset-[10px] transition-colors duration-400 hover:text-lux-ink hover:decoration-lux-gold/48"
           >
-            Full FAQ list
+            {fullFaq}
           </Link>
         </div>
       </div>

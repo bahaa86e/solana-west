@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
+import { Cormorant_Garamond, Noto_Sans_Arabic, Source_Sans_3 } from "next/font/google";
 
-import { SiteShell } from "@/components/layout/site-shell";
 import { AnalyticsScripts } from "@/components/tracking/analytics-scripts";
 import { JsonLd } from "@/components/seo/json-ld";
 import { siteConfig } from "@/data/site";
@@ -21,6 +20,13 @@ const fontSans = Source_Sans_3({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans",
+  weight: ["400", "500", "600", "700"],
+});
+
+const fontArabic = Noto_Sans_Arabic({
+  subsets: ["arabic"],
+  display: "swap",
+  variable: "--font-arabic",
   weight: ["400", "500", "600", "700"],
 });
 
@@ -54,13 +60,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fontDisplay.variable} ${fontSans.variable}`}
+      dir="ltr"
+      className={`${fontDisplay.variable} ${fontSans.variable} ${fontArabic.variable}`}
       suppressHydrationWarning
     >
       <body className="min-h-screen bg-lux-paper font-sans text-body-lg leading-lux-body text-lux-ink/[0.93]">
         <JsonLd data={graph} />
         <AnalyticsScripts />
-        <SiteShell>{children}</SiteShell>
+        {children}
       </body>
     </html>
   );

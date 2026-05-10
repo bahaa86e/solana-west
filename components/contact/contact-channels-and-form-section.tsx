@@ -1,13 +1,15 @@
+"use client";
+
 import Link from "next/link";
 
 import { ConversionValueChips } from "@/components/conversion/conversion-value-chips";
 import { LeadInquiryForm } from "@/components/forms/lead-inquiry-form";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
+import { useEditorialCopy } from "@/components/i18n/editorial-copy-context";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { CtaButton } from "@/components/ui/cta-button";
 import type { ContactPageModel } from "@/data/contact/contact-page-model";
-import { croMessaging } from "@/data/cro";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -15,6 +17,7 @@ const subtleLink =
   "text-[0.9375rem] font-normal tracking-[0.01em] text-lux-ink/62 underline decoration-lux-ink/[0.14] underline-offset-[10px] transition-colors duration-400 hover:text-lux-ink hover:decoration-lux-gold/42";
 
 export function ContactChannelsAndFormSection({ model }: { model: ContactPageModel }) {
+  const { croMessaging } = useEditorialCopy();
   const { channels, formColumn, idPrefix } = model;
   const tel = siteConfig.phone.replace(/\s/g, "");
   const channelsHeadingId = `${idPrefix}-channels-heading`;
@@ -45,7 +48,7 @@ export function ContactChannelsAndFormSection({ model }: { model: ContactPageMod
             </div>
 
             <ul className="mt-14 flex list-none flex-col gap-10 p-0" role="list">
-              <li className="rounded-[11px] border border-lux-ink/[0.055] bg-white/[0.42] px-5 pb-8 pt-7 shadow-[inset_0_1px_0_rgba(255,255,255,0.62),0_8px_28px_-24px_rgba(28,26,23,0.06)] backdrop-blur-sm md:px-[1.35rem]">
+              <li className="rounded-[6px] border border-lux-ink/[0.06] bg-lux-paper px-5 pb-8 pt-7 shadow-lux-card md:px-[1.35rem]">
                 <p className="text-micro uppercase tracking-[0.22em] text-lux-ink/40">WhatsApp</p>
                 <p className="mt-3 max-w-xs text-[0.9375rem] leading-[1.72] tracking-[0.012em] text-lux-ink/66 md:max-w-sm md:text-base">
                   Fast context for issuance questions — mirrors how many buyers coordinate abroad.
@@ -108,7 +111,7 @@ export function ContactChannelsAndFormSection({ model }: { model: ContactPageMod
           <p className="mt-8 max-w-md text-[0.9375rem] font-normal leading-[1.72] tracking-[0.014em] text-lux-ink/62 md:text-base">
             {formColumn.intro}
           </p>
-          <div className="mt-10 max-lg:mt-11 rounded-[10px] border border-lux-ink/[0.07] bg-lux-paper p-[clamp(1.375rem,4vw,2.75rem)] shadow-[0_12px_40px_-36px_rgba(45,42,37,0.06),inset_0_1px_0_rgba(255,255,255,0.72)] max-lg:backdrop-blur-none md:p-11 md:bg-gradient-to-br md:from-white/95 md:via-lux-paper md:to-lux-mist/50 md:backdrop-blur-[8px]">
+          <div className="mt-10 max-lg:mt-11 rounded-[6px] border border-lux-ink/[0.07] bg-white p-[clamp(1.375rem,4vw,2.75rem)] shadow-lux-soft md:p-11">
             <LeadInquiryForm />
           </div>
           <p className="mt-10">

@@ -15,7 +15,6 @@ export function MasterplanSection() {
       tone="paper"
       containerSize="wide"
       rhythm="breath"
-      depth="lifted"
     >
       <SectionHeader
         id="masterplan-heading"
@@ -24,8 +23,8 @@ export function MasterplanSection() {
         kicker={<p className="font-normal text-lux-ink/68">{masterplan.intro}</p>}
       />
       <LuxuryImageShell
-        hover="cinematic"
-        className="mt-section-block aspect-[4/3] w-full rounded-[3px] md:mt-section-gap sm:aspect-[16/11] lg:aspect-[21/9] lg:min-h-[min(44vh,38rem)] lg:max-h-[min(48rem,calc(72vh-8rem))] xl:min-h-[min(46vh,40rem)]"
+        hover="lift"
+        className="mt-section-block aspect-[3/2] w-full rounded-[6px] md:mt-section-gap sm:aspect-video lg:aspect-video lg:min-h-[min(40vh,34rem)] lg:max-h-[min(44rem,calc(70vh-8rem))] xl:min-h-[min(42vh,36rem)]"
         frameAccent={
           <div className="pointer-events-none absolute inset-0 z-[6] bg-gradient-to-b from-transparent via-transparent to-lux-paper/[0.12]" aria-hidden />
         }

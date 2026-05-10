@@ -1,13 +1,17 @@
+"use client";
+
 import Link from "next/link";
 
+import { useEditorialCopy } from "@/components/i18n/editorial-copy-context";
+import { useSiteLocale } from "@/components/i18n/site-locale-context";
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { CtaButton } from "@/components/ui/cta-button";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
-import { croMessaging } from "@/data/cro";
 import { solanaWestMedia } from "@/data/media/solana-west";
+import { localizedPathname } from "@/lib/i18n/paths";
 import { homeSections } from "@/data/seo/home";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
@@ -15,6 +19,10 @@ import { cn } from "@/lib/utils";
 const { payment } = homeSections;
 
 export function PaymentPlanSection() {
+  const { croMessaging } = useEditorialCopy();
+  const locale = useSiteLocale();
+  const paymentPlanHref = localizedPathname("/payment-plan", locale);
+
   return (
     <SectionShell
       id="payment-plan"
@@ -61,7 +69,7 @@ export function PaymentPlanSection() {
             </p>
             <p className="text-[0.8125rem] font-normal tracking-[0.02em] text-lux-ink/52 md:text-[0.84375rem]">
               <Link
-                href="/payment-plan"
+                href={paymentPlanHref}
                 className={cn(
                   "text-lux-ink/68 underline decoration-lux-ink/[0.12] underline-offset-[10px]",
                   "transition-colors duration-400 hover:text-lux-ink hover:decoration-lux-gold/45",
@@ -72,8 +80,7 @@ export function PaymentPlanSection() {
                 {croMessaging.internalPaymentPlanLink}
               </Link>
               <span aria-hidden className="text-lux-ink/42">
-                {" "}
-                — structured commercial schedule.
+                {locale === "ar" ? " — جدول تجاري مُنظَّم." : " — structured commercial schedule."}
               </span>
             </p>
           </div>
@@ -82,8 +89,8 @@ export function PaymentPlanSection() {
 
       <LuxuryImageShell
         hover="lift"
-        aspectClassName="aspect-[21/10] max-h-[min(14rem,40vw)] xl:max-h-[15rem]"
-        className="mt-section-gap rounded-[3px] xl:mt-section-block"
+        aspectClassName="aspect-video max-h-[min(14rem,40vw)] xl:max-h-[15rem]"
+        className="mt-section-gap rounded-[6px] xl:mt-section-block"
         frameAccent={
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-lux-paper/[0.04] via-transparent to-transparent" aria-hidden />
         }

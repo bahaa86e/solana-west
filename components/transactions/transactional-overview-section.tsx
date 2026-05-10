@@ -33,7 +33,7 @@ export function TransactionalOverviewSection({ model }: { model: TransactionalPa
         </div>
         <LuxuryImageShell
           hover="lift"
-          aspectClassName="aspect-[4/3]"
+          aspectClassName="aspect-[3/2]"
           className="lg:col-span-7"
           frameAccent={<div className="pointer-events-none absolute inset-[10%] ring-1 ring-lux-gold/18" aria-hidden />}
         >

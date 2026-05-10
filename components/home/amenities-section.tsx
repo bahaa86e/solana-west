@@ -39,18 +39,13 @@ export function AmenitiesSection() {
             >
               <article className="flex flex-col">
                 <LuxuryImageShell
-                  hover="cinematic"
+                  hover="lift"
                   aspectClassName={
                     i === 0 ? "aspect-[4/5] max-lg:max-h-[min(72vh,520px)]"
-                    : i === 1 ? "aspect-[5/4] lg:aspect-[4/5]"
-                    : "aspect-[21/11] max-lg:aspect-[16/10]"
+                    : i === 1 ? "aspect-[4/5]"
+                    : "aspect-video max-lg:aspect-video"
                   }
-                  className={cn(
-                    "border border-lux-ink/[0.05] shadow-[0_10px_32px_-28px_rgba(28,26,23,0.09),inset_0_1px_0_rgba(252,250,247,0.58)]",
-                    "transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/11 hover:shadow-[0_14px_40px_-32px_rgba(28,26,23,0.11),inset_0_1px_0_rgba(252,250,247,0.65)]",
-                    i === 2 &&
-                      "ring-1 ring-lux-ink/[0.032] shadow-[0_20px_56px_-40px_rgba(28,26,23,0.12),inset_0_1px_0_rgba(252,250,247,0.68)]",
-                  )}
+                  className={cn("shadow-lux-card transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/10", i === 2 && "shadow-lux-soft")}
                 >
                   <LuxuryFillImage
                     src={asset.src}

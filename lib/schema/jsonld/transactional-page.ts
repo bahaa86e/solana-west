@@ -2,9 +2,10 @@ import type { TransactionalPageModel } from "@/data/transactions/transaction-pag
 import type { RouteSeoDefinition } from "@/data/seo/types";
 import { siteConfig } from "@/data/site";
 import { getSiteUrl, toAbsoluteSiteUrl } from "@/lib/env";
+import { schemaLocaleFromSeo } from "@/lib/schema/jsonld/schema-locale";
 
 /**
- * WebPage + FAQ preview + breadcrumbs for /prices and /payment-plan.
+ * WebPage + FAQ preview + breadcrumbs for transactional pages (pricing, payment-plan).
  * FAQ answers must match visible `<dt>/<dd>` rendering (canonical subset).
  */
 export function getTransactionalStructuredData(seo: RouteSeoDefinition, model: TransactionalPageModel) {
@@ -12,13 +13,14 @@ export function getTransactionalStructuredData(seo: RouteSeoDefinition, model: T
   const base = getSiteUrl();
   const path = seo.path.startsWith("/") ? seo.path : `/${seo.path}`;
   const url = new URL(path, base.origin).toString();
+  const { inLanguage, homeUrl, homeName, isAr } = schemaLocaleFromSeo(seo);
 
   const aboutPlace = {
     "@type": "Place" as const,
     name: siteConfig.name,
     containedInPlace: {
       "@type": "Place" as const,
-      name: "New Zayed · Mehwar El Dabaa, West Cairo, Egypt",
+      name: isAr ? "الزيادة الجديدة · محور الضبعة، غرب القاهرة، مصر" : "New Zayed · Mehwar El Dabaa, West Cairo, Egypt",
     },
   };
 
@@ -32,6 +34,7 @@ export function getTransactionalStructuredData(seo: RouteSeoDefinition, model: T
     url,
     name: model.hero.h1,
     description: seo.description,
+    inLanguage,
     isPartOf: { "@id": `${root}#website` },
     publisher: { "@id": `${root}#organization` },
     about: aboutPlace,
@@ -48,6 +51,7 @@ export function getTransactionalStructuredData(seo: RouteSeoDefinition, model: T
     "@id": `${url}#faq-preview`,
     url,
     name: `${model.hero.h1} · FAQ preview`,
+    inLanguage,
     isPartOf: { "@type": "WebPage", "@id": `${url}#webpage` },
     mainEntity: model.faqPreview.items.map((item, i) => ({
       "@type": "Question" as const,
@@ -63,8 +67,9 @@ export function getTransactionalStructuredData(seo: RouteSeoDefinition, model: T
   const breadcrumbs = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    inLanguage,
     itemListElement: [
-      { "@type": "ListItem" as const, position: 1, name: "Home", item: `${root}/` },
+      { "@type": "ListItem" as const, position: 1, name: homeName, item: homeUrl },
       { "@type": "ListItem" as const, position: 2, name: model.hero.h1, item: url },
     ],
   };

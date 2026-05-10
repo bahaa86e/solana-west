@@ -11,16 +11,14 @@ export type SectionDepth = "flat" | "lifted";
 
 const toneClass: Record<SectionTone, string> = {
   paper: cn(
-    "bg-gradient-to-b from-[#fdfcfa] via-[#f9f7f3] to-[#ede8e0]/98 text-lux-ink",
-    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.72),inset_0_0_80px_-28px_rgba(185,168,146,0.032)]",
-    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-lux-ink/[0.045] before:to-transparent",
-    "after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:z-[1] after:h-[min(5rem,14vw)] after:bg-gradient-to-b after:from-transparent after:via-lux-gold/[0.018] after:to-lux-sand/40",
+    "bg-lux-paper text-lux-ink",
+    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-lux-ink/[0.04]",
+    "after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:z-[1] after:h-[min(2.5rem,8vw)] after:bg-gradient-to-b after:from-transparent after:to-lux-sand/30",
   ),
   sand: cn(
-    "bg-gradient-to-br from-[#ebe6de]/99 via-[#f0ebe3] to-[#f6f3ed] text-lux-ink",
-    "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.55),inset_0_-1px_0_0_rgba(45,42,37,0.018),0_1px_0_0_rgba(185,168,146,0.032)]",
-    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-lux-gold/[0.085] before:to-transparent",
-    "after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:z-[1] after:h-[min(3.5rem,10vw)] after:bg-gradient-to-b after:from-transparent after:to-lux-ink/[0.014]",
+    "bg-[#f3efe8] text-lux-ink",
+    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-lux-ink/[0.04]",
+    "after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:z-[1] after:h-[min(2rem,6vw)] after:bg-transparent",
   ),
   ink: cn(
     "bg-gradient-to-b from-[#4f4b45] via-[#45413b] to-[#3c3834] text-lux-paper",
@@ -31,8 +29,7 @@ const toneClass: Record<SectionTone, string> = {
 
 const depthClass: Record<SectionDepth, string> = {
   flat: "",
-  lifted:
-    "shadow-[0_36px_88px_-60px_rgba(45,42,37,0.07),inset_0_1px_0_0_rgba(255,255,255,0.045)]",
+  lifted: "shadow-[0_22px_48px_-44px_rgba(45,42,37,0.055)]",
 };
 
 function rhythmPadding(rhythm: SectionRhythm): string {

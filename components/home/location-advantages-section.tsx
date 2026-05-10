@@ -14,7 +14,6 @@ export function LocationAdvantagesSection() {
       aria-labelledby="location-heading"
       tone="sand"
       containerSize="wide"
-      depth="lifted"
       accentRim
     >
       <div className="grid gap-section-gap lg:grid-cols-12 lg:gap-x-section-gap xl:gap-x-[clamp(3.5rem,6.5vw,5rem)]">
@@ -39,8 +38,8 @@ export function LocationAdvantagesSection() {
 
       <LuxuryImageShell
         hover="lift"
-        aspectClassName="aspect-[16/10]"
-        className="mt-section-block rounded-[3px] md:mt-section-gap"
+        aspectClassName="aspect-video"
+        className="mt-section-block rounded-[6px] md:mt-section-gap"
         frameAccent={
           <div className="pointer-events-none absolute inset-0 z-[6] bg-gradient-to-t from-lux-mist/[0.22] via-transparent to-transparent" aria-hidden />
         }

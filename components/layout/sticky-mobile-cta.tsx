@@ -1,9 +1,13 @@
+"use client";
+
 import type { SVGProps } from "react";
 import Link from "next/link";
 
 import { PhoneIcon } from "@/components/icons/phone";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
-import { croMessaging } from "@/data/cro";
+import { useEditorialCopy } from "@/components/i18n/editorial-copy-context";
+import { useSiteLocale } from "@/components/i18n/site-locale-context";
+import { localizedPathname } from "@/lib/i18n/paths";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -46,11 +50,14 @@ const altCell = cn(
 
 export function StickyMobileCtaBar({ className }: BarProps) {
   const tel = siteConfig.phone.replace(/\s/g, "");
+  const locale = useSiteLocale();
+  const { croMessaging } = useEditorialCopy();
+  const contactHref = localizedPathname("/contact", locale);
 
   return (
     <div
       className={cn(
-        "fixed inset-x-0 bottom-0 z-[55] border-t border-lux-ink/[0.06] bg-lux-paper/97 pb-safe-bottom shadow-[0_-6px_24px_-16px_rgba(45,42,37,0.06)] backdrop-blur-[12px] supports-[backdrop-filter]:bg-lux-paper/88 lg:hidden",
+        "fixed inset-x-0 bottom-0 z-[55] border-t border-lux-ink/[0.06] bg-lux-paper pb-safe-bottom shadow-[0_-4px_16px_-12px_rgba(45,42,37,0.05)] lg:hidden",
         className,
       )}
       role="navigation"
@@ -89,7 +96,12 @@ export function StickyMobileCtaBar({ className }: BarProps) {
           </span>
           <span className="sr-only"> {siteConfig.phone}</span>
         </a>
-        <Link href="/contact" className={altCell} data-track="cta_click" data-track-placement="sticky_mobile_contact_form">
+        <Link
+          href={contactHref}
+          className={altCell}
+          data-track="cta_click"
+          data-track-placement="sticky_mobile_contact_form"
+        >
           <EnquiryGlyph className="size-[1.125rem] text-lux-ink/68" />
           <span className="leading-snug">
             {croMessaging.stickyEnquiryLabel}

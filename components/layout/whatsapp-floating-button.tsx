@@ -17,8 +17,8 @@ type Props = {
  */
 export function WhatsAppFloatingButton({ className }: Props) {
   const pathname = usePathname() ?? "/";
-  /** Homepage: cinematic hero + sticky bar already dominate conversion; hide FAB duplication. */
-  const hideFabOnSmallHome = pathname === "/";
+  /** Home (EN/AR): sticky bar carries primary contact; hide FAB to reduce overlap. */
+  const hideFabOnSmallHome = pathname === "/" || pathname === "/ar";
 
   return (
     <a
@@ -37,19 +37,11 @@ export function WhatsAppFloatingButton({ className }: Props) {
     >
       <span
         className={cn(
-          "pointer-events-none absolute -inset-[0.4375rem] rounded-full bg-lux-ink/[0.035] max-lg:-inset-[0.25rem] max-lg:bg-lux-ink/[0.02]",
-          "motion-safe:animate-lux-wa-breathe-ring motion-reduce:animate-none max-lg:motion-safe:animate-none",
-        )}
-        aria-hidden
-      />
-      <span
-        className={cn(
           "relative flex size-full items-center justify-center rounded-full",
-          "border border-lux-ink/[0.07] bg-lux-paper text-[#25D366]",
-          "ring-1 ring-inset ring-white/55 shadow-[0_8px_24px_-12px_rgba(45,42,37,0.1)] max-lg:shadow-[0_4px_16px_-8px_rgba(45,42,37,0.08)]",
-          "motion-safe:animate-lux-wa-breathe-shell motion-reduce:animate-none max-lg:motion-safe:animate-none",
-          "transition-[color,filter,box-shadow] duration-[420ms] ease-luxury motion-reduce:transition-none",
-          "hover:shadow-[0_10px_28px_-14px_rgba(45,42,37,0.12)] motion-reduce:hover:shadow-none",
+          "border border-lux-ink/[0.08] bg-lux-paper text-[#25D366]",
+          "shadow-[0_6px_20px_-12px_rgba(45,42,37,0.09)] max-lg:shadow-[0_4px_14px_-8px_rgba(45,42,37,0.07)]",
+          "transition-[color,box-shadow] duration-[400ms] ease-luxury motion-reduce:transition-none",
+          "hover:shadow-[0_8px_22px_-12px_rgba(45,42,37,0.11)] motion-reduce:hover:shadow-none",
         )}
         aria-hidden
       >

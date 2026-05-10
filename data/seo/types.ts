@@ -7,6 +7,8 @@ export type RouteSeoDefinition = {
   description: string;
   /** URL path segment only, canonicalized inside the builder */
   path: string;
+  /** Arabic route metadata — aligns OG locale + AI surfaces */
+  locale?: "en" | "ar";
   noIndex?: boolean;
   /** Entity + intent vocabulary for retrieval surfaces (avoid stuffing) */
   keywords?: readonly string[];

@@ -1,20 +1,35 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useFormState, useFormStatus } from "react-dom";
 import { usePathname } from "next/navigation";
 
-import type { LeadFormState } from "@/app/contact/actions";
-import { submitLeadInquiry } from "@/app/contact/actions";
+import type { LeadFormState } from "@/app/(site)/contact/actions";
+import { submitLeadInquiry } from "@/app/(site)/contact/actions";
 import { ConversionValueChips } from "@/components/conversion/conversion-value-chips";
+import { useEditorialCopy } from "@/components/i18n/editorial-copy-context";
+import { useSiteLocale } from "@/components/i18n/site-locale-context";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { CtaButton } from "@/components/ui/cta-button";
-import { croMessaging } from "@/data/cro";
 import { siteConfig } from "@/data/site";
-import { LEAD_INTEREST_OPTIONS } from "@/lib/lead-interest-options";
+import { LEAD_INTEREST_OPTIONS, type LeadInterestOption } from "@/lib/lead-interest-options";
+import { leadInterestArabicDisplay } from "@/lib/lead-interest-display-ar";
 import { cn } from "@/lib/utils";
 
 const initialLeadState: LeadFormState = { ok: false };
+
+/** Same-origin path only — blocks open redirects if server state were ever tampered with */
+function isSafeLeadThankYouRedirect(href: string): boolean {
+  if (!href.startsWith("/") || href.startsWith("//")) return false;
+  try {
+    const u = new URL(href, "http://localhost");
+    if (u.username || u.password) return false;
+  } catch {
+    return false;
+  }
+  const pathOnly = href.split(/[?#]/)[0] ?? "";
+  return pathOnly === "/thank-you" || pathOnly === "/ar/thank-you";
+}
 
 const fieldWrap = "flex flex-col gap-3";
 
@@ -31,10 +46,12 @@ const inputClass = cn(
 
 const selectClass = cn(inputClass, "cursor-pointer");
 
-function LeadSubmitButton() {
+function LeadSubmitButton({ disabled }: { disabled?: boolean }) {
   const { pending } = useFormStatus();
+  const { croMessaging } = useEditorialCopy();
+
   return (
-    <CtaButton type="submit" variant="primary" size="lg" disabled={pending} className="w-full">
+    <CtaButton type="submit" variant="primary" size="lg" disabled={pending || disabled} className="w-full">
       {pending ? croMessaging.leadFormSubmitPending : croMessaging.leadFormSubmitIdle}
     </CtaButton>
   );
@@ -42,7 +59,16 @@ function LeadSubmitButton() {
 
 export function LeadInquiryForm() {
   const pathname = usePathname() ?? "/";
+  const locale = useSiteLocale();
+  const { croMessaging } = useEditorialCopy();
+  const ar = locale === "ar";
+
   const [clientContext, setClientContext] = useState({ domain: "", referrer: "" });
+
+  /** Full-page navigation after success so thank-you conversions and cookies fire reliably */
+  const redirectOnce = useRef(false);
+  const [redirecting, setRedirecting] = useState(false);
+  const errorAlertRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
     setClientContext({
@@ -53,8 +79,42 @@ export function LeadInquiryForm() {
 
   const [state, formAction] = useFormState(submitLeadInquiry, initialLeadState);
 
+  useEffect(() => {
+    if (state.ok && state.redirectTo && !redirectOnce.current && isSafeLeadThankYouRedirect(state.redirectTo)) {
+      redirectOnce.current = true;
+      setRedirecting(true);
+      window.location.assign(state.redirectTo);
+    }
+  }, [state.ok, state.redirectTo]);
+
+  useEffect(() => {
+    if (!state.ok && state.message && errorAlertRef.current) {
+      errorAlertRef.current.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  }, [state.ok, state.message]);
+
+  const labels = ar
+    ? {
+        aria: "استفسار — الاسم ورقم الهاتف ونوع الوحدة (حقول مطلوبة)",
+        legend: "استفسار — الاسم الكامل ورقم الهاتف ونوع الوحدة المطلوب (مطلوب)",
+        fullName: "الاسم الكامل",
+        fullNamePh: "الاسم الثلاثي",
+        phone: "رقم الهاتف",
+        interest: "الاهتمام",
+        chooseTypology: "اختر نوع الوحدة",
+      }
+    : {
+        aria: "Private enquiry form",
+        legend: "Private inquiry — full name, phone number, and property interest (required)",
+        fullName: "Full Name",
+        fullNamePh: "Full name",
+        phone: "Phone Number",
+        interest: "Interested In",
+        chooseTypology: "Choose typology",
+      };
+
   return (
-    <form action={formAction} aria-label="Private enquiry form" className="max-w-md space-y-8 max-lg:space-y-9">
+    <form action={formAction} aria-label={labels.aria} className="max-w-md space-y-8 max-lg:space-y-9">
       <div className="space-y-4">
         <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.28em] text-lux-ink/40">
           {croMessaging.leadFormEyebrow}
@@ -72,13 +132,11 @@ export function LeadInquiryForm() {
       <input type="hidden" name="referrer_client" value={clientContext.referrer} readOnly aria-hidden />
 
       <fieldset className="m-0 min-w-0 space-y-7 border-0 p-0 max-lg:space-y-8">
-        <legend className="sr-only">
-          Private inquiry — full name, phone number, and property interest (required)
-        </legend>
+        <legend className="sr-only">{labels.legend}</legend>
 
         <div className={fieldWrap}>
           <label htmlFor="lead-name" className={labelClass}>
-            Full Name
+            {labels.fullName}
           </label>
           <input
             id="lead-name"
@@ -87,13 +145,13 @@ export function LeadInquiryForm() {
             autoComplete="name"
             required
             className={inputClass}
-            placeholder="Full name"
+            placeholder={labels.fullNamePh}
           />
         </div>
 
         <div className={fieldWrap}>
           <label htmlFor="lead-phone" className={labelClass}>
-            Phone Number
+            {labels.phone}
           </label>
           <input
             id="lead-phone"
@@ -108,7 +166,7 @@ export function LeadInquiryForm() {
 
         <div className={fieldWrap}>
           <label htmlFor="lead-interest" className={labelClass}>
-            Interested In
+            {labels.interest}
           </label>
           <select
             id="lead-interest"
@@ -119,11 +177,11 @@ export function LeadInquiryForm() {
             aria-required="true"
           >
             <option value="" disabled>
-              Choose typology
+              {labels.chooseTypology}
             </option>
-            {LEAD_INTEREST_OPTIONS.map((opt) => (
+            {LEAD_INTEREST_OPTIONS.map((opt: LeadInterestOption) => (
               <option key={opt} value={opt}>
-                {opt}
+                {ar ? leadInterestArabicDisplay[opt] : opt}
               </option>
             ))}
           </select>
@@ -131,19 +189,27 @@ export function LeadInquiryForm() {
 
         {!state.ok && state.message ? (
           <p
+            ref={errorAlertRef}
             role="alert"
+            tabIndex={-1}
             className="rounded-sm border border-lux-ink/[0.1] bg-lux-mist/40 px-4 py-3 text-sm leading-relaxed text-lux-ink/78"
           >
             {state.message}
           </p>
         ) : null}
 
+        {redirecting ?
+          <p className="text-[0.8125rem] leading-relaxed text-lux-ink/52" aria-live="polite">
+            {ar ? "إعادة التوجيه إلى صفحة التأكيد…" : "Taking you to the confirmation page…"}
+          </p>
+        : null}
+
         <p className="text-[0.8125rem] leading-relaxed tracking-[0.01em] text-lux-ink/52 md:text-[0.84375rem]">
           {croMessaging.leadFormRoutingNote}
         </p>
 
         <div className="flex flex-col gap-2.5 max-lg:gap-3">
-          <LeadSubmitButton />
+          <LeadSubmitButton disabled={redirecting} />
           <CtaButton
             href={siteConfig.whatsAppUrl}
             external

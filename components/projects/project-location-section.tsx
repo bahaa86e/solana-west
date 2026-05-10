@@ -34,8 +34,8 @@ export function ProjectLocationSection({ page }: { page: ResolvedProjectPage }) 
 
       <LuxuryImageShell
         hover="lift"
-        aspectClassName="aspect-[16/10]"
-        className="mt-16 rounded-[3px] md:mt-24"
+        aspectClassName="aspect-video"
+        className="mt-16 rounded-[6px] md:mt-24"
         frameAccent={
           <div className="pointer-events-none absolute inset-0 z-[6] bg-gradient-to-t from-lux-mist/[0.2] via-transparent to-transparent" aria-hidden />
         }

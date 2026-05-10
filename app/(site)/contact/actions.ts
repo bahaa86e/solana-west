@@ -2,7 +2,6 @@
 
 import { randomUUID } from "crypto";
 import { headers } from "next/headers";
-import { redirect } from "next/navigation";
 
 import { getSiteUrl } from "@/lib/env";
 import { isValidLeadInterest } from "@/lib/lead-interest-options";
@@ -11,7 +10,42 @@ import { siteConfig } from "@/data/site";
 export type LeadFormState = {
   ok: boolean;
   message?: string;
+  /** Built server-side only — client performs full-page navigation here after success */
+  redirectTo?: string;
 };
+
+function leadCopy(isAr: boolean) {
+  return {
+    nameInvalid: isAr ?
+      "يرجى إدخال اسم صالح (حرفين على الأقل)."
+    : "Please enter a valid name.",
+    phoneInvalid: isAr ?
+      "يرجى إدخال رقم يمكن لمكتب المبيعات التواصل عبره."
+    : "Please enter a phone number sales can reach you on.",
+    interestInvalid: isAr ?
+      "يرجى اختيار نوع الوحدة."
+    : "Please choose what you are interested in.",
+    webhookPaused: isAr ?
+      "الاستفسارات عبر الموقع غير متاحة مؤقتًا. تواصل عبر الواتساب أو الهاتف — القنوات موجودة على الصفحة."
+    : "Online enquiries are paused. Please use WhatsApp or call the desk — details are shown on this page.",
+    webhookFailed: isAr ?
+      "لم ننجح في إرسال الطلب تقنيًا. حاول مجدداً خلال قليل أو تواصل مع المبيعات عبر الواتساب."
+    : "We could not complete the request. Please try again in a moment or message sales on WhatsApp.",
+    webhookTimeout: isAr ?
+      "انتهت مهلة الاتصال بخادم الاستفسارات. حاول مجدداً أو استخدم الواتساب."
+    : "The enquiry service timed out. Please try again or use WhatsApp.",
+  } as const;
+}
+
+function thankYouRedirectPath(pagePathname: string, rid: string): string | null {
+  const path =
+    pagePathname.startsWith("/ar") ?
+      `/ar/thank-you?conversion=lead&rid=${encodeURIComponent(rid)}`
+    : `/thank-you?conversion=lead&rid=${encodeURIComponent(rid)}`;
+  const pathnameOnly = path.split("?")[0] ?? "";
+  if (pathnameOnly !== "/thank-you" && pathnameOnly !== "/ar/thank-you") return null;
+  return path;
+}
 
 function clean(v: unknown, maxLen: number): string {
   if (typeof v !== "string") return "";
@@ -40,14 +74,17 @@ export async function submitLeadInquiry(prevState: LeadFormState | null, formDat
   const websiteDomainClient = clean(formData.get("website_domain_client"), 256);
   const referrerClient = clean(formData.get("referrer_client"), 2048);
 
+  /** Locale for validation copy (pathname is most reliable on client) */
+  const c = leadCopy(pagePathClient.startsWith("/ar"));
+
   if (name.length < 2 || name.length > 120) {
-    return { ok: false, message: "Please enter a valid name." };
+    return { ok: false, message: c.nameInvalid };
   }
   if (phone.length < 6) {
-    return { ok: false, message: "Please enter a phone number sales can reach you on." };
+    return { ok: false, message: c.phoneInvalid };
   }
   if (!isValidLeadInterest(interestedRaw)) {
-    return { ok: false, message: "Please choose what you are interested in." };
+    return { ok: false, message: c.interestInvalid };
   }
   const interestedIn = interestedRaw;
 
@@ -70,6 +107,7 @@ export async function submitLeadInquiry(prevState: LeadFormState | null, formDat
   if (!pagePathname || pagePathname.length < 1) {
     pagePathname = "/contact";
   }
+  const cResolved = leadCopy(pagePathname.startsWith("/ar"));
 
   const websiteDomainResolved = hostHeader.replace(/:\d+$/, "") || websiteDomainClient || canonicalHostname;
 
@@ -111,8 +149,7 @@ export async function submitLeadInquiry(prevState: LeadFormState | null, formDat
   if (!webhook) {
     return {
       ok: false,
-      message:
-        "Online enquiries are paused. Please use WhatsApp or call the desk — details are shown on this page.",
+      message: cResolved.webhookPaused,
     };
   }
 
@@ -131,13 +168,24 @@ export async function submitLeadInquiry(prevState: LeadFormState | null, formDat
     });
 
     if (!res.ok) {
-      return { ok: false, message: "We could not complete the request. Please try again or WhatsApp sales." };
+      return { ok: false, message: cResolved.webhookFailed };
     }
-  } catch {
-    return { ok: false, message: "We could not complete the request. Please try again or WhatsApp sales." };
+  } catch (err) {
+    const aborted = err instanceof Error && err.name === "AbortError";
+    return { ok: false, message: aborted ? cResolved.webhookTimeout : cResolved.webhookFailed };
   } finally {
     clearTimeout(timer);
   }
 
-  redirect(`/thank-you?conversion=lead&rid=${encodeURIComponent(randomUUID())}`);
+  const rid = randomUUID();
+  const redirectTo = thankYouRedirectPath(pagePathname, rid);
+  if (!redirectTo) {
+    return { ok: false, message: cResolved.webhookFailed };
+  }
+
+  /**
+   * Return a same-origin path for the client to navigate with `location.assign`.
+   * Relying on `redirect()` from server actions + `useFormState` is unreliable in Next 14 (navigation may not complete).
+   */
+  return { ok: true, redirectTo };
 }

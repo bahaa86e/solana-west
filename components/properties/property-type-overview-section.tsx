@@ -36,7 +36,7 @@ export function PropertyTypeOverviewSection({ model }: { model: PropertyExperien
         </div>
         <LuxuryImageShell
           hover="lift"
-          aspectClassName="aspect-[4/3] lg:aspect-[21/9] lg:min-h-[clamp(22rem,46vh,34rem)]"
+          aspectClassName="aspect-[3/2] lg:aspect-video lg:min-h-[clamp(22rem,46vh,34rem)]"
           className="lg:col-span-7 lg:rounded-[3px]"
           frameAccent={<div className="pointer-events-none absolute inset-[10%] ring-1 ring-lux-gold/18" aria-hidden />}
         >

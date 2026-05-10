@@ -2,6 +2,7 @@ import type { AboutPageModel } from "@/data/about/about-page-model";
 import type { RouteSeoDefinition } from "@/data/seo/types";
 import { siteConfig } from "@/data/site";
 import { getSiteUrl, toAbsoluteSiteUrl } from "@/lib/env";
+import { schemaLocaleFromSeo } from "@/lib/schema/jsonld/schema-locale";
 
 /** WebPage (about ORA · Solana West) + FAQ preview + breadcrumbs. */
 export function getAboutStructuredData(seo: RouteSeoDefinition, model: AboutPageModel) {
@@ -9,6 +10,7 @@ export function getAboutStructuredData(seo: RouteSeoDefinition, model: AboutPage
   const base = getSiteUrl();
   const path = seo.path.startsWith("/") ? seo.path : `/${seo.path}`;
   const url = new URL(path, base.origin).toString();
+  const { inLanguage, homeUrl, homeName } = schemaLocaleFromSeo(seo);
 
   const primarySrc = model.heroImage.src.startsWith("/") ? model.heroImage.src : `/${model.heroImage.src}`;
   const imageUrl = toAbsoluteSiteUrl(primarySrc);
@@ -30,6 +32,7 @@ export function getAboutStructuredData(seo: RouteSeoDefinition, model: AboutPage
     url,
     name: model.hero.h1,
     description: seo.description,
+    inLanguage,
     isPartOf: { "@id": `${root}#website` },
     publisher: { "@id": `${root}#organization` },
     about: [developerOrg, { "@type": "Place" as const, name: siteConfig.name }],
@@ -46,6 +49,7 @@ export function getAboutStructuredData(seo: RouteSeoDefinition, model: AboutPage
     "@id": `${url}#faq-preview`,
     url,
     name: `${model.hero.h1} · FAQ preview`,
+    inLanguage,
     isPartOf: { "@type": "WebPage", "@id": `${url}#webpage` },
     mainEntity: model.faqPreview.items.map((item, i) => ({
       "@type": "Question" as const,
@@ -61,8 +65,9 @@ export function getAboutStructuredData(seo: RouteSeoDefinition, model: AboutPage
   const breadcrumbs = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    inLanguage,
     itemListElement: [
-      { "@type": "ListItem" as const, position: 1, name: "Home", item: `${root}/` },
+      { "@type": "ListItem" as const, position: 1, name: homeName, item: homeUrl },
       { "@type": "ListItem" as const, position: 2, name: model.hero.h1, item: url },
     ],
   };

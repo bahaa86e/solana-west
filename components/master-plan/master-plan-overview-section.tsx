@@ -28,7 +28,7 @@ export function MasterPlanOverviewSection({ model }: { model: MasterPlanPageMode
         </div>
         <LuxuryImageShell
           hover="cinematic"
-          aspectClassName="aspect-[4/3] lg:aspect-[21/9] lg:min-h-[clamp(22rem,46vh,34rem)]"
+          aspectClassName="aspect-[3/2] lg:aspect-video lg:min-h-[clamp(22rem,46vh,34rem)]"
           className="lg:col-span-7 bg-lux-paper lg:rounded-[3px]"
           frameAccent={<div className="pointer-events-none absolute inset-[10%] ring-1 ring-lux-ink/10" aria-hidden />}
         >

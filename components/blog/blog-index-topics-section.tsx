@@ -1,11 +1,16 @@
+"use client";
+
 import Link from "next/link";
 
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
+import { useSiteLocale } from "@/components/i18n/site-locale-context";
 import type { BlogIndexPageModel } from "@/data/blog/blog-index-model";
+import { localizedPathname } from "@/lib/i18n/paths";
 import { cn } from "@/lib/utils";
 
 export function BlogIndexTopicsSection({ model }: { model: BlogIndexPageModel }) {
+  const locale = useSiteLocale();
   const { idPrefix, topicGroupsDetailed } = model;
   const headingId = `${idPrefix}-topics-heading`;
 
@@ -13,8 +18,12 @@ export function BlogIndexTopicsSection({ model }: { model: BlogIndexPageModel })
     <SectionShell id={`${idPrefix}-topics`} aria-labelledby={headingId} tone="paper" containerSize="wide">
       <SectionHeader
         id={headingId}
-        eyebrow="Editorial taxonomy"
-        title="Research lanes Solana West buyers filter by intent"
+        eyebrow={locale === "ar" ? "تصنيف تحريري" : "Editorial taxonomy"}
+        title={
+          locale === "ar" ?
+            "مسارات بحث يصفّيها مشترو سولانا ويست حسب النية"
+          : "Research lanes Solana West buyers filter by intent"
+        }
       />
 
       <div className="mt-14 space-y-0 border-t border-lux-ink/[0.07] md:mt-16">
@@ -69,7 +78,7 @@ export function BlogIndexTopicsSection({ model }: { model: BlogIndexPageModel })
                       <article>
                         <h4 className="m-0 font-display text-lg font-normal tracking-[-0.012em] text-lux-ink md:text-xl">
                           <Link
-                            href={`/blog/${a.slug}`}
+                            href={localizedPathname(`/blog/${a.slug}`, locale)}
                             className="underline-offset-[10px] transition-colors hover:underline hover:decoration-lux-ink/[0.2]"
                           >
                             {a.title}

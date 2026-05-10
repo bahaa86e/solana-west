@@ -3,6 +3,9 @@ import type { RouteSeoDefinition } from "@/data/seo/types";
 import { projectRegistry } from "@/data/projects/registry";
 import { siteConfig } from "@/data/site";
 import { getSiteUrl, toAbsoluteSiteUrl } from "@/lib/env";
+import type { SiteLocale } from "@/lib/i18n/locale";
+import { localizedPathname } from "@/lib/i18n/paths";
+import { schemaLocaleFromSeo } from "@/lib/schema/jsonld/schema-locale";
 
 /** WebPage + FAQ preview + breadcrumbs + ItemList of published project hubs only. */
 export function getProjectsHubStructuredData(seo: RouteSeoDefinition, model: ProjectsHubPageModel) {
@@ -10,6 +13,9 @@ export function getProjectsHubStructuredData(seo: RouteSeoDefinition, model: Pro
   const base = getSiteUrl();
   const path = seo.path.startsWith("/") ? seo.path : `/${seo.path}`;
   const url = new URL(path, base.origin).toString();
+  const locale: SiteLocale = seo.locale === "ar" ? "ar" : "en";
+  const { inLanguage, homeUrl, homeName, isAr } = schemaLocaleFromSeo(seo);
+  const projectsCrumbLabel = isAr ? "المشاريع" : "Projects";
 
   const aboutPlace = {
     "@type": "Place" as const,
@@ -30,6 +36,7 @@ export function getProjectsHubStructuredData(seo: RouteSeoDefinition, model: Pro
     url,
     name: model.hero.h1,
     description: seo.description,
+    inLanguage,
     isPartOf: { "@id": `${root}#website` },
     publisher: { "@id": `${root}#organization` },
     about: [{ "@id": `${root}#organization` }, aboutPlace],
@@ -46,6 +53,7 @@ export function getProjectsHubStructuredData(seo: RouteSeoDefinition, model: Pro
     "@id": `${url}#faq-preview`,
     url,
     name: `${model.hero.h1} · FAQ preview`,
+    inLanguage,
     isPartOf: { "@type": "WebPage", "@id": `${url}#webpage` },
     mainEntity: model.faqPreview.items.map((item, i) => ({
       "@type": "Question" as const,
@@ -61,9 +69,10 @@ export function getProjectsHubStructuredData(seo: RouteSeoDefinition, model: Pro
   const breadcrumbs = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    inLanguage,
     itemListElement: [
-      { "@type": "ListItem" as const, position: 1, name: "Home", item: `${root}/` },
-      { "@type": "ListItem" as const, position: 2, name: "Projects", item: url },
+      { "@type": "ListItem" as const, position: 1, name: homeName, item: homeUrl },
+      { "@type": "ListItem" as const, position: 2, name: projectsCrumbLabel, item: url },
     ],
   };
 
@@ -71,13 +80,14 @@ export function getProjectsHubStructuredData(seo: RouteSeoDefinition, model: Pro
     "@context": "https://schema.org",
     "@type": "ItemList",
     "@id": `${url}#project-hubs`,
-    name: "ORA Developers Egypt project hubs indexed on this site",
+    name:
+      locale === "ar" ? `فهارس مشاريع ${siteConfig.developer} على هذا النطاق` : `ORA Developers Egypt project hubs indexed on this site`,
     numberOfItems: projectRegistry.length,
     itemListElement: projectRegistry.map((p, index) => ({
       "@type": "ListItem" as const,
       position: index + 1,
       name: p.name,
-      item: new URL(`/projects/${p.slug}`, base.origin).toString(),
+      item: new URL(localizedPathname(`/projects/${p.slug}`, locale), base.origin).toString(),
     })),
   };
 

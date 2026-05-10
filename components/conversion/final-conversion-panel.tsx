@@ -1,8 +1,10 @@
+"use client";
+
 import { ConversionValueChips } from "@/components/conversion/conversion-value-chips";
+import { useEditorialCopy } from "@/components/i18n/editorial-copy-context";
 import { SectionHeader } from "@/components/sections/section-header";
 import { CtaButton } from "@/components/ui/cta-button";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
-import { croMessaging } from "@/data/cro";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -30,6 +32,8 @@ export function FinalConversionPanel({
   secondaryHref = "/contact",
   whatsAppTrackPlacement = "final_cta_whatsapp",
 }: FinalConversionPanelProps) {
+  const { croMessaging } = useEditorialCopy();
+
   return (
     <div
       className={cn(
@@ -44,7 +48,7 @@ export function FinalConversionPanel({
         <p className="mt-[clamp(1.25rem,3vw,1.75rem)] max-w-md text-[1.015625rem] font-normal leading-[1.76] tracking-[0.01em] text-lux-paper/78 md:max-w-lg xl:max-w-xl">
           {supporting}
         </p>
-        <p className="mt-5 max-w-xl border-l border-lux-gold/22 pl-5 text-[0.8125rem] font-normal leading-[1.72] tracking-[0.018em] text-lux-paper/62 md:text-[0.84375rem]">
+        <p className="mt-5 max-w-xl border-s border-lux-gold/22 ps-5 text-[0.8125rem] font-normal leading-[1.72] tracking-[0.018em] text-lux-paper/62 md:text-[0.84375rem]">
           {croMessaging.finalPanelDeskAssurance}
         </p>
       </div>
@@ -63,18 +67,7 @@ export function FinalConversionPanel({
           {primaryLabel}
         </CtaButton>
 
-        <CtaButton
-          href={secondaryHref}
-          variant="ghost"
-          size="lg"
-          className={cn(
-            "w-full border border-white/[0.22] bg-white/[0.1] text-lux-paper/94 backdrop-blur-sm",
-            "shadow-[inset_0_1px_0_rgba(253,252,249,0.14)] hover:border-white/[0.32] hover:bg-white/[0.14]",
-            "focus-visible:ring-lux-gold focus-visible:ring-offset-2 focus-visible:ring-offset-lux-charcoal md:flex-1 md:px-10",
-          )}
-          data-track="cta_click"
-          data-track-placement="final_cta_secondary"
-        >
+        <CtaButton href={secondaryHref} variant="inverse" size="lg" className="w-full px-11 md:flex-1 md:px-12">
           {secondaryLabel}
         </CtaButton>
       </div>

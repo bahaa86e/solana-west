@@ -1,6 +1,8 @@
 import type { ResolvedProjectPage } from "@/data/projects/types";
+import type { RouteSeoDefinition } from "@/data/seo/types";
 import { siteConfig } from "@/data/site";
 import { getSiteUrl } from "@/lib/env";
+import { schemaLocaleFromSeo } from "@/lib/schema/jsonld/schema-locale";
 
 function canonicalUrl(slug: string): string {
   return new URL(`/projects/${slug}`, getSiteUrl().origin).toString();
@@ -9,10 +11,11 @@ function canonicalUrl(slug: string): string {
 /**
  * Structured graph aligned with rendered project sections — FAQ `acceptedAnswer.text` equals `content.faq.items`.
  */
-export function getProjectStructuredDataGraph(bundle: ResolvedProjectPage) {
-  const url = canonicalUrl(bundle.entry.slug);
+export function getProjectStructuredDataGraph(bundle: ResolvedProjectPage, seo?: RouteSeoDefinition) {
+  const url = seo?.path ? new URL(seo.path, getSiteUrl().origin).toString() : canonicalUrl(bundle.entry.slug);
   const root = siteConfig.url.replace(/\/$/, "");
   const { entry, content } = bundle;
+  const { inLanguage, homeUrl, homeName } = schemaLocaleFromSeo(seo);
 
   const aboutPlace =
     content.schemaPlaceContainedIn ?
@@ -30,6 +33,7 @@ export function getProjectStructuredDataGraph(bundle: ResolvedProjectPage) {
     url,
     name: `${entry.name} · Project`,
     description: content.seo.description,
+    inLanguage,
     isPartOf: { "@id": `${root}#website` },
     publisher: { "@id": `${root}#organization` },
     about: aboutPlace,
@@ -41,6 +45,7 @@ export function getProjectStructuredDataGraph(bundle: ResolvedProjectPage) {
     "@id": `${url}#faq`,
     url,
     name: `${entry.name} FAQ`,
+    inLanguage,
     isPartOf: { "@type": "WebPage", "@id": `${url}#webpage` },
     mainEntity: content.faq.items.map((item, i) => ({
       "@type": "Question" as const,
@@ -60,13 +65,15 @@ export function getProjectStructuredDataGraph(bundle: ResolvedProjectPage) {
     url,
     name: entry.name,
     description: content.seo.description,
+    inLanguage,
   };
 
   const breadcrumbs = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    inLanguage,
     itemListElement: [
-      { "@type": "ListItem" as const, position: 1, name: "Home", item: `${root}/` },
+      { "@type": "ListItem" as const, position: 1, name: homeName, item: homeUrl },
       { "@type": "ListItem" as const, position: 2, name: entry.name, item: url },
     ],
   };

@@ -17,7 +17,7 @@ type MobileMainProps = {
  */
 export function MobileMain({ children, id, className }: MobileMainProps) {
   const pathname = usePathname() ?? "/";
-  const stickyOnlyHome = pathname === "/";
+  const stickyOnlyHome = pathname === "/" || pathname === "/ar";
 
   return (
     <div

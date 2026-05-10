@@ -9,23 +9,39 @@ function faqCanonicalUrl(path: string): string {
 
 export type FaqJsonLdItem = { readonly question: string; readonly answer: string };
 
+export type SolanaWestFaqPageJsonLdOptions = {
+  path?: string;
+  locale?: "en" | "ar";
+  name?: string;
+  description?: string;
+};
+
 /**
  * FAQPage JSON-LD — `acceptedAnswer.text` must equal on-page FAQ copy (canonical data).
  */
-export function getSolanaWestFaqPageJsonLd(
-  items: ReadonlyArray<FaqJsonLdItem>,
-  path: "/faq" = "/faq",
-) {
+export function getSolanaWestFaqPageJsonLd(items: ReadonlyArray<FaqJsonLdItem>, opts?: SolanaWestFaqPageJsonLdOptions) {
+  const path = opts?.path ?? "/faq";
+  const locale = opts?.locale ?? "en";
   const url = faqCanonicalUrl(path);
+  const name =
+    opts?.name ??
+    (locale === "ar" ?
+      `الأسئلة الشائعة — ${siteConfig.shortName}`
+    : `${siteConfig.shortName} — frequently asked questions`);
+  const description =
+    opts?.description ??
+    (locale === "ar" ?
+      `مرجع عربي لأسعار ${siteConfig.name}، خطط السداد، موعد التسليم، الموقع، أنواع الوحدات، و${siteConfig.developer}. يطابق هذا المخطّط النصوص المرئية.`
+    : `${siteConfig.name}: pricing context, installments, delivery, connectivity, inventory, ${siteConfig.developer}. Visible answers mirror this markup.`);
 
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "@id": `${url}#faq`,
     url,
-    name: `${siteConfig.shortName} — frequently asked questions`,
-    description:
-      `${siteConfig.name}: pricing context, installments, delivery, connectivity, inventory, ${siteConfig.developer}. Visible answers mirror this markup.`,
+    name,
+    description,
+    inLanguage: locale === "ar" ? "ar" : "en",
     isPartOf: { "@id": `${siteConfig.url}#website` },
     publisher: { "@id": `${siteConfig.url}#organization` },
     mainEntity: items.map((item, index) => ({

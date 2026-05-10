@@ -1,7 +1,6 @@
 "use client";
 
-import { createContext, useCallback, useContext, useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { createContext, useContext, type ReactNode } from "react";
 
 export type HeaderAppearance = "overDark" | "document";
 
@@ -11,46 +10,11 @@ export function useHeaderAppearance(): HeaderAppearance {
   return useContext(HeaderAppearanceContext);
 }
 
-type HeaderAppearanceProviderProps = {
-  children: React.ReactNode;
-};
-
 /**
- * Home: transparent bar over dark hero until user scrolls past most of the hero.
- * Other routes: always document (paper glass) for predictable contrast.
+ * Quiet editorial header contrast everywhere — avoids glass-on-hero juggling.
  */
-export function HeaderAppearanceProvider({ children }: HeaderAppearanceProviderProps) {
-  const pathname = usePathname() ?? "/";
-  const [appearance, setAppearance] = useState<HeaderAppearance>("document");
-
-  const compute = useCallback(() => {
-    if (pathname !== "/") {
-      setAppearance("document");
-      return;
-    }
-    const hero = document.getElementById("hero");
-    if (!hero) {
-      setAppearance("document");
-      return;
-    }
-    const rect = hero.getBoundingClientRect();
-    const threshold = Math.max(120, rect.height * 0.72);
-    const y = window.scrollY;
-    setAppearance(y < threshold ? "overDark" : "document");
-  }, [pathname]);
-
-  useEffect(() => {
-    compute();
-    const onScroll = () => compute();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
-    };
-  }, [compute]);
-
+export function HeaderAppearanceProvider({ children }: { children: ReactNode }) {
   return (
-    <HeaderAppearanceContext.Provider value={appearance}>{children}</HeaderAppearanceContext.Provider>
+    <HeaderAppearanceContext.Provider value="document">{children}</HeaderAppearanceContext.Provider>
   );
 }

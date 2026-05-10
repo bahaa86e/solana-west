@@ -4,6 +4,7 @@ import { defaultOpenGraphImagePath } from "@/data/seo/defaults";
 import type { RouteSeoDefinition } from "@/data/seo/types";
 import { siteConfig } from "@/data/site";
 import { getSiteUrl, toAbsoluteSiteUrl } from "@/lib/env";
+import { alternatePairForPathname } from "@/lib/i18n/paths";
 
 export type BuildPageMetadataInput = RouteSeoDefinition;
 
@@ -19,10 +20,11 @@ function resolveOgImagePath(input: RouteSeoDefinition): string | undefined {
 
 /** Next.js `Metadata` from centralized route SEO definitions (canonical, OG, Twitter, retrieval hints). */
 export function buildPageMetadata(input: RouteSeoDefinition): Metadata {
-  const { title, description, noIndex = false } = input;
+  const { title, description, noIndex = false, locale } = input;
   const base = getSiteUrl();
   const pathname = normalizePath(input.path ?? "/");
-  const canonical = new URL(pathname, base.origin).toString();
+  const canonical = new URL(pathname === "/" ? "/" : pathname, base.origin).toString();
+  const alternatePair = alternatePairForPathname(pathname);
 
   const imagePath = resolveOgImagePath(input);
   const ogImageUrl = imagePath ? toAbsoluteSiteUrl(imagePath) : undefined;
@@ -49,18 +51,30 @@ export function buildPageMetadata(input: RouteSeoDefinition): Metadata {
         }
       : undefined;
 
+  const alternateLanguages =
+    alternatePair && !noIndex ?
+      ({
+        en: new URL(normalizePath(alternatePair.enPath), base.origin).toString(),
+        ar: new URL(normalizePath(alternatePair.arPath), base.origin).toString(),
+        "x-default": new URL(normalizePath(alternatePair.enPath), base.origin).toString(),
+      } satisfies Record<string, string>)
+    : undefined;
+
+  const ogLocale = locale === "ar" ? "ar_EG" : "en_US";
+
   return {
     metadataBase: base,
     title,
     description,
     keywords: input.keywords ? [...input.keywords] : undefined,
-    alternates: { canonical },
+    alternates: { canonical, ...(alternateLanguages ? { languages: alternateLanguages } : {}) },
     robots: noIndex
       ? { index: false, follow: false }
       : { index: true, follow: true },
     openGraph: {
       type: ogType,
-      locale: "en_US",
+      locale: ogLocale,
+      alternateLocale: locale === "ar" ? ["en_US"] : ["ar_EG"],
       url: canonical,
       siteName: siteConfig.shortName,
       title,

@@ -1,11 +1,16 @@
+"use client";
+
 import Link from "next/link";
 
 import { InvestorAssuranceStrip } from "@/components/conversion/investor-assurance-strip";
+import { useEditorialCopy } from "@/components/i18n/editorial-copy-context";
+import { useSiteLocale } from "@/components/i18n/site-locale-context";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { Container } from "@/components/ui/container";
 import { CtaButton } from "@/components/ui/cta-button";
-import { croMessaging } from "@/data/cro";
 import { footerAuthority, footerLegalDisclaimer } from "@/data/footer-authority";
+import { footerAuthorityAr, footerLegalDisclaimerAr } from "@/data/footer-authority-ar";
+import { footerMegaColumnsAr, footerLegalLinksAr } from "@/data/navigation/ar";
 import { footerLegalLinks, footerMegaColumns } from "@/data/navigation";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
@@ -30,15 +35,23 @@ const socialLinkClass =
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
+  const locale = useSiteLocale();
+  const { croMessaging } = useEditorialCopy();
+  const mega = locale === "ar" ? footerMegaColumnsAr : footerMegaColumns;
+  const authority = locale === "ar" ? footerAuthorityAr : footerAuthority;
+  const disclaimer = locale === "ar" ? footerLegalDisclaimerAr : footerLegalDisclaimer;
+  const legalLane = locale === "ar" ? footerLegalLinksAr : footerLegalLinks;
+  const socialHeading = locale === "ar" ? "وسائل التواصل" : "Social";
+  const legalPostureHeading = locale === "ar" ? "إطار قانوني" : "Legal posture";
+  const conciergeHeading = locale === "ar" ? "كونسييرج" : "Concierge";
 
   return (
     <footer
       role="contentinfo"
       className={cn(
         "relative z-[2] mt-auto border-t border-lux-stone/35",
-        "bg-gradient-to-b from-lux-paper via-[#f6f4ef] to-[#ebe6de]/92",
-        "shadow-[inset_0_1px_0_rgba(252,250,247,0.75),0_-24px_64px_-48px_rgba(28,26,23,0.08)] backdrop-blur-[4px]",
-        "supports-[backdrop-filter]:via-[#f7f5f1]/94 supports-[backdrop-filter]:to-[#eae5dd]/90",
+        "bg-[#faf8f5]",
+        "shadow-[inset_0_1px_0_rgba(252,250,247,0.85)]",
       )}
     >
       <Container
@@ -62,17 +75,21 @@ export function SiteFooter() {
               </p>
               <span className="mt-10 block h-px max-w-[3.125rem] bg-gradient-to-r from-lux-gold/48 via-lux-gold/22 to-transparent" aria-hidden />
               <p className="mt-[1.9375rem] max-w-[min(38ch,100%)] font-sans text-[15px] font-normal leading-[1.75] tracking-[0.017em] text-lux-ink/[0.64] xl:max-w-[40ch] xl:text-[0.9575rem] xl:leading-[1.74] xl:tracking-[0.016em]">
-                {footerAuthority.deck}
+                {authority.deck}
               </p>
             </div>
 
             {/* Internal linking — four authority silos */}
             <nav
-              aria-label="Site sections and Solana West resources"
+              aria-label={
+                locale === "ar"
+                  ? "أقسام الموقع وموارد مشروع Solana West"
+                  : "Site sections and Solana West resources"
+              }
               className="lg:col-span-5 xl:col-span-6 min-w-0"
             >
               <div className="grid gap-y-10 sm:grid-cols-2 sm:gap-x-8 xl:grid-cols-4 xl:gap-x-9">
-                {footerMegaColumns.map((column) => {
+                {mega.map((column) => {
                   const titleId = `footer-cluster-${column.id}`;
                   return (
                     <section key={column.id} className="min-w-0" aria-labelledby={titleId}>
@@ -96,7 +113,7 @@ export function SiteFooter() {
 
             {/* Concierge & trust channels */}
             <aside className="min-w-0 border-t border-lux-gold/[0.08] pt-10 lg:col-span-3 lg:border-none lg:pt-0 xl:col-span-3">
-              <h3 className={columnHeadingClass}>Concierge</h3>
+              <h3 className={columnHeadingClass}>{conciergeHeading}</h3>
               <address className="mt-[1.25rem] flex flex-col gap-5 font-sans not-italic xl:mt-[1.375rem] xl:gap-6">
                 <ul className="flex flex-col gap-[1.0625rem] xl:gap-4">
                   <li>
@@ -139,7 +156,7 @@ export function SiteFooter() {
 
                 <div>
                   <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.32em] text-lux-gold/[0.82] xl:text-[10.25px]">
-                    Social
+                    {socialHeading}
                   </p>
                   <ul className="mt-4 flex flex-col gap-[0.65rem]">
                     {([
@@ -171,10 +188,10 @@ export function SiteFooter() {
             <div className="flex flex-col gap-7 xl:flex-row xl:items-start xl:justify-between xl:gap-x-12">
               <div className="max-w-xl space-y-4">
                 <p className="font-sans text-[11.25px] font-normal uppercase tracking-[0.22em] text-lux-gold/[0.78] xl:text-[11.35px]">
-                  Legal posture
+                  {legalPostureHeading}
                 </p>
                 <p className="font-sans text-[12.875px] leading-[1.92] tracking-[0.018em] text-lux-ink/[0.5] xl:max-w-[46rem] xl:text-[0.8375rem] xl:tracking-[0.017em]">
-                  {footerLegalDisclaimer}
+                  {disclaimer}
                 </p>
               </div>
 
@@ -187,9 +204,9 @@ export function SiteFooter() {
                     {siteConfig.developer}
                   </p>
                 </div>
-                <nav aria-label="Legal">
+                <nav aria-label={locale === "ar" ? "روابط قانونية" : "Legal"}>
                   <ul className="flex flex-wrap gap-x-10 gap-y-3">
-                    {footerLegalLinks.map((item) => (
+                    {legalLane.map((item) => (
                       <li key={item.href}>
                         <Link
                           href={item.href}
