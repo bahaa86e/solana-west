@@ -29,15 +29,15 @@ export default function ArabicPrivacyPolicyPage() {
             سياسة الخصوصية — استفسارات {siteConfig.name}
           </h1>
           <p className="lux-body mt-lux-stack-sm text-lux-ink/67 md:mt-lux-stack-md">
-            تشرح هذه البادرة كيف يتعامل {siteConfig.shortName} ({siteConfig.url}) مع المعلومات التي تشاركونها عبر
-            النموذج أو الهاتف أو البريد أو واتساب أو الروابط المقيسة. هذا ليس استشارة قانونية.
+            توضّح هذه الصفحة كيف يتعامل {siteConfig.shortName} ({siteConfig.url}) مع معلومات الاستفسار التي تُرسل
+            عبر النموذج أو الهاتف أو البريد أو واتساب أو روابط القياس. النص للتوضيح ولا يُعد استشارة قانونية.
           </p>
         </header>
 
         <div className="space-y-10 py-10 md:space-y-12 md:py-12">
           <section aria-labelledby="privacy-controller-ar">
             <h2 id="privacy-controller-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              من يدير البيانات وكيف تصلون للمكتب
+              بيانات التواصل ومكتب المبيعات
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
               تُوجَّه الاستفسارات عبر القنوات المنشورة على الموقع:&nbsp;
@@ -48,13 +48,13 @@ export default function ArabicPrivacyPolicyPage() {
               <a href={`mailto:${siteConfig.email}`} className={linkClass}>
                 {siteConfig.email}
               </a>
-              ، ونقطة الواتساب في التذييل والرأس.
+              ، وروابط واتساب الظاهرة في رأس الصفحة وتذييلها.
             </p>
           </section>
 
           <section aria-labelledby="privacy-data-ar">
             <h2 id="privacy-data-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              بيانات قد نلمسها
+              البيانات التي قد نستخدمها للرد على الاستفسار
             </h2>
             <ul className="lux-body mt-4 list-disc space-y-2 pr-5 text-lux-ink/70">
               <li>معرّفات تزوّدونها: الاسم، الهاتف، البريد إن وُجد، ومحتوى الرسالة.</li>
@@ -65,10 +65,10 @@ export default function ArabicPrivacyPolicyPage() {
 
           <section aria-labelledby="privacy-use-ar">
             <h2 id="privacy-use-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              الأغراض — استجابة وجودة وقياس
+              لماذا نستخدم البيانات في استفسارات سولانا ويست
             </h2>
             <ul className="lux-body mt-4 list-disc space-y-2 pr-5 text-lux-ink/70">
-              <li>الرد على أسعار وخطط سداد وكتيبات وزيارات موقع.</li>
+              <li>الرد على طلبات الأسعار، أنظمة السداد، البروشور، أو ترتيب زيارة للمشروع.</li>
               <li>قياس الأداء والتحويلات وفاعلية الإعلان حيث يُفعَّل.</li>
               <li>تأمين الخدمة والتحقيق في إساءات محتملة.</li>
             </ul>
@@ -76,28 +76,27 @@ export default function ArabicPrivacyPolicyPage() {
 
           <section aria-labelledby="privacy-cookies-ar">
             <h2 id="privacy-cookies-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              ملفات تعريف الارتباط والبكسلات
+              ملفات الارتباط وقياس الإعلانات
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
-              قد نستخدم تخزيناً محلياً للتحليل (مثل Google Analytics) وقياس إعلانات (مثل Google Ads) وبكسلات
-              اجتماعية (مثل Meta) حيث طُبِّقت. يمكنكم الحد من التخزين عبر إعدادات المتصفح؛ قد يقل التتبع دون أن
-              تتأثر قراءة الصفحات العامة.
+              قد نستخدم التخزين المحلي والتحليلات وقياس الإعلانات عند تفعيلها، بما يشمل Google Ads وMeta. يمكنكم
+              الحد من التتبع من إعدادات المتصفح دون أن تتأثر قراءة الصفحات العامة.
             </p>
           </section>
 
           <section aria-labelledby="privacy-retention-ar">
             <h2 id="privacy-retention-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              الاحتفاظ
+              مدة الاحتفاظ بالاستفسارات
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
-              تُحفَظ الاستفسارات بقدر ما يلزم لخدمتكم والالتزامات القانونية أو المحاسبية والدفاع عن المطالب. قد يبقى
-              التجميعي لدى مزودين وفق سياساتهم.
+              تُحفَظ الاستفسارات بالقدر اللازم لخدمتكم والوفاء بالالتزامات القانونية أو المحاسبية. وقد تبقى بيانات
+              قياس مجمّعة لدى مزودي الخدمة وفق سياساتهم.
             </p>
           </section>
 
           <section aria-labelledby="privacy-rights-ar">
             <h2 id="privacy-rights-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              الوصول والتصحيح وأدوات المنصات
+              حقوقك في الوصول والتصحيح
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
               يمكنكم طلب الاطلاع أو التصحيح أو المحو وفق القانون المعمول. لتفضيلات الإعلان على Google وMeta استخدموا
@@ -107,7 +106,7 @@ export default function ArabicPrivacyPolicyPage() {
 
           <section aria-labelledby="privacy-changes-ar">
             <h2 id="privacy-changes-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              التحديثات
+              تحديثات سياسة الخصوصية
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
               قد نحدِّث هذه الصفحة مع تغيُّر الممارسات أو الشركاء. تابعوا{" "}

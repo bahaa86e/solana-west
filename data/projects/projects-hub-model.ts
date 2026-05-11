@@ -70,9 +70,9 @@ function internalLinksEditorial(short: string): readonly ProjectsHubInternalLink
     {
       label: `${short} project hub`,
       href: "/projects/solana-west",
-      context: "Issuance-led compound narrative, amenities, location, and FAQ depth.",
+      context: "Current sales compound narrative, amenities, location, and FAQ depth.",
     },
-    { label: "Prices", href: "/prices", context: "Reference brackets — confirm with sales before reserving." },
+    { label: "Prices", href: "/prices", context: "Starting price brackets — confirm with sales before reserving." },
     { label: "Payment plan", href: "/payment-plan", context: "Headline structure; contract governs at signing." },
     {
       label: "Standalone villas",
@@ -111,10 +111,10 @@ function buildFeaturedList(): readonly ProjectsHubFeaturedProject[] {
       entry.slug === "solana-west"
         ? ([
             `316-acre, low-density master plan on Mehwar El Dabaa in New Zayed — walkable green structure, elevated villa frontage, apartments through standalone villas, fully finished or core & shell per SKU.`,
-            `Use the project hub for amenities, payment framing, and canonical FAQs; commercial availability and phase maps remain issuance-led through ${siteConfig.developer} desks.`,
+            `Use the project hub for amenities, payment framing, and canonical FAQs; commercial availability and phase maps remain sales-team confirmed through ${siteConfig.developer} desks.`,
           ] as const)
         : ([
-            `Authorised ${siteConfig.developer} hub route for ${entry.name}. Commercial terms, availability, and technical appendices route through desk-verified collateral.`,
+            `Authorised ${siteConfig.developer} hub route for ${entry.name}. Commercial terms, availability, and technical appendices route through sales-verified project information.`,
           ] as const);
 
     return { entry, teaser, image };
@@ -131,16 +131,16 @@ export function buildProjectsHubPageModel(): ProjectsHubPageModel {
     heroImage: solanaWestMedia.hero,
     hero: {
       eyebrow: `${ora} · West Cairo · Project index`,
-      h1: "ORA Developers Egypt · project index anchored by Solana West",
+      h1: "ORA Developer Egypt · project index anchored by Solana West",
       lead: `${ora} stages large-format residential land as coherent compounds — landscape, servicing, and typology mix are negotiated as a single design thesis rather than ad-hoc parcel sales. This index lists authorised project hubs; only entries published here carry detailed routing.`,
-      supporting: `Chaired by ${founder}, ORA’s Egypt pipeline competes on institutional delivery and long-horizon servicing. This page does not announce unissued projects, speculative phases, or availability tallies — each hub remains factual to released collateral.`,
+      supporting: `Chaired by ${founder}, ORA’s Egypt pipeline competes on institutional delivery and long-horizon servicing. This page does not announce unissued projects, speculative phases, or availability tallies — each hub remains factual to released project information.`,
     },
     overview: {
       eyebrow: "Projects overview",
       title: "Index pages first — booking packs close the loop",
       paragraphs: [
-        "Project hubs consolidate what serious buyers request in sequence: typology logic, commercial framing, connectivity, amenity depth, and FAQ discipline. New destinations appear only when desk collateral is ready—not as placeholder cards.",
-        `${short} is the active fully routed compound on this site. Reference pricing, payment headline, and delivery horizon stay aligned with /prices and /payment-plan—yet reservation always depends on your dated issuance pack.`,
+        "Project hubs consolidate what serious buyers request in sequence: typology logic, commercial framing, connectivity, amenity depth, and FAQ discipline. New destinations appear only when project information is ready—not as placeholder cards.",
+        `${short} is the active fully routed compound on this site. Apartment pricing, payment headline, and delivery horizon stay aligned with /prices and /payment-plan—yet reservation always depends on your dated sales pack.`,
         "The links below route you to typology pages, price context, master plan scale, and geography—each answers a distinct buyer intent without repeating the hub narrative.",
       ],
       figure: solanaWestMedia.projectOverview,
@@ -150,8 +150,8 @@ export function buildProjectsHubPageModel(): ProjectsHubPageModel {
       title: "ORA compounds read against New Zayed’s western spine",
       paragraphs: [
         "New Zayed extends the western residential spine of Greater Cairo — Mehwar El Dabaa, ring-road reach, and airport-adjacent demand are already how institutions read the district. ORA compounds participate in that narrative through low-density land plans and walkable green armatures rather than maximum-yield stacking.",
-        "West Cairo competition includes large-scale peers (commonly cited comparables such as VYE and Belle Vie sit nearby in market conversation). This index references them only as district context, never as partnership or co-brand claims.",
-        "ORA positioning emphasizes architectural discipline, landscape continuity, and staged servicing — material for investors who underwrite counterparty quality and multi-year hold behaviour, not brochure-only comparisons.",
+        "West Cairo competition includes large-scale peers (commonly cited comparables such as VYE and Belle Vie sit nearby in market conversation). This index mentions them only as district context, never as partnership or co-brand claims.",
+        "ORA positioning emphasizes architectural discipline, landscape continuity, and staged servicing — material for investors who review developer quality and multi-year hold behaviour, not brochure-only comparisons.",
       ],
     },
     projectCardsEyebrow: "Detailed hubs",
@@ -172,7 +172,7 @@ export function buildProjectsHubPageModel(): ProjectsHubPageModel {
     },
     finalCta: {
       eyebrow: "Desk verification",
-      title: "Escalate from this index to stamped collateral",
+      title: "Escalate from this index to stamped project information",
       supporting: `Request hub-specific briefings, phased maps, or typology sheets through ${ora} accredited channels—no synthetic inventory or unpublished project naming.`,
       primaryLabel: "WhatsApp private desk",
       secondaryLabel: "Written enquiry",

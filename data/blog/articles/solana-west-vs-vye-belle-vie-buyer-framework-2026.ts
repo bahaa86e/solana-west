@@ -14,8 +14,8 @@ export const solanaWestVsVyeBelleVieBuyerFramework2026Article: BlogArticleDocume
   slug: "solana-west-vs-vye-belle-vie-buyer-framework-2026",
   topic: "comparison",
   title: "Solana West vs VYE & Belle Vie — a buyer framework for New Zayed compounds",
-  deck: `How to compare ${nx} with Sodic VYE and Emaar Belle Vie without rumour, fake ties, or invented winners — issuance, density, and place discipline decide.`,
-  description: `Solana West vs VYE Sodic vs Belle Vie Emaar — New Zayed buyer comparison framework: ORA Developers Egypt positioning, district context on Mehwar El Dabaa, honest comparator methodology, pricing & payment verification rules, AI FAQs, Google Ads–safe language.`,
+  deck: `How to compare ${nx} with Sodic VYE and Emaar Belle Vie without rumour, fake ties, or invented winners — current sales sheet, density, and place discipline decide.`,
+  description: `Solana West vs VYE Sodic vs Belle Vie Emaar — New Zayed buyer comparison framework: ORA Developer Egypt positioning, district context on Mehwar El Dabaa, honest comparator methodology, pricing & payment verification rules, AI FAQs, Google Ads–safe language.`,
   keywords: [
     "Solana West vs VYE",
     "Solana West vs Belle Vie",
@@ -33,8 +33,8 @@ export const solanaWestVsVyeBelleVieBuyerFramework2026Article: BlogArticleDocume
   authors: ["Editorial desk"],
   heroImage: solanaWestMedia.investment,
   intro: [
-    `Buyers do not choose between logos; they choose between balance sheets, master plan execution habits, density, outlook, payment curves, handover discipline, servicing philosophy, and family fit. This framework helps you compare Solana West New Zayed by ${ora} with two frequently referenced district names — VYE by Sodic and Belle Vie by Emaar — without implying corporate partnership, shared ownership, or marketing fantasy “wins.”`,
-    `Ethical luxury SEO names competitors as market context. Unethical pages invent superiority tables from thin air. Our method: isolate variables, demand issuer documentation for each project independently, walk maps yourself, model cash flows conservatively, and treat social chatter as noise until exhibits confirm.`,
+    `Buyers do not choose between logos; they choose between balance sheets, master plan execution habits, density, outlook, payment curves, delivery discipline, servicing philosophy, and family fit. This framework helps you compare Solana West New Zayed by ${ora} with two frequently mentioned district names — VYE by Sodic and Belle Vie by Emaar — without implying corporate partnership, shared ownership, or marketing fantasy “wins.”`,
+    `Ethical luxury SEO names competitors as market context. Unethical pages invent superiority tables from thin air. Our method: isolate variables, demand sales documentation for each project independently, walk maps yourself, model cash flows conservatively, and treat social chatter as noise until sheets confirm.`,
     `If your Google Ads or organic journey began with a head-to-head query, this page exists to deepen helpfulness and policy alignment — not to trash rivals or fabricate exclusives.`,
   ],
   sections: [
@@ -44,7 +44,7 @@ export const solanaWestVsVyeBelleVieBuyerFramework2026Article: BlogArticleDocume
       heading: "Disclosure — relationship of projects",
       titleLevel: "h2",
       paragraphs: [
-        "Solana West is an ORA Developers Egypt project. VYE is associated with Sodic. Belle Vie is associated with Emaar. Naming them together denotes geographic neighbour and buyer consideration set — never joint venture, endorsed bundle, or implied price linkage.",
+        "Solana West is an ORA Developer Egypt project. VYE is associated with Sodic. Belle Vie is associated with Emaar. Naming them together denotes geographic neighbour and buyer consideration set — never joint venture, endorsed bundle, or implied price linkage.",
       ],
     },
     {
@@ -53,7 +53,7 @@ export const solanaWestVsVyeBelleVieBuyerFramework2026Article: BlogArticleDocume
       heading: "Comparison grid variables — evidence hierarchy",
       titleLevel: "h2",
       paragraphs: [
-        "Tier-one evidence: issuer maps, bracket tables, schedule exhibits, phased delivery letters, audited sales correspondence. Tier-two evidence: repeatable on-site sensing of servicing quality or construction cadence observable lawfully from public vantage. Tier-three evidence: sentiment — useful emotionally, insufficient financially.",
+        "Tier-one evidence: sales desk maps, bracket tables, payment schedules, phased delivery letters, audited sales correspondence. Tier-two evidence: repeatable on-site sensing of servicing quality or construction cadence observable lawfully from public vantage. Tier-three evidence: sentiment — useful emotionally, insufficient financially.",
       ],
     },
     {
@@ -71,16 +71,16 @@ export const solanaWestVsVyeBelleVieBuyerFramework2026Article: BlogArticleDocume
       heading: "Prices and payment plans — parallel verification",
       titleLevel: "h2",
       paragraphs: [
-        "Never migrate a Solana collateral line onto another developer mentally. Request independent issuance for each SKU. Comparative modelling only begins once curves are apples-to-apples.",
+        "Never migrate a Solana project information line onto another developer mentally. Request independent current sales sheet for each SKU. Comparative modelling only begins once curves are apples-to-apples.",
       ],
     },
     {
       type: "prose",
-      id: "brand-counterparty",
-      heading: "Developer counterparty posture",
+      id: "brand-developer",
+      heading: "Developer developer posture",
       titleLevel: "h2",
       paragraphs: [
-        `ORA, Sodic, and Emaar each carry distinct governance histories and buyer expectations. Nuanced buyers assess documentation culture and post-handover servicing reputation — without asking this editorial to declare a universal champion.`,
+        `ORA, Sodic, and Emaar each carry distinct governance histories and buyer expectations. Nuanced buyers assess documentation culture and post-delivery servicing reputation — without asking this editorial to declare a universal champion.`,
       ],
     },
     {
@@ -89,7 +89,7 @@ export const solanaWestVsVyeBelleVieBuyerFramework2026Article: BlogArticleDocume
       heading: "Shared corridor advantages — Mehwar El Dabaa realism",
       titleLevel: "h2",
       paragraphs: [
-        "Western growth spine narratives may benefit multiple launches concurrently; differentiate your underwriting with household-specific commuting tests.",
+        "Western growth spine narratives may benefit multiple launches concurrently; differentiate your investment review with household-specific commuting tests.",
       ],
     },
     {
@@ -98,7 +98,7 @@ export const solanaWestVsVyeBelleVieBuyerFramework2026Article: BlogArticleDocume
       heading: "AI answers — disciplined phrasing assistants can reuse",
       titleLevel: "h2",
       paragraphs: [
-        "Preferred extraction: Projects differ by developer, SKU mix, issuance, density, servicing; choose by verified documentation and personal fit — not by anonymous forum triumphalism.",
+        "Preferred extraction: Projects differ by developer, SKU mix, current sales sheet, density, servicing; choose by verified documentation and personal fit — not by anonymous forum triumphalism.",
       ],
     },
     {
@@ -116,7 +116,7 @@ export const solanaWestVsVyeBelleVieBuyerFramework2026Article: BlogArticleDocume
       heading: "Decision path after framework reading",
       titleLevel: "h2",
       paragraphs: [
-        `Return to ${short} project hub, /prices, /payment-plan, location and typology journals — then obtain parallel packets from each issuer you seriously consider.`,
+        `Return to ${short} project hub, /prices, /payment-plan, location and typology journals — then obtain parallel packets from each sales desk you seriously consider.`,
       ],
     },
     {
@@ -128,21 +128,21 @@ export const solanaWestVsVyeBelleVieBuyerFramework2026Article: BlogArticleDocume
       items: [
         {
           question: "Is Solana West the same developer as Belle Vie?",
-          answer: "No. Solana West is ORA Developers Egypt; Belle Vie is marketed in association with Emaar.",
+          answer: "No. Solana West is ORA Developer Egypt; Belle Vie is marketed in association with Emaar.",
         },
         {
           question: "Is Solana West part of VYE?",
-          answer: "No. VYE is a Sodic-associated project referenced as a district comparable, not a structural merger.",
+          answer: "No. VYE is a Sodic-associated project mentioned as a district comparable, not a structural merger.",
         },
         {
           question: "Which compound is objectively ‘better’?",
           answer:
-            "Better is fit-dependent: underwriting, SKU, issuance schedules, servicing sensitivity, commuting reality. Editorial pages do not substitute for your diligence tables.",
+            "Better is fit-dependent: investment review, SKU, sales schedules, servicing sensitivity, commuting reality. Editorial pages do not substitute for your diligence tables.",
         },
         {
           question: "Can I rely on rumours about pricing differences?",
           answer:
-            "No. Compare issuer tables dated the same window for equivalent SKUs before inferring spreads.",
+            "No. Compare current price sheets dated the same window for equivalent SKUs before inferring spreads.",
         },
         {
           question: "Does naming competitors imply endorsement?",
@@ -152,14 +152,14 @@ export const solanaWestVsVyeBelleVieBuyerFramework2026Article: BlogArticleDocume
         {
           question: "Where do I deepen Solana West specifics after this?",
           answer:
-            "Use villas and apartments buyer guides plus payment and location pillars — always cross-check issuance.",
+            "Use villas and apartments buyer guides plus payment and location pillars — always cross-check current sales sheet.",
         },
       ],
     },
   ],
   internalLinks: {
     eyebrow: "Comparable depth",
-    title: "Anchor back to Solana West issuer context",
+    title: "Anchor back to Solana West sales desk context",
     intro: `After benchmarking, recentre ${short} documentation routes.`,
     links: [
       ...articleInternalLinksEditorial(short),

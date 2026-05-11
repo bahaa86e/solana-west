@@ -41,7 +41,7 @@ export const HOME_VISUAL_BEATS = {
     kicker: "Golden hour",
     caption: "Water holds the sky. The plan keeps leisure inside the walk.",
   },
-  /** Greenscape circulation — graded extract from issuance hero (`lifestyleOutdoorCalm` registry path). */
+  /** Greenscape circulation — graded extract from current sales sheet hero (`lifestyleOutdoorCalm` registry path). */
   estateCirculation: {
     mood: "lifestyle" as const,
     image: {

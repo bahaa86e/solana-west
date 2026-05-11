@@ -36,15 +36,15 @@ export default function ArabicThankYouPage({ searchParams }: PageProps) {
           id="thank-you-ar-heading"
           titleAs="h1"
           eyebrow="إقرار"
-          title={isLeadAck ? "تم استلام الاستفسار — سنرد قريباً" : "شكراً — تم استلام الطلب"}
+          title="تم تسجيل طلبك بنجاح"
           kicker={
             <p>
               {isLeadAck ?
                 <>
-                  يوازن المكتب الردود مع بيانات مطابقة للإصدار. تفضِّلون خيطاً حياً على نفس المكتب؟ اتصلوا أو واتساب
-                  على {siteConfig.phone}.
+                  تم استلام بياناتك. سنراجع نوع الاستفسار ونعود إليك بتفاصيل أوضح عن أسعار سولانا ويست أو خطة السداد.
+                  للرد الأسرع، يمكنك التواصل عبر واتساب أو الاتصال على {siteConfig.phone}.
                 </>
-              : <>لا تُعرَض تأكيدات إضافية على هذا المسار.</>}
+              : <>تم تسجيل الطلب، ويمكنك العودة للصفحة الرئيسية أو فتح واتساب إذا أردت متابعة أسرع.</>}
             </p>
           }
         />
@@ -58,11 +58,11 @@ export default function ArabicThankYouPage({ searchParams }: PageProps) {
             data-track="whatsapp_click"
             data-track-placement="thank_you_confirmation_ar"
           >
-            فتح واتساب
+            متابعة عبر واتساب
           </CtaButton>
 
           <CtaButton href={homeAr} variant="ghost" size="lg" data-track="cta_click">
-            العودة للرئيسية العربية
+            العودة للرئيسية
           </CtaButton>
 
           <Link
@@ -71,7 +71,7 @@ export default function ArabicThankYouPage({ searchParams }: PageProps) {
             data-track="cta_click"
             data-track-placement="thank_you_secondary_ar"
           >
-            مكتب التواصل
+            صفحة التواصل
           </Link>
         </div>
       </div>

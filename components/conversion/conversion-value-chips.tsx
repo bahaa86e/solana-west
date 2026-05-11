@@ -11,7 +11,7 @@ type Props = {
 };
 
 export function ConversionValueChips({ tone = "dark", className }: Props) {
-  const { croReferenceChipLabels } = useEditorialCopy();
+  const { croCommercialChipLabels } = useEditorialCopy();
   const chip =
     tone === "dark" ?
       "border border-white/20 bg-white/10 text-[10px] font-medium uppercase tracking-[0.14em] text-lux-paper/85"
@@ -24,9 +24,9 @@ export function ConversionValueChips({ tone = "dark", className }: Props) {
         tone === "dark" ? "text-lux-paper/82" : "text-lux-ink/72",
         className,
       )}
-      aria-label="Reference commercial terms for underwriting"
+      aria-label="Commercial terms for Solana West buyers"
     >
-      {croReferenceChipLabels.map((label) => (
+      {croCommercialChipLabels.map((label) => (
         <li key={label}>
           <span className={cn("inline-flex rounded-full px-3 py-2.5 sm:px-[0.85rem] sm:py-[0.5rem]", chip)}>
             {label}

@@ -15,7 +15,7 @@ export const homeMetadata: RouteSeoDefinition = {
   keywords: [
     "Solana West prices New Zayed",
     "Solana West payment plan",
-    "ORA Developers Egypt New Zayed",
+    "ORA Developer Egypt New Zayed",
     "luxury villas New Zayed",
     "West Cairo master plan compound",
     "Mehwar El Dabaa real estate",
@@ -30,18 +30,18 @@ export const homeSections = {
   hero: {
     locationEyebrow: "New Zayed · Mehwar El Dabaa",
     /** Distinct from /projects/solana-west: estate positioning + buyer intent, not project-table-of-contents */
-    h1: "Solana West — New Zayed homes by ORA Developers Egypt",
+    h1: "Solana West — New Zayed homes by ORA Developer Egypt",
     communityLine: `316-acre walkable estate by ${siteConfig.developer}—one composed ground plane of landscape, circulation, and architecture.`,
     seoSupportLine:
-      "Villas, twin houses, townhouses, apartments. Commercial terms confirmed at issuance—not on marketing summaries.",
+      "Villas, twin houses, townhouses, apartments. Commercial terms are confirmed by the sales team, not by marketing summaries.",
   },
 
-  /** AI-search facing facts — visible HTML; issuance still governs reservations. */
+  /** AI-search facing facts — visible HTML; current sales sheet confirms reservations reservations. */
   snapshot: {
-    caption: "Collateral snapshot — verify figures on your booking pack.",
+    caption: "Commercial snapshot — verify figures on your booking pack.",
     rows: [
-      { label: "Starting reference", value: "From 9.8M EGP" },
-      { label: "Payment plan", value: "5% down · up to 10 years (issuance schedule)" },
+      { label: "Starting price", value: "From 9.8M EGP" },
+      { label: "Payment plan", value: "5% down · up to 10 years (current sales schedule)" },
       { label: "Developer", value: `${siteConfig.developer}` },
       { label: "Location", value: "New Zayed · Mehwar El Dabaa" },
       { label: "Delivery", value: "From 2027 (cluster-specific)" },
@@ -50,10 +50,10 @@ export const homeSections = {
   },
 
   trust: {
-    eyebrow: "Counterparty",
-    title: "ORA Developers Egypt — your issuance counterparty",
+    eyebrow: "Developer",
+    title: "ORA Developer Egypt — your project developer",
     paragraphs: [
-      `Chairman ${siteConfig.founder}: land is staged and sold with portfolio-grade rigor—your counterparty is ${siteConfig.developer}, not brochure copy. At ${siteConfig.shortName}, villas and rows sit inside one continuous landscape system so the estate reads as a single authored place.`,
+      `Chairman ${siteConfig.founder}: land is staged and sold with portfolio-grade rigor—your developer is ${siteConfig.developer}, not brochure copy. At ${siteConfig.shortName}, villas and rows sit inside one continuous landscape system so the estate reads as a single authored place.`,
     ],
   },
 
@@ -71,7 +71,7 @@ export const homeSections = {
     eyebrow: "Scale",
     title: "See allocation before you choose a SKU",
     intro:
-      "The masterplan is the contract between capital and land: where density sits, how open space holds, and how the estate stays legible from the first drive through daily life. Use it to align unit choice with the horizon you are underwriting.",
+      "The masterplan is the sales agreement between capital and land: where density sits, how open space holds, and how the estate stays legible from the first drive through daily life. Use it to align unit choice with the horizon you are investment review.",
   },
 
   location: {
@@ -90,7 +90,7 @@ export const homeSections = {
       },
       {
         term: "Market frame",
-        detail: "Adjacent large-scale references include VYE (Sodic) and Belle Vie (Emaar)—comparables only, not affiliations.",
+        detail: "Adjacent large-scale mentions include VYE (Sodic) and Belle Vie (Emaar)—comparables only, not affiliations.",
       },
     ],
   },
@@ -99,7 +99,7 @@ export const homeSections = {
     eyebrow: "Thesis",
     title: "Why West Cairo assigns attention to this corridor",
     lead:
-      "Underwriting rests on corridor depth, ORA execution posture, and whether the plan protects open space over a long hold—geography and governance do the work here, not slogans.",
+      "Investment review rests on corridor depth, ORA execution posture, and whether the plan protects open space over a long hold—geography and governance do the work here, not slogans.",
     bullets: [
       {
         headline: "West Cairo corridor",
@@ -107,7 +107,7 @@ export const homeSections = {
           "Mehwar El Dabaa and ring maturity link Sheikh Zayed, expansion zones, and airport-adjacent movement—demand along the spine is structural.",
       },
       {
-        headline: "ORA counterparty",
+        headline: "ORA developer",
         text: `${siteConfig.developer} sequences servicing, landscape, and sales with one thread from reservation to delivery.`,
       },
       {
@@ -118,7 +118,7 @@ export const homeSections = {
       {
         headline: "Hold discipline",
         text:
-          "Delivery from 2027: model cash flow only after cluster-specific issuance—not marketing quarter language.",
+          "Delivery from 2027: model cash flow only after cluster-specific current sales sheet—not marketing quarter language.",
       },
     ],
   },
@@ -127,13 +127,13 @@ export const homeSections = {
     eyebrow: "Residences",
     title: "Four archetypes, one estate",
     intro:
-      "Inventory is phased across apartments, townhouses, twin houses, and standalone villas—finishing paths include fully finished and core & shell where applicable. Issuance sets exact brackets; marketing figures orient intent only.",
+      "Inventory is phased across apartments, townhouses, twin houses, and standalone villas—finishing paths include fully finished and core & shell where applicable. The current sales sheet confirms exact brackets; marketing figures orient intent only.",
     types: [
       {
         title: "Apartments",
         description:
           "Elevated apartment product set within the green structure—suited to owner-occupiers who want estate governance without villa land carry, or investors sizing rental exposure inside a managed compound.",
-        investorNote: "Lower land coefficient per unit—watch phase-specific issuance bands.",
+        investorNote: "Lower land coefficient per unit—watch phase-specific price bands.",
       },
       {
         title: "Townhouses",
@@ -150,23 +150,23 @@ export const homeSections = {
       {
         title: "Standalone villas",
         description:
-          "Detached villas, elevated where the plan allows for open green outlooks. Finishing may be fully finished or core & shell—confirm façade packages and lot dimensions at the desk.",
+          "Detached villas, elevated where the plan allows for open green outlooks. Finishing may be fully finished or core & shell—confirm façade packages and lot dimensions with the sales team.",
         investorNote:
-          "Published starting context from 9.8M EGP—phase, outlook, and specification move price; verify with issuance.",
+          "Apartments starting from 9.8M EGP; phase, outlook, and specification move live prices.",
       },
     ],
   },
 
   payment: {
     eyebrow: "Acquisition",
-    title: "Reference economics — your booking file still governs",
+    title: "Apartment pricing and payment plan",
     summary:
-      "9.8M EGP reference · 5% down · up to 10 years · delivery from 2027—signed issuance governs milestones, interest mechanics, and penalties.",
+      "Apartments starting from 9.8M EGP · 5% down payment · Installments up to 10 years · Delivery from 2027",
     bullets: [
       "Live brackets reset by phase, typology, finishing, outlook—never by landing copy alone.",
-      "5% down: confirm deposits, admin lines, milestone cadence in your pack.",
-      "Ten-year horizon is marketing language—the amortisation curve is contractual.",
-      "Delivery from 2027 disperses by cluster—align issuance before underwriting rent.",
+      "5% down: confirm deposits, fee lines, payment timing in your pack.",
+      "Ten-year language is a headline; the sales team confirms the actual schedule.",
+      "Delivery from 2027 varies by cluster; align timing before investment review rent.",
     ],
   },
 
@@ -203,7 +203,7 @@ export const homeSections = {
     eyebrow: "Acquisition",
     title: "Request live pricing for your typology and hold horizon",
     supporting:
-      "Share typology, finishing path, and hold horizon—the advisory desk returns issuance-ready availability and schedule context (WhatsApp or written enquiry).",
+      "Share typology, finishing path, and hold horizon—the advisory desk returns sales-ready availability and schedule context (WhatsApp or written enquiry).",
     primaryLabel: "Private acquisition desk",
     secondaryLabel: "Speak with advisory desk",
   },

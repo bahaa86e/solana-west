@@ -60,30 +60,30 @@ export function buildContactPageModel(): ContactPageModel {
       lead:
         `Use this page to reach ${dev} for ${project} with minimal friction: direct channels for fast context, or a compact written enquiry when you prefer a recorded hand-off.`,
       supporting:
-        "No urgency framing and no implied inventory — responses follow accredited desk hours. WhatsApp and phone are often the fastest path to issuance-aligned answers.",
+        "No urgency framing and no implied inventory — responses follow accredited desk hours. WhatsApp and phone are often the fastest path to sales-confirmed answers.",
     },
     overview: {
       eyebrow: "Contact overview",
       title: "Accredited desks — how Solana West briefs route",
       paragraphs: [
-        `${short} sales operate through ${dev}'s authorised workflow — quotations, milestones, reservations, and after-sales escalation are documented desk-side, not improvised from chat excerpts alone.`,
-        "This inquiry layer is informational: align your preferred channel (instant messaging, voice, or structured form), then rely on issuance paperwork for binding commercial terms.",
-        "Prefer self-serve facts first — review prices, payment plan, location, and FAQ routes on this site; use contact when your brief requires typology routing or issuance verification.",
+        `${short} sales operate through ${dev}'s authorised workflow — quotations, payment steps, reservations, and after-sales escalation are documented desk-side, not improvised from chat excerpts alone.`,
+        "This inquiry layer is informational: align your preferred channel (instant messaging, voice, or structured form), then rely on current sales sheet paperwork for final commercial terms.",
+        "Prefer self-serve facts first — review prices, payment plan, location, and FAQ routes on this site; use contact when your brief requires typology routing or current sales sheet verification.",
       ],
     },
     reassurance: {
       eyebrow: "Inquiry reassurance",
       title: "Routing integrity — no phantom inventory theatrics",
       paragraphs: [
-        "Three visible fields — name, phone, and typology preference — minimise friction while still routing issuance-aware briefs.",
-        "Third-party intermediaries referencing the compound are not vetted via this route — broker engagement remains your diligence matter unless ORA designates an accredited channel partner.",
+        "Three visible fields — name, phone, and typology preference — minimise friction while still routing sales-aware briefs.",
+        "Third-party intermediaries mentioning the compound are not vetted via this route — broker engagement remains your diligence matter unless ORA designates an accredited channel partner.",
       ],
     },
     channels: {
       eyebrow: "Direct channels",
       title: "WhatsApp, voice and email — one desk philosophy",
       intro:
-        "Choose the modality that suits your underwriting rhythm — all route into the same desk philosophy: calm, documentary, issuance-led.",
+        "Choose the modality that suits your investment review rhythm — all route into the same desk philosophy: calm, documentary, sales-team confirmed.",
     },
     formColumn: {
       eyebrow: "Written enquiry",

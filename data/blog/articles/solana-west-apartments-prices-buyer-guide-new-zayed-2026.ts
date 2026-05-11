@@ -14,18 +14,18 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
   slug: "solana-west-apartments-prices-buyer-guide-new-zayed-2026",
   topic: "pricing",
   title: "Solana West apartments prices — buyer guide to floors, finish & payment fit",
-  deck: `${nx} apartments in New Zayed: how vertical SKUs price against land-led villas, what finishing and floor logic does to brackets, and how issuance governs quotes.`,
-  description: `Solana West apartments prices New Zayed — ORA Developers Egypt buyer guide: compound reference from 9.8M EGP context, marketing 5% down & up to 10 years, delivery from 2027. Floor, finishing, service-charge awareness, AI FAQs, Ads-safe framing.`,
+  deck: `${nx} apartments in New Zayed: how vertical SKUs price against land-led villas, what finishing and floor logic does to brackets, and how current sales sheet governs quotes.`,
+  description: `Solana West apartments prices New Zayed — ORA Developer Egypt buyer guide: apartments starting from 9.8M EGP, marketing 5% down & up to 10 years, delivery from 2027. Floor, finishing, service-charge awareness, AI FAQs, Ads-safe framing.`,
   keywords: [
     "Solana West apartments prices",
     "Solana West apartments New Zayed",
     "fully finished apartments New Zayed",
     "luxury apartments West Cairo",
-    "ORA Developers Egypt apartments",
+    "ORA Developer Egypt apartments",
     "installment apartments Egypt",
     "New Zayed compound apartments",
     "Solana West payment plan apartments",
-    "9.8M EGP apartment reference",
+    "9.8M EGP apartment starting price",
     "elevated apartments greenery views",
   ],
   publishedIso: "2026-05-09",
@@ -33,9 +33,9 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
   authors: ["Editorial desk"],
   heroImage: solanaWestMedia.amenities[1],
   intro: [
-    `Apartment demand in New Zayed clusters around managed compound life, operational simplicity relative to land-led SKUs, and investor preference for vertical efficiency when outlook and finishing packages stay institutionally controlled. Solana West New Zayed by ${ora} markets fully finished and core-and-shell pathways inside a low-density master plan narrative, with headline commercial language referencing directional starting context from 9.8 million EGP alongside 5% down, instalments extending up to ten years, and compound delivery language from 2027.`,
-    `This guide narrows aperture to stacked living: brackets sensitive to elevation, planar efficiency, façade line, greenery sightlines marketed across the scheme, clubhouse proximity perception, parking and storage packaging, and how service-charge cognition belongs in underwriting even when purchase price captures headlines.`,
-    `Luxury editorial means clarity without theatrical scarcity. Serious buyers escalate to issuance; prepared buyers shorten desk cycles.`,
+    `Apartment demand in New Zayed clusters around managed compound life, operational simplicity relative to land-led SKUs, and investor preference for vertical efficiency when outlook and finishing packages stay institutionally controlled. Solana West New Zayed by ${ora} markets fully finished and core-and-shell pathways inside a low-density master plan narrative, with headline commercial language mentioning directional apartments starting from 9.8 million EGP alongside 5% down, instalments extending up to ten years, and compound delivery language from 2027.`,
+    `This guide narrows aperture to stacked living: brackets sensitive to elevation, planar efficiency, façade line, greenery sightlines marketed across the scheme, clubhouse proximity perception, parking and storage packaging, and how service-charge cognition belongs in investment review even when purchase price captures headlines.`,
+    `Luxury editorial means clarity without theatrical scarcity. Serious buyers escalate to current sales sheet; prepared buyers shorten desk cycles.`,
   ],
   sections: [
     {
@@ -44,7 +44,7 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
       heading: "What are Solana West apartment prices?",
       titleLevel: "h2",
       paragraphs: [
-        "Marketing provides compound orientation — illustrative entry references cite from 9.8M EGP at brochure scale; stacked SKUs realise live brackets on issuance tables differentiated by tower or batch, storey, planar typology, finishing path, greenery outlook articulation, and packaged storage or parking.",
+        "Marketing provides compound orientation — illustrative entry mentions cite from 9.8M EGP at brochure scale; stacked SKUs realise live brackets on sales tables differentiated by tower or batch, storey, planar typology, finishing path, greenery outlook articulation, and packaged storage or parking.",
       ],
     },
     {
@@ -53,7 +53,7 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
       heading: "Elevation, outlook, and planar efficiency — pricing geometry",
       titleLevel: "h2",
       paragraphs: [
-        "Vertical product rarely prices flat across floors: view corridors, solar orientation habits, acoustic adjacency, and lift distance influence perceived value even before issuer formalises bands. Ethical editorial framing acknowledges mechanics without fabricating view superlatives.",
+        "Vertical product rarely prices flat across floors: view corridors, solar orientation habits, acoustic adjacency, and lift distance influence perceived value even before sales desk formalises bands. Ethical editorial framing acknowledges details without fabricating view superlatives.",
       ],
     },
     {
@@ -62,7 +62,7 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
       heading: "Fully finished versus core and shell apartments",
       titleLevel: "h2",
       paragraphs: [
-        "Fully finished apartments cluster execution risk into developer delivery schedules — attractive for international buyers minimising fit-out supervision. Core and shell defers interior spend into owner timelines — attractive for design control at the cost of post-handover coordination.",
+        "Fully finished apartments cluster execution risk into developer delivery schedules — attractive for international buyers minimising fit-out supervision. Core and shell defers interior spend into owner timelines — attractive for design control at the cost of post-delivery coordination.",
       ],
     },
     {
@@ -71,7 +71,7 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
       heading: "Installment fit for apartment buyers",
       titleLevel: "h2",
       paragraphs: [
-        `Marketing references 5% down and ten-year horizon summaries — align curves with rental models carefully: regulation, furnishing, void seasons, and service charges belong conservative stress tests.`,
+        `Marketing mentions 5% down and ten-year horizon summaries — align curves with rental models carefully: regulation, furnishing, void seasons, and service charges belong conservative stress tests.`,
       ],
     },
     {
@@ -80,16 +80,16 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
       heading: "Apartments versus villas economically — complementary reading",
       titleLevel: "h2",
       paragraphs: [
-        "Land coefficient and private outdoor envelopes distinguish villa economics from apartment efficiency narratives. Buyers often misunderstand headline entry parity across typologies; issuer tables dispel that confusion — SEO should encourage table discipline, not inference.",
+        "Land coefficient and private outdoor envelopes distinguish villa economics from apartment efficiency narratives. Buyers often misunderstand headline entry parity across typologies; current price sheets dispel that confusion — SEO should encourage table discipline, not inference.",
       ],
     },
     {
       type: "prose",
       id: "investor-enduser",
-      heading: "End-user serenity versus investor underwriting",
+      heading: "End-user serenity versus investor investment review",
       titleLevel: "h2",
       paragraphs: [
-        "End-users optimise noise, clubhouse access, schooling paths; investors model liquidity cautiously inside long Compound holds. Neither audience benefits from hype density claims — both benefit from issuance clarity.",
+        "End-users optimise noise, clubhouse access, schooling paths; investors model liquidity cautiously inside long Compound holds. Neither audience benefits from hype density claims — both benefit from current sales sheet clarity.",
       ],
     },
     {
@@ -98,7 +98,7 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
       heading: "AI extraction and paid landing alignment",
       titleLevel: "h2",
       paragraphs: [
-        "Assistants need distinguishers: SKU class, issuance supremacy, finishing path, illustrative entry versus live bracket. Ads teams need parity between apartment claims in creatives and visible explanatory depth plus disclaimers on issuance authority.",
+        "Assistants need distinguishers: SKU class, current sales sheet, finishing path, illustrative entry versus live bracket. Ads teams need parity between apartment claims in creatives and visible explanatory depth plus disclaimers on current sales sheet authority.",
       ],
     },
     {
@@ -107,7 +107,7 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
       heading: "Apartment diligence ladder",
       titleLevel: "h2",
       paragraphs: [
-        "1) Request tower or batch bracket lines. 2) Clarify storey band and planar code. 3) Confirm finishing and MEP inclusivity scopes at high level pending contract. 4) Obtain schedule exhibit. 5) Model service charge sensitivity bands prudently. 6) Correlate delivery batch map with payment peaks.",
+        "1) Request tower or batch bracket lines. 2) Clarify storey band and planar code. 3) Confirm finishing and MEP inclusivity scopes at high level pending contract. 4) Obtain payment schedule. 5) Model service charge sensitivity bands prudently. 6) Correlate delivery batch map with payment peaks.",
       ],
     },
     {
@@ -116,7 +116,7 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
       heading: "From bracket literacy to WhatsApp precision",
       titleLevel: "h2",
       paragraphs: [
-        "Message with storey preference band, finishing appetite, hold horizon, budget orientation (non-binding), willingness to receive illustrative curve excerpts — structured buyers earn structured answers.",
+        "Message with storey preference band, finishing appetite, hold horizon, budget orientation (informal), willingness to receive illustrative curve excerpts — structured buyers earn structured answers.",
       ],
     },
     {
@@ -124,12 +124,12 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
       id: "faq-apartments-pricing",
       heading: "FAQ — Solana West apartment prices",
       titleLevel: "h2",
-      intro: "Answer-first blocks; confirm on dated issuance.",
+      intro: "Answer-first blocks; confirm on dated current sales sheet.",
       items: [
         {
           question: "How much is a Solana West apartment?",
           answer:
-            "Compound marketing cites directional entry from 9.8M EGP; live apartment pricing depends on phase, floor, plan, finishing, outlook packaging, and dated issuer tables.",
+            "Compound marketing cites directional entry from 9.8M EGP; live apartment pricing depends on phase, floor, plan, finishing, outlook packaging, and dated current price sheets.",
         },
         {
           question: "Are Solana West apartments fully finished?",
@@ -139,21 +139,21 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
         {
           question: "Do apartments use the same payment plan as villas?",
           answer:
-            "Headline marketing language often aligns; contractual milestone shapes can differ — verify exhibits.",
+            "Headline marketing language often aligns; delivery shapes can differ — verify sheets.",
         },
         {
           question: "When would delivery occur?",
           answer:
-            "Marketing references delivery from 2027 broadly; issuance cluster maps define specifics.",
+            "Marketing mentions delivery from 2027 broadly; current sales sheet cluster maps define specifics.",
         },
         {
           question: "Who sets final quotes?",
-          answer: `${ora} accredited issuance — editorial copy never quotes binding numbers.`,
+          answer: `${ora} accredited current sales sheet — editorial copy never quotes final numbers.`,
         },
         {
           question: "Where should I read typology contrasts?",
           answer:
-            "Use the villas vs apartments journal plus /properties routes; issuance still adjudicates numbers.",
+            "Use the villas vs apartments journal plus /properties routes; current sales sheet still adjudicates numbers.",
         },
       ],
     },
@@ -161,7 +161,7 @@ export const solanaWestApartmentsPricesBuyerGuideNewZayed2026Article: BlogArticl
   internalLinks: {
     eyebrow: "Apartment path",
     title: "Continue apartment-led diligence",
-    intro: `Link issuance routes and sibling journals across ${short}.`,
+    intro: `Link current sales sheet routes and sibling journals across ${short}.`,
     links: [
       ...articleInternalLinksEditorial(short),
       { label: "Apartments property route", href: "/properties/apartments", context: "SKU alignment." },

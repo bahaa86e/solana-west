@@ -28,13 +28,15 @@ export function buildPageMetadata(input: RouteSeoDefinition): Metadata {
 
   const imagePath = resolveOgImagePath(input);
   const ogImageUrl = imagePath ? toAbsoluteSiteUrl(imagePath) : undefined;
+  const ogImageAlt =
+    locale === "ar" ? "سولانا ويست نيو زايد من ORA Developer Egypt" : `${siteConfig.name} · ${siteConfig.developer}`;
   const ogImages = ogImageUrl
     ? [
         {
           url: ogImageUrl,
           width: 1200,
           height: 630,
-          alt: `${siteConfig.name} · ${siteConfig.developer}`,
+          alt: ogImageAlt,
         },
       ]
     : undefined;

@@ -30,7 +30,7 @@ const fontArabic = Noto_Sans_Arabic({
   weight: ["400", "500", "600", "700"],
 });
 
-/** Route-level pages export full metadata (canonical, OG, Twitter). Homepage uses `homeMetadata` in `app/page.tsx`. */
+/** Route-level pages export full metadata (canonical, OG, Twitter). Homepage uses `homeMetadata` in `app/(site)/page.tsx`. */
 export const metadata: Metadata = {
   metadataBase: getSiteUrl(),
   title: {

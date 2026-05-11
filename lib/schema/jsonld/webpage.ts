@@ -41,7 +41,7 @@ export function getHomeWebPageJsonLd(
         "@type": "Place",
         name:
           locale === "ar"
-            ? "الزيادة الجديدة · محور الضبعة، غرب القاهرة، مصر"
+            ? "نيو زايد · محور الضبعة، غرب القاهرة، مصر"
             : "New Zayed · Mehwar El Dabaa, West Cairo, Egypt",
       },
     },
@@ -50,7 +50,7 @@ export function getHomeWebPageJsonLd(
       url: imageUrl,
       caption:
         locale === "ar"
-          ? `${siteConfig.name} — مشروع مخطط عمومي مخضّر بتطوير ${siteConfig.developer}`
+          ? `سولانا ويست نيو زايد، مجتمع سكني فاخر من ${siteConfig.developer}`
           : `${siteConfig.name} — landscaped master-planned compound by ${siteConfig.developer}`,
     },
   };

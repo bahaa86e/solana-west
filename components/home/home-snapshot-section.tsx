@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 const { snapshot } = homeSections;
 
 /**
- * Collateral fact lattice — AI-overview friendly, issuance disclaimer visible.
+ * Commercial fact lattice — AI-overview friendly, current sales sheet disclaimer visible.
  */
 export function HomeSnapshotSection() {
   return (

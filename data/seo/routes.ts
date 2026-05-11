@@ -15,7 +15,7 @@ export const aboutPageSeo: RouteSeoDefinition = {
   description: `${nx} (${ora}, Chairman ${siteConfig.founder}). 316-acre New Zayed master plan: low density, walkable green structure, villas and apartments. Commercial terms available on request.`,
   openGraphImagePath: OG,
   keywords: [
-    "ORA Developers Egypt",
+    "ORA Developer Egypt",
     "Naguib Sawiris real estate",
     `${nx} developer`,
     "New Zayed master plan",
@@ -24,12 +24,12 @@ export const aboutPageSeo: RouteSeoDefinition = {
 
 export const projectsHubPageSeo: RouteSeoDefinition = {
   path: "/projects",
-  title: `ORA Developers Egypt projects · New Zayed & West Cairo | ${nx}`,
-  description: `${ora} project index: authoritative hubs for ${nx} (316-acre New Zayed low-density plan) and future ORA compounds as published. Typologies, pricing context, payment framing, location, master plan, FAQs — desk-verified issuance.`,
+  title: `ORA Developer Egypt projects · New Zayed & West Cairo | ${nx}`,
+  description: `${ora} project index: authoritative hubs for ${nx} (316-acre New Zayed low-density plan) and future ORA compounds as published. Typologies, pricing context, payment framing, location, master plan, FAQs — sales-verified current sales sheet.`,
   openGraphImagePath: OG,
   keywords: [
     `${nx} ORA`,
-    "ORA Developers Egypt projects",
+    "ORA Developer Egypt projects",
     "New Zayed master-planned compounds",
     "West Cairo ORA villas",
     "Naguib Sawiris ORA pipeline",
@@ -49,13 +49,13 @@ export const contactPageSeo: RouteSeoDefinition = {
 export const faqPageSeo: RouteSeoDefinition = {
   path: "/faq",
   title: `FAQ · 100 buyer questions | ${nx}`,
-  description: `Issuance-led FAQ on ${nx} by ${ora}: Solana West prices, payment plan (5% / up to 10 years), New Zayed Mehwar El Dabaa location, ORA Developers Egypt, villas/apartments/townhouses, master plan, amenities, investment, comparisons, delivery from 2027 + AI-style snippet answers.`,
+  description: `Current sales FAQ on ${nx} by ${ora}: Solana West prices, payment plan (5% / up to 10 years), New Zayed Mehwar El Dabaa location, ORA Developer Egypt, villas/apartments/townhouses, master plan, amenities, investment, comparisons, delivery from 2027 + AI-style snippet answers.`,
   openGraphImagePath: OG,
   keywords: [
     "Solana West FAQ",
     "Solana West prices FAQ",
     "Solana West payment plan FAQ",
-    "ORA Developers Egypt FAQ",
+    "ORA Developer Egypt FAQ",
     "New Zayed villas FAQ",
     "Solana West delivery 2027",
   ],
@@ -64,7 +64,7 @@ export const faqPageSeo: RouteSeoDefinition = {
 export const pricesPageSeo: RouteSeoDefinition = {
   path: "/prices",
   title: `Solana West prices New Zayed | ${ora}`,
-  description: `Reference entry from 9.8M EGP at ${nx}. Pricing is issuance-driven; request current availability, phase pricing, and villa vs apartment brackets from ${ora} sales.`,
+  description: `Apartments starting from 9.8M EGP at ${nx}. Pricing is sales-confirmed; request current availability, phase pricing, and villa vs apartment brackets from ${ora} sales.`,
   openGraphImagePath: OG,
   keywords: [
     "Solana West prices",
@@ -101,7 +101,7 @@ export const locationPageSeo: RouteSeoDefinition = {
 export const masterPlanPageSeo: RouteSeoDefinition = {
   path: "/master-plan",
   title: `${nx} master plan · 316 acres · low density New Zayed | ${ora}`,
-  description: `${nx}: 316-acre master-planned community — low-density batches, landscaped connectors, walkable structure, villa and apartment sequencing, open green rhythm, private landscaped pockets by ${ora}. Editorial scope — confirm parcel detail on issuance.`,
+  description: `${nx}: 316-acre master-planned community — low-density batches, landscaped connectors, walkable structure, villa and apartment sequencing, open green rhythm, private landscaped pockets by ${ora}. Editorial scope — confirm parcel detail on current sales sheet.`,
   openGraphImagePath: solanaWestMedia.masterplan.src,
   keywords: [
     "Solana West master plan",
@@ -116,12 +116,12 @@ export const masterPlanPageSeo: RouteSeoDefinition = {
 export const blogIndexPageSeo: RouteSeoDefinition = {
   path: "/blog",
   title: `${nx} research journal · New Zayed & ORA briefing | ${ora}`,
-  description: `${ora} editorial index: investor-grade briefing lanes for ${nx}, payment and pricing discourse, New Zayed geography, ORA counterparty literacy, comparisons. Issuance-collateral authoritative routes cross-linked.`,
+  description: `${ora} editorial index: investor-grade briefing lanes for ${nx}, payment and pricing discourse, New Zayed geography, ORA developer literacy, comparisons. Project information authoritative routes cross-linked.`,
   openGraphImagePath: OG,
   keywords: [
     `${siteConfig.shortName} blog`,
     "New Zayed investment articles",
-    "ORA Developers Egypt editorial",
+    "ORA Developer Egypt editorial",
     "West Cairo villa payment plan briefing",
     "compound comparison Egypt",
     "Solana West pricing commentary",
@@ -139,7 +139,7 @@ export const villasPageSeo: RouteSeoDefinition = {
 export const townhousesPageSeo: RouteSeoDefinition = {
   path: "/properties/townhouses",
   title: `Townhouses · ${nx} | ${ora}`,
-  description: `Townhouses within the ${nx} walkable master plan. Finishing options and commercial terms are issuance-specific — request current availability from ${ora}.`,
+  description: `Townhouses within the ${nx} walkable master plan. Finishing options and commercial terms are unit-specific — request current availability from ${ora}.`,
   openGraphImagePath: OG,
   keywords: ["Solana West townhouses", "New Zayed townhouses for sale"],
 };
@@ -155,7 +155,7 @@ export const apartmentsPageSeo: RouteSeoDefinition = {
 export const twinHousesPageSeo: RouteSeoDefinition = {
   path: "/properties/twin-houses",
   title: `Twin houses · ${nx} | ${ora}`,
-  description: `Twin-house typology inside ${nx}'s landscaped structure. Pricing and façade packages vary by issuance — pull the current sheet from ${ora}.`,
+  description: `Twin-house typology inside ${nx}'s landscaped structure. Pricing and façade packages vary by current sales sheet — pull the current sheet from ${ora}.`,
   openGraphImagePath: OG,
   keywords: ["Solana West twin houses", "New Zayed twin villas"],
 };

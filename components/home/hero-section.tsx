@@ -24,14 +24,14 @@ export function HeroSection() {
   const pricesHref = localizedPathname("/prices", locale);
   const heroFacts = [
     {
-      k: locale === "ar" ? "مرجع" : "Reference",
+      k: locale === "ar" ? "مرجع" : "Starting price",
       v: croCommercialFacts.startingFrom,
     },
     {
       k: locale === "ar" ? "هيكل الدفع" : "Structure",
       v: `${croCommercialFacts.downPayment} · ${croCommercialFacts.installments}`,
     },
-    { k: locale === "ar" ? "التسليم" : "Handover", v: croCommercialFacts.delivery },
+    { k: locale === "ar" ? "التسليم" : "Delivery", v: croCommercialFacts.delivery },
   ] as const;
 
   const reduceMotion = useReducedMotion();

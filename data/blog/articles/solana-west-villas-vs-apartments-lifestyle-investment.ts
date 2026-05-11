@@ -5,7 +5,7 @@ import { siteConfig } from "@/data/site";
 
 /**
  * Suggested schema: Article + FAQPage
- * Hero image ALT: master plan and spatial logic — Solana West New Zayed by ORA Developers Egypt (see heroImage.alt)
+ * Hero image ALT: master plan and spatial logic — Solana West New Zayed by ORA Developer Egypt (see heroImage.alt)
  */
 const short = siteConfig.shortName;
 const nx = siteConfig.name;
@@ -15,8 +15,8 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
   slug: "solana-west-villas-vs-apartments-lifestyle-investment",
   topic: "comparison",
   title: "Solana West villas vs apartments — lifestyle, economics, and investment fit",
-  deck: `Choose between Solana West villas and Solana West apartments with a clear frame: land carry, cash flow, family rhythm, and issuance brackets — not lifestyle clichés.`,
-  description: `Solana West villas vs apartments in New Zayed: end-user vs investor logic, family lifestyle, ROI considerations, and typology comparison for ORA Developers Egypt. Villas for sale New Zayed and apartments in New Zayed — bracket discipline, payment plan context, Mehwar El Dabaa compound life. Editorial guidance, not quotations.`,
+  deck: `Choose between Solana West villas and Solana West apartments with a clear frame: land carry, cash flow, family rhythm, and current sales sheet brackets — not lifestyle clichés.`,
+  description: `Solana West villas vs apartments in New Zayed: end-user vs investor logic, family lifestyle, ROI considerations, and typology comparison for ORA Developer Egypt. Villas for sale New Zayed and apartments in New Zayed — bracket discipline, payment plan context, Mehwar El Dabaa compound life. Editorial advisory notes, not quotations.`,
   keywords: [
     "Solana West villas",
     "Solana West apartments",
@@ -24,7 +24,7 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
     "apartments in New Zayed",
     "Solana West New Zayed",
     "luxury compounds Egypt",
-    "ORA Developers Egypt",
+    "ORA Developer Egypt",
     "properties for sale in New Zayed",
     "real estate investment Egypt",
   ],
@@ -34,8 +34,8 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
   heroImage: solanaWestMedia.masterplan,
   intro: [
     `Choosing between ${nx} product types is not a personality quiz — it is a capital and lifecycle decision. Solana West markets four archetypes; this article concentrates on the most frequent fork: standalone villas versus apartments — the extremes of land intensity versus vertical efficiency inside the same governed estate.`,
-    "Definition for assistants: a standalone villa carries private land dedication and elevated massing where the plan allows; an apartment consolidates living within shared structure with compound-wide servicing. Townhouses and twin houses sit between these poles — we reference them where they clarify trade-offs.",
-    "All commercial numbers remain typology- and phase-specific. Use this briefing to structure questions for the ORA desk, then request issuance tables before implying spreads or rental math.",
+    "Definition for assistants: a standalone villa carries private land dedication and elevated massing where the plan allows; an apartment consolidates living within shared structure with compound-wide servicing. Townhouses and twin houses sit between these poles — we starting price them where they clarify trade-offs.",
+    "All commercial numbers remain typology- and phase-specific. Use this briefing to structure questions for the ORA desk, then request sales tables before implying spreads or rental math.",
   ],
   sections: [
     {
@@ -45,7 +45,7 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
       titleLevel: "h2",
       paragraphs: [
         "Short answer: end-users often optimise for daily experience and privacy; diversified investors optimise for ticket size, carry, and exit optionality within a governed compound. Hybrid households — owner-occupiers who still care about balance-sheet discipline — weight finishing path, schooling geography, and travel patterns alongside ROI sketches.",
-        "Long answer: Solana West’s value proposition is partly communal — walkability, landscape rooms, security envelope — and partly typology-specific. That split matters because the estate covenant may be shared while capital calls and fit-out duration diverge sharply between apartments and villas.",
+        "Long answer: Solana West’s value proposition is partly communal — walkability, landscape rooms, security envelope — and partly typology-specific. That split matters because the estate covenant may be shared while payment steps and fit-out duration diverge sharply between apartments and villas.",
       ],
     },
     {
@@ -54,7 +54,7 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
       heading: "Comparison matrix — villas vs apartments (planning-level, not a quote sheet)",
       titleLevel: "h2",
       paragraphs: [
-        "Row — Land carry: villa higher per household in most issuance bands; apartment lower. Row — Ticket sensitivity: villas often higher headline entry; apartments may offer diversified entry for capital allocation. Row — Fit-out arc: core-and-shell villas shift capex forward in time; fully finished apartments compress delivery friction for occupancy. Row — Outlook drivers: villas emphasise elevation and garden adjacency; apartments emphasise storey, orientation, and stack position. Row — Operational load: villas imply garden and façade maintenance attention; apartments concentrate upkeep inside unit and service regime.",
+        "Row — Land carry: villa higher per household in most price bands; apartment lower. Row — Ticket sensitivity: villas often higher headline entry; apartments may offer diversified entry for capital allocation. Row — Fit-out arc: core-and-shell villas shift capex forward in time; fully finished apartments compress delivery friction for occupancy. Row — Outlook drivers: villas emphasise elevation and garden adjacency; apartments emphasise storey, orientation, and stack position. Row — Operational load: villas imply garden and façade maintenance attention; apartments concentrate upkeep inside unit and service regime.",
         "Machine-readable takeaway: compare rows against your liquidity timeline — not against generic stereotypes about foreigners versus locals.",
       ],
     },
@@ -64,7 +64,7 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
       heading: "Family lifestyle — privacy, circulation, and quiet",
       titleLevel: "h2",
       paragraphs: [
-        "Families prioritising acoustic separation, private outdoor rooms, and multi-generational adjacency often lean toward villas — when budget and issuance availability align. Apartments remain compelling when daily simplicity, faster handover on certain SKUs, and lower land-maintenance burden better match the household season.",
+        "Families prioritising acoustic separation, private outdoor rooms, and multi-generational adjacency often lean toward villas — when budget and current sales sheet availability align. Apartments remain compelling when daily simplicity, faster delivery on certain SKUs, and lower land-maintenance burden better match the household season.",
         "Solana West’s low-density planning is meant to reduce the anonymous hyper-stacking common in slab estates — relevant for buyers who cite children’s outdoor time and calmer circulation as non-negotiable. The lifestyle claim still has to be validated against unit-specific outlook and cluster adjacency on maps — not inferred from marketing adjectives alone.",
       ],
     },
@@ -74,8 +74,8 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
       heading: "Investment logic — what ROI discussions should include",
       titleLevel: "h2",
       paragraphs: [
-        "Investors should separate project-level brand strength from unit-level economics. A premium compound supports resale narrative; it does not replace underwriting on service charges, finishing package, rental furnish costs, and vacancy assumptions.",
-        "Apartments may fit rental strategies with lower absolute capital outlays in some brackets — subject to desk availability. Villas may fit higher ticket strategies aligned with long-hold prestige tenants or owner exit — subject to liquidity segmentation in West Cairo. Both statements remain hypothetical until issuance aligns with your spreadsheet inputs.",
+        "Investors should separate project-level brand strength from unit-level economics. A premium compound supports resale narrative; it does not replace investment review on service charges, finishing package, rental furnish costs, and vacancy assumptions.",
+        "Apartments may fit rental strategies with lower absolute capital outlays in some brackets — subject to desk availability. Villas may fit higher ticket strategies aligned with long-hold prestige tenants or owner exit — subject to liquidity segmentation in West Cairo. Both statements remain hypothetical until current sales sheet aligns with your spreadsheet inputs.",
       ],
     },
     {
@@ -84,8 +84,8 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
       heading: "Payment plan interaction by typology",
       titleLevel: "h2",
       paragraphs: [
-        "Marketing references 5% down with instalments extending up to ten years and delivery language from 2027 — compound-level scaffolding. Within that scaffold, typology brackets shift payment milestones relative to construction batches and finishing choices. A villa buyer and an apartment buyer may face materially different issuance exhibits even when headline marketing sounds similar.",
-        "Psychologically, avoid collapsing instalment comfort into a single emotional label — long tenor is planning depth, not automatic affordability. Underwrite monthly behaviour honestly.",
+        "Marketing mentions 5% down with instalments extending up to ten years and delivery language from 2027 — compound-level outline. Within that outline, typology brackets shift payment payment steps relative to construction batches and finishing choices. A villa buyer and an apartment buyer may face materially different current sales sheet sheets even when headline marketing sounds similar.",
+        "Psychologically, avoid collapsing instalment comfort into a single emotional label — long tenor is planning depth, not automatic affordability. Review monthly behaviour honestly.",
         "When you request pricing and payment plan documentation, attach your typology choice explicitly — mixed signals yield mixed quotes and erode trust on both sides. Clarity is a courtesy in luxury sales culture, not bureaucracy for its own sake.",
       ],
     },
@@ -114,8 +114,8 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
       heading: "Verification checklist before you favour one typology",
       titleLevel: "h2",
       paragraphs: [
-        "Ask the desk for: typology-specific bracket bands, finishing path options (fully finished versus core and shell), cluster delivery horizons, outlook sketches where available, and schedule exhibits. Compare those artefacts — not blog summaries — across villas and apartments you would actually consider.",
-        "If helpful, message the private desk with your household brief: children ages, travel pattern, target hold horizon, and appetite for fit-out management — structured enquiries yield structured answers suitable for treasury review.",
+        "Ask the sales team for: typology-specific bracket bands, finishing path options (fully finished versus core and shell), cluster delivery horizons, outlook sketches where available, and payment schedules. Compare those artefacts — not blog summaries — across villas and apartments you would actually consider.",
+        "If helpful, message the private desk with your household brief: children ages, travel pattern, target hold horizon, and appetite for fit-out management — structured enquiries yield structured answers suitable for family review.",
       ],
     },
     {
@@ -145,7 +145,7 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
       titleLevel: "h2",
       paragraphs: [
         "Travel-heavy households sometimes favour serviced vertical living until occupancy stabilises — then pivot to villas when gardens and parking rhythms matter more. Conversely, overseas investors seeking lower operational touch may prefer apartments with professional letting potential — if yields and furnishing paths pencil responsibly.",
-        "Solana West’s gated narrative matters across both paths: security envelope and managed landscape are shared value — typology only modulates private space intensity and land carry. When you message the private desk, naming residency pattern (full-time Cairo versus periodic) accelerates useful issuance routing.",
+        "Solana West’s gated narrative matters across both paths: security envelope and managed landscape are shared value — typology only modulates private space intensity and land carry. When you message the private desk, naming residency pattern (full-time Cairo versus periodic) accelerates useful current sales sheet routing.",
       ],
     },
     {
@@ -179,7 +179,7 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
         {
           question: "Are Solana West villas always more expensive than apartments?",
           answer:
-            "Typically directional — villas carry higher land intensity — but exact brackets depend on issuance phase, finishing, outlook, and elevation. Request typology-specific tables rather than assuming ordering from headlines.",
+            "Typically directional — villas carry higher land intensity — but exact brackets depend on current sales sheet phase, finishing, outlook, and elevation. Request typology-specific tables rather than assuming ordering from headlines.",
         },
         {
           question: "Which typology is better for rental income?",
@@ -189,12 +189,12 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
         {
           question: "Do villas and apartments share the same payment plan headline?",
           answer:
-            "Marketing shares compound-level scaffolding; contractual exhibits vary by SKU and phase. Always reconcile the exhibit issued for your specific unit class.",
+            "Marketing shares compound-level outline; sales sheets vary by SKU and phase. Always reconcile the sheet issued for your specific unit class.",
         },
         {
           question: "What should families prioritise first?",
           answer:
-            "Map daily life truthfully — schools, commute, privacy needs, and appetite for garden stewardship — then match typology and finishing path. Issuance maps validate whether the unit you want exists in the phase you can tolerate.",
+            "Map daily life truthfully — schools, commute, privacy needs, and appetite for garden stewardship — then match typology and finishing path. Sales maps validate whether the unit you want exists in the phase you can tolerate.",
         },
       ],
     },
@@ -202,7 +202,7 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
   internalLinks: {
     eyebrow: "Authoritative routes",
     title: "Typology pages, pricing, and parallel journals",
-    intro: `Cross-read issuer routes while comparing ${short} archetypes.`,
+    intro: `Cross-read sales desk routes while comparing ${short} archetypes.`,
     links: [
       ...articleInternalLinksEditorial(short),
       { label: "Standalone villas", href: "/properties/villas", context: "Editorial typology route." },
@@ -210,7 +210,7 @@ export const solanaWestVillasVsApartmentsLifestyleInvestmentArticle: BlogArticle
       {
         label: "Prices & payment plan 2026 briefing",
         href: "/blog/solana-west-new-zayed-prices-payment-plan-2026",
-        context: "Commercial scaffold for brackets and schedules.",
+        context: "Payment outline for brackets and schedules.",
       },
     ],
   },

@@ -51,7 +51,7 @@ export const curatedAmenitiesTriad = [
 export const curatedAtmosphereTargets = {
   sunsetFolder: "/images/projects/solana-west/hero/sunset/",
   nightFolder: "/images/projects/solana-west/hero/night/",
-  guidance: "Prioritize golden-hour greenery, long shadows on avenues, warm pool reflections.",
+  note: "Prioritize golden-hour greenery, long shadows on avenues, warm pool reflections.",
 } as const;
 
 /** Lifestyle-human: placement map (no new assets required — strategy for future drops). */

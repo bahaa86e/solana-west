@@ -58,8 +58,8 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
       eyebrow: "Investment briefings",
       title: "Hold-time discipline — no yield theatre",
       body: [
-        "Articles filed here translate desk-adjacent context into underwriting discipline: phased delivery, HOA and servicing exposure, liquidity and FX sensitivities relevant to UAE and domestic buyers.",
-        "Nothing on this lane promises appreciation, rent yields, or “best-buy” countdowns — every note defers issuance contracts and audited cash-flow models you sign at reservation.",
+        "Articles filed here translate desk-adjacent context into investment review discipline: phased delivery, HOA and servicing exposure, liquidity and FX sensitivities relevant to UAE and domestic buyers.",
+        "Nothing on this lane promises appreciation, rent yields, or “best-buy” countdowns — every note defers sales agreements and audited cash-flow models you sign at reservation.",
       ],
       pillar: {
         label: "Investment guides hub",
@@ -77,7 +77,7 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
       pillar: {
         label: "Location dossier",
         href: "/location",
-        context: "Ground truth references for arterial access and neighbouring comps.",
+        context: "Ground truth mentions for arterial access and neighbouring comps.",
       },
     },
     {
@@ -90,7 +90,7 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
       pillar: {
         label: "Projects index",
         href: "/projects",
-        context: "Authoritative hub routes for issuance-led compounds.",
+        context: "Authoritative hub routes for sales-team confirmed compounds.",
       },
     },
     {
@@ -98,12 +98,12 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
       eyebrow: "Commercial brackets",
       title: `${nx} — when marketing entry diverges from live SKUs`,
       body: [
-        "Editorials separate marketing reference ticks from issuance-priced SKUs across villas, townhouses, twin houses, apartments, finishing forks, and orientation premiums.",
+        "Editorials separate marketing starting price ticks from currently priced SKUs across villas, townhouses, twin houses, apartments, finishing forks, and orientation premiums.",
       ],
       pillar: {
         label: "Prices route",
         href: "/prices",
-        context: "Reference framing — spreadsheet authority sits with accredited sales desks.",
+        context: "Apartment pricing — spreadsheet authority sits with accredited sales desks.",
       },
     },
     {
@@ -111,7 +111,7 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
       eyebrow: "Instalment literacy",
       title: "From 5% down & ten-year headlines to signed schedules",
       body: [
-        "Collateral headings (5% down, ten-year tenor language) unpacked next to clauses that actually bind: installment waterfalls, penalties, refinancing limits, reservation deposits.",
+        "Project information headings (5% down, ten-year tenor language) unpacked next to clauses that actually bind: installment waterfalls, fees, refinancing limits, reservation deposits.",
       ],
       pillar: {
         label: "Payment plan hub",
@@ -139,7 +139,7 @@ function authorityEditorial(short: string): readonly BlogIndexAuthorityLink[] {
   return [
     { label: `${short} project hub`, href: "/projects/solana-west", context: "Canonical compound briefing." },
     { label: "Master plan editorial", href: "/master-plan", context: "316-acre spatial framing without parcel invention." },
-    { label: "FAQ index", href: "/faq", context: "Issuer-synchronised canonical answers." },
+    { label: "FAQ index", href: "/faq", context: "Sales desk-synchronised canonical answers." },
     { label: "Contact enquiries", href: "/contact", context: "Route complex briefings to desks." },
   ];
 }
@@ -173,14 +173,14 @@ export function buildBlogIndexPageModel(): BlogIndexPageModel {
     hero: {
       eyebrow: `${ora} editorial desk · Investor-grade prose`,
       h1: "Solana West research journal — briefings for serious buyers",
-      lead: `${short} publishes long-form briefing notes as desk collateral matures — each article is attributable, dated, and written for buyers who already read FAQs and still need sequencing context.`,
+      lead: `${short} publishes long-form briefing notes as project information matures — each article is attributable, dated, and written for buyers who already read FAQs and still need sequencing context.`,
       supporting: `Articles cluster by topical lane (investment, geography, counterparties, commercial structure, comps). Listing pages stay calm: no synthetic publish cadence promises, queue badges, or inventory hints. ${count === 0 ? "The live library is preparing its first tranche — authority routes below remain the operational spine until posts index here." : `${count} briefing${count === 1 ? "" : "s"} currently indexed.`}`,
     },
     indexIntro: {
       eyebrow: "Indexing model",
       title: "How briefings stay accountable to canonical routes",
       paragraphs: [
-        "Every briefing references the same disciplined facts elsewhere on site (location minutes, headline commercial scaffolding, FAQ canon). Divergence is purposeful — articles narrate sequencing, juxtaposition, and buyer psychology that issuance FAQs cannot shoulder alone.",
+        "Every briefing mentions the same disciplined facts elsewhere on site (location minutes, headline payment outline, FAQ canon). Divergence is purposeful — articles narrate sequencing, juxtaposition, and buyer psychology that sales FAQs cannot shoulder alone.",
         "New posts inherit this template: labelled topic, attributable dates, OG/Twitter parity, breadcrumb fidelity, FAQ blocks only when mirrored in JSON-LD, and internal anchors back to transactional routes.",
       ],
     },
@@ -193,7 +193,7 @@ export function buildBlogIndexPageModel(): BlogIndexPageModel {
     finalCta: {
       eyebrow: "Desk alignment",
       title: "Fold long-form prose back into stamped developer packs",
-      supporting: `${ora} sales teams issue dated decks, phased maps, and payment exhibits — prose here orients; contracts govern.`,
+      supporting: `${ora} sales teams issue dated decks, phased maps, and payment sheets — prose here orients; contracts govern.`,
       primaryLabel: "WhatsApp private desk",
       secondaryLabel: "Written enquiry",
     },

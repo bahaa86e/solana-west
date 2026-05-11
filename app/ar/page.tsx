@@ -7,7 +7,7 @@ import { buildPageMetadata } from "@/seo/build-metadata";
 
 export const metadata = buildPageMetadata(homeMetadataAr);
 
-const arHomeH1 = "سولانا ويست — منازل الزيادة الجديدة بتطوير ORA مصر";
+const arHomeH1 = "سولانا ويست نيو زايد من ORA Developer Egypt";
 
 export default function ArabicHomeRoute() {
   return (

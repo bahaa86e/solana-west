@@ -11,7 +11,7 @@ export const projectRegistry: readonly ProjectEntry[] = [
     slug: "solana-west",
     name: "Solana West New Zayed",
     shortName: "Solana West",
-    developer: "ORA Developers Egypt",
+    developer: "ORA Developer Egypt",
   },
 ];
 

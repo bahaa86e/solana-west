@@ -39,7 +39,7 @@ export default function ThankYouPage({ searchParams }: PageProps) {
             <p>
               {isLeadAck ? (
                 <>
-                  Sales aligns responses with issuance-accurate data. Prefer live thread on the same desk? Reach{" "}
+                  Sales aligns responses with current sales sheet-accurate data. Prefer live thread on the same desk? Reach{" "}
                   {siteConfig.phone} by call or WhatsApp.
                 </>
               ) : (

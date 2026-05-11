@@ -4,17 +4,17 @@ import { createContext, useContext, type ReactNode } from "react";
 
 import {
   croCommercialFacts,
+  croCommercialChipLabels,
   croInvestorAssurance,
   croMessaging,
   croPrivateDeskTagline,
-  croReferenceChipLabels,
 } from "@/data/cro";
 import {
+  croCommercialChipLabelsAr,
   croCommercialFactsAr,
   croInvestorAssuranceAr,
   croMessagingAr,
   croPrivateDeskTaglineAr,
-  croReferenceChipLabelsAr,
 } from "@/data/cro/ar";
 import type { SiteLocale } from "@/lib/i18n/locale";
 
@@ -23,7 +23,7 @@ export type EditorialCopyBundle = {
   croMessaging: typeof croMessaging | typeof croMessagingAr;
   croCommercialFacts: typeof croCommercialFacts | typeof croCommercialFactsAr;
   croPrivateDeskTagline: string;
-  croReferenceChipLabels: typeof croReferenceChipLabels | typeof croReferenceChipLabelsAr;
+  croCommercialChipLabels: typeof croCommercialChipLabels | typeof croCommercialChipLabelsAr;
   croInvestorAssurance: typeof croInvestorAssurance | typeof croInvestorAssuranceAr;
 };
 
@@ -32,7 +32,7 @@ const enBundle: EditorialCopyBundle = {
   croMessaging,
   croCommercialFacts,
   croPrivateDeskTagline,
-  croReferenceChipLabels,
+  croCommercialChipLabels,
   croInvestorAssurance,
 };
 
@@ -41,7 +41,7 @@ const arBundle: EditorialCopyBundle = {
   croMessaging: croMessagingAr,
   croCommercialFacts: croCommercialFactsAr,
   croPrivateDeskTagline: croPrivateDeskTaglineAr,
-  croReferenceChipLabels: croReferenceChipLabelsAr,
+  croCommercialChipLabels: croCommercialChipLabelsAr,
   croInvestorAssurance: croInvestorAssuranceAr,
 };
 

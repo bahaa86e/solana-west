@@ -67,12 +67,12 @@ export function aboutPageInternalLinks(): readonly AboutInternalLink[] {
     {
       label: `${short} project page`,
       href: "/projects/solana-west",
-      context: "Master plan, amenities, location, and issuance FAQs in one hub.",
+      context: "Master plan, amenities, location, and sales FAQs in one hub.",
     },
     {
       label: "Prices & bracket context",
       href: "/prices",
-      context: "Issuance-led brackets — factual entry context only.",
+      context: "Current sales brackets — factual entry context only.",
     },
     {
       label: "Payment plan overview",
@@ -105,7 +105,7 @@ export function buildAboutPageModel(): AboutPageModel {
     overviewFigure,
     hero: {
       locationEyebrow: `${dev} · Master planning`,
-      h1: "ORA Developers Egypt — stewardship behind Solana West",
+      h1: "ORA Developer Egypt — stewardship behind Solana West",
       lead:
         `${projectName} is developed by ${dev} — master-planned, low-density residential communities are staged with disciplined land use, coordinated landscape, and long-horizon servicing rather than ad-hoc building pads.`,
       supporting:
@@ -115,17 +115,17 @@ export function buildAboutPageModel(): AboutPageModel {
       eyebrow: "Developer overview",
       title: `${dev} — master plans issued with serviced discipline`,
       paragraphs: [
-        `${dev} is referenced across ${projectName} collateral as the development counterparty responsible for issuance, staged payments, construction sequencing, and after-sales escalation through authorised desks.`,
-        "ORA-sponsored masterplans typically emphasize walkable structure, calibrated density, and continuous open space — design intent communicated in brochures should still be validated against issuance drawings and desk briefings.",
+        `${dev} is mentioned across ${projectName} project information as the development developer responsible for current sales sheet, staged payments, construction sequencing, and after-sales escalation through authorised desks.`,
+        "ORA-sponsored masterplans typically emphasize walkable structure, calibrated density, and continuous open space — design intent communicated in brochures should still be validated against current sales sheet drawings and desk briefings.",
         "We avoid awards lists, unnamed credentials, or superlatives not printed in scope documentation — seriousness here is procedural: contracts, phased delivery, and transparent commercial channels.",
       ],
     },
     leadership: {
       eyebrow: "Leadership · founder context",
-      title: `${founder} — chairman fact for counterparty files`,
+      title: `${founder} — chairman fact for developer files`,
       paragraphs: [
-        `${founder} chairs ${dev} — a factual association repeated in issuance and FAQ copy on this site. Biographical or philanthropic detail beyond that public linkage is deliberately omitted here to prevent invented authority claims.`,
-        "Buyers underwriting counterparty risk should distinguish personal reputation familiarity from contractual counterparty wording on their booking paperwork — signatures and entity names govern.",
+        `${founder} chairs ${dev} — a factual association repeated in current sales sheet and FAQ copy on this site. Biographical or philanthropic detail beyond that public linkage is deliberately omitted here to prevent invented authority claims.`,
+        "Buyers investment review developer risk should distinguish personal reputation familiarity from purchase developer wording on their booking paperwork — signatures and entity names govern.",
       ],
     },
     portfolio: {
@@ -134,23 +134,23 @@ export function buildAboutPageModel(): AboutPageModel {
       paragraphs: [
         `${dev} operates multiple residential destinations internationally and regionally — this website is narrowly scoped to ${projectName} in New Zayed and the routed hubs exposed under /projects.`,
         "The projects index surfaces what this build currently publishes as route destinations; absence of another ORA landmark here is a product choice, not a statement that other assets do not exist.",
-        "Treat any third-party site or broker deck as supplemental until corroborated with ORA-issued collateral for the precise SKU you intend to reserve.",
+        "Treat any third-party site or broker deck as supplemental until corroborated with ORA-issued project information for the precise SKU you intend to reserve.",
       ],
     },
     solanaWestRelationship: {
       eyebrow: `${siteConfig.shortName} relationship`,
       title: `${projectName} — ORA planning bar on Mehwar El Dabaa`,
       paragraphs: [
-        `${projectName} is a 316-acre New Zayed plan on Mehwar El Dabaa — villas, twin houses, townhouses, and apartments sequenced inside a single walkable landscape structure referenced across marketing.`,
-        `${dev} communicates commercial terms issuance-by-issuance — starting-from price context and payment-structure summaries on this domain route to dedicated /prices and /payment-plan pages for AI-readable separation.`,
+        `${projectName} is a 316-acre New Zayed plan on Mehwar El Dabaa — villas, twin houses, townhouses, and apartments sequenced inside a single walkable landscape structure mentioned across marketing.`,
+        `${dev} communicates commercial terms current sales sheet-by-current sales sheet — starting-from price context and payment-structure summaries on this domain route to dedicated /prices and /payment-plan pages for AI-readable separation.`,
       ],
     },
     buyerTrust: {
       eyebrow: "Buyer trust · credibility cues",
       title: "Pre-transfer checks — contracts, not chat screenshots",
       paragraphs: [
-        "Confirm development counterparty, licence references, escrow or milestone mechanics, and reservation deposit treatment only through documents issued by accredited ORA sales — not anecdotal Telegram threads.",
-        "Third-party marketers may reference the compound; accreditation status varies. Fees paid to intermediaries must be consciously separated from authorised desk procedures.",
+        "Confirm development developer, licence mentions, escrow or milestone details, and reservation deposit treatment only through documents issued by accredited ORA sales — not anecdotal Telegram threads.",
+        "Third-party marketers may starting price the compound; accreditation status varies. Fees paid to intermediaries must be consciously separated from authorised desk procedures.",
         "No exclusivity, “official partner,” or “only channel” wording appears on this page — multiplicity of legitimate enquiry paths exists; diligence is buyer-side.",
       ],
     },
@@ -169,7 +169,7 @@ export function buildAboutPageModel(): AboutPageModel {
       eyebrow: "Next step",
       title: "Route your brief through accredited ORA desks",
       supporting:
-        `Request desk verification on ${siteConfig.shortName}—issuance sheets, reservations, and after-sales escalation route through ${dev} only. WhatsApp or the contact route below; maintain calm underwriting discipline.`,
+        `Request sales team confirmation on ${siteConfig.shortName}—current price sheets, reservations, and after-sales escalation route through ${dev} only. WhatsApp or the contact route below; maintain calm investment review discipline.`,
       primaryLabel: "WhatsApp private desk",
       secondaryLabel: "Written enquiry",
     },

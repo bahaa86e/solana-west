@@ -131,7 +131,7 @@ export async function submitLeadInquiry(prevState: LeadFormState | null, formDat
       phone,
       interestedIn,
     },
-    /** Issuance anchors */
+    /** Current sales sheet anchors */
     project: siteConfig.name,
     developer: siteConfig.developer,
     /** Duplicate top-level timestamps for parsers that rely on legacy keys */

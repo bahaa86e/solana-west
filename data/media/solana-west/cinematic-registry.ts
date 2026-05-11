@@ -6,7 +6,7 @@
 export const SOLANA_WEST_IMAGE_BASE = "/images/projects/solana-west" as const;
 
 /** Developer attribution suffix for ALT consistency (schema + SEO rules) */
-export const ORA_DEVELOPERS_ATTRIBUTION = "by ORA Developers Egypt" as const;
+export const ORA_DEVELOPERS_ATTRIBUTION = "by ORA Developer Egypt" as const;
 
 /**
  * Canonical slot filenames (01 series) — keep aligned with pipeline output when ingesting legacy names.
@@ -45,9 +45,9 @@ export const solanaWestCanonicalFiles = {
   ctaEmotional: `${SOLANA_WEST_IMAGE_BASE}/cta/solana-west-new-zayed-cta-pool-evening-atmosphere-01.webp`,
   /** Investor-grade skyline / scale — graded hero-wide plate in `investment/` slot */
   investmentPositioning: `${SOLANA_WEST_IMAGE_BASE}/investment/solana-west-new-zayed-investment-positioning-01.webp`,
-  /** Masterplan board used as bird’s-eye scale reference (no geometry change). */
+  /** Masterplan board used as bird’s-eye scale anchor (no geometry change). */
   aerialView: `${SOLANA_WEST_IMAGE_BASE}/aerial/solana-west-new-zayed-masterplan-aerial-01.webp`,
-  /** Outdoor circulation / estate pace — issuer plates only (no staged talent). */
+  /** Outdoor circulation / estate pace — sales desk plates only (no staged talent). */
   lifestyleOutdoorCalm: `${SOLANA_WEST_IMAGE_BASE}/lifestyle-human/solana-west-new-zayed-outdoor-circulation-calm-01.webp`,
 } as const;
 

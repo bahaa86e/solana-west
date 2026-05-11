@@ -6,7 +6,8 @@ import { cn } from "@/lib/utils";
 export function BlogArticleHeroSection({ doc }: { doc: BlogArticleDocument }) {
   const idPrefix = `blog-article-${doc.slug}`;
   const labelledById = `${idPrefix}-heading`;
-  const dateLabel = new Date(doc.publishedIso).toLocaleDateString("en-GB", {
+  const isArabic = /[\u0600-\u06FF]/.test(doc.title);
+  const dateLabel = new Date(doc.publishedIso).toLocaleDateString(isArabic ? "ar-EG" : "en-GB", {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -26,7 +27,13 @@ export function BlogArticleHeroSection({ doc }: { doc: BlogArticleDocument }) {
       }}
     >
       <div className="max-w-[min(41rem,100%)]">
-        <BlogBreadcrumbs items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: doc.title }]} />
+        <BlogBreadcrumbs
+          items={
+            isArabic ?
+              [{ label: "الرئيسية", href: "/ar" }, { label: "المدونة", href: "/ar/blog" }, { label: doc.title }]
+            : [{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: doc.title }]
+          }
+        />
 
         <p className={cn("lux-article-meta mt-8 md:mt-9")}>
           <time dateTime={doc.publishedIso}>{dateLabel}</time>

@@ -19,14 +19,14 @@ export default function PrivacyPolicyPage() {
     <SectionMain>
       <article className="mx-auto max-w-readable" aria-labelledby="privacy-heading">
         <header className="border-b border-lux-ink/[0.06] pb-lux-stack-md md:pb-lux-stack-lg">
-          <p className="lux-eyebrow text-lux-ink/46">Legal</p>
+          <p className="lux-eyebrow text-lux-ink/46">Formal</p>
           <div className="mt-lux-stack-xs h-px w-9 bg-lux-gold/42 md:mt-lux-stack-sm" aria-hidden />
           <h1 id="privacy-heading" className="mt-lux-stack-xs max-w-[min(38ch,100%)] font-display text-display-xl text-lux-ink">
             Privacy policy — Solana West New Zayed enquiries
           </h1>
           <p className="lux-body mt-lux-stack-sm text-lux-ink/67 md:mt-lux-stack-md">
             This notice describes how {siteConfig.shortName} ({siteConfig.url}) handles information you share when you
-            enquire by form, phone, email, WhatsApp, or tracked links. It is not legal advice.
+            enquire by form, phone, email, WhatsApp, or tracked links. It is not professional advice.
           </p>
         </header>
 
@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
               Retention
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
-              Enquiry records are kept only as long as needed to service your request, meet applicable legal or
+              Enquiry records are kept only as long as needed to service your request, meet applicable formal or
               accounting obligations, and defend claims. Aggregated analytics data may persist in vendor dashboards under
               their own policies.
             </p>

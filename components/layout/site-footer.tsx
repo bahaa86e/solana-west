@@ -42,7 +42,7 @@ export function SiteFooter() {
   const disclaimer = locale === "ar" ? footerLegalDisclaimerAr : footerLegalDisclaimer;
   const legalLane = locale === "ar" ? footerLegalLinksAr : footerLegalLinks;
   const socialHeading = locale === "ar" ? "وسائل التواصل" : "Social";
-  const legalPostureHeading = locale === "ar" ? "إطار قانوني" : "Legal posture";
+  const legalPostureHeading = locale === "ar" ? "إطار قانوني" : "Formal posture";
   const conciergeHeading = locale === "ar" ? "كونسييرج" : "Concierge";
 
   return (
@@ -183,7 +183,7 @@ export function SiteFooter() {
             </aside>
           </div>
 
-          {/* Legal runway — statute + privacy isolated from merchandising grids */}
+          {/* Formal runway — statute + privacy isolated from merchandising grids */}
           <div className="border-t border-lux-ink/[0.055] pt-8 xl:pt-10">
             <div className="flex flex-col gap-7 xl:flex-row xl:items-start xl:justify-between xl:gap-x-12">
               <div className="max-w-xl space-y-4">
@@ -204,7 +204,7 @@ export function SiteFooter() {
                     {siteConfig.developer}
                   </p>
                 </div>
-                <nav aria-label={locale === "ar" ? "روابط قانونية" : "Legal"}>
+                <nav aria-label={locale === "ar" ? "روابط قانونية" : "Formal"}>
                   <ul className="flex flex-wrap gap-x-10 gap-y-3">
                     {legalLane.map((item) => (
                       <li key={item.href}>

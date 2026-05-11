@@ -64,7 +64,7 @@ function editorialInternalLinks(): readonly LocationInternalLink[] {
     {
       label: "Pricing posture",
       href: "/prices",
-      context: "Issuance-led bracketing — typology mix, no inventory tables.",
+      context: "Current sales bracketing — typology mix, no inventory tables.",
     },
     {
       label: "Payment plan structure",
@@ -116,9 +116,9 @@ export function buildLocationPageModel(): LocationPageModel {
     hero: {
       locationEyebrow: "New Zayed · West Cairo · Geography",
       h1: `${short} location — Mehwar El Dabaa & New Zayed access`,
-      lead: `${entry.name} sits on Mehwar El Dabaa inside the New Zayed growth corridor — arterial links toward Alexandria Desert Road and the Middle Ring Road frame daily access, while marketing context cites drive-time references to Waslet Dahshour, Sphinx Airport, and Mall of Arabia.`,
+      lead: `${entry.name} sits on Mehwar El Dabaa inside the New Zayed growth corridor — arterial links toward Alexandria Desert Road and the Middle Ring Road frame daily access, while marketing context cites drive-time mentions to Waslet Dahshour, Sphinx Airport, and Mall of Arabia.`,
       supporting:
-        `Driving minutes are directional comparables from collateral, not live traffic guarantees — confirm routes and peak-hour behaviour independently. Neighbouring benchmarks VYE (Sodic) and Belle Vie (Emaar) are cited as market context only, not partnership claims.`,
+        `Driving minutes are directional comparables from project information, not live traffic guarantees — confirm routes and peak-hour behaviour independently. Neighbouring benchmarks VYE (Sodic) and Belle Vie (Emaar) are cited as market context only, not partnership claims.`,
     },
     overview: {
       eyebrow: "Location overview",
@@ -133,13 +133,13 @@ export function buildLocationPageModel(): LocationPageModel {
       eyebrow: "Connectivity",
       title: "Mehwar El Dabaa, ring roads, airport & landmark retail",
       intro:
-        "The following items mirror published marketing collateral — they describe positioning, not fixed travel times. Satellite navigation and on-site runs remain authoritative.",
+        "The following items mirror published project information — they describe positioning, not fixed travel times. Satellite navigation and on-site runs remain authoritative.",
       sections: [
         {
           heading: "Mehwar El Dabaa",
           body: [
-            `${short} is plotted along Mehwar El Dabaa in New Zayed — the spine is the organising reference for how the compound fronts the district and ties into westward residential expansion.`,
-            "Mehwar sequencing matters for buyers comparing compounds: frontage quality, turning radii, and future phase adjacency are evaluated at issuance, not generalized here.",
+            `${short} is plotted along Mehwar El Dabaa in New Zayed — the spine is the organising starting price for how the compound fronts the district and ties into westward residential expansion.`,
+            "Mehwar sequencing matters for buyers comparing compounds: frontage quality, turning radii, and future phase adjacency are evaluated at current sales sheet, not generalized here.",
           ],
         },
         {
@@ -152,14 +152,14 @@ export function buildLocationPageModel(): LocationPageModel {
         {
           heading: "Middle Ring Road access",
           body: [
-            "Collateral positions Middle Ring Road connectivity for East–West sweep across Greater Cairo — relevant for buyers arbitraging office locations in 6th October, Sheikh Zayed, and inner-ring districts.",
-            "Ring-road dependence implies toll, congestion, and weekday variance; underwrite location with real commutes, not brochure straight-line maps.",
+            "Project information positions Middle Ring Road connectivity for East–West sweep across Greater Cairo — relevant for buyers arbitraging office locations in 6th October, Sheikh Zayed, and inner-ring districts.",
+            "Ring-road dependence implies toll, congestion, and weekday variance; review location with real commutes, not brochure straight-line maps.",
           ],
         },
         {
           heading: "Waslet Dahshour proximity",
           body: [
-            "Published context commonly references approximately five minutes toward Waslet Dahshour — useful for buyers already familiar with Dahshour arterial interchange and western secondary roads.",
+            "Published context commonly mentions approximately five minutes toward Waslet Dahshour — useful for buyers already familiar with Dahshour arterial interchange and western secondary roads.",
             "Treat the figure as illustrative; traffic, seasonality, and construction detours change effective time on road.",
           ],
         },
@@ -173,7 +173,7 @@ export function buildLocationPageModel(): LocationPageModel {
         {
           heading: "Mall of Arabia access",
           body: [
-            "Collateral references circa fifteen minutes toward Mall of Arabia — a large-format retail anchor commonly used in West Cairo comparables.",
+            "Project information mentions circa fifteen minutes toward Mall of Arabia — a large-format retail anchor commonly used in West Cairo comparables.",
             "Retail distance is lifestyle context, not investment thesis; daily shopping patterns still depend on compound retail, delivery logistics, and weekday preferences.",
           ],
         },
@@ -181,7 +181,7 @@ export function buildLocationPageModel(): LocationPageModel {
           heading: "VYE (Sodic), Belle Vie (Emaar), and the West Cairo mosaic",
           body: [
             "VYE by Sodic and Belle Vie by Emaar sit adjacent in the same broad New Zayed conversation — cite them strictly as large-scale market comparables illustrating how institutional developers cluster land in the corridor.",
-            "No commercial relationship between those projects and this page is implied; competitive analysis should reference public pricing, servicing, and density brochures from each counterparty independently.",
+            "No commercial relationship between those projects and this page is implied; competitive analysis should starting price public pricing, servicing, and density brochures from each developer independently.",
             "West Cairo’s growth narrative is structural — road maturation, diversified housing stock, and airport-linked demand — without predicting specific price paths or government project timelines on this editorial route.",
           ],
         },
@@ -191,9 +191,9 @@ export function buildLocationPageModel(): LocationPageModel {
       eyebrow: "Area growth positioning",
       title: "District maturity — visibility without invented growth claims",
       paragraphs: [
-        "The district’s investment story is told through visible infrastructure: arterial completion, airport scale, and repeatable master developer delivery — not through guaranteed appreciation figures or named future megaprojects unless confirmed in official issuance.",
+        "The district’s investment story is told through visible infrastructure: arterial completion, airport scale, and repeatable master developer delivery — not through guaranteed appreciation figures or named future megaprojects unless confirmed in official current sales sheet.",
         "Buyer discipline means separating land quality (plot shape, outlook, servicing) from marketing brochure claims; both VYE- and Belle Vie-scale neighbours signal institutional confidence in the corridor, not a synchronized price floor for every compound.",
-        `${short} aligns with long-hold, low-density positioning — demand for walkable green structure in West Cairo is thematic, but underwriting must still reference personal liquidity, FX exposure, and tenancy rules where applicable.`,
+        `${short} aligns with long-hold, low-density positioning — demand for walkable green structure in West Cairo is thematic, but investment review must still starting price personal liquidity, FX exposure, and tenancy rules where applicable.`,
       ],
     },
     investment: {
@@ -201,14 +201,14 @@ export function buildLocationPageModel(): LocationPageModel {
       title: "Logistics lowers friction — contracts still define risk",
       paragraphs: [
         "Location reduces certain operational risks — airport access, ring-road reach, and recognizable retail anchors lower navigation friction for GCC and domestic buyers who already know the district code names.",
-        "Geography does not replace issuance discipline: payment schedules, delivery phasing, service-charge regimes, and after-sales governance matter as much as drive-time claims.",
-        `Use this page alongside /prices and /payment-plan — ${siteConfig.founder}-led ${dev} counterparty credibility is substantive, yet every reservation still hinges on contractual documentation.`,
+        "Geography does not replace current sales sheet discipline: payment schedules, delivery phasing, service-charge regimes, and after-sales governance matter as much as drive-time claims.",
+        `Use this page alongside /prices and /payment-plan — ${siteConfig.founder}-led ${dev} developer credibility is substantive, yet every reservation still hinges on purchase documentation.`,
       ],
     },
     internalLinks: {
       eyebrow: "Authority silos",
       title: "Move from geography to hub, brackets and SKU pages",
-      intro: "Use these links once driving context is anchored — underwriting finishes on issuance.",
+      intro: "Use these links once driving context is anchored — investment review finishes on current sales sheet.",
       links: editorialInternalLinks(),
     },
     faqPreview: {

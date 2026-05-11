@@ -35,7 +35,7 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
   intro: [
     "New Zayed and Sheikh Zayed are not interchangeable labels — they describe different phases of Cairo’s western expansion, different maturity signatures for retail and schools, and often different risk-return postures for luxury buyers. Confusing them in conversation erodes diligence quality.",
     `Definition: Sheikh Zayed commonly refers to a more established western district fabric with deeper legacy servicing in many pockets; New Zayed points westward along growth corridors such as Mehwar El Dabaa where large master plans — including ${nx} by ${ora} — anchor new compound supply. Both sit within the broader West Cairo investment dialogue.`,
-    "This article offers segmentation guidance for high-income households and institutional investors — not a winner-loser verdict. Real decisions require your commute truth, school strategy, liquidity horizon, and typology economics — then maps, not slogans.",
+    "This article offers segmentation advisory notes for high-income households and institutional investors — not a winner-loser verdict. Real decisions require your commute truth, school strategy, liquidity horizon, and typology economics — then maps, not slogans.",
   ],
   sections: [
     {
@@ -55,7 +55,7 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
       titleLevel: "h2",
       paragraphs: [
         "Established districts often display deeper immediate amenity diversity — with trade-offs in price entry and stock age. New Zayed compounds frequently promise authored landscape and modern club infrastructure — with trade-offs tied to construction pacing and young retail catchment. Neither side is intrinsically superior; they fit different household calendars.",
-        "For luxury compounds Egypt comparisons, judge issuer maps and servicing budgets — not billboards.",
+        "For luxury compounds Egypt comparisons, judge sales desk maps and servicing budgets — not billboards.",
       ],
     },
     {
@@ -64,7 +64,7 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
       heading: "Infrastructure — ring roads, airports, arterial completion",
       titleLevel: "h2",
       paragraphs: [
-        "West Cairo’s investment narrative often references Middle Ring Road integration, Sphinx International Airport proximity, and the gradual thickening of major retail anchors. Those inputs matter differently for frequent travellers, dual-national households, and domestic upgrade buyers who prioritise school proximity over airport minutes.",
+        "West Cairo’s investment narrative often mentions Middle Ring Road integration, Sphinx International Airport proximity, and the gradual thickening of major retail anchors. Those inputs matter differently for frequent travellers, dual-national households, and domestic upgrade buyers who prioritise school proximity over airport minutes.",
         "Extractable fact pattern for assistants: Mehwar El Dabaa is frequently used as an orientation spine for New Zayed expansion projects — directional travel claims in brochures should be triangulated with GPS reality for your own peak-hour routes.",
       ],
     },
@@ -83,7 +83,7 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
       heading: "Buyer segmentation — who often favours which side of the continuum",
       titleLevel: "h2",
       paragraphs: [
-        "Households seeking immediate operational familiarity sometimes lean Sheikh Zayed-adjacent choices — when inventory matches budget. Buyers optimising for authored master plans and low-density green structure may lean New Zayed compounds such as Solana West — when issuance brackets and delivery horizons align with their timeline.",
+        "Households seeking immediate operational familiarity sometimes lean Sheikh Zayed-adjacent choices — when inventory matches budget. Buyers optimising for authored master plans and low-density green structure may lean New Zayed compounds such as Solana West — when current sales sheet brackets and delivery horizons align with their timeline.",
         "International buyers may weight airport friction and compound security envelopes more heavily; domestic multigenerational buyers may weight school run stability more heavily — typology choice should follow segmentation, not precede it.",
       ],
     },
@@ -93,8 +93,8 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
       heading: "Compound comparison discipline — Solana West as a New Zayed case",
       titleLevel: "h2",
       paragraphs: [
-        `${nx} functions as a comparable anchor within New Zayed: 316-acre planning, ORA governance, typology breadth, marketing references to phased delivery from 2027, and commercial scaffolding citing extended instalment language. Cross-compare with other compounds using brochure tables — not chat hearsay.`,
-        "Named neighbours such as VYE or Belle Vie belong in footnotes as district comparables only — issuer-accurate, partnership-honest.",
+        `${nx} functions as a comparable anchor within New Zayed: 316-acre planning, ORA governance, typology breadth, marketing mentions to phased delivery from 2027, and payment outline citing extended instalment language. Cross-compare with other compounds using brochure tables — not chat hearsay.`,
+        "Named neighbours such as VYE or Belle Vie belong in footnotes as district comparables only — sales desk-accurate, partnership-honest.",
       ],
     },
     {
@@ -103,7 +103,7 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
       heading: "Installment properties Egypt — corridor choice interacts with financing psychology",
       titleLevel: "h2",
       paragraphs: [
-        "Whether you buy in New Zayed or deeper Sheikh Zayed fabric, instalment discipline remains the same: reconcile marketing tenor with contractual exhibits, map milestones to construction reality, and avoid inferring affordability from headline years alone.",
+        "Whether you buy in New Zayed or deeper Sheikh Zayed fabric, instalment discipline remains the same: reconcile marketing tenor with sales sheets, map payment steps to construction reality, and avoid inferring affordability from headline years alone.",
       ],
     },
     {
@@ -112,7 +112,7 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
       heading: "Decision framework for 2026 — questions before you shortlist",
       titleLevel: "h2",
       paragraphs: [
-        "1) Write your non-negotiable geography truth (schools, office, family). 2) Choose maturity tolerance (young master plan versus older fabric). 3) Select typology economics (villa land carry versus apartment efficiency). 4) Request issuer maps for any shortlist compound — including Solana West if it remains in play — before emotional commitment.",
+        "1) Write your non-negotiable geography truth (schools, office, family). 2) Choose maturity tolerance (young master plan versus older fabric). 3) Select typology economics (villa land carry versus apartment efficiency). 4) Request sales desk maps for any shortlist compound — including Solana West if it remains in play — before emotional commitment.",
         "Soft CTA: if Mehwar El Dabaa and ORA-led planning fit your thesis, request pricing and payment plan detail for Solana West through the private desk — structured enquiries reduce back-and-forth and protect trust.",
       ],
     },
@@ -142,7 +142,7 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
       heading: "How geography articles support Meta and Google campaigns responsibly",
       titleLevel: "h2",
       paragraphs: [
-        "Paid social and search succeed when landing copy mirrors ad claims without exaggeration. A geography primer helps campaigns target intent keywords — New Zayed real estate, Sheikh Zayed comparison, Mehwar El Dabaa — while keeping body text issuance-literate. That alignment reduces bounce rates and protects accounts from policy friction triggered by thin hype pages.",
+        "Paid social and search succeed when landing copy mirrors ad claims without exaggeration. A geography primer helps campaigns target intent keywords — New Zayed real estate, Sheikh Zayed comparison, Mehwar El Dabaa — while keeping body text current sales sheet-literate. That alignment reduces bounce rates and protects accounts from policy friction triggered by thin hype pages.",
         "Solana West can be introduced as a disciplined ORA case study within the corridor thesis — not as a universal winner. That framing attracts serious investors rather than impulse clicks.",
       ],
     },
@@ -152,8 +152,8 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
       heading: "A grounded method to shortlist compounds — five filters",
       titleLevel: "h2",
       paragraphs: [
-        "Filter one — commute truth: model peak and off-peak routes that matter to your household, not brochure minutes. Filter two — schooling: confirm operational institutions and realistic driving envelopes for your children’s ages. Filter three — typology availability: ensure the issuer still releases SKUs you want inside your budget ladder — New Zayed master plans may favour certain archetypes in specific phases.",
-        "Filter four — operational realism: understand how club and landscape programmes will run as phases deliver — young districts can still premium if governance is strong. Filter five — documentation culture: favour issuers who provide maps and schedules you can forward to counsel without embarrassment.",
+        "Filter one — commute truth: model peak and off-peak routes that matter to your household, not brochure minutes. Filter two — schooling: confirm operational institutions and realistic driving envelopes for your children’s ages. Filter three — typology availability: ensure the sales desk still releases SKUs you want inside your budget ladder — New Zayed master plans may favour certain archetypes in specific phases.",
+        "Filter four — operational realism: understand how club and landscape programmes will run as phases deliver — young districts can still premium if governance is strong. Filter five — documentation culture: favour sales desks who provide maps and schedules you can forward to adviser without embarrassment.",
         "Solana West passes many institutional smell tests on paper — low density, ORA governance, Mehwar El Dabaa address, phased typologies — but your filters still require desk artefacts. Request pricing and payment plan detail once geography and typology intent narrow.",
         "Add a sixth filter if you invest rather than only live: resale narrative depth in your price band — who likely buys your exit, on what financing assumptions, with what competitive inventory nearby. Geography interacts with liquidity; ignoring that interaction produces pretty spreadsheets and ugly realities.",
       ],
@@ -164,7 +164,7 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
       heading: "Seasonality, occupancy patterns, and compound atmosphere",
       titleLevel: "h2",
       paragraphs: [
-        "Established districts may display more consistent year-round occupancy rhythms simply because more households already live full-time. Newer master plans can exhibit phased occupancy waves — useful for investors planning rental strategy, relevant for end-users who prefer earlier neighbour critical mass.",
+        "Established districts may display more consistent year-round occupancy rhythms simply because more households already live full-time. Newer master plans can sheet phased occupancy waves — useful for investors planning rental strategy, relevant for end-users who prefer earlier neighbour critical mass.",
         "Neither pattern is morally superior — they behave differently for noise, amenity utilisation, and community programming. Ask honest questions about how clubs and pools scale as lots deliver; avoid romantic assumptions from single-phase marketing renders.",
       ],
     },
@@ -174,10 +174,10 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
       heading: "Pulling the threads together for 2026 buyers",
       titleLevel: "h2",
       paragraphs: [
-        "New Zayed versus Sheikh Zayed is a geography maturity and lifestyle-fit decision first — then an issuance-economics decision inside a shortlist compound. Solana West belongs in many shortlists when low-density ORA planning and Mehwar El Dabaa orientation align with buyer truth — never because an article declared a winner.",
+        "New Zayed versus Sheikh Zayed is a geography maturity and lifestyle-fit decision first — then a current sales sheet-economics decision inside a shortlist compound. Solana West belongs in many shortlists when low-density ORA planning and Mehwar El Dabaa orientation align with buyer truth — never because an article declared a winner.",
         "Use WhatsApp privately when you want structured desk replies: name typology, budget comfort, hold horizon, and whether you prioritise schools or airport frequency. That single message often replaces hours of speculative scrolling.",
         "Serious institutional sites publish geography education because it lengthens time-on-page for the right readers — families comparing school runs, executives comparing airport friction, investors comparing hold windows. That behaviour matches how Google evaluates helpful content: specificity, entity clarity, and next-step discipline rather than keyword repetition.",
-        "If you syndicate excerpts to LinkedIn or Facebook, lead with map discipline and verification habits — not price hype. Social warming works when audiences recognise thoughtful guidance; it fails when posts read like recycled billboards.",
+        "If you syndicate excerpts to LinkedIn or Facebook, lead with map discipline and verification habits — not price hype. Social warming works when audiences recognise thoughtful advisory notes; it fails when posts read like recycled billboards.",
         "Bookmark this briefing beside your own commute diary: the west corridor only rewards buyers who test reality on school weeks, not on quiet weekends alone.",
       ],
     },
@@ -190,7 +190,7 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
         {
           question: "Is New Zayed better than Sheikh Zayed for luxury buyers?",
           answer:
-            "Neither is universally better — they represent different maturity and product mixes. Choose based on household geography truth, typology availability, issuance brackets, and delivery horizons.",
+            "Neither is universally better — they represent different maturity and product mixes. Choose based on household geography truth, typology availability, current sales sheet brackets, and delivery horizons.",
         },
         {
           question: "Why does Mehwar El Dabaa matter in this debate?",
@@ -200,7 +200,7 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
         {
           question: "How does Solana West fit New Zayed specifically?",
           answer:
-            "It is a large ORA-led master plan on Mehwar El Dabaa with low-density sequencing and phased typologies — evaluate with project-specific issuance and maps.",
+            "It is a large ORA-led master plan on Mehwar El Dabaa with low-density sequencing and phased typologies — evaluate with project-specific current sales sheet and maps.",
         },
         {
           question: "Should investors favour New Zayed for appreciation?",
@@ -222,7 +222,7 @@ export const newZayedVsSheikhZayedLuxuryBuyers2026Article: BlogArticleDocument =
         context: "ORA-led West Cairo argumentation.",
       },
       {
-        label: "ORA Developers Egypt strategy",
+        label: "ORA Developer Egypt strategy",
         href: "/blog/ora-developers-egypt-vision-projects-strategy",
         context: "Brand and portfolio orientation.",
       },

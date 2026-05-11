@@ -1,6 +1,6 @@
 import { siteConfig } from "@/data/site";
 
-/** Factual commercial anchors — mirrors project context; issuance supersedes summaries. */
+/** Factual commercial anchors — mirrors project context; current sales sheet supersedes summaries. */
 export const croCommercialFacts = {
   startingFrom: "From 9.8M EGP",
   downPayment: "5% down",
@@ -12,13 +12,13 @@ export const croCommercialSummaryLine =
   `${croCommercialFacts.startingFrom} · ${croCommercialFacts.downPayment} · ${croCommercialFacts.installments} · ${croCommercialFacts.delivery}.`;
 
 /**
- * Reference chips — investor scan line; chips are factual, not promotional.
+ * Commercial chips — investor scan line; chips are factual, not promotional.
  * Used in final conversion panel and lead forms.
  */
-export const croReferenceChipLabels = [
+export const croCommercialChipLabels = [
   croCommercialFacts.startingFrom,
   `${croCommercialFacts.downPayment} · at booking`,
-  `${croCommercialFacts.installments} · issuance schedule`,
+  `${croCommercialFacts.installments} · current sales schedule`,
   croCommercialFacts.delivery,
 ] as const;
 
@@ -34,7 +34,7 @@ export const croMessaging = {
 
   railEyebrow: "Advisory",
   railWhatsAppLabel: "Speak with the advisory desk",
-  railWhatsAppSubline: "Structured pricing & availability guidance · issuance-aligned",
+  railWhatsAppSubline: "Structured pricing & availability · sales-confirmed",
 
   stickyWhatsAppLine: "Acquisition desk",
   stickyWhatsAppSubline: "WhatsApp",
@@ -42,24 +42,24 @@ export const croMessaging = {
   stickyEnquiryLabel: "Enquire",
 
   heroPrimaryCta: "Private acquisition desk",
-  heroSecondaryCtaLong: "Pricing & availability guidance",
-  heroSecondaryCtaShort: "Guidance",
-  heroAnnotationTitle: "Collateral reference",
+  heroSecondaryCtaLong: "Pricing & availability",
+  heroSecondaryCtaShort: "Pricing",
+  heroAnnotationTitle: "Commercial snapshot",
 
   paymentSectionCue:
-    "Down payment, milestones, and interest mechanics exist only in your issuance file—we walk the line items with you so counsel or treasury can sign off.",
+    "Review the down payment, delivery timing, and unit availability with a calm acquisition desk before you choose a unit.",
   paymentSectionCta: "Speak with the advisory desk",
   paymentSectionCtaSub:
-    "Request your schedule excerpt—structured for treasury review, not a generic flyer.",
+    "Request your schedule excerpt—structured for family review, not a generic flyer.",
   internalPaymentPlanLink: "Payment-plan page",
 
   finalPanelDeskAssurance:
-    "Authorised desk responses—formatted for acquisition teams, families, and GCC treasury review—not broadcast marketing.",
+    "Authorised desk responses—formatted for acquisition teams, families, and GCC family review—not broadcast marketing.",
 
   leadFormEyebrow: "Advisory enquiry",
   leadFormSubtitle:
     `${croCommercialSummaryLine} Share typology interest, hold horizon, and preferred channel—we route context to the advisory desk.`,
-  leadFormSubmitIdle: "Request pricing & availability guidance",
+  leadFormSubmitIdle: "Request pricing & availability",
   leadFormSubmitPending: "Sending…",
   leadFormRoutingNote:
     "Enquiries route to authorised desk review. Fastest structured commercial context is usually WhatsApp—the private acquisition desk.",
@@ -77,18 +77,18 @@ export const croInvestorAssurance = [
     eyebrow: "Developer",
     title: siteConfig.developer,
     detail:
-      "ORA-led servicing and phased sales—institutional counterparty posture for issuance-driven reservations.",
+      "ORA-led servicing and phased sales with an institutional developer posture for serious reservations.",
   },
   {
     eyebrow: "Leadership",
     title: siteConfig.founder,
     detail:
-      "Chairman-led portfolio governance; milestones and counterparties sit with an established developer, not ad-hoc promotion.",
+      "Chairman-led portfolio governance; payment steps and counterparties sit with an established developer, not ad-hoc promotion.",
   },
   {
     eyebrow: "Horizon",
-    title: "Handover from 2027",
+    title: "Delivery from 2027",
     detail:
-      "Low-density master plan—verify cluster delivery and amenity rollout against your underwriting before you anchor rent or exit assumptions.",
+      "Low-density master plan—verify cluster delivery and amenity rollout against your investment review before you anchor rent or exit assumptions.",
   },
 ] as const;

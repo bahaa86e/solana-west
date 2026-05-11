@@ -20,9 +20,9 @@ export type SolanaWestFaqSectionId = (typeof SOLANA_WEST_FAQ_SECTION_ORDER)[numb
 
 export const SOLANA_WEST_FAQ_SECTION_LABELS: Record<SolanaWestFaqSectionId, string> = {
   prices: "Prices & brackets",
-  payment_plans: "Payment plans & issuance",
+  payment_plans: "Payment plans & current sales sheet",
   location: "Location & connectivity",
-  ora_developers: "ORA Developers Egypt",
+  ora_developers: "ORA Developer Egypt",
   apartments: "Apartments",
   townhouses: "Townhouses",
   villas: "Villas & twin houses",
@@ -31,7 +31,7 @@ export const SOLANA_WEST_FAQ_SECTION_LABELS: Record<SolanaWestFaqSectionId, stri
   lifestyle: "Lifestyle",
   investment: "Investment posture",
   buying_process: "Buying & reservation",
-  delivery: "Delivery & handover",
+  delivery: "Delivery & delivery",
   comparisons: "Comparisons",
 };
 

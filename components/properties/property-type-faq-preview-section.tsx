@@ -13,8 +13,16 @@ const PROP_FAQ_H2: Record<PropertyExperienceModel["slug"], string> = {
   "twin-houses": "Twin-house FAQs — paired walls, frontage & brackets",
 };
 
+const PROP_FAQ_H2_AR: Record<PropertyExperienceModel["slug"], string> = {
+  villas: "أسئلة شائعة عن فلل سولانا ويست",
+  townhouses: "أسئلة شائعة عن تاون هاوس سولانا ويست",
+  apartments: "أسئلة شائعة عن شقق سولانا ويست",
+  "twin-houses": "أسئلة شائعة عن توين هاوس سولانا ويست",
+};
+
 export function PropertyTypeFaqPreviewSection({ model }: { model: PropertyExperienceModel }) {
   const { slug, faqPreview } = model;
+  const isArabic = /[\u0600-\u06FF]/.test(model.hero.h1);
 
   return (
     <SectionShell
@@ -27,20 +35,20 @@ export function PropertyTypeFaqPreviewSection({ model }: { model: PropertyExperi
         <div className="max-w-xl md:pb-2">
           <SectionHeader
             id={`property-${slug}-faq-preview-heading`}
-            eyebrow="FAQ excerpts"
-            title={PROP_FAQ_H2[slug]}
+            eyebrow={isArabic ? "أسئلة مختارة" : "FAQ excerpts"}
+            title={isArabic ? PROP_FAQ_H2_AR[slug] : PROP_FAQ_H2[slug]}
             kicker={<p className="font-normal text-lux-ink/64">{faqPreview.intro}</p>}
           />
         </div>
         <div className="flex w-full shrink-0 flex-col gap-6 sm:flex-row sm:items-center sm:justify-end md:w-auto lg:gap-8">
           <CtaButton href={faqPreview.fullFaqHref} variant="secondary" size="lg" className="min-w-[12.5rem] px-12">
-            Full FAQ index
+            {isArabic ? "عرض الأسئلة الشائعة" : "Full FAQ index"}
           </CtaButton>
           <Link
             href={faqPreview.fullFaqHref}
             className="text-[0.9375rem] font-normal tracking-[0.01em] text-lux-ink/52 underline decoration-lux-ink/[0.18] decoration-1 underline-offset-[10px] transition-colors duration-400 hover:text-lux-ink hover:decoration-lux-gold/48"
           >
-            Dedicated FAQ route
+            {isArabic ? "صفحة الأسئلة الكاملة" : "Dedicated FAQ route"}
           </Link>
         </div>
       </div>

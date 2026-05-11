@@ -17,34 +17,34 @@ const linkClass = cn(
 
 const guides = [
   {
-    title: "محور الضبعة ومنطق الأرض — أين يمتص غرب القاهرة الطلب",
-    body: `يضع نضج محور الضبعة والحلقة سياق الطلب غرباً. ابدأ بالمكان ثم اقرأ ${siteConfig.shortName} بأفق احتفاظك — لا بمزاج الإطلاق.`,
+    title: "محور الضبعة ونيو زايد كعنوان استثماري",
+    body: `يمثل محور الضبعة ونيو زايد جزءاً من توسع غرب القاهرة نحو مجتمعات أوسع وأهدأ. ابدأ بالموقع، ثم اقرأ ${siteConfig.shortName} وفق أفق احتفاظ واضح لا وفق ضجيج الطرح الأول.`,
     href: "/blog/solana-west-mehwar-new-zayed-location-buyer-guide-2026",
-    cta: "دليل الموقع للمشتري",
+    cta: "اقرأ دليل موقع سولانا ويست",
   },
   {
-    title: "ثقافة سداد على مستوى الجهة المصدرة",
-    body: "مقدّم 5% وأقساط حتى عشر سنوات عنوان تسويق؛ الضبط الفعلي على جدول الإصدار الذي يحمل حقيبتك الحجز.",
+    title: "تقسيط سولانا ويست حتى 10 سنوات",
+    body: "دفعة حجز 5% وتقسيط حتى 10 سنوات يمنحان إطاراً أولياً، لكن القرار المالي الحقيقي يبدأ من جدول السداد الرسمي للوحدة التي تختارها.",
     href: "/blog/solana-west-payment-plan-explained-issuer-guide-2026",
-    cta: "دليل خطة السداد",
+    cta: "اقرأ دليل خطة السداد",
   },
   {
-    title: "هيكل تصحيح — روايات لا وعود عائد",
-    body: `تخطيط ORA المفتوح والانضباط المساحي مدخل للتدقيق لا وعد أداء. أنمذِج على أرقام تحققها عند الحجز.`,
+    title: "استثمار سولانا ويست بدون وعود عائد مبالغ فيها",
+    body: "قيمة الاستثمار تُقرأ من التخطيط، السعر، خطة السداد، وموعد التسليم. لا تعتمد على وعد عائد؛ ابنِ قرارك على أرقام تُراجع عند الحجز.",
     href: "/blog/solana-west-new-zayed-investment-strength-2026",
-    cta: "سياق استثماري",
+    cta: "اقرأ الرؤية الاستثمارية",
   },
   {
-    title: "الزيادة الجديدة مقابل الشيخ زايد — برك المشترين وتوسع المدينة",
-    body: "كيف تختلف جغرافيا التوسّع، والقرب من المطار، وبرك المشترين عند اختيار عنوان طويل الأمد.",
+    title: "نيو زايد والشيخ زايد: قراءة للمشتري طويل الأمد",
+    body: "المقارنة بين نيو زايد والشيخ زايد تبدأ من نمط الحياة اليومي، سهولة الوصول، القرب من المطار، وطبيعة الطلب طويل الأمد.",
     href: "/blog/new-zayed-vs-sheikh-zayed-luxury-buyers-2026",
-    cta: "مقارنة منطقة",
+    cta: "اقرأ مقارنة المنطقة",
   },
   {
-    title: "قراءة الطرف المقابل لـORA — مخاطر التسلسل قبل SKU",
-    body: "تسلسل المطوِّر—منظر، خدمات، مبيعات—يُوزن كمثل خطر نوع الوحدة عند حساب المخاطر التشغيلية.",
+    title: "ORA Developer Egypt وسياق الثقة قبل اختيار الوحدة",
+    body: "اسم المطوّر، وضوح المستندات، جودة التخطيط، وخدمة ما بعد البيع عناصر تُراجع مع نوع الوحدة قبل اتخاذ قرار الشراء.",
     href: "/blog/ora-developers-egypt-vision-projects-strategy",
-    cta: "ملاحظة استراتيجية ORA",
+    cta: "اقرأ عن ORA Developer Egypt",
   },
 ] as const;
 
@@ -59,11 +59,11 @@ export default function ArabicInvestmentGuidesPage() {
             id="investment-guides-ar-heading"
             className="mt-lux-stack-xs max-w-[min(40ch,100%)] text-balance font-display text-display-xl text-lux-ink"
           >
-            الاستثمار في غرب القاهرة — أدلة تدقيق مرساة على {siteConfig.shortName}
+            الاستثمار العقاري في نيو زايد وسولانا ويست
           </h1>
           <p className="lux-body mt-lux-stack-sm max-w-[52ch] text-lux-ink/68 md:mt-lux-stack-md">
-            مسارات عربية قصيرة — كل واحدة تربط بتدوينة إنجليزية كاملة. لا شيء هنا بديلاً لحقيبة الحجز أو المستشار
-            القانوني أو تأكيدات الجهة المصدرة.
+            مسارات مختصرة تساعدك على قراءة الاستثمار العقاري في نيو زايد بهدوء. لا شيء هنا بديل عن مستندات الحجز،
+            أو مراجعة قانونية مستقلة، أو تأكيدات الجهة المطوّرة.
           </p>
         </header>
 
@@ -83,22 +83,22 @@ export default function ArabicInvestmentGuidesPage() {
 
         <section className="border-t border-lux-ink/[0.06] py-10 md:py-12" aria-labelledby="investment-next-ar">
           <h2 id="investment-next-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
-            اربط الأدلة بمسارات سولانا ويست المعاملاتية
+            اربط الاستثمار بالأسعار والتقسيط والموقع
           </h2>
           <ul className="lux-body mt-4 max-w-[52ch] list-disc space-y-2 pr-5 text-lux-ink/68">
             <li>
               <Link href={localizedPathname("/prices", "ar")} className={linkClass}>
-                مرجع الأسعار العربي
+                أسعار سولانا ويست
               </Link>
             </li>
             <li>
               <Link href={localizedPathname("/payment-plan", "ar")} className={linkClass}>
-                خطة السداد العربية
+                تقسيط سولانا ويست
               </Link>
             </li>
             <li>
               <Link href={localizedPathname("/contact", "ar")} className={linkClass}>
-                مكتب استفسارات
+                تواصل مع مكتب المبيعات
               </Link>
             </li>
           </ul>

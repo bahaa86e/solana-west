@@ -22,13 +22,13 @@ const guides = [
     cta: "Location buyer guide",
   },
   {
-    title: "Issuer-grade payment literacy",
-    body: `5% down and up to 10 years are marketing headlines. Underwriting happens on the issuance schedule your sales pack carries.`,
+    title: "Sales desk-grade payment literacy",
+    body: `5% down and up to 10 years are marketing headlines. Investment review happens on the current sales schedule your sales pack carries.`,
     href: "/blog/solana-west-payment-plan-explained-issuer-guide-2026",
     cta: "Payment plan guide",
   },
   {
-    title: "Diligence scaffolding — narratives, not return promises",
+    title: "Diligence outline — narratives, not return promises",
     body: `ORA-led master planning and open-space discipline are diligence inputs—not return promises. Model only on figures you verify at reservation.`,
     href: "/blog/solana-west-new-zayed-investment-strength-2026",
     cta: "Investment context",
@@ -40,7 +40,7 @@ const guides = [
     cta: "Area comparison",
   },
   {
-    title: "ORA counterparty read — sequencing risk before SKU risk",
+    title: "ORA developer read — sequencing risk before SKU risk",
     body: "Developer sequencing—landscape, servicing, sales—matters as much as unit SKU when you size operational risk.",
     href: "/blog/ora-developers-egypt-vision-projects-strategy",
     cta: "ORA strategy note",
@@ -62,7 +62,7 @@ export default function InvestmentGuidesPage() {
           </h1>
           <p className="lux-body mt-lux-stack-sm max-w-[52ch] text-lux-ink/68 md:mt-lux-stack-md">
             Short, investor-grade lanes—each links to a long-form journal entry. Nothing here replaces your booking pack,
-            legal counsel, or issuer confirmations.
+            advisers, or sales current sales sheets.
           </p>
         </header>
 
@@ -87,7 +87,7 @@ export default function InvestmentGuidesPage() {
           <ul className="lux-body mt-4 max-w-[52ch] list-disc space-y-2 pl-5 text-lux-ink/68">
             <li>
               <Link href="/prices" className={linkClass}>
-                Price reference desk
+                Price starting price desk
               </Link>
             </li>
             <li>

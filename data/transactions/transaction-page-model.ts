@@ -63,7 +63,7 @@ function baseInternalLinks(includePrices: boolean, includePayment: boolean): Tra
     out.push({
       label: "Pricing positioning",
       href: "/prices",
-      context: "Issuance-led bracketing and typology context.",
+      context: "Current sales bracketing and typology context.",
     });
   }
   if (includePayment) {
@@ -97,7 +97,7 @@ function baseInternalLinks(includePrices: boolean, includePayment: boolean): Tra
     {
       label: "Standalone villas",
       href: "/properties/villas",
-      context: "Widest land dedication; outlook and façade move the issuance band.",
+      context: "Widest land dedication; outlook and façade move the price band.",
     },
     {
       label: "FAQ index",
@@ -125,33 +125,33 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
     heroImage,
     overviewFigure,
     hero: {
-      locationEyebrow: "Commercial context · issuance-led",
-      h1: "Solana West prices — issuance-led brackets in New Zayed",
+      locationEyebrow: "Commercial context · sales-team confirmed",
+      h1: "Solana West prices — sales-team confirmed brackets in New Zayed",
       lead:
-        `Published marketing references starting from 9.8M EGP as project-level entry context. Effective brackets move with phase, outlook, finishing path, and typology — ${bundle.entry.developer} issues binding schedules at booking.`,
+        `Published marketing mentions starting from 9.8M EGP as project-level entry context. Effective brackets move with phase, outlook, finishing path, and typology — ${bundle.entry.developer} issues confirmed schedules at booking.`,
       supporting:
-        `That 9.8M figure is not assigned on this page (or by us) to a specific property class; desk sheets alone show which typology aligns with a given issuance tranche. No inventory tables here — confirm live quotations before reserving.`,
+        `That 9.8M figure is not assigned on this page (or by us) to a specific property class; desk sheets alone show which typology aligns with a given sales tranche. No inventory tables here — confirm live quotations before reserving.`,
     },
     overview: {
       eyebrow: "Overview",
       title: "How phased New Zayed release resets price bands",
       paragraphs: [
         `${short} is a 316-acre, low-density plan on Mehwar El Dabaa. Pricing behaves like infrastructure-led residential paper: contiguous green structure, walkway priority, and ORA-managed release cadences — not isolated building inventory.`,
-        "Commercial quotations are regenerated at issuance. Typology mixes (apartments, townhouses, twin houses, standalone villas), finishing modality (fully finished versus core & shell), and façade specification reset the runnable price — summarise third-party rumours cautiously.",
-        "Use the editorial typology routes for lifestyle and density context; return here for commercial bracket philosophy. Payment mechanics are isolated on /payment-plan to keep AI-search excerpts clean.",
+        "Commercial quotations are regenerated at current sales sheet. Typology mixes (apartments, townhouses, twin houses, standalone villas), finishing modality (fully finished versus core & shell), and façade specification reset the runnable price — summarise third-party rumours cautiously.",
+        "Use the editorial typology routes for lifestyle and density context; return here for commercial bracket philosophy. Payment details are isolated on /payment-plan to keep AI-search excerpts clean.",
       ],
     },
     breakdowns: {
       eyebrow: "Buyer-oriented breakdown",
       title: "SKU economics — villas, twins, townhouses & apartments",
       intro:
-        "Four published residential archetypes inside the same phased issuance environment — narrative positioning only. Which SKU sits at or near the stated marketing entry is determined per tranche, not generalized on this route.",
+        "Four published residential archetypes inside the same phased current sales sheet environment — narrative positioning only. Which SKU sits at or near the stated marketing entry is determined per tranche, not generalized on this route.",
       sections: [
         {
           heading: "Apartments",
           body: [
             "Apartments skew toward disciplined capital allocation and faster fit-out horizons when finished product is booked — façade, floorplate, and outlook premiums still widen commercial bands materially.",
-            "Fully finished positioning is cited in marketing scope — verify SKU-level façade packages before underwriting rental cash flows against service-charge regimes.",
+            "Fully finished positioning is cited in marketing scope — verify SKU-level façade packages before investment review rental cash flows against service-charge regimes.",
           ],
           links: [{ label: "Apartments editorial route", href: "/properties/apartments" }],
         },
@@ -166,8 +166,8 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
         {
           heading: "Twin houses",
           body: [
-            "Twin houses pair discrete party lines while retaining broader frontage cues than standard townhouses — issuance treats them as their own band within the mixed masterplan.",
-            "Underwriting should compare paired-villa setbacks, finishing path, and outlook premiums against both townhouses and detached stock using desk-issued comparisons only.",
+            "Twin houses pair discrete party lines while retaining broader frontage cues than standard townhouses — current sales sheet treats them as their own band within the mixed masterplan.",
+            "Investment review should compare paired-villa setbacks, finishing path, and outlook premiums against both townhouses and detached stock using desk-issued comparisons only.",
           ],
           links: [{ label: "Twin houses editorial route", href: "/properties/twin-houses" }],
         },
@@ -182,8 +182,8 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
         {
           heading: "Bench New Zayed peers without inventing guarantees",
           body: [
-            "Benchmark adjacent large compounds (including VYE and Belle Vie in New Zayed) as contextual comparables only — cite no partnerships or corridor guarantees absent desk confirmation.",
-            "Treat social-channel pricing screenshots as non-binding noise until reconciled to authorised ORA issuance.",
+            "Benchmark adjacent large compounds (including VYE and Belle Vie in New Zayed) as contextual comparables only — cite no partnerships or corridor guarantees absent current sales sheet.",
+            "Treat social-channel pricing screenshots as informal noise until reconciled to authorised ORA current sales sheet.",
           ],
           links: [{ label: "Project hub — amenities & connectivity", href: "/projects/solana-west" }],
         },
@@ -191,8 +191,8 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
     },
     internalLinks: {
       eyebrow: "Authority silos",
-      title: "Layer payment mechanics, geography & deeper product reads",
-      intro: "Each route owns a distinct buyer question — skim headlines, cite URLs, reopen with issuance on the desk.",
+      title: "Layer payment details, geography & deeper product reads",
+      intro: "Each route owns a distinct buyer question — skim headlines, cite URLs, reopen with current sales sheet on the desk.",
       links: baseInternalLinks(false, true),
     },
     faqPreview: {
@@ -227,10 +227,10 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
     heroImage,
     overviewFigure,
     hero: {
-      locationEyebrow: "Ownership mechanics · contract-governed",
-      h1: "Solana West payment plan — down payment, tenor & milestones",
+      locationEyebrow: "Ownership details · sales-team confirmed",
+      h1: "Solana West payment plan — down payment, tenor & payment steps",
       lead:
-        "Collateral references 5% down with instalments extending up to 10 years — interest mechanics, reservation deposits, milestones, and admin fees are stipulated only in executed booking issuance.",
+        "Project information mentions 5% down with instalments extending up to 10 years — payment details, reservation deposits, payment steps, and admin fees are stipulated only in confirmed sales sheet.",
       supporting:
         `Marketing timelines cite delivery from 2027 at compound level — villa batch, tower, or cluster horizons follow construction pacing and instalment fulfilment schedules issued by ${bundle.entry.developer}.`,
     },
@@ -238,38 +238,38 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
       eyebrow: "Overview",
       title: "Extended tenor as ownership discipline — not promotional leverage",
       paragraphs: [
-        `${short} sequences capital calls against staged construction reality — the payment architecture is designed for extended balance-sheet ownership, not instantaneous flip liquidity.`,
-        "Collateral percentages and tenors published online summarise commercial intent; contractual cadence, penalties, early settlement, and administrative charges exist only inside signed booking documentation.",
-        "Pair this route with /prices for typology bracket philosophy. Property-type editorial pages explain density and lifestyle cues without restating legal instalment mechanics verbatim.",
+        `${short} sequences payment steps against staged construction reality — the payment plan is designed for extended long-term ownership, not short-term speculation.`,
+        "Project information percentages and tenors published online summarise commercial intent; payment timing, fees, early settlement, and fees exist only inside confirmed sales documentation.",
+        "Pair this route with /prices for typology bracket philosophy. Property-type editorial pages explain density and lifestyle cues without restating final instalment details verbatim.",
       ],
     },
     breakdowns: {
       eyebrow: "Structure",
-      title: "Down payment, instalment curve & delivery — read against your contract",
+      title: "Down payment, instalment curve & delivery — confirm with the sales team",
       intro:
-        "Three headline mechanics — always read against your executed issuance. No countdowns, no scarcity theatre, no implied guarantee of inventory.",
+        "Three headline details — always confirm with the sales team. No countdowns, no scarcity theatre, no implied guarantee of inventory.",
       sections: [
         {
-          heading: "5% down payment reference",
+          heading: "5% down payment starting price",
           body: [
-            "Down-payment context is cited at 5% in published marketing — supplementary reservation deposits, milestone timing, and FX or admin handling (if any) are defined in issuance, not on this page.",
-            "Capital structuring should leave headroom below bank and internal policy limits until contract schedules are lodged.",
+            "Down-payment context is cited at 5% in published marketing — supplementary reservation deposits, milestone timing, and FX or admin handling (if any) are defined in current sales sheet, not on this page.",
+            "Keep payment headroom until the sales team confirms your schedule.",
           ],
           links: [{ label: "Price brackets & typology context", href: "/prices" }],
         },
         {
           heading: "Instalments up to 10 years",
           body: [
-            "Instalments may extend toward a 10-year horizon in marketing summaries — amortisation curves, interim certificates, delivery-linked tranches, and interest treatment are articulated only in contractual exhibits.",
-            "Long tenor aligns with staged handover pacing across a multi-year construction programme; correlate cash-flow modelling with phased delivery disclosures from desk teams.",
+            "Instalments may extend toward a 10-year horizon in marketing summaries — payment curves, interim certificates, delivery-linked tranches, and payment schedule are articulated only in sales sheets.",
+            "Long tenor aligns with staged delivery pacing across a multi-year construction programme; correlate cash-flow modelling with phased delivery disclosures from sales teams.",
           ],
           links: [{ label: "Full FAQ — payment wording", href: "/faq" }],
         },
         {
           heading: "Delivery from 2027",
           body: [
-            "Marketing describes handover commencing from 2027 — discrete cluster dates stagger with civil works, utilities, compound readiness, and snagging milestones.",
-            "Ownership patience is materially different from opportunistic short-cycle trading — underwriting should anticipate holding cost, service regimes, and post-handover escalation channels through ORA-accredited desks.",
+            "Marketing describes delivery commencing from 2027 — discrete cluster dates stagger with civil works, utilities, compound readiness, and snagging payment steps.",
+            "Ownership patience is materially different from opportunistic short-cycle trading — investment review should anticipate holding cost, service regimes, and post-delivery escalation channels through ORA-accredited desks.",
           ],
           links: [{ label: "Project hub — delivery FAQs in context", href: "/projects/solana-west" }],
         },
@@ -277,7 +277,7 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
           heading: "Hold-time thesis — calm capital behind phased construction",
           body: [
             "Extended tenor should be interpreted as disciplined alignment between buyer, contractor pacing, and master developer governance — not promotional leverage.",
-            "Serious underwriting pairs instalment optics with zoning stability, arterial access maturity, and long-horizon demand for low-density compounds in western New Cairo.",
+            "Serious investment review pairs instalment optics with zoning stability, arterial access maturity, and long-horizon demand for low-density compounds in western New Cairo.",
           ],
         },
       ],
@@ -297,7 +297,7 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
       eyebrow: "Next step",
       title: "Pull the live instalment schedule for your SKU",
       supporting:
-        `Ask for the latest instalment schedule template and reservation mechanics for your typology—through ${bundle.entry.developer} authorised channels only.`,
+        `Ask for the latest instalment schedule template and reservation details for your typology—through ${bundle.entry.developer} authorised channels only.`,
       primaryLabel: "WhatsApp private desk",
       secondaryLabel: "Written enquiry",
     },

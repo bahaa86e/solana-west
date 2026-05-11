@@ -31,7 +31,7 @@ export function GlobalCroRail({ className }: { className?: string }) {
         "shadow-[0_1px_0_rgba(255,255,255,0.65)]",
         className,
       )}
-      aria-label="Commercial reference and private desk contact"
+      aria-label="Commercial starting price and private desk contact"
     >
       <Container as="div" className="py-2.5 max-md:py-2 md:py-3.5">
         <div className="flex flex-col gap-3.5 md:flex-row md:items-center md:justify-between md:gap-8">

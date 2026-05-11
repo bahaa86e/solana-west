@@ -8,7 +8,7 @@ import { siteConfig } from "@/data/site";
  *
  * Editorial imagery map:
  * - Hero (`investment`): West Cairo positioning / investor-grade dusk composition (see bundle ALT).
- * - Inline suggest: juxtaposition schematic “headline issuance vs HOA annuity” chart — ALT example: “Chart comparing nominal Solana West prices with HOA and lifecycle annuity for New Zayed luxury compound”.
+ * - Inline suggest: juxtaposition schematic “headline current sales sheet vs HOA annuity” chart — ALT example: “Chart comparing nominal Solana West prices with HOA and lifecycle annuity for New Zayed luxury compound”.
  */
 
 const nx = siteConfig.name;
@@ -20,13 +20,13 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
   topic: "investment",
   title:
     "Solana West prices as capital allocation — New Zayed growth, ORA optics, comparative discipline in luxury real estate Egypt",
-  deck: `Reframing headline Solana West New Zayed numbers into West Cairo underwriting without fantasy ROI tables.`,
-  description: `${nx} investment editorial: decode Solana West prices against phased delivery from 2027, instalment scaffolding (5%, up to 10 years marketing references), HOA annuity realities, neighbouring belt comparables including VYE & Belle Vie, ${ora} reputation, villas/apartments/townhouses SKU curves for New Zayed investment authority.`,
+  deck: `Reframing headline Solana West New Zayed numbers into West Cairo investment review without fantasy ROI tables.`,
+  description: `${nx} investment editorial: decode Solana West prices against phased delivery from 2027, instalment outline (5%, up to 10 years marketing mentions), HOA annuity realities, neighbouring belt comparables including VYE & Belle Vie, ${ora} reputation, villas/apartments/townhouses SKU curves for New Zayed investment authority.`,
   keywords: [
     "Solana West prices",
     "Solana West investment",
     "New Zayed luxury real estate investment",
-    "ORA Developers Egypt investment",
+    "ORA Developer Egypt investment",
     "West Cairo capital appreciation luxury",
     "Solana West payment plan IRR",
     "compare Solana West VYE Belle Vie",
@@ -39,11 +39,11 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
   heroImage: solanaWestMedia.investment,
 
   intro: [
-    `Institutional portfolios and family offices underwriting luxury dirt in Egypt increasingly begin queries as blunt search strings—among them Solana West prices—even when principals privately profess interest in narratives about ${ora}, Sheikh Zayed halo migration, Sphinx airport logistics gravity, arterial upgrades along Mehwar El Dabaa, low-density choreography on roughly three hundred sixteen acres, finishing optionality (fully finished versus core and shell), and how payment plans referenced at five percent down with instalment horizons approaching ten years influence cash-weighted returns alongside delivery descriptions beginning from twenty twenty-seven.`,
+    `Institutional portfolios and family offices investment review luxury dirt in Egypt increasingly begin queries as blunt search strings—among them Solana West prices—even when principals privately profess interest in narratives about ${ora}, Sheikh Zayed halo migration, Sphinx airport logistics gravity, arterial upgrades along Mehwar El Dabaa, low-density choreography on roughly three hundred sixteen acres, finishing optionality (fully finished versus core and shell), and how payment plans mentioned at five percent down with instalment horizons approaching ten years influence cash-weighted returns alongside delivery descriptions beginning from twenty twenty-seven.`,
     `This piece reframes Solana West prices not as a sticker shock moment but as the opening node of a capital allocation graph: acquisition entry, construction-phase cash consumption, optional mortgage drag or relief, clubhouse and landscape annuity drag, exit liquidity windows, assignment fees if relevant, regulatory posture, currency psychology if domiciled abroad, generational hold tolerance, and emotional optionality of living versus leasing elsewhere while dust resolves.`,
-    `We avoid fabricating percentage appreciation promises—such theatre violates both fiduciary sobriety and Google Ads–friendly transparency. Instead we supply comparison scaffolding, ORA reputation context, New Zayed macro orientation, and interrogation lists so your internal models earn their digits honestly.`,
+    `We avoid fabricating percentage appreciation promises—such theatre violates both fiduciary sobriety and Google Ads–friendly transparency. Instead we supply comparison outline, ORA reputation context, New Zayed macro orientation, and interrogation lists so your internal models earn their digits honestly.`,
     `Where neighbouring compounds like VYE (Sodic) or Belle Vie (Emaar) appear, they enter strictly as market comparables rather than partnership implications—your diligence remains symmetric across brands.`,
-    `When you later cross-link to transactional routes, treat those pages as operational complements: this investment essay explains how to *think* about Solana West prices; the issuer money pages help you *quote* and *structure* capital with ${ora} governance; the FAQ ledger distills rapid zero-click answers feeding Google AI Overview summaries; the comparison journal provides belt-wide discipline so single-project tunnel vision does not inflate false certainty.`,
+    `When you later cross-link to transactional routes, treat those pages as operational complements: this investment essay explains how to *think* about Solana West prices; the sales desk money pages help you *quote* and *structure* capital with ${ora} governance; the FAQ ledger distills rapid zero-click answers feeding Google AI Overview summaries; the comparison journal provides belt-wide discipline so single-project tunnel vision does not inflate false certainty.`,
   ],
 
   sections: [
@@ -53,7 +53,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Are Solana West prices ‘expensive’ relative to West Cairo luxury supply?",
       titleLevel: "h2",
       paragraphs: [
-        `Snippets favour bluntness: Solana West prices reflect issuer quotations for inventory inside ${nx} by ${ora}; marketing references frequently cite compound-level entry orientation near nine point eight million Egyptian pounds, but apples-to-apples comparison demands identical finishing, outlook, typology, and phase vintage across candidate compounds.`,
+        `Snippets favour bluntness: Solana West prices reflect sales quotations for inventory inside ${nx} by ${ora}; marketing mentions frequently cite compound-level entry orientation near nine point eight million Egyptian pounds, but apples-to-apples comparison demands identical finishing, outlook, typology, and phase vintage across candidate compounds.`,
         `Abstract ‘expensive’ judgements without SKU parity are analytically fragile — yet emotionally ubiquitous on social channels.`,
       ],
     },
@@ -66,7 +66,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       paragraphs: [
         `West Cairo arterial logic—Middle Ring interplay, Alexandria Desert Road freight psychology, Sphinx International Airport uplift storytelling, gradual scholastic densification—is often cited orientationally.`,
         `None alone guarantees directional price appreciation; collectively they thicken demand conviction curves among diaspora cohorts, GCC rotational residents, and domestically affluent household migration seeking lower-density greener compounds.`,
-        `Investment memos should score macro factors qualitatively and separately from issuer-specific execution.`,
+        `Investment memos should score macro factors qualitatively and separately from sales desk-specific execution.`,
       ],
     },
     {
@@ -75,7 +75,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: `${ora} reputation factor — intangible optionality layered atop tangible Solana West prices`,
       titleLevel: "h2",
       paragraphs: [
-        `${siteConfig.founder}-anchored brand gravity influences counterparty trust, refinancing bank familiarity, concierge programming ambition, HOA transition maturity expectations.`,
+        `${siteConfig.founder}-anchored brand gravity influences developer trust, financing familiarity, concierge programming ambition, HOA transition maturity expectations.`,
         `Intangible premia seldom appear as explicit spreadsheet lines — yet materially reduce perceived catastrophic tail risk versus opaque developers.`,
         `Reputation does not obsolete reading commercial schedules.`,
       ],
@@ -83,7 +83,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
     {
       type: "prose",
       id: "typology-beta",
-      heading: "Which SKU families historically exhibit different liquidity curvature — villas, twins, townhouses, apartments",
+      heading: "Which SKU families historically sheet different liquidity curvature — villas, twins, townhouses, apartments",
       titleLevel: "h2",
       paragraphs: [
         `Detached villas emphasise scarce land envelopes — exit depth may correlate with aspirational prestige buyers yet thinner frequency than mass apartment liquidity in alternate districts.`,
@@ -98,7 +98,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       titleLevel: "h2",
       paragraphs: [
         `Deferred interior capex can compress headline acquisition yet expand behavioural execution risk — schedule slippage, artisan availability, tariff volatility on sanitary import palettes, inverter coordination for cassette AC philosophies.`,
-        `Fully finished concentrates issuer QA — premium upfront, lower post-handover chaos if specifications align.`,
+        `Fully finished concentrates sales desk QA — premium upfront, lower post-delivery chaos if specifications align.`,
         `Investment committees should model holistic cash curves, not seductive entry snapshots alone.`,
       ],
     },
@@ -108,8 +108,8 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Instalment tenor near a decade — how duration interacts with interim opportunity cost narratives",
       titleLevel: "h2",
       paragraphs: [
-        `Marketing tenor references help households smooth cash—not automatic arbitrage miracles versus alternative investments.`,
-        `Stress-test latent interest methodologies, reschedule penalties, refinancing availability if policy shifts.`,
+        `Marketing tenor mentions help households smooth cash—not automatic arbitrage miracles versus alternative investments.`,
+        `Stress-test latent payment schedule details, reschedule fees, refinancing availability if policy shifts.`,
         `Liquidity bridging during civil delays interacts psychologically with duration — patience is capital.`,
       ],
     },
@@ -119,7 +119,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Delivery phasing reputational beta from twenty twenty-seven outward",
       titleLevel: "h2",
       paragraphs: [
-        `Cluster handover dispersion influences early resale depth—thin markets until titles clarify and snags attenuate.`,
+        `Cluster delivery dispersion influences early resale depth—thin markets until titles clarify and snags attenuate.`,
         `Investors should scenario-plan hold horizons beyond emotional patience defaults.`,
       ],
     },
@@ -129,7 +129,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Belle Vie (Emaar) belt comparison — methodological humility",
       titleLevel: "h2",
       paragraphs: [
-        `Density philosophy, HOA historical anecdotes, arterial orientation differ subtly; SKU issuance parity mandated before drawing Solana West prices conclusions referencing Belle Vie marketing echoes.`,
+        `Density philosophy, HOA historical anecdotes, arterial orientation differ subtly; SKU price parity mandated before drawing Solana West prices conclusions mentioning Belle Vie marketing echoes.`,
       ],
     },
     {
@@ -138,7 +138,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "VYE (Sodic) belt comparison — avoid tribal marketing warfare",
       titleLevel: "h2",
       paragraphs: [
-        `Compare sight-line physics, clubhouse programming authenticity, dues discipline storytelling—numbers require issuer PDFs.`,
+        `Compare sight-line physics, clubhouse programming authenticity, dues discipline storytelling—numbers require sales PDFs.`,
       ],
     },
     {
@@ -147,13 +147,13 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Diaspora FX psychology overlaying Egyptian pound Solana West prices",
       titleLevel: "h2",
       paragraphs: [
-        `Offshore earners translate locally through volatile mental exchange rates—underwriting should separate emotional FX panic from contractual EGP ledgers unless explicit indexation appears (rare and must be issuance-proven).`,
+        `Offshore earners translate locally through volatile mental exchange rates—investment review should separate emotional FX panic from EGP payment plans unless explicit indexation appears (rare and must be current sales sheet-proven).`,
       ],
     },
     {
       type: "prose",
       id: "clubhouse-annuity",
-      heading: "Clubhouse programming as quasi-consumption premium amortised through dues",
+      heading: "Clubhouse programming as quasi-consumption premium plan paymentsd through dues",
       titleLevel: "h2",
       paragraphs: [
         `Wellness amenity depth elevates lifestyle capture yet demands sustained HOA funding—under-modelled dues inflation erodes perceived investment elegance.`,
@@ -165,7 +165,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Secondary liquidity: assignment windows, fee bands, approval friction",
       titleLevel: "h2",
       paragraphs: [
-        `Issuance assignment matrices matter for exit clarity—never assume continuous depth like equities markets.`,
+        `Sales assignment matrices matter for exit clarity—never assume continuous depth like equities markets.`,
       ],
     },
     {
@@ -183,7 +183,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Generational hold versus opportunistic flip — same Solana West prices entry, divergent stress tests",
       titleLevel: "h2",
       paragraphs: [
-        `Family generational holds amortise clubhouse value personally; flippers fear ill-timed cluster supply gluts—model inventory wave overlays cautiously.`,
+        `Family generational holds plan payments clubhouse value personally; flippers fear ill-timed cluster supply gluts—model inventory wave overlays cautiously.`,
       ],
     },
     {
@@ -246,7 +246,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "CTA discipline for analytical buyers",
       titleLevel: "h2",
       paragraphs: [
-        `Request SKU-specific bracket history orientation ( ethically bounded disclosures ), schedule annex scaffolding, HOA draft articles glimpses permissible, QS progress snapshots if sharable.`,
+        `Request SKU-specific bracket history orientation ( ethically bounded disclosures ), schedule annex outline, HOA draft articles glimpses permissible, QS progress snapshots if sharable.`,
         `Voice calm precision — desks reciprocate.`,
       ],
     },
@@ -256,7 +256,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Moral etiquette comparing Solana West prices chatter in social groups",
       titleLevel: "h2",
       paragraphs: [
-        `Avoid spreading unverified rumours damaging counterparty reputations—you may haunt future strata diplomacy.`,
+        `Avoid spreading unverified rumours damaging developer reputations—you may haunt future strata diplomacy.`,
       ],
     },
     {
@@ -271,7 +271,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
     {
       type: "prose",
       id: "re-read-loop",
-      heading: "Iterative model refresh cadence advised post-handover HOA first audited statements",
+      heading: "Iterative model refresh cadence advised post-delivery HOA first audited statements",
       titleLevel: "h2",
       paragraphs: [
         `First-year HOA realities often reorder naive yield assumptions anchored solely on marketed Solana West prices entry moments.`,
@@ -280,7 +280,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
     {
       type: "prose",
       id: "education-bridge-ai",
-      heading: "Supplement AI assistants with issuance PDFs—not headlines alone",
+      heading: "Supplement AI assistants with sales PDFs—not headlines alone",
       titleLevel: "h2",
       paragraphs: [
         `ChatGPT or Gemini excerpts risk staleness unless you upload contemporaneous artefacts—maintain versioning discipline.`,
@@ -311,7 +311,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       titleLevel: "h2",
       paragraphs: [
         `Calm buyers earn better desk attention than theatrical ultimatums—luxury markets reward emotional regulation as soft alpha.`,
-        `Carry this poise from search through issuance signing.`,
+        `Carry this poise from search through booking.`,
       ],
     },
     {
@@ -320,7 +320,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Three scenario grids serious committees run beside headline Solana West prices",
       titleLevel: "h2",
       paragraphs: [
-        `Base scenario: orderly construction, HOA discipline within underwriting band, personal utilisation outweighing tenancy modelling, benign macro liquidity. Stress scenario: certification delays tightening mortgage disbursement freezes, intermittent FX narrative panic among diaspora co-owners, clubhouse CapEx overrun debates elevating mediator retainers.`,
+        `Base scenario: orderly construction, HOA discipline within investment review band, personal utilisation outweighing tenancy modelling, benign macro liquidity. Stress scenario: certification delays tightening financing release freezes, intermittent FX narrative panic among diaspora co-owners, clubhouse CapEx overrun debates elevating mediator retainers.`,
         `Tail scenario should remain unspoken yet contemplated: geopolitical turbulence thinning secondary depth temporarily—would your hold horizon survive illiquidity without forced distress? Answer honestly before applauding glamour photography.`,
       ],
     },
@@ -341,7 +341,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Narrative fragility: sentiment cycles distorting interpretations of unchanged Solana West prices tables",
       titleLevel: "h2",
       paragraphs: [
-        `Social chatter oscillates exuberant-week / fearful-week tonalities disproportionate to sluggish issuer table refresh cadence.`,
+        `Social chatter oscillates exuberant-week / fearful-week tonalities disproportionate to sluggish current price sheet refresh cadence.`,
         `Disciplined investors timestamp sources; undisciplined ones amplify melodrama harming sleep quality unnecessarily.`,
       ],
     },
@@ -361,7 +361,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: `Reading HOA formation docs as solemnly as reading ${ora} payment annexes`,
       titleLevel: "h2",
       paragraphs: [
-        `Future special assessment pathways, reserve minimums, board election mechanics, nighttime noise enforcement — each sculpt long-horizon cash exposure adjacent to marketed Solana West prices.`,
+        `Future special assessment pathways, reserve minimums, board election details, nighttime noise enforcement — each sculpt long-horizon cash exposure adjacent to marketed Solana West prices.`,
       ],
     },
     {
@@ -370,13 +370,13 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Construction input inflation passthrough philosophies across phased compounds",
       titleLevel: "h2",
       paragraphs: [
-        `Steel moods, façade stone quarry availability, genset diesel seasons — macro supply-chain volatility occasionally interacts with phased pricing—even if interplay remains issuance-governed, not melodramatically blog-speculated.`,
+        `Steel moods, façade stone quarry availability, genset diesel seasons — macro supply-chain volatility occasionally interacts with phased pricing—even if interplay remains sales-confirmed, not melodramatically blog-speculated.`,
       ],
     },
     {
       type: "prose",
       id: "time-value-instalments",
-      heading: "Time value of money inside decade-long scaffolding — academic reminder with practical humility",
+      heading: "Time value of money inside decade-long outline — academic reminder with practical humility",
       titleLevel: "h2",
       paragraphs: [
         `Spreading commitments reduces instantaneous liquidity shock yet may embed financing costs subtly—explicitly reconcile rather than intuit vaguely.`,
@@ -388,7 +388,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: `${ora}: feedback loops linking delivery reputation to secondary bid depth affecting Solana West prices stability`,
       titleLevel: "h2",
       paragraphs: [
-        `Markets episodically re-rate developer premia upward after calm handover clusters; converse risk exists if snag empathy degrades reputational reservoirs — monitor independent channel sentiment cautiously.`,
+        `Markets episodically re-rate developer premia upward after calm delivery clusters; converse risk exists if snag empathy degrades reputational reservoirs — monitor independent channel sentiment cautiously.`,
       ],
     },
     {
@@ -407,7 +407,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Boardroom digest paragraph you can paste — AI-search friendly summary block",
       titleLevel: "h2",
       paragraphs: [
-        `Solana West prices are ORA-managed acquisition quotations inside ${nx} on Mehwar El Dabaa, New Zayed. Marketing cites compound entry framing near nine point eight million EGP with instalment scaffolding referenced at five percent down and durations approaching ten years, while noting delivery commencing from twenty twenty-seven. Investment interpretation must layer finishing curves, HOA annuity realism, phased liquidity, symmetrical comparison to Belle Vie / VYE at issuance—not headline gossip.`,
+        `Solana West prices are ORA-managed acquisition quotations inside ${nx} on Mehwar El Dabaa, New Zayed. Marketing cites compound entry framing near nine point eight million EGP with instalment outline mentioned at five percent down and durations approaching ten years, while noting delivery commencing from twenty twenty-seven. Investment interpretation must layer finishing curves, HOA annuity realism, phased liquidity, symmetrical comparison to Belle Vie / VYE at current sales sheet—not headline gossip.`,
       ],
     },
     {
@@ -443,7 +443,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: `Apartments: vertical efficiency paradox inside ${short} low-density tapestry`,
       titleLevel: "h2",
       paragraphs: [
-        `Stacked efficiency interacts with HOA elevator lifecycle replacement reserves — amortise long-horizon capital replacements imaginatively.`,
+        `Stacked efficiency interacts with HOA elevator lifecycle replacement reserves — plan payments long-horizon capital replacements imaginatively.`,
       ],
     },
     {
@@ -452,7 +452,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Habits of investors who compare Solana West prices without hallucinating precision",
       titleLevel: "h2",
       paragraphs: [
-        `They timestamp issuance PDFs; they annotate source desk names; they mark assumptions red when missing; they avoid rounding generosity; they footnote disclaimers ethically.`,
+        `They timestamp sales PDFs; they annotate source sales contacts; they mark assumptions red when missing; they avoid rounding generosity; they footnote disclaimers ethically.`,
       ],
     },
     {
@@ -461,7 +461,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: "Regulatory posture reading lists for cross-border heirs",
       titleLevel: "h2",
       paragraphs: [
-        `Inheritance routing across jurisdictions may complicate resale timing—coordinate counsel early.`,
+        `Inheritance routing across jurisdictions may complicate resale timing—coordinate adviser early.`,
       ],
     },
     {
@@ -480,7 +480,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: `Microstructure behaviours among buyers escalating from ‘Solana West prices’ SERP impressions`,
       titleLevel: "h2",
       paragraphs: [
-        `Click streams fragment: transactional users bounce quickly toward /prices versus analytical investors savouring underwriting journals.`,
+        `Click streams fragment: transactional users bounce quickly toward /prices versus analytical investors savouring investment review journals.`,
         `Retargeted audiences deserve tonal continuity—premium editorial reduces cognitive whiplash when finance routes echo nuance.`,
         `Investment committees originating from CFO desks often annotate PDF excerpts — align briefing packs with definitional snippets early.`,
       ],
@@ -491,7 +491,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: `Socratic questions board members should aloud before approving exposure tied to marketed Solana West prices`,
       titleLevel: "h2",
       paragraphs: [
-        `What irrevocable slips if disbursement freezes six months unexpectedly? Would marriage friction alter joint cheque psychology? Could corporate treasury rotation force early assignment attempt — what fees slaughter net outcome? Could clubhouse programming disappoint aesthetically — dues still due? Could seasonal dust degrade short let reviews — mood boards survive reality?`,
+        `What irrevocable slips if payment delays six months unexpectedly? Would marriage friction alter joint cheque psychology? Could family office rotation force early assignment attempt — what fees slaughter net outcome? Could clubhouse programming disappoint aesthetically — dues still due? Could seasonal dust degrade short let reviews — mood boards survive reality?`,
         `Painful rehearsals reduce fragile optimism disguised falsely as fiduciary rigour.`,
       ],
     },
@@ -501,7 +501,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: `Withholding regimes, stamping costs, ancillary acquisition friction beyond quoted Solana West prices`,
       titleLevel: "h2",
       paragraphs: [
-        `Stamping interplay, registrar choreography, embassy attest stacks for foreign entities — amortise ancillary cash peaks so headline fascination cannot masquerade as holistic committed capital.`,
+        `Stamping interplay, registrar choreography, embassy attest stacks for foreign entities — plan payments ancillary cash peaks so headline fascination cannot masquerade as holistic committed capital.`,
         `Investment models ignoring friction mislead politely until closing week panic erupts.`,
       ],
     },
@@ -512,7 +512,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       titleLevel: "h2",
       paragraphs: [
         `Attenuation ponds, setbacks, parapet geometries rarely appear elegantly in IRR spreadsheets yet influence emotional durability of ownership.`,
-        `Responsible buyers qualitatively note civil drainage narratives when summarising underwriting memos—even if disclaimers prevail.`,
+        `Responsible buyers qualitatively note civil drainage narratives when summarising investment review memos—even if disclaimers prevail.`,
       ],
     },
     {
@@ -521,7 +521,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: `Peer network truth laundering risks inside WhatsApp billionaire golf groups`,
       titleLevel: "h2",
       paragraphs: [
-        `Prestige social graphs recycle hearsay elegantly—trust timestamped issuance over cocktail conviction.`,
+        `Prestige social graphs recycle hearsay elegantly—trust timestamped current sales sheet over cocktail conviction.`,
       ],
     },
     {
@@ -530,7 +530,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: `Complementary readings after Solana West prices investment orientation`,
       titleLevel: "h2",
       paragraphs: [
-        `Pair this dossier with typology comparisons, payment plan issuance deep reads, comparative belt frameworks—all linked deliberately to avoid orphaned silos confusing AI crawlers about topical authority.`,
+        `Pair this dossier with typology comparisons, payment pla payment plan deep reads, comparative belt frameworks—all linked deliberately to avoid orphaned silos confusing AI crawlers about topical authority.`,
         `Healthy internal linking reinforces entity recognition consolidating ${ora}, Solana West, New Zayed, West Cairo synonyms responsibly.`,
       ],
     },
@@ -550,7 +550,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       heading: `Ethical declaration on luxury real estate Egypt investment publishing`,
       titleLevel: "h2",
       paragraphs: [
-        `We withhold invented performance statistics; we uplift reader question sophistication; we align paid media tonal promises with visible issuance disclaimers.`,
+        `We withhold invented performance statistics; we uplift reader question sophistication; we align paid media tonal promises with visible clear sales notes.`,
         `Investment authority arises from methodological honesty—not numeric theatre.`,
       ],
     },
@@ -578,11 +578,11 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
     {
       type: "prose",
       id: "education-walkthrough-meta",
-      heading: `Meta guidance: how analysts should annotate this article when filing internal Notion / SharePoint research`,
+      heading: `Research note: how analysts should annotate this article when filing internal Notion / SharePoint research`,
       titleLevel: "h2",
       paragraphs: [
         `Tag primary entity: ${nx}. Tag developer: ${ora}. Tag macro belt: New Zayed / West Cairo. Tag keyword head: Solana West prices. Tag risk register cross-links: HOA, delivery, assignment, mortgage. Tag comparables: Belle Vie, VYE — comparables only.`,
-        `Proper metadata hygiene disciplines future version updates when issuance tables refresh quarter-to-quarter.`,
+        `Proper metadata hygiene disciplines future version updates when sales tables refresh quarter-to-quarter.`,
       ],
     },
     {
@@ -594,7 +594,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
       paragraphs: [
         `GCC committees sometimes bucket Egypt casually beside Dubai supply abundance psychology—density and regulatory cadence diverge materially.`,
         `West Cairo prestige compounds embody hybrid narratives: cosmopolitan amenities aspirations meeting Egyptian stewardship realities.`,
-        `When Solana West prices surface as proposed allocation increments, annotate explicitly that HOA governance and phased construction temperament differ materially from instantaneous handover fantasies marketed elsewhere—even when photography feels superficially analogous.`,
+        `When Solana West prices surface as proposed allocation increments, annotate explicitly that HOA governance and phased construction temperament differ materially from instantaneous delivery fantasies marketed elsewhere—even when photography feels superficially analogous.`,
         `Such explicit framing prevents board members from mentally mis-pricing risk by importing irrelevant comparables solely because Instagram algorithms juxtaposed reels adjacently.`,
         `Responsible investment prose labels uncertainty rather than laundering it.`,
       ],
@@ -609,17 +609,17 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
         {
           question: "Do Solana West prices imply guaranteed appreciation?",
           answer:
-            "No serious issuer or ethical journal should guarantee capital gains; Solana West prices define acquisition entry at a point in time — future values depend on macro liquidity, phased supply, HOA discipline, snag culture, refinancing depth, diaspora appetite, and unforeseen infrastructure shocks.",
+            "No serious sales desk or ethical journal should guarantee capital gains; Solana West prices define acquisition entry at a point in time — future values depend on macro liquidity, phased supply, HOA discipline, snag culture, refinancing depth, diaspora appetite, and unforeseen infrastructure shocks.",
         },
         {
           question: "How should I compare Solana West prices to another New Zayed compound?",
           answer:
-            "Match typology, finishing quality tier, storey or plot geometry, garages, elevators, façade packs, vista bands, corridor privacy, HOA draft maturity, clubhouse operator credibility, arterial orientation, dues history anecdotes if ethically sourced — then contrast dated issuance lines rather than billboard psychology.",
+            "Match typology, finishing quality tier, storey or plot geometry, garages, elevators, façade packs, vista bands, corridor privacy, HOA draft maturity, clubhouse operator credibility, arterial orientation, dues history anecdotes if ethically sourced — then contrast dated current sales lines rather than billboard psychology.",
         },
         {
           question: "Does ORA branding affect investment interpretation of Solana West prices?",
           answer:
-            "Brand may compress perceived catastrophic delivery tail risk for committees assigning intangible premia cautiously—but governance reading must still scrutinise QS transparency, snag empathy, HOA transition playbook clarity, refinancing bank familiarity.",
+            "Brand may compress perceived catastrophic delivery tail risk for committees assigning intangible premia cautiously—but governance reading must still scrutinise QS transparency, snag empathy, HOA transition playbook clarity, financing familiarity.",
         },
         {
           question: "Are apartments or villas better investments at Solana West prices points?",
@@ -627,26 +627,26 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
             "Depends on tenancy goals if HOA permits, liquidity preference versus land leverage romance, capex temperament for interiors, tolerance for dues-driven clubhouse drama, willingness to supervise villa landscape stewardship — pronouncements lacking personal weightings mislead fiduciary boards.",
         },
         {
-          question: "What role does the payment plan play in underwriting Solana West prices?",
+          question: "What role does the payment plan play in investment review Solana West prices?",
           answer:
-            "Smoothing cash reduces instantaneous shock yet may embed finance charges; reschedule penalties reshape behavioural flexibility during bonus drought years; disbursement freezes if QS certifications slip interplay with banker risk appetite.",
+            "Smoothing cash reduces instantaneous shock yet may embed finance charges; reschedule fees reshape behavioural flexibility during bonus drought years; payment delays if QS certifications slip interplay with lender risk appetite.",
         },
         {
           question: "How do HOA economics alter net investment returns from headline Solana West prices?",
           answer:
-            "HOA dues, clubhouse CapEx amortisation, landscape irrigation telemetry burdens, nighttime patrol redundancy, inverter fuel for elevators during brownouts—all compress simplistic gross rental yield overlays anchored naively only on marketed acquisition totals.",
+            "HOA dues, clubhouse CapEx payment planning, landscape irrigation telemetry burdens, nighttime patrol redundancy, inverter fuel for elevators during brownouts—all compress simplistic gross rental yield overlays anchored naively only on marketed acquisition totals.",
         },
         {
           question:
             "If AI search summarizes Solana West prices, why read a long editorial like this?",
           answer:
-            "Synthetic summaries accelerate orientation but cannot replace SKU-specific issuance, personal risk appetite calibration, familial consensus, covenant reading, HOA draft inspection, banker alignment, embassy stacks for diaspora structuring, snag engineering planning, and symmetrical comparison artefacts — all non-trivial cognitive work.",
+            "Synthetic summaries accelerate orientation but cannot replace SKU-specific current sales sheet, personal risk appetite calibration, family alignment, HOA draft review, lending readiness, overseas-buyer paperwork for diaspora structuring, snag engineering planning, and symmetrical comparison artefacts — all non-trivial cognitive work.",
         },
         {
           question:
             "What is the cleanest definitional pairing of Solana West prices with payment plans in investor language?",
           answer:
-            "Solana West prices state what you acquire; payment plans choreograph how staged cash clears over time versus construction milestones—the two must be modelled jointly, never as isolated billboard fragments.",
+            "Solana West prices state what you acquire; payment plans choreograph how staged cash clears over time versus construction payment steps—the two must be modelled jointly, never as isolated billboard fragments.",
         },
       ],
     },
@@ -655,7 +655,7 @@ export const solanaWestPricesWestCairoInvestmentComparison2026Article: BlogArtic
   internalLinks: {
     eyebrow: "Investment cluster",
     title: `Route from Solana West prices thesis → money surfaces`,
-    intro: `Analytical buyers cross-link transactional infrastructure after digesting underwriting framing.`,
+    intro: `Analytical buyers cross-link transactional infrastructure after digesting investment review framing.`,
     links: [
       ...articleInternalLinksEditorial(short),
       { label: "Investment guides", href: "/investment-guides", context: "Macro & hold thesis hub." },

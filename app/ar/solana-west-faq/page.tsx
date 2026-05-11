@@ -37,7 +37,7 @@ export default function ArabicFaqPage() {
             id="ar-faq-heading"
             className="mt-lux-stack-xs max-w-[min(44ch,100%)] text-balance font-display text-display-xl text-lux-ink md:max-w-[min(52ch,100%)]"
           >
-            الأسئلة الشائعة — أسعار سولانا ويست وشروط الإصدار
+            أسئلة شائعة عن سولانا ويست نيو زايد
           </h1>
           <p className="lux-body mt-lux-stack-sm text-lux-ink/67 md:mt-lux-stack-md">{SOLANA_WEST_FAQ_SHARED_INTRO_AR}</p>
         </header>
@@ -60,7 +60,7 @@ export default function ArabicFaqPage() {
         ))}
 
         <p className="mt-lux-stack-xl text-[0.9rem] text-lux-ink/58">
-          نسخة إنجليزية موسّعة ومفصَّلة موجودة على{" "}
+          توجد نسخة موسّعة للقراءة المقارنة على{" "}
           <Link
             href="/faq"
             hrefLang="en"
@@ -69,7 +69,7 @@ export default function ArabicFaqPage() {
           >
             /faq
           </Link>{" "}
-          لمن يفضّل القراءة بالإنجليزية؛ الروابط الداخلية داخل النسخة العربية تظل ضمن مسار `/ar`.
+          بينما تبقى الروابط الداخلية في هذه الصفحة ضمن المسار العربي.
         </p>
 
         <div className="mt-8 rounded-[10px] border border-lux-ink/[0.06] bg-lux-paper px-6 py-6 text-[0.9rem] text-lux-ink/72">

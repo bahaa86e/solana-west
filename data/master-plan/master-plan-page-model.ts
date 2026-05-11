@@ -62,9 +62,9 @@ function internalLinksEditorial(short: string): readonly MasterPlanInternalLink[
       context: "Compound narrative, amenities, commercial framing, and extended FAQs.",
     },
     {
-      label: "Reference pricing posture",
+      label: "Apartment pricing posture",
       href: "/prices",
-      context: "Issuance-led bracketing — verify before reservation.",
+      context: "Current sales bracketing — verify before reservation.",
     },
     {
       label: "Payment plan structure",
@@ -117,9 +117,9 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
     hero: {
       eyebrow: "Master plan · Spatial organization · New Zayed",
       h1: `The ${short} master plan — 316 acres in New Zayed`,
-      lead: `${entry.name} is structured as a single master-planned community — landscaped connectors, restrained plot rhythm, and a walkable skeleton that reads first as greenery and second as built edges. This page summarizes how that logic is articulated at community scale, without substituting desk-level issuance drawings.`,
+      lead: `${entry.name} is structured as a single master-planned community — landscaped connectors, restrained plot rhythm, and a walkable skeleton that reads first as greenery and second as built edges. This page summarizes how that logic is articulated at community scale, without substituting desk-level current sales sheet drawings.`,
       supporting:
-        `Public collateral positions low-density sequencing, elevated villa frontage toward open greenery, shared landscape corridors, and private landscape pockets tied to parcels. Figures here stay descriptive: we do not publish unavailable engineering dimensions, phased percentage splits, or parcel-level percentages that do not appear in your issuance pack.`,
+        `Public project information positions low-density sequencing, elevated villa frontage toward open greenery, shared landscape corridors, and private landscape pockets tied to parcels. Figures here stay descriptive: we do not publish unavailable engineering dimensions, phased percentage splits, or parcel-level percentages that do not appear in your current sales pack.`,
     },
     overview: {
       eyebrow: "Master plan overview",
@@ -134,13 +134,13 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
       eyebrow: "Spatial organization",
       title: "Residential clusters, connectors and open-space banding",
       intro:
-        "The following narratives explain relationships called out publicly for the compound — they are thematic, not a substitute for surveying an issuance plot plan or reserving on a labelled availability sheet.",
+        "The following narratives explain relationships called out publicly for the compound — they are thematic, not a substitute for surveying a current sales sheet plot plan or reserving on a labelled availability sheet.",
       blocks: [
         {
           heading: "Residential zones and typology layering",
           body: [
             `Four residential archetypes circulate across ${short}: apartments, townhouses, twin houses, and standalone villas — each SKU reads against the shared landscape rather than inward-only courts.`,
-            "Distribution is phased with issuance batches; clustering logic follows servicing, outlook, and product depth rather than a single ring-fenced monoculture.",
+            "Distribution is phased with current sales sheet batches; clustering logic follows servicing, outlook, and product depth rather than a single ring-fenced monoculture.",
             `When you reserve, sales maps label your parcel, orientation, buffer, and access spine — descriptive language here cannot imprint those particulars without the live sheet from ${dev}.`,
           ],
         },
@@ -149,14 +149,14 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
           body: [
             "Landscape bands function as pacing devices between villas and townhouse rows — continuity of greenery reduces perceived wall-to-wall façade pressure and reinforces low-density readability from within the footprint.",
             "Open structure also carries daylight, ventilation corridors, and long views across the compound; marketing emphasizes all units overlooking greenery as a organising principle.",
-            "Relationships between lawns, connector paths, and build lines are audited at issuance; treat community-scale prose as orientation, not a measured survey.",
+            "Relationships between lawns, connector paths, and build lines are audited at current sales sheet; treat community-scale prose as orientation, not a measured survey.",
           ],
         },
         {
           heading: "Walkability as layout infrastructure",
           body: [
-            "Collateral describes a fully walkable community structure — connectors are intended as primary pedestrian spines tying amenity anchors to residential neighbourhoods without forcing every routine trip through vehicular corridors.",
-            "Walkability dovetails with the green scaffold: corridors can read simultaneously as landscaped space and humane movement lanes — still subject to final civil works, phased openings, and house rules clarified at handover packs.",
+            "Project information describes a fully walkable community structure — connectors are intended as primary pedestrian spines tying amenity anchors to residential neighbourhoods without forcing every routine trip through vehicular corridors.",
+            "Walkability dovetails with the green outline: corridors can read simultaneously as landscaped space and humane movement lanes — still subject to final civil works, phased openings, and house rules clarified at delivery packs.",
           ],
         },
         {
@@ -169,8 +169,8 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
         {
           heading: "What this page deliberately omits",
           body: [
-            "We do not tabulate roadway widths, berm heights, percentile open space, phased hectarage tables, inventory heatmaps, or amenity acreage fractions absent from downloadable collateral wired to sales.",
-            "Buyers underwriting exposure should marry this editorial read with issuance maps, HOA or service charge guidance, servicing appendices, and on-site walks coordinated through accredited desks.",
+            "We do not tabulate roadway widths, berm heights, percentile open space, phased hectarage tables, inventory heatmaps, or amenity acreage fractions absent from downloadable project information wired to sales.",
+            "Buyers investment review exposure should marry this editorial read with phase maps, HOA or service charge advisory notes, servicing appendices, and on-site walks coordinated through accredited desks.",
           ],
         },
       ],
@@ -189,14 +189,14 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
       title: "Why master-plan coherence matters commercially",
       paragraphs: [
         "Depth of landscaped structure correlates with long-hold prestige positioning — scarcity of low-density, walkable footprints in Greater Cairo reinforces buyer preference for coherence over one-off façade statements.",
-        "Master-plan underwriting still pairs with issuance risk: phased delivery, HOA regime, escalation clauses, and finishing optionality outweigh headline acreage narratives — cross-read /prices and /payment-plan before modeling cash flows.",
-        `ORA counterparty quality supports governance expectations, yet parcels differ — cluster adjacency to connectors, buffering, sunlight, and SKU finishing path change reservation economics materially within the same 316-acre frame.`,
+        "Master-plan investment review still pairs with current sales sheet risk: phased delivery, HOA regime, escalation clauses, and finishing optionality outweigh headline acreage narratives — cross-read /prices and /payment-plan before modeling cash flows.",
+        `ORA developer quality supports governance expectations, yet parcels differ — cluster adjacency to connectors, buffering, sunlight, and SKU finishing path change reservation economics materially within the same 316-acre frame.`,
       ],
     },
     internalLinks: {
       eyebrow: "Continue research",
       title: "From plan literacy to prices, payment & unit pages",
-      intro: "Stable URLs for citations — each silo answers one underwriting question.",
+      intro: "Stable URLs for citations — each silo answers one investment review question.",
       links: internalLinksEditorial(short),
     },
     faqPreview: {

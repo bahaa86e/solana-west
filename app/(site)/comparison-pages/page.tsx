@@ -28,8 +28,8 @@ export default function ComparisonPagesHub() {
             Compare New Zayed compounds — how {siteConfig.shortName} benchmarks
           </h1>
           <p className="lux-body mt-lux-stack-sm max-w-[54ch] text-lux-ink/68 md:mt-lux-stack-md">
-            Use the same lenses for every pitch deck: masterplan density, green structure, road reach, issuer discipline,
-            and what your unit overlooks at handover. Adjacent megaprojects such as VYE (Sodic) and Belle Vie (Emaar) are
+            Use the same lenses for every pitch deck: masterplan density, green structure, road reach, sales desk discipline,
+            and what your unit overlooks at delivery. Adjacent megaprojects such as VYE (Sodic) and Belle Vie (Emaar) are
             market comparables—not affiliations.
           </p>
         </header>
@@ -41,7 +41,7 @@ export default function ComparisonPagesHub() {
           <ul className="lux-body mt-4 max-w-[52ch] list-disc space-y-2 pl-5 text-lux-ink/68">
             <li>Land allocation before façade mood boards—where density sits and how landscape holds.</li>
             <li>Arterial reach (Mehwar, ring roads) versus estate privacy—noise and outlook at daily speed.</li>
-            <li>Payment language vs. issuance schedules—market lines vs. what you sign.</li>
+            <li>Payment language vs. sales schedules—market lines vs. what you sign.</li>
             <li>Delivery windows by cluster—avoid quarter marketing when you model cash flow.</li>
           </ul>
           <p className="lux-body mt-6 max-w-[52ch] text-lux-ink/68">
@@ -58,7 +58,7 @@ export default function ComparisonPagesHub() {
             Inside {siteConfig.shortName} — villas through apartments in one footprint
           </h2>
           <p className="lux-body mt-4 max-w-[52ch] text-lux-ink/68">
-            Cross-read typologies before you contrast compounds—finishing posture and façade packages move with issuance.
+            Cross-read typologies before you contrast compounds—finishing posture and façade packages move with current sales sheet.
           </p>
           <ul className="lux-body mt-5 max-w-[52ch] list-disc space-y-2 pl-5 text-lux-ink/68">
             <li>
@@ -96,7 +96,7 @@ export default function ComparisonPagesHub() {
             </li>
             <li>
               <Link href="/blog/solana-west-new-zayed-prices-payment-plan-2026" className={linkClass}>
-                Prices &amp; payment plan — 2026 reference
+                Prices &amp; payment plan — 2026 starting price
               </Link>
             </li>
             <li>

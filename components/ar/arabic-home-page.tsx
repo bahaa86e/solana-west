@@ -15,15 +15,15 @@ import { cn } from "@/lib/utils";
 const ar = englishPathToArabicPath;
 
 const snapshotRows = [
-  ["مرجع سعري", "ابتداءً من 9.8 مليون جنيه"],
-  ["خطة السداد", "مقدّم 5٪ · أقساط حتى 10 سنوات"],
-  ["المطوّر", siteConfig.developer],
-  ["الموقع", "الزيادة الجديدة · محور الضبعة"],
-  ["التسليم", "اعتباراً من 2027 بحسب الكتلة"],
-  ["أنماط الوحدات", "شقق · تاون · توين · فيلات"],
+  ["بداية الأسعار", "من 9.8 مليون جنيه"],
+  ["تقسيط سولانا ويست", "5٪ مقدم · حتى 10 سنوات"],
+  ["الجهة المطوّرة", siteConfig.developer],
+  ["العنوان", "نيو زايد · محور الضبعة"],
+  ["التسليم", "من 2027 بحسب المرحلة"],
+  ["أنواع المنازل", "شقق · تاون هاوس · توين هاوس · فلل"],
 ] as const;
 
-/** Arabic homepage — مستقل عن المحتوى الإنجليزي مع الحفاظ على نفس المرجعية التجارية factual */
+/** Arabic homepage — editorial copy with the same commercial facts. */
 export function ArabicHomePage() {
   const faqPeek = SOLANA_WEST_AR_FAQ_GROUPS.flatMap((g) => g.items).slice(0, 6);
 
@@ -40,7 +40,7 @@ export function ArabicHomePage() {
           <LuxuryFillImage
             src={solanaWestMedia.hero.src}
             mobileSrc={solanaWestCanonicalFiles.heroDaylightMobile}
-            alt={solanaWestMedia.hero.alt}
+            alt="فيلات ومساحات خضراء في سولانا ويست نيو زايد من ORA Developer Egypt."
             sizes="100vw"
             priority
             quality={92}
@@ -66,7 +66,7 @@ export function ArabicHomePage() {
             )}
           >
             <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.14em] text-lux-ink/45 lg:text-[0.6875rem]">
-              الزيادة الجديدة · محور الضبعة
+              نيو زايد · محور الضبعة
             </p>
             <span className="mt-4 mb-6 block h-px max-w-[2.75rem] bg-lux-ink/[0.1]" aria-hidden />
             <h1
@@ -76,11 +76,11 @@ export function ArabicHomePage() {
                 "text-[clamp(2rem,2.4vw+0.92rem,2.875rem)] leading-[1.08] tracking-[-0.022em]",
               )}
             >
-              سولانا ويست — منازل الزيادة الجديدة بتطوير ORA مصر
+              سولانا ويست نيو زايد من ORA Developer Egypt
             </h1>
 
             <p className="mt-[clamp(1rem,2.5vw,1.5rem)] max-w-[min(36rem,100%)] text-pretty font-sans text-lux-lead font-normal leading-[1.66] tracking-[0.006em] text-lux-ink/[0.78]">
-              مجمع سكني نحو 316 فداناً بكثافة مُخفَّفة ومشاة ومساحات خضراء متصلة — شقق وتاون هاوس وتوين هاوس وفيلات. الشروط التجارية تُثبَّت عند الإصدار لا في الملخصات التسويقية.
+              مجتمع سكني على مساحة 316 فداناً في غرب القاهرة، بإيقاع منخفض الكثافة ومساحات خضراء ممتدة ومنازل مصممة للخصوصية. فلل سولانا ويست، التاون هاوس، التوين هاوس وشقق سولانا ويست تُطرح وفق إصدارات واضحة للأسعار وخطط السداد.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-stretch">
@@ -94,7 +94,7 @@ export function ArabicHomePage() {
                 data-track="whatsapp_click"
                 data-track-placement="ar_home_hero_whatsapp"
               >
-                مكتب اقتناء خاص
+                احصل على الأسعار
               </CtaButton>
               <CtaButton
                 href={ar["/prices"]!}
@@ -104,16 +104,16 @@ export function ArabicHomePage() {
                 data-track="cta_click"
                 data-track-placement="ar_home_hero_prices"
               >
-                الأسعار والفئات
+                الأسعار وأنظمة السداد
               </CtaButton>
             </div>
           </article>
         </Container>
       </section>
 
-      <section className="border-t border-lux-ink/[0.06] bg-lux-paper py-section-block" aria-label="ملخص مرجعي">
+      <section className="border-t border-lux-ink/[0.06] bg-lux-paper py-section-block" aria-label="لمحة سريعة">
         <Container as="div">
-          <p className="lux-eyebrow text-lux-ink/46">ملخص إصدار</p>
+          <p className="lux-eyebrow text-lux-ink/46">لمحة سريعة</p>
           <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {snapshotRows.map(([k, v]) => (
               <div key={k} className="rounded-[6px] border border-lux-ink/[0.06] bg-lux-paper p-5 shadow-lux-card">
@@ -129,25 +129,25 @@ export function ArabicHomePage() {
         <Container as="div" className="grid gap-12 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-5">
             <h2 id="ar-home-journey" className="font-display text-display-xl text-lux-ink">
-              مسار بحث هادئ — من الموقع إلى خطة السداد
+              دليل سريع لأسعار وموقع سولانا ويست نيو زايد
             </h2>
             <p className="mt-6 text-[0.9375rem] leading-[1.76] text-lux-ink/72">
-              اربط بين المخطط والموقع والأسعار دون خلط المسارات. الروابط التالية تبقى داخل النسخة العربية لعنقود SEO عربي متسق.
+              ابدأ بالمكان، ثم اقرأ المخطط، ثم قارن أسعار سولانا ويست وخطة التقسيط على أساس نوع الوحدة والمرحلة. الهدف أن تصل إلى قرار واضح، لا إلى ضجيج تسويقي.
             </p>
             <ul className="mt-8 space-y-3 text-[0.9375rem] text-lux-ink/72">
               <li>
                 <Link className="underline decoration-lux-gold/35 underline-offset-4 hover:text-lux-ink" href={ar["/location"]!}>
-                  موقع المشروع ومحاور الوصول
+                  موقع سولانا ويست ومحاور الوصول
                 </Link>
               </li>
               <li>
                 <Link className="underline decoration-lux-gold/35 underline-offset-4 hover:text-lux-ink" href={ar["/payment-plan"]!}>
-                  خطة السداد — عربون وآجال
+                  تقسيط سولانا ويست وخطة السداد
                 </Link>
               </li>
               <li>
                 <Link className="underline decoration-lux-gold/35 underline-offset-4 hover:text-lux-ink" href={ar["/projects/solana-west"]!}>
-                  صفحة المشروع — سولانا ويست
+                  مشروع سولانا ويست في نيو زايد
                 </Link>
               </li>
             </ul>
@@ -155,7 +155,7 @@ export function ArabicHomePage() {
           <LuxuryImageShell className="lg:col-span-7 aspect-video rounded-[6px]" hover={false}>
             <LuxuryFillImage
               src={solanaWestMedia.projectOverview.src}
-              alt={solanaWestMedia.projectOverview.alt}
+              alt="تصميم معماري عصري ومساحات خضراء في مشروع سولانا ويست نيو زايد."
               sizes="(max-width: 1024px) 100vw, 58vw"
               quality={84}
               crop="editorialWideLow"
@@ -170,7 +170,7 @@ export function ArabicHomePage() {
           <div className="max-w-readable">
             <p className="lux-eyebrow text-lux-ink/46">أسئلة مختارة</p>
             <h2 id="ar-home-faq" className="mt-3 font-display text-display-xl text-lux-ink">
-              قبل الحجز — مقتطفات عربية دقيقة
+              أسئلة شائعة عن سولانا ويست نيو زايد
             </h2>
             <p className="mt-4 lux-body text-lux-ink/67">{SOLANA_WEST_FAQ_SHARED_INTRO_AR}</p>
 
@@ -179,7 +179,7 @@ export function ArabicHomePage() {
                 <div key={item.question}>
                   <dt className="font-display text-lg text-lux-ink md:text-xl">{item.question}</dt>
                   <dd className="mt-3 m-0 text-[0.9375rem] leading-[1.75] text-lux-ink/72">
-                    <span className="block text-[0.8125rem] text-lux-ink/55">مقتطف — {item.aiSnippet}</span>
+                    <span className="block text-[0.8125rem] text-lux-ink/55">خلاصة — {item.aiSnippet}</span>
                     <span className="mt-2 block">{item.answer}</span>
                   </dd>
                 </div>
@@ -188,7 +188,7 @@ export function ArabicHomePage() {
 
             <div className="mt-10">
               <CtaButton href={ar["/faq"]!} variant="secondary" size="lg">
-                فتح الأسئلة الشائعة العربية الكاملة
+                عرض الأسئلة الشائعة
               </CtaButton>
             </div>
           </div>
@@ -199,11 +199,11 @@ export function ArabicHomePage() {
         <Container as="div">
           <FinalConversionPanel
             headingId="ar-home-final"
-            eyebrow="الاقتناء"
-            title="اطلب عرض الأسعار وفق الوحدة والأفق الاستثماري"
-            supporting="اختصر نوع الوحدة ومستوى التشطيب والخط الزمني — نعود إليك عبر مسار استشاري منظم يقود إلى إصدار المطور لا إلى لغة تسويقية عشوائية."
-            primaryLabel="مكتب اقتناء — واتساب"
-            secondaryLabel="استمارة قصيرة"
+            eyebrow="استشارة خاصة"
+            title="اطلب أسعار سولانا ويست وخطة التقسيط"
+            supporting="أرسل نوع الوحدة، ميزانيتك التقريبية، وأفق الشراء أو الاستثمار. نرتّب لك الصورة التجارية بوضوح: السعر، المتاح، خطة السداد، وما يلزم مراجعته قبل الحجز."
+            primaryLabel="تواصل عبر واتساب"
+            secondaryLabel="احجز زيارة للمشروع"
             secondaryHref={ar["/contact"]!}
             whatsAppTrackPlacement="ar_home_final_whatsapp"
           />

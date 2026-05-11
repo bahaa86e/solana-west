@@ -17,7 +17,7 @@ export const primaryNavItems: readonly NavItem[] = [
   { label: "Contact", href: "/contact" },
 ];
 
-/** Semantic IA cluster for mega-footer internal linking — four authority silos + legal strip. */
+/** Semantic IA cluster for mega-footer internal linking — four authority silos + formal strip. */
 export type FooterMegaColumn = {
   readonly id: string;
   readonly headline: string;
@@ -52,7 +52,7 @@ export const footerMegaColumns: readonly FooterMegaColumn[] = [
   },
   {
     id: "place",
-    headline: "Place & counsel",
+    headline: "Place & adviser",
     ariaLabel: "Location, master plan, FAQ, and contact",
     links: [
       { label: "Location", href: "/location" },
@@ -73,5 +73,5 @@ export const footerMegaColumns: readonly FooterMegaColumn[] = [
   },
 ] as const;
 
-/** Legal lane only — avoids burying Privacy inside dense grids. */
+/** Formal lane only — avoids burying Privacy inside dense grids. */
 export const footerLegalLinks: readonly NavItem[] = [{ label: "Privacy policy", href: "/privacy-policy" }] as const;

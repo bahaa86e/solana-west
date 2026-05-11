@@ -14,7 +14,7 @@ import Link from "next/link";
 
 export const metadata = buildPageMetadata(faqPageSeo);
 
-/** FAQPage answers must mirror visible `<dd>` text (snippet cue + issuance paragraphs). */
+/** FAQPage answers must mirror visible `<dd>` text (snippet cue + current sales sheet paragraphs). */
 const faqJsonLdPayload = SOLANA_WEST_FAQ_EXPANDED_ITEMS.map(({ question, aiSnippet, answer }) => ({
   question,
   answer: `Snippet — ${aiSnippet}\n\n${answer}`,
@@ -33,7 +33,7 @@ export default function FaqPage() {
             id="faq-page-heading"
             className="mt-lux-stack-xs max-w-[min(42ch,100%)] text-balance font-display text-display-xl text-lux-ink md:max-w-[min(48ch,100%)]"
           >
-            Solana West FAQs — prices, AI-search answers & issuance nuance
+            Solana West FAQs — prices, AI-search answers & current sales sheet nuance
           </h1>
           <p className="lux-body mt-lux-stack-sm text-lux-ink/67 md:mt-lux-stack-md">{SOLANA_WEST_FAQ_SHARED_INTRO}</p>
         </header>

@@ -113,7 +113,7 @@ function buildCopy(project: ResolvedProjectPage, slug: PropertyExperienceSlug) {
   const finishingLine =
     slug === "apartments" ?
       "Apartment product is positioned as fully finished within the published typology set — confirm façade packages and views with sales before reservation."
-    : `${card.title} may be offered with fully finished or core & shell paths depending on issuance; desk confirmation is required before allocation.`;
+    : `${card.title} may be offered with fully finished or core & shell paths depending on current sales sheet; current sales sheet is required before allocation.`;
 
   const overviewBySlug: Record<PropertyExperienceSlug, readonly string[]> = {
     villas: [
@@ -163,24 +163,24 @@ function buildCopy(project: ResolvedProjectPage, slug: PropertyExperienceSlug) {
 
   const investmentBySlug: Record<PropertyExperienceSlug, readonly string[]> = {
     villas: [
-      "Commercial terms for the project are issuance-led: phase, façade, finishing path (fully finished or core & shell), outlook, and typology reshape quotations — underwriting should rely on desk-issued sheets plus booking contract language, not channel rumours.",
-      "Detached typologies often span wide commercial bands inside phased compounds — treat any third-party headline as non-binding until matched to release tranche documentation.",
-      "Delivery horizons begin from 2027 across the broader plan; sequencing by cluster determines cash-flow pacing relative to instalment milestones.",
+      "Commercial terms for the project are sales-team confirmed: phase, façade, finishing path (fully finished or core & shell), outlook, and typology reshape quotations — investment review should rely on desk-issued sheets plus sales agreement language, not channel rumours.",
+      "Detached typologies often span wide commercial bands inside phased compounds — treat any third-party headline as informal until matched to release tranche documentation.",
+      "Delivery horizons begin from 2027 across the broader plan; sequencing by cluster determines cash-flow pacing relative to instalment payment steps.",
     ],
     townhouses: [
       "Townhouses occupy the mid-density band between apartments and detached villas — land cost sensitivity is moderated while privacy remains materially above flats.",
-      "Staging across a 316-acre plan allows ORA-controlled release cadences; scarcity language should remain issuance-led — we do not publish artificial inventory countdowns.",
+      "Staging across a 316-acre plan allows ORA-controlled release cadences; scarcity language should remain sales-team confirmed — we do not publish artificial inventory countdowns.",
       "Adjacent large-scale comps (including VYE and Belle Vie) provide market benchmarking only — not partnership or price guarantees.",
     ],
     apartments: [
       "Apartments deliver the sharpest instalment tenor compatibility for investors sizing smaller ticket exposures — commercial bands nonetheless move with façade, floorplate, and view premiums.",
-      "Rental economics depend on estate bylaws and service charging as much as headline purchase price — request the live management briefing pack with your issuance sheet.",
-      "Treat marketing summaries as illustrative; binding economics sit in issuance contracts issued by authorised ORA desks.",
+      "Rental economics depend on estate bylaws and service charging as much as headline purchase price — request the live management briefing pack with your current price sheet.",
+      "Treat marketing summaries as illustrative; final pricing sit in sales agreements issued by authorised ORA desks.",
     ],
     "twin-houses": [
-      "Twin houses sit between townhouse density and standalone villas — land efficiency versus discrete party-wall discipline is reflected in issuance brackets, not in public SKU tables on this route.",
-      "Underwriting compares paired-villa setbacks, outlook premiums, and finishing paths against adjoining typologies inside the same plan; confirmations require façade packages and phase-specific quotations from authorised ORA desks.",
-      "Staging across a long-horizon master plan preserves measured release cadence; delivery timing follows broader compound horizons from 2027 with cluster-specific confirmations in issuance documentation.",
+      "Twin houses sit between townhouse density and standalone villas — land efficiency versus discrete party-wall discipline is reflected in current sales sheet brackets, not in public SKU tables on this route.",
+      "Investment review compares paired-villa setbacks, outlook premiums, and finishing paths against adjoining typologies inside the same plan; confirmations require façade packages and phase-specific quotations from authorised ORA desks.",
+      "Staging across a long-horizon master plan preserves measured release cadence; delivery timing follows broader compound horizons from 2027 with cluster-specific confirmations in sales documentation.",
     ],
   };
 
@@ -190,7 +190,7 @@ function buildCopy(project: ResolvedProjectPage, slug: PropertyExperienceSlug) {
       "Finishing pathways include fully finished and core & shell where offered at booking.",
       "Walkable avenue structure linking residential clusters to amenity cores.",
       "Adjacent arterial access toward Alexandria Desert Road and the Middle Ring Road.",
-      "Desk-verified quotations before reservation — pricing is issuance-led.",
+      "Desk-verified quotations before reservation — pricing is sales-team confirmed.",
     ],
     townhouses: [
       "Multi-storey townhouse product embedded in landscaped walkways and buffers.",
@@ -201,14 +201,14 @@ function buildCopy(project: ResolvedProjectPage, slug: PropertyExperienceSlug) {
     ],
     apartments: [
       "Fully finished apartment typology positioned with green outlooks across the landscaped site.",
-      "Smaller land footprint versus villas — relevant for phased instalment underwriting.",
+      "Smaller land footprint versus villas — relevant for phased instalment investment review.",
       "Low-density contextual master plan — apartments inherit estate-wide walkways and green rooms.",
-      "Delivery horizon from 2027 at compound level — specific tower or cluster dates confirmed in issuance documentation.",
-      "Commercial structure references 5% down with up to 10-year tenor — contractual mechanics clarified at signing.",
+      "Delivery horizon from 2027 at compound level — specific tower or cluster dates confirmed in sales documentation.",
+      "Commercial structure mentions 5% down with up to 10-year tenor — payment details clarified at signing.",
     ],
     "twin-houses": [
       "Published twin-house archetype paired along a discreet party wall with broader frontage than townhouses.",
-      "Finishing may follow fully finished or core & shell pathways where issued at booking — confirm with desk documentation.",
+      "Finishing may follow fully finished or core & shell pathways where issued at booking — confirm with sales documentation.",
       "Four residential archetypes coexist inside the coordinated 316-acre plan — twins occupy the calibrated middle band.",
       "Walkable landscaped structure with clubhouse and aquatic anchors inside the pedestrian grain.",
       "West Cairo arterial context (Alexandria Desert Road · Middle Ring Road) framed as connectivity, not inflated timing claims.",

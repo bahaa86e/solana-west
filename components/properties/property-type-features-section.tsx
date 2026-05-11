@@ -9,10 +9,18 @@ const FEATURE_HEADLINE: Record<PropertyExperienceModel["slug"], string> = {
   "twin-houses": "Twin-house buyer checklist — party line, frontage, banding",
 };
 
+const FEATURE_HEADLINE_AR: Record<PropertyExperienceModel["slug"], string> = {
+  villas: "مزايا فلل سولانا ويست قبل الحجز",
+  townhouses: "مزايا تاون هاوس سولانا ويست",
+  apartments: "مزايا شقق سولانا ويست",
+  "twin-houses": "مزايا توين هاوس سولانا ويست",
+};
+
 export function PropertyTypeFeaturesSection({ model }: { model: PropertyExperienceModel }) {
   const { slug, keyFeatures } = model;
-  const eyebrow = "Composition";
-  const title = FEATURE_HEADLINE[slug];
+  const isArabic = /[\u0600-\u06FF]/.test(model.hero.h1);
+  const eyebrow = isArabic ? "مزايا الوحدة" : "Composition";
+  const title = isArabic ? FEATURE_HEADLINE_AR[slug] : FEATURE_HEADLINE[slug];
 
   return (
     <SectionShell
@@ -25,7 +33,9 @@ export function PropertyTypeFeaturesSection({ model }: { model: PropertyExperien
         <div className="lg:col-span-4">
           <SectionHeader id={`property-${slug}-features-heading`} eyebrow={eyebrow} title={title} />
           <p className="mt-8 max-w-sm text-[0.9375rem] font-normal leading-[1.74] tracking-[0.012em] text-lux-ink/58 md:mt-9 md:text-base">
-            Operational facts drawn from masterplan scope — not a substitute for desk-issued quotations or condominium bylaws.
+            {isArabic
+              ? "نقاط تساعدك على مقارنة الوحدة قبل طلب الأسعار أو تثبيت الحجز."
+              : "Operational facts drawn from masterplan scope — not a substitute for desk-issued quotations or condominium bylaws."}
           </p>
         </div>
         <ul className="flex flex-col gap-0 lg:col-span-8">

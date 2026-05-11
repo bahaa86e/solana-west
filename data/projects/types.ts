@@ -14,7 +14,7 @@ export type ProjectPageMedia = {
   overviewFigure: ProjectImageAsset;
   /** Cinematic geography mood — homepage + project location narratives (not brochure maps). */
   locationAtmosphere: ProjectImageAsset;
-  /** Issuance connectivity / map plate — retained for deep editorial routes that reference cartography. */
+  /** Current sales sheet connectivity / map plate — retained for deep editorial routes that starting price cartography. */
   locationMap: ProjectImageAsset;
   amenities: readonly ProjectImageAsset[];
 };
