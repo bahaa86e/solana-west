@@ -15,7 +15,7 @@ export const homeMetadata: RouteSeoDefinition = {
   keywords: [
     "Solana West prices New Zayed",
     "Solana West payment plan",
-    "ORA Developer Egypt New Zayed",
+    "ORA Developers Egypt New Zayed",
     "luxury villas New Zayed",
     "West Cairo master plan compound",
     "Mehwar El Dabaa real estate",
@@ -30,187 +30,187 @@ export const homeSections = {
   hero: {
     locationEyebrow: "New Zayed · Mehwar El Dabaa",
     /** Distinct from /projects/solana-west: estate positioning + buyer intent, not project-table-of-contents */
-    h1: "Solana West — New Zayed homes by ORA Developer Egypt",
-    communityLine: `316-acre walkable estate by ${siteConfig.developer}—one composed ground plane of landscape, circulation, and architecture.`,
+    h1: "Solana West New Zayed by ORA Developers Egypt",
+    communityLine: `A 316-acre walkable community in New Zayed, planned by ${siteConfig.developer} around greenery, privacy, and calm daily movement.`,
     seoSupportLine:
-      "Villas, twin houses, townhouses, apartments. Commercial terms are confirmed by the sales team, not by marketing summaries.",
+      "Apartments, townhouses, twin houses, and standalone villas with prices from 9.8M EGP, 5% down, and installments up to 10 years.",
   },
 
-  /** AI-search facing facts — visible HTML; current sales sheet confirms reservations reservations. */
+  /** AI-search facing facts — visible HTML for buyers. */
   snapshot: {
-    caption: "Commercial snapshot — verify figures on your booking pack.",
+    caption: "Key facts for buyers",
     rows: [
       { label: "Starting price", value: "From 9.8M EGP" },
-      { label: "Payment plan", value: "5% down · up to 10 years (current sales schedule)" },
+      { label: "Payment plan", value: "5% down · up to 10 years" },
       { label: "Developer", value: `${siteConfig.developer}` },
       { label: "Location", value: "New Zayed · Mehwar El Dabaa" },
-      { label: "Delivery", value: "From 2027 (cluster-specific)" },
+      { label: "Delivery", value: "From 2027" },
       { label: "Unit types", value: "Apartments, townhouses, twin houses, villas" },
     ],
   },
 
   trust: {
     eyebrow: "Developer",
-    title: "ORA Developer Egypt — your project developer",
+    title: "Developed by ORA Developers Egypt",
     paragraphs: [
-      `Chairman ${siteConfig.founder}: land is staged and sold with portfolio-grade rigor—your developer is ${siteConfig.developer}, not brochure copy. At ${siteConfig.shortName}, villas and rows sit inside one continuous landscape system so the estate reads as a single authored place.`,
+      `${siteConfig.shortName} is backed by ${siteConfig.developer}, chaired by ${siteConfig.founder}. The appeal is simple: a large New Zayed land parcel shaped as one coherent address, with homes, landscape, and movement planned together from the start.`,
     ],
   },
 
   projectOverview: {
-    eyebrow: "The plan",
-    title: "Landscape first — 316 acres that stay legible",
-    lead: `Low-density allocation on 316 acres—avenues, green structure, and residential rows sequenced for outlook and privacy. ${siteConfig.shortName} is built as a long-horizon address, not a patched grid.`,
+    eyebrow: "The community",
+    title: "A low-density 316-acre estate in New Zayed",
+    lead: `${siteConfig.shortName} is designed for buyers who want space without losing connection to West Cairo. Wide greenery, clear internal roads, and a walkable master plan give the compound a quieter, more residential rhythm.`,
     body: [
-      "Pedestrian structure is designed in—not retrofitted at the curb—so arrival, views, and acoustic edges behave predictably.",
-      "VYE (Sodic) and Belle Vie (Emaar) sit in the same West Cairo belt as comparables—distinct plans, not partnerships.",
+      "The plan is not built around isolated buildings. Homes, green spaces, and pedestrian routes are arranged to support privacy, views, and easy movement.",
+      "Nearby luxury communities help frame New Zayed's premium residential character, but Solana West stands on its own ORA-led master plan.",
     ],
   },
 
   masterplan: {
-    eyebrow: "Scale",
-    title: "See allocation before you choose a SKU",
+    eyebrow: "Master plan",
+    title: "Understand the land before choosing a home",
     intro:
-      "The masterplan is the sales agreement between capital and land: where density sits, how open space holds, and how the estate stays legible from the first drive through daily life. Use it to align unit choice with the horizon you are investment review.",
+      "A strong master plan protects how a compound feels years after launch. At Solana West, the 316-acre layout, green corridors, and low-density planning should be part of your decision alongside price, payment terms, and unit size.",
   },
 
   location: {
     eyebrow: "New Zayed",
-    title: "Mehwar El Dabaa reach — gated estate, not highway living",
+    title: "Connected to West Cairo, set inside a gated estate",
     intro:
-      `${siteConfig.shortName} sits on Mehwar El Dabaa—arterial reach across West Cairo while remaining a gated residential estate, not a highway adjacency.`,
+      `${siteConfig.shortName} sits on Mehwar El Dabaa in New Zayed, giving buyers access to key West Cairo roads while keeping daily life inside a private residential setting.`,
     routes: [
       {
-        term: "Primary links",
-        detail: "Direct access to Alexandria Desert Road and the Middle Ring Road.",
+        term: "Main roads",
+        detail: "Access toward Alexandria Desert Road and the Middle Ring Road.",
       },
       {
-        term: "Routine reach",
-        detail: "~5 min Waslet Dahshour · ~10 min Sphinx Airport · ~15 min Mall of Arabia—directional drive context cited with marketing materials.",
+        term: "Lifestyle reach",
+        detail: "~5 min Waslet Dahshour · ~10 min Sphinx Airport · ~15 min Mall of Arabia, based on project marketing context.",
       },
       {
-        term: "Market frame",
-        detail: "Adjacent large-scale mentions include VYE (Sodic) and Belle Vie (Emaar)—comparables only, not affiliations.",
+        term: "Market context",
+        detail: "Located near key residential destinations in New Zayed, with strong West Cairo access and a private ORA-led setting.",
       },
     ],
   },
 
   investment: {
-    eyebrow: "Thesis",
-    title: "Why West Cairo assigns attention to this corridor",
+    eyebrow: "Investment view",
+    title: "Why serious buyers are watching this side of West Cairo",
     lead:
-      "Investment review rests on corridor depth, ORA execution posture, and whether the plan protects open space over a long hold—geography and governance do the work here, not slogans.",
+      "The investment case is not built on hype. It comes from New Zayed infrastructure, ORA's developer reputation, low-density land planning, and a payment structure that gives buyers time to enter carefully.",
     bullets: [
       {
-        headline: "West Cairo corridor",
+        headline: "West Cairo growth corridor",
         text:
-          "Mehwar El Dabaa and ring maturity link Sheikh Zayed, expansion zones, and airport-adjacent movement—demand along the spine is structural.",
+          "Mehwar El Dabaa, ring-road access, and Sphinx Airport proximity make New Zayed one of the more relevant long-hold residential corridors in West Cairo.",
       },
       {
-        headline: "ORA developer",
-        text: `${siteConfig.developer} sequences servicing, landscape, and sales with one thread from reservation to delivery.`,
+        headline: "ORA developer profile",
+        text: `${siteConfig.developer} adds credibility for buyers comparing developer quality, planning strength, and delivery process.`,
       },
       {
-        headline: "Green structure",
+        headline: "Green, low-density planning",
         text:
-          "Restrained density keeps built mass subservient to landscape—outlook and privacy survive closing, not just launch renders.",
+          "The 316-acre scale allows homes to sit within landscape rather than feeling pressed into a dense grid.",
       },
       {
-        headline: "Hold discipline",
+        headline: "Clear commercial starting point",
         text:
-          "Delivery from 2027: model cash flow only after cluster-specific current sales sheet—not marketing quarter language.",
+          "From 9.8M EGP, 5% down, installments up to 10 years, and delivery from 2027. Final numbers should always be checked against the latest price list.",
       },
     ],
   },
 
   propertyTypes: {
     eyebrow: "Residences",
-    title: "Four archetypes, one estate",
+    title: "Apartments, townhouses, twin houses, and villas",
     intro:
-      "Inventory is phased across apartments, townhouses, twin houses, and standalone villas—finishing paths include fully finished and core & shell where applicable. The current sales sheet confirms exact brackets; marketing figures orient intent only.",
+      "Solana West offers a broad residential mix for different budgets and lifestyles. Use the typology pages to compare privacy, land share, finishing, and long-term fit before asking for current availability.",
     types: [
       {
         title: "Apartments",
         description:
-          "Elevated apartment product set within the green structure—suited to owner-occupiers who want estate governance without villa land carry, or investors sizing rental exposure inside a managed compound.",
-        investorNote: "Lower land coefficient per unit—watch phase-specific price bands.",
+          "A practical entry into the compound for buyers who want ORA's New Zayed address, estate services, and green outlooks without the cost profile of a villa.",
+        investorNote: "Often the most accessible route into the project. Confirm floor, view, and phase pricing.",
       },
       {
         title: "Townhouses",
         description:
-          "Multi-storey homes on walkable avenues with private entries—more square footage and privacy than typical apartments, without the full land dedication of a detached villa.",
-        investorNote: "Balances ticket size with operational simplicity versus villas.",
+          "Family homes on landscaped avenues, offering more privacy and space than apartments while staying easier to manage than larger villa plots.",
+        investorNote: "A balanced option for buyers comparing ticket size, privacy, and future resale depth.",
       },
       {
         title: "Twin houses",
         description:
-          "Paired villas with a controlled party interface—wider frontage than townhouses, still efficient on servicing and setbacks.",
-        investorNote: "Mid-step on the equity curve between townhomes and standalone stock.",
+          "Paired villa homes with broader frontage than townhouses and a more private feel, while remaining efficient within the master plan.",
+        investorNote: "A natural step between townhouses and standalone villas.",
       },
       {
         title: "Standalone villas",
         description:
-          "Detached villas, elevated where the plan allows for open green outlooks. Finishing may be fully finished or core & shell—confirm façade packages and lot dimensions with the sales team.",
+          "Detached homes positioned for privacy, garden life, and open green views where the plan allows. Finishing options and plot details vary by release.",
         investorNote:
-          "Apartments starting from 9.8M EGP; phase, outlook, and specification move live prices.",
+          "Best suited to buyers who value land, privacy, and long-term family use. Request phase-specific villa pricing.",
       },
     ],
   },
 
   payment: {
-    eyebrow: "Acquisition",
-    title: "Apartment pricing and payment plan",
+    eyebrow: "Prices & payment",
+    title: "From 9.8M EGP with 5% down",
     summary:
-      "Apartments starting from 9.8M EGP · 5% down payment · Installments up to 10 years · Delivery from 2027",
+      "Starting price from 9.8M EGP · 5% down payment · installments up to 10 years · delivery from 2027",
     bullets: [
-      "Live brackets reset by phase, typology, finishing, outlook—never by landing copy alone.",
-      "5% down: confirm deposits, fee lines, payment timing in your pack.",
-      "Ten-year language is a headline; the sales team confirms the actual schedule.",
-      "Delivery from 2027 varies by cluster; align timing before investment review rent.",
+      "Final prices depend on unit type, phase, finishing, size, and view.",
+      "The 5% down payment is the headline structure; deposits and fees should be confirmed before reservation.",
+      "Installments may extend up to 10 years depending on the current sales schedule.",
+      "Delivery starts from 2027, with exact timing confirmed by cluster or unit.",
     ],
   },
 
   amenities: {
-    eyebrow: "Life on site",
-    title: "Club, pool & park rooms inside the walk grid",
+    eyebrow: "Life inside Solana West",
+    title: "A quieter compound rhythm",
     intro:
-      "Pools and clubhouse sit inside walkable tissue—daily rhythm stays on-estate rather than outsourced to arterial errands.",
+      "The lifestyle story is built around greenery, walking, privacy, and everyday ease. Amenities support the residential plan rather than competing with it.",
     groups: [
       {
-        title: "Aquatic & social core",
+        title: "Clubhouse and water elements",
         lines: [
-          "Temperature-controlled pool and clubhouse cluster anchor resident life inside the walkable fabric.",
-          "Social energy stays on-site—reducing friction for families and protecting time for owners who travel frequently.",
+          "Pools and clubhouse spaces are positioned as social anchors within the walkable fabric.",
+          "Residents can keep more of daily life inside the estate, with less dependence on outside trips for simple leisure.",
         ],
       },
       {
-        title: "Park rooms & buffers",
+        title: "Green buffers",
         lines: [
-          "Green separation between rows protects sight lines for elevated villa outlooks.",
-          "Pedestrian priority keeps servicing noise at the edges—not through front-door calm.",
+          "Landscape separation helps protect outlooks, privacy, and a calmer feeling between homes.",
+          "Pedestrian routes make the compound easier to enjoy on foot, not only by car.",
         ],
       },
       {
-        title: "Architecture in sync",
+        title: "Coherent architecture",
         lines: [
-          "Facades and avenues are authored together—the plan stays legible after move-in.",
+          "The strongest luxury communities feel consistent after handover. Solana West is positioned around that kind of composed, long-term address.",
         ],
       },
     ],
   },
 
   finalCta: {
-    eyebrow: "Acquisition",
-    title: "Request live pricing for your typology and hold horizon",
+    eyebrow: "Next step",
+    title: "Request current prices and availability",
     supporting:
-      "Share typology, finishing path, and hold horizon—the advisory desk returns sales-ready availability and schedule context (WhatsApp or written enquiry).",
-    primaryLabel: "Private acquisition desk",
-    secondaryLabel: "Speak with advisory desk",
+      "Share your preferred unit type, budget range, and timeline. The sales team can send the latest price sheet, payment schedule, and available options by WhatsApp or written enquiry.",
+    primaryLabel: "Request prices on WhatsApp",
+    secondaryLabel: "Speak with an advisor",
   },
 
   faqPreview: {
-    eyebrow: "Resolution",
-    title: "Solana West — questions to settle before you reserve",
+    eyebrow: "Buyer questions",
+    title: "What to confirm before reserving in Solana West",
     intro: SOLANA_WEST_FAQ_SHARED_INTRO,
     items: [...solanaWestFaqCanonical],
   },

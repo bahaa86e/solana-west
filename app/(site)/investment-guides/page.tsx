@@ -16,32 +16,32 @@ const linkClass = cn(
 
 const guides = [
   {
-    title: "Mehwar & land thesis — where westward Cairo absorbs demand",
-    body: `Mehwar El Dabaa and ring maturity frame how West Cairo absorbs demand. Start with place, then read ${siteConfig.shortName} against your hold horizon—not launch mood boards.`,
+    title: "Mehwar El Dabaa and the New Zayed land story",
+    body: `Mehwar El Dabaa, ring-road access, and West Cairo growth help explain why buyers are studying ${siteConfig.shortName}. Start with location, then test the project against your own hold horizon.`,
     href: "/blog/solana-west-mehwar-new-zayed-location-buyer-guide-2026",
     cta: "Location buyer guide",
   },
   {
-    title: "Sales desk-grade payment literacy",
-    body: `5% down and up to 10 years are marketing headlines. Investment review happens on the current sales schedule your sales pack carries.`,
+    title: "How to read the payment plan",
+    body: "5% down and up to 10 years are useful headline terms. The real review happens when you see the exact schedule, fees, and dates for your unit.",
     href: "/blog/solana-west-payment-plan-explained-issuer-guide-2026",
     cta: "Payment plan guide",
   },
   {
-    title: "Diligence outline — narratives, not return promises",
-    body: `ORA-led master planning and open-space discipline are diligence inputs—not return promises. Model only on figures you verify at reservation.`,
+    title: "Investment diligence without return promises",
+    body: "ORA-led planning, greenery, and low density can support a strong long-term story, but they do not replace verified numbers and a realistic cash-flow plan.",
     href: "/blog/solana-west-new-zayed-investment-strength-2026",
     cta: "Investment context",
   },
   {
-    title: "New Zayed vs Sheikh Zayed — buyer pools & expansion logic",
+    title: "New Zayed vs Sheikh Zayed for luxury buyers",
     body: "How expansion geography, airport adjacency, and buyer pools differ when you choose a long-horizon address.",
     href: "/blog/new-zayed-vs-sheikh-zayed-luxury-buyers-2026",
     cta: "Area comparison",
   },
   {
-    title: "ORA developer read — sequencing risk before SKU risk",
-    body: "Developer sequencing—landscape, servicing, sales—matters as much as unit SKU when you size operational risk.",
+    title: "How to read the ORA developer story",
+    body: "Developer process, phasing, landscape, servicing, and after-sales clarity matter as much as the individual unit you choose.",
     href: "/blog/ora-developers-egypt-vision-projects-strategy",
     cta: "ORA strategy note",
   },
@@ -58,11 +58,11 @@ export default function InvestmentGuidesPage() {
             id="investment-guides-heading"
             className="mt-lux-stack-xs max-w-[min(40ch,100%)] text-balance font-display text-display-xl text-lux-ink"
           >
-            Investing in West Cairo — diligence guides anchored on {siteConfig.shortName}
+            Investing in West Cairo with {siteConfig.shortName} as your case study
           </h1>
           <p className="lux-body mt-lux-stack-sm max-w-[52ch] text-lux-ink/68 md:mt-lux-stack-md">
-            Short, investor-grade lanes—each links to a long-form journal entry. Nothing here replaces your booking pack,
-            advisers, or sales current sales sheets.
+            Practical buyer guides for New Zayed, West Cairo, payment plans, location, and ORA developer context. Use them
+            to ask better questions before requesting current sales documents.
           </p>
         </header>
 
@@ -82,12 +82,12 @@ export default function InvestmentGuidesPage() {
 
         <section className="border-t border-lux-ink/[0.06] py-10 md:py-12" aria-labelledby="investment-next">
           <h2 id="investment-next" className="font-display text-lux-display-sm font-medium text-lux-ink">
-            Tie guides back to transactional Solana West routes
+            Tie the guides back to Solana West prices and payment
           </h2>
           <ul className="lux-body mt-4 max-w-[52ch] list-disc space-y-2 pl-5 text-lux-ink/68">
             <li>
               <Link href="/prices" className={linkClass}>
-                Price starting price desk
+                Solana West prices
               </Link>
             </li>
             <li>
@@ -97,7 +97,7 @@ export default function InvestmentGuidesPage() {
             </li>
             <li>
               <Link href="/contact" className={linkClass}>
-                Advisory desk
+                Contact an advisor
               </Link>
             </li>
           </ul>

@@ -34,16 +34,16 @@ export default function ThankYouPage({ searchParams }: PageProps) {
           id="thank-you-heading"
           titleAs="h1"
           eyebrow="Acknowledgement"
-          title={isLeadAck ? "Enquiry received — we will reply shortly" : "Thank you — enquiry received"}
+          title={isLeadAck ? "Enquiry received. We will reply shortly." : "Thank you. Your enquiry was received."}
           kicker={
             <p>
               {isLeadAck ? (
                 <>
-                  Sales aligns responses with current sales sheet-accurate data. Prefer live thread on the same desk? Reach{" "}
-                  {siteConfig.phone} by call or WhatsApp.
+                  We will use your enquiry details to reply with relevant Solana West price, payment, or availability
+                  context. For a faster thread, call or WhatsApp {siteConfig.phone}.
                 </>
               ) : (
-                <>No further confirmation is exposed on this route.</>
+                <>You can continue browsing or open WhatsApp for a faster follow-up.</>
               )}
             </p>
           }
@@ -71,7 +71,7 @@ export default function ThankYouPage({ searchParams }: PageProps) {
             data-track="cta_click"
             data-track-placement="thank_you_secondary"
           >
-            Contact desk
+            Contact page
           </Link>
         </div>
       </div>

@@ -19,24 +19,25 @@ export default function PrivacyPolicyPage() {
     <SectionMain>
       <article className="mx-auto max-w-readable" aria-labelledby="privacy-heading">
         <header className="border-b border-lux-ink/[0.06] pb-lux-stack-md md:pb-lux-stack-lg">
-          <p className="lux-eyebrow text-lux-ink/46">Formal</p>
+          <p className="lux-eyebrow text-lux-ink/46">Privacy</p>
           <div className="mt-lux-stack-xs h-px w-9 bg-lux-gold/42 md:mt-lux-stack-sm" aria-hidden />
           <h1 id="privacy-heading" className="mt-lux-stack-xs max-w-[min(38ch,100%)] font-display text-display-xl text-lux-ink">
             Privacy policy — Solana West New Zayed enquiries
           </h1>
           <p className="lux-body mt-lux-stack-sm text-lux-ink/67 md:mt-lux-stack-md">
             This notice describes how {siteConfig.shortName} ({siteConfig.url}) handles information you share when you
-            enquire by form, phone, email, WhatsApp, or tracked links. It is not professional advice.
+            enquire through a form, phone call, email, WhatsApp, or tracked link. It is written for clarity and does not
+            replace professional advice.
           </p>
         </header>
 
         <div className="space-y-10 py-10 md:space-y-12 md:py-12">
           <section aria-labelledby="privacy-controller">
             <h2 id="privacy-controller" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              Who manages data &amp; how to reach the desk
+              Who manages enquiries and how to reach us
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
-              Operational enquiries route through the channels published on this site:&nbsp;
+              Enquiries are handled through the contact channels published on this site:&nbsp;
               <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} className={linkClass}>
                 {siteConfig.phone}
               </a>
@@ -50,7 +51,7 @@ export default function PrivacyPolicyPage() {
 
           <section aria-labelledby="privacy-data">
             <h2 id="privacy-data" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              Personal &amp; technical data this site may touch
+              Personal and technical data this site may collect
             </h2>
             <ul className="lux-body mt-4 list-disc space-y-2 pl-5 text-lux-ink/70">
               <li>Identifiers you supply: name, phone number, email (if provided), and message content.</li>
@@ -64,7 +65,7 @@ export default function PrivacyPolicyPage() {
 
           <section aria-labelledby="privacy-use">
             <h2 id="privacy-use" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              Why enquiries, analytics &amp; measurement exist here
+              Why enquiries, analytics, and measurement exist here
             </h2>
             <ul className="lux-body mt-4 list-disc space-y-2 pl-5 text-lux-ink/70">
               <li>Responding to pricing, payment-plan, brochure, and site-visit requests.</li>
@@ -75,12 +76,12 @@ export default function PrivacyPolicyPage() {
 
           <section aria-labelledby="privacy-cookies">
             <h2 id="privacy-cookies" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              Cookies, pixels &amp; blocking choices
+              Cookies, pixels, and browser choices
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
               We may use cookies or local storage for analytics (e.g. Google Analytics), advertising measurement (e.g.
               Google Ads tags), and social pixels (e.g. Meta) where implemented. Use your browser controls to limit
-              storage; blocking some tags may affect measurement only—not your ability to read public pages.
+              storage; blocking some tags may affect measurement only, not your ability to read public pages.
             </p>
           </section>
 
@@ -97,7 +98,7 @@ export default function PrivacyPolicyPage() {
 
           <section aria-labelledby="privacy-rights">
             <h2 id="privacy-rights" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              Access, correction &amp; vendor-side controls
+              Access, correction, and platform controls
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
               You may ask to access, correct, or delete enquiry data we hold, subject to law. Contact us using the
@@ -107,7 +108,7 @@ export default function PrivacyPolicyPage() {
 
           <section aria-labelledby="privacy-changes">
             <h2 id="privacy-changes" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              When &amp; how this privacy notice updates
+              When this privacy notice updates
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
               We may update this page when our practices or partners change. The effective date is the date shown in your
@@ -119,7 +120,7 @@ export default function PrivacyPolicyPage() {
               <Link href="/contact" className={linkClass}>
                 contact
               </Link>{" "}
-              desk.
+              page.
             </p>
           </section>
         </div>

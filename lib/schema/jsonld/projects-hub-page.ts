@@ -81,7 +81,7 @@ export function getProjectsHubStructuredData(seo: RouteSeoDefinition, model: Pro
     "@type": "ItemList",
     "@id": `${url}#project-hubs`,
     name:
-      locale === "ar" ? `فهارس مشاريع ${siteConfig.developer} على هذا النطاق` : `ORA Developer Egypt project hubs indexed on this site`,
+      locale === "ar" ? `فهارس مشاريع ${siteConfig.developer} على هذا النطاق` : `ORA Developers Egypt project hubs indexed on this site`,
     numberOfItems: projectRegistry.length,
     itemListElement: projectRegistry.map((p, index) => ({
       "@type": "ListItem" as const,

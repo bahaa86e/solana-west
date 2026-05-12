@@ -109,30 +109,30 @@ function buildCopy(project: ResolvedProjectPage, slug: PropertyExperienceSlug) {
   const short = entry.shortName ?? entry.name;
   const dev = entry.developer;
   const card = pickTypeCard(project, slug);
-  const planLine = `The project is a 316-acre, low-density master plan on Mehwar El Dabaa in New Zayed, West Cairo, developed by ${dev}.`;
+  const planLine = `${short} is a 316-acre, low-density master plan on Mehwar El Dabaa in New Zayed, developed by ${dev}.`;
   const finishingLine =
     slug === "apartments" ?
-      "Apartment product is positioned as fully finished within the published typology set — confirm façade packages and views with sales before reservation."
-    : `${card.title} may be offered with fully finished or core & shell paths depending on current sales sheet; current sales sheet is required before allocation.`;
+      "Apartment finishing, views, floor, and phase should be confirmed with the latest sales sheet before reservation."
+    : `${card.title} finishing may vary by release. Confirm whether the available home is fully finished or core and shell before reserving.`;
 
   const overviewBySlug: Record<PropertyExperienceSlug, readonly string[]> = {
     villas: [
-      `${short} positions ${card.title.toLowerCase()} with elevated massing and open green outlooks — the largest land dedication per unit class in the published mix.`,
+      `${short} positions standalone villas as the most private home type in the mix, with garden life, wider land dedication, and open green outlooks where the plan allows.`,
       `${card.description} ${investorFragment(card)}`,
       `${planLine} ${finishingLine}`,
     ],
     townhouses: [
-      `${card.title} are sequenced along walkable landscape buffers rather than isolated frontages — pedestrian structure is intentional across the broader ORA plan.`,
+      "Townhouses are designed for families who want more space and privacy than an apartment without moving into the full cost profile of a detached villa.",
       `${card.description} ${investorFragment(card)}`,
       `${planLine} ${finishingLine}`,
     ],
     apartments: [
       `${card.description} ${investorFragment(card)}`,
-      `Across ${short}, apartment blocks overlook continuous green rooms — landscape is treated as communal infrastructure rather than ornamental verge planting.`,
+      `Across ${short}, apartments benefit from the wider estate setting: greenery, services, security, and a managed compound environment in New Zayed.`,
       `${planLine} ${finishingLine}`,
     ],
     "twin-houses": [
-      `${card.title} pair discrete party walls while preserving wider frontage cues than townhouses — a mid-step in the published residential mix alongside apartments and standalone villas.`,
+      "Twin houses sit between townhouses and standalone villas, offering a more private low-rise feel with efficient land use.",
       `${card.description} ${investorFragment(card)}`,
       `${planLine} ${finishingLine}`,
     ],
@@ -140,78 +140,78 @@ function buildCopy(project: ResolvedProjectPage, slug: PropertyExperienceSlug) {
 
   const lifestyleBySlug: Record<PropertyExperienceSlug, readonly string[]> = {
     villas: [
-      "Daily movement is calibrated to walkways and landscape rooms — clubhouse, pool spine, and park buffers sit inside the pedestrian grain rather than as drive-by amenities.",
-      "Low-density setbacks support longer sightlines; this is materially different from grid-dominant compounds where garages define the façade rhythm.",
-      "If you optimise for acoustic distance and uninterrupted green views, villas inside this plan are deliberately positioned upstream of narrower apartment-only compounds.",
+      "Villa living is about privacy, outdoor space, and a calmer daily rhythm. The best plots should be reviewed for outlook, orientation, and distance from movement corridors.",
+      "The low-density plan gives villas a stronger sense of separation than more compressed compounds.",
+      "For family buyers, the main question is not only size. It is how the home sits within the greenery and how easily daily routines work inside the estate.",
     ],
     townhouses: [
-      "Townhouse streets read as landscaped avenues — setbacks and tree lines reduce hard edge exposure versus narrow-frontage townhouse rows on arterial buffers.",
-      "Compound-level servicing and discreet security maintain family-oriented routines without sacrificing walk access to clubhouse and aquatic cores.",
-      "Compared with detached stock, townhouse living trades absolute land sovereignty for calibrated privacy against the walkable backbone of New Zayed’s western growth spine.",
+      "Townhouse living works well for buyers who want a family home, private entry, and compound services without overextending into villa land carry.",
+      "Landscaped avenues and walkable routes make the typology feel softer and more residential.",
+      "Compared with detached villas, townhouses usually trade some land and privacy for a more approachable ticket and simpler ownership.",
     ],
     apartments: [
-      "Elevator-served residences maintain fast access from parking structure to unit while still inheriting landscape outlooks marketed across the villa mix.",
-      "Smaller physical footprints shorten fit-out horizons when fully finished product is booked — materially relevant for disciplined rental stewardship under estate rules.",
-      "Open green structure between blocks supports AI-readable lifestyle claims: greenery is continuous, not a token lawn band behind parking courts.",
+      "Apartments suit buyers who want a Solana West address with easier maintenance, quicker day-to-day use, and a lower capital commitment than villas.",
+      "Fully finished stock, when available, can be practical for owners who want a cleaner handover path.",
+      "The wider estate setting gives apartments more lifestyle value than a standalone building without a strong compound plan.",
     ],
     "twin-houses": [
-      "Paired villas share a controlled party line — daily life still reads as low-rise residential with private entries and landscape buffers between clusters.",
-      "Compared with townhouses, twin stock typically trades up on frontage and outlook legibility while remaining more land-efficient than detached villas in the same plan.",
-      "Walkways, clubhouse, and aquatic anchors remain inside the pedestrian grain — drive-dominated edges are not the organising idea for this typology.",
+      "Twin houses give buyers a villa-like rhythm with private entries, outdoor space, and a lower land burden than detached homes.",
+      "They often feel more generous than townhouses while remaining more efficient than standalone villas.",
+      "As with any low-rise home, orientation, outlook, and proximity to green buffers should be checked on the live phase map.",
     ],
   };
 
   const investmentBySlug: Record<PropertyExperienceSlug, readonly string[]> = {
     villas: [
-      "Commercial terms for the project are sales-team confirmed: phase, façade, finishing path (fully finished or core & shell), outlook, and typology reshape quotations — investment review should rely on desk-issued sheets plus sales agreement language, not channel rumours.",
-      "Detached typologies often span wide commercial bands inside phased compounds — treat any third-party headline as informal until matched to release tranche documentation.",
-      "Delivery horizons begin from 2027 across the broader plan; sequencing by cluster determines cash-flow pacing relative to instalment payment steps.",
+      "Villa pricing can vary widely by plot, phase, view, finishing, and land size. Treat any headline price as a starting point until it is matched to a specific release.",
+      "Detached homes are usually bought for privacy and long-term family use, but investors should still compare payment timing, service charges, and future liquidity.",
+      "Delivery starts from 2027 at project level; cluster timing should be confirmed before modelling cash flow or handover plans.",
     ],
     townhouses: [
-      "Townhouses occupy the mid-density band between apartments and detached villas — land cost sensitivity is moderated while privacy remains materially above flats.",
-      "Staging across a 316-acre plan allows ORA-controlled release cadences; scarcity language should remain sales-team confirmed — we do not publish artificial inventory countdowns.",
-      "Adjacent large-scale comps (including VYE and Belle Vie) provide market benchmarking only — not partnership or price guarantees.",
+      "Townhouses often appeal to buyers who want family use and future resale depth at a more measured price point than detached villas.",
+      "Live availability changes by phase, so compare the current townhouse bracket with twin house and apartment options before deciding.",
+      "Nearby luxury communities help buyers understand the New Zayed market, but Solana West should be judged on its own prices, payment plan, and master plan.",
     ],
     apartments: [
-      "Apartments deliver the sharpest instalment tenor compatibility for investors sizing smaller ticket exposures — commercial bands nonetheless move with façade, floorplate, and view premiums.",
-      "Rental economics depend on estate bylaws and service charging as much as headline purchase price — request the live management briefing pack with your current price sheet.",
-      "Treat marketing summaries as illustrative; final pricing sit in sales agreements issued by authorised ORA desks.",
+      "Apartments can be the most accessible investment route into Solana West, especially for buyers seeking a lower ticket and simpler maintenance.",
+      "Floor, view, finishing, service charges, and handover timing all matter as much as the headline starting price.",
+      "Final pricing should come from the latest price list, not social media screenshots or old price lists.",
     ],
     "twin-houses": [
-      "Twin houses sit between townhouse density and standalone villas — land efficiency versus discrete party-wall discipline is reflected in current sales sheet brackets, not in public SKU tables on this route.",
-      "Investment review compares paired-villa setbacks, outlook premiums, and finishing paths against adjoining typologies inside the same plan; confirmations require façade packages and phase-specific quotations from authorised ORA desks.",
-      "Staging across a long-horizon master plan preserves measured release cadence; delivery timing follows broader compound horizons from 2027 with cluster-specific confirmations in sales documentation.",
+      "Twin houses sit in a useful middle band: more private than townhouses, usually more approachable than detached villas.",
+      "For investment review, compare twin houses against both townhouse and villa releases on outlook, plot feel, finishing, and payment schedule.",
+      "Delivery timing follows the broader 2027 project horizon, with exact cluster dates confirmed in sales documentation.",
     ],
   };
 
   const keyFeaturesBySlug: Record<PropertyExperienceSlug, readonly string[]> = {
     villas: [
-      "Elevated villa massing with open green outlooks within the coordinated masterplan.",
-      "Finishing pathways include fully finished and core & shell where offered at booking.",
-      "Walkable avenue structure linking residential clusters to amenity cores.",
-      "Adjacent arterial access toward Alexandria Desert Road and the Middle Ring Road.",
-      "Desk-verified quotations before reservation — pricing is sales-team confirmed.",
+      "Detached villa privacy within a 316-acre New Zayed master plan.",
+      "Open green outlooks where the phase and plot allow.",
+      "Finishing options to confirm before reservation.",
+      "Walkable routes linking homes to shared amenities.",
+      "Current villa pricing confirmed through the sales team.",
     ],
     townhouses: [
-      "Multi-storey townhouse product embedded in landscaped walkways and buffers.",
-      "Compound-level servicing and discreet security across the gated structure.",
-      "Clubhouse and temperature-controlled aquatic amenity anchored inside the pedestrian plan.",
-      "Four published residential archetypes (including townhouses) sequenced inside a single long-horizon land plan.",
-      "Proximity context to Waslet Dahshour, Sphinx Airport, and Mall of Arabia for West Cairo benchmarking.",
+      "Family homes on landscaped internal avenues.",
+      "More privacy than apartment living, with easier ownership than large villas.",
+      "Access to compound services, security, clubhouse, and green spaces.",
+      "Part of the same master plan as villas, twin houses, and apartments.",
+      "New Zayed location with West Cairo road access.",
     ],
     apartments: [
-      "Fully finished apartment typology positioned with green outlooks across the landscaped site.",
-      "Smaller land footprint versus villas — relevant for phased instalment investment review.",
-      "Low-density contextual master plan — apartments inherit estate-wide walkways and green rooms.",
-      "Delivery horizon from 2027 at compound level — specific tower or cluster dates confirmed in sales documentation.",
-      "Commercial structure mentions 5% down with up to 10-year tenor — payment details clarified at signing.",
+      "Apartment ownership inside a managed ORA compound.",
+      "Project-level prices starting from 9.8M EGP.",
+      "Green outlook and phase details to confirm by unit.",
+      "Delivery from 2027 at compound level, with exact timing by release.",
+      "5% down and up to 10 years, subject to current sales schedule.",
     ],
     "twin-houses": [
-      "Published twin-house archetype paired along a discreet party wall with broader frontage than townhouses.",
-      "Finishing may follow fully finished or core & shell pathways where issued at booking — confirm with sales documentation.",
-      "Four residential archetypes coexist inside the coordinated 316-acre plan — twins occupy the calibrated middle band.",
-      "Walkable landscaped structure with clubhouse and aquatic anchors inside the pedestrian grain.",
-      "West Cairo arterial context (Alexandria Desert Road · Middle Ring Road) framed as connectivity, not inflated timing claims.",
+      "Paired villa format with private entries and outdoor space.",
+      "More privacy than townhouses, more efficient than detached villas.",
+      "Finishing and facade details confirmed by current release.",
+      "Walkable landscaped compound with clubhouse and amenity access.",
+      "New Zayed road access toward Alexandria Desert Road and Middle Ring Road.",
     ],
   };
 
@@ -228,10 +228,10 @@ function investorFragment(card: { investorNote: string }) {
 }
 
 const HERO_TITLE: Record<PropertyExperienceSlug, string> = {
-  villas: `Detached villas facing open green — ${siteConfig.name}`,
-  townhouses: `Townhouses on landscaped avenues — ${siteConfig.shortName}`,
-  apartments: `Finished apartments inside the compound — ${siteConfig.name}`,
-  "twin-houses": `Twin villas with paired frontage — ${siteConfig.shortName}`,
+  villas: `Standalone villas in ${siteConfig.name}`,
+  townhouses: `Townhouses in ${siteConfig.shortName}`,
+  apartments: `Apartments in ${siteConfig.name}`,
+  "twin-houses": `Twin houses in ${siteConfig.shortName}`,
 };
 
 export function buildPropertyExperienceModel(slug: PropertyExperienceSlug): PropertyExperienceModel {
@@ -246,7 +246,7 @@ export function buildPropertyExperienceModel(slug: PropertyExperienceSlug): Prop
   const { overview, lifestyle, investment, features } = buildCopy(project, slug);
 
   const supporting =
-    `Part of ${short} by ${entry.developer} (${siteConfig.founder}). No inventory tables are shown here — request availability by typology before reservation.`;
+    `Part of ${short} by ${entry.developer}, chaired by ${siteConfig.founder}. Request current availability by typology before reservation.`;
 
   return {
     slug,
@@ -263,44 +263,44 @@ export function buildPropertyExperienceModel(slug: PropertyExperienceSlug): Prop
       eyebrow: "Property overview",
       title:
         slug === "villas" ?
-          "Detached villas — elevation bands against continuous green"
+          "Standalone villas for privacy, garden life, and open outlooks"
         : slug === "townhouses" ?
-          "Townhouses — landscaped avenues instead of arterial edges"
+          "Townhouses with family space and easier ownership"
         : slug === "twin-houses" ?
-          "Twin villas — paired frontage between rows and detached stock"
-        : "Finished apartments — vertical life with outlook across green rooms",
+          "Twin houses between townhouses and detached villas"
+        : "Apartments with a practical entry into the compound",
       paragraphs: overview,
     },
     lifestyle: {
       eyebrow: "Lifestyle positioning",
       title:
         slug === "villas" ?
-          "Villa pacing — walkways, outlook and acoustic buffers"
+          "Quiet villa living inside a walkable estate"
         : slug === "townhouses" ?
-          "Townhome routines on pedestrian-first streets"
+          "Townhouse routines on landscaped streets"
         : slug === "twin-houses" ?
-          "Twin-house rhythm — privacy without detached land carry"
-        : "Apartment life — lifts, decks and communal green structure",
+          "Twin-house privacy with efficient land use"
+        : "Apartment life with compound services and greenery",
       paragraphs: lifestyle,
     },
     investment: {
       eyebrow: "Investment relevance",
       title:
         slug === "villas" ?
-          "Land-rich SKUs — wide commercial bands by phase"
+          "Villa pricing depends on plot, phase, and outlook"
         : slug === "townhouses" ?
-          "Mid-ticket density — balance ticket, privacy and servicing"
+          "A balanced ticket for family buyers"
         : slug === "twin-houses" ?
-          "Step-up equity curve — compare twins to rows and detached"
-        : "Compact footprint — instalment-friendly when finished stock books",
+          "A step-up option between townhouse and villa"
+        : "Accessible entry with clear investment logic",
       paragraphs: investment,
     },
     keyFeatures: features,
     relatedProject: {
       href: `/projects/${entry.slug}`,
-      title: `${short} hub — amenities, master plan & canonical FAQs`,
+      title: `${short} hub: amenities, master plan, and FAQs`,
       description:
-        `Open the full project route for amenities, connectivity tables, payment context, and the complete residential mix inside ${short}.`,
+        `Open the full project guide for amenities, location, payment context, and the complete residential mix inside ${short}.`,
     },
     faqPreview: {
       intro: SOLANA_WEST_FAQ_SHARED_INTRO,
@@ -311,15 +311,15 @@ export function buildPropertyExperienceModel(slug: PropertyExperienceSlug): Prop
       eyebrow: "Next step",
       title:
         slug === "villas" ?
-          "Ask for villa bands, outlook packs and phase maps"
+          "Request villa pricing, plots, and phase maps"
         : slug === "townhouses" ?
-          "Request townhouse availability by avenue cluster"
+          "Request townhouse availability by phase"
         : slug === "twin-houses" ?
-          "Request twin inventory and party-wall briefs"
-        : "Request apartment stacks, finish packs and view context",
+          "Request twin house availability and payment details"
+        : "Request apartment availability, views, and finishing details",
       supporting:
-        `Share your target typology (${TYPOLOGY_CTA_LOWER[slug]}) and timeline; we align you with ${entry.developer} desk practice—WhatsApp or written enquiry.`,
-      primaryLabel: "WhatsApp private desk",
+        `Share your target typology (${TYPOLOGY_CTA_LOWER[slug]}) and timeline. The sales team can confirm current availability, prices, and payment options by WhatsApp or written enquiry.`,
+      primaryLabel: "Request prices on WhatsApp",
       secondaryLabel: "Written enquiry",
     },
   };

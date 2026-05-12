@@ -28,8 +28,8 @@ export type FooterMegaColumn = {
 export const footerMegaColumns: readonly FooterMegaColumn[] = [
   {
     id: "portfolio",
-    headline: "Portfolio & narrative",
-    ariaLabel: "Site story, hub, and project pages",
+    headline: "Project & story",
+    ariaLabel: "Site story, project hub, and project pages",
     links: [
       { label: "Home", href: "/" },
       { label: "About", href: "/about" },
@@ -39,7 +39,7 @@ export const footerMegaColumns: readonly FooterMegaColumn[] = [
   },
   {
     id: "acquisition",
-    headline: "Homes & economics",
+    headline: "Homes & prices",
     ariaLabel: "Property pages, Solana West prices, payment plan",
     links: [
       { label: "Villas", href: "/properties/villas" },
@@ -52,7 +52,7 @@ export const footerMegaColumns: readonly FooterMegaColumn[] = [
   },
   {
     id: "place",
-    headline: "Place & adviser",
+    headline: "Place & contact",
     ariaLabel: "Location, master plan, FAQ, and contact",
     links: [
       { label: "Location", href: "/location" },
@@ -63,7 +63,7 @@ export const footerMegaColumns: readonly FooterMegaColumn[] = [
   },
   {
     id: "research",
-    headline: "Guides & benchmarking",
+    headline: "Guides & comparisons",
     ariaLabel: "Investment guides, blog, comparisons",
     links: [
       { label: "Investment guides", href: "/investment-guides" },

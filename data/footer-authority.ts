@@ -7,12 +7,12 @@ import { siteConfig } from "@/data/site";
 export const footerAuthority = {
   kicker: "West Cairo · New Zayed",
   /** Sitewide H2 — complements nav without recycling bare brand string */
-  headline: `${siteConfig.name} · ORA-led compound companion`,
+  headline: `${siteConfig.name} by ${siteConfig.developer}`,
   subheading: `${siteConfig.developer} · Chairman ${siteConfig.founder}`,
   deck:
     `${siteConfig.shortName} is a low-density compound on Mehwar El Dabaa, New Zayed, by ${siteConfig.developer}, with villas, townhouses, twin houses, and apartments. ` +
-    "Apartments starting from 9.8M EGP, 5% down, installments up to 10 years, delivery from 2027 orients buyers only—your current sales sheet confirms final booking details.",
+    "Prices start from 9.8M EGP at project level, with 5% down, installments up to 10 years, and delivery from 2027. Confirm final details before reserving.",
 } as const;
 
 export const footerLegalDisclaimer =
-  "All pricing, allocations, timelines, and commercial structures are illustrative until confirmed by the developer at current sales sheet. This site supports informed inquiries and does not replace formal documentation.";
+  "Prices, availability, delivery dates, and payment plans can change by phase and unit. This site supports informed enquiries and does not replace official sales documents.";

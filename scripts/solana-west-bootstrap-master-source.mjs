@@ -1,5 +1,5 @@
 /**
- * Drops the issuance hero plate into `public/raw-assets/solana-west/` for the cinematic classifier.
+ * Drops the source hero image into `public/raw-assets/solana-west/` for the cinematic classifier.
  * Idempotent — skips download if marker file already exists.
  *
  * SOLANA_WEST_PREMIUM_SOURCE_URL overrides URL.

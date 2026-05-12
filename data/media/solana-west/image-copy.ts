@@ -16,30 +16,30 @@ export const solanaWestAlt = {
     `Cinematic landscaped avenues at ${SHORT} ${NZ} ${WEST} by ${DEV}.`,
   heroSunset: `Dusk-lit master-planned avenue and architecture at ${SHORT} ${NZ} ${WEST} by ${DEV}.`,
   heroNight: `Night blue-hour façade and landscaped lighting at ${SHORT} ${NZ} by ${DEV}.`,
-  villaExterior: `Luxury villa exterior architecture at ${SHORT} ${NZ}, ${WEST}.`,
+  villaExterior: `Solana West Villas exterior in New Zayed by ${DEV}.`,
   amenityPool: `Clubhouse and pool amenity at ${SHORT} ${NZ} by ${DEV}.`,
   amenityGreenery: `Park and landscaping within ${SHORT} compound, ${NZ}.`,
-  lifestyleOutdoorCalm: `Walkable greenery and landscaped circulation at ${SHORT} ${NZ} by ${DEV}.`,
+  lifestyleOutdoorCalm: `Walkable greenery and outdoor lifestyle at ${SHORT} ${NZ} by ${DEV}.`,
   amenityEditorialArchitecture:
     `Contemporary residential architecture and landscaped avenues at ${SHORT} ${NZ}, ${WEST} — ${DEV}.`,
-  masterplan: `${PROJECT} master plan overview — ${NZ} master-planned community by ${DEV}.`,
-  connectivityMap: `${SHORT} location map — ${NZ}, ${WEST} connectivity context by ${DEV}.`,
+  masterplan: `${PROJECT} master plan overview in ${NZ} by ${DEV}.`,
+  connectivityMap: `${SHORT} location map for ${NZ}, ${WEST} by ${DEV}.`,
   /** Full-bleed location narrative — cinematic mood, not cartography */
-  locationStrategic: `Strategic geography and dusk scale — ${SHORT} ${NZ}, ${WEST}, master-planned context by ${DEV}.`,
+  locationStrategic: `${SHORT} location near Dabaa Corridor, Sphinx Airport, and ${WEST} by ${DEV}.`,
   livingInterior: `Interior living room design at ${SHORT} ${NZ} by ${DEV}.`,
-  aerial: `Bird’s-eye master plan scale and low-density planning context for ${SHORT} ${NZ}, ${WEST} — ${DEV}.`,
+  aerial: `Bird's-eye view of ${SHORT} master plan and low-density greenery in ${NZ} by ${DEV}.`,
   investment:
-    `West Cairo growth context and architectural scale — ${SHORT} ${NZ} positioning for informed investors, ${DEV}.`,
+    `${SHORT} ${NZ} investment view with West Cairo growth and ORA architecture by ${DEV}.`,
   ctaLifestyle: `Resort-inspired amenity atmosphere at ${SHORT} by ${DEV}.`,
   ogDefault: `Luxury residential community ${SHORT} ${NZ} — ${DEV}.`,
-  ogLuxuryWide: `${PROJECT} New Zayed — architectural master plan and greenery, investor preview image — ${DEV}.`,
+  ogLuxuryWide: `${PROJECT} — New Zayed luxury homes, master plan, and greenery by ${DEV}.`,
 } as const;
 
 export const solanaWestCinematicCaptions = {
   heroPrivateRealm: `A private residential atmosphere surrounded by greenery in ${NZ}.`,
   heroContemporary: `Contemporary luxury villas designed for premium living in ${WEST}.`,
   resortLifestyle: `Resort-inspired lifestyle experiences at ${SHORT} by ${DEV}.`,
-  investorGrid: `Low-density master planning calibrated for investor-grade diligence in ${NZ}.`,
+  investorGrid: `Low-density master planning for luxury real estate buyers in ${NZ}.`,
   connectivityEditorial: `Arterial access to ${WEST} anchors — Alexandria Desert Road and the Middle Ring Road.`,
 } as const;
 

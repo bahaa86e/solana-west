@@ -6,7 +6,7 @@
 export const siteConfig = {
   name: "Solana West New Zayed",
   shortName: "Solana West",
-  developer: "ORA Developer Egypt",
+  developer: "ORA Developers Egypt",
   founder: "Naguib Sawiris",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.solanawestprices.com",
   /** X/Twitter handles for structured social metadata (fact: @solanawestprice profile) */

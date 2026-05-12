@@ -19,35 +19,35 @@ export default function ComparisonPagesHub() {
     <SectionMain>
       <article className="mx-auto max-w-readable" aria-labelledby="comparison-hub-heading">
         <header className="border-b border-lux-ink/[0.06] pb-lux-stack-md md:pb-lux-stack-lg">
-          <p className="lux-eyebrow text-lux-ink/46">Benchmarks</p>
+          <p className="lux-eyebrow text-lux-ink/46">Buyer checklist</p>
           <div className="mt-lux-stack-xs h-px w-9 bg-lux-gold/42 md:mt-lux-stack-sm" aria-hidden />
           <h1
             id="comparison-hub-heading"
             className="mt-lux-stack-xs max-w-[min(42ch,100%)] text-balance font-display text-display-xl text-lux-ink"
           >
-            Compare New Zayed compounds — how {siteConfig.shortName} benchmarks
+            Review {siteConfig.shortName} with clear New Zayed buyer criteria
           </h1>
           <p className="lux-body mt-lux-stack-sm max-w-[54ch] text-lux-ink/68 md:mt-lux-stack-md">
-            Use the same lenses for every pitch deck: masterplan density, green structure, road reach, sales desk discipline,
-            and what your unit overlooks at delivery. Adjacent megaprojects such as VYE (Sodic) and Belle Vie (Emaar) are
-            market comparables—not affiliations.
+            Review the details that still matter after launch: land plan, density, greenery, access, developer process,
+            payment schedule, and the view from the unit you are actually buying. Solana West should be read through its
+            own ORA-led master plan.
           </p>
         </header>
 
-        <section className="border-b border-lux-ink/[0.06] py-10 md:py-12" aria-labelledby="comparison-framework">
-          <h2 id="comparison-framework" className="font-display text-lux-display-sm font-medium text-lux-ink">
-            Compound diligence lenses we apply before shortlisting
+        <section className="border-b border-lux-ink/[0.06] py-10 md:py-12" aria-labelledby="comparison-checklist">
+          <h2 id="comparison-checklist" className="font-display text-lux-display-sm font-medium text-lux-ink">
+            What to review before shortlisting
           </h2>
           <ul className="lux-body mt-4 max-w-[52ch] list-disc space-y-2 pl-5 text-lux-ink/68">
-            <li>Land allocation before façade mood boards—where density sits and how landscape holds.</li>
-            <li>Arterial reach (Mehwar, ring roads) versus estate privacy—noise and outlook at daily speed.</li>
-            <li>Payment language vs. sales schedules—market lines vs. what you sign.</li>
-            <li>Delivery windows by cluster—avoid quarter marketing when you model cash flow.</li>
+            <li>Land allocation: where density sits and how much the landscape shapes daily life.</li>
+            <li>Access versus privacy: road reach matters, but so do noise, outlook, and compound calm.</li>
+            <li>Payment language versus the signed schedule: headlines are not enough.</li>
+            <li>Delivery by phase or cluster: confirm timing before modelling cash flow.</li>
           </ul>
           <p className="lux-body mt-6 max-w-[52ch] text-lux-ink/68">
             Deep-dive:&nbsp;
-            <Link href="/blog/solana-west-vs-vye-belle-vie-buyer-framework-2026" className={linkClass}>
-              Solana West vs. VYE &amp; Belle Vie
+            <Link href="/blog" className={linkClass}>
+              Solana West New Zayed buyer guide
             </Link>
             .
           </p>
@@ -55,10 +55,10 @@ export default function ComparisonPagesHub() {
 
         <section className="border-b border-lux-ink/[0.06] py-10 md:py-12" aria-labelledby="comparison-product">
           <h2 id="comparison-product" className="font-display text-lux-display-sm font-medium text-lux-ink">
-            Inside {siteConfig.shortName} — villas through apartments in one footprint
+            Inside {siteConfig.shortName}: villas, townhouses, twin houses, and apartments
           </h2>
           <p className="lux-body mt-4 max-w-[52ch] text-lux-ink/68">
-            Cross-read typologies before you contrast compounds—finishing posture and façade packages move with current sales sheet.
+            Review unit types carefully. Finishing, view, plot, floor, and phase can change the decision.
           </p>
           <ul className="lux-body mt-5 max-w-[52ch] list-disc space-y-2 pl-5 text-lux-ink/68">
             <li>
@@ -86,17 +86,17 @@ export default function ComparisonPagesHub() {
 
         <section className="py-10 md:py-12" aria-labelledby="comparison-journal">
           <h2 id="comparison-journal" className="font-display text-lux-display-sm font-medium text-lux-ink">
-            Essays that juxtapose comps without invented scorecards
+            Guides for serious buyers
           </h2>
           <ul className="lux-body mt-4 max-w-[52ch] list-disc space-y-2 pl-5 text-lux-ink/68">
             <li>
               <Link href="/blog/solana-west-villas-vs-apartments-lifestyle-investment" className={linkClass}>
-                Villas vs. apartments — lifestyle &amp; hold logic
+                Villas vs. apartments: lifestyle and investment fit
               </Link>
             </li>
             <li>
               <Link href="/blog/solana-west-new-zayed-prices-payment-plan-2026" className={linkClass}>
-                Prices &amp; payment plan — 2026 starting price
+                Prices and payment plan: 2026 buyer guide
               </Link>
             </li>
             <li>

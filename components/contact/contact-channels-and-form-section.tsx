@@ -51,7 +51,7 @@ export function ContactChannelsAndFormSection({ model }: { model: ContactPageMod
               <li className="rounded-[6px] border border-lux-ink/[0.06] bg-lux-paper px-5 pb-8 pt-7 shadow-lux-card md:px-[1.35rem]">
                 <p className="text-micro uppercase tracking-[0.22em] text-lux-ink/40">WhatsApp</p>
                 <p className="mt-3 max-w-xs text-[0.9375rem] leading-[1.72] tracking-[0.012em] text-lux-ink/66 md:max-w-sm md:text-base">
-                  Fast context for current sales sheet questions — mirrors how many buyers coordinate abroad.
+                  Fast answers for price, availability, and payment plan questions.
                 </p>
                 <div className="mt-8">
                   <CtaButton
@@ -72,7 +72,7 @@ export function ContactChannelsAndFormSection({ model }: { model: ContactPageMod
               <li className="border-t border-lux-ink/[0.07] pt-10">
                 <p className="text-micro uppercase tracking-[0.22em] text-lux-ink/40">Phone</p>
                 <p className="mt-3 max-w-xs text-[0.9375rem] leading-[1.72] tracking-[0.012em] text-lux-ink/66 md:text-base">
-                  Voice desks suit multi-party briefings — same commercial posture as authorised ORA current sales sheet.
+                  Phone calls suit buyers who want to discuss prices, unit types, and next steps clearly.
                 </p>
                 <div className="mt-8">
                   <CtaButton

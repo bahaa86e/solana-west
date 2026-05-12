@@ -59,42 +59,42 @@ function internalLinksEditorial(short: string): readonly MasterPlanInternalLink[
     {
       label: `${short} project hub`,
       href: "/projects/solana-west",
-      context: "Compound narrative, amenities, commercial framing, and extended FAQs.",
+      context: "Compound guide, amenities, prices, payment, and FAQs.",
     },
     {
       label: "Apartment pricing posture",
       href: "/prices",
-      context: "Current sales bracketing — verify before reservation.",
+      context: "Starting price and current bracket context.",
     },
     {
       label: "Payment plan structure",
       href: "/payment-plan",
-      context: "Down payment, tenor, and delivery pacing at a headline level.",
+      context: "5% down, up to 10 years, and delivery from 2027.",
     },
     {
       label: "Standalone villas",
       href: "/properties/villas",
-      context: "Detached lots and elevation bands relative to the 316-acre green spine.",
+      context: "Detached homes with privacy, land, and green outlooks.",
     },
     {
       label: "Townhouses",
       href: "/properties/townhouses",
-      context: "Avenue-front townhomes—density and ticket between apartments and twins.",
+      context: "Family homes on landscaped internal avenues.",
     },
     {
       label: "Twin houses",
       href: "/properties/twin-houses",
-      context: "Paired villas—how party lines sit inside setbacks and buffers.",
+      context: "Paired villa living inside the same low-density plan.",
     },
     {
       label: "Apartments",
       href: "/properties/apartments",
-      context: "Vertical SKUs placed against landscape corridors and amenity adjacency.",
+      context: "A practical entry into the estate with compound services.",
     },
     {
       label: "Full FAQ index",
       href: "/faq",
-      context: "Canonical scope for location, timelines, pricing, and types.",
+      context: "FAQ answers for location, timelines, pricing, and unit types.",
     },
   ];
 }
@@ -116,87 +116,87 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
     overviewFigure,
     hero: {
       eyebrow: "Master plan · Spatial organization · New Zayed",
-      h1: `The ${short} master plan — 316 acres in New Zayed`,
-      lead: `${entry.name} is structured as a single master-planned community — landscaped connectors, restrained plot rhythm, and a walkable skeleton that reads first as greenery and second as built edges. This page summarizes how that logic is articulated at community scale, without substituting desk-level current sales sheet drawings.`,
+      h1: `${short} master plan: 316 acres in New Zayed`,
+      lead: `${entry.name} is planned as a low-density community where homes, greenery, roads, and walking routes work together. The goal is a compound that feels open, calm, and easy to understand.`,
       supporting:
-        `Public project information positions low-density sequencing, elevated villa frontage toward open greenery, shared landscape corridors, and private landscape pockets tied to parcels. Figures here stay descriptive: we do not publish unavailable engineering dimensions, phased percentage splits, or parcel-level percentages that do not appear in your current sales pack.`,
+        "This page explains the planning idea at community level. For exact parcel position, orientation, plot dimensions, and phase availability, request the current sales map.",
     },
     overview: {
       eyebrow: "Master plan overview",
-      title: `One coherent 316-acre composition — not fragmented pads`,
+      title: "One coherent estate, not a set of isolated blocks",
       paragraphs: [
-        `The tract is anchored as a cohesive land plan rather than fragmented pads — roadway hierarchy, landscaped buffers, and residential clusters organize movement through the footprint while preserving long sightlines toward green structure.`,
-        "Low-density planning is the governing posture: breadth of landscape competes equally with façade length. That restraint supports privacy between clusters, quieter internal streets, and a residential reading closer to villas-in-parkland than corridors of wall-to-wall height.",
-        "ORA’s sequencing reserves substantial open structure for corridors, setbacks, and walkable connectors — amenities and residential zones interlock through those bands rather than as isolated islands stitched late in delivery.",
+        "The strength of a luxury compound is often felt in the spaces between homes. Solana West uses roads, landscaped buffers, and residential clusters to create a more legible 316-acre estate.",
+        "Low-density planning gives the community room to breathe. It supports privacy, longer views, quieter internal streets, and a softer residential character.",
+        "Amenities and homes are intended to connect through landscape rather than sit as separate islands. That is what helps a large community feel composed instead of oversized.",
       ],
     },
     spatialOrganization: {
       eyebrow: "Spatial organization",
-      title: "Residential clusters, connectors and open-space banding",
+      title: "Residential clusters, connectors, and open space",
       intro:
-        "The following narratives explain relationships called out publicly for the compound — they are thematic, not a substitute for surveying a current sales sheet plot plan or reserving on a labelled availability sheet.",
+        "The points below explain how the master plan is positioned. They should be read alongside the latest phase map before choosing a specific unit.",
       blocks: [
         {
           heading: "Residential zones and typology layering",
           body: [
-            `Four residential archetypes circulate across ${short}: apartments, townhouses, twin houses, and standalone villas — each SKU reads against the shared landscape rather than inward-only courts.`,
-            "Distribution is phased with current sales sheet batches; clustering logic follows servicing, outlook, and product depth rather than a single ring-fenced monoculture.",
-            `When you reserve, sales maps label your parcel, orientation, buffer, and access spine — descriptive language here cannot imprint those particulars without the live sheet from ${dev}.`,
+            `${short} includes apartments, townhouses, twin houses, and standalone villas across one shared landscape structure.`,
+            "Different home types allow buyers to choose the right balance of privacy, budget, and long-term use.",
+            `Before reserving, ask ${dev} sales for the phase map showing orientation, access, green buffers, and the exact unit position.`,
           ],
         },
         {
           heading: "Open spaces knitting residential batches",
           body: [
-            "Landscape bands function as pacing devices between villas and townhouse rows — continuity of greenery reduces perceived wall-to-wall façade pressure and reinforces low-density readability from within the footprint.",
-            "Open structure also carries daylight, ventilation corridors, and long views across the compound; marketing emphasizes all units overlooking greenery as a organising principle.",
-            "Relationships between lawns, connector paths, and build lines are audited at current sales sheet; treat community-scale prose as orientation, not a measured survey.",
+            "Green bands separate residential clusters and soften the scale of the compound.",
+            "Open space also supports daylight, long views, and a calmer feeling between homes.",
+            "For a specific unit, review how close it is to lawns, walking routes, roads, and amenity areas.",
           ],
         },
         {
           heading: "Walkability as layout infrastructure",
           body: [
-            "Project information describes a fully walkable community structure — connectors are intended as primary pedestrian spines tying amenity anchors to residential neighbourhoods without forcing every routine trip through vehicular corridors.",
-            "Walkability dovetails with the green outline: corridors can read simultaneously as landscaped space and humane movement lanes — still subject to final civil works, phased openings, and house rules clarified at delivery packs.",
+            "Project information positions Solana West as a walkable community, with pedestrian links connecting homes, green spaces, and amenities.",
+            "Walkability matters because it changes daily life: a compound feels more residential when every movement is not car-dependent.",
           ],
         },
         {
           heading: "Private landscape pockets and outlook hierarchy",
           body: [
-            "Private pockets and setbacks buffer villas from shared movement — pairing pocket planting with setbacks supports acoustic and visual separation without claiming metre-by-metre setbacks that vary by SKU.",
-            `Elevated villa frontages and open-plan outlooks cite architectural ambition; execution depends on lot grading, storey count, and batch-specific briefs coordinated by ${dev}.`,
+            "Private landscape pockets and setbacks help protect the quiet around villas and low-rise homes.",
+            `Open outlooks depend on the specific plot, grading, storey count, and phase details confirmed by ${dev}.`,
           ],
         },
         {
           heading: "What this page deliberately omits",
           body: [
-            "We do not tabulate roadway widths, berm heights, percentile open space, phased hectarage tables, inventory heatmaps, or amenity acreage fractions absent from downloadable project information wired to sales.",
-            "Buyers investment review exposure should marry this editorial read with phase maps, HOA or service charge advisory notes, servicing appendices, and on-site walks coordinated through accredited desks.",
+            "We do not invent engineering dimensions, open-space percentages, or inventory heat maps that are not part of published sales information.",
+            "Use this page for orientation, then confirm the exact technical details through phase maps, service charge notes, and an on-site visit.",
           ],
         },
       ],
     },
     lifestyle: {
       eyebrow: "Lifestyle planning",
-      title: "Daily calm where villas, rows and shared estate meet",
+      title: "Daily calm shaped by space and greenery",
       paragraphs: [
-        "The footprint codes daily experience through spacing: setbacks, pocket lawns, landscaped connectors, and controlled vehicular segregation each reduce perceptual congestion — households feel room to breathe between front doors and arterial movement.",
-        "Amenity sequencing is knitted into corridors rather than dropped as disparate satellite pads — clubhouse, athletics, pools, or shared parks (per marketing releases) owe their legibility to those landscape bands tying clusters together.",
-        "Children’s routines, elder accessibility, servant circulation, and visitor parking behave differently depending on townhouse pod versus detached villa servicing — behavioural planning should be simulated during issued desk previews, not inferred from schematic prose.",
+        "Spacing changes how a home feels. Setbacks, green pockets, walking routes, and internal roads all affect privacy, noise, and the ease of everyday movement.",
+        "Amenities work best when they are naturally connected to residential clusters rather than treated as isolated destinations.",
+        "Families should review the phase map with real routines in mind: children, drivers, visitors, deliveries, parking, and access to shared spaces.",
       ],
     },
     investment: {
       eyebrow: "Investment relevance",
-      title: "Why master-plan coherence matters commercially",
+      title: "Why master-plan quality matters to long-term value",
       paragraphs: [
-        "Depth of landscaped structure correlates with long-hold prestige positioning — scarcity of low-density, walkable footprints in Greater Cairo reinforces buyer preference for coherence over one-off façade statements.",
-        "Master-plan investment review still pairs with current sales sheet risk: phased delivery, HOA regime, escalation clauses, and finishing optionality outweigh headline acreage narratives — cross-read /prices and /payment-plan before modeling cash flows.",
-        `ORA developer quality supports governance expectations, yet parcels differ — cluster adjacency to connectors, buffering, sunlight, and SKU finishing path change reservation economics materially within the same 316-acre frame.`,
+        "A coherent master plan can support long-term desirability because buyers continue to care about privacy, greenery, access, and how the community feels after handover.",
+        "Still, investment review should combine the master plan with price, payment schedule, delivery phase, service charges, and finishing details.",
+        `ORA's developer profile supports confidence, but individual parcels still differ. Outlook, buffer, sunlight, and finishing path can change the value of two homes inside the same 316-acre plan.`,
       ],
     },
     internalLinks: {
       eyebrow: "Continue research",
-      title: "From plan literacy to prices, payment & unit pages",
-      intro: "Stable URLs for citations — each silo answers one investment review question.",
+      title: "Move from the plan to prices, payment, and unit pages",
+      intro: "Each route answers a specific buyer question before you request current availability.",
       links: internalLinksEditorial(short),
     },
     faqPreview: {
@@ -206,9 +206,9 @@ export function buildMasterPlanPageModel(): MasterPlanPageModel {
     },
     finalCta: {
       eyebrow: "Orientation",
-      title: "Request the issued map layer for your shortlisted cluster",
-      supporting: `Request current masterplan excerpts, phased availability, or on-site circulation briefings through ${dev} accredited channels—no invented surveying data.`,
-      primaryLabel: "WhatsApp private desk",
+      title: "Request the current master plan and phase map",
+      supporting: `Ask for current master plan excerpts, phase availability, and on-site orientation through ${dev} sales channels before selecting a unit.`,
+      primaryLabel: "Request map on WhatsApp",
       secondaryLabel: "Written enquiry",
     },
   };

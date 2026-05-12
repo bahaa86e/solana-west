@@ -41,7 +41,7 @@ export const HOME_VISUAL_BEATS = {
     kicker: "Golden hour",
     caption: "Water holds the sky. The plan keeps leisure inside the walk.",
   },
-  /** Greenscape circulation — graded extract from current sales sheet hero (`lifestyleOutdoorCalm` registry path). */
+  /** Greenscape lifestyle moment using the `lifestyleOutdoorCalm` registry path. */
   estateCirculation: {
     mood: "lifestyle" as const,
     image: {
@@ -59,7 +59,7 @@ export const HOME_VISUAL_BEATS = {
       alt: solanaWestAlt.amenityEditorialArchitecture,
     },
     kicker: "Grain",
-    caption: "Stone meets planting at human scale—quiet craft, not billboard gloss.",
+    caption: "Stone meets planting at human scale with quiet architectural detail.",
   },
 } as const;
 

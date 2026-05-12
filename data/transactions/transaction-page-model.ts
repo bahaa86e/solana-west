@@ -77,32 +77,32 @@ function baseInternalLinks(includePrices: boolean, includePayment: boolean): Tra
     {
       label: siteConfig.shortName + " project hub",
       href: "/projects/solana-west",
-      context: "Amenities, connectivity, and full typology index.",
+      context: "Amenities, location, master plan, and full unit-type overview.",
     },
     {
       label: "Apartments",
       href: "/properties/apartments",
-      context: "Lower land coefficient; bracketing vs. villas at reservation.",
+      context: "A practical entry into the compound with current view and phase details.",
     },
     {
       label: "Townhouses",
       href: "/properties/townhouses",
-      context: "Mid ticket on walkable avenues; compare to twin and detached bands.",
+      context: "Family homes on landscaped avenues with a balanced ticket.",
     },
     {
       label: "Twin houses",
       href: "/properties/twin-houses",
-      context: "Paired stock—step on the equity curve before standalone villas.",
+      context: "Paired villa living between townhouses and standalone homes.",
     },
     {
       label: "Standalone villas",
       href: "/properties/villas",
-      context: "Widest land dedication; outlook and façade move the price band.",
+      context: "Detached homes where plot, outlook, and finishing move the price band.",
     },
     {
       label: "FAQ index",
       href: "/faq",
-      context: "Full canonical answers mirrored in schema elsewhere.",
+      context: "Clear answers on prices, payment, delivery, location, and unit types.",
     },
   );
   return out;
@@ -125,74 +125,74 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
     heroImage,
     overviewFigure,
     hero: {
-      locationEyebrow: "Commercial context · sales-team confirmed",
-      h1: "Solana West prices — sales-team confirmed brackets in New Zayed",
+      locationEyebrow: "Prices · New Zayed · ORA Developers Egypt",
+      h1: "Solana West prices in New Zayed",
       lead:
-        `Published marketing mentions starting from 9.8M EGP as project-level entry context. Effective brackets move with phase, outlook, finishing path, and typology — ${bundle.entry.developer} issues confirmed schedules at booking.`,
+        `Solana West prices start from 9.8M EGP at project level. Final pricing depends on the unit type, phase, size, view, finishing route, and the current release from ${bundle.entry.developer}.`,
       supporting:
-        `That 9.8M figure is not assigned on this page (or by us) to a specific property class; desk sheets alone show which typology aligns with a given sales tranche. No inventory tables here — confirm live quotations before reserving.`,
+        "Use this page as a clear pricing guide, then request a dated sales sheet before making any reservation decision.",
     },
     overview: {
       eyebrow: "Overview",
-      title: "How phased New Zayed release resets price bands",
+      title: "What the starting price means",
       paragraphs: [
-        `${short} is a 316-acre, low-density plan on Mehwar El Dabaa. Pricing behaves like infrastructure-led residential paper: contiguous green structure, walkway priority, and ORA-managed release cadences — not isolated building inventory.`,
-        "Commercial quotations are regenerated at current sales sheet. Typology mixes (apartments, townhouses, twin houses, standalone villas), finishing modality (fully finished versus core & shell), and façade specification reset the runnable price — summarise third-party rumours cautiously.",
-        "Use the editorial typology routes for lifestyle and density context; return here for commercial bracket philosophy. Payment details are isolated on /payment-plan to keep AI-search excerpts clean.",
+        `${short} is a 316-acre, low-density compound on Mehwar El Dabaa. The starting price gives buyers a useful entry point, but it does not replace a current quotation.`,
+        "Apartments, townhouses, twin houses, and standalone villas sit in different price bands. Phase, view, finishing, and plot or floor position can change the final number materially.",
+        "Review the unit-type pages for lifestyle fit, then use this route to understand pricing before requesting live availability.",
       ],
     },
     breakdowns: {
-      eyebrow: "Buyer-oriented breakdown",
-      title: "SKU economics — villas, twins, townhouses & apartments",
+      eyebrow: "Buyer breakdown",
+      title: "How prices differ by unit type",
       intro:
-        "Four published residential archetypes inside the same phased current sales sheet environment — narrative positioning only. Which SKU sits at or near the stated marketing entry is determined per tranche, not generalized on this route.",
+        "The right number depends on the home you choose. A smaller apartment, a townhouse, a twin house, and a standalone villa serve different budgets and different ownership goals.",
       sections: [
         {
           heading: "Apartments",
           body: [
-            "Apartments skew toward disciplined capital allocation and faster fit-out horizons when finished product is booked — façade, floorplate, and outlook premiums still widen commercial bands materially.",
-            "Fully finished positioning is cited in marketing scope — verify SKU-level façade packages before investment review rental cash flows against service-charge regimes.",
+            "Apartments are usually the most accessible way to enter Solana West, especially for buyers seeking a lower ticket and simpler maintenance.",
+            "Floor, view, finishing, building position, and phase still matter. Request the exact apartment stack before comparing options.",
           ],
           links: [{ label: "Apartments editorial route", href: "/properties/apartments" }],
         },
         {
           heading: "Townhouses",
           body: [
-            "Townhouses trade absolute land sovereignty for landscaped avenue sequencing — mid-density exposure within the pedestrian grain of New Zayed’s western corridor.",
-            "Bracketing responds to setback quality, storey count, and release tranche sequencing; compare desk sheets across typologies before treating informal quotes as actionable.",
+            "Townhouses offer a family-home feel with private entries and more space than apartments, without the full price profile of detached villas.",
+            "Compare townhouse releases by phase, location within the estate, and payment schedule before relying on any informal quote.",
           ],
           links: [{ label: "Townhouses editorial route", href: "/properties/townhouses" }],
         },
         {
           heading: "Twin houses",
           body: [
-            "Twin houses pair discrete party lines while retaining broader frontage cues than standard townhouses — current sales sheet treats them as their own band within the mixed masterplan.",
-            "Investment review should compare paired-villa setbacks, finishing path, and outlook premiums against both townhouses and detached stock using desk-issued comparisons only.",
+            "Twin houses sit between townhouses and standalone villas, giving buyers more privacy and frontage while staying more efficient than detached homes.",
+            "Check outlook, finishing path, plot feel, and phase pricing against both townhouse and villa options.",
           ],
           links: [{ label: "Twin houses editorial route", href: "/properties/twin-houses" }],
         },
         {
           heading: "Standalone villas",
           body: [
-            "Standalone villas occupy the widest land dedication per residential class in marketing literature — elevated massing and open green outlooks commonly widen commercial dispersion across phases.",
-            "Do not infer that the published marketing entry applies to this class by default; detached SKUs are frequently quoted above entry context depending on phase, finishing, and outlook.",
+            "Standalone villas are the most land-rich and private homes in the mix, so pricing can move significantly by plot, view, finishing, and phase.",
+            "Do not assume the project-level starting price applies to detached villas. Request a villa-specific quotation before shortlisting.",
           ],
           links: [{ label: "Standalone villas editorial route", href: "/properties/villas" }],
         },
         {
-          heading: "Bench New Zayed peers without inventing guarantees",
+          heading: "Compare New Zayed carefully",
           body: [
-            "Benchmark adjacent large compounds (including VYE and Belle Vie in New Zayed) as contextual comparables only — cite no partnerships or corridor guarantees absent current sales sheet.",
-            "Treat social-channel pricing screenshots as informal noise until reconciled to authorised ORA current sales sheet.",
+            "Nearby luxury communities help frame the New Zayed market, but each project has its own land plan, pricing, and release strategy.",
+            "Treat social media price screenshots as informal until matched with an official current price list.",
           ],
           links: [{ label: "Project hub — amenities & connectivity", href: "/projects/solana-west" }],
         },
       ],
     },
     internalLinks: {
-      eyebrow: "Authority silos",
-      title: "Layer payment details, geography & deeper product reads",
-      intro: "Each route owns a distinct buyer question — skim headlines, cite URLs, reopen with current sales sheet on the desk.",
+      eyebrow: "Next research steps",
+      title: "Compare payment, location, and unit types",
+      intro: "Use these routes to move from price interest to a more confident shortlist.",
       links: baseInternalLinks(false, true),
     },
     faqPreview: {
@@ -202,10 +202,10 @@ export function buildPricesTransactionalModel(): TransactionalPageModel {
     },
     finalCta: {
       eyebrow: "Next step",
-      title: "Ask for a dated quotation matched to your typology",
+      title: "Request a current quotation",
       supporting:
-        `Share target typology and horizon; we align you with ${bundle.entry.developer} desk practice—WhatsApp or written enquiry. Reserve only after verifying live availability.`,
-      primaryLabel: "WhatsApp private desk",
+        `Share your target unit type, budget range, and timeline. The sales team can send current availability, phase pricing, and payment options from ${bundle.entry.developer}.`,
+      primaryLabel: "Request prices on WhatsApp",
       secondaryLabel: "Written enquiry",
     },
   };
@@ -227,65 +227,65 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
     heroImage,
     overviewFigure,
     hero: {
-      locationEyebrow: "Ownership details · sales-team confirmed",
-      h1: "Solana West payment plan — down payment, tenor & payment steps",
+      locationEyebrow: "Payment plan · 5% down · up to 10 years",
+      h1: "Solana West payment plan",
       lead:
-        "Project information mentions 5% down with instalments extending up to 10 years — payment details, reservation deposits, payment steps, and admin fees are stipulated only in confirmed sales sheet.",
+        "Solana West is marketed with 5% down payment and installments up to 10 years, with delivery starting from 2027.",
       supporting:
-        `Marketing timelines cite delivery from 2027 at compound level — villa batch, tower, or cluster horizons follow construction pacing and instalment fulfilment schedules issued by ${bundle.entry.developer}.`,
+        `The exact payment steps, reservation deposit, fees, and unit-specific delivery timing should be confirmed through the current ${bundle.entry.developer} sales schedule.`,
     },
     overview: {
       eyebrow: "Overview",
-      title: "Extended tenor as ownership discipline — not promotional leverage",
+      title: "A flexible structure for long-term buyers",
       paragraphs: [
-        `${short} sequences payment steps against staged construction reality — the payment plan is designed for extended long-term ownership, not short-term speculation.`,
-        "Project information percentages and tenors published online summarise commercial intent; payment timing, fees, early settlement, and fees exist only inside confirmed sales documentation.",
-        "Pair this route with /prices for typology bracket philosophy. Property-type editorial pages explain density and lifestyle cues without restating final instalment details verbatim.",
+        `${short} gives buyers a relatively light entry point through the 5% down payment, then spreads the remaining balance across an extended installment period.`,
+        "That flexibility is useful, but the signed schedule is what matters. Payment dates, fees, reservation steps, and delivery timing should be reviewed before reserving.",
+        "Pair this page with the prices route and the unit-type pages so you can compare affordability, lifestyle fit, and timing in one view.",
       ],
     },
     breakdowns: {
       eyebrow: "Structure",
-      title: "Down payment, instalment curve & delivery — confirm with the sales team",
+      title: "Down payment, installments, and delivery",
       intro:
-        "Three headline details — always confirm with the sales team. No countdowns, no scarcity theatre, no implied guarantee of inventory.",
+        "The headline terms are simple. The detailed schedule should still be confirmed in writing before any reservation.",
       sections: [
         {
-          heading: "5% down payment starting price",
+          heading: "5% down payment",
           body: [
-            "Down-payment context is cited at 5% in published marketing — supplementary reservation deposits, milestone timing, and FX or admin handling (if any) are defined in current sales sheet, not on this page.",
-            "Keep payment headroom until the sales team confirms your schedule.",
+            "The published structure starts with 5% down. Reservation deposits, administrative fees, and payment timing should be checked in the current sales pack.",
+            "Keep enough payment headroom until the sales team confirms the exact schedule for your chosen unit.",
           ],
           links: [{ label: "Price brackets & typology context", href: "/prices" }],
         },
         {
           heading: "Instalments up to 10 years",
           body: [
-            "Instalments may extend toward a 10-year horizon in marketing summaries — payment curves, interim certificates, delivery-linked tranches, and payment schedule are articulated only in sales sheets.",
-            "Long tenor aligns with staged delivery pacing across a multi-year construction programme; correlate cash-flow modelling with phased delivery disclosures from sales teams.",
+            "Installments may extend up to 10 years, depending on the current release and unit type.",
+            "For investment planning, ask how payments are distributed across the construction period and after delivery.",
           ],
           links: [{ label: "Full FAQ — payment wording", href: "/faq" }],
         },
         {
           heading: "Delivery from 2027",
           body: [
-            "Marketing describes delivery commencing from 2027 — discrete cluster dates stagger with civil works, utilities, compound readiness, and snagging payment steps.",
-            "Ownership patience is materially different from opportunistic short-cycle trading — investment review should anticipate holding cost, service regimes, and post-delivery escalation channels through ORA-accredited desks.",
+            "Project delivery is marketed from 2027. Exact handover timing may differ by cluster, building, or release.",
+            "If you are buying for rental, resale, or family relocation, confirm delivery timing before building your plan around a specific date.",
           ],
           links: [{ label: "Project hub — delivery FAQs in context", href: "/projects/solana-west" }],
         },
         {
-          heading: "Hold-time thesis — calm capital behind phased construction",
+          heading: "How to read the plan as an investor",
           body: [
-            "Extended tenor should be interpreted as disciplined alignment between buyer, contractor pacing, and master developer governance — not promotional leverage.",
-            "Serious investment review pairs instalment optics with zoning stability, arterial access maturity, and long-horizon demand for low-density compounds in western New Cairo.",
+            "A long installment plan can reduce entry pressure, but it does not replace due diligence on price, delivery, service charges, and exit timing.",
+            "Serious buyers should compare the payment plan with New Zayed location value, ORA developer profile, and the specific unit they are reserving.",
           ],
         },
       ],
     },
     internalLinks: {
-      eyebrow: "Authority silos",
-      title: "Pair instalment questions with price, place & project proof",
-      intro: "Use these routes to close the loop before you model cash flow on a spreadsheet alone.",
+      eyebrow: "Next research steps",
+      title: "Compare the payment plan with price, place, and product",
+      intro: "Use these pages before modelling cash flow or choosing a unit type.",
       links: baseInternalLinks(true, false),
     },
     faqPreview: {
@@ -295,10 +295,10 @@ export function buildPaymentPlanTransactionalModel(): TransactionalPageModel {
     },
     finalCta: {
       eyebrow: "Next step",
-      title: "Pull the live instalment schedule for your SKU",
+      title: "Request the latest installment schedule",
       supporting:
-        `Ask for the latest instalment schedule template and reservation details for your typology—through ${bundle.entry.developer} authorised channels only.`,
-      primaryLabel: "WhatsApp private desk",
+        `Ask for the current payment schedule, reservation steps, and availability for your preferred typology through ${bundle.entry.developer} sales channels.`,
+      primaryLabel: "Request payment plan on WhatsApp",
       secondaryLabel: "Written enquiry",
     },
   };

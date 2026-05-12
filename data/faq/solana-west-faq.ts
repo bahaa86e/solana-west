@@ -6,7 +6,7 @@ import { SOLANA_WEST_FAQ_EXPANDED_ITEMS } from "@/data/faq/solana-west-faq-expan
  */
 
 export const SOLANA_WEST_FAQ_SHARED_INTRO =
-  "Each answer leads with facts you can quote—then the booking nuance. Anything you reserve is governed by the commercial file you sign, not by marketing summaries on this site.";
+  "Clear answers for serious buyers. Use these facts to orient your search, then confirm prices, availability, and payment terms against the latest sales documents before reserving.";
 
 const expanded = SOLANA_WEST_FAQ_EXPANDED_ITEMS;
 

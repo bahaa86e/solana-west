@@ -56,10 +56,10 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
     {
       topic: "investment",
       eyebrow: "Investment briefings",
-      title: "Hold-time discipline — no yield theatre",
+      title: "Long-hold thinking without yield promises",
       body: [
-        "Articles filed here translate desk-adjacent context into investment review discipline: phased delivery, HOA and servicing exposure, liquidity and FX sensitivities relevant to UAE and domestic buyers.",
-        "Nothing on this lane promises appreciation, rent yields, or “best-buy” countdowns — every note defers sales agreements and audited cash-flow models you sign at reservation.",
+        "Articles in this lane help buyers think through delivery, service charges, liquidity, currency exposure, and long-term ownership.",
+        "Nothing here promises appreciation or rental yield. The goal is to ask better questions before reserving.",
       ],
       pillar: {
         label: "Investment guides hub",
@@ -70,9 +70,9 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
     {
       topic: "new-zayed-area",
       eyebrow: "New Zayed & corridors",
-      title: "Corridor IQ for Mehwar, airport & ring roads",
+      title: "New Zayed, Mehwar El Dabaa, airport, and ring roads",
       body: [
-        "Mehwar El Dabaa sequencing, Sphinx Airport proximity, ring-road behaviours, and how institutional peers benchmark the corridor — written as orientation, not brochure drive-time gospel.",
+        "Location guides explain Mehwar El Dabaa, Sphinx Airport proximity, ring-road access, and how major developers are shaping the New Zayed corridor.",
       ],
       pillar: {
         label: "Location dossier",
@@ -83,9 +83,9 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
     {
       topic: "ora-education",
       eyebrow: "ORA pedigree",
-      title: `${ora} staging logic and counterparties`,
+      title: `${ora} developer context`,
       body: [
-        `Educational arcs explain how ${ora} aligns master plans, phased amenities, after-sales escalation, and ${siteConfig.founder}-led governance expectations — without implying exclusivities or unauthorised partnerships.`,
+        `Developer articles explain ${ora}, ${siteConfig.founder}, master planning, sales documentation, and after-sales questions without implying exclusivity or unauthorised partnerships.`,
       ],
       pillar: {
         label: "Projects index",
@@ -96,22 +96,22 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
     {
       topic: "pricing",
       eyebrow: "Commercial brackets",
-      title: `${nx} — when marketing entry diverges from live SKUs`,
+      title: `${nx} prices and live availability`,
       body: [
-        "Editorials separate marketing starting price ticks from currently priced SKUs across villas, townhouses, twin houses, apartments, finishing forks, and orientation premiums.",
+        "Pricing articles separate the project-level starting price from the real choices buyers make across apartments, townhouses, twin houses, villas, views, and finishing.",
       ],
       pillar: {
         label: "Prices route",
         href: "/prices",
-        context: "Apartment pricing — spreadsheet authority sits with accredited sales desks.",
+        context: "Apartment pricing, availability, and payment options.",
       },
     },
     {
       topic: "payment-plan",
       eyebrow: "Instalment literacy",
-      title: "From 5% down & ten-year headlines to signed schedules",
+      title: "From 5% down to the signed payment schedule",
       body: [
-        "Project information headings (5% down, ten-year tenor language) unpacked next to clauses that actually bind: installment waterfalls, fees, refinancing limits, reservation deposits.",
+        "Payment articles explain the headline structure, then point buyers back to the exact schedule, fees, deposits, and dates that apply to their unit.",
       ],
       pillar: {
         label: "Payment plan hub",
@@ -122,9 +122,9 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
     {
       topic: "comparison",
       eyebrow: "Comparisons",
-      title: `Named New Zayed peers — density, green spine, access`,
+      title: "New Zayed comparisons by real buyer criteria",
       body: [
-        "Density, landscaped structure, arterial legibility, and developer reputation compared with named peers only when marketing already cites those peers as district context.",
+        "Comparison articles look at density, greenery, road access, developer reputation, and buyer fit without inventing rankings or false superiority claims.",
       ],
       pillar: {
         label: "Comparison workspace",
@@ -137,10 +137,10 @@ function topicDefinitions(): readonly BlogTopicGroup[] {
 
 function authorityEditorial(short: string): readonly BlogIndexAuthorityLink[] {
   return [
-    { label: `${short} project hub`, href: "/projects/solana-west", context: "Canonical compound briefing." },
-    { label: "Master plan editorial", href: "/master-plan", context: "316-acre spatial framing without parcel invention." },
-    { label: "FAQ index", href: "/faq", context: "Sales desk-synchronised canonical answers." },
-    { label: "Contact enquiries", href: "/contact", context: "Route complex briefings to desks." },
+    { label: `${short} project hub`, href: "/projects/solana-west", context: "Main compound guide." },
+    { label: "Master plan", href: "/master-plan", context: "316-acre layout, greenery, and walkability." },
+    { label: "FAQ index", href: "/faq", context: "Clear buyer answers on prices, payment, and delivery." },
+    { label: "Contact enquiries", href: "/contact", context: "Request current availability and sales details." },
   ];
 }
 
@@ -171,30 +171,30 @@ export function buildBlogIndexPageModel(): BlogIndexPageModel {
     topicGroupsDetailed: attachArticlesToTopics(topicDefinitions()),
     heroImage: solanaWestMedia.hero,
     hero: {
-      eyebrow: `${ora} editorial desk · Investor-grade prose`,
-      h1: "Solana West research journal — briefings for serious buyers",
-      lead: `${short} publishes long-form briefing notes as project information matures — each article is attributable, dated, and written for buyers who already read FAQs and still need sequencing context.`,
-      supporting: `Articles cluster by topical lane (investment, geography, counterparties, commercial structure, comps). Listing pages stay calm: no synthetic publish cadence promises, queue badges, or inventory hints. ${count === 0 ? "The live library is preparing its first tranche — authority routes below remain the operational spine until posts index here." : `${count} briefing${count === 1 ? "" : "s"} currently indexed.`}`,
+      eyebrow: `${ora} buyer journal`,
+      h1: "Solana West buyer guides",
+      lead: `${short} publishes practical guides for buyers comparing New Zayed, prices, payment plans, unit types, and long-term investment fit.`,
+      supporting: `Articles are grouped by topic: investment, location, developer background, pricing, payment plan, and comparisons. ${count === 0 ? "Core project routes remain the main source of buyer information until articles are indexed." : `${count} guide${count === 1 ? "" : "s"} currently indexed.`}`,
     },
     indexIntro: {
-      eyebrow: "Indexing model",
-      title: "How briefings stay accountable to canonical routes",
+      eyebrow: "Editorial standard",
+      title: "Guides that stay tied to project facts",
       paragraphs: [
-        "Every briefing mentions the same disciplined facts elsewhere on site (location minutes, headline payment outline, FAQ canon). Divergence is purposeful — articles narrate sequencing, juxtaposition, and buyer psychology that sales FAQs cannot shoulder alone.",
-        "New posts inherit this template: labelled topic, attributable dates, OG/Twitter parity, breadcrumb fidelity, FAQ blocks only when mirrored in JSON-LD, and internal anchors back to transactional routes.",
+        "Each guide uses the same project facts as the main routes: New Zayed location, starting price, payment plan, delivery horizon, developer context, and unit mix.",
+        "Articles add explanation and comparison. They do not replace reservation documents, sales documents, or professional advice.",
       ],
     },
     authorityLinks: {
-      eyebrow: "Operational spine",
-      title: "Facts that stay route-stable even before new posts ship",
-      intro: "Bookmark these silos for teams that share diligence URLs in email or board packs.",
+      eyebrow: "Core routes",
+      title: "Start with the pages that stay current",
+      intro: "Use these routes when you need direct facts before reading deeper articles.",
       links: authorityEditorial(short),
     },
     finalCta: {
-      eyebrow: "Desk alignment",
-      title: "Fold long-form prose back into stamped developer packs",
-      supporting: `${ora} sales teams issue dated decks, phased maps, and payment sheets — prose here orients; contracts govern.`,
-      primaryLabel: "WhatsApp private desk",
+      eyebrow: "Next step",
+      title: "Turn research into a current price request",
+      supporting: `${ora} sales channels can confirm price sheets, phase maps, and payment schedules for the unit type you are considering.`,
+      primaryLabel: "Request prices on WhatsApp",
       secondaryLabel: "Written enquiry",
     },
   };

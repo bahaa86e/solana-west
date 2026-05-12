@@ -1,5 +1,5 @@
 /**
- * Luxury real-estate media pipeline — ingests issuance batch under:
+ * Luxury real-estate media pipeline — ingests source image batches under:
  *   public/raw-assets/solana-west-consumed-2026-05-09/
  *
  * - Conservative sharp-only grade (geometry preserved; no generative edits)

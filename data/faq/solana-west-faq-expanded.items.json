@@ -1,1202 +1,1202 @@
 [
   {
     "section": "prices",
-    "question": "What are Solana West prices in New Zayed?",
-    "answer": "Apartment pricing starts from 9.8M EGP for Solana West on Mehwar El Dabaa, New Zayed.\n\nLive brackets move with phase, unit type (apartment, townhouse, twin house, standalone villa), finishing (fully finished or core & shell), floor, outlook, and façade package. Ask the sales team for a dated sheet before you reserve—informal figures are not final.",
-    "aiSnippet": "Solana West prices in New Zayed apartments starting from 9.8M EGP on Mehwar El Dabaa; final brackets vary by SKU, outlook, finishing, and sales-ready sheet—not web summaries.",
+    "question": "What are Solana West Prices in New Zayed?",
+    "answer": "Solana West Prices start from 9.8M EGP at project level in New Zayed.\n\nFinal prices depend on the unit type, phase, size, view, finishing, and current availability. Request the latest price sheet before reserving.",
+    "aiSnippet": "Solana West Prices start from 9.8M EGP in New Zayed, with final prices based on unit type, phase, view, finishing, and availability.",
     "internalLink": {
       "href": "/prices",
-      "label": "Solana West prices & current sales sheet context"
+      "label": "View Solana West Prices"
     },
     "primaryIntent": "transactional_price",
     "schemaHint": "PriceSpecification"
   },
   {
+    "section": "prices",
+    "question": "What is the Solana West starting price?",
+    "answer": "The current published starting price for Solana West New Zayed is from 9.8M EGP.\n\nThis is a starting price, not a fixed price for every unit. Apartments, townhouses, twin houses, and villas are priced differently.",
+    "aiSnippet": "The current published starting price for Solana West New Zayed is from 9.8M EGP.",
+    "internalLink": {
+      "href": "/prices",
+      "label": "Check Starting Price"
+    },
+    "primaryIntent": "transactional_price",
+    "schemaHint": "PriceSpecification"
+  },
+  {
+    "section": "prices",
+    "question": "Are Solana West Villas priced higher than apartments?",
+    "answer": "Solana West Villas are usually priced above apartments because they offer more privacy, land, garden space, and a stronger family-home profile.\n\nAlways compare villa prices with the latest phase map and payment plan.",
+    "aiSnippet": "Solana West Villas are usually priced above apartments because they offer more privacy, land, garden space, and a stronger family-home profile.",
+    "internalLink": {
+      "href": "/properties/villas",
+      "label": "View Solana West Villas"
+    },
+    "primaryIntent": "transactional_price",
+    "schemaHint": "PriceSpecification"
+  },
+  {
+    "section": "prices",
+    "question": "How do Solana West Apartments compare on price?",
+    "answer": "Solana West Apartments are usually the most accessible way to enter the ORA New Zayed Project.\n\nThey work well for buyers looking for a lower ticket, easier maintenance, and compound living in New Zayed.",
+    "aiSnippet": "Solana West Apartments are usually the most accessible way to enter the ORA New Zayed Project.",
+    "internalLink": {
+      "href": "/properties/apartments",
+      "label": "View Solana West Apartments"
+    },
+    "primaryIntent": "transactional_price",
+    "schemaHint": "PriceSpecification"
+  },
+  {
+    "section": "prices",
+    "question": "Do views and floors affect Solana West prices?",
+    "answer": "Yes. View, floor, building position, phase, and finishing can all affect Solana West prices.\n\nA green view, corner position, or preferred phase may carry a different price than a standard unit.",
+    "aiSnippet": "Yes. View, floor, building position, phase, and finishing can all affect Solana West prices.",
+    "internalLink": {
+      "href": "/prices",
+      "label": "Request Price Details"
+    },
+    "primaryIntent": "transactional_price",
+    "schemaHint": "PriceSpecification"
+  },
+  {
+    "section": "prices",
+    "question": "Are prices different for townhouses and twin houses?",
+    "answer": "Yes. Townhouses in New Zayed and Twin Houses in New Zayed have different price ranges because they offer different levels of privacy, land, and frontage.\n\nAsk for both options if you are comparing family homes.",
+    "aiSnippet": "Yes. Townhouses in New Zayed and Twin Houses in New Zayed have different price ranges because they offer different levels of privacy, land, and frontage.",
+    "internalLink": {
+      "href": "/properties/townhouses",
+      "label": "Compare Townhouses"
+    },
+    "primaryIntent": "transactional_price",
+    "schemaHint": "PriceSpecification"
+  },
+  {
+    "section": "prices",
+    "question": "Can prices change by phase?",
+    "answer": "Yes. Solana West prices can change by phase and release.\n\nThe best way to compare is to request current prices for the exact unit type you are considering.",
+    "aiSnippet": "Yes. Solana West prices can change by phase and release.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Request Current Prices"
+    },
+    "primaryIntent": "transactional_price",
+    "schemaHint": "PriceSpecification"
+  },
+  {
+    "section": "prices",
+    "question": "Are online Solana West price lists always accurate?",
+    "answer": "Online price lists can become outdated quickly.\n\nUse public prices for orientation, then confirm the latest Solana West Prices with the sales team before making a decision.",
+    "aiSnippet": "Online price lists can become outdated quickly.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Contact Sales Team"
+    },
+    "primaryIntent": "transactional_price",
+    "schemaHint": "PriceSpecification"
+  },
+  {
+    "section": "prices",
+    "question": "What should buyers ask before comparing prices?",
+    "answer": "Ask for the unit type, size, phase, view, finishing, delivery date, payment plan, and total price.\n\nThis gives you a clean comparison between apartments, townhouses, twin houses, and standalone villas.",
+    "aiSnippet": "Ask for the unit type, size, phase, view, finishing, delivery date, payment plan, and total price.",
+    "internalLink": {
+      "href": "/prices",
+      "label": "Price Comparison Guide"
+    },
+    "primaryIntent": "transactional_price",
+    "schemaHint": "PriceSpecification"
+  },
+  {
+    "section": "prices",
+    "question": "Is Solana West a good value in New Zayed?",
+    "answer": "Solana West New Zayed is positioned as a premium ORA development with a large land area, low-density planning, and a strong payment plan.\n\nValue depends on the unit you choose, your payment comfort, and your long-term ownership plan.",
+    "aiSnippet": "Solana West New Zayed is positioned as a premium ORA development with a large land area, low-density planning, and a strong payment plan.",
+    "internalLink": {
+      "href": "/investment-guides",
+      "label": "Read Investment Guides"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "InvestmentOrDeposit"
+  },
+  {
     "section": "payment_plans",
-    "question": "What is the Solana West payment plan?",
-    "answer": "Marketing mentions 5% down with installments extending up to 10 years for eligible bookings.\n\nHow interest is calculated, instalment dates, deposits, admin fees, and fees appear only in your signed current sales sheet—not in a web summary. Use online numbers to orient; your contract text governs at signature.",
-    "aiSnippet": "The Solana West payment plan is mentioned at 5% down with installments up to 10 years; exact schedules, charges, and dates are defined only on your current sales sheet.",
+    "question": "What is the Solana West Payment Plan?",
+    "answer": "The Solana West Payment Plan is marketed with 5% down payment and flexible installments up to 10 years.\n\nDelivery starts from 2027, with exact timing depending on the selected phase and unit.",
+    "aiSnippet": "Solana West Payment Plan: 5% down payment, installments up to 10 years, and delivery starting from 2027.",
     "internalLink": {
       "href": "/payment-plan",
-      "label": "Payment plan structure — Solana West"
+      "label": "View Solana West Payment Plan"
     },
     "primaryIntent": "transactional_finance",
     "schemaHint": "PaymentChargesSpecification"
   },
   {
-    "section": "delivery",
-    "question": "When is Solana West delivery?",
-    "answer": "Delivery is planned from 2027 for Solana West, West Cairo.\n\nSpecific villa batch, tower, or cluster dates follow construction payment steps and your payment schedule. Treat marketing timelines as directional until your current sales pack states the dates that apply to your unit.",
-    "aiSnippet": "Solana West delivery targets from 2027 in West Cairo; batch-level dates tie to payment steps and current sales sheet—marketing timelines orient only.",
+    "section": "payment_plans",
+    "question": "Does Solana West offer 5% down payment?",
+    "answer": "Yes. Solana West is marketed with a 5% down payment.\n\nBefore reserving, confirm the reservation amount, payment dates, and any fees that apply to your chosen unit.",
+    "aiSnippet": "Yes. Solana West is marketed with a 5% down payment.",
     "internalLink": {
-      "href": "/master-plan",
-      "label": "Master plan & phased delivery framing"
+      "href": "/payment-plan",
+      "label": "View 5% Down Payment Details"
     },
-    "primaryIntent": "process_authority",
-    "schemaHint": "FAQPage"
+    "primaryIntent": "transactional_finance",
+    "schemaHint": "PaymentChargesSpecification"
+  },
+  {
+    "section": "payment_plans",
+    "question": "How long are Solana West installments?",
+    "answer": "Solana West installments are marketed up to 10 years.\n\nThe exact installment schedule depends on the unit type and current sales offer.",
+    "aiSnippet": "Solana West installments are marketed up to 10 years.",
+    "internalLink": {
+      "href": "/payment-plan",
+      "label": "View Installments"
+    },
+    "primaryIntent": "transactional_finance",
+    "schemaHint": "PaymentChargesSpecification"
+  },
+  {
+    "section": "payment_plans",
+    "question": "Is the payment plan flexible?",
+    "answer": "Yes. The payment plan is designed to make entry into Solana West more flexible for serious buyers.\n\nAsk for the latest schedule so you can compare monthly and yearly payments clearly.",
+    "aiSnippet": "Yes. The payment plan is designed to make entry into Solana West more flexible for serious buyers.",
+    "internalLink": {
+      "href": "/payment-plan",
+      "label": "Request Payment Schedule"
+    },
+    "primaryIntent": "transactional_finance",
+    "schemaHint": "PaymentChargesSpecification"
+  },
+  {
+    "section": "payment_plans",
+    "question": "Do villas and apartments have the same payment plan?",
+    "answer": "They may share the same headline payment plan, but final schedules can differ by unit type, phase, and price.\n\nRequest the payment plan for the exact apartment, townhouse, twin house, or villa you are considering.",
+    "aiSnippet": "They may share the same headline payment plan, but final schedules can differ by unit type, phase, and price.",
+    "internalLink": {
+      "href": "/payment-plan",
+      "label": "Compare Payment Options"
+    },
+    "primaryIntent": "transactional_finance",
+    "schemaHint": "PaymentChargesSpecification"
+  },
+  {
+    "section": "payment_plans",
+    "question": "What should I confirm before paying the down payment?",
+    "answer": "Confirm the unit code, price, payment dates, delivery date, fees, cancellation terms, and sales contact before paying any amount.\n\nA premium purchase should always be documented clearly.",
+    "aiSnippet": "Confirm the unit code, price, payment dates, delivery date, fees, cancellation terms, and sales contact before paying any amount.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Contact Sales Team"
+    },
+    "primaryIntent": "transactional_finance",
+    "schemaHint": "PaymentChargesSpecification"
+  },
+  {
+    "section": "payment_plans",
+    "question": "Can overseas buyers use the payment plan?",
+    "answer": "Overseas buyers can enquire about the Solana West Payment Plan and request payment details remotely.\n\nThey should still confirm documents, transfer process, and ownership requirements with the sales team.",
+    "aiSnippet": "Overseas buyers can enquire about the Solana West Payment Plan and request payment details remotely.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Ask About Overseas Buying"
+    },
+    "primaryIntent": "transactional_finance",
+    "schemaHint": "PaymentChargesSpecification"
   },
   {
     "section": "location",
     "question": "Where is Solana West New Zayed located?",
-    "answer": "Solana West sits on Mehwar El Dabaa in New Zayed, West Cairo, with links toward Alexandria Desert Road and the Middle Ring Road.\n\nProject information highlights ~5 minutes toward Waslet Dahshour, ~10 minutes toward Sphinx International Airport, and ~15 minutes toward Mall of Arabia as directional driving context. Nearby large-scale projects include VYE (Sodic) and Belle Vie (Emaar)—market comparables only, not partnerships.",
-    "aiSnippet": "Solana West New Zayed fronts Mehwar El Dabaa with ring-road and desert-road connectivity plus directional proximity to Dahshour, Sphinx Airport, and Mall of Arabia—verify live traffic yourself.",
+    "answer": "Solana West New Zayed is located on Mehwar El Dabaa in New Zayed, West Cairo.\n\nThe location connects buyers to Alexandria Desert Road, Middle Ring Road, Waslet Dahshour, Sphinx Airport, and Mall of Arabia.",
+    "aiSnippet": "Solana West Location is on Mehwar El Dabaa in New Zayed, with access to Alexandria Desert Road, Middle Ring Road, Waslet Dahshour, Sphinx Airport, and Mall of Arabia.",
     "internalLink": {
       "href": "/location",
-      "label": "Location & connectivity guide"
+      "label": "View Solana West Location"
     },
     "primaryIntent": "navigational_local",
     "schemaHint": "Place"
   },
   {
-    "section": "master_plan",
-    "question": "What unit types does Solana West offer?",
-    "answer": "Four residential types: apartments, townhouses, twin houses, and standalone villas—placed across a 316-acre, low-density master plan by ORA Developer Egypt.\n\nFinishing may be fully finished or core & shell depending on SKU. Inventory is phased; confirm storey count, façade pack, and plot dimensions with authorised sales before you allocate capital.",
-    "aiSnippet": "Solana West offers apartments, townhouses, twin houses, and villas across a low-density master plan—the exact SKU catalogue is phased and sales-team confirmed.",
+    "section": "location",
+    "question": "Is Solana West close to Sphinx Airport?",
+    "answer": "Yes. Project information commonly mentions around 10 minutes to Sphinx Airport.\n\nTravel times are approximate and should be checked during the hours you usually travel.",
+    "aiSnippet": "Yes. Project information commonly mentions around 10 minutes to Sphinx Airport.",
     "internalLink": {
-      "href": "/projects/solana-west",
-      "label": "Solana West — project overview"
+      "href": "/location",
+      "label": "View Airport Access"
     },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
+    "primaryIntent": "navigational_local",
+    "schemaHint": "Place"
   },
   {
-    "section": "ora_developers",
-    "question": "Who develops Solana West New Zayed?",
-    "answer": "ORA Developer Egypt, chaired by Naguib Sawiris, is the development developer for Solana West New Zayed.\n\nReservations, staged payments, delivery notices, and after-sales escalation route through authorised ORA channels. Third parties quoting the compound are independent unless ORA accredits them—verify credentials before paying brokerage fees.",
-    "aiSnippet": "Solana West is developed by ORA Developer Egypt; reservations and payment governance flow through authorised ORA current sales sheet channels.",
+    "section": "location",
+    "question": "How close is Solana West to Waslet Dahshour?",
+    "answer": "Project information commonly mentions around 5 minutes to Waslet Dahshour.\n\nThis makes the location easier to understand for buyers familiar with West Cairo movement.",
+    "aiSnippet": "Project information commonly mentions around 5 minutes to Waslet Dahshour.",
     "internalLink": {
-      "href": "/about",
-      "label": "About ORA Developer Egypt"
+      "href": "/location",
+      "label": "View Location Highlights"
     },
-    "primaryIntent": "process_authority",
-    "schemaHint": "Organization"
+    "primaryIntent": "navigational_local",
+    "schemaHint": "Place"
   },
   {
-    "section": "prices",
-    "question": "Does Solana West publish a consolidated online price sheet for villas and apartments?",
-    "answer": "Most luxury current sales sheet in Egypt circulates privately through authorised desks so Solana West New Zayed can align each quote with a live SKU—not a stale PDF.\n\nYou should expect dated totals that reflect finishing, storey, façade, and outlook—not a headline alone. WhatsApp brokers often relay informal figures that do not supersede developer countersigned schedules.",
-    "aiSnippet": "Fully consolidated public price sheets rarely replace current sales sheet quotes; authoritative Solana West numbers arrive on dated sales sheets countersigned via ORA Developer Egypt desks.",
+    "section": "location",
+    "question": "Is Solana West near Mall of Arabia?",
+    "answer": "Mall of Arabia is commonly mentioned at around 15 minutes from Solana West.\n\nThe mall is a useful West Cairo landmark for retail, dining, and weekend access.",
+    "aiSnippet": "Mall of Arabia is commonly mentioned at around 15 minutes from Solana West.",
     "internalLink": {
-      "href": "/contact",
-      "label": "Request an sales-confirmed quote"
+      "href": "/location",
+      "label": "View Lifestyle Access"
     },
-    "primaryIntent": "transactional_price",
-    "schemaHint": "PriceSpecification"
+    "primaryIntent": "navigational_local",
+    "schemaHint": "Place"
   },
   {
-    "section": "prices",
-    "question": "Are standalone villas priced higher than apartments in Solana West?",
-    "answer": "Standalone villas ordinarily carry materially higher totals than comparable apartments because land, setbacks, façade depth, parking, landscape buffers, and private amenity footprints scale differently across the 316-acre ORA Developer Egypt canvas.\n\nRelative gaps flex with SKU: view bands, storey count, and finishing package all move current sales sheet. Demand a bracket table that aligns typology apples-to-apples before you benchmark.",
-    "aiSnippet": "Standalone villas normally price above comparable apartments thanks to plot and elevation economics; sales tables translate typology deltas into actionable Solana West New Zayed numbers.",
+    "section": "location",
+    "question": "What is the Dabaa Corridor?",
+    "answer": "The Dabaa Corridor, also known as Mehwar El Dabaa, is one of the key roads shaping New Zayed and West Cairo growth.\n\nSolana West sits on this corridor, which helps support its location appeal.",
+    "aiSnippet": "The Dabaa Corridor, also known as Mehwar El Dabaa, is one of the key roads shaping New Zayed and West Cairo growth.",
     "internalLink": {
-      "href": "/properties/villas",
-      "label": "Villas — bracket context"
+      "href": "/location",
+      "label": "Explore Dabaa Corridor"
     },
-    "primaryIntent": "transactional_price",
-    "schemaHint": "PriceSpecification"
+    "primaryIntent": "navigational_local",
+    "schemaHint": "Place"
   },
   {
-    "section": "prices",
-    "question": "How does finishing (fully finished vs core & shell) change Solana West prices?",
-    "answer": "Fully finished bundles bake interior scope, façade packages, AC allocation, sanitary brands, kitchens, ceilings, smart-ready rough-ins, QA walkthrough payment steps, and delivery FAT into the current sales sheet line—lifting headline totals versus core & shell envelopes.\n\nCore & shell provides structural shell plus base MEP stubs so you customise finishes with your own consultancy; capex thereafter is separate capital. Buyers comparing Solana West prices must insist on SKU parity to avoid phantom savings.",
-    "aiSnippet": "Fully finished Solana West units factor interior delivery into current sales sheet; core & shell reduces headline totals but pushes fit-out capex downstream—parity matters when comparing brackets.",
-    "internalLink": {
-      "href": "/projects/solana-west",
-      "label": "Project hub — SKU & finishing context"
-    },
-    "primaryIntent": "transactional_price",
-    "schemaHint": "PriceSpecification"
-  },
-  {
-    "section": "prices",
-    "question": "What variables move Solana West price quotes beyond headline marketing mentions?",
-    "answer": "Corner wings, façade upgrades, storey premiums, setback depth, landscaped buffer tiers, garages, elevators (where applicable), view corridors facing green spines, and expedited handing clusters all reshuffle quotations inside ORA-controlled releases.\n\nPayment behaviour can also reorganise rebates or admin waivers—but only when explicitly described in current sales sheet. Demand the commercial grid that aligns your unit—not the cheapest banner on WhatsApp statuses.",
-    "aiSnippet": "Outlook, storey, façade, finishing, setbacks, garages, clusters, and payment posture all shift Solana West prices—headline creatives never replace grid-level current sales sheet clarity.",
-    "internalLink": {
-      "href": "/prices",
-      "label": "Pricing methodology & checklist"
-    },
-    "primaryIntent": "transactional_price",
-    "schemaHint": "PriceSpecification"
-  },
-  {
-    "section": "prices",
-    "question": "How should GCC buyers mentally convert Solana West prices versus Dubai or Saudi residential benchmarks?",
-    "answer": "Use Solana West as a gated New Zayed West Cairo current sales sheet with sovereign-currency exposures, phased construction risk, instalment structuring, Egyptian registration costs, trustee fees where applicable—not a simplistic AED/SAR metre comparison.\n\nLuxury Egyptian compounds reward buyers who scrutinise HOA details, blackout periods, escalation clauses, and delivery phasing anchored to ORA governance. Speak with buying team or private lending before you peg FX ladders.",
-    "aiSnippet": "Cross-market comparisons need FX governance, HOA details, and construction phasing—not just sticker prices; Solana West is read through ORA Egypt current sales sheet discipline.",
+    "section": "location",
+    "question": "Is New Zayed good for luxury homes?",
+    "answer": "New Zayed is becoming a strong destination for luxury homes because it offers new land, major road access, and large master-planned communities.\n\nSolana West ORA is one of the premium projects in this area.",
+    "aiSnippet": "New Zayed is becoming a strong destination for luxury homes because it offers new land, major road access, and large master-planned communities.",
     "internalLink": {
       "href": "/investment-guides",
-      "label": "Investment posture resources"
+      "label": "Read New Zayed Guide"
     },
     "primaryIntent": "commercial_investigation",
-    "schemaHint": "InvestmentOrDeposit"
-  },
-  {
-    "section": "prices",
-    "question": "Do Solana West townhouses bracket between apartments and villas in New Zayed?",
-    "answer": "Townhouses typically fall between vertically stacked apartments and land-intensive detached villas—but corner conditions, façade treatments, elevators, terraces, setbacks, basement options, or premium clusters can materially rebalance current sales sheet.\n\nORA Developer Egypt inventories move by phase across the Solana West master plan; insist on townhouse-specific schedules instead of interpolated averages scraped from influencer posts.",
-    "aiSnippet": "Townhouses in Solana West usually sit mid-bracket versus apartments/villas—but façade, setbacks, and cluster prestige can widen spreads; current sales sheet-only quotes count.",
-    "internalLink": {
-      "href": "/properties/townhouses",
-      "label": "Townhouses — current sales sheet framing"
-    },
-    "primaryIntent": "transactional_price",
-    "schemaHint": "PriceSpecification"
-  },
-  {
-    "section": "prices",
-    "question": "Are maintenance deposits or HOA seed capital included inside Solana West headline prices?",
-    "answer": "Compound communities of this scale ordinarily separate HOA seed capital, equipment lifecycle reserves, concierge staffing escrow, clubhouse operating buffers, CCTV retention, irrigation pump banks, transformer rooms, DG fuel reserves, FM software licensing, lifecycle painting, podium waterproofing regimes, asphalt programmes, borehole payment planning—even when marketing emphasises turnkey headline totals.\n\nYour booking pack should delineate HOA versus developer CAPEX crossing the delivery line. Demand that breakdown before modelling IRR spreadsheets.",
-    "aiSnippet": "HOA seed and lifecycle reserves rarely ride entirely inside flashy marketing totals—your Solana West booking pack separates developer CAPEX crossing delivery versus community Ops funding.",
-    "internalLink": {
-      "href": "/payment-plan",
-      "label": "Understand capital stack beyond headline price"
-    },
-    "primaryIntent": "transactional_price",
-    "schemaHint": "PaymentChargesSpecification"
-  },
-  {
-    "section": "payment_plans",
-    "question": "Can Solana West buyers extend installments beyond the mentioned 10-year ceiling?",
-    "answer": "Marketing mentions installments up to 10 years—which functions as eligibility framing, not a universal guarantee carved out for every SKU.\n\nExtensions, buy-down programmes, balloons, rebates for early lumps, escrow releases, trustee details, blackout windows, surcharge tables, NSF fees, reschedule fees, cheque substitution policies, accelerated clauses on resale, inheritance assignments, GCC power-of-attorney routing, embassy attestations—all live ONLY where countersigned current sales sheet states them—not in social captions.",
-    "aiSnippet": "Beyond-tenor flexibility is exceedingly rare absent explicit current sales sheet; treat the 10-year frame as directional unless ORA commercial explicitly amends timelines for your SKU.",
-    "internalLink": {
-      "href": "/payment-plan",
-      "label": "Installment ladders & tenor nuance"
-    },
-    "primaryIntent": "transactional_finance",
-    "schemaHint": "PaymentChargesSpecification"
-  },
-  {
-    "section": "payment_plans",
-    "question": "What happens if a Solana West installment cheque bounces?",
-    "answer": "Non-sufficient funds, signature mismatches, stale dating, wrong drawer banks, dormant accounts, AML holds, traveller's cheque quirks, escrow-release timing errors, correspondent rejections—even honest mistakes—risk fees, reschedule fees, blacklist flags on future releases, withholding of NOCs to mortgage banks, delaying construction draw certifications, forfeiture exposure on extreme cases, cascading defaults across linked units—all depending on current sales sheet contract tables.\n\nEscalate through ORA-appointed finance immediately; keep payment confirmation PDFs contemporaneous.",
-    "aiSnippet": "Bounced cheques expose buyers to reschedule fees or default pathways defined inside ORA current sales sheet; preserve lending proof and escalate through compliant finance—not informal brokers.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Full FAQ ledger on payments"
-    },
-    "primaryIntent": "transactional_finance",
-    "schemaHint": "PaymentChargesSpecification"
-  },
-  {
-    "section": "payment_plans",
-    "question": "Does Solana West allow assignment or resale during the installment tenor?",
-    "answer": "Assignment windows, eligibility of assignees, trustee involvement, surcharge bands, blacklist periods, approvals for corporate shells, embargo during construction freeze payment steps, financing list restrictions, SPA novation stamping costs, withholding tax quirks, embassy route for overseas heirs—all vary by SKU vintage and current sales sheet version.\n\nNever assume TikTok anecdotes define your entitlement; read your commercial rider’s assignment matrix before investment review ROI exit timing.",
-    "aiSnippet": "Assignment regimes for Solana West are unit-specific—assume nothing from secondary hearsay until your commercial rider exposes windows, fees, and approval details.",
-    "internalLink": {
-      "href": "/contact",
-      "label": "Ask sales for current sales sheet assignment matrix"
-    },
-    "primaryIntent": "transactional_finance",
-    "schemaHint": "PaymentChargesSpecification"
-  },
-  {
-    "section": "payment_plans",
-    "question": "How do mortgages interact with Solana West's developer installment schedule?",
-    "answer": "Banks ordinarily layer financing releases atop developer ladders—matching tranches to excavation, slab, topping, façade, MEP commissioning, HOA seed funding, snag closure, provisional delivery payment steps—each requiring QS sign-offs aligned to ORA draw protocols.\n\nExpect mortgage insurance, lien registration, payment delays if construction certificates slip, temporary financing cost if cheque timing misaligns, early payment fees—all governed by BOTH bank mandates and sales desk clauses. Carry dual adviser summaries.",
-    "aiSnippet": "Mortgages braid around ORA draw payment steps on Solana West—freezes fees and timing buffers apply from both lender and current sales sheet perspectives.",
-    "internalLink": {
-      "href": "/payment-plan",
-      "label": "Mortgage interplay overview"
-    },
-    "primaryIntent": "transactional_finance",
-    "schemaHint": "InvestmentOrDeposit"
-  },
-  {
-    "section": "payment_plans",
-    "question": "Are early settlement discounts available on Solana West balances?",
-    "answer": "Some commercial vintages carve explicit early lumps, IRR-friendly rebates on remaining net present value—or conversely forbid discounting altogether to stabilise escrow integrity across the broader ORA Developer Egypt buying team.\n\nAny promise from unaccredited resale desks is hollow until embedded in current sales sheet countersignature. Maintain traceable buying team receipts on every lumpsum—not verbal confirmation voice notes glamorising fake savings.",
-    "aiSnippet": "Early settlement economics only matter when spelled in countersigned current sales sheet—not broker voice notes—for Solana West balances.",
-    "internalLink": {
-      "href": "/payment-plan",
-      "label": "Settlement options & IRR hygiene"
-    },
-    "primaryIntent": "transactional_finance",
-    "schemaHint": "PaymentChargesSpecification"
-  },
-  {
-    "section": "payment_plans",
-    "question": "What currency exposures apply to instalments billed for Solana West?",
-    "answer": "Marketing copy is ordinarily posted in Egyptian pounds—even if your mental model benchmarks USD, SAR, AED, GBP, EUR, CHF—for luxury real estate Egypt.\n\nIf any parallel USD indexation survives (rare, regulated, volatile), current sales sheet must articulate it verbatim—never infer from TikTok overlays. Hedge externally with sanctioned lending channels—not grey-market exchangers dangling fake FX spreads.",
-    "aiSnippet": "Solana West billing standardises around EGP ledgers absent explicit current sales sheet indexation clauses—verify FX exposures only from countersigned commercial text.",
-    "internalLink": {
-      "href": "/investment-guides",
-      "label": "Currency & IRR hygiene for buyers"
-    },
-    "primaryIntent": "transactional_finance",
-    "schemaHint": "InvestmentOrDeposit"
-  },
-  {
-    "section": "payment_plans",
-    "question": "How do service charges accrue ahead of provisional delivery in Solana West?",
-    "answer": "Landscape irrigation, clubhouse utility burn, shared pump electricity, lagoon chemistry (if phased water features emerge), concierge soft launch, CCTV cloud licensing, DG testing fuel, attenuation ponds desilting—even before you occupy—can plan payments partially across advance community charge ledgers spelled in HOA establishment packs.\n\nDevelopers seldom fold infinite future OPEX purely into upfront villa totals; current sales sheet should expose accrual start triggers.",
-    "aiSnippet": "Pre-delivery HOA accrual triggers hide inside establishment packs—not billboards—for Solana West’s luxury operations architecture.",
-    "internalLink": {
-      "href": "/master-plan",
-      "label": "Master plan & HOA staging context"
-    },
-    "primaryIntent": "transactional_finance",
-    "schemaHint": "PaymentChargesSpecification"
-  },
-  {
-    "section": "location",
-    "question": "Is Solana West practical for commuters using Alexandria Desert Road daily?",
-    "answer": "Frontage along Mehwar El Dabaa plus ring-road tributaries lends rational reach toward Alexandria Desert Road—helpful if your household shuttles inbound/outbound Cairo–Alex convoys—but peak-hour freight, fog events, checkpoint variance, toll updates, parade detours reshape reliability.\n\nRun your own weekday vs weekend trials at target departure times—not Instagram reels implying perpetual open asphalt.",
-    "aiSnippet": "Solana West’s Mehwar El Dabaa placement supports Alexandria Desert Road workflows—still validate live commuting windows yourself before investment review location.",
-    "internalLink": {
-      "href": "/location",
-      "label": "Location stress-tests & maps"
-    },
-    "primaryIntent": "navigational_local",
     "schemaHint": "Place"
   },
   {
     "section": "location",
-    "question": "How far is Solana West from Sphinx International Airport realistically?",
-    "answer": "Project information mentions roughly ~10 minutes toward Sphinx Airport as directional context—not calibrated to security queues, apron congestion, chauffeur pick-up loops, or midnight cargo curfews affecting West Cairo corridors.\n\nBuyers investment review pilot lifestyles or frequent GCC hops should simulate door-to-terminal times across seasons.",
-    "aiSnippet": "~10-minute directional Sphinx Airport framing orients—not guarantees—traffic, security throughput, seasonal fog all shift effective Solana West airport runs.",
-    "internalLink": {
-      "href": "/location",
-      "label": "Airport connectivity nuance"
-    },
-    "primaryIntent": "navigational_local",
-    "schemaHint": "Place"
-  },
-  {
-    "section": "location",
-    "question": "What schools or universities sit within reasonable reach of Solana West New Zayed?",
-    "answer": "New Zayed’s West Cairo corridor continues densifying campuses, British/American/IB tracks, varsity spin-offs—but distance claims age quickly as land parcels flip.\n\nORA marketing does not certify scholastic tiers; guardians should audit accreditation, commute windows, extracurricular realism, PTA culture—not aerial pins on WhatsApp thumbnails.",
-    "aiSnippet": "School feasibility near Solana West requires live commute vetting—not static maps—because New Zayed education supply churns quarterly.",
-    "internalLink": {
-      "href": "/location",
-      "label": "West Cairo schooling commute lens"
-    },
-    "primaryIntent": "navigational_local",
-    "schemaHint": "Place"
-  },
-  {
-    "section": "location",
-    "question": "Does Solana West benefit from proximity to Waslet Dahshour interchanges?",
-    "answer": "Literature cites roughly ~five minutes directional toward Waslet Dahshour as macro orientation—critical for Sheikh Zayed / Giza orbital loops—but chokepoints near toll plazas, truck staging yards, nighttime closures, rainwater ponding reshape lived commutes.\n\nInvestors investment review logistics tenants or nighttime chauffeuring teams should simulate shift patterns.",
-    "aiSnippet": "Waslet Dahshour proximity informs Solana West ring-road choreography—traffic physics still demand real-world timing tests versus brochure minutes.",
-    "internalLink": {
-      "href": "/location",
-      "label": "Highway interchange orientation"
-    },
-    "primaryIntent": "navigational_local",
-    "schemaHint": "Place"
-  },
-  {
-    "section": "location",
-    "question": "Is Mall of Arabia a realistic amenity anchor for Solana West residents?",
-    "answer": "Marketing mentions roughly ~15 minutes toward Mall of Arabia as retail gravity—not a doorstep grocery run during holiday parking stampedes.\n\nHousehold CFOs budgeting Saturday cinema + hypermarket combos should sanity-check trolley loads, nanny pickup timing, chauffeur double-park risk—not assume frictionless arrivals.",
-    "aiSnippet": "Mall of Arabia anchors West Cairo shopping gravity ~15 directional minutes away—crowding and carpark choke still matter.",
-    "internalLink": {
-      "href": "/location",
-      "label": "Retail corridors from New Zayed"
-    },
-    "primaryIntent": "navigational_local",
-    "schemaHint": "Place"
-  },
-  {
-    "section": "location",
-    "question": "How does Solana West relate spatially to VYE Sodic and Belle Vie Emaar?",
-    "answer": "ORA project information positions Solana West within the same prestige belt as VYE (Sodic) and Belle Vie (Emaar) as market comparables only—zero partnership claim, agency tie-up, JV construct, reciprocal amenity pooling, reciprocal security zones, reciprocal HOA reciprocity—or shared infrastructure governance.\n\nYour due diligence separates brand mystique from title geometry.",
-    "aiSnippet": "VYE Sodic & Belle Vie Emaar contextualise neighbouring supply—not Solana West partnerships—for ORA Buyers comparing brand physics.",
+    "question": "How does Solana West stand out in New Zayed?",
+    "answer": "Solana West stands out through its ORA-led 316-acre master plan, New Zayed location, luxury homes, and flexible payment plan.\n\nThe project should be reviewed on its own prices, unit mix, delivery date, and master plan quality.",
+    "aiSnippet": "Solana West stands out in New Zayed through its ORA-led master plan, luxury homes, location, and flexible payment plan.",
     "internalLink": {
       "href": "/comparison-pages",
-      "label": "Neutral comparison hub"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "location",
-    "question": "Is New Zayed infrastructure keeping pace with luxury launches like Solana West?",
-    "answer": "West Cairo arterial upgrades, BRT pilots, rainwater pumping investments, HV cable reinforcements oscillate visibly year-to-year—sometimes lagging billboard hype yet eventually converging thanks to buying team prioritisation narratives.\n\nLuxury current sales sheet buyers should scrutinise uplift schedules from New Urban Communities Authority channels—not TikTok sunsets alone.",
-    "aiSnippet": "New Zayed hard infrastructure upgrades progress unevenly—investigate authority roadmaps alongside Solana West marketing gloss.",
-    "internalLink": {
-      "href": "/blog",
-      "label": "Editorial corridor updates"
+      "label": "Solana West New Zayed"
     },
     "primaryIntent": "commercial_investigation",
     "schemaHint": "FAQPage"
   },
   {
     "section": "ora_developers",
-    "question": "What governance standards should buyers expect when dealing with ORA Developer Egypt?",
-    "answer": "ORA Developer Egypt ordinarily layers formal, QS, HSE, LEED-oriented thinking, BIM coordination, snag governance, strata formation committees, HOA transition protocols, digital asset delivery—even if individual buyers only feel them at signature payment steps.\n\nTrust accrues from transparent current sales sheet, not billboard gloss; insist that every ambiguity migrates onto countersigned annexes—not WhatsApp reassurance.",
-    "aiSnippet": "ORA Developer Egypt aligns luxury delivery through structured current sales sheet—not informal channels—trust the countersigned annex, not rumours.",
+    "question": "Who is the developer of Solana West?",
+    "answer": "Solana West New Zayed is developed by ORA Developers Egypt, chaired by Naguib Sawiris.\n\nThe project is positioned as a premium ORA New Zayed Project with a large low-density master plan.",
+    "aiSnippet": "Solana West New Zayed is developed by ORA Developers Egypt, chaired by Naguib Sawiris.",
     "internalLink": {
       "href": "/about",
-      "label": "ORA governance framing"
+      "label": "About ORA Developers Egypt"
     },
     "primaryIntent": "process_authority",
     "schemaHint": "Organization"
   },
   {
     "section": "ora_developers",
-    "question": "How does Naguib Sawiris’s leadership imprint ORA-branded launches like Solana West?",
-    "answer": "Founder narratives emphasise disciplined master planning, marquee hospitality cross-pollination, international capital relationships, marquee tenant discipline—but materially your unit still hinges on project-level QS realism, subcontractors, escalation clauses, HOA formation budgets—not autobiography arcs.\n\nInvestors reconcile brand halo with SKU-level IRR conservatism.",
-    "aiSnippet": "Naguib Sawiris leadership colours ORA’s brand gravity—buyers still stress-test Solana West commercial schedules at SKU depth.",
+    "question": "Is Solana West an ORA project?",
+    "answer": "Yes. Solana West ORA is a New Zayed project by ORA Developers Egypt.\n\nBuyers should confirm the latest price sheet, payment plan, and unit availability through the sales team.",
+    "aiSnippet": "Yes. Solana West ORA is a New Zayed project by ORA Developers Egypt.",
+    "internalLink": {
+      "href": "/projects/solana-west",
+      "label": "View Solana West ORA Project"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "Organization"
+  },
+  {
+    "section": "ora_developers",
+    "question": "Who is Naguib Sawiris in relation to ORA?",
+    "answer": "Naguib Sawiris is the chairman associated with ORA Developers Egypt.\n\nHis name adds recognition, but buyers should still rely on the project documents and sales agreement.",
+    "aiSnippet": "Naguib Sawiris is the chairman associated with ORA Developers Egypt.",
     "internalLink": {
       "href": "/about",
-      "label": "Leadership & brand context"
+      "label": "Read Developer Background"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "Organization"
+  },
+  {
+    "section": "ora_developers",
+    "question": "Why does developer reputation matter?",
+    "answer": "Developer reputation matters because buyers care about planning quality, delivery process, after-sales support, and long-term community management.\n\nFor Solana West, ORA Developers Egypt is a key part of the trust story.",
+    "aiSnippet": "Developer reputation matters because buyers care about planning quality, delivery process, after-sales support, and long-term community management.",
+    "internalLink": {
+      "href": "/about",
+      "label": "Developer Trust Details"
     },
     "primaryIntent": "commercial_investigation",
     "schemaHint": "Organization"
   },
   {
     "section": "ora_developers",
-    "question": "Does ORA Developer Egypt appoint third-party project managers on Solana West?",
-    "answer": "Large-scale ORA developments typically blend in-house technical authority with tier-1 PM consultancies, supervision engineers, independent testing labs, façade consultants, geotech peers—each bound by confidentiality until public filings warrant disclosure.\n\nBuyers rarely need every subcontractor roster pre-reservation but should demand transparency on defect liability windows and snag SLAs.",
-    "aiSnippet": "ORA typically layers independent PM and supervision rigor on compounds like Solana West—NDA wraps names until filings warrant publishing.",
-    "internalLink": {
-      "href": "/projects/solana-west",
-      "label": "Technical governance snapshot"
-    },
-    "primaryIntent": "process_authority",
-    "schemaHint": "Organization"
-  },
-  {
-    "section": "ora_developers",
-    "question": "How does ORA communicate construction progress to Solana West buyers?",
-    "answer": "Expect hybrid channels: client portal drops, email blasts, site visit windows, milestone photography, drone orthomosaics, QS-certified percentage complete statements—subject to safety and insurance constraints preventing open-roam wanderlust.\n\nNothing replaces reading your payment draw schedule cross-mapped to certified progress—not influencer flyovers alone.",
-    "aiSnippet": "ORA progress reporting blends civil certification and controlled media—anchor trust to draw schedules, not casual drone hype.",
-    "internalLink": {
-      "href": "/contact",
-      "label": "Request certified progress touchpoint"
-    },
-    "primaryIntent": "process_authority",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "ora_developers",
-    "question": "What after-sales infrastructure exists once Solana West hands over units?",
-    "answer": "ORA-class communities trend toward structured defect liability periods, digital ticketing, FM onboarding playbooks, spare-parts agreements for common MEP, contractor retention pools, seasonal landscape programmes—each codified in strata transition docs rather than verbal promises.\n\nBuyers should budget post-delivery capital for interior customisation even if shell delivered turnkey—especially if personalising smart home layers.",
-    "aiSnippet": "After-sales on ORA compounds depends on defect liability tables and HOA transition packs—interior personalisation remains buyer-funded beyond developer scope.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Delivery & aftercare FAQs"
-    },
-    "primaryIntent": "process_authority",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "ora_developers",
-    "question": "How can brokers prove ORA accreditation when pitching Solana West?",
-    "answer": "Demand letters mentioning ORA brokerage cycles, expiry dates, revoked schedules, AML training receipts, brokerage stamp verifications—not glossy Instagram Highlights.\n\nUnaccredited canvassers may misquote payment ladders, counterfeit availability, mis-map plot numbers or promise illegal under-table discounts—all toxic to investment review serious capital.",
-    "aiSnippet": "Legitimate brokers produce ORA-accreditation proof on request—never gamble reservation capital on opaque intermediaries hawking Solana West.",
-    "internalLink": {
-      "href": "/contact",
-      "label": "Route through verified sales desks"
-    },
-    "primaryIntent": "risk_governance",
-    "schemaHint": "Organization"
-  },
-  {
-    "section": "ora_developers",
-    "question": "Does ORA Developer Egypt operate sustainability initiatives relevant to Solana West buyers?",
-    "answer": "Modern ORA narratives frequently emphasise greener envelope ratios, BIM-enabled waste tracking, attenuation ponds, native planting palettes, glare-controlled lighting—even if LEED plaques remain project-specific disclosures.\n\nUtility bill relief and embodied carbon storytelling matter for prestige tenants; confirm spec sheets at current sales sheet—not environmental buzzwords devoid of metering proof.",
-    "aiSnippet": "ORA sustainability claims should be SKU-verified via specs and metering strategies—not slogan-level marketing about Solana West alone.",
-    "internalLink": {
-      "href": "/master-plan",
-      "label": "Landscape & ecology positioning"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "Organization"
-  },
-  {
-    "section": "apartments",
-    "question": "What apartment storey mixes should buyers expect inside Solana West towers?",
-    "answer": "Low-rise luxury stacks, mid-rise view plates, setback podium parking, concierge arrival sequences, buffering from villa frontages—all interplay within ORA’s master zoning rather than chaotic high-rise cramming reminiscent of speculative downtown towers.\n\nExact bay counts per floor, evacuation stair redundancy, lifts-to-unit ratios, corridor ventilation, acoustical isolation specs land on current sales sheet—not architectural mood boards recycled from other cities.",
-    "aiSnippet": "Solana West apartment stacks follow ORA’s low-density choreography—precise storey and core engineering appear only on SKU current sales sheet.",
-    "internalLink": {
-      "href": "/properties/apartments",
-      "label": "Apartments — SKU orientation"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "apartments",
-    "question": "Do Solana West apartments include private terraces or setback gardens?",
-    "answer": "Many luxury SKUs layer deep terraces, planters, perforated privacy screens—but structural load paths, parapet glazing spec, planter waterproofing membranes, mosquito misting allowances, pergola stamping approvals vary SKU-to-SKU.\n\nVerify maintenance responsibility splits: who funds waterproofing remediation when planter membranes fail?",
-    "aiSnippet": "Terraces and planters on Solana West apartments exist across multiple SKUs—maintenance burdens and stamping rules differ current sales sheet-to-current sales sheet.",
-    "internalLink": {
-      "href": "/properties/apartments",
-      "label": "Apartment façade packages"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "apartments",
-    "question": "How do apartment ceiling heights benchmark inside Solana West versus generic Cairo stock?",
-    "answer": "Luxury compounds emphasise lofty plates, recessed lighting channels, cassette AC routing, artisan plaster tolerances—all inflating volumetric grandeur buyers feel at walk-throughs—even if spreadsheets only show metre counts.\n\nAsk for slab-to-slab versus finished ceiling metrics to avoid deceptive marketing fluff.",
-    "aiSnippet": "Premium ceiling volumes distinguish Solana West apartments—always demand slab versus finished dimensional certificates with your SKU.",
-    "internalLink": {
-      "href": "/projects/solana-west",
-      "label": "Design standards snapshot"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "apartments",
-    "question": "Can apartments in Solana West be merged or recombined horizontally?",
-    "answer": "Structural merging demands recertified slabs, seismic path reanalysis, sprinkler redesign, acoustical bridging, HOA consent choreography—usually discouraged unless current sales sheet carves sanctioned combine SKUs upfront.\n\nNever assume unauthorised contractor knock-throughs—these void protections and imperil strata insurance umbrellas.",
-    "aiSnippet": "Horizontal mergers at Solana West require structural and strata pathways defined at current sales sheet—not post-purchase improvisation.",
-    "internalLink": {
-      "href": "/contact",
-      "label": "Ask sales about sanctioned combine SKUs"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "apartments",
-    "question": "What parking allotments accompany Solana West apartments?",
-    "answer": "Expect basement or podium bays, visitor slots, EV rough-in quotas (subject to SKU), trolley corridors, sprinkler coverage, sump pumps, epoxy wear layers—but counts differ per SKU, especially where duplex merges or nanny suites inflate household car counts beyond standard ratios.\n\nValidate visitor parking stress during holiday spikes—not midday marketing tours alone.",
-    "aiSnippet": "Solana West apartment parking bundles vary SKU-level—stress-test visitor bays and EV readiness per current sales sheet—not generic comps.",
-    "internalLink": {
-      "href": "/properties/apartments",
-      "label": "Apartment bundles & parking grids"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "apartments",
-    "question": "How private are Solana West apartment elevations overlooking villa fingers?",
-    "answer": "Architectural setbacks, perforated screens, landscape berms, night-time lighting choreography, acoustical setbacks on mechanical yards—all aim to minimise fishbowl sensations.\n\nStill, buyer lifestyle tolerance varies: request sight-line diagrams from QS models before assuming absolute seclusion akin to walled villas.",
-    "aiSnippet": "Elevation privacy on Solana West apartments relies on setbacks and berm choreography—sight-line QS proof beats marketing renders.",
-    "internalLink": {
-      "href": "/properties/apartments",
-      "label": "Privacy & setback nuance"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "apartments",
-    "question": "What smart-home readiness exists for Solana West apartments?",
-    "answer": "Luxury envelopes often anticipate structured cabling ducts, motorized shade pockets, BACnet-friendly FCU controls, metering gateways—but final hardware brands (Crestron versus Control4 versus KNX versus diy Matter bridges) hinge on SKU vintage and allowances.\n\nBudget post-delivery integrators if marketing shows aspirational vignettes exceeding base current sales sheet.",
-    "aiSnippet": "Smart readiness on Solana West apartments is SKU-specific—marketing vignettes might exceed current sales sheet allowances requiring integrator uplift.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Specification FAQs"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "townhouses",
-    "question": "How do Solana West townhouses reconcile shared walls with prestige privacy expectations?",
-    "answer": "Acoustic bridging layers, setback gardens, parapet setbacks, recessed fenestration, soft landscape buffers—evening lighting scenes—collectively shield party-wall fatigue common in mediocre stock.\n\nStill, lifestyle buyers sensitive to nanny circulation or teen noise should acoustically simulate party-wall STL ratings from test reports—not vibe alone.",
-    "aiSnippet": "Solana West townhouses mitigate party-wall intrusion via acoustic and landscape buffers—but demand STL test artefacts if noise sensitivity is acute.",
-    "internalLink": {
-      "href": "/properties/townhouses",
-      "label": "Townhouse privacy engineering"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "townhouses",
-    "question": "Do Solana West townhouses support private plunge pools or spa decks?",
-    "answer": "Some SKU clusters permit micro-pools subject to waterproofing regimes, setback offsets, chlorine mist drift concerns, HOA noise riders, pergola stamping—but nothing is carte blanche neighbourhood-wide.\n\nEngineering annexes—not Pinterest boards—govern permissible penetrations.",
-    "aiSnippet": "Private plunge allowances on Solana West townhouses are annex-specific—engineering governs—not lifestyle mood boards.",
-    "internalLink": {
-      "href": "/properties/townhouses",
-      "label": "Townhouse terraces & annex rules"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "townhouses",
-    "question": "What roof rights apply if a Solana West townhouse spans three levels?",
-    "answer": "Roof usage for PV arrays, rainwater harvesting tanks, pigeon netting, astro-turf lounges, pergolas, jacuzzi platforms all hinges on HOA roofscape master plans—even if interim marketing suggests boundless sunsets.\n\nFlat roofs age faster under amateur installations; unauthorised penetrations corrode membranes and jeopardise strata insurance pooling.",
-    "aiSnippet": "Solana West townhouse roofs follow HOA-controlled roofscape choreography—avoid assumption-driven penetrations sinking waterproofing membranes.",
-    "internalLink": {
-      "href": "/master-plan",
-      "label": "Townhouse zoning & HOA roofscape rules"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "townhouses",
-    "question": "How does rear-lane servicing work for deliveries at Solana West townhouses?",
-    "answer": "Service alleys ideally isolate garbage choreography, nanny drop-offs, Amazon surges—but noise, fumes, sprinkler riser cages, nighttime lighting spill can annoy rear gardens unless buffers align.\n\nWalk service paths during dusk—not only noon marketing tours—to assess realism.",
-    "aiSnippet": "Service choreography around Solana West townhouses warrants dusk walkthroughs to judge noise fumes and buffering—not midday gloss.",
-    "internalLink": {
-      "href": "/location",
-      "label": "Neighbourhood logistics lens"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Place"
-  },
-  {
-    "section": "townhouses",
-    "question": "Can townhouses accommodate multi-generational living in Solana West?",
-    "answer": "Ground-floor nanny suites with semi-separate entrances, lift-ready futureproofing clauses, acoustically decoupled guest wings, shaded majlis patios—all appear across luxury townhouse SKU families when master planning aligns.\n\nCultural ergonomics beats square-metre trophies: study circulation paths for elderly ramps and teen privacy simultaneously.",
-    "aiSnippet": "Solana West townhouses can anchor multi-gen comfort when SKU annexes carve circulation and acoustic separation intentionally.",
-    "internalLink": {
-      "href": "/properties/townhouses",
-      "label": "Townhouse SKU families"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "townhouses",
-    "question": "What landscape envelope sizes typify Solana West townhouses versus apartments?",
-    "answer": "Deep setbacks, planters, pergola footprints, trampoline-free lawn buffers, septic-free irrigation loops (on municipal water assumptions), nighttime lighting—all scale differently versus stacked apartments.\n\nHOA mowing bands, arborist rotations, pesticide schedules may still regiment your planters—read HOA design guidelines before dreaming wild botanical freedom.",
-    "aiSnippet": "Landscape envelopes on Solana West townhouses outperform apartments materially—yet HOA guidelines still regiment maintenance regimes.",
-    "internalLink": {
-      "href": "/master-plan",
-      "label": "Green spine hierarchy"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "townhouses",
-    "question": "Are corner townhouses materially wider in Solana West current sales sheet grids?",
-    "answer": "Corner conditions often widen frontage, lengthen gardens, reposition garages, reduce overlook onto neighbours—each nudging premiums on sales tables.\n\nAsk for corner-specific shadow studies and wind-tunnel comfort—not just premium invoices without physics.",
-    "aiSnippet": "Corner Solana West townhouses trade extra frontage and garden depth for premiums—verify shadow and wind comfort before paying uplifts.",
-    "internalLink": {
-      "href": "/prices",
-      "label": "Corner premium economics"
-    },
-    "primaryIntent": "transactional_price",
-    "schemaHint": "PriceSpecification"
-  },
-  {
-    "section": "villas",
-    "question": "How deep are typical setbacks for standalone villas at Solana West?",
-    "answer": "Low-density ORA planning emphasises breathing room: wide side setbacks, deep rear gardens, anti-overlook buffers, service yard choreography, guest parking aprons—each SKU-specific.\n\nNever transpose Dubai-like zero-lot lines onto Solana West thinking; Egyptian fire, civil defence, and HOA sight-line rules differ.",
-    "aiSnippet": "Solana West standalone villas emphasise generous setbacks per low-density ORA DNA—exact metres live on plot-specific current sales sheet.",
+    "question": "Are there Villas by ORA Developers in Solana West?",
+    "answer": "Yes. Solana West includes standalone villas as part of its residential mix.\n\nBuyers can request villa prices, plot details, and payment plan options from the sales team.",
+    "aiSnippet": "Yes. Solana West includes standalone villas as part of its residential mix.",
     "internalLink": {
       "href": "/properties/villas",
-      "label": "Villa plot geometry"
+      "label": "View Villas by ORA Developers"
     },
     "primaryIntent": "unit_selection",
     "schemaHint": "Accommodation"
   },
   {
-    "section": "villas",
-    "question": "Can Solana West villas host basements for cinema or wine cellars?",
-    "answer": "Water table, dewatering budgets, civil defence egress, sump redundancy, radon testing (if applicable), waterproofing warranties, pump electrical redundancy—all determine basement feasibility—not buyer Pinterest boards alone.\n\nIssuance spells permissibility; unauthorised excavation voids structural warranties and imperils neighbours.",
-    "aiSnippet": "Basement feasibility on Solana West villas is hydrology and civil-defence conditional—only current sales sheet annexes authorise scope.",
+    "section": "ora_developers",
+    "question": "Is this website the official ORA website?",
+    "answer": "This website is an independent Solana West information and enquiry platform.\n\nIt helps buyers understand prices, payment plans, location, and unit types, but it does not replace official sales documents.",
+    "aiSnippet": "This website is an independent Solana West information and enquiry platform.",
+    "internalLink": {
+      "href": "/about",
+      "label": "Website Information"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "Organization"
+  },
+  {
+    "section": "apartments",
+    "question": "Does Solana West offer apartments for sale?",
+    "answer": "Yes. Solana West Apartments are part of the project mix in New Zayed.\n\nThey are suitable for buyers seeking a practical entry into a luxury ORA compound with easier maintenance than villas.",
+    "aiSnippet": "Yes. Solana West Apartments are part of the project mix in New Zayed.",
+    "internalLink": {
+      "href": "/properties/apartments",
+      "label": "View Apartments for Sale"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "apartments",
+    "question": "What are Solana West Apartments best for?",
+    "answer": "Solana West Apartments work well for investors, smaller families, and buyers who want compound services with a lower ticket than standalone villas.\n\nView, floor, finishing, and phase should be checked before reserving.",
+    "aiSnippet": "Solana West Apartments work well for investors, smaller families, and buyers who want compound services with a lower ticket than standalone villas.",
+    "internalLink": {
+      "href": "/properties/apartments",
+      "label": "Explore Apartments"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "apartments",
+    "question": "Are Solana West Apartments fully finished?",
+    "answer": "Apartment finishing should be confirmed by current release.\n\nAsk the sales team for finishing details, specification, view, floor, and delivery date before choosing an apartment.",
+    "aiSnippet": "Apartment finishing should be confirmed by current release.",
+    "internalLink": {
+      "href": "/properties/apartments",
+      "label": "Apartment Finishing Details"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "apartments",
+    "question": "Do apartments have access to compound amenities?",
+    "answer": "Yes. Apartments are part of the Solana West master plan and benefit from the wider compound environment, including greenery, security, and shared amenities.",
+    "aiSnippet": "Yes. Apartments are part of the Solana West master plan and benefit from the wider compound environment, including greenery, security, and shared amenities.",
+    "internalLink": {
+      "href": "/projects/solana-west",
+      "label": "View Amenities"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "apartments",
+    "question": "Are apartments good for investment in New Zayed?",
+    "answer": "Apartments can be attractive for buyers looking for a more accessible investment in New Zayed.\n\nThe final decision should consider price, payment plan, delivery date, service charges, and expected rental demand.",
+    "aiSnippet": "Apartments can be attractive for buyers looking for a more accessible investment in New Zayed.",
+    "internalLink": {
+      "href": "/investment-guides",
+      "label": "Apartment Investment Guide"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "InvestmentOrDeposit"
+  },
+  {
+    "section": "apartments",
+    "question": "What should I ask before buying an apartment?",
+    "answer": "Ask for size, floor, view, finishing, delivery date, payment plan, service charges, and available phases.\n\nThis makes it easier to compare apartments for sale in New Zayed.",
+    "aiSnippet": "Ask for size, floor, view, finishing, delivery date, payment plan, service charges, and available phases.",
     "internalLink": {
       "href": "/contact",
-      "label": "Request civil feasibility memo"
+      "label": "Ask About Apartments"
     },
     "primaryIntent": "unit_selection",
     "schemaHint": "Accommodation"
   },
   {
-    "section": "villas",
-    "question": "What twin-house arrangements exist within Solana West inventory?",
-    "answer": "Twin houses pair mirrored villas sharing intelligently buffered party lines—sometimes featuring staggered rooflines to preserve privacy while sharing infrastructure trenches sensibly.\n\nFire separation, acoustic ratings, roof drainage slopes, garden demising fences, pest control coordination must be explicit in drawings.",
-    "aiSnippet": "Solana West twin houses merge efficient infrastructure sharing with mirrored villa prestige—review demising details on current sales sheet drawings.",
+    "section": "townhouses",
+    "question": "Does Solana West offer townhouses?",
+    "answer": "Yes. Solana West includes townhouses within its New Zayed master plan.\n\nTownhouses are ideal for buyers who want more privacy and space than an apartment without the full cost of a standalone villa.",
+    "aiSnippet": "Yes. Solana West includes townhouses within its New Zayed master plan.",
+    "internalLink": {
+      "href": "/properties/townhouses",
+      "label": "View Townhouses"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "townhouses",
+    "question": "Are townhouses in New Zayed good for families?",
+    "answer": "Townhouses in New Zayed can be a strong family choice because they offer private entrances, more space, and access to a gated compound lifestyle.",
+    "aiSnippet": "Townhouses in New Zayed can be a strong family choice because they offer private entrances, more space, and access to a gated compound lifestyle.",
+    "internalLink": {
+      "href": "/properties/townhouses",
+      "label": "Family Townhouses"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "townhouses",
+    "question": "How do townhouses compare with twin houses?",
+    "answer": "Townhouses usually offer a more efficient family-home layout, while twin houses offer more privacy and a stronger villa feel.\n\nCompare both before choosing.",
+    "aiSnippet": "Townhouses usually offer a more efficient family-home layout, while twin houses offer more privacy and a stronger villa feel.",
     "internalLink": {
       "href": "/properties/twin-houses",
-      "label": "Twin houses — mirrored geometry"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "villas",
-    "question": "How do Solana West villas exploit elevated topography for open views?",
-    "answer": "ORA emphasises elevated villa plates, gentle berms, strategic pruning sight cones across green spines—storytelling consistent with brand promises on open outlooks.\n\nStill, future neighbour construction, maturing tree canopies, temporary sales offices, crane swing paths can erode perceived vistas—ask for view protection covenants if emotionally material.",
-    "aiSnippet": "Elevated Solana West villa plates target open green views—future maturing landscape and neighbour rules can still alter sight cones.",
-    "internalLink": {
-      "href": "/master-plan",
-      "label": "Topography & view corridors"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Place"
-  },
-  {
-    "section": "villas",
-    "question": "What outdoor kitchen or BBQ norms apply to Solana West villa gardens?",
-    "answer": "Gas routing, grease trap hygiene, smoke drift toward neighbours, pergola fire ratings, charcoal bans during wind events, insect vector control—all governed by HOA outdoor kitchen policies—not personal spontaneity.\n\nRestaurants fantasies must align with strata calm.",
-    "aiSnippet": "Outdoor kitchens on Solana West villas follow HOA smoke gas and fire-rated annexes—chef dreams need compliance choreography.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Lifestyle compliance FAQs"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "villas",
-    "question": "How many cars can Solana West villa aprons sustainably host during Friday gatherings?",
-    "answer": "Apron pours, sleeper slopes, sump placement, sprinkler heads, limestone wear patterns, HOA visitor overflow routing—all dictate pragmatic parking—not Instagram lawn parties.\n\nIf you routinely host fleets, negotiate extra bays at current sales sheet—not after paving cures.",
-    "aiSnippet": "Solana West villa drive aprons tolerate finite stacking—provision extra sanctioned bays current sales sheet-side if gatherings scale weekly.",
-    "internalLink": {
-      "href": "/projects/solana-west",
-      "label": "Villa apron & apron grid FAQs"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "villas",
-    "question": "Do Solana West villas include elevators across multi-storey SKU families?",
-    "answer": "Some SKUs carve shaft pits, UPS-backed hydraulics, stone-clad cabins, biometric hall call panels—others rely on gracefully dimensioned stair cores only.\n\nAge-in-place buyers must confirm lift allowances BEFORE structural slabs lock geometry irreversibly.",
-    "aiSnippet": "Elevator readiness on Solana West villas varies by SKU—pit and shaft allowances must be current sales sheet-confirmed ahead of slabs pouring.",
-    "internalLink": {
-      "href": "/properties/villas",
-      "label": "Villa vertical circulation SKUs"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "master_plan",
-    "question": "How does the 316-acre Solana West master plan allocate density versus green corridors?",
-    "answer": "ORA positions Solana West as low-density choreography: wide landscaped spines, walkable podium transitions, setback breathing room—even if monetisation instincts elsewhere push tighter FAR.\n\nStudy landscape maintenance budgets—not just rendered bird’s-eye fluff—to ensure HOA can sustain mowing, irrigation telemetry, arborist rotations, seasonal floral programmes without crippling dues.",
-    "aiSnippet": "Solana West’s 316-acre plan trades density for landscaped spines—but HOA budgets must sustainably fund that luxury greenery reality.",
-    "internalLink": {
-      "href": "/master-plan",
-      "label": "Official master-plan walkthrough copy"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "Place"
-  },
-  {
-    "section": "master_plan",
-    "question": "Is Solana West truly walkable for daily errands inside the gates?",
-    "answer": "Walkability hinges on phased retail pods, daycare adjacency, clinic micro-clusters, pet-friendly paths, shaded arcades—even if Phase-1 footprints start modest before full build-out anchors arrive.\n\nBuyers investment review car-light lifestyles should timetable realistic opening sequences from ORA phased programmes—not influencer drone loops alone.",
-    "aiSnippet": "Solana West walkability evolves phase-by-phase—review ORA’s retail and amenity rollout timing before shedding second cars.",
-    "internalLink": {
-      "href": "/projects/solana-west",
-      "label": "Phased amenities context"
-    },
-    "primaryIntent": "navigational_local",
-    "schemaHint": "Place"
-  },
-  {
-    "section": "master_plan",
-    "question": "How stormwater and rainwater pumping is planned across Solana West grading?",
-    "answer": "Attenuation ponds, sump sequences, tidal bore assumptions during flash storms, geotextiles, pumped discharge easements—evening maintenance budgets—collectively protect villa finish levels from heartbreaking basement tragedies occurring in weaker compounds.\n\nRequest civil drainage narrative summaries—even if summaries remain high-level—to align insurance riders.",
-    "aiSnippet": "Stormwater resilience on Solana West depends on engineered attenuation choreography—buyers secure civil summaries for insurance investment review peace.",
-    "internalLink": {
-      "href": "/location",
-      "label": "West Cairo climatic lens"
-    },
-    "primaryIntent": "risk_governance",
-    "schemaHint": "Place"
-  },
-  {
-    "section": "master_plan",
-    "question": "What security layering defines Solana West perimeter thinking?",
-    "answer": "Perimeter setbacks, CPTED lighting, CCTV mesh, licence-plate OCR, visitor pre-registration etiquette, cyclist passes, nanny gate redundancies—all articulate prestige calm.\n\nHOA dues fund upgrades; verify recurring cloud storage and cybersecurity retainers lest blind spots regress post-delivery penny-pinching.",
-    "aiSnippet": "Solana West security blends physical and digital choreography—subscription costs land in HOA ledgers requiring disciplined funding.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Security FAQs"
-    },
-    "primaryIntent": "risk_governance",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "master_plan",
-    "question": "How does Solana West separate vehicular arteries from pedestrian spines?",
-    "answer": "Traffic calming tables, roundabout sculpting, boulevard tree canopies, raised pedestrian crossings, service-truck nighttime windows—all aim for kid-safe cycling—even if impatient chauffeurs grumble initially.\n\nWalk the dusty mid-construction reality vs polished renders to align expectations calmly.",
-    "aiSnippet": "Solana West attempts to braid vehicular arteries away from leisurely pedestrian spines—mid-construction dust still tempers UX temporarily.",
-    "internalLink": {
-      "href": "/master-plan",
-      "label": "Circulation choreography layers"
-    },
-    "primaryIntent": "navigational_local",
-    "schemaHint": "Place"
-  },
-  {
-    "section": "master_plan",
-    "question": "Will future phases shadow existing Solana West villa sunlight?",
-    "answer": "Sunlight rights on master plans typically starting price generic winter solstice overlays—but construction sequencing, cranes, outline, hoarding elevations all temporarily disrupt microclimates before final plates stabilise.\n\nRequest shadow diagrams with worst-case adjoining massing assumptions—even if disclaimers prevail.",
-    "aiSnippet": "Solar rights on Solana West rely on QS shadow overlays—assume temporary construction shading until neighbouring plates crystallise.",
-    "internalLink": {
-      "href": "/contact",
-      "label": "Request QS shadow artefacts"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "master_plan",
-    "question": "How does phased construction noise impact early Solana West residents?",
-    "answer": "Early clusters often endure pile-driving rhythms, nighttime concrete pours, reversing truck alarms, silica dust—even if HOA communications promise mitigation—not elimination.\n\nNoise easement disclosures should accompany current sales sheet for psychological realism.",
-    "aiSnippet": "Early-phase Solana West residents should expect audible construction choreography—easements belong in pragmatic current sales sheet psychology.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "FAQ — construction phasing & delivery"
-    },
-    "primaryIntent": "risk_governance",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "amenities",
-    "question": "What clubhouse calibre should buyers investment review Solana West expect?",
-    "answer": "Luxury clubhouse programming often stitches lap pools, family pools, lounges, concierge desks, Pilates studios—but exact square metre counts, FF&E vintages, operator brands, surcharge menus, blackout wedding dates, reciprocal guest policies—all belong in HOA establishment annexes—not aspirational brochures alone.\n\nClarify whether steam/sauna power draws threaten transformer headroom spikes during August peaks.",
-    "aiSnippet": "Solana West clubhouse grandeur depends on final operator contracts and HOA annexes—not flythrough hype alone.",
-    "internalLink": {
-      "href": "/projects/solana-west",
-      "label": "Amenity stack overview"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "amenities",
-    "question": "Are co-working pods or business lounges contemplated for Solana West residents?",
-    "answer": "Hybrid work trends push developers toward soundproof booths, espresso bars, VC-grade bandwidth—but CapEx payment planning debates inside HOA spreadsheets sometimes delay pods until uptake stabilises post-delivery cohort analytics.\n\nRemote executives should inquire about redundant fibre entrances and SLA-backed symmetrical bandwidth—not marketing Mbps.",
-    "aiSnippet": "Co-working calibre at Solana West ties to HOA CapEx pacing and fibre SLA commitments—verify symmetrical bandwidth promises.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Lifestyle amenity FAQs"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "amenities",
-    "question": "What sports courts or jogging loops appear on Solana West amenity inventories?",
-    "answer": "Padel frenzy, shaded jogging loops calibrated to CPTED sightlines, calisthenics pods, shaded bike parking corrals—evening lighting lux targets—all frequently anchor wellness positioning.\n\nNight-time security patrol interplay matters for solo runners; confirm patrol cadence overlaps your routine.",
-    "aiSnippet": "Solana West wellness loops pair sports surfaces with CPTED-lit corridors—runner safety still depends on live patrol choreography.",
-    "internalLink": {
-      "href": "/master-plan",
-      "label": "Outdoor recreation choreography"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "amenities",
-    "question": "How do kids’ play strategies avoid noise clashes with serene villa edges?",
-    "answer": "Buffer gardens, berm acoustics, cork surfacing under swings, rotational quiet hours—evening lighting lux caps preventing stadium glare—all aim to reconcile families with tranquility-seeking villa owners expecting spa-grade calm.\n\nHOA mediators inevitably referee conflicts—budget emotional patience—not just IRR.",
-    "aiSnippet": "Solana West kids’ pods deploy buffers and cork surfacing—but serenity buyers should still scrutinise HOA noise mediation pathways.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Family-amenity interplay"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "amenities",
-    "question": "What pet norms apply across Solana West amenity commons?",
-    "answer": "Leash etiquette, poop-DNA enrolment chatter, muddy paw rinsing bays, concierge dog treats, blackout periods near pool decks, aggressive breed exclusions (if legally compliant locally)—collectively shape pet-friendly luxury—not unconditional dog anarchism.\n\nRead HOA annexes calmly before bulldog selfies drive impulse buys.",
-    "aiSnippet": "Solana West pet norms blend concierge-friendly touches with HOA hygiene rules—study annexes prior to bulldog impulses.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Pet policy FAQs"
-    },
-    "primaryIntent": "risk_governance",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "amenities",
-    "question": "How are shared pools chemically balanced during peak chlorine demand weeks?",
-    "answer": "ORP controllers, saline hybrid systems, night-time dosing robots, swimmer load algorithms, toddler splash weekends—all challenge chemistry stability.\n\nHOA hires certified operators—but dues fund chemicals; unrealistic low dues fantasies degrade water clarity fast.",
-    "aiSnippet": "Peak-week pool chemistry reliability at Solana West depends on HOA-funded certified operators—not wishful teaser dues.",
-    "internalLink": {
-      "href": "/projects/solana-west",
-      "label": "Aquatic amenities governance"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "lifestyle",
-    "question": "What luxury services pyramid defines daily life at Solana West?",
-    "answer": "Concierge desk hours, nanny gate protocols, limousine staging courtyards, cold-chain grocery acceptance, refrigerated floral deliveries, blackout curtain pressing—each slices differently across phased staffing budgets.\n\nNothing replaces HOA staffing tables clarifying SLA hours versus aspirational TikTok vignettes implying DIFC-calibre-butler density at Egyptian dues.",
-    "aiSnippet": "Solana West luxury services scale with HOA staffing tables—Instagram butler fantasies seldom match audited SLAs overnight.",
-    "internalLink": {
-      "href": "/projects/solana-west",
-      "label": "Concierge SLA orientation"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "lifestyle",
-    "question": "How does Solana West appeal to diaspora Egyptians repatriating from GCC cities?",
-    "answer": "Ring-road choreography, Sphinx Airport linkage storytelling, prestige ORA signalling, phased installment cadences matching bonus seasonality—all resonate diaspora narratives.\n\nStill, school hunting, bureaucracy tolerance, buying team repatriation paths, heirloom furniture container logistics overshadow glossy renders—allocate patience budgets beyond Instagram glam.",
-    "aiSnippet": "Diaspora buyers align Solana West with ORA prestige and instalment choreography—still budget Cairo bureaucracy realities beyond sunsets.",
-    "internalLink": {
-      "href": "/investment-guides",
-      "label": "Repat relocation lens"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "InvestmentOrDeposit"
-  },
-  {
-    "section": "lifestyle",
-    "question": "Is Solana West positioned for quiet multi-generational weekend retreats?",
-    "answer": "Low-density setbacks, pergola lounges, jasmine-scaped walks, subdued lighting palettes—evening prayer calm—all architecturally favour retreat mindsets—as long as construction phases eventually quiet.\n\nIf you demand pin-drop serenity week one, phased dust may torture expectations temporarily.",
-    "aiSnippet": "Solana West long-term serenity aligns with landscaped low density—temporary construction dust still challenges early retreat expectations.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Lifestyle cadence FAQs"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "lifestyle",
-    "question": "What hosting architecture supports gala-scale entertaining in villas?",
-    "answer": "Catering power upgrades, greasy extract stacks, septic-free municipal narratives (if claimed), marquee tie-down allowances, amplified music HOA curfew matrices, chauffeur holding patterns—all interplay.\n\nHire current sales sheet-savvy architects before ordering crystal chandeliers dangling over unapproved truss mods.",
-    "aiSnippet": "Gala hosting at Solana West villas demands HOA curfew choreography and extractor upgrades—commission architects aligned to current sales sheet truss rules.",
-    "internalLink": {
-      "href": "/properties/villas",
-      "label": "Villa hosting engineering"
-    },
-    "primaryIntent": "unit_selection",
-    "schemaHint": "Accommodation"
-  },
-  {
-    "section": "lifestyle",
-    "question": "How photogenic are Solana West landscapes for prestige social content?",
-    "answer": "Golden-hour spine walks, symmetrical alleys of palms, restrained colour palettes favoured by cinematic reels—all help organic reach.\n\nJust remember HOA portrait-permit quirks if monetised shoots escalate—commercial photography sometimes demands permits.",
-    "aiSnippet": "Solana West landscapes deliver cinematic palettes—commercial shoots may still invoke HOA permitting layers.",
-    "internalLink": {
-      "href": "/blog",
-      "label": "Editorial lifestyle stories"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "investment",
-    "question": "Is Solana West a compelling New Zayed investment versus renting luxury elsewhere in Cairo?",
-    "answer": "Ownership hedges prolonged rent escalations while bonding capital to phased construction timelines, FX behaviours, HOA discipline, resale liquidity windows—not guaranteed appreciation fairy tales absent risk.\n\nStress-test IRR with conservative rent growth comparables BEFORE heroising payment steps.",
-    "aiSnippet": "Solana West ownership anchors capital in ORA-phased upside while accepting construction and HOA risks—versus rent escalation hedging trade-offs.",
-    "internalLink": {
-      "href": "/investment-guides",
-      "label": "Ownership vs renting thesis"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "InvestmentOrDeposit"
-  },
-  {
-    "section": "investment",
-    "question": "What macro West Cairo narratives support Solana West long-duration holds?",
-    "answer": "New Zayed arterial upgrades, Sphinx Airport uplift, logistic spine reinforcement, affluent household migration narratives—all feed demand curves—yet liquidity can thin during geopolitical turbulence.\n\nSerious portfolios diversify across durations and geographies—even if Cairo luxury feels magnetic.",
-    "aiSnippet": "West Cairo macro arcs favour New Zayed holds like Solana West—portfolio diversification still reins emotional single-bet sizing.",
-    "internalLink": {
-      "href": "/blog",
-      "label": "Macro corridor commentary"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "InvestmentOrDeposit"
-  },
-  {
-    "section": "investment",
-    "question": "How liquid are secondary listings likely to be once Solana West approaches 2027 delivery clusters?",
-    "answer": "Liquidity climbs as titles clarify, HOA stabilises, snags burn down, speculative flippers purge—but current sales sheet assignment fees, mortgage friction, sentimental holdouts can still thin depth.\n\nNever assume instantaneous bid/ask symmetry like Nasdaq fantasies layered onto dirt assets.",
-    "aiSnippet": "Solana West liquidity should thicken post-title clarity nearing 2027—still anticipate assignment-friction inventories not stock-market depth.",
-    "internalLink": {
-      "href": "/investment-guides",
-      "label": "Exit liquidity checklist"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "InvestmentOrDeposit"
-  },
-  {
-    "section": "investment",
-    "question": "Should foreign investors open local lending rails before reserving Solana West?",
-    "answer": "Clean inward remittance footprints, AML-friendly correspondents, escrow-friendly mandates, chequebook realities, embassy attestations—all smooth reservation—not last-minute frantic WhatsApp scrambling.\n\nEngage bankers early—not after emotional soft holds expire.",
-    "aiSnippet": "Foreign capital should stage Egyptian lending rails pre-reservation hygiene—AMM-aware remittance footprints beat panic cheque scrambling.",
-    "internalLink": {
-      "href": "/contact",
-      "label": "Investor onboarding touchpoint"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "InvestmentOrDeposit"
-  },
-  {
-    "section": "investment",
-    "question": "How do rental yields hypothetical models behave for furnished Solana West apartments?",
-    "answer": "Furnishing capex, booking platform commissions, short-stay HOA restrictions, blackout wedding weekends, concierge labour inflation—all compress advertised yields—not just vanity Airbnb screenshots.\n\nModel conservatively—with vacancy bands echoing Cairo seasonality dips.",
-    "aiSnippet": "Furnished apartment yield fantasies collide with HOA short-stay rules and Cairo seasonality—model Solana West conservatively.",
-    "internalLink": {
-      "href": "/properties/apartments",
-      "label": "Apartment monetisation nuances"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "InvestmentOrDeposit"
-  },
-  {
-    "section": "buying_process",
-    "question": "What documents should buyers assemble before reserving at Solana West?",
-    "answer": "National ID or passport dossiers, POA attestations where applicable, marriage certificates tying joint liability, financing pre-approvals mirroring tenor math, AML questionnaires, buying team receipts proving cleanliness—not blurry mobile snapshots.\n\nDevelopers escalate faster when clients arrive organised—not melodramatic urgency.",
-    "aiSnippet": "Solana West reservations accelerate when buyers deliver clean IDs, financing pre-approvals, and AML-ready buying team receipts current sales sheet-side.",
-    "internalLink": {
-      "href": "/contact",
-      "label": "Desk checklist & onboarding"
-    },
-    "primaryIntent": "process_authority",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "buying_process",
-    "question": "How long does soft-hold choreography typically survive on contested Solana West SKUs?",
-    "answer": "Soft holds reward decisive capital—not infinite ghosting—even if politely phrased. Timers hinge on current sales sheet policy, backlog depth, trustee alignment—never assumed infinite because VIP aura.\n\nArrive lender-ready—not emotionally dilatory—or lose SKU momentum overnight.",
-    "aiSnippet": "Solana West soft holds remain finite SLA windows aligned to current sales sheet policy—bring lender-backed decisiveness promptly.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Reservation SLA FAQs"
-    },
-    "primaryIntent": "process_authority",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "buying_process",
-    "question": "Can overseas buyers legally reserve Solana West using remote power-of-attorney stacks?",
-    "answer": "Embassy attestations, apostilles, bilingual family reviews, lender authentication protocols, embassy-notarisation chains—all vary wildly by nationality corridors—not TikTok anecdotes.\n\nEngage bilingual adviser synchronising Egyptian practice nuances versus domiciled expectations.",
-    "aiSnippet": "Remote reservations on Solana West demand embassy-grade POA choreography—consult bilingual adviser aligning domiciles to Egyptian practice.",
-    "internalLink": {
-      "href": "/contact",
-      "label": "International buyer routing"
-    },
-    "primaryIntent": "process_authority",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "buying_process",
-    "question": "How should jointly purchasing couples structure liability on installment ledgers?",
-    "answer": "Joint and several drafting, marital property regimes across jurisdictions, succession planning, creditor pursuit details if relationships fracture—all deserve adviser—not romantic handshake optimism.\n\nIssuance clerks crave clarity—not soap operas delaying countersignatures.",
-    "aiSnippet": "Joint purchasers on Solana West should clarify several liability and succession details pre-current sales sheet—not post-breakup scrambling.",
-    "internalLink": {
-      "href": "/payment-plan",
-      "label": "Commercial liability outline"
-    },
-    "primaryIntent": "risk_governance",
-    "schemaHint": "PaymentChargesSpecification"
-  },
-  {
-    "section": "buying_process",
-    "question": "What technical inspections should engineers run before unconditional acceptance?",
-    "answer": "Thermographic envelope scans for insulation voids, sound transmission spot tests on party lines, sprinkler head counts, grounding resistance, façade anchor torque spot checks—even if snag lists superficially sparkle.\n\nHire QS independence—not ornamental Instagram influencers—for million-pound asset acceptance.",
-    "aiSnippet": "Engineered snag discipline on Solana West deliveries leverages thermographic and acoustical artefacts—independent QS beats selfies.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Delivery engineering FAQs"
-    },
-    "primaryIntent": "risk_governance",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "buying_process",
-    "question": "When should buyer advisers intervene relative to booking?",
-    "answer": "Adviser ideally reviews drafts BEFORE ink—not after melodrama—not merely rubber-stamping ceremonial attendance.\n\nYet adviser must pragmatically concede regulated boilerplate impossibilities to waive—fighting unwinnable windmills wastes fees.",
-    "aiSnippet": "Solana West buyers onboard adviser ahead of booking—balancing pragmatic boilerplate concessions versus material risk hunts.",
-    "internalLink": {
-      "href": "/contact",
-      "label": "Escalate to desk-supervised workflows"
-    },
-    "primaryIntent": "process_authority",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "buying_process",
-    "question": "How can buyers escalate defects without antagonising community harmony post-delivery?",
-    "answer": "Digital ticketing etiquette, photographic evidence hierarchies, cool-headed HOA mediation—not neighbourhood WhatsApp crusades shredding social capital prematurely.\n\nArchive HVAC datalog trends—not emotional voice notes—for durable remedy leverage.",
-    "aiSnippet": "Post-delivery Solana West defects route through ticketing discipline and HOA mediation—archive data not drama.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Governance etiquette FAQs"
-    },
-    "primaryIntent": "process_authority",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "comparisons",
-    "question": "Solana West vs Belle Vie Emaar—how should disciplined buyers benchmark trade-offs?",
-    "answer": "Contrast master-plan density philosophies, HOA establishment cadence histories, phased amenity rollout realism, resale liquidity depth anecdotes, clubhouse operator precedents—even if anecdotes remain imperfect.\n\nNever treat marketing mood boards as scorecards lacking current sales sheet discipline on BOTH sides symmetrically.",
-    "aiSnippet": "Benchmark Solana West vs Belle Vie on density HOA liquidity and phased amenity realism—symmetric current sales sheet scrutiny beats vibes.",
-    "internalLink": {
-      "href": "/comparison-pages",
-      "label": "Neutral comparison hub"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "comparisons",
-    "question": "Solana West vs VYE Sodic—which buyer psychographic tilts ORA?",
-    "answer": "ORA brand storytelling, Sawiris pedigree, clubhouse aesthetic dialect, landscape spine proportions—all magnetise prestige households valuing nuanced architecture narratives—even if spreadsheets demand symmetric diligence.\n\nComparisons remain market research—not deterministic winners absent personal weighting sliders.",
-    "aiSnippet": "Solana West vs VYE hinges on subjective brand-density-weighted scoring—paired with symmetric current sales sheet IRR hygiene.",
-    "internalLink": {
-      "href": "/comparison-pages",
-      "label": "Comparables research desk"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "comparisons",
-    "question": "ORA Developer Egypt versus regional mega-brand developers—where does execution risk diverge?",
-    "answer": "Governance regimes, QS cultures, snag empathy, HOA transition maturity, financing relationships—all diverge—even if billboard fonts look equally glossy.\n\nAnchor trust in historical project delivery telemetry—not monocultural chauvinism about ‘foreign is always flawless’ fantasies absent local nuance calibration.",
-    "aiSnippet": "ORA Developer Egypt contrasts with regional giants through governance and HOA transition cultures—historic telemetry beats monocultural billboard bias.",
-    "internalLink": {
-      "href": "/about",
-      "label": "ORA pedigree snapshot"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "Organization"
-  },
-  {
-    "section": "comparisons",
-    "question": "How does Solana West contrast with Sheikh Zayed legacy compounds nearer older cores?",
-    "answer": "New Zayed frontage parcels often boast fresher arterial logic, greener master DNA, phased clubhouse programming tuned to evolving wellness trends—versus charming yet ageing infrastructures elsewhere requiring costly retrofit campaigns.\n\nYet newer scenes endure construction temperament longer—timing preferences dictate winner declarations.",
-    "aiSnippet": "Solana West in New Zayed trades fresher arterial logic for phased construction temperament against ageing Sheikh cores—timing tastes decide.",
-    "internalLink": {
-      "href": "/location",
-      "label": "New vs legacy Sheikh orientation"
-    },
-    "primaryIntent": "commercial_investigation",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "delivery",
-    "question": "What provisional versus final delivery nuances apply to phased Solana West clusters?",
-    "answer": "Provisional delivery often prioritises occupancy while punch lists, landscape maturation, façade cleaning cycles, metering calibration, HOA seed burn-in continue—eventually culminating final certificates modelling retention releases.\n\nMortgage disbursements hinge on nuanced milestone codings—not emotional move-in selfies alone.",
-    "aiSnippet": "Solana West provisional delivery may precede final certificates tying retention—mortgages track milestone codings meticulously.",
-    "internalLink": {
-      "href": "/projects/solana-west",
-      "label": "Construction milestone orientation"
-    },
-    "primaryIntent": "process_authority",
-    "schemaHint": "FAQPage"
-  },
-  {
-    "section": "delivery",
-    "question": "How should buyers insure Solana West units during phased construction exposures?",
-    "answer": "Contractors’ all-risk overlaps, strata inception riders, burglary during open-window phases, outline strike liabilities—all deserve broker modelling—not shrugged optimism.\n\nCoordinate policy inception dates ruthlessly—not lazy calendar defaults.",
-    "aiSnippet": "Construction-phase insurance layering on Solana West demands broker modelling across contractor overlaps and burglary windows.",
-    "internalLink": {
-      "href": "/faq",
-      "label": "Risk choreography FAQs"
-    },
-    "primaryIntent": "risk_governance",
-    "schemaHint": "InvestmentOrDeposit"
-  },
-  {
-    "section": "prices",
-    "question": "Do Solana West price negotiations ever include furniture or turnkey interior allowances inside the current sales sheet line?",
-    "answer": "Most ORA current sales lines separate fabric-first civil delivery from movable FF&E—even when marketing vignettes imply otherwise.\n\nIf promotional bundles exist seasonally, they must appear countersigned—not promised verbally mid-tour adrenaline. Maintain procurement discipline so VAT, customs, warehousing, hoist damage, HOA move-in permitting do not unravel spreadsheet hygiene.",
-    "aiSnippet": "Furniture turnkey bundles belong on countersigned annexes—not tour adrenaline—Solana West civil versus FF&E delineation ordinarily stays disciplined.",
-    "internalLink": {
-      "href": "/prices",
-      "label": "Current sales sheet-inclusive scope checklist"
-    },
-    "primaryIntent": "transactional_price",
-    "schemaHint": "PriceSpecification"
-  },
-  {
-    "section": "payment_plans",
-    "question": "Does ORA segregate escrow or trust behaviours on Solana West installment receipts?",
-    "answer": "Regulatory escrow details evolve; what matters is stamped lending advice, chronological ledger reconciliation against draw payment steps, NSF remediation pathways, reschedule fee tables—all codified current sales sheet-side.\n\nNever assume offshore informal pooling desks mirror developer treasuries; demand traceable buying team routing.",
-    "aiSnippet": "Traceable buying team receipts—not informal pooling narratives—anchor Solana West installment trustworthiness alongside current sales sheet milestone coding.",
-    "internalLink": {
-      "href": "/payment-plan",
-      "label": "Buying team hygiene & escrow orientation"
-    },
-    "primaryIntent": "transactional_finance",
-    "schemaHint": "InvestmentOrDeposit"
-  },
-  {
-    "section": "location",
-    "question": "How Nile-corridor commuters evaluate Solana West versus closer Giza Nile-edge compounds?",
-    "answer": "Mehwar El Dabaa leans desert-road / ring-road choreography—not intimate Nile breezes footsteps away.\n\nBuyers anchored to Zamalek psyche must reconcile commute psychology honestly before reserving New Zayed ORA pedigree—traffic physics do not teleport because renders glow golden.",
-    "aiSnippet": "Solana West leans highway-enabled New Zayed accessibility—not Nile-front immediacy—commute psyche must reconcile before reserving.",
-    "internalLink": {
-      "href": "/location",
-      "label": "Connectivity truth-check"
-    },
-    "primaryIntent": "navigational_local",
-    "schemaHint": "Place"
-  },
-  {
-    "section": "apartments",
-    "question": "How are floor slab acoustic treatments specified between vertically stacked apartments in Solana West?",
-    "answer": "Resilient underlayments, staggered studs (where applicable), screed decouplers, bathtub trap isolation, piping acoustic wraps—all belong in SKU-specific technical schedules—not generic marketing claims about ‘premium quiet’ devoid of STL numbers.\n\nRequest test reports—or accept emotional risk.",
-    "aiSnippet": "Vertical acoustic comfort on stacked Solana West apartments depends on SKU-specific STL schedules—marketing ‘quiet’ without numbers is sentimental risk.",
-    "internalLink": {
-      "href": "/properties/apartments",
-      "label": "Apartment technical FAQs"
+      "label": "Compare Twin Houses"
     },
     "primaryIntent": "unit_selection",
     "schemaHint": "Accommodation"
   },
   {
     "section": "townhouses",
-    "question": "Can buyers upgrade façade stone packages mid-construction at Solana West townhouses?",
-    "answer": "Late-stage cladding swaps risk schedule slippage, watertight mock-up reapprovals, colour harmony fights with HOA design guidelines—even if chequebooks flex generously.\n\nSecure written change-order pathways anchored to QS before romanticising spontaneous upgrades.",
-    "aiSnippet": "Façade stone upgrades on Solana West townhouses need QS-signed change pathways—retrofits risk HOA harmony and milestone slippage.",
+    "question": "Do townhouses have private outdoor space?",
+    "answer": "Townhouses may include private outdoor areas depending on the design and release.\n\nConfirm garden, terrace, and layout details before reserving.",
+    "aiSnippet": "Townhouses may include private outdoor areas depending on the design and release.",
     "internalLink": {
-      "href": "/contact",
-      "label": "Change-order escalation desk"
+      "href": "/properties/townhouses",
+      "label": "Townhouse Layout Details"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "townhouses",
+    "question": "What affects townhouse prices?",
+    "answer": "Townhouse prices can depend on size, phase, location inside the compound, view, finishing, and payment plan.\n\nRequest current pricing before comparing options.",
+    "aiSnippet": "Townhouse prices can depend on size, phase, location inside the compound, view, finishing, and payment plan.",
+    "internalLink": {
+      "href": "/prices",
+      "label": "Townhouse Prices"
+    },
+    "primaryIntent": "transactional_price",
+    "schemaHint": "PriceSpecification"
+  },
+  {
+    "section": "townhouses",
+    "question": "Who should consider a townhouse?",
+    "answer": "Townhouses suit buyers who want a family home, private entrance, and compound lifestyle at a more balanced price than many standalone villas.",
+    "aiSnippet": "Townhouses suit buyers who want a family home, private entrance, and compound lifestyle at a more balanced price than many standalone villas.",
+    "internalLink": {
+      "href": "/properties/townhouses",
+      "label": "Explore Townhouses"
     },
     "primaryIntent": "unit_selection",
     "schemaHint": "Accommodation"
   },
   {
     "section": "villas",
-    "question": "What façade maintenance cycles should Solana West villa owners budget post-delivery (repointing, sealants, cladding washing)?",
-    "answer": "Natural stone staining, silicone UV fatigue, pigeon guano chemistry, saline mist if microclimate shifts—evenings all demand lifecycle budgets plan paymentsd politely—not heroic denial until leaks embarrass dinner parties catastrophically.\n\nHOA may dictate washing cadences protecting community curb appeal cohesion.",
-    "aiSnippet": "Solana West villa façades need plan paymentsd lifecycle cleaning and repointing budgets—HOA cohesion riders may regiment washing calendars.",
+    "question": "Does Solana West offer standalone villas?",
+    "answer": "Yes. Solana West Villas include standalone villas within the ORA New Zayed Project.\n\nThey are designed for buyers who value privacy, land, garden space, and long-term family living.",
+    "aiSnippet": "Yes. Solana West Villas include standalone villas within the ORA New Zayed Project.",
     "internalLink": {
       "href": "/properties/villas",
-      "label": "Villa capex stewardship"
+      "label": "View Standalone Villas"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "villas",
+    "question": "What are Solana West Villas best for?",
+    "answer": "Solana West Villas are best for families and investors who want a premium low-density home in New Zayed.\n\nPlot, view, finishing, and phase have a strong effect on pricing.",
+    "aiSnippet": "Solana West Villas are best for families and investors who want a premium low-density home in New Zayed.",
+    "internalLink": {
+      "href": "/properties/villas",
+      "label": "Explore Luxury Villas"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "villas",
+    "question": "Are there New Zayed Luxury Villas by ORA Developers?",
+    "answer": "Yes. Solana West includes New Zayed Luxury Villas by ORA Developers Egypt.\n\nRequest the latest villa prices, plot sizes, and payment plan before shortlisting.",
+    "aiSnippet": "Yes. Solana West includes New Zayed Luxury Villas by ORA Developers Egypt.",
+    "internalLink": {
+      "href": "/properties/villas",
+      "label": "New Zayed Luxury Villas"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "villas",
+    "question": "What are twin houses in Solana West?",
+    "answer": "Twin houses are paired villa-style homes that offer more privacy than townhouses and a more efficient land profile than standalone villas.",
+    "aiSnippet": "Twin houses are paired villa-style homes that offer more privacy than townhouses and a more efficient land profile than standalone villas.",
+    "internalLink": {
+      "href": "/properties/twin-houses",
+      "label": "View Twin Houses"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "villas",
+    "question": "Are twin houses good for families?",
+    "answer": "Twin houses in New Zayed can be a strong option for families who want a private home feel without moving into the highest villa price band.",
+    "aiSnippet": "Twin houses in New Zayed can be a strong option for families who want a private home feel without moving into the highest villa price band.",
+    "internalLink": {
+      "href": "/properties/twin-houses",
+      "label": "Family Twin Houses"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "villas",
+    "question": "What should villa buyers confirm?",
+    "answer": "Villa buyers should confirm plot size, built-up area, view, garden space, finishing, payment plan, delivery date, and service charges.",
+    "aiSnippet": "Villa buyers should confirm plot size, built-up area, view, garden space, finishing, payment plan, delivery date, and service charges.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Ask About Villas"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "villas",
+    "question": "Do villas have open green views?",
+    "answer": "Some villas are positioned for open green views, depending on phase and plot.\n\nAsk for the phase map before choosing a villa.",
+    "aiSnippet": "Some villas are positioned for open green views, depending on phase and plot.",
+    "internalLink": {
+      "href": "/master-plan",
+      "label": "View Master Plan"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "master_plan",
+    "question": "What is the Solana West Master Plan?",
+    "answer": "The Solana West Master Plan covers 316 acres in New Zayed.\n\nIt is designed around low density, greenery, walkable routes, villas, townhouses, twin houses, and apartments.",
+    "aiSnippet": "The Solana West Master Plan covers 316 acres in New Zayed.",
+    "internalLink": {
+      "href": "/master-plan",
+      "label": "Explore Solana West Master Plan"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "master_plan",
+    "question": "Is Solana West low density?",
+    "answer": "Yes. Solana West is positioned as a low-density luxury compound in New Zayed.\n\nThe large land area supports open spaces, calmer roads, and more privacy between homes.",
+    "aiSnippet": "Yes. Solana West is positioned as a low-density luxury compound in New Zayed.",
+    "internalLink": {
+      "href": "/master-plan",
+      "label": "Low-Density Master Plan"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "master_plan",
+    "question": "Is Solana West walkable?",
+    "answer": "Solana West is marketed as a walkable community with internal paths and green links connecting homes and amenities.\n\nWalkability should be checked against the latest phase map.",
+    "aiSnippet": "Solana West is marketed as a walkable community with internal paths and green links connecting homes and amenities.",
+    "internalLink": {
+      "href": "/master-plan",
+      "label": "Walkable Community"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "master_plan",
+    "question": "How large is Solana West?",
+    "answer": "Solana West New Zayed is planned across 316 acres.\n\nThis scale helps support a broad mix of apartments, townhouses, twin houses, standalone villas, amenities, and green spaces.",
+    "aiSnippet": "Solana West New Zayed is planned across 316 acres.",
+    "internalLink": {
+      "href": "/master-plan",
+      "label": "316-Acre Community"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "master_plan",
+    "question": "Why does the master plan matter?",
+    "answer": "The master plan affects privacy, views, traffic flow, walking routes, amenity access, and long-term value.\n\nA good unit choice should always be checked against the plan.",
+    "aiSnippet": "The master plan affects privacy, views, traffic flow, walking routes, amenity access, and long-term value.",
+    "internalLink": {
+      "href": "/master-plan",
+      "label": "Master Plan Details"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "master_plan",
+    "question": "Should I review the phase map before buying?",
+    "answer": "Yes. The phase map helps you understand unit position, view, road access, distance to amenities, and delivery timing.\n\nRequest it before making a final choice.",
+    "aiSnippet": "Yes. The phase map helps you understand unit position, view, road access, distance to amenities, and delivery timing.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Request Phase Map"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "amenities",
+    "question": "What amenities are available in Solana West?",
+    "answer": "Solana West is positioned around a luxury compound lifestyle with greenery, clubhouse areas, pool spaces, walkable routes, and family-friendly amenities.\n\nFinal amenity access depends on phase and delivery timing.",
+    "aiSnippet": "Solana West is positioned around a luxury compound lifestyle with greenery, clubhouse areas, pool spaces, walkable routes, and family-friendly amenities.",
+    "internalLink": {
+      "href": "/projects/solana-west",
+      "label": "View Amenities"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "amenities",
+    "question": "Does Solana West have a clubhouse?",
+    "answer": "Yes. The project includes clubhouse-style social spaces as part of the amenity story.\n\nAsk for the latest amenity plan and delivery timing when reviewing a unit.",
+    "aiSnippet": "Yes. The project includes clubhouse-style social spaces as part of the amenity story.",
+    "internalLink": {
+      "href": "/projects/solana-west",
+      "label": "Clubhouse Details"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "amenities",
+    "question": "Does Solana West have pools?",
+    "answer": "Pool and water amenity areas are part of the published lifestyle positioning for Solana West.\n\nConfirm the exact amenity package and phase timing before buying.",
+    "aiSnippet": "Pool and water amenity areas are part of the published lifestyle positioning for Solana West.",
+    "internalLink": {
+      "href": "/projects/solana-west",
+      "label": "Pool Amenities"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "amenities",
+    "question": "Is Solana West family-friendly?",
+    "answer": "Yes. Solana West is positioned for families who want privacy, green spaces, secure living, and access to amenities inside the compound.",
+    "aiSnippet": "Yes. Solana West is positioned for families who want privacy, green spaces, secure living, and access to amenities inside the compound.",
+    "internalLink": {
+      "href": "/projects/solana-west",
+      "label": "Family Lifestyle"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "amenities",
+    "question": "Do all units have the same amenity access?",
+    "answer": "Amenity access is generally tied to the compound, but timing and proximity can differ by phase and unit location.\n\nAsk for the latest plan before reserving.",
+    "aiSnippet": "Amenity access is generally tied to the compound, but timing and proximity can differ by phase and unit location.",
+    "internalLink": {
+      "href": "/master-plan",
+      "label": "Amenity Location"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "amenities",
+    "question": "Are amenities included in the price?",
+    "answer": "Some amenities are part of the compound experience, while service charges or membership details may apply depending on the final rules.\n\nConfirm costs before reserving.",
+    "aiSnippet": "Some amenities are part of the compound experience, while service charges or membership details may apply depending on the final rules.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Ask About Amenity Costs"
+    },
+    "primaryIntent": "transactional_finance",
+    "schemaHint": "PaymentChargesSpecification"
+  },
+  {
+    "section": "lifestyle",
+    "question": "What is life like in Solana West?",
+    "answer": "Solana West is designed for calm luxury living in New Zayed, with greenery, privacy, family homes, apartments, and compound amenities.",
+    "aiSnippet": "Solana West is designed for calm luxury living in New Zayed, with greenery, privacy, family homes, apartments, and compound amenities.",
+    "internalLink": {
+      "href": "/projects/solana-west",
+      "label": "Lifestyle Overview"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "lifestyle",
+    "question": "Is Solana West suitable for wealthy buyers?",
+    "answer": "Yes. Solana West speaks to buyers who want a premium ORA address, low-density planning, and flexible payment options in New Zayed.",
+    "aiSnippet": "Yes. Solana West speaks to buyers who want a premium ORA address, low-density planning, and flexible payment options in New Zayed.",
+    "internalLink": {
+      "href": "/about",
+      "label": "Premium Buyer Context"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "lifestyle",
+    "question": "Is Solana West more for end users or investors?",
+    "answer": "It can work for both. End users may value privacy, greenery, and family life, while investors may focus on entry price, payment plan, delivery date, and resale demand.",
+    "aiSnippet": "It can work for both. End users may value privacy, greenery, and family life, while investors may focus on entry price, payment plan, delivery date, and resale demand.",
+    "internalLink": {
+      "href": "/investment-guides",
+      "label": "End User vs Investor"
     },
     "primaryIntent": "commercial_investigation",
     "schemaHint": "InvestmentOrDeposit"
   },
   {
-    "section": "master_plan",
-    "question": "Does Solana West specify dark-sky or low-glare roadway lighting ethics for nighttime comfort?",
-    "answer": "Premium compounds increasingly adopt warmer CCT palettes, backlight shields, glare cutoffs protecting bedroom elevations—not stadium flood narcissism irritating villa sleepers.\n\nConfirm actual fixture schedules—not moodboard palettes alone.",
-    "aiSnippet": "Solana West roadway lighting calibre should reconcile fixture schedules with glare comfort—verify optics beyond mood renders.",
+    "section": "lifestyle",
+    "question": "Is Solana West good for GCC buyers?",
+    "answer": "Solana West can appeal to GCC and international buyers who want a New Zayed luxury home with airport access and a long payment plan.\n\nRemote buyers should request clear documents before reserving.",
+    "aiSnippet": "Solana West can appeal to GCC and international buyers who want a New Zayed luxury home with airport access and a long payment plan.",
     "internalLink": {
-      "href": "/master-plan",
-      "label": "Circulation lighting standards"
+      "href": "/contact",
+      "label": "GCC Buyer Enquiry"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "lifestyle",
+    "question": "Can Solana West work as a second home?",
+    "answer": "Yes. For some buyers, Solana West can work as a second home in West Cairo, especially because of Sphinx Airport access and the gated community setting.",
+    "aiSnippet": "Yes. For some buyers, Solana West can work as a second home in West Cairo, especially because of Sphinx Airport access and the gated community setting.",
+    "internalLink": {
+      "href": "/location",
+      "label": "Second Home Location"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "lifestyle",
+    "question": "What makes Solana West feel premium?",
+    "answer": "The premium feel comes from ORA Developers Egypt, 316 acres of planning, low density, greenery, unit variety, and the New Zayed location.",
+    "aiSnippet": "The premium feel comes from ORA Developers Egypt, 316 acres of planning, low density, greenery, unit variety, and the New Zayed location.",
+    "internalLink": {
+      "href": "/projects/solana-west",
+      "label": "Premium Community Details"
     },
     "primaryIntent": "commercial_investigation",
     "schemaHint": "FAQPage"
   },
   {
     "section": "investment",
-    "question": "Should buyers model HOA fee inflation as materially impacting net yields on apartments in Solana West?",
-    "answer": "Luxury HOA stacks fund landscaping drama, concierge labour, clubhouse chemistry, CCTV cloud retainers—even when headline apartment yields look seductive on naive spreadsheets ignoring compounding dues inflation across hold horizons.\n\nStress-test dues at +historical CPI plus misery buffers.",
-    "aiSnippet": "Net yields on apartments in Solana West should stress HOA dues inflation—not ignore compounding clubhouse chemistry costs.",
+    "question": "Is Solana West a good investment?",
+    "answer": "Solana West may be attractive for long-term buyers because of ORA Developers Egypt, New Zayed growth, low-density planning, and flexible installments.\n\nThis is not financial advice. Always compare price, payment plan, delivery date, and your own risk comfort.",
+    "aiSnippet": "Solana West may be attractive for long-term buyers because of ORA Developers Egypt, New Zayed growth, low-density planning, and flexible installments.",
     "internalLink": {
       "href": "/investment-guides",
-      "label": "Yield modelling workbook lens"
+      "label": "Investment Guides"
     },
     "primaryIntent": "commercial_investigation",
     "schemaHint": "InvestmentOrDeposit"
   },
   {
-    "section": "amenities",
-    "question": "Will medical clinic or physiotherapy footprints appear inside gated Solana West amenity mixes?",
-    "answer": "Wellness zoning sometimes seeds clinic shells; licensed medical tenancies hinge on regulator clearance and HOA establishment pacing, meaning fit-out CapEx plan paymentss differently across HOA spreadsheets—not every specialty opens on Day-One.\n\nAnchor expectations to phased establishment annex pacing—not TikTok rumours.",
-    "aiSnippet": "Medical footprints inside Solana West amenities depend on phased establishment annex pacing—defer assumptions to HOA establishment tables.",
+    "section": "investment",
+    "question": "Why are investors watching New Zayed?",
+    "answer": "Investors are watching New Zayed because of road access, new land supply, major developers, Sphinx Airport proximity, and growing demand for luxury homes in West Cairo.",
+    "aiSnippet": "Investors are watching New Zayed because of road access, new land supply, major developers, Sphinx Airport proximity, and growing demand for luxury homes in West Cairo.",
     "internalLink": {
-      "href": "/projects/solana-west",
-      "label": "Phased wellness programming"
+      "href": "/investment-guides",
+      "label": "New Zayed Investment"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "InvestmentOrDeposit"
+  },
+  {
+    "section": "investment",
+    "question": "Which unit type is best for investment?",
+    "answer": "There is no single best unit type. Apartments may offer a lower entry point, while villas and twin houses may appeal to higher-budget family buyers.\n\nCompare price, payment plan, delivery, and resale depth.",
+    "aiSnippet": "There is no single best unit type. Apartments may offer a lower entry point, while villas and twin houses may appeal to higher-budget family buyers.",
+    "internalLink": {
+      "href": "/prices",
+      "label": "Compare Unit Prices"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "InvestmentOrDeposit"
+  },
+  {
+    "section": "investment",
+    "question": "Can Solana West generate rental income?",
+    "answer": "Rental potential depends on unit type, finishing, delivery timing, service charges, market demand, and tenant profile.\n\nDo not rely on unverified rental promises.",
+    "aiSnippet": "Rental potential depends on unit type, finishing, delivery timing, service charges, market demand, and tenant profile.",
+    "internalLink": {
+      "href": "/investment-guides",
+      "label": "Rental Considerations"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "InvestmentOrDeposit"
+  },
+  {
+    "section": "investment",
+    "question": "Does ORA developer reputation support investment confidence?",
+    "answer": "ORA Developers Egypt can support buyer confidence because developer reputation matters in premium real estate.\n\nStill, the final investment decision should be based on the exact unit, price, payment plan, and documents.",
+    "aiSnippet": "ORA Developers Egypt can support buyer confidence because developer reputation matters in premium real estate.",
+    "internalLink": {
+      "href": "/about",
+      "label": "ORA Developer Context"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "Organization"
+  },
+  {
+    "section": "investment",
+    "question": "What should investors verify first?",
+    "answer": "Investors should verify starting price, total price, down payment, installment schedule, delivery date, phase, service charges, and resale rules.",
+    "aiSnippet": "Investors should verify starting price, total price, down payment, installment schedule, delivery date, phase, service charges, and resale rules.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Request Investor Details"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "InvestmentOrDeposit"
+  },
+  {
+    "section": "investment",
+    "question": "Is New Zayed better than Sheikh Zayed for investors?",
+    "answer": "New Zayed offers newer supply and growth potential, while Sheikh Zayed is more established.\n\nThe better choice depends on your budget, timeline, and appetite for a developing area.",
+    "aiSnippet": "New Zayed offers newer supply and growth potential, while Sheikh Zayed is more established.",
+    "internalLink": {
+      "href": "/blog/new-zayed-vs-sheikh-zayed-luxury-buyers-2026",
+      "label": "New Zayed vs Sheikh Zayed"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "InvestmentOrDeposit"
+  },
+  {
+    "section": "buying_process",
+    "question": "How do I reserve a unit in Solana West?",
+    "answer": "Start by choosing your preferred unit type and budget range.\n\nThen request current prices, availability, payment plan, reservation steps, and required documents from the sales team.",
+    "aiSnippet": "Start by choosing your preferred unit type and budget range.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Start Reservation Enquiry"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "buying_process",
+    "question": "What documents should I ask for before buying?",
+    "answer": "Ask for the price sheet, payment plan, phase map, unit layout, delivery date, reservation form, and any service charge details.",
+    "aiSnippet": "Ask for the price sheet, payment plan, phase map, unit layout, delivery date, reservation form, and any service charge details.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Request Buying Documents"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "buying_process",
+    "question": "Can I buy Solana West remotely?",
+    "answer": "You can begin the enquiry remotely by WhatsApp, phone, email, or form.\n\nBefore paying, confirm documents, identity requirements, transfer process, and ownership details.",
+    "aiSnippet": "You can begin the enquiry remotely by WhatsApp, phone, email, or form.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Remote Buyer Support"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "buying_process",
+    "question": "Should I visit the site before buying?",
+    "answer": "A site visit is strongly recommended if possible.\n\nIt helps you understand location, access, road feel, phase position, and the overall compound atmosphere.",
+    "aiSnippet": "A site visit is strongly recommended if possible.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Book Site Visit"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "buying_process",
+    "question": "Who should I contact for Solana West pricing?",
+    "answer": "Contact the Solana West sales team to request pricing, availability, payment plan, and next steps.\n\nUse the contact page or WhatsApp for the fastest reply.",
+    "aiSnippet": "Contact the Solana West sales team to request pricing, availability, payment plan, and next steps.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Contact Sales Team"
+    },
+    "primaryIntent": "transactional_price",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "buying_process",
+    "question": "Is WhatsApp the fastest enquiry channel?",
+    "answer": "WhatsApp is usually the fastest channel for pricing and availability questions.\n\nFor detailed requests, include your preferred unit type, budget, and buying timeline.",
+    "aiSnippet": "WhatsApp is usually the fastest channel for pricing and availability questions.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Ask on WhatsApp"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "buying_process",
+    "question": "What should I say when enquiring?",
+    "answer": "Say whether you want apartments, townhouses, twin houses, or villas, then share your budget range and preferred payment comfort.\n\nThis helps the sales team reply with relevant options.",
+    "aiSnippet": "Say whether you want apartments, townhouses, twin houses, or villas, then share your budget range and preferred payment comfort.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Send Enquiry"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "delivery",
+    "question": "What is the Solana West delivery date?",
+    "answer": "Solana West delivery starts from 2027.\n\nExact handover timing depends on the phase, cluster, building, or villa release you choose.",
+    "aiSnippet": "Solana West delivery starts from 2027.",
+    "internalLink": {
+      "href": "/payment-plan",
+      "label": "Delivery Date Details"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "delivery",
+    "question": "Does every unit deliver in 2027?",
+    "answer": "Not necessarily. Delivery starts from 2027, but exact timing can differ by unit type and phase.\n\nConfirm the delivery date for your selected unit before reserving.",
+    "aiSnippet": "Not necessarily. Delivery starts from 2027, but exact timing can differ by unit type and phase.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Confirm Delivery Date"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "delivery",
+    "question": "Why does delivery timing matter for investors?",
+    "answer": "Delivery timing affects cash flow, rental planning, resale timing, and family relocation plans.\n\nInvestors should compare delivery date with the payment plan.",
+    "aiSnippet": "Delivery timing affects cash flow, rental planning, resale timing, and family relocation plans.",
+    "internalLink": {
+      "href": "/investment-guides",
+      "label": "Delivery and Investment"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "InvestmentOrDeposit"
+  },
+  {
+    "section": "delivery",
+    "question": "Can delivery dates change?",
+    "answer": "Real estate delivery dates can change based on construction progress and phase planning.\n\nAlways check the latest handover information before making a decision.",
+    "aiSnippet": "Real estate delivery dates can change based on construction progress and phase planning.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Ask About Delivery"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "delivery",
+    "question": "Should I compare delivery across unit types?",
+    "answer": "Yes. Apartments, townhouses, twin houses, and villas may have different delivery timelines depending on the release.\n\nAsk for unit-specific timing.",
+    "aiSnippet": "Yes. Apartments, townhouses, twin houses, and villas may have different delivery timelines depending on the release.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Compare Delivery Dates"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "delivery",
+    "question": "What happens after delivery?",
+    "answer": "After delivery, buyers usually review handover, finishing condition, service charges, community rules, and any fit-out needs.\n\nAsk for post-handover details before reserving.",
+    "aiSnippet": "After delivery, buyers usually review handover, finishing condition, service charges, community rules, and any fit-out needs.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Post-Delivery Questions"
+    },
+    "primaryIntent": "process_authority",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "comparisons",
+    "question": "How does Solana West compare with other New Zayed compounds?",
+    "answer": "Solana West should be compared by developer, location, master plan, density, prices, payment plan, delivery date, and unit mix.\n\nDo not compare by brand name alone.",
+    "aiSnippet": "Solana West should be compared by developer, location, master plan, density, prices, payment plan, delivery date, and unit mix.",
+    "internalLink": {
+      "href": "/comparison-pages",
+      "label": "Compare New Zayed Compounds"
     },
     "primaryIntent": "commercial_investigation",
     "schemaHint": "FAQPage"
+  },
+  {
+    "section": "comparisons",
+    "question": "Is Solana West a strong choice in New Zayed?",
+    "answer": "Solana West can be a strong choice for buyers seeking an ORA New Zayed project with apartments, townhouses, twin houses, standalone villas, and flexible installments.\n\nThe right decision depends on your budget, preferred unit type, payment plan, and timeline.",
+    "aiSnippet": "Solana West can be a strong New Zayed choice for buyers seeking an ORA project with luxury homes and flexible installments.",
+    "internalLink": {
+      "href": "/comparison-pages",
+      "label": "Solana West buyer guide"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "comparisons",
+    "question": "What should I compare first?",
+    "answer": "Start with location, developer, payment plan, starting price, unit type, delivery date, and community plan.\n\nThen compare the exact units available today.",
+    "aiSnippet": "Start with location, developer, payment plan, starting price, unit type, delivery date, and community plan.",
+    "internalLink": {
+      "href": "/comparison-pages",
+      "label": "Comparison Checklist"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "comparisons",
+    "question": "Are properties for sale in New Zayed all similar?",
+    "answer": "No. Properties for sale in New Zayed differ by developer, land size, density, road access, payment plan, and delivery timing.",
+    "aiSnippet": "No. Properties for sale in New Zayed differ by developer, land size, density, road access, payment plan, and delivery timing.",
+    "internalLink": {
+      "href": "/projects",
+      "label": "View New Zayed Projects"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "comparisons",
+    "question": "Why compare payment plans?",
+    "answer": "Payment plans affect affordability as much as the starting price.\n\nCompare down payment, installment length, payment dates, and delivery timing before choosing a compound.",
+    "aiSnippet": "Payment plans affect affordability as much as the starting price.",
+    "internalLink": {
+      "href": "/payment-plan",
+      "label": "Compare Payment Plan"
+    },
+    "primaryIntent": "transactional_finance",
+    "schemaHint": "PaymentChargesSpecification"
+  },
+  {
+    "section": "comparisons",
+    "question": "Why compare master plans?",
+    "answer": "The master plan affects privacy, greenery, traffic, walking routes, views, and long-term community quality.\n\nA strong plan can make a major difference in daily living.",
+    "aiSnippet": "The master plan affects privacy, greenery, traffic, walking routes, views, and long-term community quality.",
+    "internalLink": {
+      "href": "/master-plan",
+      "label": "Compare Master Plans"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "comparisons",
+    "question": "What is the simplest way to choose?",
+    "answer": "Shortlist by budget, unit type, location fit, payment comfort, and developer trust.\n\nThen request prices for real available units instead of comparing general claims.",
+    "aiSnippet": "Shortlist by budget, unit type, location fit, payment comfort, and developer trust.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Request Shortlist Help"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "comparisons",
+    "question": "Should I compare apartments or villas first?",
+    "answer": "Start with the lifestyle you want and the budget you are comfortable with.\n\nApartments usually offer a lower entry point, while villas focus on privacy, land, and long-term family living.",
+    "aiSnippet": "Start with the lifestyle you want and the budget you are comfortable with.",
+    "internalLink": {
+      "href": "/properties/apartments",
+      "label": "Compare Apartments and Villas"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "comparisons",
+    "question": "How should I compare Solana West Apartments with other apartments in New Zayed?",
+    "answer": "Compare location, developer, view, finishing, delivery date, payment plan, service charges, and the quality of the wider compound.",
+    "aiSnippet": "Compare location, developer, view, finishing, delivery date, payment plan, service charges, and the quality of the wider compound.",
+    "internalLink": {
+      "href": "/properties/apartments",
+      "label": "Solana West Apartments"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "comparisons",
+    "question": "How should I compare Solana West Villas with other villas in New Zayed?",
+    "answer": "Compare plot size, privacy, view, garden space, delivery date, payment plan, and the reputation of the developer.",
+    "aiSnippet": "Compare plot size, privacy, view, garden space, delivery date, payment plan, and the reputation of the developer.",
+    "internalLink": {
+      "href": "/properties/villas",
+      "label": "Solana West Villas"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "Accommodation"
+  },
+  {
+    "section": "buying_process",
+    "question": "Can the sales team help me choose between unit types?",
+    "answer": "Yes. Share your budget, family needs, preferred payment plan, and timeline.\n\nThe sales team can suggest whether apartments, townhouses, twin houses, or standalone villas fit your brief best.",
+    "aiSnippet": "Yes. Share your budget, family needs, preferred payment plan, and timeline.",
+    "internalLink": {
+      "href": "/contact",
+      "label": "Contact Sales Team"
+    },
+    "primaryIntent": "unit_selection",
+    "schemaHint": "FAQPage"
+  },
+  {
+    "section": "investment",
+    "question": "What makes Solana West different from smaller compounds?",
+    "answer": "Solana West has a 316-acre master plan, ORA Developers Egypt behind it, a New Zayed location, and a full mix of apartments, townhouses, twin houses, and villas.",
+    "aiSnippet": "Solana West has a 316-acre master plan, ORA Developers Egypt behind it, a New Zayed location, and a full mix of apartments, townhouses, twin houses, and villas.",
+    "internalLink": {
+      "href": "/master-plan",
+      "label": "Explore Master Plan"
+    },
+    "primaryIntent": "commercial_investigation",
+    "schemaHint": "InvestmentOrDeposit"
+  },
+  {
+    "section": "location",
+    "question": "Is Solana West suitable for buyers who travel often?",
+    "answer": "Solana West can suit frequent travellers because of its New Zayed position and proximity to Sphinx Airport.\n\nBuyers should still test real drive times before reserving.",
+    "aiSnippet": "Solana West can suit frequent travellers because of its New Zayed position and proximity to Sphinx Airport.",
+    "internalLink": {
+      "href": "/location",
+      "label": "Sphinx Airport Access"
+    },
+    "primaryIntent": "navigational_local",
+    "schemaHint": "Place"
   }
 ]

@@ -42,7 +42,7 @@ export function SiteFooter() {
   const disclaimer = locale === "ar" ? footerLegalDisclaimerAr : footerLegalDisclaimer;
   const legalLane = locale === "ar" ? footerLegalLinksAr : footerLegalLinks;
   const socialHeading = locale === "ar" ? "وسائل التواصل" : "Social";
-  const legalPostureHeading = locale === "ar" ? "إطار قانوني" : "Formal posture";
+  const legalPostureHeading = locale === "ar" ? "إطار قانوني" : "Site note";
   const conciergeHeading = locale === "ar" ? "كونسييرج" : "Concierge";
 
   return (

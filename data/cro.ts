@@ -1,6 +1,6 @@
 import { siteConfig } from "@/data/site";
 
-/** Factual commercial anchors — mirrors project context; current sales sheet supersedes summaries. */
+/** Factual commercial anchors — final details are confirmed before reservation. */
 export const croCommercialFacts = {
   startingFrom: "From 9.8M EGP",
   downPayment: "5% down",
@@ -23,53 +23,53 @@ export const croCommercialChipLabels = [
 ] as const;
 
 /** Positioning — one line; use rail / sticky context. */
-export const croPrivateDeskTagline = "Private acquisition desk · ORA";
+export const croPrivateDeskTagline = "Solana West sales team · ORA";
 
 /**
- * Concierge CTA system: primary = acquisition desk (WhatsApp), secondary = diligence (prices, form).
+ * Concierge CTA system: primary = sales contact (WhatsApp), secondary = prices or form.
  */
 export const croMessaging = {
-  headerDesktopWhatsapp: "Acquisition desk",
-  headerMobileWhatsapp: "Acquisition desk · WhatsApp",
+  headerDesktopWhatsapp: "Request prices",
+  headerMobileWhatsapp: "Prices on WhatsApp",
 
-  railEyebrow: "Advisory",
-  railWhatsAppLabel: "Speak with the advisory desk",
-  railWhatsAppSubline: "Structured pricing & availability · sales-confirmed",
+  railEyebrow: "Buyer support",
+  railWhatsAppLabel: "Ask for prices and availability",
+  railWhatsAppSubline: "Current options, payment plan, and next steps",
 
-  stickyWhatsAppLine: "Acquisition desk",
+  stickyWhatsAppLine: "Request prices",
   stickyWhatsAppSubline: "WhatsApp",
   stickyCallLabel: "Call",
   stickyEnquiryLabel: "Enquire",
 
-  heroPrimaryCta: "Private acquisition desk",
+  heroPrimaryCta: "Request prices on WhatsApp",
   heroSecondaryCtaLong: "Pricing & availability",
   heroSecondaryCtaShort: "Pricing",
-  heroAnnotationTitle: "Commercial snapshot",
+  heroAnnotationTitle: "Key buyer facts",
 
   paymentSectionCue:
-    "Review the down payment, delivery timing, and unit availability with a calm acquisition desk before you choose a unit.",
-  paymentSectionCta: "Speak with the advisory desk",
+    "Review the down payment, delivery timing, and unit availability before choosing a unit.",
+  paymentSectionCta: "Request payment details",
   paymentSectionCtaSub:
-    "Request your schedule excerpt—structured for family review, not a generic flyer.",
-  internalPaymentPlanLink: "Payment-plan page",
+    "Ask for the latest schedule for your preferred unit type.",
+  internalPaymentPlanLink: "Payment plan page",
 
   finalPanelDeskAssurance:
-    "Authorised desk responses—formatted for acquisition teams, families, and GCC family review—not broadcast marketing.",
+    "Clear responses for buyers comparing price, payment, availability, and next steps.",
 
-  leadFormEyebrow: "Advisory enquiry",
+  leadFormEyebrow: "Buyer enquiry",
   leadFormSubtitle:
-    `${croCommercialSummaryLine} Share typology interest, hold horizon, and preferred channel—we route context to the advisory desk.`,
+    `${croCommercialSummaryLine} Share your preferred unit type, budget range, and contact channel so the reply can be useful.`,
   leadFormSubmitIdle: "Request pricing & availability",
   leadFormSubmitPending: "Sending…",
   leadFormRoutingNote:
-    "Enquiries route to authorised desk review. Fastest structured commercial context is usually WhatsApp—the private acquisition desk.",
-  leadFormWhatsappSecondary: "Private acquisition desk",
+    "WhatsApp is usually the fastest way to receive current price and payment context.",
+  leadFormWhatsappSecondary: "Ask on WhatsApp",
 
-  footerWhatsAppLabel: "Private acquisition desk",
+  footerWhatsAppLabel: "Request prices on WhatsApp",
 } as const;
 
 export const croAria = {
-  whatsappPrivateDesk: `WhatsApp — ${siteConfig.shortName} private acquisition desk`,
+  whatsappPrivateDesk: `WhatsApp — ${siteConfig.shortName} sales team`,
 } as const;
 
 export const croInvestorAssurance = [
@@ -77,18 +77,18 @@ export const croInvestorAssurance = [
     eyebrow: "Developer",
     title: siteConfig.developer,
     detail:
-      "ORA-led servicing and phased sales with an institutional developer posture for serious reservations.",
+      "Developer behind Solana West New Zayed, with project information confirmed through sales documentation.",
   },
   {
     eyebrow: "Leadership",
     title: siteConfig.founder,
     detail:
-      "Chairman-led portfolio governance; payment steps and counterparties sit with an established developer, not ad-hoc promotion.",
+      "Chairman of ORA Developers Egypt, adding recognition for buyers reviewing developer background.",
   },
   {
     eyebrow: "Horizon",
     title: "Delivery from 2027",
     detail:
-      "Low-density master plan—verify cluster delivery and amenity rollout against your investment review before you anchor rent or exit assumptions.",
+      "Confirm the exact phase, cluster, and handover timing for your chosen unit before reserving.",
   },
 ] as const;

@@ -70,34 +70,34 @@ function internalLinksEditorial(short: string): readonly ProjectsHubInternalLink
     {
       label: `${short} project hub`,
       href: "/projects/solana-west",
-      context: "Current sales compound narrative, amenities, location, and FAQ depth.",
+      context: "Main project guide with unit types, amenities, location, and buyer FAQs.",
     },
-    { label: "Prices", href: "/prices", context: "Starting price brackets — confirm with sales before reserving." },
-    { label: "Payment plan", href: "/payment-plan", context: "Headline structure; contract governs at signing." },
+    { label: "Prices", href: "/prices", context: "Starting price and current bracket context for serious buyers." },
+    { label: "Payment plan", href: "/payment-plan", context: "5% down, up to 10 years, and delivery timing explained clearly." },
     {
       label: "Standalone villas",
       href: "/properties/villas",
-      context: "Detached stock—elevation, outlook bands, and land dedication vs. phased apartments.",
+      context: "Detached homes for privacy, land, and long-term family use.",
     },
     {
       label: "Townhouses",
       href: "/properties/townhouses",
-      context: "Walkable-avenue townhomes; mid ticket with more privacy than vertical living.",
+      context: "Family homes on landscaped avenues with a balanced ticket size.",
     },
     {
       label: "Twin houses",
       href: "/properties/twin-houses",
-      context: "Paired villas—density step between townhouses and full detached lots.",
+      context: "Paired villa living between townhouses and standalone homes.",
     },
     {
       label: "Apartments",
       href: "/properties/apartments",
-      context: "Vertical inventory inside the estate; rental and owner paths under one compound covenant.",
+      context: "A practical entry into the estate for owners and investors.",
     },
     {
       label: "Master plan",
       href: "/master-plan",
-      context: "316-acre spatial logic without parcel-level speculation.",
+      context: "316-acre layout, greenery, walkability, and residential structure.",
     },
     { label: "Location", href: "/location", context: "Mehwar El Dabaa and West Cairo connectivity context." },
   ];
@@ -110,11 +110,11 @@ function buildFeaturedList(): readonly ProjectsHubFeaturedProject[] {
     const teaser =
       entry.slug === "solana-west"
         ? ([
-            `316-acre, low-density master plan on Mehwar El Dabaa in New Zayed — walkable green structure, elevated villa frontage, apartments through standalone villas, fully finished or core & shell per SKU.`,
-            `Use the project hub for amenities, payment framing, and canonical FAQs; commercial availability and phase maps remain sales-team confirmed through ${siteConfig.developer} desks.`,
+            `A 316-acre low-density master plan on Mehwar El Dabaa in New Zayed, with apartments, townhouses, twin houses, and standalone villas inside a walkable green structure.`,
+            `Use the project hub to review amenities, location, payment context, and FAQs before requesting the latest availability from ${siteConfig.developer}.`,
           ] as const)
         : ([
-            `Authorised ${siteConfig.developer} hub route for ${entry.name}. Commercial terms, availability, and technical appendices route through sales-verified project information.`,
+            `${siteConfig.developer} project hub for ${entry.name}. Commercial terms and availability should be confirmed through current sales information.`,
           ] as const);
 
     return { entry, teaser, image };
@@ -131,38 +131,38 @@ export function buildProjectsHubPageModel(): ProjectsHubPageModel {
     heroImage: solanaWestMedia.hero,
     hero: {
       eyebrow: `${ora} · West Cairo · Project index`,
-      h1: "ORA Developer Egypt · project index anchored by Solana West",
-      lead: `${ora} stages large-format residential land as coherent compounds — landscape, servicing, and typology mix are negotiated as a single design thesis rather than ad-hoc parcel sales. This index lists authorised project hubs; only entries published here carry detailed routing.`,
-      supporting: `Chaired by ${founder}, ORA’s Egypt pipeline competes on institutional delivery and long-horizon servicing. This page does not announce unissued projects, speculative phases, or availability tallies — each hub remains factual to released project information.`,
+      h1: "ORA Developers Egypt projects in focus",
+      lead: `${ora} is presented here through published project hubs, starting with ${short} in New Zayed. Each hub is built for buyers who want clear facts, calm buyer support, and direct routes to prices, payment plans, and availability.`,
+      supporting: `Chaired by ${founder}, ORA is a name many buyers already know. This page stays factual: no unpublished project claims, no artificial inventory counts, and no speculative phase announcements.`,
     },
     overview: {
       eyebrow: "Projects overview",
-      title: "Index pages first — booking packs close the loop",
+      title: "Start with the project hub, then confirm the sales pack",
       paragraphs: [
-        "Project hubs consolidate what serious buyers request in sequence: typology logic, commercial framing, connectivity, amenity depth, and FAQ discipline. New destinations appear only when project information is ready—not as placeholder cards.",
-        `${short} is the active fully routed compound on this site. Apartment pricing, payment headline, and delivery horizon stay aligned with /prices and /payment-plan—yet reservation always depends on your dated sales pack.`,
-        "The links below route you to typology pages, price context, master plan scale, and geography—each answers a distinct buyer intent without repeating the hub narrative.",
+        "A serious buyer usually asks the same questions in order: where is it, who develops it, what can I buy, what does it cost, how do I pay, and what should I verify before reserving.",
+        `${short} is the active fully routed compound on this site. Its price entry, payment plan, and delivery timeline stay aligned with the dedicated prices and payment pages.`,
+        "Use the links below to move from project overview to typology pages, master plan, location, and contact without repeating the same brochure copy on every route.",
       ],
       figure: solanaWestMedia.projectOverview,
     },
     corridor: {
       eyebrow: "Geography & positioning",
-      title: "ORA compounds read against New Zayed’s western spine",
+      title: "How Solana West fits New Zayed's western growth corridor",
       paragraphs: [
-        "New Zayed extends the western residential spine of Greater Cairo — Mehwar El Dabaa, ring-road reach, and airport-adjacent demand are already how institutions read the district. ORA compounds participate in that narrative through low-density land plans and walkable green armatures rather than maximum-yield stacking.",
-        "West Cairo competition includes large-scale peers (commonly cited comparables such as VYE and Belle Vie sit nearby in market conversation). This index mentions them only as district context, never as partnership or co-brand claims.",
-        "ORA positioning emphasizes architectural discipline, landscape continuity, and staged servicing — material for investors who review developer quality and multi-year hold behaviour, not brochure-only comparisons.",
+        "New Zayed extends the western residential map of Greater Cairo. Mehwar El Dabaa, ring-road access, and Sphinx Airport proximity are part of why buyers now study this corridor seriously.",
+        "Nearby luxury communities help frame New Zayed's premium residential character, while Solana West remains focused on its own ORA-led master plan.",
+        "Solana West is positioned around ORA planning, low-density land use, and a walkable green structure. For investors, those details matter more than generic luxury language.",
       ],
     },
     projectCardsEyebrow: "Detailed hubs",
-    projectCardsTitle: "Authorised hubs routed on this deployment",
+    projectCardsTitle: "Project hubs available on this site",
     scaleNote:
-      "Additional ORA destinations will mirror this hub-and-spoke editorial model when authorised — no phantom cards or unpublished names are listed here.",
+      "Additional ORA destinations can follow this same hub model when published. This page does not list placeholder projects or unverified names.",
     featuredProjects: buildFeaturedList(),
     internalLinks: {
-      eyebrow: "Authority routes",
-      title: "Commerce, typologies, plan & place — bookmarkable silos",
-      intro: "Stable internal URLs for teams that share diligence links in memos or chats.",
+      eyebrow: "Buyer routes",
+      title: "Prices, payment, unit types, plan, and place",
+      intro: "Use these pages to compare the project clearly before speaking with the sales team.",
       links: internalLinksEditorial(short),
     },
     faqPreview: {
@@ -171,10 +171,10 @@ export function buildProjectsHubPageModel(): ProjectsHubPageModel {
       fullFaqHref: "/faq",
     },
     finalCta: {
-      eyebrow: "Desk verification",
-      title: "Escalate from this index to stamped project information",
-      supporting: `Request hub-specific briefings, phased maps, or typology sheets through ${ora} accredited channels—no synthetic inventory or unpublished project naming.`,
-      primaryLabel: "WhatsApp private desk",
+      eyebrow: "Next step",
+      title: "Request the latest project information",
+      supporting: `Ask for current price sheets, phase maps, and typology availability through ${ora} sales channels. The right next step depends on your budget, preferred home type, and timeline.`,
+      primaryLabel: "Request prices on WhatsApp",
       secondaryLabel: "Written enquiry",
     },
   };

@@ -6,7 +6,7 @@
 export const SOLANA_WEST_IMAGE_BASE = "/images/projects/solana-west" as const;
 
 /** Developer attribution suffix for ALT consistency (schema + SEO rules) */
-export const ORA_DEVELOPERS_ATTRIBUTION = "by ORA Developer Egypt" as const;
+export const ORA_DEVELOPERS_ATTRIBUTION = "by ORA Developers Egypt" as const;
 
 /**
  * Canonical slot filenames (01 series) — keep aligned with pipeline output when ingesting legacy names.

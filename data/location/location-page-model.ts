@@ -59,39 +59,39 @@ function editorialInternalLinks(): readonly LocationInternalLink[] {
     {
       label: `${short} project hub`,
       href: "/projects/solana-west",
-      context: "Master plan, amenities, commercial context, and FAQs in one route.",
+      context: "Master plan, amenities, prices, and FAQs in one route.",
     },
     {
-      label: "Pricing posture",
+      label: "Prices",
       href: "/prices",
-      context: "Current sales bracketing — typology mix, no inventory tables.",
+      context: "Starting price and current availability context.",
     },
     {
-      label: "Payment plan structure",
+      label: "Payment plan",
       href: "/payment-plan",
-      context: "Down payment, tenor, and delivery framing.",
+      context: "Down payment, installment timeline, and delivery date.",
     },
     {
       label: "Apartments",
       href: "/properties/apartments",
-      context: "Vertical inventory inside the estate—rental and owner paths under one compound covenant.",
+      context: "A practical entry point into the estate.",
     },
     {
       label: "Townhouses",
       href: "/properties/townhouses",
-      context: "Walkable-avenue townhomes; mid ticket with more privacy than vertical living.",
+      context: "Family homes on landscaped avenues.",
     },
     {
       label: "Twin houses",
       href: "/properties/twin-houses",
-      context: "Paired villas—density step between townhouses and full detached lots.",
+      context: "Paired villa living inside the same master plan.",
     },
     {
       label: "Standalone villas",
       href: "/properties/villas",
-      context: "Detached stock—elevation, outlook bands, and land dedication vs. phased apartments.",
+      context: "Detached homes for privacy, land, and open outlooks.",
     },
-    { label: "FAQ index", href: "/faq", context: "Canonical location and access answers.",
+    { label: "FAQ index", href: "/faq", context: "Location and access answers.",
     },
   ];
 }
@@ -115,100 +115,100 @@ export function buildLocationPageModel(): LocationPageModel {
     overviewFigure,
     hero: {
       locationEyebrow: "New Zayed · West Cairo · Geography",
-      h1: `${short} location — Mehwar El Dabaa & New Zayed access`,
-      lead: `${entry.name} sits on Mehwar El Dabaa inside the New Zayed growth corridor — arterial links toward Alexandria Desert Road and the Middle Ring Road frame daily access, while marketing context cites drive-time mentions to Waslet Dahshour, Sphinx Airport, and Mall of Arabia.`,
+      h1: `${short} location in New Zayed`,
+      lead: `${entry.name} sits on Mehwar El Dabaa in New Zayed, with access toward Alexandria Desert Road, the Middle Ring Road, Sphinx Airport, Waslet Dahshour, and Mall of Arabia.`,
       supporting:
-        `Driving minutes are directional comparables from project information, not live traffic guarantees — confirm routes and peak-hour behaviour independently. Neighbouring benchmarks VYE (Sodic) and Belle Vie (Emaar) are cited as market context only, not partnership claims.`,
+        "Published drive times are useful for orientation, not a traffic guarantee. If commute timing matters to your decision, test the route at the hours you actually travel.",
     },
     overview: {
       eyebrow: "Location overview",
-      title: "New Zayed — institutional road fabric behind the estate",
+      title: "A West Cairo address with room to grow",
       paragraphs: [
-        "New Zayed extends the western residential spine of Greater Cairo — institutional road investment, airport adjacency, and large-format retail clusters are already part of how the market reads the district, without promising any specific future public project on this page.",
-        `${short} occupies a 316-acre, low-density footprint in that corridor. ORA’s planning logic treats walkability and continuous landscape as primary infrastructure — compounds here compete on arterial legibility and long-horizon servicing, not billboard density.`,
-        `${dev} stages delivery and sales through accredited desks; location advantage should be cross-checked against your own commute patterns, school routing, and weekday traffic experience.`,
+        "New Zayed has become one of West Cairo's most watched residential corridors because it combines new land supply with access to established Sheikh Zayed and 6th of October routes.",
+        `${short} adds a 316-acre low-density footprint to that corridor, with ORA's planning focused on greenery, walkability, and a private residential setting.`,
+        `The location is strong, but it should still be checked against your own routine: school runs, airport use, office routes, weekend retail, and peak-hour traffic.`,
       ],
     },
     connectivity: {
       eyebrow: "Connectivity",
-      title: "Mehwar El Dabaa, ring roads, airport & landmark retail",
+      title: "Mehwar El Dabaa, ring roads, airport, and retail access",
       intro:
-        "The following items mirror published project information — they describe positioning, not fixed travel times. Satellite navigation and on-site runs remain authoritative.",
+        "The points below reflect published project positioning and common buyer landmarks. Treat them as location highlights, then verify real travel times for your lifestyle.",
       sections: [
         {
           heading: "Mehwar El Dabaa",
           body: [
-            `${short} is plotted along Mehwar El Dabaa in New Zayed — the spine is the organising starting price for how the compound fronts the district and ties into westward residential expansion.`,
-            "Mehwar sequencing matters for buyers comparing compounds: frontage quality, turning radii, and future phase adjacency are evaluated at current sales sheet, not generalized here.",
+            `${short} is positioned on Mehwar El Dabaa, one of the key axes shaping New Zayed's westward residential growth.`,
+            "For buyers comparing compounds, the road matters because it affects arrival, future area visibility, and everyday movement.",
           ],
         },
         {
           heading: "Alexandria Desert Road access",
           body: [
-            "Marketing materials cite direct access logic toward Alexandria Desert Road — the link matters for buyers routing toward the North Coast corridor or western industrial nodes.",
-            "Verify gate-level movement and peak-hour behaviour with on-site orientation; mapping screenshots age quickly as adjacent phases open.",
+            "Access toward Alexandria Desert Road helps buyers who move between West Cairo, the North Coast corridor, and wider western routes.",
+            "Gate-level movement and peak-hour traffic should be checked during a site visit.",
           ],
         },
         {
           heading: "Middle Ring Road access",
           body: [
-            "Project information positions Middle Ring Road connectivity for East–West sweep across Greater Cairo — relevant for buyers arbitraging office locations in 6th October, Sheikh Zayed, and inner-ring districts.",
-            "Ring-road dependence implies toll, congestion, and weekday variance; review location with real commutes, not brochure straight-line maps.",
+            "Middle Ring Road access helps connect the area to other parts of Greater Cairo, including 6th of October, Sheikh Zayed, and inner-ring districts.",
+            "As with any ring-road route, timing changes by day, hour, tolls, and traffic conditions.",
           ],
         },
         {
           heading: "Waslet Dahshour proximity",
           body: [
-            "Published context commonly mentions approximately five minutes toward Waslet Dahshour — useful for buyers already familiar with Dahshour arterial interchange and western secondary roads.",
-            "Treat the figure as illustrative; traffic, seasonality, and construction detours change effective time on road.",
+            "Project information commonly mentions around five minutes to Waslet Dahshour, a useful landmark for buyers familiar with western Cairo movement.",
+            "Treat the figure as approximate because traffic, detours, and construction can change the actual drive.",
           ],
         },
         {
           heading: "Sphinx International Airport access",
           body: [
-            "Marketing cites on the order of ten minutes toward Sphinx International Airport — relevant for flight-dependent households and guest access patterns.",
-            "Airport proximity benefits convenience; it does not guarantee asset performance — avoid conflating runway adjacency with pricing outcomes.",
+            "Sphinx International Airport is commonly cited at around ten minutes, making the location attractive for frequent travellers and visiting family.",
+            "Airport access improves convenience, but it should not be treated as a guaranteed investment outcome.",
           ],
         },
         {
           heading: "Mall of Arabia access",
           body: [
-            "Project information mentions circa fifteen minutes toward Mall of Arabia — a large-format retail anchor commonly used in West Cairo comparables.",
-            "Retail distance is lifestyle context, not investment thesis; daily shopping patterns still depend on compound retail, delivery logistics, and weekday preferences.",
+            "Mall of Arabia is commonly mentioned at around fifteen minutes, giving buyers a familiar West Cairo retail landmark.",
+            "Retail access is part of lifestyle comfort, while day-to-day convenience will also depend on compound services and delivery habits.",
           ],
         },
         {
-          heading: "VYE (Sodic), Belle Vie (Emaar), and the West Cairo mosaic",
+          heading: "Key New Zayed Residential Destinations",
           body: [
-            "VYE by Sodic and Belle Vie by Emaar sit adjacent in the same broad New Zayed conversation — cite them strictly as large-scale market comparables illustrating how institutional developers cluster land in the corridor.",
-            "No commercial relationship between those projects and this page is implied; competitive analysis should starting price public pricing, servicing, and density brochures from each developer independently.",
-            "West Cairo’s growth narrative is structural — road maturation, diversified housing stock, and airport-linked demand — without predicting specific price paths or government project timelines on this editorial route.",
+            "Solana West sits near key residential destinations in New Zayed, adding to the area's premium West Cairo character.",
+            "Nearby communities are useful for area orientation only. There is no partnership or commercial relationship implied.",
+            "Compare each compound on land plan, developer, density, access, pricing, and payment schedule rather than brand names alone.",
           ],
         },
       ],
     },
     areaGrowth: {
       eyebrow: "Area growth positioning",
-      title: "District maturity — visibility without invented growth claims",
+      title: "Area growth without exaggerated promises",
       paragraphs: [
-        "The district’s investment story is told through visible infrastructure: arterial completion, airport scale, and repeatable master developer delivery — not through guaranteed appreciation figures or named future megaprojects unless confirmed in official current sales sheet.",
-        "Buyer discipline means separating land quality (plot shape, outlook, servicing) from marketing brochure claims; both VYE- and Belle Vie-scale neighbours signal institutional confidence in the corridor, not a synchronized price floor for every compound.",
-        `${short} aligns with long-hold, low-density positioning — demand for walkable green structure in West Cairo is thematic, but investment review must still starting price personal liquidity, FX exposure, and tenancy rules where applicable.`,
+        "The New Zayed story is best read through visible infrastructure, large land plans, airport proximity, and the arrival of established developers.",
+        "Nearby large-scale compounds suggest developer confidence in the corridor, but they do not guarantee a price path for every project.",
+        `${short} is a long-hold play for buyers who value low density, greenery, and West Cairo access. Personal liquidity, payment timing, and exit plans still matter.`,
       ],
     },
     investment: {
       eyebrow: "Investment relevance",
-      title: "Logistics lowers friction — contracts still define risk",
+      title: "Good access supports demand, but documents define risk",
       paragraphs: [
-        "Location reduces certain operational risks — airport access, ring-road reach, and recognizable retail anchors lower navigation friction for GCC and domestic buyers who already know the district code names.",
-        "Geography does not replace current sales sheet discipline: payment schedules, delivery phasing, service-charge regimes, and after-sales governance matter as much as drive-time claims.",
-        `Use this page alongside /prices and /payment-plan — ${siteConfig.founder}-led ${dev} developer credibility is substantive, yet every reservation still hinges on purchase documentation.`,
+        "Airport access, ring-road reach, and familiar retail anchors make the location easier to understand for Egyptian, GCC, and international buyers.",
+        "Still, location is only one part of the decision. Payment schedule, delivery phase, service charges, and contract terms deserve the same attention.",
+        `Use this page alongside prices and payment plan details before asking ${dev} sales for live availability.`,
       ],
     },
     internalLinks: {
-      eyebrow: "Authority silos",
-      title: "Move from geography to hub, brackets and SKU pages",
-      intro: "Use these links once driving context is anchored — investment review finishes on current sales sheet.",
+      eyebrow: "Continue research",
+      title: "Move from location to prices, payment, and unit types",
+      intro: "Once the location makes sense, compare the product and numbers.",
       links: editorialInternalLinks(),
     },
     faqPreview: {
@@ -218,10 +218,10 @@ export function buildLocationPageModel(): LocationPageModel {
     },
     finalCta: {
       eyebrow: "Next step",
-      title: "Book a logistics briefing that matches your commute reality",
+      title: "Ask for a location and availability briefing",
       supporting:
-        `Request a logistics briefing or site orientation through ${dev} accredited channels—no implied inventory, countdowns, or guaranteed travel times.`,
-      primaryLabel: "WhatsApp private desk",
+        `Request current availability, phase location, and site orientation details through ${dev} sales channels. Verify travel times against your own routine before reserving.`,
+      primaryLabel: "Request details on WhatsApp",
       secondaryLabel: "Written enquiry",
     },
   };

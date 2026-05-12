@@ -18,7 +18,7 @@ export function ProjectPropertyTypesSection({ page }: { page: ResolvedProjectPag
           <SectionHeader
             id={`${slug}-property-types-heading`}
             eyebrow="Product architecture"
-            title="Residential SKUs sequenced across the phased estate"
+            title="Apartments, townhouses, twin houses, and villas"
             kicker={
               <p className="font-normal text-lux-ink/66">{propertyTypes.intro}</p>
             }

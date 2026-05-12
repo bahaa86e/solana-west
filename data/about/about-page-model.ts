@@ -62,17 +62,17 @@ export function aboutPageInternalLinks(): readonly AboutInternalLink[] {
     {
       label: "ORA projects hub",
       href: "/projects",
-      context: "Browse published project routes on this domain.",
+      context: "Browse the published project routes on this site.",
     },
     {
       label: `${short} project page`,
       href: "/projects/solana-west",
-      context: "Master plan, amenities, location, and sales FAQs in one hub.",
+      context: "Master plan, amenities, location, prices, and FAQs in one hub.",
     },
     {
       label: "Prices & bracket context",
       href: "/prices",
-      context: "Current sales brackets — factual entry context only.",
+      context: "Starting price and current bracket context.",
     },
     {
       label: "Payment plan overview",
@@ -82,7 +82,7 @@ export function aboutPageInternalLinks(): readonly AboutInternalLink[] {
     {
       label: "Contact",
       href: "/contact",
-      context: "Accredited desk routing for serious buyers.",
+      context: "Direct routing for serious buyer enquiries.",
     },
   ];
 }
@@ -105,59 +105,59 @@ export function buildAboutPageModel(): AboutPageModel {
     overviewFigure,
     hero: {
       locationEyebrow: `${dev} · Master planning`,
-      h1: "ORA Developer Egypt — stewardship behind Solana West",
+      h1: `About ${dev} and Solana West`,
       lead:
-        `${projectName} is developed by ${dev} — master-planned, low-density residential communities are staged with disciplined land use, coordinated landscape, and long-horizon servicing rather than ad-hoc building pads.`,
+        `${projectName} is developed by ${dev}, chaired by ${founder}. The project brings a 316-acre low-density master plan to New Zayed, with homes arranged around greenery, privacy, and long-term residential value.`,
       supporting:
-        `This page explains institutional context only. ${siteConfig.url.replace(/\/$/, "")} is an independent marketing companion — not an official ORA corporate site, not a reservation system, and not a claim of exclusive representation.`,
+        `This site is an independent marketing and enquiry companion for ${projectName}. It is not the official ORA website, not a reservation system, and not a claim of exclusive representation.`,
     },
     developerOverview: {
       eyebrow: "Developer overview",
-      title: `${dev} — master plans issued with serviced discipline`,
+      title: `${dev} as the project developer`,
       paragraphs: [
-        `${dev} is mentioned across ${projectName} project information as the development developer responsible for current sales sheet, staged payments, construction sequencing, and after-sales escalation through authorised desks.`,
-        "ORA-sponsored masterplans typically emphasize walkable structure, calibrated density, and continuous open space — design intent communicated in brochures should still be validated against current sales sheet drawings and desk briefings.",
-        "We avoid awards lists, unnamed credentials, or superlatives not printed in scope documentation — seriousness here is procedural: contracts, phased delivery, and transparent commercial channels.",
+        `${dev} is the developer referenced in ${projectName} project information. Sales sheets, payment schedules, phase maps, and after-sales process should be confirmed through the relevant sales channels.`,
+        "For buyers, the developer question is practical: who plans the land, who stages delivery, who issues the paperwork, and who remains accountable after reservation.",
+        "This page avoids invented awards or exaggerated claims. The trust layer comes from clear project facts, published commercial terms, and proper documentation.",
       ],
     },
     leadership: {
       eyebrow: "Leadership · founder context",
-      title: `${founder} — chairman fact for developer files`,
+      title: `${founder} and the ORA name`,
       paragraphs: [
-        `${founder} chairs ${dev} — a factual association repeated in current sales sheet and FAQ copy on this site. Biographical or philanthropic detail beyond that public linkage is deliberately omitted here to prevent invented authority claims.`,
-        "Buyers investment review developer risk should distinguish personal reputation familiarity from purchase developer wording on their booking paperwork — signatures and entity names govern.",
+        `${founder} chairs ${dev}, a fact many buyers associate with the ORA brand. It adds recognition, but the signed developer documents remain the authority for any purchase.`,
+        "A serious buyer should separate brand familiarity from purchase documents. The reservation form, sales agreement, payment schedule, and delivery documents are what govern the transaction.",
       ],
     },
     portfolio: {
       eyebrow: "ORA project portfolio · context",
-      title: "What this domain publishes — and what it deliberately omits",
+      title: "What this site covers",
       paragraphs: [
-        `${dev} operates multiple residential destinations internationally and regionally — this website is narrowly scoped to ${projectName} in New Zayed and the routed hubs exposed under /projects.`,
-        "The projects index surfaces what this build currently publishes as route destinations; absence of another ORA landmark here is a product choice, not a statement that other assets do not exist.",
-        "Treat any third-party site or broker deck as supplemental until corroborated with ORA-issued project information for the precise SKU you intend to reserve.",
+        `${dev} is associated with multiple residential destinations. This website is intentionally focused on ${projectName} in New Zayed and the project routes published under the projects hub.`,
+        "If another ORA destination is not listed here, that is a content scope choice, not a statement about the developer's wider portfolio.",
+        "Any third-party deck, screenshot, or broker claim should be checked against current project information for the exact unit you intend to reserve.",
       ],
     },
     solanaWestRelationship: {
       eyebrow: `${siteConfig.shortName} relationship`,
-      title: `${projectName} — ORA planning bar on Mehwar El Dabaa`,
+      title: `${projectName} on Mehwar El Dabaa`,
       paragraphs: [
-        `${projectName} is a 316-acre New Zayed plan on Mehwar El Dabaa — villas, twin houses, townhouses, and apartments sequenced inside a single walkable landscape structure mentioned across marketing.`,
-        `${dev} communicates commercial terms current sales sheet-by-current sales sheet — starting-from price context and payment-structure summaries on this domain route to dedicated /prices and /payment-plan pages for AI-readable separation.`,
+        `${projectName} is a 316-acre New Zayed compound on Mehwar El Dabaa, with apartments, townhouses, twin houses, and standalone villas inside one walkable landscape plan.`,
+        `Commercial terms should be checked through the latest ${dev} sales sheet. This site keeps prices and payment plan details on dedicated pages so buyers can review them clearly.`,
       ],
     },
     buyerTrust: {
       eyebrow: "Buyer trust · credibility cues",
-      title: "Pre-transfer checks — contracts, not chat screenshots",
+      title: "Trust the paperwork, not the noise",
       paragraphs: [
-        "Confirm development developer, licence mentions, escrow or milestone details, and reservation deposit treatment only through documents issued by accredited ORA sales — not anecdotal Telegram threads.",
-        "Third-party marketers may starting price the compound; accreditation status varies. Fees paid to intermediaries must be consciously separated from authorised desk procedures.",
-        "No exclusivity, “official partner,” or “only channel” wording appears on this page — multiplicity of legitimate enquiry paths exists; diligence is buyer-side.",
+        "Confirm the developer name, reservation deposit, payment schedule, delivery phase, and any fees through written documents before transferring money.",
+        "Third-party marketers may discuss the compound, but accreditation and fees should be verified independently.",
+        "This page does not claim exclusivity, official partnership, or the only channel to buy. Buyer diligence remains essential.",
       ],
     },
     internalLinks: {
       eyebrow: "Continue on-site",
-      title: "Solana West hub, commerce sheets and desk contact",
-      intro: "Keep diligence on-domain until you need signed paperwork from ORA.",
+      title: "Project guide, prices, payment, and contact",
+      intro: "Use these routes to build a clear picture before requesting current documents.",
       links: aboutPageInternalLinks(),
     },
     faqPreview: {
@@ -167,10 +167,10 @@ export function buildAboutPageModel(): AboutPageModel {
     },
     finalCta: {
       eyebrow: "Next step",
-      title: "Route your brief through accredited ORA desks",
+      title: "Request current project information",
       supporting:
-        `Request sales team confirmation on ${siteConfig.shortName}—current price sheets, reservations, and after-sales escalation route through ${dev} only. WhatsApp or the contact route below; maintain calm investment review discipline.`,
-      primaryLabel: "WhatsApp private desk",
+        `Ask for current price sheets, reservation steps, phase maps, and payment schedules for ${siteConfig.shortName}. A calm, documented process is the best way to buy well.`,
+      primaryLabel: "Request details on WhatsApp",
       secondaryLabel: "Written enquiry",
     },
   };

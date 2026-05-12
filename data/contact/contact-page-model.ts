@@ -55,41 +55,41 @@ export function buildContactPageModel(): ContactPageModel {
     idPrefix: "contact-sw",
     heroImage,
     hero: {
-      locationEyebrow: "Inquiry desk · accredited sales",
-      h1: "Contact Solana West sales — New Zayed buyer enquiries",
+      locationEyebrow: "Solana West enquiries",
+      h1: "Contact Solana West sales",
       lead:
-        `Use this page to reach ${dev} for ${project} with minimal friction: direct channels for fast context, or a compact written enquiry when you prefer a recorded hand-off.`,
+        `Use this page to request current prices, payment plan details, available unit types, and site visit support for ${project}.`,
       supporting:
-        "No urgency framing and no implied inventory — responses follow accredited desk hours. WhatsApp and phone are often the fastest path to sales-confirmed answers.",
+        "WhatsApp and phone are usually the fastest way to get a clear answer. The form is better when you want to leave a written brief.",
     },
     overview: {
       eyebrow: "Contact overview",
-      title: "Accredited desks — how Solana West briefs route",
+      title: "What to ask before reserving",
       paragraphs: [
-        `${short} sales operate through ${dev}'s authorised workflow — quotations, payment steps, reservations, and after-sales escalation are documented desk-side, not improvised from chat excerpts alone.`,
-        "This inquiry layer is informational: align your preferred channel (instant messaging, voice, or structured form), then rely on current sales sheet paperwork for final commercial terms.",
-        "Prefer self-serve facts first — review prices, payment plan, location, and FAQ routes on this site; use contact when your brief requires typology routing or current sales sheet verification.",
+        `For ${short}, the most useful enquiry includes your preferred unit type, budget range, payment comfort, and timing.`,
+        "Ask for the current price sheet, available phases, payment schedule, delivery timing, and any fees before making a reservation decision.",
+        "If you are still comparing, review the prices, payment plan, location, and FAQ pages first, then contact the sales team with a clearer brief.",
       ],
     },
     reassurance: {
       eyebrow: "Inquiry reassurance",
-      title: "Routing integrity — no phantom inventory theatrics",
+      title: "Clear answers, no pressure language",
       paragraphs: [
-        "Three visible fields — name, phone, and typology preference — minimise friction while still routing sales-aware briefs.",
-        "Third-party intermediaries mentioning the compound are not vetted via this route — broker engagement remains your diligence matter unless ORA designates an accredited channel partner.",
+        "The form keeps the process simple: name, phone, and preferred unit type.",
+        "No fake countdowns, no invented stock claims, and no pressure to reserve before you have the documents you need.",
       ],
     },
     channels: {
       eyebrow: "Direct channels",
-      title: "WhatsApp, voice and email — one desk philosophy",
+      title: "WhatsApp, phone, email, or form",
       intro:
-        "Choose the modality that suits your investment review rhythm — all route into the same desk philosophy: calm, documentary, sales-team confirmed.",
+        "Choose the channel that fits the stage you are in. Fast questions usually belong on WhatsApp or phone; detailed briefs work well through the form.",
     },
     formColumn: {
       eyebrow: "Written enquiry",
-      title: "Short form — name, reachability, typology",
+      title: "Short form for serious enquiries",
       intro:
-        "Three fields capture who you are, how to reply, and which typology you are exploring — context attaches automatically for authorised desks.",
+        "Share your name, phone number, and preferred typology so the reply can focus on relevant availability and pricing.",
     },
     faqPreview: {
       intro: SOLANA_WEST_FAQ_SHARED_INTRO,
@@ -98,10 +98,10 @@ export function buildContactPageModel(): ContactPageModel {
     },
     finalCta: {
       eyebrow: "Still browsing?",
-      title: "Re-open prices, payments and New Zayed access",
+      title: "Review prices, payment, and location first",
       supporting:
-        `Cross-check pricing posture, payment structure, and New Zayed access before you reserve—then re-open WhatsApp or this form when your brief is ready for desk review.`,
-      primaryLabel: "WhatsApp private desk",
+        "If you are not ready to contact yet, compare the price entry, payment structure, and New Zayed access first. Then return with your preferred unit type.",
+      primaryLabel: "Ask on WhatsApp",
       secondaryLabel: "Prices route",
       secondaryHref: "/prices",
     },

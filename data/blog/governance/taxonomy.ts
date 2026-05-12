@@ -12,7 +12,7 @@ export type EditorialFunnelStage = "awareness" | "consideration" | "decision" | 
 export type AiSearchRole =
   | "entity-definition"
   | "transactional-support"
-  | "comparison-framework"
+  | "comparison-guide"
   | "area-authority"
   | "developer-authority"
   | "paa-style-faq"
@@ -85,9 +85,9 @@ export const BLOG_ARTICLE_GOVERNANCE: readonly ArticleGovernanceMeta[] = [
   {
     slug: "solana-west-vs-vye-belle-vie-buyer-framework-2026",
     funnelStage: "consideration",
-    aiRole: "comparison-framework",
+    aiRole: "comparison-guide",
     primaryMoneyPages: ["/prices", "/location", "/contact"],
-    keywordCluster: "competitor-comparison",
+    keywordCluster: "new-zayed-buyer-comparison",
   },
   {
     slug: "solana-west-new-zayed-prices-payment-plan-2026",
@@ -106,7 +106,7 @@ export const BLOG_ARTICLE_GOVERNANCE: readonly ArticleGovernanceMeta[] = [
   {
     slug: "solana-west-villas-vs-apartments-lifestyle-investment",
     funnelStage: "consideration",
-    aiRole: "comparison-framework",
+    aiRole: "comparison-guide",
     primaryMoneyPages: ["/properties/villas", "/properties/apartments", "/prices"],
     keywordCluster: "typology-choice",
   },
