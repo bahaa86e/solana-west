@@ -4,6 +4,7 @@ import type { LocationPageModel } from "@/data/location/location-page-model";
 import { LocationConnectivitySection } from "@/components/location/location-connectivity-section";
 import { LocationFaqPreviewSection } from "@/components/location/location-faq-preview-section";
 import { LocationFinalCtaSection } from "@/components/location/location-final-cta-section";
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { LocationHeroSection } from "@/components/location/location-hero-section";
 import { LocationInternalLinksSection } from "@/components/location/location-internal-links-section";
 import { LocationOverviewSection } from "@/components/location/location-overview-section";
@@ -14,6 +15,7 @@ export function LocationPageView({ model }: { model: LocationPageModel }) {
   return (
     <>
       <LocationHeroSection model={model} />
+      <GlobalHeroEnquirySection />
       <LocationOverviewSection model={model} />
       <LocationConnectivitySection model={model} />
       <PropertyTypeEditorialStackSection

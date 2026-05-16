@@ -3,6 +3,7 @@ import type { TransactionalPageModel } from "@/data/transactions/transaction-pag
 import { TransactionalBreakdownSection } from "@/components/transactions/transactional-breakdown-section";
 import { TransactionalFaqPreviewSection } from "@/components/transactions/transactional-faq-preview-section";
 import { TransactionalFinalCtaSection } from "@/components/transactions/transactional-final-cta-section";
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { TransactionalHeroSection } from "@/components/transactions/transactional-hero-section";
 import { TransactionalInternalLinksSection } from "@/components/transactions/transactional-internal-links-section";
 import { TransactionalOverviewSection } from "@/components/transactions/transactional-overview-section";
@@ -11,6 +12,7 @@ export function TransactionalPageView({ model }: { model: TransactionalPageModel
   return (
     <>
       <TransactionalHeroSection model={model} />
+      <GlobalHeroEnquirySection />
       <TransactionalOverviewSection model={model} />
       <TransactionalBreakdownSection model={model} />
       <TransactionalInternalLinksSection model={model} />

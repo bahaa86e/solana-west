@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { FaqAnswerParagraphs } from "@/components/faq/faq-answer-paragraphs";
 import { SectionMain } from "@/components/layout/section-main";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -41,6 +42,8 @@ export default function ArabicFaqPage() {
           </h1>
           <p className="lux-body mt-lux-stack-sm text-lux-ink/67 md:mt-lux-stack-md">{SOLANA_WEST_FAQ_SHARED_INTRO_AR}</p>
         </header>
+
+        <GlobalHeroEnquirySection />
 
         {SOLANA_WEST_AR_FAQ_GROUPS.map((group) => (
           <section key={group.id} className="mt-lux-stack-xl border-b border-lux-ink/[0.05] pb-lux-stack-lg last:border-none">

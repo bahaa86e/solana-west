@@ -4,6 +4,7 @@ import { ContactChannelsAndFormSection } from "@/components/contact/contact-chan
 import { ContactEditorialBlockSection } from "@/components/contact/contact-editorial-block-section";
 import { ContactFaqPreviewSection } from "@/components/contact/contact-faq-preview-section";
 import { ContactFinalCtaSection } from "@/components/contact/contact-final-cta-section";
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { ContactHeroSection } from "@/components/contact/contact-hero-section";
 
 export function ContactExperienceView({ model }: { model: ContactPageModel }) {
@@ -12,6 +13,7 @@ export function ContactExperienceView({ model }: { model: ContactPageModel }) {
   return (
     <>
       <ContactHeroSection model={model} />
+      <GlobalHeroEnquirySection />
       <ContactEditorialBlockSection
         tone="sand"
         block={{

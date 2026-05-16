@@ -2,6 +2,7 @@ import { CinematicStoryMoment } from "@/components/cinematic/cinematic-story-mom
 import { AmenitiesSection } from "@/components/home/amenities-section";
 import { FaqPreviewSection } from "@/components/home/faq-preview-section";
 import { FinalCtaSection } from "@/components/home/final-cta-section";
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { HeroSection } from "@/components/home/hero-section";
 import { HomeSnapshotSection } from "@/components/home/home-snapshot-section";
 import { CinematicInterlude } from "@/components/ui/cinematic-interlude";
@@ -26,6 +27,7 @@ export function HomeSections() {
   return (
     <>
       <HeroSection />
+      <GlobalHeroEnquirySection />
 
       <HomeSnapshotSection />
 

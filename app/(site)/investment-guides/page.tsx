@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { SectionMain } from "@/components/layout/section-main";
 import { investmentGuidesPageSeo } from "@/data/seo/routes";
 import { siteConfig } from "@/data/site";
@@ -65,6 +66,8 @@ export default function InvestmentGuidesPage() {
             to ask better questions before requesting current sales documents.
           </p>
         </header>
+
+        <GlobalHeroEnquirySection />
 
         <ul className="m-0 list-none space-y-0 p-0">
           {guides.map((g) => (

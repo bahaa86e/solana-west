@@ -4,6 +4,7 @@ import type { AboutPageModel } from "@/data/about/about-page-model";
 import { AboutDeveloperOverviewSection } from "@/components/about/about-developer-overview-section";
 import { AboutFaqPreviewSection } from "@/components/about/about-faq-preview-section";
 import { AboutFinalCtaSection } from "@/components/about/about-final-cta-section";
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { AboutHeroSection } from "@/components/about/about-hero-section";
 import { AboutInternalLinksSection } from "@/components/about/about-internal-links-section";
 
@@ -13,6 +14,7 @@ export function AboutPageView({ model }: { model: AboutPageModel }) {
   return (
     <>
       <AboutHeroSection model={model} />
+      <GlobalHeroEnquirySection />
       <AboutDeveloperOverviewSection model={model} />
       <PropertyTypeEditorialStackSection
         tone="paper"

@@ -72,6 +72,8 @@ export function LuxuryFillImage({
   );
 
   const useDual = Boolean(mobileSrc && mobileSrc !== src);
+  const mobilePriority = Boolean(priority);
+  const desktopPriority = Boolean(priority && !useDual);
 
   return (
     <div
@@ -88,9 +90,9 @@ export function LuxuryFillImage({
             alt={alt}
             fill
             sizes={sizes}
-            priority={priority}
+            priority={mobilePriority}
             quality={quality}
-            {...(priority ? { fetchPriority: "high" as const } : { loading: loading ?? ("lazy" as const) })}
+            {...(mobilePriority ? { fetchPriority: "high" as const } : { loading: loading ?? ("lazy" as const) })}
             className={cn(imgClasses, "lg:hidden")}
           />
           <Image
@@ -98,9 +100,9 @@ export function LuxuryFillImage({
             alt={alt}
             fill
             sizes={sizes}
-            priority={priority}
+            priority={desktopPriority}
             quality={quality}
-            {...(priority ? { fetchPriority: "high" as const } : { loading: loading ?? ("lazy" as const) })}
+            {...(desktopPriority ? { fetchPriority: "high" as const } : { loading: loading ?? ("lazy" as const) })}
             className={cn(imgClasses, "hidden lg:block")}
           />
         </>

@@ -1,12 +1,20 @@
 import Link from "next/link";
 
 import { FinalConversionPanel } from "@/components/conversion/final-conversion-panel";
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
+import { HomeHeroMediaLayer } from "@/components/home/home-hero-media-layer";
+import {
+  homeHeroCardClassName,
+  homeHeroContainerClassName,
+  homeHeroH1ClassName,
+  homeHeroSectionClassName,
+} from "@/components/home/home-hero-media";
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
+import { solanaWestMedia } from "@/data/media/solana-west";
 import { Container } from "@/components/ui/container";
 import { CtaButton } from "@/components/ui/cta-button";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
-import { solanaWestCanonicalFiles, solanaWestMedia } from "@/data/media/solana-west";
 import { SOLANA_WEST_AR_FAQ_GROUPS, SOLANA_WEST_FAQ_SHARED_INTRO_AR } from "@/data/faq/solana-west-faq-ar";
 import { siteConfig } from "@/data/site";
 import { englishPathToArabicPath } from "@/lib/i18n/paths";
@@ -29,53 +37,20 @@ export function ArabicHomePage() {
 
   return (
     <>
-      <section
-        aria-labelledby="ar-home-hero-heading"
-        className={cn(
-          "relative isolate overflow-hidden",
-          "min-h-[100dvh] supports-[height:100svh]:min-h-[100svh] bg-[#efeae2]",
-        )}
-      >
-        <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden>
-          <LuxuryFillImage
-            src={solanaWestMedia.hero.src}
-            mobileSrc={solanaWestCanonicalFiles.heroDaylightMobile}
-            alt="فيلات ومساحات خضراء في سولانا ويست نيو زايد من ORA Developer Egypt."
-            sizes="100vw"
-            priority
-            quality={92}
-            filmGrade={false}
-            imgClassName={cn(
-              "object-cover brightness-[1.085] saturate-[1.035] contrast-[0.982]",
-              "max-lg:min-h-[104%] max-lg:object-[center_30%] lg:object-[58%_42%]",
-            )}
-          />
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#fdfcfa]/45 via-transparent to-[#f5f0e6]/35" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[52%] bg-gradient-to-t from-[#faf7f2]/85 via-[#fdfcfa]/20 to-transparent" />
-        </div>
+      <section aria-labelledby="ar-home-hero-heading" className={homeHeroSectionClassName}>
+        <HomeHeroMediaLayer alt="فيلات ومساحات خضراء في سولانا ويست نيو زايد من ORA Developer Egypt." />
 
         <Container
           as="div"
           size="wide"
-          className="relative z-[15] flex min-h-[100dvh] supports-[height:100svh]:min-h-[100svh] flex-col justify-end pb-[max(5.75rem,calc(env(safe-area-inset-bottom,0px)+5rem))] pt-[clamp(5.25rem,calc(env(safe-area-inset-top,0px)+5rem),7rem)] lg:justify-center lg:pb-[clamp(2.25rem,5vh,3.75rem)] lg:pt-[clamp(5.75rem,min(11vh,6.5rem),6.5rem)]"
+          className={homeHeroContainerClassName}
         >
-          <article
-            className={cn(
-              "max-w-[min(40rem,100%)] rounded-[6px] border border-lux-ink/[0.08] bg-[#fdfcfa]/[0.97] px-[clamp(1.25rem,4vw,2.5rem)] py-[clamp(1.35rem,3.8vw,2.25rem)]",
-              "shadow-lux-soft",
-            )}
-          >
+          <article className={cn("max-w-[min(40rem,100%)] lg:max-w-[min(52rem,100%)]", homeHeroCardClassName)}>
             <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.14em] text-lux-ink/45 lg:text-[0.6875rem]">
               نيو زايد · محور الضبعة
             </p>
             <span className="mt-4 mb-6 block h-px max-w-[2.75rem] bg-lux-ink/[0.1]" aria-hidden />
-            <h1
-              id="ar-home-hero-heading"
-              className={cn(
-                "max-w-[min(22ch,100%)] text-balance font-display font-medium text-lux-ink",
-                "text-[clamp(2rem,2.4vw+0.92rem,2.875rem)] leading-[1.08] tracking-[-0.022em]",
-              )}
-            >
+            <h1 id="ar-home-hero-heading" className={homeHeroH1ClassName}>
               سولانا ويست نيو زايد من ORA Developer Egypt
             </h1>
 
@@ -110,6 +85,8 @@ export function ArabicHomePage() {
           </article>
         </Container>
       </section>
+
+      <GlobalHeroEnquirySection />
 
       <section className="border-t border-lux-ink/[0.06] bg-lux-paper py-section-block" aria-label="لمحة سريعة">
         <Container as="div">
@@ -204,7 +181,6 @@ export function ArabicHomePage() {
             supporting="أرسل نوع الوحدة، ميزانيتك التقريبية، وأفق الشراء أو الاستثمار. نرتّب لك الصورة التجارية بوضوح: السعر، المتاح، خطة السداد، وما يلزم مراجعته قبل الحجز."
             primaryLabel="تواصل عبر واتساب"
             secondaryLabel="احجز زيارة للمشروع"
-            secondaryHref={ar["/contact"]!}
             whatsAppTrackPlacement="ar_home_final_whatsapp"
           />
         </Container>

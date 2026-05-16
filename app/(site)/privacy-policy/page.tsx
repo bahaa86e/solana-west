@@ -1,18 +1,9 @@
-import Link from "next/link";
-
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { SectionMain } from "@/components/layout/section-main";
 import { privacyPolicyPageSeo } from "@/data/seo/routes";
-import { siteConfig } from "@/data/site";
 import { buildPageMetadata } from "@/seo/build-metadata";
-import { cn } from "@/lib/utils";
 
 export const metadata = buildPageMetadata(privacyPolicyPageSeo);
-
-const linkClass = cn(
-  "font-sans text-[0.9375rem] font-normal tracking-[0.012em] text-lux-ink/[0.88]",
-  "underline decoration-lux-gold/32 underline-offset-[0.38em]",
-  "transition-[color,decoration-color] hover:text-lux-ink hover:decoration-lux-gold/55",
-);
 
 export default function PrivacyPolicyPage() {
   return (
@@ -22,105 +13,108 @@ export default function PrivacyPolicyPage() {
           <p className="lux-eyebrow text-lux-ink/46">Privacy</p>
           <div className="mt-lux-stack-xs h-px w-9 bg-lux-gold/42 md:mt-lux-stack-sm" aria-hidden />
           <h1 id="privacy-heading" className="mt-lux-stack-xs max-w-[min(38ch,100%)] font-display text-display-xl text-lux-ink">
-            Privacy policy — Solana West New Zayed enquiries
+            Privacy Policy
           </h1>
           <p className="lux-body mt-lux-stack-sm text-lux-ink/67 md:mt-lux-stack-md">
-            This notice describes how {siteConfig.shortName} ({siteConfig.url}) handles information you share when you
-            enquire through a form, phone call, email, WhatsApp, or tracked link. It is written for clarity and does not
-            replace professional advice.
+            We respect the privacy of all visitors to this website and are committed to protecting any information shared
+            with us through contact forms, WhatsApp, phone calls, or other communication methods.
           </p>
         </header>
 
-        <div className="space-y-10 py-10 md:space-y-12 md:py-12">
-          <section aria-labelledby="privacy-controller">
-            <h2 id="privacy-controller" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              Who manages enquiries and how to reach us
-            </h2>
-            <p className="lux-body mt-4 text-lux-ink/70">
-              Enquiries are handled through the contact channels published on this site:&nbsp;
-              <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} className={linkClass}>
-                {siteConfig.phone}
-              </a>
-              ,&nbsp;
-              <a href={`mailto:${siteConfig.email}`} className={linkClass}>
-                {siteConfig.email}
-              </a>
-              , and the WhatsApp entry point linked in the header and footer.
-            </p>
-          </section>
+        <GlobalHeroEnquirySection />
 
-          <section aria-labelledby="privacy-data">
-            <h2 id="privacy-data" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              Personal and technical data this site may collect
+        <div className="space-y-10 py-10 md:space-y-12 md:py-12">
+          <section aria-labelledby="privacy-information">
+            <h2 id="privacy-information" className="font-display text-lux-display-sm font-medium text-lux-ink">
+              Information We Collect
             </h2>
-            <ul className="lux-body mt-4 list-disc space-y-2 pl-5 text-lux-ink/70">
-              <li>Identifiers you supply: name, phone number, email (if provided), and message content.</li>
-              <li>
-                Technical data from your visit: IP address, device/browser type, pages viewed, and approximate region
-                (via analytics or advertising pixels if enabled).
-              </li>
-              <li>Referral parameters from campaign URLs when present in the link you used.</li>
-            </ul>
+            <div className="lux-body mt-4 space-y-4 text-lux-ink/70">
+              <p>We may collect certain information voluntarily provided by users, including:</p>
+              <ul className="list-disc space-y-2 pl-5">
+                <li>Name</li>
+                <li>Phone Number</li>
+                <li>Email Address</li>
+                <li>Any information submitted through contact forms or messaging platforms</li>
+              </ul>
+            </div>
           </section>
 
           <section aria-labelledby="privacy-use">
             <h2 id="privacy-use" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              Why enquiries, analytics, and measurement exist here
+              How We Use Information
             </h2>
-            <ul className="lux-body mt-4 list-disc space-y-2 pl-5 text-lux-ink/70">
-              <li>Responding to pricing, payment-plan, brochure, and site-visit requests.</li>
-              <li>Measuring site performance, ad effectiveness, and conversion quality.</li>
-              <li>Securing the service and investigating abuse or fraud attempts.</li>
-            </ul>
+            <div className="lux-body mt-4 space-y-4 text-lux-ink/70">
+              <p>The information collected may be used for:</p>
+              <ul className="list-disc space-y-2 pl-5">
+                <li>Responding to inquiries and customer requests</li>
+                <li>Providing property details, prices, payment plans, and project information</li>
+                <li>Improving website content and user experience</li>
+                <li>Sharing updates, offers, and real estate opportunities</li>
+              </ul>
+            </div>
+          </section>
+
+          <section aria-labelledby="privacy-data-protection">
+            <h2 id="privacy-data-protection" className="font-display text-lux-display-sm font-medium text-lux-ink">
+              Data Protection
+            </h2>
+            <p className="lux-body mt-4 text-lux-ink/70">
+              We take appropriate measures to help protect user information and prevent unauthorized access, disclosure,
+              or misuse of personal data.
+            </p>
           </section>
 
           <section aria-labelledby="privacy-cookies">
             <h2 id="privacy-cookies" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              Cookies, pixels, and browser choices
+              Cookies
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
-              We may use cookies or local storage for analytics (e.g. Google Analytics), advertising measurement (e.g.
-              Google Ads tags), and social pixels (e.g. Meta) where implemented. Use your browser controls to limit
-              storage; blocking some tags may affect measurement only, not your ability to read public pages.
+              This website may use cookies and analytics tools to improve browsing experience, analyze website
+              performance, and measure advertising effectiveness.
             </p>
           </section>
 
-          <section aria-labelledby="privacy-retention">
-            <h2 id="privacy-retention" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              Retention
+          <section aria-labelledby="privacy-external-links">
+            <h2 id="privacy-external-links" className="font-display text-lux-display-sm font-medium text-lux-ink">
+              External Links
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
-              Enquiry records are kept only as long as needed to service your request, meet applicable formal or
-              accounting obligations, and defend claims. Aggregated analytics data may persist in vendor dashboards under
-              their own policies.
+              This website may contain links to external websites or third-party platforms. We are not responsible for
+              the privacy practices or content of those external websites.
             </p>
           </section>
 
-          <section aria-labelledby="privacy-rights">
-            <h2 id="privacy-rights" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              Access, correction, and platform controls
+          <section aria-labelledby="privacy-disclaimer">
+            <h2 id="privacy-disclaimer" className="font-display text-lux-display-sm font-medium text-lux-ink">
+              Disclaimer
             </h2>
-            <p className="lux-body mt-4 text-lux-ink/70">
-              You may ask to access, correct, or delete enquiry data we hold, subject to law. Contact us using the
-              details above. For third-party platforms (Meta, Google), use their privacy tools for ad preferences.
-            </p>
+            <div className="lux-body mt-4 space-y-4 text-lux-ink/70">
+              <p>
+                This website is created for informational, educational, and marketing purposes related to real estate
+                projects in Egypt, including prices, payment plans, unit types, and project-related information.
+              </p>
+              <p>
+                This website is an independent real estate marketing and informational platform and is not the official
+                website of ORA Developers Egypt.
+              </p>
+              <p>
+                Prices, availability, specifications, payment plans, and project details may change without prior notice.
+                Visitors are encouraged to verify the latest information before making any purchasing decisions.
+              </p>
+              <p>
+                All trademarks, logos, project names, and visual materials displayed on this website remain the property
+                of their respective owners.
+              </p>
+            </div>
           </section>
 
-          <section aria-labelledby="privacy-changes">
-            <h2 id="privacy-changes" className="font-display text-lux-display-sm font-medium text-lux-ink">
-              When this privacy notice updates
+          <section aria-labelledby="privacy-consent">
+            <h2 id="privacy-consent" className="font-display text-lux-display-sm font-medium text-lux-ink">
+              Consent
             </h2>
             <p className="lux-body mt-4 text-lux-ink/70">
-              We may update this page when our practices or partners change. The effective date is the date shown in your
-              browser when you last loaded this policy. Continue to the{" "}
-              <Link href="/" className={linkClass}>
-                homepage
-              </Link>{" "}
-              or{" "}
-              <Link href="/contact" className={linkClass}>
-                contact
-              </Link>{" "}
-              page.
+              By using this website, you agree to this Privacy Policy and consent to the collection and use of information
+              as described on this page.
             </p>
           </section>
         </div>

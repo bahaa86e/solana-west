@@ -2,16 +2,18 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useFormState, useFormStatus } from "react-dom";
-import { usePathname } from "next/navigation";
 
 import type { LeadFormState } from "@/app/(site)/contact/actions";
 import { submitLeadInquiry } from "@/app/(site)/contact/actions";
 import { ConversionValueChips } from "@/components/conversion/conversion-value-chips";
+import { LeadFormHiddenFields } from "@/components/forms/lead-form-hidden-fields";
 import { useEditorialCopy } from "@/components/i18n/editorial-copy-context";
 import { useSiteLocale } from "@/components/i18n/site-locale-context";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { CtaButton } from "@/components/ui/cta-button";
 import { siteConfig } from "@/data/site";
+import { CONTACT_FORM_SURFACE } from "@/lib/lead-form-surfaces";
+import { createLeadRequestId } from "@/lib/lead-form-rid";
 import { LEAD_INTEREST_OPTIONS, type LeadInterestOption } from "@/lib/lead-interest-options";
 import { leadInterestArabicDisplay } from "@/lib/lead-interest-display-ar";
 import { cn } from "@/lib/utils";
@@ -58,24 +60,16 @@ function LeadSubmitButton({ disabled }: { disabled?: boolean }) {
 }
 
 export function LeadInquiryForm() {
-  const pathname = usePathname() ?? "/";
   const locale = useSiteLocale();
   const { croMessaging } = useEditorialCopy();
   const ar = locale === "ar";
 
-  const [clientContext, setClientContext] = useState({ domain: "", referrer: "" });
+  const [leadRid] = useState(createLeadRequestId);
 
   /** Full-page navigation after success so thank-you conversions and cookies fire reliably */
   const redirectOnce = useRef(false);
   const [redirecting, setRedirecting] = useState(false);
   const errorAlertRef = useRef<HTMLParagraphElement>(null);
-
-  useEffect(() => {
-    setClientContext({
-      domain: typeof window !== "undefined" ? window.location.hostname : "",
-      referrer: typeof document !== "undefined" ? document.referrer : "",
-    });
-  }, []);
 
   const [state, formAction] = useFormState(submitLeadInquiry, initialLeadState);
 
@@ -125,11 +119,7 @@ export function LeadInquiryForm() {
         </p>
       </div>
 
-      <input type="hidden" name="page_pathname" value={pathname} readOnly aria-hidden />
-
-      <input type="hidden" name="website_domain_client" value={clientContext.domain} readOnly aria-hidden />
-
-      <input type="hidden" name="referrer_client" value={clientContext.referrer} readOnly aria-hidden />
+      <LeadFormHiddenFields formSurface={CONTACT_FORM_SURFACE} rid={leadRid} />
 
       <fieldset className="m-0 min-w-0 space-y-7 border-0 p-0 max-lg:space-y-8">
         <legend className="sr-only">{labels.legend}</legend>

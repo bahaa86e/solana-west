@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { SectionMain } from "@/components/layout/section-main";
 import { privacyPolicyPageSeoAr } from "@/data/seo/ar-routes-registry";
 import { siteConfig } from "@/data/site";
@@ -33,6 +34,8 @@ export default function ArabicPrivacyPolicyPage() {
             عبر النموذج أو الهاتف أو البريد أو واتساب أو روابط القياس. النص للتوضيح ولا يُعد استشارة قانونية.
           </p>
         </header>
+
+        <GlobalHeroEnquirySection />
 
         <div className="space-y-10 py-10 md:space-y-12 md:py-12">
           <section aria-labelledby="privacy-controller-ar">

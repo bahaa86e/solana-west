@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { SectionMain } from "@/components/layout/section-main";
 import { cn } from "@/lib/utils";
 
@@ -43,6 +44,8 @@ export function ArEditorialArticle({
             <p className="lux-body mt-lux-stack-sm text-lux-ink/67 md:mt-lux-stack-md">{intro}</p>
           : null}
         </header>
+
+        <GlobalHeroEnquirySection />
 
         <div className="mt-lux-stack-lg space-y-lux-stack-xl md:mt-lux-stack-xl">
           {sections.map((s) => (

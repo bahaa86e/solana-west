@@ -2,6 +2,7 @@ import type { BlogIndexPageModel } from "@/data/blog/blog-index-model";
 
 import { BlogAuthorityLinksSection } from "@/components/blog/blog-authority-links-section";
 import { BlogFinalCtaSection } from "@/components/blog/blog-final-cta-section";
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { BlogIndexHeroSection } from "@/components/blog/blog-index-hero-section";
 import { BlogIndexIntroSection } from "@/components/blog/blog-index-intro-section";
 import { BlogIndexTopicsSection } from "@/components/blog/blog-index-topics-section";
@@ -12,6 +13,7 @@ export function BlogIndexPageView({ model }: { model: BlogIndexPageModel }) {
   return (
     <>
       <BlogIndexHeroSection model={model} />
+      <GlobalHeroEnquirySection />
       <BlogIndexIntroSection model={model} />
       <BlogIndexTopicsSection model={model} />
       <BlogAuthorityLinksSection

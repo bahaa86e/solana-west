@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { SectionMain } from "@/components/layout/section-main";
 import { comparisonPagesSeoAr } from "@/data/seo/ar-routes-registry";
 import { siteConfig } from "@/data/site";
@@ -33,6 +34,8 @@ export default function ArabicComparisonPagesHub() {
             عند التسليم. تُذكر VYE وBelle Vie كمراجع سوقية في نيو زايد فقط، دون انتماء أو شراكة.
           </p>
         </header>
+
+        <GlobalHeroEnquirySection />
 
         <section className="border-b border-lux-ink/[0.06] py-10 md:py-12" aria-labelledby="comparison-framework-ar">
           <h2 id="comparison-framework-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">

@@ -1,3 +1,4 @@
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { FaqAnswerParagraphs } from "@/components/faq/faq-answer-paragraphs";
 import { SectionMain } from "@/components/layout/section-main";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -37,6 +38,8 @@ export default function FaqPage() {
           </h1>
           <p className="lux-body mt-lux-stack-sm text-lux-ink/67 md:mt-lux-stack-md">{SOLANA_WEST_FAQ_SHARED_INTRO}</p>
         </header>
+
+        <GlobalHeroEnquirySection />
 
         {SOLANA_WEST_FAQ_SECTION_ORDER.map((sectionId) => {
           const pairs = SOLANA_WEST_FAQ_EXPANDED_ITEMS.map((item, globalIndex) => ({

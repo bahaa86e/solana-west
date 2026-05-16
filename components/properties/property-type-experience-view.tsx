@@ -4,6 +4,7 @@ import { PropertyTypeEditorialStackSection } from "@/components/properties/prope
 import { PropertyTypeFaqPreviewSection } from "@/components/properties/property-type-faq-preview-section";
 import { PropertyTypeFeaturesSection } from "@/components/properties/property-type-features-section";
 import { PropertyTypeFinalCtaSection } from "@/components/properties/property-type-final-cta-section";
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { PropertyTypeHeroSection } from "@/components/properties/property-type-hero-section";
 import { PropertyTypeOverviewSection } from "@/components/properties/property-type-overview-section";
 import { PropertyTypeRelatedProjectSection } from "@/components/properties/property-type-related-project-section";
@@ -14,6 +15,7 @@ export function PropertyTypeExperienceView({ model }: { model: PropertyExperienc
   return (
     <>
       <PropertyTypeHeroSection model={model} />
+      <GlobalHeroEnquirySection />
       <PropertyTypeOverviewSection model={model} />
       <PropertyTypeEditorialStackSection
         tone="paper"

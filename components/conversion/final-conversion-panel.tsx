@@ -6,6 +6,7 @@ import { SectionHeader } from "@/components/sections/section-header";
 import { CtaButton } from "@/components/ui/cta-button";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { siteConfig } from "@/data/site";
+import { ENQUIRY_FORM_HASH } from "@/lib/enquiry-form-anchor";
 import { cn } from "@/lib/utils";
 
 export type FinalConversionPanelProps = {
@@ -15,7 +16,7 @@ export type FinalConversionPanelProps = {
   supporting: string;
   primaryLabel: string;
   secondaryLabel: string;
-  /** When the secondary action is not `/contact`. */
+  /** Override when the secondary action is not the sitewide enquiry block. */
   secondaryHref?: string;
   whatsAppTrackPlacement?: string;
 };
@@ -29,7 +30,7 @@ export function FinalConversionPanel({
   supporting,
   primaryLabel,
   secondaryLabel,
-  secondaryHref = "/contact",
+  secondaryHref = ENQUIRY_FORM_HASH,
   whatsAppTrackPlacement = "final_cta_whatsapp",
 }: FinalConversionPanelProps) {
   const { croMessaging } = useEditorialCopy();

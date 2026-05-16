@@ -1,6 +1,7 @@
 import type { BlogArticleDocument } from "@/data/blog/types";
 
 import { BlogArticleBodySection } from "@/components/blog/blog-article-body-section";
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { BlogArticleHeroSection } from "@/components/blog/blog-article-hero-section";
 import { BlogArticleIntroSection } from "@/components/blog/blog-article-intro-section";
 import { BlogArticleInternalLinksSection } from "@/components/blog/blog-article-internal-links-section";
@@ -12,6 +13,7 @@ export function BlogArticlePageView({ doc }: { doc: BlogArticleDocument }) {
   return (
     <>
       <BlogArticleHeroSection doc={doc} />
+      <GlobalHeroEnquirySection />
       <BlogArticleIntroSection doc={doc} />
       {doc.sections.map((section, index) => (
         <BlogArticleBodySection key={section.id} docSlug={doc.slug} section={section} index={index} />

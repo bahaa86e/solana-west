@@ -1,13 +1,11 @@
 "use client";
 
 import type { SVGProps } from "react";
-import Link from "next/link";
 
 import { PhoneIcon } from "@/components/icons/phone";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { useEditorialCopy } from "@/components/i18n/editorial-copy-context";
-import { useSiteLocale } from "@/components/i18n/site-locale-context";
-import { localizedPathname } from "@/lib/i18n/paths";
+import { ENQUIRY_FORM_HASH } from "@/lib/enquiry-form-anchor";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -50,10 +48,7 @@ const altCell = cn(
 
 export function StickyMobileCtaBar({ className }: BarProps) {
   const tel = siteConfig.phone.replace(/\s/g, "");
-  const locale = useSiteLocale();
   const { croMessaging } = useEditorialCopy();
-  const contactHref = localizedPathname("/contact", locale);
-
   return (
     <div
       className={cn(
@@ -96,8 +91,8 @@ export function StickyMobileCtaBar({ className }: BarProps) {
           </span>
           <span className="sr-only"> {siteConfig.phone}</span>
         </a>
-        <Link
-          href={contactHref}
+        <a
+          href={ENQUIRY_FORM_HASH}
           className={altCell}
           data-track="cta_click"
           data-track-placement="sticky_mobile_contact_form"
@@ -107,7 +102,7 @@ export function StickyMobileCtaBar({ className }: BarProps) {
             {croMessaging.stickyEnquiryLabel}
             <span className="max-[380px]:sr-only"> form</span>
           </span>
-        </Link>
+        </a>
       </div>
     </div>
   );

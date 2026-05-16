@@ -15,4 +15,4 @@ export const footerAuthority = {
 } as const;
 
 export const footerLegalDisclaimer =
-  "Prices, availability, delivery dates, and payment plans can change by phase and unit. This site supports informed enquiries and does not replace official sales documents.";
+  "Independent real estate marketing and informational platform. Prices, availability, delivery dates, and payment plans can change by phase and unit. This site supports informed enquiries and does not replace official sales documents.";

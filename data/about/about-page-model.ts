@@ -109,7 +109,7 @@ export function buildAboutPageModel(): AboutPageModel {
       lead:
         `${projectName} is developed by ${dev}, chaired by ${founder}. The project brings a 316-acre low-density master plan to New Zayed, with homes arranged around greenery, privacy, and long-term residential value.`,
       supporting:
-        `This site is an independent marketing and enquiry companion for ${projectName}. It is not the official ORA website, not a reservation system, and not a claim of exclusive representation.`,
+        "This website operates as an independent real estate marketing and informational platform focused on premium residential projects in Egypt. It is not the official ORA website, not a reservation system, and not a claim of exclusive representation.",
     },
     developerOverview: {
       eyebrow: "Developer overview",

@@ -3,6 +3,7 @@ import type { ProjectsHubPageModel } from "@/data/projects/projects-hub-model";
 
 import { ProjectsHubFaqPreviewSection } from "@/components/projects-hub/projects-hub-faq-preview-section";
 import { ProjectsHubFinalCtaSection } from "@/components/projects-hub/projects-hub-final-cta-section";
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { ProjectsHubHeroSection } from "@/components/projects-hub/projects-hub-hero-section";
 import { ProjectsHubInternalLinksSection } from "@/components/projects-hub/projects-hub-internal-links-section";
 import { ProjectsHubOverviewSection } from "@/components/projects-hub/projects-hub-overview-section";
@@ -14,6 +15,7 @@ export function ProjectsHubPageView({ model }: { model: ProjectsHubPageModel }) 
   return (
     <>
       <ProjectsHubHeroSection model={model} />
+      <GlobalHeroEnquirySection />
       <ProjectsHubOverviewSection model={model} />
       <PropertyTypeEditorialStackSection
         tone="sand"

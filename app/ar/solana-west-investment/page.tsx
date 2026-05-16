@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { SectionMain } from "@/components/layout/section-main";
 import { investmentGuidesPageSeoAr } from "@/data/seo/ar-routes-registry";
 import { siteConfig } from "@/data/site";
@@ -66,6 +67,8 @@ export default function ArabicInvestmentGuidesPage() {
             أو مراجعة قانونية مستقلة، أو تأكيدات الجهة المطوّرة.
           </p>
         </header>
+
+        <GlobalHeroEnquirySection />
 
         <ul className="m-0 list-none space-y-0 p-0">
           {guides.map((g) => (

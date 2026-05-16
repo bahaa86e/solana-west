@@ -3,6 +3,7 @@ import type { MasterPlanPageModel } from "@/data/master-plan/master-plan-page-mo
 
 import { MasterPlanFaqPreviewSection } from "@/components/master-plan/master-plan-faq-preview-section";
 import { MasterPlanFinalCtaSection } from "@/components/master-plan/master-plan-final-cta-section";
+import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { MasterPlanHeroSection } from "@/components/master-plan/master-plan-hero-section";
 import { MasterPlanInternalLinksSection } from "@/components/master-plan/master-plan-internal-links-section";
 import { MasterPlanOverviewSection } from "@/components/master-plan/master-plan-overview-section";
@@ -14,6 +15,7 @@ export function MasterPlanPageView({ model }: { model: MasterPlanPageModel }) {
   return (
     <>
       <MasterPlanHeroSection model={model} />
+      <GlobalHeroEnquirySection />
       <MasterPlanOverviewSection model={model} />
       <MasterPlanSpatialSection model={model} />
       <PropertyTypeEditorialStackSection

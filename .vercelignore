@@ -1,0 +1,8 @@
+# Production upload exclusions — source files remain in the repository.
+# Next.js build only needs app/, components/, data/, lib/, public/, seo/, and config.
+
+.cursor
+docs
+scripts
+.env
+.env*.local

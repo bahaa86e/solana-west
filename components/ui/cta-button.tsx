@@ -18,6 +18,8 @@ const variants = {
     "border border-transparent bg-transparent text-lux-ink hover:border-lux-ink/[0.08] hover:bg-lux-ink/[0.025] active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
   inverse:
     "border border-white/26 bg-white/[0.12] text-lux-paper shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_8px_28px_-22px_rgba(45,42,37,0.12)] hover:border-white/34 hover:bg-white/[0.18] hover:shadow-[0_10px_32px_-22px_rgba(45,42,37,0.14)] motion-reduce:hover:shadow-[0_8px_28px_-22px_rgba(45,42,37,0.12)] active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
+  gold:
+    "border border-lux-gold/45 bg-gradient-to-b from-[#e8d4b0] via-lux-gold to-[#b8945f] text-[#1f1a14] shadow-[0_12px_36px_-22px_rgba(196,165,116,0.55),inset_0_1px_0_rgba(255,255,255,0.35)] hover:border-lux-gold/60 hover:from-[#edd9b8] hover:via-[#d4b88a] hover:to-[#c4a06a] hover:shadow-[0_14px_40px_-20px_rgba(196,165,116,0.62)] motion-reduce:hover:shadow-[0_12px_36px_-22px_rgba(196,165,116,0.55)] active:translate-y-px focus-visible:ring-lux-gold/[0.85] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1419]",
 } as const;
 
 const sizes = {
@@ -89,6 +91,15 @@ export function CtaButton(props: CtaButtonProps) {
           target="_blank"
           {...rest}
         >
+          <CtaContent leadingIcon={leadingIcon}>{linkChildren}</CtaContent>
+        </a>
+      );
+    }
+
+    /** Hash-only anchors use native `<a>` so same-page scroll works in Next.js, Safari, and Chrome. */
+    if (href.startsWith("#")) {
+      return (
+        <a href={href} className={classes} {...rest}>
           <CtaContent leadingIcon={leadingIcon}>{linkChildren}</CtaContent>
         </a>
       );
