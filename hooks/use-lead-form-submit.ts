@@ -2,10 +2,11 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import { loadTrackingSurface } from "@/data/tracking-config";
+import { buildFormSubmitMessage } from "@/lib/lead/build-formsubmit-message";
 import { validateLeadFormClient, type LeadFormKind } from "@/lib/lead/client-validate";
 import { leadErrorCopy } from "@/lib/lead/copy";
-import { submitLeadInquiry } from "@/lib/lead/submit-lead-inquiry";
-import { isSafeLeadThankYouRedirect } from "@/lib/lead/thank-you";
+import { emitVerifiedLeadConversion } from "@/lib/tracking/dispatch";
 
 type UseLeadFormSubmitOptions = {
   formKind?: LeadFormKind;
@@ -16,13 +17,22 @@ function readIsAr(form: HTMLFormElement): boolean {
   return language === "ar";
 }
 
+function markLeadConversionFired(rid: string): void {
+  try {
+    sessionStorage.setItem(`lux_lead_rid_${rid}`, "1");
+  } catch {
+    /* noop */
+  }
+}
+
+/**
+ * Client validation + tracking pulse, then native POST to FormSubmit.co.
+ */
 export function useLeadFormSubmit(options?: UseLeadFormSubmitOptions) {
   const formKind = options?.formKind ?? "contact";
   const [submitting, setSubmitting] = useState(false);
-  const [redirecting, setRedirecting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const errorAlertRef = useRef<HTMLParagraphElement>(null);
-  const redirectOnce = useRef(false);
 
   useEffect(() => {
     if (errorMessage && errorAlertRef.current) {
@@ -31,50 +41,45 @@ export function useLeadFormSubmit(options?: UseLeadFormSubmitOptions) {
   }, [errorMessage]);
 
   const handleSubmit = useCallback(
-    async (event: React.FormEvent<HTMLFormElement>) => {
+    (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      if (submitting || redirecting || redirectOnce.current) return;
+      if (submitting) return;
 
       const form = event.currentTarget;
       const isAr = readIsAr(form);
       const c = leadErrorCopy(isAr);
 
       setErrorMessage(null);
-      setSubmitting(true);
 
       const formData = new FormData(form);
       const clientCheck = validateLeadFormClient(formData, formKind);
       if (!clientCheck.ok) {
-        setSubmitting(false);
         setErrorMessage(clientCheck.message);
         return;
       }
 
-      const result = await submitLeadInquiry(formData);
-
-      if (result.ok && result.redirectTo && isSafeLeadThankYouRedirect(result.redirectTo)) {
-        redirectOnce.current = true;
-        setRedirecting(true);
-        window.location.assign(result.redirectTo);
-        return;
+      const messageField = form.elements.namedItem("message");
+      if (messageField instanceof HTMLTextAreaElement || messageField instanceof HTMLInputElement) {
+        messageField.value = buildFormSubmitMessage(formData, formKind);
       }
 
-      setSubmitting(false);
-
-      if (result.ok) {
-        setErrorMessage(result.message ?? c.redirectUnavailable);
-        return;
+      const rid = formData.get("rid");
+      if (typeof rid === "string" && rid.trim()) {
+        markLeadConversionFired(rid.trim());
       }
 
-      setErrorMessage(result.message ?? c.deliveryFailed);
+      setSubmitting(true);
+
+      emitVerifiedLeadConversion(loadTrackingSurface());
+
+      form.submit();
     },
-    [submitting, redirecting, formKind],
+    [submitting, formKind],
   );
 
   return {
     handleSubmit,
     submitting,
-    redirecting,
     errorMessage,
     errorAlertRef,
   };

@@ -11,6 +11,7 @@ import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { CtaButton } from "@/components/ui/cta-button";
 import { LuxurySelect } from "@/components/ui/luxury-select";
 import { siteConfig } from "@/data/site";
+import { formSubmitConfig } from "@/data/lead-formsubmit";
 import { CONTACT_FORM_SURFACE } from "@/lib/lead-form-surfaces";
 import { createLeadRequestId } from "@/lib/lead-form-rid";
 import { LEAD_INTEREST_OPTIONS, type LeadInterestOption } from "@/lib/lead-interest-options";
@@ -37,7 +38,7 @@ export function LeadInquiryForm() {
   const ar = locale === "ar";
 
   const [leadRid] = useState(createLeadRequestId);
-  const { handleSubmit, submitting, redirecting, errorMessage, errorAlertRef } = useLeadFormSubmit({
+  const { handleSubmit, submitting, errorMessage, errorAlertRef } = useLeadFormSubmit({
     formKind: "contact",
   });
 
@@ -62,7 +63,14 @@ export function LeadInquiryForm() {
       };
 
   return (
-    <form onSubmit={handleSubmit} aria-label={labels.aria} className="max-w-md space-y-8 max-lg:space-y-9" noValidate>
+    <form
+      method="POST"
+      action={formSubmitConfig.action}
+      onSubmit={handleSubmit}
+      aria-label={labels.aria}
+      className="max-w-md space-y-8 max-lg:space-y-9"
+      noValidate
+    >
       <div className="space-y-4">
         <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.28em] text-lux-ink/40">
           {croMessaging.leadFormEyebrow}
@@ -75,7 +83,7 @@ export function LeadInquiryForm() {
 
       <LeadFormHiddenFields formSurface={CONTACT_FORM_SURFACE} rid={leadRid} />
 
-      <fieldset className="m-0 min-w-0 space-y-7 border-0 p-0 max-lg:space-y-8" disabled={submitting || redirecting}>
+      <fieldset className="m-0 min-w-0 space-y-7 border-0 p-0 max-lg:space-y-8" disabled={submitting}>
         <legend className="sr-only">{labels.legend}</legend>
 
         <div className={fieldWrap}>
@@ -138,18 +146,12 @@ export function LeadInquiryForm() {
           </p>
         : null}
 
-        {redirecting ?
-          <p className="text-[0.8125rem] leading-relaxed text-lux-ink/52" aria-live="polite">
-            {ar ? "إعادة التوجيه إلى صفحة التأكيد…" : "Taking you to the confirmation page…"}
-          </p>
-        : null}
-
         <p className="text-[0.8125rem] leading-relaxed tracking-[0.01em] text-lux-ink/52 md:text-[0.84375rem]">
           {croMessaging.leadFormRoutingNote}
         </p>
 
         <div className="flex flex-col gap-2.5 max-lg:gap-3">
-          <CtaButton type="submit" variant="primary" size="lg" disabled={submitting || redirecting} className="w-full">
+          <CtaButton type="submit" variant="primary" size="lg" disabled={submitting} className="w-full">
             {submitting ? croMessaging.leadFormSubmitPending : croMessaging.leadFormSubmitIdle}
           </CtaButton>
           <CtaButton

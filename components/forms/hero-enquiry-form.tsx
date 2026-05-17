@@ -34,6 +34,7 @@ import {
 } from "@/lib/hero-lead-options";
 
 import { createLeadRequestId } from "@/lib/lead-form-rid";
+import { formSubmitConfig } from "@/data/lead-formsubmit";
 
 import { cn } from "@/lib/utils";
 
@@ -51,7 +52,7 @@ export function HeroEnquiryForm() {
 
   const [leadRid] = useState(createLeadRequestId);
 
-  const { handleSubmit, submitting, redirecting, errorMessage, errorAlertRef } = useLeadFormSubmit({
+  const { handleSubmit, submitting, errorMessage, errorAlertRef } = useLeadFormSubmit({
     formKind: "hero",
   });
 
@@ -111,13 +112,20 @@ export function HeroEnquiryForm() {
 
   return (
 
-    <form onSubmit={handleSubmit} aria-label={labels.aria} className="w-full" noValidate>
+    <form
+      method="POST"
+      action={formSubmitConfig.action}
+      onSubmit={handleSubmit}
+      aria-label={labels.aria}
+      className="w-full"
+      noValidate
+    >
 
       <LeadFormHiddenFields formSurface={HERO_ENQUIRY_FORM_SURFACE} rid={leadRid} />
 
 
 
-      <fieldset className="m-0 min-w-0 space-y-6 border-0 p-0 max-lg:space-y-7 lg:space-y-[1.875rem]" disabled={submitting || redirecting}>
+      <fieldset className="m-0 min-w-0 space-y-6 border-0 p-0 max-lg:space-y-7 lg:space-y-[1.875rem]" disabled={submitting}>
 
         <legend className="sr-only">{labels.legend}</legend>
 
@@ -280,17 +288,6 @@ export function HeroEnquiryForm() {
 
 
 
-        {redirecting ?
-
-          <p className="lux-enquiry-status" aria-live="polite">
-
-            {ar ? "إعادة التوجيه إلى صفحة التأكيد…" : "Taking you to the confirmation page…"}
-
-          </p>
-
-        : null}
-
-
 
         <div className="lux-enquiry-actions">
 
@@ -302,7 +299,7 @@ export function HeroEnquiryForm() {
 
             size="lg"
 
-            disabled={submitting || redirecting}
+            disabled={submitting}
 
             className="w-full !min-h-[3.25rem] !rounded-[12px] !tracking-[0.04em] max-lg:!min-h-[3.375rem]"
 
