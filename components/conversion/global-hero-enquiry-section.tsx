@@ -43,27 +43,16 @@ export function GlobalHeroEnquirySection() {
     >
 
       <div
-
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_92%_68%_at_14%_-8%,rgba(196,165,116,0.11)_0%,transparent_54%)]"
-
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_88%_72%_at_12%_0%,rgba(196,165,116,0.14)_0%,transparent_58%)]"
         aria-hidden
-
       />
-
       <div
-
-        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#0f1520]/95 via-[#080c12] to-[#05070c]"
-
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_88%_100%,rgba(252,250,246,0.85)_0%,transparent_62%)]"
         aria-hidden
-
       />
-
       <div
-
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-lux-champagne/28 to-transparent"
-
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[rgba(186,160,112,0.22)] to-transparent"
         aria-hidden
-
       />
 
 
@@ -78,11 +67,11 @@ export function GlobalHeroEnquirySection() {
 
       >
 
-        <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,22.5rem)] lg:gap-16 xl:grid-cols-[minmax(0,1.08fr)_minmax(0,23.5rem)] xl:gap-[4.5rem]">
+        <div className="grid items-start gap-12 lg:items-center lg:grid-cols-[minmax(0,1fr)_minmax(0,21rem)] lg:gap-[4.25rem] xl:grid-cols-[minmax(0,1.12fr)_minmax(0,21.5rem)] xl:gap-[4.75rem]">
 
           <HeroEnquirySectionContent />
 
-          <div className="lux-enquiry-card p-[clamp(1.5rem,3.8vw,2.125rem)] max-lg:mx-auto max-lg:w-full max-lg:max-w-[24rem]">
+          <div className="lux-enquiry-card p-[clamp(1.5rem,3.8vw,2.125rem)] max-lg:mx-auto max-lg:w-full max-lg:max-w-[23rem] lg:max-w-[21.5rem] lg:justify-self-center">
 
             <HeroEnquiryForm />
 

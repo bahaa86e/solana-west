@@ -20,6 +20,12 @@ const variants = {
     "border border-white/26 bg-white/[0.12] text-lux-paper shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_8px_28px_-22px_rgba(45,42,37,0.12)] hover:border-white/34 hover:bg-white/[0.18] hover:shadow-[0_10px_32px_-22px_rgba(45,42,37,0.14)] motion-reduce:hover:shadow-[0_8px_28px_-22px_rgba(45,42,37,0.12)] active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
   gold:
     "border border-[#d4bc94]/55 bg-gradient-to-b from-[#f0e2c8] via-[#d9c29a] to-[#b89562] text-[#1a1610] shadow-[0_16px_44px_-20px_rgba(196,165,116,0.62),inset_0_1px_0_rgba(255,255,255,0.42),inset_0_-1px_0_rgba(120,96,62,0.18)] hover:border-[#e2cda8]/65 hover:from-[#f5e8d0] hover:via-[#e0c8a0] hover:to-[#c4a06c] hover:shadow-[0_18px_48px_-18px_rgba(196,165,116,0.72)] motion-reduce:hover:shadow-[0_16px_44px_-20px_rgba(196,165,116,0.62)] active:translate-y-px focus-visible:ring-lux-gold/[0.85] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0e14]",
+  /** Hero enquiry — refined ORA navy primary */
+  navy:
+    "border border-[#213459] bg-[#213459] text-white shadow-[0_12px_32px_rgba(33,52,89,0.18)] hover:border-[#182846] hover:bg-[#182846] hover:shadow-[0_14px_36px_rgba(33,52,89,0.22)] motion-reduce:hover:shadow-[0_12px_32px_rgba(33,52,89,0.18)] active:translate-y-px focus-visible:ring-[rgba(33,52,89,0.28)] focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8f5ef]",
+  /** Hero enquiry — muted navy secondary (WhatsApp path) */
+  whatsappIvory:
+    "border border-[#213459]/12 bg-[#213459]/[0.06] text-[#213459] shadow-none hover:border-[#213459]/18 hover:bg-[#213459]/10 hover:shadow-none motion-reduce:hover:shadow-none active:translate-y-px focus-visible:ring-[rgba(33,52,89,0.22)] focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8f5ef]",
 } as const;
 
 const sizes = {

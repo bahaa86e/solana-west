@@ -350,32 +350,23 @@
 }
 
 /**
- * Sitewide hero enquiry — dark editorial field system (ORA / Emaar hospitality tone).
+ * Sitewide hero enquiry — warm ivory editorial (ORA / Aman presentation tone).
  * Scoped utilities; forms keep existing field names and submit logic.
  */
 @layer components {
   .lux-enquiry-section {
-    background-color: #070a10;
-    border-color: rgb(255 255 255 / 0.05);
-    color-scheme: dark;
+    background: linear-gradient(180deg, #fcfaf6 0%, #f8f5ef 42%, #f6f1e8 100%);
+    border-color: rgb(186 160 112 / 0.18);
+    color-scheme: light;
   }
 
   .lux-enquiry-card {
-    border-radius: 10px;
-    border: 1px solid rgb(255 255 255 / 0.09);
-    background: linear-gradient(
-      165deg,
-      rgb(22 28 40 / 72%) 0%,
-      rgb(12 16 24 / 88%) 48%,
-      rgb(8 10 16 / 94%) 100%
-    );
-    backdrop-filter: blur(20px) saturate(120%);
-    -webkit-backdrop-filter: blur(20px) saturate(120%);
-    box-shadow:
-      0 28px 72px -48px rgb(0 0 0 / 68%),
-      0 10px 28px -22px rgb(0 0 0 / 40%),
-      inset 0 1px 0 rgb(255 255 255 / 0.09),
-      inset 0 0 0 1px rgb(196 165 116 / 0.05);
+    border-radius: 18px;
+    border: 1px solid rgb(186 160 112 / 0.16);
+    background: rgb(255 255 255 / 0.78);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 24px 80px rgb(15 15 15 / 0.08);
   }
 
   .lux-enquiry-field {
@@ -397,25 +388,23 @@
     letter-spacing: 0.26em;
     line-height: 1.4;
     text-transform: uppercase;
-    color: rgb(247 244 239 / 58%);
+    color: #8a7452;
   }
 
   .lux-enquiry-input {
     width: 100%;
     min-height: 3.25rem;
     border-radius: 8px;
-    border: 1px solid rgb(255 255 255 / 0.1);
-    background-color: rgb(6 9 14 / 88%);
+    border: 1px solid rgb(186 160 112 / 0.18);
+    background-color: #fcfaf7;
     padding: 0.875rem 1rem;
     font-family: theme("fontFamily.sans");
     font-size: 0.96875rem;
     font-weight: 400;
     letter-spacing: 0.014em;
     line-height: 1.45;
-    color: rgb(253 250 245 / 96%);
-    box-shadow:
-      inset 0 1px 0 rgb(255 255 255 / 0.05),
-      0 1px 0 rgb(0 0 0 / 18%);
+    color: #171717;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.65);
     transition:
       border-color 0.4s theme("transitionTimingFunction.luxury"),
       box-shadow 0.4s theme("transitionTimingFunction.luxury"),
@@ -431,23 +420,22 @@
   }
 
   .lux-enquiry-input::placeholder {
-    color: rgb(247 244 239 / 34%);
+    color: rgb(23 23 23 / 42%);
   }
 
   .lux-enquiry-input:hover:not(:disabled) {
-    border-color: rgb(255 255 255 / 0.14);
-    background-color: rgb(10 14 22 / 92%);
+    border-color: rgb(186 160 112 / 0.28);
+    background-color: #fdfcf9;
   }
 
   .lux-enquiry-input:focus {
-    border-color: rgb(196 165 116 / 52%);
-    background-color: rgb(12 16 26 / 96%);
+    border-color: rgb(33 52 89 / 0.32);
+    background-color: #ffffff;
     outline: none;
     box-shadow:
-      0 0 0 1px rgb(196 165 116 / 22%),
-      0 0 0 3px rgb(196 165 116 / 14%),
-      0 8px 28px -16px rgb(196 165 116 / 28%),
-      inset 0 1px 0 rgb(255 255 255 / 0.07);
+      0 0 0 1px rgb(33 52 89 / 0.12),
+      0 0 0 3px rgb(33 52 89 / 0.18),
+      inset 0 1px 0 rgb(255 255 255 / 0.8);
   }
 
   .lux-enquiry-input:disabled {
@@ -473,8 +461,8 @@
     width: 0.5rem;
     height: 0.5rem;
     pointer-events: none;
-    border-right: 1.5px solid rgb(196 165 116 / 72%);
-    border-bottom: 1.5px solid rgb(196 165 116 / 72%);
+    border-right: 1.5px solid rgb(138 116 82 / 72%);
+    border-bottom: 1.5px solid rgb(138 116 82 / 72%);
     transform: translateY(-62%) rotate(45deg);
   }
 
@@ -490,21 +478,19 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    color-scheme: dark;
+    color-scheme: light;
     border-radius: 8px;
-    border: 1px solid rgb(255 255 255 / 0.1);
-    background-color: rgb(6 9 14 / 88%);
+    border: 1px solid rgb(186 160 112 / 0.18);
+    background-color: #fcfaf7;
     padding: 0.875rem 2.75rem 0.875rem 1rem;
     font-family: theme("fontFamily.sans");
     font-size: 0.96875rem;
     font-weight: 400;
     letter-spacing: 0.014em;
     line-height: 1.45;
-    color: rgb(253 250 245 / 96%);
+    color: #171717;
     cursor: pointer;
-    box-shadow:
-      inset 0 1px 0 rgb(255 255 255 / 0.05),
-      0 1px 0 rgb(0 0 0 / 18%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.65);
     transition:
       border-color 0.4s theme("transitionTimingFunction.luxury"),
       box-shadow 0.4s theme("transitionTimingFunction.luxury"),
@@ -524,19 +510,18 @@
   }
 
   .lux-enquiry-select:hover:not(:disabled) {
-    border-color: rgb(255 255 255 / 0.14);
-    background-color: rgb(10 14 22 / 92%);
+    border-color: rgb(186 160 112 / 0.28);
+    background-color: #fdfcf9;
   }
 
   .lux-enquiry-select:focus {
-    border-color: rgb(196 165 116 / 52%);
-    background-color: rgb(12 16 26 / 96%);
+    border-color: rgb(33 52 89 / 0.32);
+    background-color: #ffffff;
     outline: none;
     box-shadow:
-      0 0 0 1px rgb(196 165 116 / 22%),
-      0 0 0 3px rgb(196 165 116 / 14%),
-      0 8px 28px -16px rgb(196 165 116 / 28%),
-      inset 0 1px 0 rgb(255 255 255 / 0.07);
+      0 0 0 1px rgb(33 52 89 / 0.12),
+      0 0 0 3px rgb(33 52 89 / 0.18),
+      inset 0 1px 0 rgb(255 255 255 / 0.8);
   }
 
   .lux-enquiry-select:disabled {
@@ -545,32 +530,32 @@
   }
 
   .lux-enquiry-select option {
-    background-color: #0a0e14;
-    color: #f7f4ef;
+    background-color: #fcfaf7;
+    color: #171717;
     padding: 0.625rem 0.75rem;
     font-size: 0.9375rem;
   }
 
   .lux-enquiry-select option:checked,
   .lux-enquiry-select option:hover {
-    background-color: #141a26;
-    color: #f3ece2;
+    background-color: #f6f1e8;
+    color: #171717;
   }
 
   .lux-enquiry-alert {
     border-radius: 8px;
-    border: 1px solid rgb(255 255 255 / 0.1);
-    background: rgb(255 255 255 / 0.04);
+    border: 1px solid rgb(186 160 112 / 0.22);
+    background: rgb(255 255 255 / 0.72);
     padding: 0.875rem 1rem;
     font-size: 0.875rem;
     line-height: 1.65;
-    color: rgb(247 244 239 / 82%);
+    color: #3f3a35;
   }
 
   .lux-enquiry-status {
     font-size: 0.8125rem;
     line-height: 1.65;
-    color: rgb(247 244 239 / 52%);
+    color: #6f675f;
   }
 
   .lux-enquiry-actions {

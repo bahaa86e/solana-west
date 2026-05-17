@@ -298,7 +298,7 @@ export function HeroEnquiryForm() {
 
             type="submit"
 
-            variant="gold"
+            variant="navy"
 
             size="lg"
 
@@ -318,7 +318,7 @@ export function HeroEnquiryForm() {
 
             external
 
-            variant="whatsappOnDark"
+            variant="whatsappIvory"
 
             size="lg"
 

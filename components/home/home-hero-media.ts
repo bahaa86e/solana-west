@@ -15,37 +15,59 @@ export const homeHeroImageProps = {
   imgClassName: cn(
     "object-cover motion-reduce:brightness-100 motion-reduce:saturate-100",
     "brightness-[1.06] saturate-[1.02] contrast-[0.99]",
-    "max-lg:object-[center_30%] lg:object-[58%_42%] xl:object-[56%_40%]",
+    "max-lg:object-[center_28%] lg:object-[62%_40%] xl:object-[60%_38%]",
   ),
 } satisfies Omit<LuxuryFillImageProps, "alt"> & { alt: string };
 
 export const homeHeroOverlayClassName = "pointer-events-none absolute inset-0 z-[1]";
 
-/** Cinematic scrims — readability without opaque content panels */
+/** Cinematic scrims — localized ink rail behind copy; no boxed panels */
 export const homeHeroOverlays = {
   vignette: cn(
     homeHeroOverlayClassName,
-    "bg-[radial-gradient(ellipse_92%_88%_at_50%_42%,transparent_48%,rgba(28,26,23,0.22)_100%)]",
+    "bg-[radial-gradient(ellipse_92%_88%_at_50%_42%,transparent_48%,rgba(28,26,23,0.2)_100%)]",
   ),
   topWash: cn(
     homeHeroOverlayClassName,
-    "bottom-auto h-[min(32vh,18rem)] bg-gradient-to-b from-lux-ink/42 via-lux-ink/12 to-transparent",
+    "bottom-auto h-[min(30vh,17rem)] bg-gradient-to-b from-lux-ink/38 via-lux-ink/10 to-transparent",
   ),
-  contentRail: cn(
+  /** Desktop — soft L→R ink rail aligned to text column; fades before mid-frame */
+  contentRailDesktop: cn(
     homeHeroOverlayClassName,
-    "z-[2]",
-    "bg-[linear-gradient(118deg,rgba(28,26,23,0.72)_0%,rgba(28,26,23,0.4)_40%,rgba(28,26,23,0.08)_66%,transparent_86%)]",
-    "max-lg:bg-[linear-gradient(to_top,rgba(28,26,23,0.76)_0%,rgba(28,26,23,0.36)_46%,rgba(28,26,23,0.06)_70%,transparent_100%)]",
+    "z-[2] hidden lg:block",
+    "bg-[linear-gradient(104deg,rgba(20,18,16,0.84)_0%,rgba(20,18,16,0.68)_18%,rgba(20,18,16,0.38)_38%,rgba(20,18,16,0.12)_54%,transparent_72%)]",
+  ),
+  /** Desktop — radial soften so the rail has no hard vertical edge */
+  contentRailFocus: cn(
+    homeHeroOverlayClassName,
+    "z-[2] hidden lg:block",
+    "left-0 right-[38%] top-[18%] bottom-[12%]",
+    "bg-[radial-gradient(ellipse_95%_88%_at_8%_72%,rgba(20,18,16,0.42)_0%,rgba(20,18,16,0.14)_42%,transparent_68%)]",
+  ),
+  /** Mobile — stronger bottom-up scrim only */
+  contentRailMobile: cn(
+    homeHeroOverlayClassName,
+    "z-[2] lg:hidden",
+    "inset-x-0 bottom-0 top-auto h-[74%]",
+    "bg-[linear-gradient(to_top,rgba(18,16,14,0.9)_0%,rgba(18,16,14,0.58)_32%,rgba(18,16,14,0.22)_62%,transparent_100%)]",
   ),
   bottomLift: cn(
     homeHeroOverlayClassName,
-    "inset-x-0 bottom-0 top-auto h-[56%] max-lg:h-[62%]",
-    "bg-gradient-to-t from-lux-ink/48 via-lux-ink/14 to-transparent",
+    "inset-x-0 bottom-0 top-auto lg:hidden",
+    "h-[58%] bg-gradient-to-t from-lux-ink/42 via-lux-ink/12 to-transparent",
   ),
 } as const;
 
-export const homeHeroTextShadow =
-  "[text-shadow:0_1px_2px_rgba(12,11,10,0.28),0_8px_32px_rgba(12,11,10,0.32)]";
+/** Display type — H1 & lead on bright daylight renders */
+export const homeHeroTextShadowDisplay = cn(
+  "[text-shadow:0_1px_3px_rgba(8,7,6,0.5),0_2px_14px_rgba(8,7,6,0.42),0_14px_44px_rgba(8,7,6,0.38)]",
+);
+
+/** Supporting lines, chips labels, payment */
+export const homeHeroTextShadowBody =
+  "[text-shadow:0_1px_2px_rgba(8,7,6,0.44),0_6px_26px_rgba(8,7,6,0.34)]";
+
+export const homeHeroTextShadow = homeHeroTextShadowBody;
 
 export const homeHeroSectionClassName = cn(
   "relative isolate min-h-[100dvh]",
@@ -58,73 +80,74 @@ export const homeHeroContainerClassName = cn(
   "relative z-[20] mx-auto flex min-h-[100dvh] w-full flex-col",
   "supports-[height:100svh]:min-h-[100svh]",
   "items-start justify-end",
-  "pb-[max(clamp(3rem,9vw,5.5rem),env(safe-area-inset-bottom,0px))]",
-  "max-lg:pb-[max(6.25rem,calc(env(safe-area-inset-bottom,0px)+5.75rem))]",
+  "pl-[clamp(1.125rem,3.5vw,0px)] lg:pl-[clamp(1.25rem,2.8vw,2.25rem)]",
+  "pb-[max(clamp(3.25rem,9.5vw,5.75rem),env(safe-area-inset-bottom,0px))]",
+  "max-lg:pb-[max(7rem,calc(env(safe-area-inset-bottom,0px)+6.5rem))]",
   "pt-[clamp(5.25rem,calc(env(safe-area-inset-top,0px)+5rem),7.5rem)]",
-  "max-lg:pt-[clamp(4.85rem,calc(env(safe-area-inset-top,0px)+4.5rem),6rem)]",
-  "lg:justify-center lg:pb-[clamp(3.5rem,8vh,5.25rem)]",
-  "lg:pt-[clamp(5.75rem,min(11vh,6.75rem),7rem)]",
+  "max-lg:pt-[clamp(4.75rem,calc(env(safe-area-inset-top,0px)+4.25rem),5.75rem)]",
+  "lg:justify-center lg:pb-[clamp(3.75rem,8.5vh,5.5rem)]",
+  "lg:pt-[clamp(5.5rem,min(10.5vh,6.5rem),6.75rem)]",
 );
 
 /** Major editorial zones — title / narrative / commercial / CTA */
 export const homeHeroContentClassName = cn(
-  "relative flex w-full max-w-[min(38rem,100%)] flex-col",
-  "gap-[clamp(1.75rem,4vw,2.75rem)] lg:max-w-[min(44rem,86vw)]",
+  "relative z-[1] flex w-full max-w-[min(38rem,100%)] flex-col",
+  "gap-[clamp(2rem,4.6vw,3.125rem)] lg:max-w-[min(42rem,82vw)]",
 );
 
 export const homeHeroZoneNarrativeClassName =
-  "flex flex-col gap-[clamp(0.75rem,1.8vw,1.125rem)]";
+  "flex flex-col gap-[clamp(0.875rem,2vw,1.25rem)]";
 
 export const homeHeroZoneCommercialClassName = cn(
-  "flex flex-col gap-[clamp(0.875rem,2vw,1.25rem)]",
+  "flex flex-col gap-[clamp(1rem,2.25vw,1.375rem)]",
 );
 
-export const homeHeroZoneCtaClassName = "flex flex-col gap-[clamp(1rem,2.2vw,1.375rem)]";
+export const homeHeroZoneCtaClassName = "flex flex-col gap-[clamp(1.125rem,2.5vw,1.5rem)]";
 
 export const homeHeroEyebrowClassName = cn(
-  "font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-lux-paper/52",
+  "font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-lux-paper/58",
   "lg:text-[0.6875rem] lg:tracking-[0.14em]",
-  homeHeroTextShadow,
+  homeHeroTextShadowBody,
 );
 
-export const homeHeroRuleClassName = "mt-4 block h-px max-w-[2.5rem] bg-lux-paper/20";
+export const homeHeroRuleClassName = "mt-5 block h-px max-w-[2.5rem] bg-lux-paper/24";
 
 export const homeHeroH1ClassName = cn(
-  "mt-4 max-w-[min(20ch,100%)] text-balance font-display font-medium text-lux-paper",
+  "mt-5 max-w-[min(20ch,100%)] text-balance font-display font-medium text-lux-paper",
   "text-[clamp(1.875rem,4.2vw+0.85rem,2.875rem)] leading-[1.08] tracking-[-0.026em]",
   "max-lg:leading-[1.1] max-lg:tracking-[-0.024em]",
-  homeHeroTextShadow,
+  homeHeroTextShadowDisplay,
 );
 
 export const homeHeroLeadClassName = cn(
-  "max-w-[min(36rem,100%)] font-sans text-lux-lead font-normal leading-[1.68] tracking-[0.006em] text-lux-paper/84",
-  homeHeroTextShadow,
+  "max-w-[min(36rem,100%)] font-sans text-lux-lead font-normal leading-[1.68] tracking-[0.006em] text-lux-paper/92",
+  homeHeroTextShadowDisplay,
 );
 
 export const homeHeroSupportClassName = cn(
-  "hidden max-w-[34rem] border-l border-lux-gold/35 pl-4 font-sans text-lux-muted font-normal leading-[1.7] tracking-[0.01em] text-lux-paper/58 lg:block lg:pl-5",
-  homeHeroTextShadow,
+  "hidden max-w-[34rem] border-l border-lux-gold/38 pl-4 font-sans text-lux-muted font-normal leading-[1.7] tracking-[0.01em] text-lux-paper/72 lg:block lg:pl-5",
+  homeHeroTextShadowBody,
 );
 
 export const homeHeroFactChipClassName = cn(
-  "rounded-[6px] border border-lux-paper/10 bg-lux-ink/14 px-3.5 py-2.5",
-  "backdrop-blur-[10px] supports-[backdrop-filter]:bg-lux-ink/10",
-  "shadow-[0_10px_28px_-22px_rgba(8,7,6,0.38)]",
+  "rounded-[6px] border border-lux-paper/12 bg-lux-ink/28 px-3.5 py-2.5",
+  "backdrop-blur-[14px] supports-[backdrop-filter]:bg-lux-ink/22",
+  "shadow-[0_12px_32px_-20px_rgba(6,5,4,0.45)]",
 );
 
 export const homeHeroFactLabelClassName =
   "font-sans text-[9px] font-semibold uppercase tracking-[0.14em] text-lux-gold/80";
 
 export const homeHeroFactValueClassName =
-  "mt-1.5 font-sans text-[0.8125rem] font-normal leading-[1.5] tracking-[0.015em] text-lux-paper/82";
+  "mt-1.5 font-sans text-[0.8125rem] font-normal leading-[1.5] tracking-[0.015em] text-lux-paper/90";
 
 export const homeHeroPaymentClassName = cn(
-  "font-sans text-[0.90625rem] leading-[1.68] tracking-[0.01em] text-lux-paper/68 lg:text-[0.9375rem]",
-  homeHeroTextShadow,
+  "font-sans text-[0.90625rem] leading-[1.68] tracking-[0.01em] text-lux-paper/78 lg:text-[0.9375rem]",
+  homeHeroTextShadowBody,
 );
 
 export const homeHeroAnnotationClassName = cn(
-  "font-sans text-[10px] font-medium uppercase tracking-[0.14em] text-lux-paper/36",
+  "font-sans text-[10px] font-medium uppercase tracking-[0.14em] text-lux-paper/44",
   "max-lg:hidden",
   homeHeroTextShadow,
 );

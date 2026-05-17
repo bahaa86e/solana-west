@@ -65,11 +65,11 @@ function CheckIcon({ className }: { className?: string }) {
   );
 }
 
-const triggerDark = cn(
+const triggerEnquiry = cn(
   "lux-enquiry-select group flex w-full items-center justify-between gap-2 text-start",
-  "data-[placeholder]:text-[rgb(247_244_239/42%)]",
-  "data-[state=open]:border-[rgb(196_165_116/52%)] data-[state=open]:bg-[rgb(12_16_26/96%)]",
-  "data-[state=open]:shadow-[0_0_0_1px_rgb(196_165_116/22%),0_0_0_3px_rgb(196_165_116/14%),0_8px_28px_-16px_rgb(196_165_116/28%),inset_0_1px_0_rgb(255_255_255/0.07)]",
+  "data-[placeholder]:text-[rgb(23_23_23/42%)]",
+  "data-[state=open]:border-[rgb(33_52_89/0.32)] data-[state=open]:bg-white",
+  "data-[state=open]:shadow-[0_0_0_1px_rgb(33_52_89/0.12),0_0_0_3px_rgb(33_52_89/0.18),inset_0_1px_0_rgb(255_255_255/0.8)]",
 );
 
 const triggerLight = cn(
@@ -84,7 +84,7 @@ const triggerLight = cn(
   "disabled:cursor-not-allowed disabled:opacity-55",
 );
 
-const contentPanel = cn(
+const contentPanelDark = cn(
   "z-[220] min-w-[var(--radix-select-trigger-width)] w-[var(--radix-select-trigger-width)] overflow-hidden rounded-[8px] border border-[rgb(255_255_255/0.1)]",
   "bg-[linear-gradient(165deg,rgb(22_28_40/96%)_0%,rgb(10_14_22/98%)_52%,rgb(6_9_14/99%)_100%)]",
   "shadow-[0_28px_72px_-32px_rgb(0_0_0/78%),0_12px_36px_-20px_rgb(0_0_0/55%),inset_0_1px_0_rgb(255_255_255/0.08)]",
@@ -93,7 +93,16 @@ const contentPanel = cn(
   "motion-reduce:animate-none",
 );
 
-const itemBase = cn(
+const contentPanelLight = cn(
+  "z-[220] min-w-[var(--radix-select-trigger-width)] w-[var(--radix-select-trigger-width)] overflow-hidden rounded-[10px] border border-[rgb(186_160_112/0.18)]",
+  "bg-[linear-gradient(180deg,rgb(255_255_255/0.98)_0%,rgb(252_250_247/0.96)_100%)]",
+  "shadow-[0_24px_80px_rgb(15_15_15/0.08)]",
+  "backdrop-blur-md backdrop-saturate-125",
+  "data-[state=open]:animate-lux-select-in data-[state=closed]:animate-lux-select-out",
+  "motion-reduce:animate-none",
+);
+
+const itemBaseDark = cn(
   "relative flex cursor-pointer select-none items-center rounded-[6px] px-3 py-2.5 ps-8",
   "font-sans text-[0.9375rem] leading-snug tracking-[0.012em] outline-none",
   "text-[rgb(253_250_245/92%)]",
@@ -101,6 +110,16 @@ const itemBase = cn(
   "data-[highlighted]:bg-[rgb(196_165_116/14%)] data-[highlighted]:text-[rgb(253_250_245/98%)]",
   "data-[state=checked]:text-[rgb(243_236_226/98%)]",
   "focus-visible:bg-[rgb(196_165_116/14%)]",
+);
+
+const itemBaseLight = cn(
+  "relative flex cursor-pointer select-none items-center rounded-[6px] px-3 py-2.5 ps-8",
+  "font-sans text-[0.9375rem] leading-snug tracking-[0.012em] outline-none",
+  "text-[#171717]",
+  "data-[disabled]:pointer-events-none data-[disabled]:opacity-40",
+  "data-[highlighted]:bg-[rgb(33_52_89/0.06)] data-[highlighted]:text-[#171717]",
+  "data-[state=checked]:text-[#171717]",
+  "focus-visible:bg-[rgb(33_52_89/0.06)]",
 );
 
 export function LuxurySelect({
@@ -172,10 +191,7 @@ function MotionSafeSelect({
 }: InnerLuxurySelectProps) {
   return (
     <div
-      className={cn(
-        isDark ? "lux-enquiry-select-wrap lux-enquiry-select-wrap--radix" : "relative w-full",
-        className,
-      )}
+      className={cn("lux-enquiry-select-wrap lux-enquiry-select-wrap--radix", className)}
     >
       <input
         type="text"
@@ -194,14 +210,14 @@ function MotionSafeSelect({
           id={id}
           aria-required={ariaRequired}
           aria-controls={listboxId}
-          className={cn(isDark ? triggerDark : triggerLight)}
+          className={cn(isDark ? triggerEnquiry : triggerLight)}
         >
           <Select.Value placeholder={placeholder} />
           <Select.Icon asChild>
             <ChevronIcon
               className={cn(
                 "shrink-0 transition-transform duration-300 ease-luxury motion-reduce:transition-none",
-                isDark ? "me-0.5 text-[rgb(196_165_116/72%)]" : "text-lux-gold/80",
+                isDark ? "me-0.5 text-[rgb(138_116_82/72%)]" : "text-[rgb(138_116_82/72%)]",
                 "group-data-[state=open]:rotate-180",
               )}
             />
@@ -214,16 +230,30 @@ function MotionSafeSelect({
             position="popper"
             sideOffset={6}
             collisionPadding={{ top: 12, right: 12, bottom: 12, left: 12 }}
-            className={contentPanel}
+            className={isDark ? contentPanelDark : contentPanelLight}
           >
-            <Select.ScrollUpButton className="flex h-6 cursor-default items-center justify-center text-[rgb(196_165_116/70%)]">
+            <Select.ScrollUpButton
+              className={cn(
+                "flex h-6 cursor-default items-center justify-center",
+                isDark ? "text-[rgb(196_165_116/70%)]" : "text-[rgb(138_116_82/70%)]",
+              )}
+            >
               <ChevronIcon className="rotate-180" />
             </Select.ScrollUpButton>
 
             <Select.Viewport className="max-h-[min(16.5rem,52dvh)] p-1.5">
               {options.map((opt) => (
-                <Select.Item key={opt.value} value={opt.value} className={itemBase}>
-                  <Select.ItemIndicator className="absolute start-2.5 inline-flex items-center justify-center text-[rgb(196_165_116/88%)]">
+                <Select.Item
+                  key={opt.value}
+                  value={opt.value}
+                  className={isDark ? itemBaseDark : itemBaseLight}
+                >
+                  <Select.ItemIndicator
+                    className={cn(
+                      "absolute start-2.5 inline-flex items-center justify-center",
+                      isDark ? "text-[rgb(196_165_116/88%)]" : "text-[rgb(33_52_89/72%)]",
+                    )}
+                  >
                     <CheckIcon />
                   </Select.ItemIndicator>
                   <Select.ItemText>{opt.label}</Select.ItemText>
@@ -231,7 +261,12 @@ function MotionSafeSelect({
               ))}
             </Select.Viewport>
 
-            <Select.ScrollDownButton className="flex h-6 cursor-default items-center justify-center text-[rgb(196_165_116/70%)]">
+            <Select.ScrollDownButton
+              className={cn(
+                "flex h-6 cursor-default items-center justify-center",
+                isDark ? "text-[rgb(196_165_116/70%)]" : "text-[rgb(138_116_82/70%)]",
+              )}
+            >
               <ChevronIcon />
             </Select.ScrollDownButton>
           </Select.Content>

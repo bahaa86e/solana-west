@@ -15,7 +15,9 @@ export function HomeHeroMediaLayer({ alt }: HomeHeroMediaLayerProps = {}) {
       <LuxuryFillImage {...imageProps} />
       <div className={homeHeroOverlays.vignette} />
       <div className={homeHeroOverlays.topWash} />
-      <div className={homeHeroOverlays.contentRail} />
+      <div className={homeHeroOverlays.contentRailDesktop} />
+      <div className={homeHeroOverlays.contentRailFocus} />
+      <div className={homeHeroOverlays.contentRailMobile} />
       <div className={homeHeroOverlays.bottomLift} />
     </div>
   );
