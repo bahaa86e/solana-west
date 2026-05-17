@@ -35,21 +35,21 @@ export const homeHeroOverlays = {
   contentRailDesktop: cn(
     homeHeroOverlayClassName,
     "z-[2] hidden lg:block",
-    "bg-[linear-gradient(104deg,rgba(20,18,16,0.84)_0%,rgba(20,18,16,0.68)_18%,rgba(20,18,16,0.38)_38%,rgba(20,18,16,0.12)_54%,transparent_72%)]",
+    "bg-[linear-gradient(104deg,rgba(20,18,16,0.78)_0%,rgba(20,18,16,0.63)_18%,rgba(20,18,16,0.35)_38%,rgba(20,18,16,0.11)_54%,transparent_72%)]",
   ),
   /** Desktop — radial soften so the rail has no hard vertical edge */
   contentRailFocus: cn(
     homeHeroOverlayClassName,
     "z-[2] hidden lg:block",
     "left-0 right-[38%] top-[18%] bottom-[12%]",
-    "bg-[radial-gradient(ellipse_95%_88%_at_8%_72%,rgba(20,18,16,0.42)_0%,rgba(20,18,16,0.14)_42%,transparent_68%)]",
+    "bg-[radial-gradient(ellipse_95%_88%_at_8%_72%,rgba(20,18,16,0.39)_0%,rgba(20,18,16,0.13)_42%,transparent_68%)]",
   ),
   /** Mobile — stronger bottom-up scrim only */
   contentRailMobile: cn(
     homeHeroOverlayClassName,
     "z-[2] lg:hidden",
     "inset-x-0 bottom-0 top-auto h-[74%]",
-    "bg-[linear-gradient(to_top,rgba(18,16,14,0.9)_0%,rgba(18,16,14,0.58)_32%,rgba(18,16,14,0.22)_62%,transparent_100%)]",
+    "bg-[linear-gradient(to_top,rgba(18,16,14,0.84)_0%,rgba(18,16,14,0.54)_32%,rgba(18,16,14,0.2)_62%,transparent_100%)]",
   ),
   bottomLift: cn(
     homeHeroOverlayClassName,
@@ -61,6 +61,11 @@ export const homeHeroOverlays = {
 /** Display type — H1 & lead on bright daylight renders */
 export const homeHeroTextShadowDisplay = cn(
   "[text-shadow:0_1px_3px_rgba(8,7,6,0.5),0_2px_14px_rgba(8,7,6,0.42),0_14px_44px_rgba(8,7,6,0.38)]",
+);
+
+/** Hero narrative paragraph + commercial support line — soft editorial lift */
+export const homeHeroTextShadowNarrative = cn(
+  "[text-shadow:0_2px_10px_rgba(0,0,0,0.22),0_1px_2px_rgba(0,0,0,0.18)]",
 );
 
 /** Supporting lines, chips labels, payment */
@@ -120,13 +125,13 @@ export const homeHeroH1ClassName = cn(
 );
 
 export const homeHeroLeadClassName = cn(
-  "max-w-[min(36rem,100%)] font-sans text-lux-lead font-normal leading-[1.68] tracking-[0.006em] text-lux-paper/92",
-  homeHeroTextShadowDisplay,
+  "max-w-[min(36rem,100%)] font-sans text-lux-lead font-normal leading-[1.68] tracking-[0.006em] text-[rgb(255_255_255/0.94)]",
+  homeHeroTextShadowNarrative,
 );
 
 export const homeHeroSupportClassName = cn(
-  "hidden max-w-[34rem] border-l border-lux-gold/38 pl-4 font-sans text-lux-muted font-normal leading-[1.7] tracking-[0.01em] text-lux-paper/72 lg:block lg:pl-5",
-  homeHeroTextShadowBody,
+  "hidden max-w-[34rem] border-l border-lux-gold/38 pl-4 font-sans text-lux-muted font-normal leading-[1.7] tracking-[0.01em] text-[rgb(255_255_255/0.88)] lg:block lg:pl-5",
+  homeHeroTextShadowNarrative,
 );
 
 export const homeHeroFactChipClassName = cn(
@@ -142,7 +147,7 @@ export const homeHeroFactValueClassName =
   "mt-1.5 font-sans text-[0.8125rem] font-normal leading-[1.5] tracking-[0.015em] text-lux-paper/90";
 
 export const homeHeroPaymentClassName = cn(
-  "font-sans text-[0.90625rem] leading-[1.68] tracking-[0.01em] text-lux-paper/78 lg:text-[0.9375rem]",
+  "font-sans text-[0.90625rem] leading-[1.68] tracking-[0.01em] text-lux-paper/88 lg:text-[0.9375rem]",
   homeHeroTextShadowBody,
 );
 
