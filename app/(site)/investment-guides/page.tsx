@@ -70,8 +70,14 @@ export default function InvestmentGuidesPage() {
         <GlobalHeroEnquirySection />
 
         <ul className="m-0 list-none space-y-0 p-0">
-          {guides.map((g) => (
-            <li key={g.href} className="border-b border-lux-ink/[0.06] py-10 md:py-12">
+          {guides.map((g, guideIndex) => (
+            <li
+              key={g.href}
+              className={cn(
+                "border-b border-lux-ink/[0.06] py-10 md:py-12",
+                guideIndex === 0 && "lux-post-hero-section",
+              )}
+            >
               <h2 className="font-display text-lux-display-sm font-medium text-lux-ink">{g.title}</h2>
               <p className="lux-body mt-4 max-w-[52ch] text-lux-ink/70">{g.body}</p>
               <p className="mt-5">

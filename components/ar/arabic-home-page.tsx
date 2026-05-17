@@ -4,10 +4,15 @@ import { FinalConversionPanel } from "@/components/conversion/final-conversion-p
 import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-enquiry-section";
 import { HomeHeroMediaLayer } from "@/components/home/home-hero-media-layer";
 import {
-  homeHeroCardClassName,
   homeHeroContainerClassName,
+  homeHeroContentClassName,
+  homeHeroEyebrowClassName,
   homeHeroH1ClassName,
+  homeHeroLeadClassName,
+  homeHeroRuleClassName,
   homeHeroSectionClassName,
+  homeHeroZoneCtaClassName,
+  homeHeroZoneNarrativeClassName,
 } from "@/components/home/home-hero-media";
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
@@ -18,7 +23,6 @@ import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { SOLANA_WEST_AR_FAQ_GROUPS, SOLANA_WEST_FAQ_SHARED_INTRO_AR } from "@/data/faq/solana-west-faq-ar";
 import { siteConfig } from "@/data/site";
 import { englishPathToArabicPath } from "@/lib/i18n/paths";
-import { cn } from "@/lib/utils";
 
 const ar = englishPathToArabicPath;
 
@@ -45,27 +49,30 @@ export function ArabicHomePage() {
           size="wide"
           className={homeHeroContainerClassName}
         >
-          <article className={cn("max-w-[min(40rem,100%)] lg:max-w-[min(52rem,100%)]", homeHeroCardClassName)}>
-            <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.14em] text-lux-ink/45 lg:text-[0.6875rem]">
-              نيو زايد · محور الضبعة
-            </p>
-            <span className="mt-4 mb-6 block h-px max-w-[2.75rem] bg-lux-ink/[0.1]" aria-hidden />
-            <h1 id="ar-home-hero-heading" className={homeHeroH1ClassName}>
-              سولانا ويست نيو زايد من ORA Developer Egypt
-            </h1>
+          <article className={homeHeroContentClassName}>
+            <div className="flex flex-col">
+              <p className={homeHeroEyebrowClassName}>نيو زايد · محور الضبعة</p>
+              <span className={homeHeroRuleClassName} aria-hidden />
+              <h1 id="ar-home-hero-heading" className={homeHeroH1ClassName}>
+                سولانا ويست نيو زايد من ORA Developer Egypt
+              </h1>
+            </div>
 
-            <p className="mt-[clamp(1rem,2.5vw,1.5rem)] max-w-[min(36rem,100%)] text-pretty font-sans text-lux-lead font-normal leading-[1.66] tracking-[0.006em] text-lux-ink/[0.78]">
-              مجتمع سكني على مساحة 316 فداناً في غرب القاهرة، بإيقاع منخفض الكثافة ومساحات خضراء ممتدة ومنازل مصممة للخصوصية. فلل سولانا ويست، التاون هاوس، التوين هاوس وشقق سولانا ويست تُطرح وفق إصدارات واضحة للأسعار وخطط السداد.
-            </p>
+            <div className={homeHeroZoneNarrativeClassName}>
+              <p className={homeHeroLeadClassName}>
+                مجتمع سكني على مساحة 316 فداناً في غرب القاهرة، بإيقاع منخفض الكثافة ومساحات خضراء ممتدة ومنازل مصممة للخصوصية. فلل سولانا ويست، التاون هاوس، التوين هاوس وشقق سولانا ويست تُطرح وفق إصدارات واضحة للأسعار وخطط السداد.
+              </p>
+            </div>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-stretch">
+            <div className={homeHeroZoneCtaClassName}>
+              <div className="flex w-full flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3.5">
               <CtaButton
                 href={siteConfig.whatsAppUrl}
                 external
                 variant="whatsapp"
                 size="lg"
                 leadingIcon={<WhatsAppIcon className="size-[1.125rem]" />}
-                className="w-full min-h-[3.25rem] px-12 sm:w-auto sm:min-w-[15rem]"
+                className="w-full min-h-[3.25rem] px-12 sm:w-auto sm:min-w-[15.5rem]"
                 data-track="whatsapp_click"
                 data-track-placement="ar_home_hero_whatsapp"
               >
@@ -73,14 +80,15 @@ export function ArabicHomePage() {
               </CtaButton>
               <CtaButton
                 href={ar["/prices"]!}
-                variant="secondary"
+                variant="inverse"
                 size="lg"
-                className="w-full min-h-[3.25rem] sm:w-auto"
+                className="w-full min-h-[3.25rem] border-lux-paper/20 sm:w-auto sm:min-w-[12.5rem] focus-visible:ring-offset-lux-ink/40"
                 data-track="cta_click"
                 data-track-placement="ar_home_hero_prices"
               >
                 الأسعار وأنظمة السداد
               </CtaButton>
+              </div>
             </div>
           </article>
         </Container>

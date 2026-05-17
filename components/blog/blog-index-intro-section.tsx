@@ -7,7 +7,7 @@ export function BlogIndexIntroSection({ model }: { model: BlogIndexPageModel }) 
   const headingId = `${idPrefix}-index-heading`;
 
   return (
-    <SectionShell id={`${idPrefix}-model`} aria-labelledby={headingId} tone="sand" containerSize="wide">
+    <SectionShell id={`${idPrefix}-model`} aria-labelledby={headingId} tone="postHero" containerSize="wide">
       <div className="max-w-readable">
         <SectionHeader id={headingId} eyebrow={indexIntro.eyebrow} title={indexIntro.title} />
         <div className="mt-14 space-y-6 md:mt-16">

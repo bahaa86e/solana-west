@@ -38,9 +38,9 @@ function NavItem({ href, label }: { href: string; label: string }) {
         [
           "-mx-px focus-visible:ring-offset-lux-paper",
           "px-[0.9rem] py-[0.5875rem] text-[11px] font-normal uppercase tracking-[0.2em]",
-          "text-lux-ink/42 transition-[color,background-color] duration-[480ms] ease-luxury motion-reduce:transition-none",
-          "motion-safe:hover:bg-lux-ink/[0.04] hover:text-lux-ink/[0.78]",
-          active && "text-lux-ink/[0.9]",
+          "text-lux-ink/48 transition-[color,background-color] duration-[480ms] ease-luxury motion-reduce:transition-none",
+          "motion-safe:hover:bg-lux-ink/[0.045] hover:text-lux-ink/[0.82]",
+          active && "text-lux-ink/[0.92]",
         ],
       )}
       aria-current={active ? "page" : undefined}

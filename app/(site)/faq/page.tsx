@@ -13,6 +13,8 @@ import { getSolanaWestFaqPageJsonLd } from "@/lib/schema/jsonld/faq-page";
 import { buildPageMetadata } from "@/seo/build-metadata";
 import Link from "next/link";
 
+import { cn } from "@/lib/utils";
+
 export const metadata = buildPageMetadata(faqPageSeo);
 
 /** FAQPage answers must mirror visible `<dd>` text for schema accuracy. */
@@ -41,7 +43,7 @@ export default function FaqPage() {
 
         <GlobalHeroEnquirySection />
 
-        {SOLANA_WEST_FAQ_SECTION_ORDER.map((sectionId) => {
+        {SOLANA_WEST_FAQ_SECTION_ORDER.map((sectionId, sectionIndex) => {
           const pairs = SOLANA_WEST_FAQ_EXPANDED_ITEMS.map((item, globalIndex) => ({
             item,
             globalIndex,
@@ -51,7 +53,10 @@ export default function FaqPage() {
           return (
             <section
               key={sectionId}
-              className="border-b border-lux-ink/[0.06] py-14 md:py-16"
+              className={cn(
+                "border-b border-lux-ink/[0.06] py-14 md:py-16",
+                sectionIndex === 0 && "lux-post-hero-section",
+              )}
               aria-labelledby={`faq-section-${sectionId}`}
             >
               <h2

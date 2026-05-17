@@ -15,7 +15,6 @@ export function LocationHeroSection({ model }: { model: LocationPageModel }) {
         alt: heroImage.alt,
         sizes: "100vw",
         priority: true,
-        quality: 88,
         imgClassName: "object-[center_44%]",
       }}
     >

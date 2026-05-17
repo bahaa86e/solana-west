@@ -34,14 +34,14 @@ export function ProjectAmenitiesSection({ page }: { page: ResolvedProjectPage })
               <article className="flex flex-col">
                 <LuxuryImageShell
                   hover="lift"
-                  aspectClassName="aspect-[3/2]"
+                  frame="editorial"
+                  aspectClassName="aspect-[3/2] lg:max-h-[min(22rem,38vh)]"
                   className={cn("shadow-lux-card transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/10")}
                 >
                   <LuxuryFillImage
                     src={asset.src}
                     alt={asset.alt}
                     sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 32vw"
-                    quality={80}
                     crop="interiorWarm"
                     treatment="rich"
                   />

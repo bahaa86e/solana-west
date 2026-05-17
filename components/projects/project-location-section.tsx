@@ -1,5 +1,6 @@
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
+import { editorialPanoramaAspect } from "@/lib/media/editorial-image-layout";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import type { ResolvedProjectPage } from "@/data/projects/types";
@@ -34,8 +35,9 @@ export function ProjectLocationSection({ page }: { page: ResolvedProjectPage }) 
 
       <LuxuryImageShell
         hover="lift"
-        aspectClassName="aspect-video"
-        className="mt-16 rounded-[6px] md:mt-24"
+        frame="editorial"
+        aspectClassName={editorialPanoramaAspect}
+        className="mt-[clamp(2.5rem,6vw,3.75rem)] md:mt-[clamp(3rem,7vw,4.5rem)]"
         frameAccent={
           <div className="pointer-events-none absolute inset-0 z-[6] bg-gradient-to-t from-lux-mist/[0.2] via-transparent to-transparent" aria-hidden />
         }
@@ -45,7 +47,6 @@ export function ProjectLocationSection({ page }: { page: ResolvedProjectPage }) 
           mobileSrc={page.media.locationAtmosphere.mobileSrc}
           alt={page.media.locationAtmosphere.alt}
           sizes="(max-width: 1023px) 100vw, min(1280px, 88vw)"
-          quality={88}
           fit="cover"
           crop="horizonGolden"
           treatment="rich"

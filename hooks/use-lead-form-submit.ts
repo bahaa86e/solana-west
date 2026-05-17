@@ -2,10 +2,22 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import { validateLeadFormClient, type LeadFormKind } from "@/lib/lead/client-validate";
+import { leadErrorCopy } from "@/lib/lead/copy";
 import { submitLeadInquiry } from "@/lib/lead/submit-lead-inquiry";
 import { isSafeLeadThankYouRedirect } from "@/lib/lead/thank-you";
 
-export function useLeadFormSubmit() {
+type UseLeadFormSubmitOptions = {
+  formKind?: LeadFormKind;
+};
+
+function readIsAr(form: HTMLFormElement): boolean {
+  const language = new FormData(form).get("language");
+  return language === "ar";
+}
+
+export function useLeadFormSubmit(options?: UseLeadFormSubmitOptions) {
+  const formKind = options?.formKind ?? "contact";
   const [submitting, setSubmitting] = useState(false);
   const [redirecting, setRedirecting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -23,13 +35,22 @@ export function useLeadFormSubmit() {
       event.preventDefault();
       if (submitting || redirecting || redirectOnce.current) return;
 
+      const form = event.currentTarget;
+      const isAr = readIsAr(form);
+      const c = leadErrorCopy(isAr);
+
       setErrorMessage(null);
       setSubmitting(true);
 
-      const formData = new FormData(event.currentTarget);
-      const result = await submitLeadInquiry(formData);
+      const formData = new FormData(form);
+      const clientCheck = validateLeadFormClient(formData, formKind);
+      if (!clientCheck.ok) {
+        setSubmitting(false);
+        setErrorMessage(clientCheck.message);
+        return;
+      }
 
-      setSubmitting(false);
+      const result = await submitLeadInquiry(formData);
 
       if (result.ok && result.redirectTo && isSafeLeadThankYouRedirect(result.redirectTo)) {
         redirectOnce.current = true;
@@ -38,11 +59,16 @@ export function useLeadFormSubmit() {
         return;
       }
 
-      if (!result.ok && result.message) {
-        setErrorMessage(result.message);
+      setSubmitting(false);
+
+      if (result.ok) {
+        setErrorMessage(result.message ?? c.redirectUnavailable);
+        return;
       }
+
+      setErrorMessage(result.message ?? c.deliveryFailed);
     },
-    [submitting, redirecting],
+    [submitting, redirecting, formKind],
   );
 
   return {

@@ -37,7 +37,10 @@ export default function ComparisonPagesHub() {
 
         <GlobalHeroEnquirySection />
 
-        <section className="border-b border-lux-ink/[0.06] py-10 md:py-12" aria-labelledby="comparison-checklist">
+        <section
+          className="lux-post-hero-section border-b border-lux-ink/[0.04] py-10 md:py-12"
+          aria-labelledby="comparison-checklist"
+        >
           <h2 id="comparison-checklist" className="font-display text-lux-display-sm font-medium text-lux-ink">
             What to review before shortlisting
           </h2>

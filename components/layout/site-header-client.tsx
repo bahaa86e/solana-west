@@ -8,14 +8,15 @@ import { useSiteLocale } from "@/components/i18n/site-locale-context";
 import { PrimaryNavigation } from "@/components/navigation/primary-navigation";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/data/site";
+import { luxGlassIvory } from "@/lib/ui/premium-refinement";
 import { cn } from "@/lib/utils";
 
 const easeLux = [0.22, 1, 0.36, 1] as const;
 
-/** Editorial shell — paper, minimal chrome */
+/** Editorial shell — light glass; readable on hero imagery and ivory bands */
 const headerShell = cn(
-  "rounded-[6px] border border-lux-ink/[0.08] bg-[#fdfcfa]/96",
-  "shadow-[0_14px_40px_-32px_rgba(45,42,37,0.07)] ring-1 ring-inset ring-white/80",
+  luxGlassIvory,
+  "rounded-[6px] shadow-[0_8px_32px_-26px_rgba(45,42,37,0.08)]",
 );
 
 function HeaderBar() {
@@ -23,8 +24,8 @@ function HeaderBar() {
   const homeHref = locale === "ar" ? "/ar" : "/";
 
   return (
-    <header className="sticky top-0 z-50 w-full">
-      <Container as="div" className="pt-3 pb-2 max-lg:pt-3 md:pt-4 md:pb-2.5">
+    <header className="sticky top-0 z-50 w-full supports-[backdrop-filter]:bg-[#fdfcfa]/10">
+      <Container as="div" className="pt-2.5 pb-2 max-lg:pt-2.5 md:pt-3.5 md:pb-2.5">
         <motion.div
           layout
           transition={{ duration: 0.52, ease: easeLux }}
@@ -45,10 +46,10 @@ function HeaderBar() {
                 "hover:bg-lux-ink/[0.02]",
               )}
             >
-              <span className="font-display text-[1.3125rem] font-normal leading-[1.03] tracking-[-0.03em] text-lux-ink/[0.92] md:text-[1.4rem]">
+              <span className="font-display text-[1.3125rem] font-normal leading-[1.03] tracking-[-0.03em] text-lux-ink/[0.94] md:text-[1.4rem]">
                 {siteConfig.shortName}
               </span>
-              <span className="font-sans text-[0.5625rem] font-semibold uppercase leading-none tracking-[0.22em] text-lux-ink/35 md:text-[0.578125rem]">
+              <span className="font-sans text-[0.5625rem] font-semibold uppercase leading-none tracking-[0.22em] text-lux-ink/44 md:text-[0.578125rem]">
                 {siteConfig.developer}
               </span>
             </Link>

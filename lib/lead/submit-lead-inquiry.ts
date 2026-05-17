@@ -14,6 +14,28 @@ function formDataToObject(formData: FormData): Record<string, string> {
   return out;
 }
 
+function fallbackDeliveryMessage(isAr: boolean, status: number): string {
+  const c = leadErrorCopy(isAr);
+  if (status === 422) return c.interestInvalid;
+  if (status === 400) return c.invalidRequest;
+  if (status >= 500) return c.deliveryFailed;
+  return c.deliveryFailed;
+}
+
+function normalizeFailure(
+  data: LeadFormState,
+  isAr: boolean,
+  status: number,
+): LeadFormState {
+  const c = leadErrorCopy(isAr);
+  return {
+    ok: false,
+    message: data.message ?? fallbackDeliveryMessage(isAr, status),
+    code: data.code,
+    retryable: data.retryable ?? (status >= 500 || status === 408),
+  };
+}
+
 /**
  * Client-side lead submission — POSTs to `/api/lead` (Resend email delivery).
  * Preserves thank-you redirect + RID for conversion tracking.
@@ -48,16 +70,31 @@ export async function submitLeadInquiry(formData: FormData): Promise<LeadFormSta
     }
 
     if (!res.ok) {
+      return normalizeFailure(data, isAr, res.status);
+    }
+
+    if (!data.ok) {
+      return normalizeFailure(data, isAr, res.status);
+    }
+
+    if (!data.redirectTo) {
       return {
-        ok: false,
-        message: data.message ?? (res.status === 422 ? c.nameInvalid : c.deliveryFailed),
+        ok: true,
+        message: data.message ?? c.redirectUnavailable,
+        code: data.code ?? "redirect_unavailable",
+        retryable: false,
       };
     }
 
     return data;
   } catch (err) {
     const aborted = err instanceof Error && err.name === "AbortError";
-    return { ok: false, message: aborted ? c.deliveryTimeout : c.deliveryFailed };
+    return {
+      ok: false,
+      message: aborted ? c.deliveryTimeout : c.deliveryFailed,
+      code: aborted ? "delivery_failed" : "delivery_failed",
+      retryable: true,
+    };
   } finally {
     clearTimeout(timer);
   }

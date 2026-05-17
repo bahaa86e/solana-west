@@ -1,5 +1,12 @@
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
+import {
+  editorialBodyStack,
+  editorialLandscapeAspectProminent,
+  editorialSplitCopy,
+  editorialSplitGrid,
+  editorialSplitMedia,
+} from "@/lib/media/editorial-image-layout";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { homeSections } from "@/data/seo/home";
@@ -17,15 +24,15 @@ export function TrustSection() {
       depth="lifted"
       accentRim
     >
-      <div className="grid gap-section-gap lg:grid-cols-12 lg:items-center lg:gap-x-section-gap xl:gap-x-[clamp(3.75rem,6.5vw,5rem)]">
-        <div className="flex flex-col justify-between lg:col-span-5 lg:py-6">
+      <div className={editorialSplitGrid}>
+        <div className={editorialSplitCopy}>
           <div>
             <SectionHeader
               id="developer-heading"
               eyebrow={trust.eyebrow}
               title={trust.title}
             />
-            <div className="mt-section-block max-w-md space-y-7 xl:max-w-lg">
+            <div className={editorialBodyStack}>
               {trust.paragraphs.map((paragraph, i) => (
                 <p key={i} className="lux-body">
                   {paragraph}
@@ -36,8 +43,9 @@ export function TrustSection() {
         </div>
         <LuxuryImageShell
           hover="lift"
-          aspectClassName="aspect-[3/2] lg:aspect-video lg:min-h-[clamp(26rem,52vh,42rem)] lg:rounded-[6px]"
-          className="lg:col-span-7"
+          frame="editorial"
+          aspectClassName={editorialLandscapeAspectProminent}
+          className={editorialSplitMedia}
           frameAccent={
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-lux-ink/[0.05] via-transparent to-lux-paper/[0.04]" aria-hidden />
           }
@@ -46,7 +54,6 @@ export function TrustSection() {
             src={solanaWestMedia.trustAnchor.src}
             alt={solanaWestMedia.trustAnchor.alt}
             sizes="(max-width: 1023px) 100vw, min(928px, 58vw)"
-            quality={88}
             crop="editorialWideLow"
             treatment="rich"
           />

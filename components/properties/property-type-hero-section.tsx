@@ -15,7 +15,6 @@ export function PropertyTypeHeroSection({ model }: { model: PropertyExperienceMo
         alt: heroImage.alt,
         sizes: "100vw",
         priority: true,
-        quality: 88,
         imgClassName: "object-[center_40%]",
       }}
     >

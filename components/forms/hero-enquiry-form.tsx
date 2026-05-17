@@ -51,7 +51,9 @@ export function HeroEnquiryForm() {
 
   const [leadRid] = useState(createLeadRequestId);
 
-  const { handleSubmit, submitting, redirecting, errorMessage, errorAlertRef } = useLeadFormSubmit();
+  const { handleSubmit, submitting, redirecting, errorMessage, errorAlertRef } = useLeadFormSubmit({
+    formKind: "hero",
+  });
 
 
 

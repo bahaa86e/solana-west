@@ -29,10 +29,10 @@ export function SectionHeader({
   const alignClass =
     align === "center" ? "items-center text-center" : "items-start text-left";
   const eyebrowMuted =
-    tone === "onDark" ? "text-lux-paper/48" : "text-lux-ink/40";
+    tone === "onDark" ? "text-lux-paper/48" : "text-lux-ink/44";
   const titleMuted = tone === "onDark" ? "text-lux-paper" : "text-lux-ink";
   const kickerMuted =
-    tone === "onDark" ? "text-lux-paper/70" : "text-lux-ink/62";
+    tone === "onDark" ? "text-lux-paper/70" : "text-lux-ink/66";
 
   return (
     <header

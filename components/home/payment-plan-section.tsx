@@ -6,6 +6,7 @@ import { useEditorialCopy } from "@/components/i18n/editorial-copy-context";
 import { useSiteLocale } from "@/components/i18n/site-locale-context";
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
+import { editorialRibbonAspect } from "@/lib/media/editorial-image-layout";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { CtaButton } from "@/components/ui/cta-button";
@@ -89,8 +90,9 @@ export function PaymentPlanSection() {
 
       <LuxuryImageShell
         hover="lift"
-        aspectClassName="aspect-video max-h-[min(14rem,40vw)] xl:max-h-[15rem]"
-        className="mt-section-gap rounded-[6px] xl:mt-section-block"
+        frame="editorial"
+        aspectClassName={cn(editorialRibbonAspect, "max-h-[min(14rem,40vw)] xl:max-h-[15rem]")}
+        className="mt-[clamp(2.5rem,6vw,3.75rem)] xl:mt-[clamp(2.75rem,5.5vw,4rem)]"
         frameAccent={
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-lux-paper/[0.04] via-transparent to-transparent" aria-hidden />
         }
@@ -99,7 +101,6 @@ export function PaymentPlanSection() {
           src={solanaWestMedia.paymentRibbon.src}
           alt={solanaWestMedia.paymentRibbon.alt}
           sizes="(max-width: 1280px) 100vw, min(1320px, 92vw)"
-          quality={86}
           crop="greenerySubject"
           treatment="editorial"
         />

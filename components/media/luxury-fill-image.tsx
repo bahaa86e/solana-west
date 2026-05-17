@@ -1,5 +1,9 @@
 import Image, { type ImageProps } from "next/image";
 
+import {
+  LUXURY_IMAGE_QUALITY_DEFAULT,
+  luxuryImageSharpClass,
+} from "@/lib/media/luxury-image-defaults";
 import type { LuxuryImageCrop } from "@/lib/media/luxury-image-crops";
 import { luxuryImageCrops } from "@/lib/media/luxury-image-crops";
 import { cn } from "@/lib/utils";
@@ -45,7 +49,7 @@ export function LuxuryFillImage({
   alt,
   sizes,
   priority,
-  quality = 80,
+  quality = LUXURY_IMAGE_QUALITY_DEFAULT,
   loading,
   fit = "cover",
   imgClassName,
@@ -59,14 +63,14 @@ export function LuxuryFillImage({
   const positionCls = crop ? luxuryImageCrops[crop] : undefined;
 
   const imgClasses = cn(
+    luxuryImageSharpClass,
     fit === "cover" ? "object-cover" : "object-contain",
     positionCls,
     mode !== "flat" &&
       cn(
-        "[transform:translateZ(0)]",
         mode === "rich" ?
-          "[filter:saturate(1.02)_contrast(1.028)_brightness(1.015)] motion-reduce:filter-none"
-        : "[filter:saturate(1.01)_contrast(1.018)_brightness(1.02)] motion-reduce:filter-none",
+          "[filter:saturate(1.015)_contrast(1.02)_brightness(1.01)] motion-reduce:filter-none"
+        : "[filter:saturate(1.008)_contrast(1.012)_brightness(1.01)] motion-reduce:filter-none",
       ),
     imgClassName,
   );

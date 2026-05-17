@@ -15,7 +15,6 @@ export function BlogIndexHeroSection({ model }: { model: BlogIndexPageModel }) {
         alt: heroImage.alt,
         sizes: "100vw",
         priority: true,
-        quality: 88,
         imgClassName: "object-[center_46%]",
       }}
     >

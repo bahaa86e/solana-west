@@ -22,7 +22,6 @@ export function BlogArticleHeroSection({ doc }: { doc: BlogArticleDocument }) {
         alt: doc.heroImage.alt,
         sizes: "100vw",
         priority: true,
-        quality: 88,
         imgClassName: "object-[center_46%]",
       }}
     >

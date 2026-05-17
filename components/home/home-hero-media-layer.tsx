@@ -13,9 +13,10 @@ export function HomeHeroMediaLayer({ alt }: HomeHeroMediaLayerProps = {}) {
   return (
     <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden>
       <LuxuryFillImage {...imageProps} />
+      <div className={homeHeroOverlays.vignette} />
       <div className={homeHeroOverlays.topWash} />
+      <div className={homeHeroOverlays.contentRail} />
       <div className={homeHeroOverlays.bottomLift} />
-      <div className={homeHeroOverlays.cardScrim} />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { GlobalHeroEnquirySection } from "@/components/conversion/global-hero-en
 import { SectionMain } from "@/components/layout/section-main";
 import { privacyPolicyPageSeo } from "@/data/seo/routes";
 import { buildPageMetadata } from "@/seo/build-metadata";
+import { cn } from "@/lib/utils";
 
 export const metadata = buildPageMetadata(privacyPolicyPageSeo);
 
@@ -24,7 +25,7 @@ export default function PrivacyPolicyPage() {
         <GlobalHeroEnquirySection />
 
         <div className="space-y-10 py-10 md:space-y-12 md:py-12">
-          <section aria-labelledby="privacy-information">
+          <section aria-labelledby="privacy-information" className={cn("lux-post-hero-section rounded-sm px-1 py-1 md:px-2")}>
             <h2 id="privacy-information" className="font-display text-lux-display-sm font-medium text-lux-ink">
               Information We Collect
             </h2>

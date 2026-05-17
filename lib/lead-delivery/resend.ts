@@ -3,6 +3,8 @@ import { Resend } from "resend";
 import { leadDeliveryConfig } from "@/data/lead-delivery";
 import type { ValidatedLead } from "@/lib/lead/types";
 import { leadLog } from "@/lib/lead/logger";
+import { resolveResendFromEmail } from "@/lib/lead-delivery/resolve-resend-from";
+import type { ResendDeliveryResult } from "@/lib/lead-delivery/resend-types";
 
 function languageLabel(language: string): string {
   return language === "ar" ? "AR" : "EN";
@@ -69,11 +71,53 @@ function buildHtmlBody(lead: ValidatedLead, submittedAt: string): string {
   ].join("")}</table></body></html>`;
 }
 
-export async function sendLeadViaResend(lead: ValidatedLead): Promise<{ ok: boolean; error?: string }> {
+function resendErrorStatus(error: unknown): number | undefined {
+  if (!error || typeof error !== "object") return undefined;
+  const o = error as { statusCode?: number; status?: number };
+  if (typeof o.statusCode === "number") return o.statusCode;
+  if (typeof o.status === "number") return o.status;
+  return undefined;
+}
+
+function resendErrorName(error: unknown): string {
+  if (error && typeof error === "object" && "name" in error && typeof error.name === "string") {
+    return error.name;
+  }
+  return "unknown";
+}
+
+function maskFromForLogs(from: string): string {
+  const addr = from.match(/<([^>]+)>/)?.[1] ?? from;
+  const [local, domain] = addr.split("@");
+  if (!domain) return "invalid_from";
+  const maskedLocal = local.length <= 2 ? "**" : `${local.slice(0, 2)}***`;
+  return `${maskedLocal}@${domain}`;
+}
+
+export async function sendLeadViaResend(lead: ValidatedLead): Promise<ResendDeliveryResult> {
   const apiKey = process.env.RESEND_API_KEY?.trim();
   if (!apiKey) {
-    leadLog("resend_missing_api_key");
-    return { ok: false, error: "missing_api_key" };
+    leadLog("resend_missing_api_key", { rid: lead.rid, formSurface: lead.formSurface });
+    return { ok: false, code: "resend_missing_api_key" };
+  }
+
+  const resolvedFrom = resolveResendFromEmail();
+  const fromEmail = resolvedFrom.from;
+
+  if (!resolvedFrom.envProvided) {
+    leadLog("resend_missing_from_email", {
+      rid: lead.rid,
+      formSurface: lead.formSurface,
+      usedFallback: true,
+    });
+  }
+
+  if (resolvedFrom.invalidEnvValue) {
+    leadLog("invalid_from_email", {
+      rid: lead.rid,
+      formSurface: lead.formSurface,
+      usedFallback: true,
+    });
   }
 
   const resend = new Resend(apiKey);
@@ -81,7 +125,7 @@ export async function sendLeadViaResend(lead: ValidatedLead): Promise<{ ok: bool
 
   try {
     const { error } = await resend.emails.send({
-      from: leadDeliveryConfig.fromEmail,
+      from: fromEmail,
       to: [leadDeliveryConfig.primaryEmail],
       cc: [leadDeliveryConfig.ccEmail],
       subject: buildSubject(lead),
@@ -91,18 +135,48 @@ export async function sendLeadViaResend(lead: ValidatedLead): Promise<{ ok: bool
     });
 
     if (error) {
-      leadLog("resend_send_error", { rid: lead.rid, formSurface: lead.formSurface, code: error.name });
-      return { ok: false, error: error.message };
+      const statusCode = resendErrorStatus(error);
+      leadLog("resend_send_error", {
+        rid: lead.rid,
+        formSurface: lead.formSurface,
+        code: resendErrorName(error),
+        resend_response_status: statusCode,
+        from: maskFromForLogs(fromEmail),
+      });
+      return {
+        ok: false,
+        code: "resend_send_error",
+        message: error.message,
+        statusCode,
+        fromEmail: maskFromForLogs(fromEmail),
+        usedFromFallback: resolvedFrom.usedFallback,
+      };
     }
 
-    leadLog("resend_send_ok", { rid: lead.rid, formSurface: lead.formSurface, language: lead.language });
-    return { ok: true };
+    leadLog("resend_send_ok", {
+      rid: lead.rid,
+      formSurface: lead.formSurface,
+      language: lead.language,
+      from: maskFromForLogs(fromEmail),
+      usedFromFallback: resolvedFrom.usedFallback,
+    });
+    return { ok: true, fromEmail: maskFromForLogs(fromEmail), usedFromFallback: resolvedFrom.usedFallback };
   } catch (err) {
+    const statusCode = resendErrorStatus(err);
     leadLog("resend_send_exception", {
       rid: lead.rid,
       formSurface: lead.formSurface,
       name: err instanceof Error ? err.name : "unknown",
+      resend_response_status: statusCode,
+      from: maskFromForLogs(fromEmail),
     });
-    return { ok: false, error: err instanceof Error ? err.message : "send_failed" };
+    return {
+      ok: false,
+      code: "resend_send_exception",
+      message: err instanceof Error ? err.message : "send_failed",
+      statusCode,
+      fromEmail: maskFromForLogs(fromEmail),
+      usedFromFallback: resolvedFrom.usedFallback,
+    };
   }
 }

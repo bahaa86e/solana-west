@@ -61,8 +61,7 @@ export function CinematicStoryMoment({
             <LuxuryFillImage
               src={beat.image.src}
               alt={beat.image.alt}
-              sizes="100vw"
-              quality={86}
+              sizes="(max-width: 1023px) 100vw, min(100vw, 2560px)"
               loading="lazy"
               filmGrade={false}
               fit="cover"

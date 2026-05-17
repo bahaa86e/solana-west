@@ -37,7 +37,9 @@ export function LeadInquiryForm() {
   const ar = locale === "ar";
 
   const [leadRid] = useState(createLeadRequestId);
-  const { handleSubmit, submitting, redirecting, errorMessage, errorAlertRef } = useLeadFormSubmit();
+  const { handleSubmit, submitting, redirecting, errorMessage, errorAlertRef } = useLeadFormSubmit({
+    formKind: "contact",
+  });
 
   const labels = ar
     ? {

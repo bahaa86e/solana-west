@@ -1,9 +1,16 @@
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
+import {
+  editorialLandscapeAspectProminent,
+  editorialSplitCopy,
+  editorialSplitGrid,
+  editorialSplitMedia,
+} from "@/lib/media/editorial-image-layout";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { homeSections } from "@/data/seo/home";
 import { solanaWestMedia } from "@/data/media/solana-west";
+import { cn } from "@/lib/utils";
 
 const { investment } = homeSections;
 
@@ -16,10 +23,12 @@ export function InvestmentSection() {
       containerSize="wide"
       depth="lifted"
     >
-      <div className="grid gap-section-gap lg:grid-cols-12 lg:items-start lg:gap-x-section-gap xl:gap-x-[clamp(3.75rem,7vw,5.5rem)]">
+      <div className={cn(editorialSplitGrid, "lg:items-start")}>
         <LuxuryImageShell
           hover="cinematic"
-          className="order-2 min-h-[19rem] lg:order-1 lg:col-span-7 lg:min-h-[28rem] rounded-[3px]"
+          frame="editorial"
+          aspectClassName={editorialLandscapeAspectProminent}
+          className={cn(editorialSplitMedia, "order-2 lg:order-1")}
           frameAccent={
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-lux-paper/[0.05] via-transparent to-lux-ink/[0.07]" aria-hidden />
           }
@@ -28,13 +37,12 @@ export function InvestmentSection() {
             src={solanaWestMedia.investment.src}
             alt={solanaWestMedia.investment.alt}
             sizes="(max-width: 1023px) 100vw, 58vw"
-            quality={82}
             crop="greenerySubject"
             treatment="rich"
           />
         </LuxuryImageShell>
 
-        <div className="order-1 max-w-readable lg:order-2 lg:col-span-5 lg:max-w-none lg:pl-[clamp(0.5rem,2vw,1.25rem)]">
+        <div className={cn(editorialSplitCopy, "order-1 max-w-readable lg:order-2 lg:max-w-none")}>
           <SectionHeader
             id="investment-heading"
             eyebrow={investment.eyebrow}

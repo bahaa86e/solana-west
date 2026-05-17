@@ -15,7 +15,6 @@ export function AboutHeroSection({ model }: { model: AboutPageModel }) {
         alt: heroImage.alt,
         sizes: "100vw",
         priority: true,
-        quality: 88,
         imgClassName: "object-[center_45%]",
       }}
     >

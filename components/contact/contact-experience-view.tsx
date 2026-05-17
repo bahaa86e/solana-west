@@ -15,7 +15,7 @@ export function ContactExperienceView({ model }: { model: ContactPageModel }) {
       <ContactHeroSection model={model} />
       <GlobalHeroEnquirySection />
       <ContactEditorialBlockSection
-        tone="sand"
+        tone="postHero"
         block={{
           id: `${idPrefix}-overview`,
           headingId: `${idPrefix}-overview-heading`,

@@ -1,5 +1,9 @@
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
+import {
+  editorialPortraitAspect,
+  editorialStackWideAspect,
+} from "@/lib/media/editorial-image-layout";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { homeSections } from "@/data/seo/home";
@@ -25,7 +29,7 @@ export function AmenitiesSection() {
       />
 
       {/* Asymmetric editorial grid — avoids uniform “three-card gallery” rhythm */}
-      <ul className="mt-14 grid grid-cols-1 gap-section-gap md:mt-section-block lg:grid-cols-12 lg:gap-x-10 lg:gap-y-16">
+      <ul className="mt-[clamp(2.75rem,6vw,4rem)] grid grid-cols-1 gap-section-gap md:mt-[clamp(3rem,5.5vw,4.25rem)] lg:grid-cols-12 lg:gap-x-10 lg:gap-y-14">
         {solanaWestMedia.amenities.map((asset, i) => {
           const group = amenitiesCopy.groups[i];
           return (
@@ -40,18 +44,17 @@ export function AmenitiesSection() {
               <article className="flex flex-col">
                 <LuxuryImageShell
                   hover="lift"
+                  frame="editorial"
                   aspectClassName={
-                    i === 0 ? "aspect-[4/5] max-lg:max-h-[min(72vh,520px)]"
-                    : i === 1 ? "aspect-[4/5]"
-                    : "aspect-video max-lg:aspect-video"
+                    i === 0 ? editorialPortraitAspect
+                    : i === 1 ? editorialPortraitAspect
+                    : editorialStackWideAspect
                   }
-                  className={cn("shadow-lux-card transition-[border-color,box-shadow] duration-480 ease-luxury hover:border-lux-ink/10", i === 2 && "shadow-lux-soft")}
                 >
                   <LuxuryFillImage
                     src={asset.src}
                     alt={asset.alt}
                     sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 32vw"
-                    quality={82}
                     crop={i === 0 ? "editorialWideLow" : i === 1 ? "greenerySubject" : "editorialWideLow"}
                     treatment="rich"
                   />

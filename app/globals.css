@@ -100,6 +100,75 @@
   }
 }
 
+/**
+ * Post-hero editorial lift — first content band after cinematic hero + enquiry (sitewide).
+ * Warm ivory / linen; pairs with `SectionShell` tone `postHero`.
+ */
+@layer components {
+  .lux-post-hero-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    color: theme("colors.lux.charcoal");
+    background: linear-gradient(180deg, #fdfbf7 0%, #f9f5ee 40%, #f4efe6 100%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.58);
+  }
+
+  .lux-post-hero-section::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    z-index: 1;
+    height: 1px;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgb(196 165 116 / 0.34) 50%,
+      transparent 100%
+    );
+  }
+
+  .lux-post-hero-section::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    z-index: 0;
+    height: min(14rem, 32vw);
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse 92% 72% at 50% -18%,
+      rgb(196 165 116 / 0.09),
+      transparent 62%
+    );
+  }
+
+  .lux-post-hero-card {
+    border: 1px solid rgb(61 58 54 / 0.05);
+    background: linear-gradient(
+      165deg,
+      rgb(253 252 249 / 0.94) 0%,
+      rgb(248 244 237 / 0.88) 52%,
+      rgb(243 238 229 / 0.86) 100%
+    );
+    box-shadow:
+      0 12px 32px -28px rgb(45 42 37 / 0.06),
+      inset 0 1px 0 rgb(252 250 247 / 0.82);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .lux-post-hero-heading {
+    color: theme("colors.lux.charcoal");
+  }
+
+  .lux-post-hero-muted {
+    color: rgb(47 44 41 / 68%);
+  }
+}
+
 @layer utilities {
   /**
    * Running text — investor-grade paragraph rhythm; ~55–62 characters per line at `max-w-readable`.
@@ -108,7 +177,7 @@
     @apply max-w-readable font-normal text-body-lg text-lux-ink;
     line-height: 1.74;
     letter-spacing: 0.0075em;
-    color: rgb(61 58 54 / 72%);
+    color: rgb(61 58 54 / 76%);
   }
 
   @media (max-width: 767.98px) {
@@ -129,7 +198,7 @@
   /** Section & component eyebrows */
   .lux-eyebrow {
     @apply font-sans uppercase text-micro text-lux-ink md:tracking-[0.16em];
-    color: rgb(61 58 54 / 37%);
+    color: rgb(61 58 54 / 42%);
   }
 
   /** Hub & legal interior H1 */
@@ -144,7 +213,7 @@
     @apply max-w-[min(38rem,100%)] font-sans font-normal text-lux-lead text-lux-ink;
     line-height: 1.68;
     letter-spacing: 0.0085em;
-    color: rgb(61 58 54 / 74%);
+    color: rgb(61 58 54 / 76%);
   }
 
   @media (min-width: 1024px) {
@@ -303,21 +372,21 @@
     backdrop-filter: blur(20px) saturate(120%);
     -webkit-backdrop-filter: blur(20px) saturate(120%);
     box-shadow:
-      0 32px 80px -48px rgb(0 0 0 / 72%),
-      0 12px 32px -24px rgb(0 0 0 / 45%),
-      inset 0 1px 0 rgb(255 255 255 / 0.1),
-      inset 0 0 0 1px rgb(196 165 116 / 0.06);
+      0 28px 72px -48px rgb(0 0 0 / 68%),
+      0 10px 28px -22px rgb(0 0 0 / 40%),
+      inset 0 1px 0 rgb(255 255 255 / 0.09),
+      inset 0 0 0 1px rgb(196 165 116 / 0.05);
   }
 
   .lux-enquiry-field {
     display: flex;
     flex-direction: column;
-    gap: 0.625rem;
+    gap: 0.6875rem;
   }
 
   @media (min-width: 1024px) {
     .lux-enquiry-field {
-      gap: 0.6875rem;
+      gap: 0.75rem;
     }
   }
 
@@ -523,5 +592,14 @@
     .lux-enquiry-select {
       transition: none;
     }
+  }
+}
+
+/** Next/Image fill layers — retina clarity without layout changes */
+@layer utilities {
+  .lux-img-hover-layer img {
+    image-rendering: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 }

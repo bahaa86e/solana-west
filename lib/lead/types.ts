@@ -1,6 +1,22 @@
+/** Machine-readable API / client error codes (no secrets). */
+export type LeadDeliveryErrorCode =
+  | "invalid_request"
+  | "validation_failed"
+  | "resend_missing_api_key"
+  | "resend_missing_from_email"
+  | "invalid_from_email"
+  | "resend_send_error"
+  | "resend_send_exception"
+  | "delivery_failed"
+  | "redirect_invalid"
+  | "redirect_unavailable";
+
 export type LeadFormState = {
   ok: boolean;
   message?: string;
+  code?: LeadDeliveryErrorCode;
+  /** When true, user can safely retry submission (transient / delivery errors). */
+  retryable?: boolean;
   /** Same-origin thank-you path with conversion + rid query params */
   redirectTo?: string;
 };

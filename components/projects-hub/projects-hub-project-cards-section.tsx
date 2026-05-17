@@ -44,7 +44,6 @@ export function ProjectsHubProjectCardsSection({ model }: { model: ProjectsHubPa
                       src={fp.image.src}
                       alt={fp.image.alt}
                       sizes="(max-width: 1023px) 100vw, 38vw"
-                      quality={88}
                       crop="cardThumb"
                       treatment="rich"
                     />

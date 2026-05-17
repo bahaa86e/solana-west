@@ -10,6 +10,7 @@ import { siteConfig } from "@/data/site";
 import { englishPathToArabicPath } from "@/lib/i18n/paths";
 import { getSolanaWestFaqPageJsonLd } from "@/lib/schema/jsonld/faq-page";
 import { buildPageMetadata } from "@/seo/build-metadata";
+import { cn } from "@/lib/utils";
 
 export const metadata = buildPageMetadata(faqPageSeoAr);
 
@@ -45,8 +46,14 @@ export default function ArabicFaqPage() {
 
         <GlobalHeroEnquirySection />
 
-        {SOLANA_WEST_AR_FAQ_GROUPS.map((group) => (
-          <section key={group.id} className="mt-lux-stack-xl border-b border-lux-ink/[0.05] pb-lux-stack-lg last:border-none">
+        {SOLANA_WEST_AR_FAQ_GROUPS.map((group, groupIndex) => (
+          <section
+            key={group.id}
+            className={cn(
+              "mt-lux-stack-xl border-b border-lux-ink/[0.05] pb-lux-stack-lg last:border-none",
+              groupIndex === 0 && "lux-post-hero-section",
+            )}
+          >
             <h2 className="font-display text-2xl text-lux-ink md:text-[1.75rem]">{group.label}</h2>
             <dl className="mt-lux-stack-md space-y-lux-stack-lg">
               {group.items.map((item) => (

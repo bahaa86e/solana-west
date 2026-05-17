@@ -30,8 +30,9 @@ export function PropertyTypesSection() {
         <div className="flex min-w-0 flex-1 flex-col gap-section-gap">
           <LuxuryImageShell
             hover="lift"
+            frame="editorial"
             aspectClassName="aspect-video max-h-[min(11.75rem,36vw)] sm:max-h-[13rem]"
-            className="w-full rounded-[6px]"
+            className="w-full"
             frameAccent={
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent to-lux-paper/[0.06]" aria-hidden />
             }
@@ -40,7 +41,6 @@ export function PropertyTypesSection() {
               src={solanaWestMedia.propertyTypesRibbon.src}
               alt={solanaWestMedia.propertyTypesRibbon.alt}
               sizes="(max-width: 1023px) 100vw, 58vw"
-              quality={87}
               crop="editorialWideLow"
               treatment="editorial"
             />

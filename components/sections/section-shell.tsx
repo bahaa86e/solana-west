@@ -4,12 +4,18 @@ import { Container } from "@/components/ui/container";
 import type { ContainerSize } from "@/components/ui/container";
 import { cn } from "@/lib/utils";
 
-export type SectionTone = "paper" | "sand" | "ink";
+export type SectionTone = "paper" | "sand" | "ink" | "postHero";
 
 export type SectionRhythm = "editorial" | "breath" | "compact";
 export type SectionDepth = "flat" | "lifted";
 
 const toneClass: Record<SectionTone, string> = {
+  /** First editorial block after hero + enquiry — warm ivory lift from cinematic dark */
+  postHero: cn(
+    "bg-[linear-gradient(180deg,#fdfbf7_0%,#f9f5ee_38%,#f4efe6_100%)] text-lux-charcoal",
+    "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-gradient-to-r before:from-transparent before:via-lux-champagne/38 before:to-transparent",
+    "after:pointer-events-none after:absolute after:inset-x-0 after:top-0 after:z-0 after:h-[min(14rem,32vw)] after:bg-[radial-gradient(ellipse_92%_72%_at_50%_-18%,rgb(196_165_116/0.09),transparent_62%)]",
+  ),
   paper: cn(
     "bg-lux-paper text-lux-ink",
     "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:z-[1] before:h-px before:bg-lux-ink/[0.04]",
@@ -29,7 +35,7 @@ const toneClass: Record<SectionTone, string> = {
 
 const depthClass: Record<SectionDepth, string> = {
   flat: "",
-  lifted: "shadow-[0_22px_48px_-44px_rgba(45,42,37,0.055)]",
+  lifted: "shadow-[0_18px_40px_-42px_rgba(45,42,37,0.045)]",
 };
 
 function rhythmPadding(rhythm: SectionRhythm): string {
@@ -46,8 +52,8 @@ function rhythmPadding(rhythm: SectionRhythm): string {
       );
     default:
       return cn(
-        "max-lg:py-[clamp(3.75rem,10vw,6.5rem)]",
-        "py-[clamp(4.25rem,9vw,7.5rem)] lg:py-[clamp(5rem,6.25vw,6.875rem)]",
+        "max-lg:py-[clamp(3.5rem,9.5vw,6.25rem)]",
+        "py-[clamp(4rem,8.5vw,7rem)] lg:py-[clamp(4.75rem,6vw,6.5rem)]",
       );
   }
 }

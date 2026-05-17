@@ -15,7 +15,6 @@ export function ProjectsHubHeroSection({ model }: { model: ProjectsHubPageModel 
         alt: heroImage.alt,
         sizes: "100vw",
         priority: true,
-        quality: 88,
         imgClassName: "object-[center_44%]",
       }}
     >

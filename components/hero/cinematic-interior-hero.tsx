@@ -5,6 +5,7 @@ import { useRef } from "react";
 
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { Container } from "@/components/ui/container";
+import { LUXURY_IMAGE_QUALITY_HERO, luxuryImageSharpClass } from "@/lib/media/luxury-image-defaults";
 import { cn } from "@/lib/utils";
 
 const easeLux = [0.22, 1, 0.36, 1] as const;
@@ -75,9 +76,9 @@ export function CinematicInteriorHero({
             alt={media.alt}
             sizes={media.sizes}
             priority={media.priority}
-            quality={media.quality ?? 88}
+            quality={media.quality ?? LUXURY_IMAGE_QUALITY_HERO}
             filmGrade={false}
-            imgClassName={cn("object-cover saturate-[1.02] contrast-[1.025]", media.imgClassName)}
+            imgClassName={cn(luxuryImageSharpClass, "object-cover saturate-[1.02] contrast-[1.02]", media.imgClassName)}
           />
         </motion.div>
 

@@ -17,7 +17,6 @@ export function ProjectHeroSection({ page }: { page: ResolvedProjectPage }) {
         alt: visual.alt,
         sizes: "100vw",
         priority: true,
-        quality: 88,
         imgClassName: "object-[center_38%]",
       }}
     >

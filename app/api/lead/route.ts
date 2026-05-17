@@ -7,6 +7,7 @@ import { parseLeadInquiryBody, validateLeadInquiry } from "@/lib/lead/validate";
 import type { LeadFormState } from "@/lib/lead/types";
 import { sendLeadViaResend } from "@/lib/lead-delivery/resend";
 import { resolveLeadRequestId } from "@/lib/lead-form-rid";
+import { leadErrorResponse, logLeadDeliveryFailure } from "@/lib/lead/api-response";
 
 export const runtime = "nodejs";
 
@@ -20,13 +21,19 @@ export async function POST(request: Request) {
     body = await request.json();
   } catch {
     leadLog("lead_invalid_json");
-    return jsonState({ ok: false, message: leadErrorCopy(false).invalidRequest }, 400);
+    return jsonState(
+      leadErrorResponse(leadErrorCopy(false).invalidRequest, "invalid_request"),
+      400,
+    );
   }
 
   const parsed = parseLeadInquiryBody(body);
   if (!parsed) {
     leadLog("lead_invalid_body");
-    return jsonState({ ok: false, message: leadErrorCopy(false).invalidRequest }, 400);
+    return jsonState(
+      leadErrorResponse(leadErrorCopy(false).invalidRequest, "invalid_request"),
+      400,
+    );
   }
 
   if (parsed.company_website) {
@@ -35,7 +42,11 @@ export async function POST(request: Request) {
     if (redirectTo) {
       return jsonState({ ok: true, redirectTo });
     }
-    return jsonState({ ok: true });
+    return jsonState({
+      ok: true,
+      message: leadErrorCopy(parsed.language === "ar").redirectUnavailable,
+      code: "redirect_unavailable",
+    });
   }
 
   const refererHeader = request.headers.get("referer") ?? "";
@@ -45,7 +56,10 @@ export async function POST(request: Request) {
   const validation = validateLeadInquiry(parsed, { refererHeader, hostHeader });
   if (!validation.ok) {
     leadLog("lead_validation_failed", { formSurface: parsed.form_surface });
-    return jsonState({ ok: false, message: validation.message }, 422);
+    return jsonState(
+      leadErrorResponse(validation.message, "validation_failed"),
+      422,
+    );
   }
 
   const { lead } = validation;
@@ -53,14 +67,30 @@ export async function POST(request: Request) {
 
   const delivery = await sendLeadViaResend(lead);
   if (!delivery.ok) {
-    leadLog("lead_delivery_failed", { rid: lead.rid, formSurface: lead.formSurface });
-    return jsonState({ ok: false, message: c.deliveryFailed }, 503);
+    logLeadDeliveryFailure(delivery.code, {
+      rid: lead.rid,
+      formSurface: lead.formSurface,
+      statusCode: delivery.statusCode,
+      usedFromFallback: delivery.usedFromFallback,
+    });
+
+    return jsonState(
+      leadErrorResponse(c.deliveryFailed, delivery.code, { retryable: true }),
+      503,
+    );
   }
 
   const redirectTo = thankYouRedirectPath(lead.pagePathname, lead.rid);
   if (!redirectTo) {
     leadLog("lead_redirect_invalid", { rid: lead.rid });
-    return jsonState({ ok: false, message: c.deliveryFailed }, 500);
+    logLeadDeliveryFailure("redirect_invalid", {
+      rid: lead.rid,
+      formSurface: lead.formSurface,
+    });
+    return jsonState(
+      leadErrorResponse(c.redirectUnavailable, "redirect_invalid", { retryable: false }),
+      500,
+    );
   }
 
   return jsonState({ ok: true, redirectTo });

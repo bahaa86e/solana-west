@@ -37,7 +37,10 @@ export default function ArabicComparisonPagesHub() {
 
         <GlobalHeroEnquirySection />
 
-        <section className="border-b border-lux-ink/[0.06] py-10 md:py-12" aria-labelledby="comparison-framework-ar">
+        <section
+          className="lux-post-hero-section border-b border-lux-ink/[0.04] py-10 md:py-12"
+          aria-labelledby="comparison-framework-ar"
+        >
           <h2 id="comparison-framework-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
             معايير مقارنة كمبوندات نيو زايد قبل الشراء
           </h2>

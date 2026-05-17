@@ -1,5 +1,6 @@
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
+import { editorialRibbonAspect } from "@/lib/media/editorial-image-layout";
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import { homeSections } from "@/data/seo/home";
@@ -24,7 +25,9 @@ export function MasterplanSection() {
       />
       <LuxuryImageShell
         hover="lift"
-        className="mt-section-block aspect-[3/2] w-full rounded-[6px] md:mt-section-gap sm:aspect-video lg:aspect-video lg:min-h-[min(40vh,34rem)] lg:max-h-[min(44rem,calc(70vh-8rem))] xl:min-h-[min(42vh,36rem)]"
+        frame="editorial"
+        aspectClassName={editorialRibbonAspect}
+        className="mt-[clamp(2.5rem,6vw,3.75rem)] w-full md:mt-[clamp(2.75rem,5.5vw,4rem)]"
         frameAccent={
           <div className="pointer-events-none absolute inset-0 z-[6] bg-gradient-to-b from-transparent via-transparent to-lux-paper/[0.12]" aria-hidden />
         }
@@ -33,7 +36,6 @@ export function MasterplanSection() {
           src={solanaWestMedia.masterplan.src}
           alt={solanaWestMedia.masterplan.alt}
           sizes="(max-width: 1023px) 100vw, min(1200px, 92vw)"
-          quality={85}
           fit="contain"
           crop="editorialWideLow"
           treatment="rich"

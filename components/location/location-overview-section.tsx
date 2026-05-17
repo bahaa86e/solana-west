@@ -1,5 +1,13 @@
 import { LuxuryFillImage } from "@/components/media/luxury-fill-image";
 import { LuxuryImageShell } from "@/components/media/luxury-image-shell";
+import {
+  editorialBodyStack,
+  editorialLandscapeAspect,
+  editorialSplitCopy,
+  editorialSplitGrid,
+  editorialSplitMedia,
+} from "@/lib/media/editorial-image-layout";
+
 import { SectionHeader } from "@/components/sections/section-header";
 import { SectionShell } from "@/components/sections/section-shell";
 import type { LocationPageModel } from "@/data/location/location-page-model";
@@ -9,12 +17,12 @@ export function LocationOverviewSection({ model }: { model: LocationPageModel })
   const headingId = `${idPrefix}-overview-heading`;
 
   return (
-    <SectionShell id={`${idPrefix}-overview`} aria-labelledby={headingId} tone="sand" containerSize="wide">
-      <div className="grid gap-section-gap lg:grid-cols-12 lg:items-center lg:gap-x-section-gap lg:gap-y-14 xl:gap-x-[clamp(3.75rem,6.25vw,4.75rem)]">
-        <div className="flex flex-col justify-between lg:col-span-5 lg:py-4">
+    <SectionShell id={`${idPrefix}-overview`} aria-labelledby={headingId} tone="postHero" containerSize="wide">
+      <div className={editorialSplitGrid}>
+        <div className={editorialSplitCopy}>
           <div>
             <SectionHeader id={headingId} eyebrow={overview.eyebrow} title={overview.title} />
-            <div className="mt-14 max-w-md space-y-6 xl:max-w-lg">
+            <div className={editorialBodyStack}>
               {overview.paragraphs.map((paragraph, i) => (
                 <p
                   key={`${idPrefix}-overview-${i}`}
@@ -28,8 +36,9 @@ export function LocationOverviewSection({ model }: { model: LocationPageModel })
         </div>
         <LuxuryImageShell
           hover="lift"
-          aspectClassName="aspect-[3/2] lg:aspect-video lg:min-h-[clamp(22rem,46vh,34rem)]"
-          className="lg:col-span-7 lg:rounded-[3px]"
+          frame="editorial"
+          aspectClassName={editorialLandscapeAspect}
+          className={editorialSplitMedia}
           frameAccent={
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-lux-paper/[0.05]" aria-hidden />
           }
@@ -39,7 +48,6 @@ export function LocationOverviewSection({ model }: { model: LocationPageModel })
             mobileSrc={overviewFigure.mobileSrc}
             alt={overviewFigure.alt}
             sizes="(max-width: 1023px) 100vw, min(928px, 58vw)"
-            quality={88}
             crop="horizonGolden"
             treatment="rich"
           />

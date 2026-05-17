@@ -27,5 +27,8 @@ export function leadErrorCopy(isAr: boolean) {
     invalidRequest: isAr ?
       "تعذر معالجة الطلب. يرجى تحديث الصفحة والمحاولة مرة أخرى."
     : "We could not process this request. Please refresh and try again.",
+    redirectUnavailable: isAr ?
+      "تم استلام استفسارك، لكن تعذر فتح صفحة التأكيد. يمكنك المحاولة مرة أخرى أو التواصل عبر الواتساب."
+    : "Your enquiry was received, but we could not open the confirmation page. Please try again or message us on WhatsApp.",
   } as const;
 }

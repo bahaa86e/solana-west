@@ -38,7 +38,10 @@ export default function ArabicPrivacyPolicyPage() {
         <GlobalHeroEnquirySection />
 
         <div className="space-y-10 py-10 md:space-y-12 md:py-12">
-          <section aria-labelledby="privacy-controller-ar">
+          <section
+            aria-labelledby="privacy-controller-ar"
+            className={cn("lux-post-hero-section rounded-sm px-1 py-1 md:px-2")}
+          >
             <h2 id="privacy-controller-ar" className="font-display text-lux-display-sm font-medium text-lux-ink">
               بيانات التواصل ومكتب المبيعات
             </h2>
