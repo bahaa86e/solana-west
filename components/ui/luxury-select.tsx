@@ -67,9 +67,9 @@ function CheckIcon({ className }: { className?: string }) {
 
 const triggerEnquiry = cn(
   "lux-enquiry-select group flex w-full items-center justify-between gap-2 text-start",
-  "data-[placeholder]:text-[rgb(23_23_23/42%)]",
-  "data-[state=open]:border-[rgb(33_52_89/0.32)] data-[state=open]:bg-white",
-  "data-[state=open]:shadow-[0_0_0_1px_rgb(33_52_89/0.12),0_0_0_3px_rgb(33_52_89/0.18),inset_0_1px_0_rgb(255_255_255/0.8)]",
+  "data-[placeholder]:text-[rgb(23_23_23/52%)]",
+  "data-[state=open]:border-[rgb(33_52_89/0.34)] data-[state=open]:bg-white",
+  "data-[state=open]:shadow-[0_2px_10px_rgb(15_15_15/0.03),0_0_0_1px_rgb(33_52_89/0.12),0_0_0_3px_rgb(33_52_89/0.22),inset_0_1px_0_rgb(255_255_255/0.85)]",
 );
 
 const triggerLight = cn(

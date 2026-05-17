@@ -67,11 +67,11 @@ export function GlobalHeroEnquirySection() {
 
       >
 
-        <div className="grid items-start gap-12 lg:items-center lg:grid-cols-[minmax(0,1fr)_minmax(0,21rem)] lg:gap-[4.25rem] xl:grid-cols-[minmax(0,1.12fr)_minmax(0,21.5rem)] xl:gap-[4.75rem]">
+        <div className="grid items-start gap-12 lg:items-center lg:grid-cols-[minmax(0,1fr)_minmax(0,22.75rem)] lg:gap-[4.35rem] xl:grid-cols-[minmax(0,1.1fr)_minmax(0,23.25rem)] xl:gap-[4.65rem]">
 
           <HeroEnquirySectionContent />
 
-          <div className="lux-enquiry-card p-[clamp(1.5rem,3.8vw,2.125rem)] max-lg:mx-auto max-lg:w-full max-lg:max-w-[23rem] lg:max-w-[21.5rem] lg:justify-self-center">
+          <div className="lux-enquiry-card p-[clamp(1.5rem,3.8vw,2.125rem)] lg:p-[clamp(1.625rem,4.1vw,2.375rem)] max-lg:mx-auto max-lg:w-full max-lg:max-w-[23rem] lg:w-full lg:max-w-none lg:justify-self-stretch">
 
             <HeroEnquiryForm />
 

@@ -117,13 +117,13 @@ export function HeroEnquiryForm() {
 
 
 
-      <fieldset className="m-0 min-w-0 space-y-6 border-0 p-0 max-lg:space-y-7" disabled={submitting || redirecting}>
+      <fieldset className="m-0 min-w-0 space-y-6 border-0 p-0 max-lg:space-y-7 lg:space-y-[1.875rem]" disabled={submitting || redirecting}>
 
         <legend className="sr-only">{labels.legend}</legend>
 
 
 
-        <div className="grid gap-6 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 max-lg:gap-y-6">
+        <div className="grid gap-6 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 lg:gap-y-7 max-lg:gap-y-6">
 
           <div className={cn("lux-enquiry-field", "sm:col-span-2")}>
 
@@ -304,7 +304,7 @@ export function HeroEnquiryForm() {
 
             disabled={submitting || redirecting}
 
-            className="w-full !min-h-[3.25rem] !rounded-[8px] !tracking-[0.04em] max-lg:!min-h-[3.375rem]"
+            className="w-full !min-h-[3.25rem] !rounded-[12px] !tracking-[0.04em] max-lg:!min-h-[3.375rem]"
 
           >
 
@@ -322,9 +322,11 @@ export function HeroEnquiryForm() {
 
             size="lg"
 
-            leadingIcon={<WhatsAppIcon className="size-[1.1rem]" />}
+            leadingIcon={
+              <WhatsAppIcon className="size-[1.05rem] shrink-0 text-[#213459]/65" aria-hidden />
+            }
 
-            className="w-full !min-h-[3.25rem] !rounded-[8px] !tracking-[0.038em] max-lg:!min-h-[3.375rem]"
+            className="w-full !min-h-[3.25rem] !rounded-[12px] !tracking-[0.036em] max-lg:!min-h-[3.375rem]"
 
             data-track="whatsapp_click"
 
