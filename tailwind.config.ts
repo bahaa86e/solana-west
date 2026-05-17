@@ -140,6 +140,14 @@ const config: Config = {
         xs: "380px",
       },
       keyframes: {
+        "lux-select-in": {
+          from: { opacity: "0", transform: "translateY(-5px) scale(0.985)" },
+          to: { opacity: "1", transform: "translateY(0) scale(1)" },
+        },
+        "lux-select-out": {
+          from: { opacity: "1", transform: "translateY(0) scale(1)" },
+          to: { opacity: "0", transform: "translateY(-4px) scale(0.985)" },
+        },
         /** Floating WhatsApp — soft outer ring “breathing”, no aggressive motion */
         "lux-wa-breathe-ring": {
           "0%, 100%": { opacity: "0.36", transform: "scale(1)" },
@@ -152,6 +160,8 @@ const config: Config = {
         },
       },
       animation: {
+        "lux-select-in": "lux-select-in 0.28s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        "lux-select-out": "lux-select-out 0.2s cubic-bezier(0.22, 1, 0.36, 1) forwards",
         "lux-wa-breathe-ring": "lux-wa-breathe-ring 4.2s ease-in-out infinite",
         "lux-wa-breathe-shell": "lux-wa-breathe-shell 4.2s ease-in-out infinite",
       },

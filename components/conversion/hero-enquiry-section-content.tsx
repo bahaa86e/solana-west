@@ -12,10 +12,10 @@ export function HeroEnquirySectionContent() {
 
   return (
     <div className="max-w-xl lg:pt-1">
-      <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.28em] text-lux-gold/78">
+      <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.3em] text-lux-champagne/82">
         {copy.sectionLabel}
       </p>
-      <span className="mt-5 mb-6 block h-px max-w-[3rem] bg-lux-gold/38" aria-hidden />
+      <span className="mt-5 mb-7 block h-px max-w-[3.25rem] bg-gradient-to-r from-lux-champagne/45 to-transparent" aria-hidden />
       <h2
         id="hero-enquiry-heading"
         className={cn(
@@ -25,10 +25,10 @@ export function HeroEnquirySectionContent() {
       >
         {copy.title}
       </h2>
-      <p className="mt-4 font-sans text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-lux-paper/58">
+      <p className="mt-4 font-sans text-[0.8125rem] font-medium uppercase tracking-[0.16em] text-lux-paper/62">
         {copy.subtitle}
       </p>
-      <p className="mt-6 max-w-[min(38rem,100%)] text-[0.96875rem] font-normal leading-[1.72] tracking-[0.01em] text-lux-paper/74 md:text-[1rem]">
+      <p className="mt-7 max-w-[min(38rem,100%)] text-[0.96875rem] font-normal leading-[1.74] tracking-[0.012em] text-lux-paper/76 md:text-[1rem]">
         {copy.body}
       </p>
 

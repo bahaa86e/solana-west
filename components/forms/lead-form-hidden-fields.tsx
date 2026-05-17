@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 import { leadDeliveryConfig } from "@/data/lead-delivery";
 import { useSiteLocale } from "@/components/i18n/site-locale-context";
+import { cn } from "@/lib/utils";
 
 type LeadFormHiddenFieldsProps = {
   formSurface: string;
@@ -12,8 +13,7 @@ type LeadFormHiddenFieldsProps = {
 };
 
 /**
- * Contextual hidden inputs — forwarded by the server action into FormSubmit emails.
- * `_cc` / FormSubmit endpoint are applied server-side only (not exposed to the client).
+ * Contextual hidden inputs — submitted to `/api/lead` for Resend email delivery.
  */
 export function LeadFormHiddenFields({ formSurface, rid }: LeadFormHiddenFieldsProps) {
   const pathname = usePathname() ?? "/";
@@ -43,6 +43,26 @@ export function LeadFormHiddenFields({ formSurface, rid }: LeadFormHiddenFieldsP
       <input type="hidden" name="page_url" value={clientContext.pageUrl} readOnly aria-hidden />
       <input type="hidden" name="rid" value={rid} readOnly aria-hidden />
       <input type="hidden" name="language" value={locale} readOnly aria-hidden />
+      <HoneypotField />
     </>
+  );
+}
+
+/** Anti-spam honeypot — must stay empty; bots that fill it are silently accepted without email. */
+function HoneypotField() {
+  return (
+    <div className={cn("absolute left-[-9999px] h-px w-px overflow-hidden opacity-0")} aria-hidden>
+      <label htmlFor="lead-company-website" className="sr-only">
+        Leave blank
+      </label>
+      <input
+        type="text"
+        id="lead-company-website"
+        name="company_website"
+        tabIndex={-1}
+        autoComplete="off"
+        defaultValue=""
+      />
+    </div>
   );
 }

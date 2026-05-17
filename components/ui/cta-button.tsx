@@ -11,7 +11,7 @@ const variants = {
     "border border-[#5a7a6c]/25 bg-[#eaf2ee] text-[#1f3b30] shadow-[0_8px_28px_-20px_rgba(40,72,58,0.14),inset_0_1px_0_rgba(255,255,255,0.85)] hover:border-[#4d6f62]/35 hover:bg-[#e3ede8] hover:shadow-[0_10px_32px_-22px_rgba(40,72,58,0.16)] motion-reduce:hover:shadow-[0_8px_28px_-20px_rgba(40,72,58,0.14)] active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
   /** Hero / glass plate — crisp primary, minimal frosted gradient */
   whatsappOnDark:
-    "border border-white/28 bg-[#2f5c4c] text-lux-paper shadow-[0_12px_40px_-26px_rgba(30,62,48,0.28),inset_0_1px_0_rgba(255,255,255,0.22)] hover:border-white/38 hover:bg-[#347055] hover:shadow-[0_14px_44px_-26px_rgba(28,56,44,0.3)] active:translate-y-px focus-visible:ring-lux-gold/[0.8] focus-visible:ring-offset-2 focus-visible:ring-offset-white/25",
+    "border border-[#2a4a40]/55 bg-gradient-to-b from-[#1e3d34] via-[#183229] to-[#122820] text-[#f2f7f4] shadow-[0_14px_42px_-24px_rgba(12,32,24,0.55),inset_0_1px_0_rgba(255,255,255,0.14)] hover:border-[#3d6a5a]/45 hover:from-[#234a3e] hover:via-[#1d3f35] hover:to-[#16342b] hover:shadow-[0_16px_46px_-22px_rgba(14,36,28,0.58)] motion-reduce:hover:shadow-[0_14px_42px_-24px_rgba(12,32,24,0.55)] active:translate-y-px focus-visible:ring-lux-gold/[0.8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0e14]",
   secondary:
     "border border-lux-ink/14 bg-transparent text-lux-ink shadow-none hover:border-lux-ink/22 hover:bg-lux-ink/[0.02] hover:shadow-[0_8px_24px_-20px_rgba(45,42,37,0.06)] motion-reduce:hover:shadow-none active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
   ghost:
@@ -19,7 +19,7 @@ const variants = {
   inverse:
     "border border-white/26 bg-white/[0.12] text-lux-paper shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_8px_28px_-22px_rgba(45,42,37,0.12)] hover:border-white/34 hover:bg-white/[0.18] hover:shadow-[0_10px_32px_-22px_rgba(45,42,37,0.14)] motion-reduce:hover:shadow-[0_8px_28px_-22px_rgba(45,42,37,0.12)] active:translate-y-px focus-visible:ring-lux-gold/[0.75]",
   gold:
-    "border border-lux-gold/45 bg-gradient-to-b from-[#e8d4b0] via-lux-gold to-[#b8945f] text-[#1f1a14] shadow-[0_12px_36px_-22px_rgba(196,165,116,0.55),inset_0_1px_0_rgba(255,255,255,0.35)] hover:border-lux-gold/60 hover:from-[#edd9b8] hover:via-[#d4b88a] hover:to-[#c4a06a] hover:shadow-[0_14px_40px_-20px_rgba(196,165,116,0.62)] motion-reduce:hover:shadow-[0_12px_36px_-22px_rgba(196,165,116,0.55)] active:translate-y-px focus-visible:ring-lux-gold/[0.85] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1419]",
+    "border border-[#d4bc94]/55 bg-gradient-to-b from-[#f0e2c8] via-[#d9c29a] to-[#b89562] text-[#1a1610] shadow-[0_16px_44px_-20px_rgba(196,165,116,0.62),inset_0_1px_0_rgba(255,255,255,0.42),inset_0_-1px_0_rgba(120,96,62,0.18)] hover:border-[#e2cda8]/65 hover:from-[#f5e8d0] hover:via-[#e0c8a0] hover:to-[#c4a06c] hover:shadow-[0_18px_48px_-18px_rgba(196,165,116,0.72)] motion-reduce:hover:shadow-[0_16px_44px_-20px_rgba(196,165,116,0.62)] active:translate-y-px focus-visible:ring-lux-gold/[0.85] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0e14]",
 } as const;
 
 const sizes = {
